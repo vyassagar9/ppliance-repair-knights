@@ -38,7 +38,7 @@ include '../head.php';
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
-      "reviewCount": "490"
+      "reviewCount": "15"
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -357,152 +357,157 @@ include '../header.php';
       </div>
     </section>
 
-    <!-- SERVICES OFFERED IN PICKERING GRID (MATCHING APPLIANCE ICONS) -->
-    <section class="bg-white py-16 border-y border-bordercolor" aria-labelledby="services-grid-title">
-      <div class="max-w-7xl mx-auto px-4">
-        <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
-          <span class="text-accent text-xs font-bold uppercase tracking-widest block">Complete Appliance Coverage</span>
-          <h2 id="services-grid-title" class="text-3xl font-heading font-extrabold text-primary">
-            Our Appliance Repair Services in Pickering
-          </h2>
-          <p class="text-slate-600 text-sm sm:text-base">
-            From emergency refrigerator cooling fixes to washing machine leak diagnostics, we service all major home appliances in Pickering homes.
+    <!-- SERVICES OFFERED IN PICKERING GRID (MINIMALIST & SLEEK DESIGN) -->
+    <section class="bg-slate-50/60 py-16 md:py-20 border-y border-slate-200/80" aria-labelledby="services-grid-title">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        
+        <!-- Minimalist Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-4 border-b border-slate-200/70 pb-6">
+          <div class="space-y-2 max-w-2xl">
+            <span class="text-accent text-xs font-bold uppercase tracking-widest block">PICKERING SERVICES</span>
+            <h2 id="services-grid-title" class="text-2xl sm:text-3xl md:text-4xl font-heading font-extrabold text-primary tracking-tight">
+              Our Appliance Repair Services in Pickering
+            </h2>
+          </div>
+          <p class="text-slate-500 text-sm max-w-md leading-relaxed">
+            Fast, certified diagnostic & repair solutions for all major home kitchen and laundry appliances across Pickering.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Minimalist Grid Cards with Photos -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           
-          <!-- Refrigerator Repair Card -->
-          <article class="bg-lightbg rounded-2xl p-6 border border-bordercolor hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
-            <div class="space-y-4">
-              <div class="w-14 h-14 bg-primary/10 group-hover:bg-primary text-brandOrange group-hover:text-white rounded-2xl flex items-center justify-center transition-colors">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2zm0 8h14M10 3v8M10 15v3"></path></svg>
+          <!-- Refrigerator Repair -->
+          <a href="../services/fridge-repair.php" class="group bg-white rounded-2xl border border-slate-200/80 hover:border-accent/40 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between overflow-hidden">
+            <div>
+              <div class="h-44 sm:h-48 w-full overflow-hidden relative bg-slate-100">
+                <img src="../img/fridge-repair.avif" alt="Refrigerator Repair in Pickering" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-sm text-primary group-hover:text-accent flex items-center justify-center shadow-sm transition-colors">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2zm0 8h14M10 3v8M10 15v3"></path></svg>
+                </div>
               </div>
-              <h3 class="text-xl font-heading font-bold text-primary">Refrigerator & Freezer Repair</h3>
-              <p class="text-slate-600 text-sm leading-relaxed">
-                Temperature fluctuations, non-cooling freezers, noisy compressors, water valve leaks, and failing ice makers repaired on-site.
-              </p>
-              <ul class="space-y-2 text-xs text-slate-700 font-medium pt-2">
-                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>French Door, Side-by-Side & Built-in</li>
-                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Control board & thermostat diagnosis</li>
-              </ul>
+              <div class="p-6 space-y-3">
+                <h3 class="text-lg font-heading font-bold text-primary group-hover:text-accent transition-colors">Refrigerator & Freezer Repair</h3>
+                <p class="text-slate-500 text-xs sm:text-sm leading-relaxed">
+                  Same-day fixes for cooling failures, compressor issues, water valve leaks, and ice maker malfunctions.
+                </p>
+              </div>
             </div>
-            <div class="pt-6">
-              <a href="../services/fridge-repair.php" class="text-accent hover:text-accent-hover text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1">
-                Explore Refrigerator Repair &rarr;
-              </a>
+            <div class="px-6 pb-6 pt-0 flex items-center justify-between text-xs font-semibold text-accent">
+              <span>Explore Refrigerator Repair</span>
+              <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
             </div>
-          </article>
+          </a>
 
-          <!-- Washer Repair Card -->
-          <article class="bg-lightbg rounded-2xl p-6 border border-bordercolor hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
-            <div class="space-y-4">
-              <div class="w-14 h-14 bg-primary/10 group-hover:bg-primary text-brandOrange group-hover:text-white rounded-2xl flex items-center justify-center transition-colors">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-4a6 6 0 100-12 6 6 0 000 12zm0-2a4 4 0 110-8 4 4 0 010 8z"></path></svg>
+          <!-- Washing Machine Repair -->
+          <a href="../services/washer-repair.php" class="group bg-white rounded-2xl border border-slate-200/80 hover:border-accent/40 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between overflow-hidden">
+            <div>
+              <div class="h-44 sm:h-48 w-full overflow-hidden relative bg-slate-100">
+                <img src="../img/washer-repair.avif" alt="Washing Machine Repair in Pickering" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-sm text-primary group-hover:text-accent flex items-center justify-center shadow-sm transition-colors">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-4a6 6 0 100-12 6 6 0 000 12zm0-2a4 4 0 110-8 4 4 0 010 8z"></path></svg>
+                </div>
               </div>
-              <h3 class="text-xl font-heading font-bold text-primary">Washing Machine Repair</h3>
-              <p class="text-slate-600 text-sm leading-relaxed">
-                Fixing washers that won't drain, fail to spin, vibrate excessively, produce error codes, or leak water onto the laundry room floor.
-              </p>
-              <ul class="space-y-2 text-xs text-slate-700 font-medium pt-2">
-                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Front-load & Top-load washers</li>
-                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Pump, belt, motor & door boot replacement</li>
-              </ul>
+              <div class="p-6 space-y-3">
+                <h3 class="text-lg font-heading font-bold text-primary group-hover:text-accent transition-colors">Washing Machine Repair</h3>
+                <p class="text-slate-500 text-xs sm:text-sm leading-relaxed">
+                  Resolving spin failures, drainage clogs, excessive noise, lid lock errors, and front/top-load leaks.
+                </p>
+              </div>
             </div>
-            <div class="pt-6">
-              <a href="../services/washer-repair.php" class="text-accent hover:text-accent-hover text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1">
-                Explore Washer Repair &rarr;
-              </a>
+            <div class="px-6 pb-6 pt-0 flex items-center justify-between text-xs font-semibold text-accent">
+              <span>Explore Washer Repair</span>
+              <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
             </div>
-          </article>
+          </a>
 
-          <!-- Dryer Repair Card -->
-          <article class="bg-lightbg rounded-2xl p-6 border border-bordercolor hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
-            <div class="space-y-4">
-              <div class="w-14 h-14 bg-primary/10 group-hover:bg-primary text-brandOrange group-hover:text-white rounded-2xl flex items-center justify-center transition-colors">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+          <!-- Clothes Dryer Repair -->
+          <a href="../services/dryer-repair.php" class="group bg-white rounded-2xl border border-slate-200/80 hover:border-accent/40 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between overflow-hidden">
+            <div>
+              <div class="h-44 sm:h-48 w-full overflow-hidden relative bg-slate-100">
+                <img src="../img/dryer-repair.avif" alt="Clothes Dryer Repair in Pickering" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-sm text-primary group-hover:text-accent flex items-center justify-center shadow-sm transition-colors">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                </div>
               </div>
-              <h3 class="text-xl font-heading font-bold text-primary">Clothes Dryer Repair</h3>
-              <p class="text-slate-600 text-sm leading-relaxed">
-                Restoring dryers that blow cold air, won't turn on, produce squeaking noises, or shut off prematurely during cycles.
-              </p>
-              <ul class="space-y-2 text-xs text-slate-700 font-medium pt-2">
-                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Electric & Gas dryer models</li>
-                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Heating elements, thermal fuses & rollers</li>
-              </ul>
+              <div class="p-6 space-y-3">
+                <h3 class="text-lg font-heading font-bold text-primary group-hover:text-accent transition-colors">Clothes Dryer Repair</h3>
+                <p class="text-slate-500 text-xs sm:text-sm leading-relaxed">
+                  Heating element replacement, belt fixes, thermal fuse checks, and drum roller adjustments for gas & electric models.
+                </p>
+              </div>
             </div>
-            <div class="pt-6">
-              <a href="../services/dryer-repair.php" class="text-accent hover:text-accent-hover text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1">
-                Explore Dryer Repair &rarr;
-              </a>
+            <div class="px-6 pb-6 pt-0 flex items-center justify-between text-xs font-semibold text-accent">
+              <span>Explore Dryer Repair</span>
+              <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
             </div>
-          </article>
+          </a>
 
-          <!-- Dishwasher Repair Card -->
-          <article class="bg-lightbg rounded-2xl p-6 border border-bordercolor hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
-            <div class="space-y-4">
-              <div class="w-14 h-14 bg-primary/10 group-hover:bg-primary text-brandOrange group-hover:text-white rounded-2xl flex items-center justify-center transition-colors">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+          <!-- Dishwasher Repair -->
+          <a href="../services/dishwasher-repair.php" class="group bg-white rounded-2xl border border-slate-200/80 hover:border-accent/40 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between overflow-hidden">
+            <div>
+              <div class="h-44 sm:h-48 w-full overflow-hidden relative bg-slate-100">
+                <img src="../img/Open Dishwasher.avif" alt="Dishwasher Repair in Pickering" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-sm text-primary group-hover:text-accent flex items-center justify-center shadow-sm transition-colors">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                </div>
               </div>
-              <h3 class="text-xl font-heading font-bold text-primary">Dishwasher Repair</h3>
-              <p class="text-slate-600 text-sm leading-relaxed">
-                Addressing standing water, door seal leaks, poor cleaning performance, spray arm blockages, and electronic panel faults.
-              </p>
-              <ul class="space-y-2 text-xs text-slate-700 font-medium pt-2">
-                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Built-in & panel-ready dishwashers</li>
-                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Drain pumps, float switches & seals</li>
-              </ul>
+              <div class="p-6 space-y-3">
+                <h3 class="text-lg font-heading font-bold text-primary group-hover:text-accent transition-colors">Dishwasher Repair</h3>
+                <p class="text-slate-500 text-xs sm:text-sm leading-relaxed">
+                  Fixing un-drained water, poor wash results, door latch leaks, and circulation pump errors.
+                </p>
+              </div>
             </div>
-            <div class="pt-6">
-              <a href="../services/dishwasher-repair.php" class="text-accent hover:text-accent-hover text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1">
-                Explore Dishwasher Repair &rarr;
-              </a>
+            <div class="px-6 pb-6 pt-0 flex items-center justify-between text-xs font-semibold text-accent">
+              <span>Explore Dishwasher Repair</span>
+              <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
             </div>
-          </article>
+          </a>
 
-          <!-- Oven & Stove Repair Card -->
-          <article class="bg-lightbg rounded-2xl p-6 border border-bordercolor hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
-            <div class="space-y-4">
-              <div class="w-14 h-14 bg-primary/10 group-hover:bg-primary text-brandOrange group-hover:text-white rounded-2xl flex items-center justify-center transition-colors">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path></svg>
+          <!-- Oven, Range & Stove Repair -->
+          <a href="../services/stove-repair.php" class="group bg-white rounded-2xl border border-slate-200/80 hover:border-accent/40 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between overflow-hidden">
+            <div>
+              <div class="h-44 sm:h-48 w-full overflow-hidden relative bg-slate-100">
+                <img src="../img/oven-repair.avif" alt="Oven and Stove Repair in Pickering" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-sm text-primary group-hover:text-accent flex items-center justify-center shadow-sm transition-colors">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path></svg>
+                </div>
               </div>
-              <h3 class="text-xl font-heading font-bold text-primary">Oven, Range & Stove Repair</h3>
-              <p class="text-slate-600 text-sm leading-relaxed">
-                Solving temperature inaccuracies, broken heating coils, gas spark igniter failures, glass cooktop cracks, and control board errors.
-              </p>
-              <ul class="space-y-2 text-xs text-slate-700 font-medium pt-2">
-                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Gas & Electric ranges & induction tops</li>
-                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Bake elements, igniters & thermostats</li>
-              </ul>
+              <div class="p-6 space-y-3">
+                <h3 class="text-lg font-heading font-bold text-primary group-hover:text-accent transition-colors">Oven, Range & Stove Repair</h3>
+                <p class="text-slate-500 text-xs sm:text-sm leading-relaxed">
+                  Diagnosis and repair for uneven heating, broken igniters, gas range valves, and electronic control boards.
+                </p>
+              </div>
             </div>
-            <div class="pt-6">
-              <a href="../services/stove-repair.php" class="text-accent hover:text-accent-hover text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1">
-                Explore Oven & Stove Repair &rarr;
-              </a>
+            <div class="px-6 pb-6 pt-0 flex items-center justify-between text-xs font-semibold text-accent">
+              <span>Explore Oven & Stove Repair</span>
+              <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
             </div>
-          </article>
+          </a>
 
-          <!-- Microwave Repair Card -->
-          <article class="bg-lightbg rounded-2xl p-6 border border-bordercolor hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
-            <div class="space-y-4">
-              <div class="w-14 h-14 bg-primary/10 group-hover:bg-primary text-brandOrange group-hover:text-white rounded-2xl flex items-center justify-center transition-colors">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          <!-- Microwave Repair -->
+          <a href="../services/microwave-repair.php" class="group bg-white rounded-2xl border border-slate-200/80 hover:border-accent/40 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between overflow-hidden">
+            <div>
+              <div class="h-44 sm:h-48 w-full overflow-hidden relative bg-slate-100">
+                <img src="../img/induction-repair.avif" alt="Microwave Repair in Pickering" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-sm text-primary group-hover:text-accent flex items-center justify-center shadow-sm transition-colors">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
               </div>
-              <h3 class="text-xl font-heading font-bold text-primary">Microwave Repair</h3>
-              <p class="text-slate-600 text-sm leading-relaxed">
-                Over-the-range and built-in microwave repairs for non-heating units, sparking interiors, unresponsive keypads, and broken turntables.
-              </p>
-              <ul class="space-y-2 text-xs text-slate-700 font-medium pt-2">
-                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Over-the-range & countertop units</li>
-                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Magnetron, door switch & high-voltage diode</li>
-              </ul>
+              <div class="p-6 space-y-3">
+                <h3 class="text-lg font-heading font-bold text-primary group-hover:text-accent transition-colors">Microwave Repair</h3>
+                <p class="text-slate-500 text-xs sm:text-sm leading-relaxed">
+                  Over-the-range & built-in repairs for magnetron failures, door switches, sparking, and unresponsive touchpads.
+                </p>
+              </div>
             </div>
-            <div class="pt-6">
-              <a href="../services/microwave-repair.php" class="text-accent hover:text-accent-hover text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1">
-                Explore Microwave Repair &rarr;
-              </a>
+            <div class="px-6 pb-6 pt-0 flex items-center justify-between text-xs font-semibold text-accent">
+              <span>Explore Microwave Repair</span>
+              <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
             </div>
-          </article>
+          </a>
 
         </div>
       </div>
@@ -546,7 +551,7 @@ include '../header.php';
                     <span class="text-2xl font-black text-primary">5.0</span>
                     <div class="flex text-amber-400 text-lg">★★★★★</div>
                   </div>
-                  <p class="text-xs text-slate-500 mt-0.5">Based on 490+ Google Reviews</p>
+                  <p class="text-xs text-slate-500 mt-0.5">Based on 15+ Google Reviews</p>
                 </div>
                 <a href="https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-bold text-emerald-700 bg-emerald-100 hover:bg-emerald-200 px-3 py-1.5 rounded-full transition-colors">
                   <svg class="w-3.5 h-3.5 fill-current text-emerald-600" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
@@ -698,7 +703,7 @@ include '../header.php';
         <div class="mt-10 pt-4 text-center">
           <a href="https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-primary hover:bg-brandDarkBlue text-white font-bold px-7 py-3.5 rounded-xl text-xs uppercase tracking-wider shadow-md transition-all">
             <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            Read All 490+ Verified Reviews on Google &rarr;
+            Read All 15+ Verified Reviews on Google &rarr;
           </a>
         </div>
       </div>
@@ -797,44 +802,7 @@ include '../header.php';
       </div>
     </section>
 
-    <!-- STEP BY STEP REPAIR PROCESS -->
-    <section class="py-16 bg-lightbg border-b border-bordercolor" aria-labelledby="process-heading">
-      <div class="max-w-7xl mx-auto px-4">
-        <div class="text-center max-w-3xl mx-auto mb-12 space-y-2">
-          <span class="text-accent text-xs font-bold uppercase tracking-widest block">Seamless Experience</span>
-          <h2 id="process-heading" class="text-3xl font-heading font-extrabold text-primary">
-            Our Pickering Service Process
-          </h2>
-          <p class="text-slate-600 text-sm">Getting your home appliance repaired is simple, transparent, and stress-free.</p>
-        </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-          <div class="bg-white p-6 rounded-2xl border border-bordercolor relative text-center space-y-3 shadow-sm">
-            <div class="w-12 h-12 bg-primary text-accent font-black text-xl rounded-2xl flex items-center justify-center mx-auto">1</div>
-            <h3 class="font-bold text-primary text-base">Book Service</h3>
-            <p class="text-slate-600 text-xs leading-relaxed">Call 905-717-8905 or schedule online to request a same-day visit in Pickering.</p>
-          </div>
-
-          <div class="bg-white p-6 rounded-2xl border border-bordercolor relative text-center space-y-3 shadow-sm">
-            <div class="w-12 h-12 bg-primary text-accent font-black text-xl rounded-2xl flex items-center justify-center mx-auto">2</div>
-            <h3 class="font-bold text-primary text-base">On-Site Diagnosis</h3>
-            <p class="text-slate-600 text-xs leading-relaxed">Our licensed technician arrives on time, inspects your unit, and identifies the exact root cause.</p>
-          </div>
-
-          <div class="bg-white p-6 rounded-2xl border border-bordercolor relative text-center space-y-3 shadow-sm">
-            <div class="w-12 h-12 bg-primary text-accent font-black text-xl rounded-2xl flex items-center justify-center mx-auto">3</div>
-            <h3 class="font-bold text-primary text-base">Upfront Quote</h3>
-            <p class="text-slate-600 text-xs leading-relaxed">We give you an all-inclusive quote before starting work so there are no billing surprises.</p>
-          </div>
-
-          <div class="bg-white p-6 rounded-2xl border border-bordercolor relative text-center space-y-3 shadow-sm">
-            <div class="w-12 h-12 bg-primary text-accent font-black text-xl rounded-2xl flex items-center justify-center mx-auto">4</div>
-            <h3 class="font-bold text-primary text-base">Repair & Warranty</h3>
-            <p class="text-slate-600 text-xs leading-relaxed">We complete the fix using factory parts and back the job with a 90-day parts & labor guarantee.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- FREQUENTLY ASKED QUESTIONS SECTION -->
     <section class="py-16 bg-white" aria-labelledby="faq-heading">
