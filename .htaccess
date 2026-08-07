@@ -1,8 +1,15 @@
 # Apache .htaccess Configuration for Appliance Repair Knights
-# SEO-Friendly Clean URLs (Removes .php extension)
+# SEO-Friendly Clean URLs & Sitemap Configuration
+
+# XML Sitemap Header & Directive
+# Sitemap: https://www.appliancerepairknights.ca/sitemap.xml
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
+
+  # Exclude sitemap.xml and robots.txt from rewriting
+  RewriteRule ^sitemap\.xml$ - [L]
+  RewriteRule ^robots\.txt$ - [L]
 
   # 1. Redirect GET requests with .php extension to clean URL (301 Permanent Redirect for SEO)
   # Do NOT redirect POST requests or send-lead.php backend endpoint
@@ -22,7 +29,15 @@
   RewriteRule ^(.+?)$ $1.php [L]
 </IfModule>
 
+# Serve XML Sitemaps with Correct Content-Type Header
+<IfModule mod_headers.c>
+  <FilesMatch "sitemap\.xml$">
+    Header set Content-Type "application/xml; charset=UTF-8"
+  </FilesMatch>
+</IfModule>
+
 # Enable Compression & Browser Caching for Performance & SEO
 <IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml text/css text/javascript application/javascript application/json
 </IfModule>
+

@@ -1,0 +1,11 @@
+# robots.txt for Appliance Repair Knights
+User-agent: *
+Allow: /
+
+# Disallow backend endpoints & internal processing scripts
+Disallow: /send-lead.php
+Disallow: /forms/
+Disallow: /html_backup/
+
+# Sitemap Location
+Sitemap: https://www.appliancerepairknights.ca/sitemap.xml
