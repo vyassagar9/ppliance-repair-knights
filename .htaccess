@@ -1,20 +1,57 @@
 # Apache .htaccess Configuration for Appliance Repair Knights
 # SEO-Friendly Clean URLs & Sitemap Configuration
 
+# Custom 404 Error Page
+ErrorDocument 404 /404.php
+
 # XML Sitemap Header & Directive
 # Sitemap: https://www.appliancerepairknights.ca/sitemap.xml
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # Exclude sitemap.xml and robots.txt from rewriting
+  # Exclude sitemap.xml, robots.txt, and 404.php from rewriting
   RewriteRule ^sitemap\.xml$ - [L]
   RewriteRule ^robots\.txt$ - [L]
+  RewriteRule ^404\.php$ - [L]
+
+  # -------------------------------------------------------------
+  # 301 REDIRECTS (OLD WIX URLS TO NEW STRUCTURE)
+  # -------------------------------------------------------------
+
+  # 1. Location Pages Redirects
+  Redirect 301 /burlington-appliance-repair /locations/burlington-appliance-repair
+  Redirect 301 /kitchener-appliance-repair /locations/kitchener-appliance-repair
+  Redirect 301 /brampton-appliance-repair /locations/brampton-appliance-repair
+  Redirect 301 /waterloo-appliance-repair /locations/waterloo-appliance-repair
+  Redirect 301 /cambridge-appliance-repair /locations/cambridge-appliance-repair
+  Redirect 301 /hamilton-appliance-repair /locations/hamilton-appliance-repair
+  Redirect 301 /caledon-appliance-repair /locations/caledon-appliance-repair
+  Redirect 301 /pickering-appliance-repair /locations/pickering-appliance-repair
+  Redirect 301 /vaughan-appliance-repair /locations/vaughan-appliance-repair
+  Redirect 301 /richmond-hill-appliance-repair /locations/richmond-hill-appliance-repair
+  Redirect 301 /mississauga-appliance-repair /locations/mississauga-appliance-repair
+  Redirect 301 /toronto-appliance-repair /locations/toronto-appliance-repair
+  Redirect 301 /guelph-appliance-repair /locations/guelph-appliance-repair
+  Redirect 301 /markham-appliance-repair /locations/markham-appliance-repair
+  Redirect 301 /oakville-appliance-repair /locations/oakville-appliance-repair
+
+  # 2. Service Pages Redirects
+  Redirect 301 /refrigerator-repair /services/refrigerator-repair
+  Redirect 301 /service-page /services/stove-repair
+
+  # 3. Blog Post / Dynamic Pages Redirect (Redirecting old Wix posts to Homepage)
+  RewriteRule ^post/(.*)$ / [R=301,NC,L]
+
+  # -------------------------------------------------------------
+  # CLEAN URL ENGINE
+  # -------------------------------------------------------------
 
   # 1. Redirect GET requests with .php extension to clean URL (301 Permanent Redirect for SEO)
   # Do NOT redirect POST requests or send-lead.php backend endpoint
   RewriteCond %{REQUEST_METHOD} !=POST
   RewriteCond %{THE_REQUEST} !/send-lead\.php [NC]
+  RewriteCond %{THE_REQUEST} !/404\.php [NC]
   RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
   RewriteRule ^ /%1 [R=301,L]
 
@@ -40,4 +77,5 @@
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml text/css text/javascript application/javascript application/json
 </IfModule>
+
 
