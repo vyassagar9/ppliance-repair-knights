@@ -1,0 +1,28 @@
+# Apache .htaccess Configuration for Appliance Repair Knights
+# SEO-Friendly Clean URLs (Removes .php extension)
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # 1. Redirect GET requests with .php extension to clean URL (301 Permanent Redirect for SEO)
+  # Do NOT redirect POST requests or send-lead.php backend endpoint
+  RewriteCond %{REQUEST_METHOD} !=POST
+  RewriteCond %{THE_REQUEST} !/send-lead\.php [NC]
+  RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+  RewriteRule ^ /%1 [R=301,L]
+
+  # 2. Remove trailing slashes from URLs (unless directory)
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} ^(.+)/$
+  RewriteRule ^ %1 [R=301,L]
+
+  # 3. Internally route clean extensionless URL to corresponding .php file if it exists
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}\.php -f
+  RewriteRule ^(.+?)$ $1.php [L]
+</IfModule>
+
+# Enable Compression & Browser Caching for Performance & SEO
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>

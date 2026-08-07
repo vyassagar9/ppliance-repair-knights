@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Same-Day Stove & Range Repair Toronto | Appliance Repair Knights</title>
+  <meta name="description" content="Quick and reliable stove, oven, and range repair and installation services across the GTA, Hamilton, Oshawa, and Kitchener-Waterloo. We fix element failures, gas igniter clicking, uneven baking, and control boards. Licensed techs, flat-rate pricing.">
+  
+  <!-- Font Imports -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0F172A',
+            secondary: '#334155',
+            accent: '#EA580C',
+            'accent-hover': '#C2410C',
+            lightbg: '#F8FAFC',
+            bordercolor: '#E2E8F0',
+          },
+          fontFamily: {
+            sans: ['"Open Sans"', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .font-heading { font-family: 'Poppins', sans-serif; }
+    .font-body { font-family: 'Open Sans', sans-serif; }
+    .transition-all-300 {
+      transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  </style>
+
+  <!-- JSON-LD LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Appliance Repair Knights",
+    "image": "https://www.appliancerepairknights.ca/images/logo.png",
+    "@id": "https://www.appliancerepairknights.ca/#localbusiness",
+    "url": "https://www.appliancerepairknights.ca/",
+    "telephone": "905-717-8905",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "100 King St W",
+      "addressLocality": "Toronto",
+      "addressRegion": "ON",
+      "postalCode": "M5X 1A9",
+      "addressCountry": "CA"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD Service Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Stove & Range Repair Service",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Appliance Repair Knights",
+      "telephone": "905-717-8905",
+      "url": "https://www.appliancerepairknights.ca/"
+    },
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Greater Toronto Area" },
+      { "@type": "AdministrativeArea", "name": "Hamilton" },
+      { "@type": "AdministrativeArea", "name": "Oshawa" },
+      { "@type": "AdministrativeArea", "name": "Kitchener-Waterloo" }
+    ],
+    "description": "Expert same-day stove, range, and oven repair and installation services. We diagnose and fix heating elements, gas valves, igniters, electronic control boards, and glass cooktops."
+  }
+  </script>
+
+  <!-- JSON-LD FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why is my electric oven not heating up but the display works?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "This usually indicates a failed bake element (which will often show physical blisters or cracks) or a blown thermal fuse. It can also point to a faulty temperature sensor or control board relay. Our techs test each part to isolate the exact cause."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "My gas stove burner clicks but won't light, what should I do?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "First, make sure the burner cap is aligned properly and that there is no moisture or food debris clogging the igniter. If it's clean and still fails to spark or light, the spark igniter, switch, or gas valve may need replacement."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-lightbg text-secondary font-body min-h-screen flex flex-col">
+
+<?php 
+$base_url = '../';
+$current_page = 'stove';
+include '../header.php'; 
+?>
+
+    <!-- Mobile Nav Drawer -->
+    <div id="mobile-menu-drawer" class="hidden md:hidden bg-white border-t border-bordercolor shadow-lg transition-all duration-300">
+      <div class="px-4 py-4 space-y-3 flex flex-col">
+        <a href="../index.html" class="mobile-nav-link font-semibold text-secondary hover:text-accent py-2 px-2 rounded-lg cursor-pointer">Home</a>
+        <a href="../about.html" class="mobile-nav-link font-semibold text-secondary hover:text-accent py-2 px-2 rounded-lg cursor-pointer">About</a>
+        
+        <span class="font-bold text-xs uppercase tracking-wider text-slate-400 px-2">Services</span>
+        <div class="grid grid-cols-2 gap-2 bg-slate-50 p-2.5 rounded-lg border border-bordercolor">
+          <a href="fridge-repair.html" class="text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Fridge</a>
+          <a href="stove-repair.html" class="text-sm font-semibold py-1.5 text-accent cursor-pointer">Stove</a>
+          <a href="microwave-repair.html" class="text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Microwave</a>
+          <a href="washer-repair.html" class="text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Washer</a>
+          <a href="dryer-repair.html" class="text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Dryer</a>
+          <a href="dishwasher-repair.html" class="text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Dishwasher</a>
+        </div>
+
+        <span class="font-bold text-xs uppercase tracking-wider text-slate-400 px-2">Service Areas</span>
+        <div class="grid grid-cols-2 gap-2 bg-slate-50 p-2.5 rounded-lg border border-bordercolor">
+          <a href="../index.html#areas" class="mobile-nav-link text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Toronto & GTA</a>
+          <a href="../index.html#areas" class="mobile-nav-link text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Mississauga</a>
+          <a href="../index.html#areas" class="mobile-nav-link text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Hamilton</a>
+          <a href="../index.html#areas" class="mobile-nav-link text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Oshawa</a>
+          <a href="../index.html#areas" class="mobile-nav-link text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Kitchener-Waterloo</a>
+        </div>
+
+        <a href="../schedule.html" class="mobile-nav-link font-semibold text-secondary hover:text-accent py-2 px-2 rounded-lg cursor-pointer">Book Online</a>
+        <div class="pt-4 border-t border-bordercolor flex flex-col gap-2">
+          <a href="tel:9057178905" class="bg-primary text-white text-center font-bold py-3 rounded-lg flex justify-center items-center gap-2 cursor-pointer">
+            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+            Call: 905-717-8905
+          </a>
+          <a href="../schedule.html" class="bg-accent hover:bg-accent-hover text-white text-center font-bold py-3 rounded-lg cursor-pointer">
+            Schedule My Repair
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- BREADCRUMBS -->
+  <nav class="bg-white border-b border-bordercolor">
+    <div class="max-w-7xl mx-auto px-4 py-3 text-xs font-semibold flex items-center gap-2">
+      <a href="../index.html" class="text-secondary hover:text-accent transition-colors">Home</a>
+      <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      <span class="text-slate-400">Services</span>
+      <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      <span class="text-primary font-bold">Stove & Range Repair</span>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex-grow">
+    
+    <!-- SERVICE HERO -->
+    <section class="bg-primary text-white py-12 md:py-16 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 space-y-6">
+          <span class="text-accent text-sm md:text-base font-bold uppercase tracking-widest block">Stove Specialists</span>
+          <h1 class="text-3xl md:text-5xl font-heading font-bold text-white tracking-tight leading-tight">
+            Stove & Range <br><span class="text-accent">Repair Services</span>
+          </h1>
+          <p class="text-slate-300 text-base md:text-lg max-w-xl leading-relaxed">
+            Is your oven not heating up, cooktop burners sparking but failing to light, or uneven baking ruining meals? We repair gas ranges, induction glass cooktops, and wall-ovens safely and quickly.
+          </p>
+          <div class="space-y-3">
+            <div class="flex items-center gap-2.5 text-slate-200">
+              <svg class="w-4 h-4 text-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>Common heating elements, igniters, and safety valves in stock</span>
+            </div>
+            <div class="flex items-center gap-2.5 text-slate-200">
+              <svg class="w-4 h-4 text-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span>90-day warranty on labor & parts</span>
+            </div>
+          </div>
+          <div class="flex pt-4">
+            <a href="tel:9057178905" class="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-4 rounded-lg transition-all-300 text-center flex items-center justify-center gap-2 cursor-pointer shadow-md">
+              <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+              Call 905-717-8905
+            </a>
+          </div>
+        </div>
+
+        <!-- High-Converting Booking Form (Competitor Style) -->
+        <div class="lg:col-span-5 bg-white text-secondary rounded-2xl shadow-xl overflow-hidden border-t-4 border-accent">
+          <div class="p-6 bg-slate-900 text-white">
+            <h2 class="font-heading font-bold text-lg uppercase tracking-wide">Request Service Booking</h2>
+            <p class="text-xs text-slate-300 mt-1">Quick same-day response. Fill out your details below.</p>
+          </div>
+          <form class="p-6 space-y-4" onsubmit="event.preventDefault(); alert('In Phase 1, this form is UI-only. Submission logic will be completed in Phase 2.');">
+            <div>
+              <label for="name" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Full Name *</label>
+              <input type="text" id="name" required placeholder="Name" class="w-full px-4 py-2 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm">
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="appliance_type" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Appliance Type *</label>
+                <select id="appliance_type" required class="w-full px-4 py-2 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm text-secondary bg-white">
+                  <option value="">Appliance Type</option>
+                  <option value="Refrigerator">Refrigerator</option>
+                  <option value="Stove/Oven" selected>Stove / Oven</option>
+                  <option value="Microwave">Microwave</option>
+                  <option value="Washing Machine">Washing Machine</option>
+                  <option value="Dryer">Dryer</option>
+                  <option value="Dishwasher">Dishwasher</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              
+              <div class="flex flex-col justify-end pb-1.5">
+                <label class="inline-flex items-center cursor-pointer text-xs font-bold text-primary uppercase tracking-wide">
+                  <input type="checkbox" id="add-second-appliance" class="form-checkbox h-4.5 w-4.5 text-accent rounded border-slate-300 focus:ring-accent">
+                  <span class="ml-2 font-medium text-slate-600">Add 2nd Appliance</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Conditional Second Appliance Dropdown -->
+            <div id="second-appliance-container" class="hidden transition-all duration-300">
+              <label for="secondary_appliance" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Second Appliance Type</label>
+              <select id="secondary_appliance" class="w-full px-4 py-2 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm text-secondary bg-white">
+                <option value="">Second Appliance Type</option>
+                <option value="Refrigerator">Refrigerator</option>
+                <option value="Stove/Oven">Stove / Oven</option>
+                <option value="Microwave">Microwave</option>
+                <option value="Washing Machine">Washing Machine</option>
+                <option value="Dryer">Dryer</option>
+                <option value="Dishwasher">Dishwasher</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="appt_date" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Preferred Date *</label>
+                <input type="date" id="appt_date" required class="w-full px-4 py-2 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm text-secondary">
+              </div>
+              <div>
+                <label for="preferred_time" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Preferred Time *</label>
+                <select id="preferred_time" required class="w-full px-4 py-2 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm text-secondary bg-white">
+                  <option value="">Select Time</option>
+                  <option value="7am - 8am">7am - 8am</option>
+                  <option value="8am - 12pm">8am - 12pm</option>
+                  <option value="10am - 2pm">10am - 2pm</option>
+                  <option value="12pm - 2pm">12pm - 2pm</option>
+                  <option value="2pm - 5pm">2pm - 5pm</option>
+                  <option value="5pm - 8pm">5pm - 8pm</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="email" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Email Address *</label>
+                <input type="email" id="email" required placeholder="email@address.com" class="w-full px-4 py-2 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm">
+              </div>
+              <div>
+                <label for="phone" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Phone Number *</label>
+                <input type="tel" id="phone" required placeholder="905-717-8905" class="w-full px-4 py-2 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm">
+              </div>
+            </div>
+
+            <div>
+              <label for="street" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Street Address *</label>
+              <input type="text" id="street" required placeholder="Street Address" class="w-full px-4 py-2 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm">
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="city" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">City *</label>
+                <select id="city" required class="w-full px-4 py-2 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm text-secondary bg-white">
+                  <option value="">Select City</option>
+                  <option value="Toronto">Toronto & GTA</option>
+                  <option value="Mississauga">Mississauga</option>
+                  <option value="Hamilton">Hamilton</option>
+                  <option value="Oshawa">Oshawa</option>
+                  <option value="Kitchener-Waterloo">Kitchener-Waterloo</option>
+                </select>
+              </div>
+              <div>
+                <label for="postal" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Postal Code *</label>
+                <input type="text" id="postal" required placeholder="e.g. M5X 1A9" class="w-full px-4 py-2 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm">
+              </div>
+            </div>
+
+            <div>
+              <label for="issue" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Describe Problem *</label>
+              <textarea id="issue" rows="2" required placeholder="e.g. Bake element has visual cracks/blisters and oven won't heat, or gas cap clicked but won't ignite." class="w-full px-4 py-2 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm"></textarea>
+            </div>
+            
+            <button type="submit" class="w-full bg-accent hover:bg-accent-hover text-white font-bold py-3 rounded-lg transition-all-300 shadow-md cursor-pointer text-center">
+              Submit Request
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST PILLARS BAR -->
+    <section class="bg-white border-b border-bordercolor py-6">
+      <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="flex items-center justify-center gap-3">
+          <div class="p-2 bg-slate-100 rounded-lg text-accent">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+          </div>
+          <span class="text-sm font-bold text-primary">Licensed & Insured</span>
+        </div>
+        <div class="flex items-center justify-center gap-3">
+          <div class="p-2 bg-slate-100 rounded-lg text-accent">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          </div>
+          <span class="text-sm font-bold text-primary">Affordable Rates</span>
+        </div>
+        <div class="flex items-center justify-center gap-3">
+          <div class="p-2 bg-slate-100 rounded-lg text-accent">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          </div>
+          <span class="text-sm font-bold text-primary">Same-Day Repair</span>
+        </div>
+        <div class="flex items-center justify-center gap-3">
+          <div class="p-2 bg-slate-100 rounded-lg text-accent">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+          </div>
+          <span class="text-sm font-bold text-primary">Skilled Technicians</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT / PROBLEMS SECTION -->
+    <section class="py-16 max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <div class="lg:col-span-8 space-y-12">
+        <div class="space-y-4">
+          <h2 class="text-2xl font-heading font-bold text-primary">Gas & Electric Cooking Appliances Diagnostics</h2>
+          <p class="text-slate-600 leading-relaxed text-sm md:text-base">
+            Cooking ranges, wall ovens, and glass cooktops draw immense electrical currents or Gas lines. A failing safety valve, burnt element coil, or shorted electronic control panel calls for a licensed gas fitting or professional electrical diagnostic. Our local techs keep TSSA credentials and carry igniters, elements, and switches directly on the dispatch van.
+          </p>
+        </div>
+
+        <!-- Image -->
+        <div class="h-64 md:h-96 bg-slate-200 rounded-xl overflow-hidden flex items-center justify-center border border-bordercolor">
+          <img src="../img/oven-repair.avif" alt="Stove Oven Repair Details" class="object-cover w-full h-full">
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
+          <!-- Left: Symptoms -->
+          <div class="space-y-6">
+            <h3 class="text-xl font-heading font-bold text-primary">Common Stove Problems We Fix</h3>
+            <ul class="space-y-3.5">
+              <li class="flex items-start gap-2 text-sm text-slate-600">
+                <span class="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></span>
+                <span><strong>Oven Not Heating:</strong> Blown bake element or failing gas burner igniter clicking repeatedly.</span>
+              </li>
+              <li class="flex items-start gap-2 text-sm text-slate-600">
+                <span class="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></span>
+                <span><strong>Gas Burner Sparks but Won't Ignite:</strong> Spills clogging the burner cap slits, or a failing gas solenoid.</span>
+              </li>
+              <li class="flex items-start gap-2 text-sm text-slate-600">
+                <span class="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></span>
+                <span><strong>Uneven Baking Temperatures:</strong> Damaged temperature sensor bulb or failed control panel relay.</span>
+              </li>
+              <li class="flex items-start gap-2 text-sm text-slate-600">
+                <span class="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></span>
+                <span><strong>Touch Controls Dead:</strong> Control board fuses or relays blown from power grid surges.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right: Models We Repair -->
+          <div class="space-y-6">
+            <h3 class="text-xl font-heading font-bold text-primary">Stove Types We Service</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Our technicians carry credentials and tooling to service:
+            </p>
+            <ul class="space-y-2 text-sm text-slate-700 font-semibold">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+                Gas Ranges & Dual-Fuel Ovens (TSSA Certified)
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+                Smooth-Top Glass Induction Cooktops
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+                Built-in Double Wall Ovens
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+                Traditional Coil Electric Stoves
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- WHY CHOOSE US BENTO STYLE -->
+        <div class="space-y-6 pt-6">
+          <h3 class="text-xl font-heading font-bold text-primary text-center">Quality & Reliable Services at Reasonable Prices</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="p-6 bg-slate-900 text-white rounded-xl space-y-3">
+              <h4 class="font-heading font-bold text-lg text-accent">Time</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                We understand how valuable your time is. That's why we offer same-day appliance repair services. We arrive on time, respecting your schedule so you can return to normal routines.
+              </p>
+            </div>
+            <div class="p-6 bg-white border border-bordercolor rounded-xl space-y-3 shadow-sm">
+              <h4 class="font-heading font-bold text-lg text-primary">Quality</h4>
+              <p class="text-xs text-slate-500 leading-relaxed">
+                Our technicians bring factory certification and original parts. We aim to identify and solve the root cause of the malfunction by the end of the appointment.
+              </p>
+            </div>
+            <div class="p-6 bg-white border border-bordercolor rounded-xl space-y-3 shadow-sm">
+              <h4 class="font-heading font-bold text-lg text-primary">Price</h4>
+              <p class="text-xs text-slate-500 leading-relaxed">
+                We maintain complete transparency with flat-rate quotes presented upfront after diagnostic checks. No hidden charges or surprise hourly fees.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="lg:col-span-4 space-y-8">
+        <!-- GTA Areas Widget -->
+        <div class="bg-white border border-bordercolor rounded-xl p-6 shadow-sm space-y-4">
+          <h4 class="font-heading font-bold text-primary text-base border-b border-slate-100 pb-2">GTA Service Areas</h4>
+          <p class="text-xs text-slate-500 leading-relaxed">We dispatch local technicians across:</p>
+          <div class="grid grid-cols-2 gap-2 text-xs font-semibold text-secondary">
+            <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Toronto</span>
+            <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Mississauga</span>
+            <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Hamilton</span>
+            <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Oshawa</span>
+            <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Brampton</span>
+            <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Oakville</span>
+          </div>
+          <a href="../contact.html" class="block bg-primary text-white font-bold py-2.5 rounded-lg text-center text-xs hover:bg-primary/95 transition-colors cursor-pointer">
+            View All Cities
+          </a>
+        </div>
+
+        <!-- Brands Widget -->
+        <div class="bg-white border border-bordercolor rounded-xl p-6 shadow-sm space-y-4">
+          <h4 class="font-heading font-bold text-primary text-base border-b border-slate-100 pb-2">Brands We Repair</h4>
+          <p class="text-xs text-slate-500 leading-relaxed">Authorized service for:</p>
+          <div class="grid grid-cols-3 gap-3 text-center text-[10px] font-bold text-slate-400">
+            <span class="p-2 border border-slate-100 rounded">JennAir</span>
+            <span class="p-2 border border-slate-100 rounded">LG</span>
+            <span class="p-2 border border-slate-100 rounded">Samsung</span>
+            <span class="p-2 border border-slate-100 rounded">Whirlpool</span>
+            <span class="p-2 border border-slate-100 rounded">Bosch</span>
+            <span class="p-2 border border-slate-100 rounded">KitchenAid</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- FAQS ACCORDION -->
+    <section class="bg-slate-50 border-y border-bordercolor py-16">
+      <div class="max-w-4xl mx-auto px-4 space-y-8">
+        <h2 class="text-2xl font-heading font-bold text-primary text-center">Frequently Asked Questions</h2>
+        
+        <div class="space-y-4">
+          <!-- FAQ 1 -->
+          <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
+            <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
+              <span>Why is my electric oven not heating up but the display works?</span>
+              <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-500 leading-relaxed">
+              This usually indicates a failed bake element (which will often show physical blisters or cracks) or a blown thermal fuse. It can also point to a faulty temperature sensor or control board relay. Our techs test each part to isolate the exact cause.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
+            <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
+              <span>My gas stove burner clicks but won't light, what should I do?</span>
+              <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-500 leading-relaxed">
+              First, make sure the burner cap is aligned properly and that there is no moisture or food debris clogging the igniter. If it's clean and still fails to spark or light, the spark igniter, switch, or gas valve may need replacement.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="py-16 max-w-7xl mx-auto px-4 space-y-8">
+      <h2 class="text-2xl font-heading font-bold text-primary text-center">What Our Clients Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="p-6 border border-bordercolor bg-white rounded-xl space-y-4 shadow-sm">
+          <div class="flex items-center gap-1.5 text-amber-500">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+          </div>
+          <p class="text-sm text-slate-600 leading-relaxed italic">
+            "Our gas stove igniter was clicking but wouldn't light the burner. They sent a TSSA certified technician the same afternoon. He replaced the spark module cleanly. Upfront fee was exactly what I expected."
+          </p>
+          <div class="text-xs font-bold text-primary">
+            Jeremy F. — Gas Range Repair, Oshawa
+          </div>
+        </div>
+
+        <div class="p-6 border border-bordercolor bg-white rounded-xl space-y-4 shadow-sm">
+          <div class="flex items-center gap-1.5 text-amber-500">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+          </div>
+          <p class="text-sm text-slate-600 leading-relaxed italic">
+            "Bake element on my electric range split during baking. They had a matching replacement element in stock and did the installation in under 30 minutes. High quality and quick service."
+          </p>
+          <div class="text-xs font-bold text-primary">
+            Laura V. — Stove Repair, Hamilton
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-primary text-slate-400 text-xs py-12 border-t border-secondary/30 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="space-y-4">
+        <img src="../img/logo.png" alt="Appliance Repair Knights Logo" class="h-10 md:h-12 w-auto object-contain brightness-0 invert">
+        <p class="leading-relaxed">
+          Premium same-day appliance diagnostic and repairs. Servicing Greater Toronto Area, Hamilton, Oshawa, and Kitchener-Waterloo 24/7.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-heading font-bold text-sm text-white mb-4 uppercase tracking-wider">Services</h4>
+        <ul class="space-y-2">
+          <li><a href="fridge-repair.html" class="hover:text-accent">Fridge Repair & Installation</a></li>
+          <li><a href="stove-repair.html" class="hover:text-accent">Stove & Range Repair</a></li>
+          <li><a href="microwave-repair.html" class="hover:text-accent">Microwave Repair & Installation</a></li>
+          <li><a href="washer-repair.html" class="hover:text-accent">Washing Machine Diagnostic & Repair</a></li>
+          <li><a href="dryer-repair.html" class="hover:text-accent">Dryer Repair & Duct Cleaning</a></li>
+          <li><a href="dishwasher-repair.html" class="hover:text-accent">Dishwasher Inspection & Repair</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-heading font-bold text-sm text-white mb-4 uppercase tracking-wider">Service Areas</h4>
+        <ul class="space-y-2">
+          <li><a href="../index.html#areas" class="hover:text-accent">Toronto & GTA</a></li>
+          <li><a href="../index.html#areas" class="hover:text-accent">Mississauga</a></li>
+          <li><a href="../index.html#areas" class="hover:text-accent">Hamilton</a></li>
+          <li><a href="../index.html#areas" class="hover:text-accent">Oshawa</a></li>
+          <li><a href="../index.html#areas" class="hover:text-accent">Kitchener-Waterloo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-heading font-bold text-sm text-white mb-4 uppercase tracking-wider">Contact Us</h4>
+        <p class="leading-relaxed mb-2">info@appliancerepairknights.ca</p>
+        <p class="leading-relaxed font-bold text-white text-base">905-717-8905</p>
+        <p class="text-[10px] text-slate-500 mt-2">Open 24 hours, 7 days a week for emergencies.</p>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 mt-8 pt-8 border-t border-slate-800 text-center text-[10px] text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <span>&copy; 2026 Appliance Repair Knights. All rights reserved.</span>
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-accent">Privacy Policy</a>
+        <a href="#" class="hover:text-accent">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE FLOATING ACTION BAR -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-bordercolor shadow-lg md:hidden flex justify-between items-center px-4 py-2.5">
+    <a href="tel:9057178905" class="flex-1 bg-primary text-white text-center font-bold py-3 rounded-lg flex justify-center items-center gap-2 cursor-pointer mr-2">
+      <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+      Call Now
+    </a>
+    <a href="../schedule.html" class="flex-1 bg-accent text-white text-center font-bold py-3 rounded-lg cursor-pointer">
+      Book Online
+    </a>
+  </div>
+
+  <script>
+    // FAQ Toggle
+    function toggleFaq(button) {
+      const content = button.nextElementSibling;
+      const svg = button.querySelector('svg');
+      content.classList.toggle('hidden');
+      svg.classList.toggle('rotate-180');
+    }
+
+    // Mobile Hamburger
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const drawer = document.getElementById('mobile-menu-drawer');
+    const ham = document.getElementById('hamburger-icon');
+    const close = document.getElementById('close-icon');
+
+    menuBtn.addEventListener('click', () => {
+      drawer.classList.toggle('hidden');
+      ham.classList.toggle('hidden');
+      close.classList.toggle('hidden');
+    });
+
+    // Conditional Second Appliance field
+    const addSecondCheck = document.getElementById('add-second-appliance');
+    const secondApplianceContainer = document.getElementById('second-appliance-container');
+    addSecondCheck.addEventListener('change', function() {
+      if (this.checked) {
+        secondApplianceContainer.classList.remove('hidden');
+      } else {
+        secondApplianceContainer.classList.add('hidden');
+      }
+    });
+
+    // Min date block
+    const dateInput = document.getElementById('appt_date');
+    const today = new Date().toISOString().split('T')[0];
+    dateInput.min = today;
+  </script>
+</body>
+</html>

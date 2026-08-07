@@ -1,0 +1,75 @@
+<?php
+// Dynamic Head Variables with Fallbacks
+$base_url = isset($base_url) ? $base_url : '';
+$page_title = isset($page_title) ? $page_title : 'Same-Day Appliance Repair Toronto & GTA | Appliance Repair Knights';
+$page_description = isset($page_description) ? $page_description : 'Licensed & insured same-day appliance repair across Toronto, GTA, Hamilton, Kitchener-Waterloo & Oshawa. 24/7 refrigerator, washer, dryer, stove, dishwasher repair. Free service call with repair! Call 905-717-8905.';
+$page_keywords = isset($page_keywords) ? $page_keywords : 'appliance repair Toronto, same day appliance repair GTA, fridge repair Hamilton, washer repair Mississauga, dryer repair Brampton, dishwasher repair Oshawa, stove repair Kitchener, Appliance Repair Knights';
+$canonical_url = isset($canonical_url) ? $canonical_url : 'https://www.appliancerepairknights.ca/';
+$og_image = isset($og_image) ? $og_image : 'https://www.appliancerepairknights.ca/img/logo.png';
+$og_type = isset($og_type) ? $og_type : 'website';
+?>
+<!DOCTYPE html>
+<html lang="en-CA" class="scroll-smooth">
+
+<head>
+  <!-- 1. Technical Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#0F4C81">
+
+  <!-- 2. Primary On-Page SEO Meta Tags -->
+  <title><?php echo htmlspecialchars($page_title); ?></title>
+  <meta name="title" content="<?php echo htmlspecialchars($page_title); ?>">
+  <meta name="description" content="<?php echo htmlspecialchars($page_description); ?>">
+  <meta name="keywords" content="<?php echo htmlspecialchars($page_keywords); ?>">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="language" content="English">
+  <meta name="author" content="Appliance Repair Knights">
+  <link rel="canonical" href="<?php echo htmlspecialchars($canonical_url); ?>">
+
+  <!-- 3. Local SEO Geo Tags (Crucial for GTA Service Business) -->
+  <meta name="geo.region" content="CA-ON">
+  <meta name="geo.placename" content="Toronto">
+  <meta name="geo.position" content="43.6487;-79.3817">
+  <meta name="ICBM" content="43.6487, -79.3817">
+
+  <!-- 4. Complete Favicon & App Icons Set -->
+  <link rel="icon" type="image/x-icon" href="<?php echo $base_url; ?>img/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $base_url; ?>img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $base_url; ?>img/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $base_url; ?>img/apple-touch-icon.png">
+  <link rel="manifest" href="<?php echo $base_url; ?>img/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#0F4C81">
+
+  <!-- 5. Open Graph Meta Tags (Social Media & WhatsApp Preview) -->
+  <meta property="og:type" content="<?php echo htmlspecialchars($og_type); ?>">
+  <meta property="og:site_name" content="Appliance Repair Knights">
+  <meta property="og:url" content="<?php echo htmlspecialchars($canonical_url); ?>">
+  <meta property="og:title" content="<?php echo htmlspecialchars($page_title); ?>">
+  <meta property="og:description" content="<?php echo htmlspecialchars($page_description); ?>">
+  <meta property="og:image" content="<?php echo htmlspecialchars($og_image); ?>">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_CA">
+
+  <!-- Twitter Meta Tags -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="<?php echo htmlspecialchars($canonical_url); ?>">
+  <meta property="twitter:title" content="<?php echo htmlspecialchars($page_title); ?>">
+  <meta property="twitter:description" content="<?php echo htmlspecialchars($page_description); ?>">
+  <meta property="twitter:image" content="<?php echo htmlspecialchars($og_image); ?>">
+
+  <!-- 7. Performance & Resource Preloading (PageSpeed Optimizer) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Production Local Compiled Tailwind CSS (Fastest Load Speed) -->
+  <link rel="stylesheet" href="<?php echo $base_url; ?>css/tailwind.min.css">
+
+  <!-- Global Custom Stylesheet -->
+  <link rel="stylesheet" href="<?php echo $base_url; ?>css/style.css">
+</head>
