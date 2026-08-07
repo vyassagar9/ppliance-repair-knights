@@ -40,8 +40,9 @@ ErrorDocument 404 /404.php
   Redirect 301 /refrigerator-repair /services/refrigerator-repair
   Redirect 301 /service-page /services/stove-repair
 
-  # 3. Blog Post / Dynamic Pages Redirect (Redirecting old Wix posts to Homepage)
-  RewriteRule ^post/(.*)$ / [R=301,NC,L]
+  # Redirect /index or /index.php to Root Domain (/)
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index(\.php)?\ HTTP/ [NC]
+  RewriteRule ^index(\.php)?$ / [R=301,L]
 
   # -------------------------------------------------------------
   # CLEAN URL ENGINE
