@@ -142,33 +142,18 @@ include 'header.php';
               <span class="text-xs text-slate-500">Emergency support calls handled 24/7.</span>
             </div>
           </div>
+          <div class="flex items-start gap-4">
+            <div class="bg-accent/15 p-3 rounded-lg text-accent mt-1">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            </div>
+            <div>
+              <span class="text-xs uppercase tracking-wider text-slate-400 font-bold block">Headquarters Address (NAP)</span>
+              <strong class="text-sm font-bold text-primary block">100 King St W, Toronto, ON M5X 1A9</strong>
+              <span class="text-xs text-slate-500 block mt-0.5">(Proudly Serving Toronto &amp; the entire GTA)</span>
+            </div>
+          </div>
         </div>
 
-        <!-- Service Area Coverage with Local Phone Numbers -->
-        <div class="bg-slate-50 border border-bordercolor rounded-xl p-6 space-y-4 shadow-sm">
-          <h3 class="font-heading font-bold text-lg text-primary">Coverage & Local Dispatch</h3>
-          <p class="text-xs text-slate-500 leading-relaxed">
-            Call our localized dispatch lines for faster routing:
-          </p>
-          <ul class="space-y-3 text-xs text-slate-700 font-semibold">
-            <li class="flex items-center justify-between border-b border-slate-200 pb-2">
-              <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Toronto & GTA</span>
-              <a href="tel:9057178905" class="gtm-web-call text-accent font-bold hover:underline">905-717-8905</a>
-            </li>
-            <li class="flex items-center justify-between border-b border-slate-200 pb-2">
-              <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Hamilton Area</span>
-              <a href="tel:9057178905" class="gtm-web-call text-accent font-bold hover:underline">905-717-8905</a>
-            </li>
-            <li class="flex items-center justify-between border-b border-slate-200 pb-2">
-              <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Oshawa & Durham</span>
-              <a href="tel:9057178905" class="gtm-web-call text-accent font-bold hover:underline">905-717-8905</a>
-            </li>
-            <li class="flex items-center justify-between">
-              <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Kitchener-Waterloo</span>
-              <a href="tel:9057178905" class="gtm-web-call text-accent font-bold hover:underline">905-717-8905</a>
-            </li>
-          </ul>
-        </div>
       </div>
 
       <!-- Online Inquiry Form Right -->
@@ -176,6 +161,87 @@ include 'header.php';
         <?php include __DIR__ . '/forms/contact-form.php'; ?>
       </div>
 
+    </section>
+
+    <!-- GOOGLE MY BUSINESS MAP & LOCATION SECTION -->
+    <section class="py-16 bg-slate-900 text-white border-t border-bordercolor" id="google-map-section">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+          <span class="inline-flex items-center gap-2 bg-brandOrange/10 border border-brandOrange/30 text-brandOrange text-xs font-extrabold uppercase tracking-widest px-3.5 py-1 rounded-full">
+            📍 Local Headquarters & Verified GMB Listing
+          </span>
+          <h2 class="text-3xl font-heading font-extrabold text-white">
+            Find Us On <span class="text-brandOrange">Google Maps</span>
+          </h2>
+          <p class="text-slate-400 text-sm md:text-base">
+            Verified Service Area & Local Business NAP for Appliance Repair Knights Ltd.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          
+          <!-- Left: NAP Business Card -->
+          <div class="lg:col-span-5 bg-slate-950 text-white p-8 rounded-2xl shadow-xl flex flex-col justify-between border border-slate-800 space-y-6">
+            <div class="space-y-4">
+              <div class="flex items-center gap-3">
+                <img src="img/Appliance_Repair_Knights_Logo-white.avif" alt="Appliance Repair Knights Logo" class="h-12 w-auto object-contain">
+                <div>
+                  <h3 class="text-xl font-extrabold text-white">Appliance Repair Knights Ltd.</h3>
+                  <p class="text-xs text-amber-400 font-semibold">★ 5.0 Rated on Google Maps</p>
+                </div>
+              </div>
+
+              <hr class="border-slate-800">
+
+              <div class="space-y-3.5 text-xs sm:text-sm text-slate-300">
+                <div class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-brandOrange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                  <div>
+                    <strong class="text-white block">Service Address (GTA HQ):</strong>
+                    <span>100 King St W, Toronto, ON M5X 1A9</span>
+                    <span class="block text-slate-400 text-xs mt-0.5">(Proudly Serving Toronto &amp; the entire GTA)</span>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <svg class="w-5 h-5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                  <div>
+                    <strong class="text-white block">Dispatch Phone:</strong>
+                    <a href="tel:9057178905" class="gtm-web-call text-brandOrange font-bold text-base hover:underline">905-717-8905</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-brandOrange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                  <div>
+                    <strong class="text-white block">Operating Hours:</strong>
+                    <span>Open 7 Days a Week: 8:00 AM – 9:00 PM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059" target="_blank" rel="noopener noreferrer" class="w-full bg-brandOrange hover:bg-orange-600 text-white font-bold text-xs py-3 px-4 rounded-xl text-center flex items-center justify-center gap-2 transition-all shadow-md">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              View Listing on Google Maps
+            </a>
+          </div>
+
+          <!-- Right: Google Maps Embed Iframe -->
+          <div class="lg:col-span-7 bg-lightbg rounded-2xl overflow-hidden border border-bordercolor shadow-md min-h-[380px]">
+            <iframe 
+              title="Appliance Repair Knights Google Maps Location"
+              src="https://maps.google.com/maps?q=Appliance+Repair+Knights+Ltd.+100+King+St+W+Toronto+ON&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed" 
+              width="100%" 
+              height="100%" 
+              style="border:0; min-height: 380px;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+
+        </div>
+      </div>
     </section>
 
   </main>
