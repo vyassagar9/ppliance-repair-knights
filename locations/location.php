@@ -476,7 +476,7 @@ include __DIR__ . '/../head.php';
                   <a href="tel:9057178905" class="gtm-web-call text-lg font-bold text-brandOrange hover:underline">905-717-8905</a>
                 </div>
                 <a href="tel:9057178905" class="gtm-web-call bg-brandOrange text-white font-bold text-xs px-5 py-2.5 rounded-lg hover:bg-orange-600 transition-colors">
-                  Call Now
+                  Call for Fast Repair
                 </a>
               </div>
             </div>
@@ -521,7 +521,7 @@ include __DIR__ . '/../head.php';
                   <div>
                     <strong class="text-white block">Service Address (GTA HQ):</strong>
                     <span>100 King St W, Toronto, ON M5X 1A9</span>
-                    <span class="block text-slate-400 text-xs mt-0.5">(Serving <?php echo htmlspecialchars($loc['city_name']); ?>, <?php echo htmlspecialchars($loc['region']); ?> &amp; GTA)</span>
+                    <span class="block text-slate-400 text-xs mt-0.5">(Proudly Serving <?php echo htmlspecialchars($loc['city_name']); ?>, <?php echo htmlspecialchars($loc['region']); ?> &amp; the entire GTA)</span>
                   </div>
                 </div>
 

@@ -64,7 +64,7 @@ $currentAppliance = isset($defaultAppliance) ? $defaultAppliance : '';
 
     <button type="submit" class="quote-btn-submit gtm-web-btn-submit w-full bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold py-3.5 px-6 rounded-xl text-sm sm:text-base shadow-lg transition-all flex items-center justify-center gap-2 uppercase tracking-wider cursor-pointer mt-2">
       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-      <span>GET FREE QUOTE</span>
+      <span>Book Same-Day Repair</span>
     </button>
 
     <p class="text-[11px] text-center text-slate-400 mt-2">
