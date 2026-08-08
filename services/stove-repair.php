@@ -3,7 +3,7 @@ $base_url = '../';
 $page_title = 'Stove & Range Repair | Appliance Repair Knights';
 $page_description = 'Gas & electric stove, range, and induction oven repair. Certified technicians, genuine parts, same-day scheduling. Call 905-717-8905.';
 $page_keywords = 'stove repair, induction oven repair, gas range repair GTA';
-$canonical_url = 'https://www.appliancerepairknights.ca/services/stove-repair.php';
+$canonical_url = 'https://www.appliancerepairknights.com/services/stove-repair';
 include '../head.php';
 ?>
 
@@ -13,9 +13,9 @@ include '../head.php';
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Appliance Repair Knights",
-    "image": "https://www.appliancerepairknights.ca/images/logo.png",
-    "@id": "https://www.appliancerepairknights.ca/#localbusiness",
-    "url": "https://www.appliancerepairknights.ca/",
+    "image": "https://www.appliancerepairknights.com/images/logo.png",
+    "@id": "https://www.appliancerepairknights.com/#localbusiness",
+    "url": "https://www.appliancerepairknights.com/",
     "telephone": "905-717-8905",
     "priceRange": "$$",
     "address": {
@@ -39,7 +39,7 @@ include '../head.php';
       "@type": "LocalBusiness",
       "name": "Appliance Repair Knights",
       "telephone": "905-717-8905",
-      "url": "https://www.appliancerepairknights.ca/"
+      "url": "https://www.appliancerepairknights.com/"
     },
     "areaServed": [
       { "@type": "AdministrativeArea", "name": "Greater Toronto Area" },
@@ -114,7 +114,7 @@ include '../header.php';
 
         <a href="../schedule.php" class="mobile-nav-link font-semibold text-secondary hover:text-accent py-2 px-2 rounded-lg cursor-pointer">Book Online</a>
         <div class="pt-4 border-t border-bordercolor flex flex-col gap-2">
-          <a href="tel:9057178905" class="bg-primary text-white text-center font-bold py-3 rounded-lg flex justify-center items-center gap-2 cursor-pointer">
+          <a href="tel:9057178905" class="gtm-web-call bg-primary text-white text-center font-bold py-3 rounded-lg flex justify-center items-center gap-2 cursor-pointer">
             <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
             Call: 905-717-8905
           </a>
@@ -162,7 +162,7 @@ include '../header.php';
             </div>
           </div>
           <div class="flex pt-4">
-            <a href="tel:9057178905" class="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-4 rounded-lg transition-all-300 text-center flex items-center justify-center gap-2 cursor-pointer shadow-md">
+            <a href="tel:9057178905" class="gtm-web-call bg-accent hover:bg-accent-hover text-white font-bold px-8 py-4 rounded-lg transition-all-300 text-center flex items-center justify-center gap-2 cursor-pointer shadow-md">
               <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
               Call 905-717-8905
             </a>
@@ -411,7 +411,7 @@ include '../footer.php';
 
   <!-- MOBILE FLOATING ACTION BAR -->
   <div class="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-bordercolor shadow-lg md:hidden flex justify-between items-center px-4 py-2.5">
-    <a href="tel:9057178905" class="flex-1 bg-primary text-white text-center font-bold py-3 rounded-lg flex justify-center items-center gap-2 cursor-pointer mr-2">
+    <a href="tel:9057178905" class="gtm-web-call flex-1 bg-primary text-white text-center font-bold py-3 rounded-lg flex justify-center items-center gap-2 cursor-pointer mr-2">
       <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
       Call Now
     </a>

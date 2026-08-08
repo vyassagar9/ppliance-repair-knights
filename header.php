@@ -56,15 +56,37 @@ $current_page = isset($current_page) ? $current_page : '';
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
           </svg>
         </button>
-        <div class="absolute top-full left-0 w-60 bg-white border border-brandBorder shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
-          <a href="<?php echo $base_url; ?>index.php#service-areas" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Toronto &amp; GTA</a>
-          <a href="<?php echo $base_url; ?>locations/pickering-appliance-repair.php" class="block px-4 py-2 text-sm <?php echo ($current_page == 'pickering') ? 'text-brandOrange bg-slate-50 font-bold' : 'text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium'; ?>">Pickering Appliance Repair</a>
-          <a href="<?php echo $base_url; ?>index.php#service-areas" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Mississauga</a>
-          <a href="<?php echo $base_url; ?>index.php#service-areas" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Brampton</a>
-          <a href="<?php echo $base_url; ?>index.php#service-areas" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Hamilton</a>
-          <a href="<?php echo $base_url; ?>index.php#service-areas" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Kitchener-Waterloo</a>
-          <a href="<?php echo $base_url; ?>index.php#service-areas" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Oshawa &amp; Durham</a>
-          <a href="<?php echo $base_url; ?>index.php#service-areas" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Burlington &amp; Oakville</a>
+        <div class="absolute top-full left-0 w-64 bg-white border border-brandBorder shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2 max-h-[75vh] overflow-y-auto">
+          <a href="<?php echo $base_url; ?>index.php#service-areas" class="block px-4 py-2 text-xs font-bold uppercase tracking-wider text-brandOrange bg-slate-50 border-b border-slate-100">All Service Areas (GTA)</a>
+          
+          <!-- Top 7 Initial Locations -->
+          <a href="<?php echo $base_url; ?>locations/toronto-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Toronto Appliance Repair</a>
+          <a href="<?php echo $base_url; ?>locations/mississauga-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Mississauga Appliance Repair</a>
+          <a href="<?php echo $base_url; ?>locations/brampton-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Brampton Appliance Repair</a>
+          <a href="<?php echo $base_url; ?>locations/vaughan-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Vaughan Appliance Repair</a>
+          <a href="<?php echo $base_url; ?>locations/markham-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Markham Appliance Repair</a>
+          <a href="<?php echo $base_url; ?>locations/oakville-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Oakville Appliance Repair</a>
+          <a href="<?php echo $base_url; ?>locations/scarborough-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Scarborough Appliance Repair</a>
+
+          <!-- Toggle Button for Remaining Locations -->
+          <button type="button" id="header-more-loc-btn" onclick="toggleHeaderLocations()" class="w-full text-left px-4 py-2 text-xs font-bold text-brandOrange hover:bg-slate-50 transition-colors flex items-center justify-between border-t border-slate-100 mt-1">
+            <span>+ More Locations...</span>
+            <svg id="header-more-loc-icon" class="w-3.5 h-3.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+
+          <!-- Hidden Remaining Locations -->
+          <div id="header-more-loc-list" class="hidden border-t border-slate-100 bg-slate-50/50">
+            <a href="<?php echo $base_url; ?>locations/richmond-hill-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Richmond Hill Repair</a>
+            <a href="<?php echo $base_url; ?>locations/burlington-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Burlington Appliance Repair</a>
+            <a href="<?php echo $base_url; ?>locations/hamilton-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Hamilton Appliance Repair</a>
+            <a href="<?php echo $base_url; ?>locations/kitchener-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Kitchener Appliance Repair</a>
+            <a href="<?php echo $base_url; ?>locations/waterloo-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Waterloo Appliance Repair</a>
+            <a href="<?php echo $base_url; ?>locations/cambridge-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Cambridge Appliance Repair</a>
+            <a href="<?php echo $base_url; ?>locations/guelph-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Guelph Appliance Repair</a>
+            <a href="<?php echo $base_url; ?>locations/pickering-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Pickering Appliance Repair</a>
+            <a href="<?php echo $base_url; ?>locations/caledon-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Caledon Appliance Repair</a>
+            <a href="<?php echo $base_url; ?>locations/oshawa-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Oshawa Appliance Repair</a>
+          </div>
         </div>
       </div>
 
@@ -111,11 +133,33 @@ $current_page = isset($current_page) ? $current_page : '';
 
     <div class="pl-2 space-y-1.5 border-l-2 border-brandBlue/30 my-2">
       <span class="text-xs uppercase text-slate-400 font-bold tracking-wider">Service Areas</span>
-      <a href="<?php echo $base_url; ?>index.php#service-areas" class="block text-sm text-slate-700 hover:text-brandOrange">Toronto &amp; GTA</a>
-      <a href="<?php echo $base_url; ?>locations/pickering-appliance-repair.php" class="block text-sm text-slate-700 hover:text-brandOrange">Pickering Appliance Repair</a>
-      <a href="<?php echo $base_url; ?>index.php#service-areas" class="block text-sm text-slate-700 hover:text-brandOrange">Mississauga &amp; Brampton</a>
-      <a href="<?php echo $base_url; ?>index.php#service-areas" class="block text-sm text-slate-700 hover:text-brandOrange">Hamilton &amp; Burlington</a>
-      <a href="<?php echo $base_url; ?>index.php#service-areas" class="block text-sm text-slate-700 hover:text-brandOrange">Kitchener-Waterloo</a>
+      <a href="<?php echo $base_url; ?>index.php#service-areas" class="block text-sm font-bold text-brandOrange">Toronto &amp; GTA Overview</a>
+      
+      <!-- Top 7 Mobile Locations -->
+      <a href="<?php echo $base_url; ?>locations/toronto-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Toronto</a>
+      <a href="<?php echo $base_url; ?>locations/mississauga-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Mississauga</a>
+      <a href="<?php echo $base_url; ?>locations/brampton-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Brampton</a>
+      <a href="<?php echo $base_url; ?>locations/vaughan-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Vaughan</a>
+      <a href="<?php echo $base_url; ?>locations/markham-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Markham</a>
+      <a href="<?php echo $base_url; ?>locations/oakville-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Oakville</a>
+      <a href="<?php echo $base_url; ?>locations/scarborough-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Scarborough</a>
+
+      <button type="button" id="mobile-more-loc-btn" onclick="toggleMobileLocations()" class="text-xs font-bold text-brandOrange hover:underline pt-1 flex items-center gap-1">
+        <span>+ More Locations...</span>
+      </button>
+
+      <div id="mobile-more-loc-list" class="hidden space-y-1.5 pt-1 border-t border-slate-100">
+        <a href="<?php echo $base_url; ?>locations/richmond-hill-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Richmond Hill</a>
+        <a href="<?php echo $base_url; ?>locations/burlington-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Burlington</a>
+        <a href="<?php echo $base_url; ?>locations/hamilton-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Hamilton</a>
+        <a href="<?php echo $base_url; ?>locations/kitchener-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Kitchener</a>
+        <a href="<?php echo $base_url; ?>locations/waterloo-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Waterloo</a>
+        <a href="<?php echo $base_url; ?>locations/cambridge-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Cambridge</a>
+        <a href="<?php echo $base_url; ?>locations/guelph-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Guelph</a>
+        <a href="<?php echo $base_url; ?>locations/pickering-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Pickering</a>
+        <a href="<?php echo $base_url; ?>locations/caledon-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Caledon</a>
+        <a href="<?php echo $base_url; ?>locations/oshawa-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Oshawa</a>
+      </div>
     </div>
 
     <a href="<?php echo $base_url; ?>about.php" class="block font-medium text-slate-700 hover:text-brandOrange">About Us</a>

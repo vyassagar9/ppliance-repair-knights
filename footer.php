@@ -44,13 +44,31 @@ $base_url = isset($base_url) ? $base_url : '';
         <!-- Col 4: Service Areas -->
         <div>
           <h4 class="font-heading font-bold text-white uppercase tracking-wider text-xs mb-3">SERVICE AREAS</h4>
-          <ul class="space-y-2 text-slate-400">
-            <li><a href="<?php echo $base_url; ?>index.php#service-areas" class="hover:text-white transition-colors">Toronto &amp; GTA</a></li>
-            <li><a href="<?php echo $base_url; ?>locations/pickering-appliance-repair.php" class="hover:text-white transition-colors">Pickering Appliance Repair</a></li>
-            <li><a href="<?php echo $base_url; ?>index.php#service-areas" class="hover:text-white transition-colors">Mississauga &amp; Brampton</a></li>
-            <li><a href="<?php echo $base_url; ?>index.php#service-areas" class="hover:text-white transition-colors">Hamilton &amp; Burlington</a></li>
-            <li><a href="<?php echo $base_url; ?>index.php#service-areas" class="hover:text-white transition-colors">Kitchener-Waterloo</a></li>
-            <li><a href="<?php echo $base_url; ?>index.php#service-areas" class="hover:text-white transition-colors">Oshawa &amp; Durham Region</a></li>
+          <ul class="space-y-1.5 text-slate-400 text-xs">
+            <li><a href="<?php echo $base_url; ?>locations/toronto-appliance-repair" class="hover:text-white transition-colors">Toronto Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>locations/mississauga-appliance-repair" class="hover:text-white transition-colors">Mississauga Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>locations/brampton-appliance-repair" class="hover:text-white transition-colors">Brampton Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>locations/vaughan-appliance-repair" class="hover:text-white transition-colors">Vaughan Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>locations/markham-appliance-repair" class="hover:text-white transition-colors">Markham Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>locations/oakville-appliance-repair" class="hover:text-white transition-colors">Oakville Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>locations/scarborough-appliance-repair" class="hover:text-white transition-colors">Scarborough Repair</a></li>
+          </ul>
+
+          <button type="button" id="footer-more-loc-btn" onclick="toggleFooterLocations()" class="text-xs font-bold text-brandOrange hover:text-white transition-colors mt-2 flex items-center gap-1 focus:outline-none">
+            <span id="footer-more-loc-text">+ More Locations...</span>
+          </button>
+
+          <ul id="footer-more-loc-list" class="hidden space-y-1.5 mt-2 border-t border-slate-800 pt-2 text-slate-400 text-xs">
+            <li><a href="<?php echo $base_url; ?>locations/richmond-hill-appliance-repair" class="hover:text-white transition-colors">Richmond Hill Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>locations/burlington-appliance-repair" class="hover:text-white transition-colors">Burlington Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>locations/hamilton-appliance-repair" class="hover:text-white transition-colors">Hamilton Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>locations/kitchener-appliance-repair" class="hover:text-white transition-colors">Kitchener Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>locations/waterloo-appliance-repair" class="hover:text-white transition-colors">Waterloo Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>locations/cambridge-appliance-repair" class="hover:text-white transition-colors">Cambridge Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>locations/guelph-appliance-repair" class="hover:text-white transition-colors">Guelph Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>locations/pickering-appliance-repair" class="hover:text-white transition-colors">Pickering Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>locations/caledon-appliance-repair" class="hover:text-white transition-colors">Caledon Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>locations/oshawa-appliance-repair" class="hover:text-white transition-colors">Oshawa Repair</a></li>
           </ul>
         </div>
 
@@ -62,7 +80,7 @@ $base_url = isset($base_url) ? $base_url : '';
               <svg class="w-4 h-4 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
               </svg>
-              <a href="tel:9057178905" class="text-white font-bold hover:text-brandOrange">905-717-8905</a>
+              <a href="tel:9057178905" class="gtm-web-call text-white font-bold hover:text-brandOrange">905-717-8905</a>
             </li>
             <li class="flex items-center gap-2">
               <svg class="w-4 h-4 text-brandOrange flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -190,6 +208,51 @@ $base_url = isset($base_url) ? $base_url : '';
         } else {
           content.classList.add('hidden');
           icon.innerText = '+';
+        }
+      }
+    }
+
+    function toggleHeaderLocations() {
+      const list = document.getElementById('header-more-loc-list');
+      const btn = document.getElementById('header-more-loc-btn');
+      const icon = document.getElementById('header-more-loc-icon');
+      if (list && btn) {
+        if (list.classList.contains('hidden')) {
+          list.classList.remove('hidden');
+          btn.querySelector('span').innerText = '− Less Locations';
+          if (icon) icon.classList.add('rotate-180');
+        } else {
+          list.classList.add('hidden');
+          btn.querySelector('span').innerText = '+ More Locations...';
+          if (icon) icon.classList.remove('rotate-180');
+        }
+      }
+    }
+
+    function toggleMobileLocations() {
+      const list = document.getElementById('mobile-more-loc-list');
+      const btn = document.getElementById('mobile-more-loc-btn');
+      if (list && btn) {
+        if (list.classList.contains('hidden')) {
+          list.classList.remove('hidden');
+          btn.querySelector('span').innerText = '− Less Locations';
+        } else {
+          list.classList.add('hidden');
+          btn.querySelector('span').innerText = '+ More Locations...';
+        }
+      }
+    }
+
+    function toggleFooterLocations() {
+      const list = document.getElementById('footer-more-loc-list');
+      const text = document.getElementById('footer-more-loc-text');
+      if (list && text) {
+        if (list.classList.contains('hidden')) {
+          list.classList.remove('hidden');
+          text.innerText = '− Less Locations';
+        } else {
+          list.classList.add('hidden');
+          text.innerText = '+ More Locations...';
         }
       }
     }

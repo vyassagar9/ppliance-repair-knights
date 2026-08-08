@@ -67,7 +67,7 @@ $current_page = 'disclaimer';
 
       <div class="prose prose-slate max-w-none text-sm leading-relaxed space-y-6 text-slate-600">
         <p>
-          The information provided on <strong>Appliance Repair Knights</strong> (appliancerepairknights.ca) is for general information and service booking purposes only.
+          The information provided on <strong>Appliance Repair Knights</strong> (appliancerepairknights.com) is for general information and service booking purposes only.
         </p>
 
         <h2 class="text-lg font-heading font-bold text-brandDarkBlue">1. Out-of-Warranty Repair Notice</h2>

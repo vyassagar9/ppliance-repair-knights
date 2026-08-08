@@ -4,8 +4,8 @@ $base_url = isset($base_url) ? $base_url : '';
 $page_title = isset($page_title) ? $page_title : 'Same-Day Appliance Repair Toronto & GTA | Appliance Repair Knights';
 $page_description = isset($page_description) ? $page_description : 'Licensed & insured same-day appliance repair across Toronto, GTA, Hamilton, Kitchener-Waterloo & Oshawa. 24/7 refrigerator, washer, dryer, stove, dishwasher repair. Free service call with repair! Call 905-717-8905.';
 $page_keywords = isset($page_keywords) ? $page_keywords : 'appliance repair Toronto, same day appliance repair GTA, fridge repair Hamilton, washer repair Mississauga, dryer repair Brampton, dishwasher repair Oshawa, stove repair Kitchener, Appliance Repair Knights';
-$canonical_url = isset($canonical_url) ? $canonical_url : 'https://www.appliancerepairknights.ca/';
-$og_image = isset($og_image) ? $og_image : 'https://www.appliancerepairknights.ca/img/logo.png';
+$canonical_url = isset($canonical_url) ? $canonical_url : 'https://www.appliancerepairknights.com/';
+$og_image = isset($og_image) ? $og_image : 'https://www.appliancerepairknights.com/img/logo.png';
 $og_type = isset($og_type) ? $og_type : 'website';
 ?>
 <!DOCTYPE html>

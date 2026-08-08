@@ -8,4 +8,4 @@ Disallow: /forms/
 Disallow: /html_backup/
 
 # Sitemap Location
-Sitemap: https://www.appliancerepairknights.ca/sitemap.xml
+Sitemap: https://www.appliancerepairknights.com/sitemap.xml

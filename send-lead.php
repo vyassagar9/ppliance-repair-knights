@@ -120,8 +120,8 @@ $subject  = "⚡ NEW LEAD: " . ($appliance ?: 'Appliance') . " Repair - " . $nam
 
 $headers  = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-$headers .= "From: Appliance Repair Knights <no-reply@appliancerepairknights.ca>" . "\r\n";
-$headers .= "Reply-To: " . ($email ?: "no-reply@appliancerepairknights.ca") . "\r\n";
+$headers .= "From: Appliance Repair Knights <no-reply@appliancerepairknights.com>" . "\r\n";
+$headers .= "Reply-To: " . ($email ?: "no-reply@appliancerepairknights.com") . "\r\n";
 $headers .= "Cc: " . $cc . "\r\n";
 
 $messageBlock = '';

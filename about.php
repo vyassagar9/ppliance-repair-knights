@@ -3,7 +3,7 @@ $base_url = './';
 $page_title = 'About Appliance Repair Knights | Trusted Local Technicians';
 $page_description = 'Learn about Appliance Repair Knights. Over 10+ years serving GTA with certified technicians, upfront pricing, and 100% satisfaction guarantee.';
 $page_keywords = 'about appliance repair knights, appliance repair technicians GTA';
-$canonical_url = 'https://www.appliancerepairknights.ca/about.php';
+$canonical_url = 'https://www.appliancerepairknights.com/about';
 include 'head.php';
 ?>
 
@@ -13,9 +13,9 @@ include 'head.php';
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Appliance Repair Knights",
-    "image": "https://www.appliancerepairknights.ca/img/logo.png",
-    "@id": "https://www.appliancerepairknights.ca/#localbusiness",
-    "url": "https://www.appliancerepairknights.ca/",
+    "image": "https://www.appliancerepairknights.com/img/logo.png",
+    "@id": "https://www.appliancerepairknights.com/#localbusiness",
+    "url": "https://www.appliancerepairknights.com/",
     "telephone": "905-717-8905",
     "priceRange": "$$",
     "address": {
@@ -66,7 +66,7 @@ include 'header.php';
 
         <a href="schedule.php" class="mobile-nav-link font-semibold text-secondary hover:text-accent py-2 px-2 rounded-lg cursor-pointer">Book Online</a>
         <div class="pt-4 border-t border-bordercolor flex flex-col gap-2">
-          <a href="tel:9057178905" class="bg-primary text-white text-center font-bold py-3 rounded-lg flex justify-center items-center gap-2 cursor-pointer">
+          <a href="tel:9057178905" class="gtm-web-call bg-primary text-white text-center font-bold py-3 rounded-lg flex justify-center items-center gap-2 cursor-pointer">
             <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
             Call: 905-717-8905
           </a>

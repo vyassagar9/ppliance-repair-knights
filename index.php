@@ -3,7 +3,7 @@ $base_url = './';
 $page_title = '#1 Appliance Repair Service in GTA & Surrounding Areas | 24/7';
 $page_description = 'Fast, same-day appliance repair across GTA, Kitchener-Waterloo & Hamilton. Certified technicians, transparent pricing & warranty. Call 905-717-8905!';
 $page_keywords = 'appliance repair near me, appliance repair GTA, emergency appliance repair';
-$canonical_url = 'https://www.appliancerepairknights.ca/';
+$canonical_url = 'https://www.appliancerepairknights.com/';
 include 'head.php';
 ?>
 
@@ -14,11 +14,11 @@ include 'head.php';
     "@graph": [
       {
         "@type": "LocalBusiness",
-        "@id": "https://www.appliancerepairknights.ca/#organization",
+        "@id": "https://www.appliancerepairknights.com/#organization",
         "name": "Appliance Repair Knights",
-        "url": "https://www.appliancerepairknights.ca/",
-        "logo": "https://www.appliancerepairknights.ca/img/logo.png",
-        "image": "https://www.appliancerepairknights.ca/img/bnr.png",
+        "url": "https://www.appliancerepairknights.com/",
+        "logo": "https://www.appliancerepairknights.com/img/logo.png",
+        "image": "https://www.appliancerepairknights.com/img/bnr.png",
         "telephone": "905-717-8905",
         "email": "info@appliancerepairknights.com",
         "priceRange": "$$",
@@ -59,7 +59,7 @@ include 'head.php';
       {
         "@type": "Service",
         "name": "Same-Day Appliance Repair",
-        "provider": {"@id": "https://www.appliancerepairknights.ca/#organization"},
+        "provider": {"@id": "https://www.appliancerepairknights.com/#organization"},
         "areaServed": "Greater Toronto Area & Southern Ontario",
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
@@ -177,7 +177,7 @@ include 'head.php';
                 BOOK REPAIR
               </a>
               <a href="tel:9057178905"
-                class="bg-brandDarkBlue hover:bg-brandNavy text-white font-extrabold px-6 py-3.5 rounded-xl text-sm sm:text-base transition-all shadow-md flex items-center gap-2 uppercase tracking-wide">
+                class="gtm-web-call bg-brandDarkBlue hover:bg-brandNavy text-white font-extrabold px-6 py-3.5 rounded-xl text-sm sm:text-base transition-all shadow-md flex items-center gap-2 uppercase tracking-wide">
                 <svg class="w-4 h-4 text-brandOrange" fill="currentColor" viewBox="0 0 20 20">
                   <path
                     d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
@@ -995,7 +995,7 @@ include 'head.php';
 
             <div class="relative z-10 flex items-center justify-between pt-4 border-t border-white/10">
               <span class="text-xs text-brandOrange font-bold">● Active Technicians Nearby</span>
-              <a href="tel:9057178905" </a>
+              <a href="tel:9057178905" </a class="gtm-web-call">
             </div>
           </div>
 

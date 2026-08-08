@@ -87,7 +87,7 @@ $current_page = 'terms';
 
         <h2 class="text-lg font-heading font-bold text-brandDarkBlue">4. Contact Information</h2>
         <p>
-          For inquiries regarding these Terms &amp; Conditions, please call <a href="tel:9057178905" class="text-brandOrange font-bold hover:underline">905-717-8905</a> or email info@appliancerepairknights.com.
+          For inquiries regarding these Terms &amp; Conditions, please call <a href="tel:9057178905" class="gtm-web-call text-brandOrange font-bold hover:underline">905-717-8905</a> or email info@appliancerepairknights.com.
         </p>
       </div>
 

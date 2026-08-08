@@ -3,7 +3,7 @@ $base_url = './';
 $page_title = 'Schedule Appliance Repair Online | Appliance Repair Knights';
 $page_description = 'Book your appliance repair appointment online in under 60 seconds. Choose your date & time slot. 24/7 fast service across GTA. Book now!';
 $page_keywords = 'book appliance repair online, schedule repair service';
-$canonical_url = 'https://www.appliancerepairknights.ca/schedule.php';
+$canonical_url = 'https://www.appliancerepairknights.com/schedule';
 include 'head.php';
 ?>
 
@@ -13,9 +13,9 @@ include 'head.php';
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Appliance Repair Knights",
-    "image": "https://www.appliancerepairknights.ca/img/logo.png",
-    "@id": "https://www.appliancerepairknights.ca/#localbusiness",
-    "url": "https://www.appliancerepairknights.ca/",
+    "image": "https://www.appliancerepairknights.com/img/logo.png",
+    "@id": "https://www.appliancerepairknights.com/#localbusiness",
+    "url": "https://www.appliancerepairknights.com/",
     "telephone": "905-717-8905",
     "priceRange": "$$",
     "address": {
@@ -66,7 +66,7 @@ include 'header.php';
 
         <a href="schedule.php" class="mobile-nav-link font-semibold text-secondary hover:text-accent py-2 px-2 rounded-lg cursor-pointer">Book Online</a>
         <div class="pt-4 border-t border-bordercolor flex flex-col gap-2">
-          <a href="tel:9057178905" class="bg-primary text-white text-center font-bold py-3 rounded-lg flex justify-center items-center gap-2 cursor-pointer">
+          <a href="tel:9057178905" class="gtm-web-call bg-primary text-white text-center font-bold py-3 rounded-lg flex justify-center items-center gap-2 cursor-pointer">
             <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
             Call: 905-717-8905
           </a>
@@ -256,7 +256,7 @@ include 'header.php';
           <p class="text-xs text-slate-300 leading-relaxed">
             Our dispatch line is open around the clock for immediate assistance.
           </p>
-          <a href="tel:9057178905" class="text-2xl font-heading font-extrabold text-white hover:text-accent transition-colors block">
+          <a href="tel:9057178905" class="gtm-web-call text-2xl font-heading font-extrabold text-white hover:text-accent transition-colors block">
             905-717-8905
           </a>
         </div>
@@ -360,7 +360,7 @@ include 'footer.php';
               </div>
               <h3 class="text-xl font-heading font-bold text-emerald-900">Repair Appointment Requested!</h3>
               <p class="text-xs text-emerald-800">Thank you, <strong>${fname}</strong>! A dispatcher will call <strong>${phone}</strong> within 15 minutes to confirm your technician visit on ${date}.</p>
-              <a href="tel:9057178905" class="inline-block bg-brandDarkBlue text-white text-xs font-bold py-2 px-4 rounded-lg mt-2">Call Dispatch: 905-717-8905</a>
+              <a href="tel:9057178905" class="gtm-web-call inline-block bg-brandDarkBlue text-white text-xs font-bold py-2 px-4 rounded-lg mt-2">Call Dispatch: 905-717-8905</a>
             </div>
           `;
         } else {
@@ -383,7 +383,7 @@ include 'footer.php';
 
   <!-- Floating Mobile Action Bar -->
   <div class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 border-t border-bordercolor backdrop-blur-md px-4 py-3 flex gap-3 shadow-lg md:hidden">
-    <a href="tel:9057178905" class="flex-1 bg-primary text-white text-center font-bold py-3.5 rounded-xl flex items-center justify-center gap-2 hover:bg-secondary transition-colors w-full">
+    <a href="tel:9057178905" class="gtm-web-call flex-1 bg-primary text-white text-center font-bold py-3.5 rounded-xl flex items-center justify-center gap-2 hover:bg-secondary transition-colors w-full">
       <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
       Call Dispatch Directly
     </a>

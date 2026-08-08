@@ -3,7 +3,7 @@ $base_url = './';
 $page_title = 'Contact Us | Appliance Repair Knights';
 $page_description = 'Need urgent appliance repair? Contact Appliance Repair Knights at 905-717-8905. Available 24/7 across GTA, Kitchener, Hamilton & Oshawa.';
 $page_keywords = 'appliance repair knights contact, appliance repair phone number';
-$canonical_url = 'https://www.appliancerepairknights.ca/contact.php';
+$canonical_url = 'https://www.appliancerepairknights.com/contact';
 include 'head.php';
 ?>
 
@@ -13,9 +13,9 @@ include 'head.php';
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Appliance Repair Knights",
-    "image": "https://www.appliancerepairknights.ca/img/logo.png",
-    "@id": "https://www.appliancerepairknights.ca/#localbusiness",
-    "url": "https://www.appliancerepairknights.ca/",
+    "image": "https://www.appliancerepairknights.com/img/logo.png",
+    "@id": "https://www.appliancerepairknights.com/#localbusiness",
+    "url": "https://www.appliancerepairknights.com/",
     "telephone": "905-717-8905",
     "priceRange": "$$",
     "address": {
@@ -66,7 +66,7 @@ include 'header.php';
 
         <a href="schedule.php" class="mobile-nav-link font-semibold text-secondary hover:text-accent py-2 px-2 rounded-lg cursor-pointer">Book Online</a>
         <div class="pt-4 border-t border-bordercolor flex flex-col gap-2">
-          <a href="tel:9057178905" class="bg-primary text-white text-center font-bold py-3 rounded-lg flex justify-center items-center gap-2 cursor-pointer">
+          <a href="tel:9057178905" class="gtm-web-call bg-primary text-white text-center font-bold py-3 rounded-lg flex justify-center items-center gap-2 cursor-pointer">
             <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
             Call: 905-717-8905
           </a>
@@ -117,7 +117,7 @@ include 'header.php';
             </div>
             <div>
               <span class="text-xs uppercase tracking-wider text-slate-400 font-bold block">Phone Dispatch</span>
-              <a href="tel:9057178905" class="text-xl font-bold text-primary hover:text-accent transition-colors">905-717-8905</a>
+              <a href="tel:9057178905" class="gtm-web-call text-xl font-bold text-primary hover:text-accent transition-colors">905-717-8905</a>
               <span class="text-xs text-slate-500 block mt-1">Lines open 24/7 for emergency bookings.</span>
             </div>
           </div>
@@ -128,7 +128,7 @@ include 'header.php';
             </div>
             <div>
               <span class="text-xs uppercase tracking-wider text-slate-400 font-bold block">Email Inquiry</span>
-              <span class="text-sm font-semibold text-secondary">info@appliancerepairknights.ca</span>
+              <span class="text-sm font-semibold text-secondary">info@appliancerepairknights.com</span>
             </div>
           </div>
 
@@ -153,19 +153,19 @@ include 'header.php';
           <ul class="space-y-3 text-xs text-slate-700 font-semibold">
             <li class="flex items-center justify-between border-b border-slate-200 pb-2">
               <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Toronto & GTA</span>
-              <a href="tel:9057178905" class="text-accent font-bold hover:underline">905-717-8905</a>
+              <a href="tel:9057178905" class="gtm-web-call text-accent font-bold hover:underline">905-717-8905</a>
             </li>
             <li class="flex items-center justify-between border-b border-slate-200 pb-2">
               <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Hamilton Area</span>
-              <a href="tel:9057178905" class="text-accent font-bold hover:underline">905-717-8905</a>
+              <a href="tel:9057178905" class="gtm-web-call text-accent font-bold hover:underline">905-717-8905</a>
             </li>
             <li class="flex items-center justify-between border-b border-slate-200 pb-2">
               <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Oshawa & Durham</span>
-              <a href="tel:9057178905" class="text-accent font-bold hover:underline">905-717-8905</a>
+              <a href="tel:9057178905" class="gtm-web-call text-accent font-bold hover:underline">905-717-8905</a>
             </li>
             <li class="flex items-center justify-between">
               <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Kitchener-Waterloo</span>
-              <a href="tel:9057178905" class="text-accent font-bold hover:underline">905-717-8905</a>
+              <a href="tel:9057178905" class="gtm-web-call text-accent font-bold hover:underline">905-717-8905</a>
             </li>
           </ul>
         </div>

@@ -81,7 +81,7 @@ $currentAppliance = isset($defaultAppliance) ? $defaultAppliance : '';
     <p class="text-xs text-emerald-800">
       Thank you! A local technician will contact <strong class="display-user-phone">your phone</strong> within <strong>15 minutes</strong>.
     </p>
-    <a href="tel:9057178905" class="inline-block bg-brandDarkBlue text-white text-xs font-bold py-2 px-4 rounded-lg mt-2">Call Dispatch Directly: 905-717-8905</a>
+    <a href="tel:9057178905" class="gtm-web-call inline-block bg-brandDarkBlue text-white text-xs font-bold py-2 px-4 rounded-lg mt-2">Call Dispatch Directly: 905-717-8905</a>
   </div>
 </div>
 

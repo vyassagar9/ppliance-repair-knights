@@ -3,7 +3,7 @@ $base_url = './';
 $page_title = 'Privacy Policy & Service Warranty | Appliance Repair Knights';
 $page_description = 'Read our privacy policy and service warranty terms. 90-day parts and labor warranty on all appliance repair jobs across GTA.';
 $page_keywords = 'appliance repair knights warranty, privacy policy';
-$canonical_url = 'https://www.appliancerepairknights.ca/privacy-policy.php';
+$canonical_url = 'https://www.appliancerepairknights.com/privacy-policy';
 include 'head.php';
 ?>
 
@@ -33,7 +33,7 @@ include 'header.php';
 
       <div class="prose prose-slate max-w-none text-sm leading-relaxed space-y-6 text-slate-600">
         <p>
-          At <strong>Appliance Repair Knights</strong>, accessible from appliancerepairknights.ca, your privacy is one of our main priorities. This Privacy Policy document outlines the types of information collected and recorded by Appliance Repair Knights and how we use it.
+          At <strong>Appliance Repair Knights</strong>, accessible from appliancerepairknights.com, your privacy is one of our main priorities. This Privacy Policy document outlines the types of information collected and recorded by Appliance Repair Knights and how we use it.
         </p>
 
         <h2 class="text-lg font-heading font-bold text-brandDarkBlue">1. Information We Collect</h2>
@@ -64,7 +64,7 @@ include 'header.php';
 
         <h2 class="text-lg font-heading font-bold text-brandDarkBlue">4. Contact Us</h2>
         <p>
-          If you have additional questions or require more information about our Privacy Policy or Warranty coverage, do not hesitate to contact us by phone at <a href="tel:9057178905" class="text-brandOrange font-bold hover:underline">905-717-8905</a> or via email at info@appliancerepairknights.com.
+          If you have additional questions or require more information about our Privacy Policy or Warranty coverage, do not hesitate to contact us by phone at <a href="tel:9057178905" class="gtm-web-call text-brandOrange font-bold hover:underline">905-717-8905</a> or via email at info@appliancerepairknights.com.
         </p>
       </div>
 

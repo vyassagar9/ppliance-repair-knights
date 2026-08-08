@@ -4,7 +4,7 @@ $base_url = '/';
 $page_title = '404 - Page Not Found | Appliance Repair Knights';
 $page_description = 'The page you are looking for does not exist or has been moved. Explore our appliance repair services or contact Appliance Repair Knights.';
 $page_keywords = 'appliance repair 404, page not found';
-$canonical_url = 'https://www.appliancerepairknights.ca/404';
+$canonical_url = 'https://www.appliancerepairknights.com/404';
 include 'head.php';
 ?>
 </head>
@@ -39,7 +39,7 @@ include 'header.php';
         <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 00-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
         Return Home
       </a>
-      <a href="tel:9057178905" class="bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3.5 rounded-xl transition-all shadow-md flex items-center gap-2 text-sm uppercase tracking-wider">
+      <a href="tel:9057178905" class="gtm-web-call bg-accent hover:bg-accent-hover text-white font-bold px-8 py-3.5 rounded-xl transition-all shadow-md flex items-center gap-2 text-sm uppercase tracking-wider">
         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
         Call 905-717-8905
       </a>
