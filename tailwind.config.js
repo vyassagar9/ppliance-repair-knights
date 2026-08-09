@@ -15,6 +15,7 @@ module.exports = {
     "./forms/*.php",
     "./locations/*.php",
     "./landing-pages/*.php",
+    "./landing-pages/*.html",
     "./html_backup/*.html"
   ],
   theme: {
