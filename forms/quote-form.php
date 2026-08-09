@@ -1,6 +1,6 @@
 <?php
 /**
- * Reusable Form Component: Get a Free Repair Quote
+ * Reusable Form Component: Get your Appliance fixed today
  * Usage: <?php $defaultAppliance = 'Refrigerator'; include __DIR__ . '/forms/quote-form.php'; ?>
  */
 $currentAppliance = isset($defaultAppliance) ? $defaultAppliance : '';
@@ -11,7 +11,7 @@ $currentAppliance = isset($defaultAppliance) ? $defaultAppliance : '';
   </div>
 
   <h2 class="text-2xl font-heading font-black text-brandDarkBlue mb-1">
-    Get a Free Repair Quote
+    Get your Appliance fixed today
   </h2>
   <p class="text-slate-500 text-xs mb-4">
     Fill out the form below. A local technician will contact you within <strong>15 minutes</strong>.

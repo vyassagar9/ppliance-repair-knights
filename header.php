@@ -3,6 +3,10 @@
 $base_url = isset($base_url) ? $base_url : '';
 $current_page = isset($current_page) ? $current_page : '';
 ?>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7B6FLPR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <!-- TOP DISPATCH ANNOUNCEMENT BAR -->
 <aside class="bg-brandDarkBlue text-white text-xs py-2 px-4 border-b border-brandBlue/30">
   <div class="max-w-7xl mx-auto flex justify-between items-center">

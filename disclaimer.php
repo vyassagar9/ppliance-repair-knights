@@ -1,48 +1,11 @@
 <?php 
 $base_url = './';
+$page_title = 'Disclaimer | Appliance Repair Knights';
+$page_description = 'Official Disclaimer for Appliance Repair Knights. Important information regarding out-of-warranty repairs and brand servicing policies.';
+$canonical_url = 'https://www.appliancerepairknights.com/disclaimer';
 $current_page = 'disclaimer';
+include 'head.php';
 ?>
-<!DOCTYPE html>
-<html lang="en-CA" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Disclaimer | Appliance Repair Knights</title>
-  <meta name="description" content="Official Disclaimer for Appliance Repair Knights. Important information regarding out-of-warranty repairs and brand servicing policies.">
-  <meta name="robots" content="index, follow">
-
-  <!-- Google Fonts: Montserrat & Inter -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brandBlue: '#0F4C81',
-            brandDarkBlue: '#0A2E52',
-            brandNavy: '#071D36',
-            brandOrange: '#FF6B00',
-            brandOrangeHover: '#E05D00',
-            brandGreen: '#16A34A',
-            brandLightBg: '#F4F7FB',
-            brandBorder: '#E2E8F0'
-          },
-          fontFamily: {
-            heading: ['Montserrat', 'sans-serif'],
-            sans: ['Inter', 'sans-serif']
-          }
-        }
-      }
-    }
-  </script>
-  <!-- Global Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
 
 <body class="bg-white text-slate-800 font-sans antialiased">
 

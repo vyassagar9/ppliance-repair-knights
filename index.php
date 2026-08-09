@@ -231,7 +231,7 @@ include 'head.php';
                 Refrigerator Repair
               </h3>
               <span class="inline-flex items-center gap-1 text-xs text-brandOrange font-semibold mt-2">
-                LEARN MORE <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none"
+                Explore Refrigerator Repair <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none"
                   stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
                   </path>
@@ -253,7 +253,7 @@ include 'head.php';
                 Washer Repair
               </h3>
               <span class="inline-flex items-center gap-1 text-xs text-brandOrange font-semibold mt-2">
-                LEARN MORE <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none"
+                Explore Washer Repair <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none"
                   stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
                   </path>
@@ -275,7 +275,7 @@ include 'head.php';
                 Dryer Repair
               </h3>
               <span class="inline-flex items-center gap-1 text-xs text-brandOrange font-semibold mt-2">
-                LEARN MORE <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none"
+                Explore Dryer Repair <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none"
                   stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
                   </path>
@@ -297,7 +297,7 @@ include 'head.php';
                 Dishwasher Repair
               </h3>
               <span class="inline-flex items-center gap-1 text-xs text-brandOrange font-semibold mt-2">
-                LEARN MORE <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none"
+                Explore Dishwasher Repair <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none"
                   stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
                   </path>
@@ -319,7 +319,7 @@ include 'head.php';
                 Oven & Stove Repair
               </h3>
               <span class="inline-flex items-center gap-1 text-xs text-brandOrange font-semibold mt-2">
-                LEARN MORE <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none"
+                Explore Oven &amp; Stove Repair <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none"
                   stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
                   </path>
@@ -341,7 +341,7 @@ include 'head.php';
                 Microwave Repair
               </h3>
               <span class="inline-flex items-center gap-1 text-xs text-brandOrange font-semibold mt-2">
-                LEARN MORE <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none"
+                Explore Microwave Repair <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none"
                   stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
                   </path>
@@ -995,7 +995,7 @@ include 'head.php';
 
             <div class="relative z-10 flex items-center justify-between pt-4 border-t border-white/10">
               <span class="text-xs text-brandOrange font-bold">● Active Technicians Nearby</span>
-              <a href="tel:9057178905" </a class="gtm-web-call">
+              <a href="tel:9057178905" class="gtm-web-call text-xs font-bold text-white hover:text-brandOrange transition-colors">Call: 905-717-8905</a>
             </div>
           </div>
 
