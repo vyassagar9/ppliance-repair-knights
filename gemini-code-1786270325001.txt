@@ -1,0 +1,18 @@
+Category,Class Name / ID,Element & Location,Purpose / Trigger Usage
+GA4 Setup,appliancerepairknights,Stream Name,GA4 Property Name
+GA4 Setup,https://www.appliancerepairknights.com,Stream URL,Primary Domain
+GA4 Setup,15406083336,Stream ID,Data Stream Identifier
+GA4 Setup,G-MJMTQP936D,Measurement ID,Primary GA4 Tracking ID
+Phone (Web),gtm-web-call,"Footer, content links, location & service pages",General phone call clicks across site
+Phone (Web),gtm-web-call-topbar,Top Announcement Bar (header.php),Phone clicks specifically from top bar
+Phone (Web),gtm-web-call-header,Main Navigation CTA (header.php),Header primary phone button clicks
+Phone (PPC),gtm-ppc-call-topbar,Top Announcement Bar (Landing.html),Google Ads PPC top bar call clicks
+Phone (PPC),gtm-ppc-call-header,Header phone button (Landing.html),Google Ads PPC header call button clicks
+Phone (PPC),gtm-ppc-call-hero,Hero section primary CTA (Landing.html),High-intent hero phone call clicks
+Phone (PPC),gtm-ppc-call-sticky,Sticky mobile bottom bar (Landing.html),Mobile floating phone bar clicks
+Form (Web),gtm-web-form-submit,Quote form element (quote-form.php),Quote Form Submission trigger
+Form (Web),gtm-web-btn-submit,"Book Same-Day Repair button (quote-form.php)",Form Submit Button Click trigger
+Form (Web),gtm-web-contact-submit,Contact form element (contact-form.php),Contact Form Submission trigger
+Form (Web),gtm-web-lead-header,Book Online Nav Button (header.php),Navigation clicks to schedule.php
+Form (PPC),gtm-ppc-form-submit,Lead form on PPC Landing Page (Landing.html),Google Ads PPC Form Submission trigger
+Chat (PPC),gtm-ppc-whatsapp,Floating WhatsApp button (Landing.html),WhatsApp Chat Conversion trigger
