@@ -7,6 +7,7 @@ $page_keywords = isset($page_keywords) ? $page_keywords : 'appliance repair Toro
 $canonical_url = isset($canonical_url) ? $canonical_url : 'https://www.appliancerepairknights.com/';
 $og_image = isset($og_image) ? $og_image : 'https://www.appliancerepairknights.com/img/logo.png';
 $og_type = isset($og_type) ? $og_type : 'website';
+$robots_meta = isset($robots_meta) ? $robots_meta : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
 ?>
 <!DOCTYPE html>
 <html lang="en-CA" class="scroll-smooth">
@@ -31,7 +32,7 @@ $og_type = isset($og_type) ? $og_type : 'website';
   <meta name="title" content="<?php echo htmlspecialchars($page_title); ?>">
   <meta name="description" content="<?php echo htmlspecialchars($page_description); ?>">
   <meta name="keywords" content="<?php echo htmlspecialchars($page_keywords); ?>">
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="robots" content="<?php echo htmlspecialchars($robots_meta); ?>">
   <meta name="language" content="English">
   <meta name="author" content="Appliance Repair Knights">
   <link rel="canonical" href="<?php echo htmlspecialchars($canonical_url); ?>">
@@ -79,4 +80,47 @@ $og_type = isset($og_type) ? $og_type : 'website';
 
   <!-- Global Custom Stylesheet -->
   <link rel="stylesheet" href="<?php echo $base_url; ?>css/style.css">
+
+  <!-- Central JSON-LD LocalBusiness Schema for Google SEO & Entity Matching -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://www.appliancerepairknights.com/#organization",
+    "name": "Appliance Repair Knights Ltd.",
+    "url": "https://www.appliancerepairknights.com/",
+    "logo": "https://www.appliancerepairknights.com/img/logo.png",
+    "image": "https://www.appliancerepairknights.com/img/bnr.png",
+    "telephone": "905-717-8905",
+    "email": "info@appliancerepairknights.com",
+    "priceRange": "$$",
+    "hasMap": "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059",
+    "sameAs": [
+      "https://www.facebook.com/Appliancerepairknights",
+      "https://www.instagram.com/appliancerepairknights/",
+      "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "100 King St W",
+      "addressLocality": "Toronto",
+      "addressRegion": "ON",
+      "postalCode": "M5X 1A9",
+      "addressCountry": "CA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 43.6487,
+      "longitude": -79.3817
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "08:00",
+        "closes": "21:00"
+      }
+    ]
+  }
+  </script>
 </head>

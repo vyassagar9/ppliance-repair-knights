@@ -1,19 +1,19 @@
 <?php
-header("HTTP/1.1 404 Not Found");
-$base_url = '/';
+http_response_code(404);
+$base_url = isset($base_url) ? $base_url : '/';
 $page_title = '404 - Page Not Found | Appliance Repair Knights';
 $page_description = 'The page you are looking for does not exist or has been moved. Explore our appliance repair services or contact Appliance Repair Knights.';
 $page_keywords = 'appliance repair 404, page not found';
+$robots_meta = 'noindex, follow';
 $canonical_url = 'https://www.appliancerepairknights.com/404';
-include 'head.php';
+include __DIR__ . '/head.php';
 ?>
 </head>
 <body class="bg-lightbg text-secondary font-sans antialiased min-h-screen flex flex-col selection:bg-brandOrange selection:text-white">
 
 <?php 
-$base_url = '/';
 $current_page = '404';
-include 'header.php'; 
+include __DIR__ . '/header.php'; 
 ?>
 
 <main class="flex-grow flex items-center justify-center py-16 md:py-24 px-4">
@@ -35,7 +35,7 @@ include 'header.php';
 
     <!-- Quick Action Buttons -->
     <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
-      <a href="/index.php" class="bg-primary hover:bg-brandDarkBlue text-white font-bold px-8 py-3.5 rounded-xl transition-all shadow-md flex items-center gap-2 text-sm uppercase tracking-wider">
+      <a href="<?php echo $base_url; ?>" class="bg-primary hover:bg-brandDarkBlue text-white font-bold px-8 py-3.5 rounded-xl transition-all shadow-md flex items-center gap-2 text-sm uppercase tracking-wider">
         <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 00-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
         Return Home
       </a>
@@ -49,28 +49,28 @@ include 'header.php';
     <div class="pt-10 border-t border-slate-200/80 text-left">
       <h2 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-6 text-center">Popular Services & Pages</h2>
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 text-xs font-semibold">
-        <a href="/services/fridge-repair.php" class="p-3 bg-white border border-slate-200 rounded-xl text-primary hover:text-accent hover:border-accent transition-colors text-center shadow-sm">
+        <a href="<?php echo $base_url; ?>services/fridge-repair" class="p-3 bg-white border border-slate-200 rounded-xl text-primary hover:text-accent hover:border-accent transition-colors text-center shadow-sm">
           Fridge Repair
         </a>
-        <a href="/services/washer-repair.php" class="p-3 bg-white border border-slate-200 rounded-xl text-primary hover:text-accent hover:border-accent transition-colors text-center shadow-sm">
+        <a href="<?php echo $base_url; ?>services/washer-repair" class="p-3 bg-white border border-slate-200 rounded-xl text-primary hover:text-accent hover:border-accent transition-colors text-center shadow-sm">
           Washer Repair
         </a>
-        <a href="/services/dryer-repair.php" class="p-3 bg-white border border-slate-200 rounded-xl text-primary hover:text-accent hover:border-accent transition-colors text-center shadow-sm">
+        <a href="<?php echo $base_url; ?>services/dryer-repair" class="p-3 bg-white border border-slate-200 rounded-xl text-primary hover:text-accent hover:border-accent transition-colors text-center shadow-sm">
           Dryer Repair
         </a>
-        <a href="/services/dishwasher-repair.php" class="p-3 bg-white border border-slate-200 rounded-xl text-primary hover:text-accent hover:border-accent transition-colors text-center shadow-sm">
+        <a href="<?php echo $base_url; ?>services/dishwasher-repair" class="p-3 bg-white border border-slate-200 rounded-xl text-primary hover:text-accent hover:border-accent transition-colors text-center shadow-sm">
           Dishwasher Repair
         </a>
-        <a href="/services/stove-repair.php" class="p-3 bg-white border border-slate-200 rounded-xl text-primary hover:text-accent hover:border-accent transition-colors text-center shadow-sm">
+        <a href="<?php echo $base_url; ?>services/stove-repair" class="p-3 bg-white border border-slate-200 rounded-xl text-primary hover:text-accent hover:border-accent transition-colors text-center shadow-sm">
           Stove & Oven Repair
         </a>
-        <a href="/services/microwave-repair.php" class="p-3 bg-white border border-slate-200 rounded-xl text-primary hover:text-accent hover:border-accent transition-colors text-center shadow-sm">
+        <a href="<?php echo $base_url; ?>services/microwave-repair" class="p-3 bg-white border border-slate-200 rounded-xl text-primary hover:text-accent hover:border-accent transition-colors text-center shadow-sm">
           Microwave Repair
         </a>
-        <a href="/locations/pickering-appliance-repair.php" class="p-3 bg-white border border-slate-200 rounded-xl text-primary hover:text-accent hover:border-accent transition-colors text-center shadow-sm">
+        <a href="<?php echo $base_url; ?>locations/pickering-appliance-repair" class="p-3 bg-white border border-slate-200 rounded-xl text-primary hover:text-accent hover:border-accent transition-colors text-center shadow-sm">
           Pickering Location
         </a>
-        <a href="/schedule.php" class="p-3 bg-white border border-slate-200 rounded-xl text-primary hover:text-accent hover:border-accent transition-colors text-center shadow-sm">
+        <a href="<?php echo $base_url; ?>schedule" class="p-3 bg-white border border-slate-200 rounded-xl text-primary hover:text-accent hover:border-accent transition-colors text-center shadow-sm">
           Book Appointment
         </a>
       </div>
@@ -79,4 +79,4 @@ include 'header.php';
   </div>
 </main>
 
-<?php include 'footer.php'; ?>
+<?php include __DIR__ . '/footer.php'; ?>

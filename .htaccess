@@ -2,7 +2,7 @@
 # SEO-Friendly Clean URLs & Sitemap Configuration
 
 # Custom 404 Error Page
-ErrorDocument 404 404.php
+ErrorDocument 404 /404.php
 
 # XML Sitemap Header & Directive
 # Sitemap: https://www.appliancerepairknights.com/sitemap.xml

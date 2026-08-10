@@ -7,30 +7,6 @@ $canonical_url = 'https://www.appliancerepairknights.com/schedule';
 include 'head.php';
 ?>
 
-  <!-- JSON-LD LocalBusiness Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Appliance Repair Knights",
-    "image": "https://www.appliancerepairknights.com/img/logo.png",
-    "@id": "https://www.appliancerepairknights.com/#localbusiness",
-    "url": "https://www.appliancerepairknights.com/",
-    "telephone": "905-717-8905",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "100 King St W",
-      "addressLocality": "Toronto",
-      "addressRegion": "ON",
-      "postalCode": "M5X 1A9",
-      "addressCountry": "CA"
-    }
-  }
-  </script>
-  <!-- Global Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
 <body class="bg-lightbg text-secondary font-body min-h-screen flex flex-col">
 
 <?php 

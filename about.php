@@ -7,30 +7,6 @@ $canonical_url = 'https://www.appliancerepairknights.com/about';
 include 'head.php';
 ?>
 
-  <!-- JSON-LD LocalBusiness Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Appliance Repair Knights",
-    "image": "https://www.appliancerepairknights.com/img/logo.png",
-    "@id": "https://www.appliancerepairknights.com/#localbusiness",
-    "url": "https://www.appliancerepairknights.com/",
-    "telephone": "905-717-8905",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "100 King St W",
-      "addressLocality": "Toronto",
-      "addressRegion": "ON",
-      "postalCode": "M5X 1A9",
-      "addressCountry": "CA"
-    }
-  }
-  </script>
-  <!-- Global Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
 <body class="bg-lightbg text-secondary font-body min-h-screen flex flex-col">
 
 <?php 
@@ -38,45 +14,6 @@ $base_url = './';
 $current_page = 'about';
 include 'header.php'; 
 ?>
-
-    <!-- Mobile Drawer -->
-    <div id="mobile-menu-drawer" class="hidden md:hidden bg-white border-t border-bordercolor shadow-lg transition-all duration-300">
-      <div class="px-4 py-4 space-y-3 flex flex-col">
-        <a href="index.php" class="mobile-nav-link font-semibold text-secondary hover:text-accent py-2 px-2 rounded-lg cursor-pointer">Home</a>
-        <a href="about.php" class="mobile-nav-link font-semibold text-secondary hover:text-accent py-2 px-2 rounded-lg cursor-pointer">About</a>
-        
-        <span class="font-bold text-xs uppercase tracking-wider text-slate-400 px-2">Services</span>
-        <div class="grid grid-cols-2 gap-2 bg-slate-50 p-2.5 rounded-lg border border-bordercolor">
-          <a href="services/fridge-repair.php" class="text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Fridge</a>
-          <a href="services/stove-repair.php" class="text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Stove</a>
-          <a href="services/microwave-repair.php" class="text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Microwave</a>
-          <a href="services/washer-repair.php" class="text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Washer</a>
-          <a href="services/dryer-repair.php" class="text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Dryer</a>
-          <a href="services/dishwasher-repair.php" class="text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Dishwasher</a>
-        </div>
-
-        <span class="font-bold text-xs uppercase tracking-wider text-slate-400 px-2">Service Areas</span>
-        <div class="grid grid-cols-2 gap-2 bg-slate-50 p-2.5 rounded-lg border border-bordercolor">
-          <a href="index.php#areas" class="mobile-nav-link text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Toronto & GTA</a>
-          <a href="index.php#areas" class="mobile-nav-link text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Mississauga</a>
-          <a href="index.php#areas" class="mobile-nav-link text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Hamilton</a>
-          <a href="index.php#areas" class="mobile-nav-link text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Oshawa</a>
-          <a href="index.php#areas" class="mobile-nav-link text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Kitchener-Waterloo</a>
-        </div>
-
-        <a href="schedule.php" class="mobile-nav-link font-semibold text-secondary hover:text-accent py-2 px-2 rounded-lg cursor-pointer">Book Online</a>
-        <div class="pt-4 border-t border-bordercolor flex flex-col gap-2">
-          <a href="tel:9057178905" class="gtm-web-call bg-primary text-white text-center font-bold py-3 rounded-lg flex justify-center items-center gap-2 cursor-pointer">
-            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
-            Call: 905-717-8905
-          </a>
-          <a href="schedule.php" class="bg-accent hover:bg-accent-hover text-white text-center font-bold py-3 rounded-lg cursor-pointer">
-            Schedule My Repair
-          </a>
-        </div>
-      </div>
-    </div>
-  </header>
 
   <!-- BREADCRUMBS -->
   <nav class="bg-white border-b border-bordercolor">
@@ -113,6 +50,18 @@ include 'header.php';
         <p class="text-slate-600 leading-relaxed text-sm">
           We built our team around core standards of quick dispatch, transparent pricing, and quality repairs. Our factory-certified technicians arrive in fully-stocked vans, allowing us to solve over 85% of repair requests on our first visit.
         </p>
+
+        <!-- CTA Action Buttons after paragraphs -->
+        <div class="pt-2 flex flex-wrap gap-4 items-center">
+          <a href="schedule.php" class="bg-brandOrange hover:bg-orange-600 text-white font-bold px-6 py-3.5 rounded-xl transition-all shadow-md inline-flex items-center gap-2 text-xs uppercase tracking-wider">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            Book Online
+          </a>
+          <a href="tel:9057178905" class="gtm-web-call bg-primary hover:bg-brandDarkBlue text-white font-bold px-6 py-3.5 rounded-xl transition-all shadow-md inline-flex items-center gap-2 text-xs uppercase tracking-wider">
+            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+            Call 905-717-8905
+          </a>
+        </div>
       </div>
       <div class="h-64 md:h-96 bg-slate-200 rounded-xl overflow-hidden flex items-center justify-center border border-bordercolor">
         <img src="img/20260615_120025.avif" alt="Our Tech Team" class="object-cover w-full h-full" onerror="this.onerror=null; this.parentNode.innerHTML='<div class=\'text-slate-400 flex flex-col items-center\'><svg class=\'w-16 h-16 mb-2\' fill=\'none\' stroke=\'currentColor\' viewBox=\'0 0 24 24\' xmlns=\'http://www.w3.org/2000/svg\'><path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'1.5\' d=\'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z\'></path></svg><span class=\'text-xs font-bold uppercase tracking-wider\'>Appliance Knights Team Photo</span></div>';">
@@ -159,6 +108,88 @@ include 'header.php';
       </div>
     </section>
 
+    <!-- GOOGLE MY BUSINESS MAP & LOCAL NAP SECTION -->
+    <section class="py-16 bg-slate-900 text-white border-t border-bordercolor" id="gmb-nap-section">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+          <span class="inline-flex items-center gap-2 bg-brandOrange/10 border border-brandOrange/30 text-brandOrange text-xs font-extrabold uppercase tracking-widest px-3.5 py-1 rounded-full">
+            📍 Local Headquarters &amp; Verified GMB Profile
+          </span>
+          <h2 class="text-3xl font-heading font-extrabold text-white">
+            Find Appliance Repair Knights On <span class="text-brandOrange">Google Maps</span>
+          </h2>
+          <p class="text-slate-400 text-sm md:text-base">
+            Official Business Profile, Verified Address &amp; Service Zones across GTA.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          
+          <!-- Left: NAP Business Card -->
+          <div class="lg:col-span-5 bg-slate-950 text-white p-8 rounded-2xl shadow-xl flex flex-col justify-between border border-slate-800 space-y-6">
+            <div class="space-y-4">
+              <div class="flex items-center gap-3">
+                <img src="img/Appliance_Repair_Knights_Logo-white.avif" alt="Appliance Repair Knights Logo" class="h-12 w-auto object-contain">
+                <div>
+                  <h3 class="text-xl font-extrabold text-white">Appliance Repair Knights Ltd.</h3>
+                  <p class="text-xs text-amber-400 font-semibold">★ 5.0 Rated on Google Maps</p>
+                </div>
+              </div>
+
+              <hr class="border-slate-800">
+
+              <div class="space-y-3.5 text-xs sm:text-sm text-slate-300">
+                <div class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-brandOrange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                  <div>
+                    <strong class="text-white block">Service Address (GTA HQ):</strong>
+                    <span>100 King St W, Toronto, ON M5X 1A9</span>
+                    <span class="block text-slate-400 text-xs mt-0.5">(Proudly Serving Toronto &amp; the entire GTA)</span>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <svg class="w-5 h-5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                  <div>
+                    <strong class="text-white block">Dispatch Phone:</strong>
+                    <a href="tel:9057178905" class="gtm-web-call text-brandOrange font-bold text-base hover:underline">905-717-8905</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-brandOrange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                  <div>
+                    <strong class="text-white block">Operating Hours:</strong>
+                    <span>Open 7 Days a Week: 8:00 AM – 9:00 PM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059" target="_blank" rel="noopener noreferrer me" class="w-full bg-brandOrange hover:bg-orange-600 text-white font-bold text-xs py-3.5 px-4 rounded-xl text-center flex items-center justify-center gap-2 transition-all shadow-md">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              View GMB Listing on Google Maps
+            </a>
+          </div>
+
+          <!-- Right: Google Maps Embed Iframe -->
+          <div class="lg:col-span-7 bg-lightbg rounded-2xl overflow-hidden border border-bordercolor shadow-md min-h-[380px]">
+            <iframe 
+              title="Appliance Repair Knights Google Maps Location"
+              src="https://maps.google.com/maps?q=Appliance+Repair+Knights+Ltd.+100+King+St+W+Toronto+ON&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed" 
+              width="100%" 
+              height="100%" 
+              style="border:0; min-height: 380px;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- REGIONS WE SERVE -->
     <section class="py-16 max-w-4xl mx-auto px-4 text-center space-y-6">
       <h2 class="text-2xl font-heading font-bold text-primary">Serving the GTA & Beyond</h2>
@@ -167,39 +198,6 @@ include 'header.php';
       </p>
     </section>
 
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="bg-primary text-white border-t border-secondary/30 pt-16 pb-8">
-    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-12">
-      <div class="lg:col-span-4 space-y-4">
-        <a href="index.php" class="flex items-center gap-2 cursor-pointer">
-          <img src="img/logo.png" alt="Appliance Repair Knights Logo" class="h-10 md:h-12 w-auto object-contain">
-        </a>
-        <p class="text-xs text-slate-400 max-w-sm leading-relaxed">
-          Same-day appliance repair across the Greater Toronto Area, Hamilton, Oshawa and Kitchener Waterloo. Licensed, Insured, Guaranteed.
-        </p>
-      </div>
-
-      <div class="lg:col-span-3 space-y-3">
-        <span class="text-xs uppercase tracking-wider text-slate-400 font-bold block">Our Services</span>
-        <ul class="space-y-2 text-xs text-slate-300">
-          <li><a href="services/fridge-repair.php" class="hover:text-accent cursor-pointer">Fridge Repair & Installation</a></li>
-          <li><a href="services/stove-repair.php" class="hover:text-accent cursor-pointer">Stove & Range Repair</a></li>
-          <li><a href="services/microwave-repair.php" class="hover:text-accent cursor-pointer">Microwave Repair & Installation</a></li>
-          <li><a href="services/washer-repair.php" class="hover:text-accent cursor-pointer">Washing Machine Diagnostic & Repair</a></li>
-          <li><a href="services/dryer-repair.php" class="hover:text-accent cursor-pointer">Dryer Repair & Duct Cleaning</a></li>
-          <li><a href="services/dishwasher-repair.php" class="hover:text-accent cursor-pointer">Dishwasher Inspection & Repair</a></li>
-        </ul>
-      </div>
-
-      <div class="lg:col-span-2 space-y-3">
-        <span class="text-xs uppercase tracking-wider text-slate-400 font-bold block">Quick Links</span>
-        <ul class="space-y-2 text-xs text-slate-300">
-          <li><a href="index.php#why-us" class="hover:text-accent cursor-pointer">Why Choose Us</a></li>
-          <li><a href="index.php#how-it-works" class="hover:text-accent cursor-pointer">How It Works</a></li>
-          <li><a href="index.php#areas" class="hover:text-accent cursor-pointer">Service Areas</a></li>
-          <li><a href="index.php#faqs" class="hover:text-accent cursor-pointer">FAQs</a></li>
   </main>
 
 <?php 
