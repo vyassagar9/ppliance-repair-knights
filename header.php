@@ -63,10 +63,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="absolute top-full left-0 w-64 bg-white border border-brandBorder shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2 max-h-[75vh] overflow-y-auto">
           <a href="<?php echo $base_url; ?>index.php#service-areas" class="block px-4 py-2 text-xs font-bold uppercase tracking-wider text-brandOrange bg-slate-50 border-b border-slate-100">All Service Areas (GTA)</a>
           
-          <!-- Top 7 Initial Locations -->
+          <!-- Top Initial Locations -->
           <a href="<?php echo $base_url; ?>locations/toronto-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Toronto Appliance Repair</a>
           <a href="<?php echo $base_url; ?>locations/mississauga-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Mississauga Appliance Repair</a>
           <a href="<?php echo $base_url; ?>locations/brampton-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Brampton Appliance Repair</a>
+          <a href="<?php echo $base_url; ?>locations/caledon-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Caledon Appliance Repair</a>
           <a href="<?php echo $base_url; ?>locations/vaughan-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Vaughan Appliance Repair</a>
           <a href="<?php echo $base_url; ?>locations/markham-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Markham Appliance Repair</a>
           <a href="<?php echo $base_url; ?>locations/oakville-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Oakville Appliance Repair</a>
@@ -139,10 +140,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="text-xs uppercase text-slate-400 font-bold tracking-wider">Service Areas</span>
       <a href="<?php echo $base_url; ?>index.php#service-areas" class="block text-sm font-bold text-brandOrange">Toronto &amp; GTA Overview</a>
       
-      <!-- Top 7 Mobile Locations -->
+      <!-- Top Mobile Locations -->
       <a href="<?php echo $base_url; ?>locations/toronto-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Toronto</a>
       <a href="<?php echo $base_url; ?>locations/mississauga-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Mississauga</a>
       <a href="<?php echo $base_url; ?>locations/brampton-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Brampton</a>
+      <a href="<?php echo $base_url; ?>locations/caledon-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Caledon</a>
       <a href="<?php echo $base_url; ?>locations/vaughan-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Vaughan</a>
       <a href="<?php echo $base_url; ?>locations/markham-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Markham</a>
       <a href="<?php echo $base_url; ?>locations/oakville-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Oakville</a>

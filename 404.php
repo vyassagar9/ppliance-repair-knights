@@ -70,6 +70,9 @@ include __DIR__ . '/header.php';
         <a href="<?php echo $base_url; ?>locations/pickering-appliance-repair" class="p-3 bg-white border border-slate-200 rounded-xl text-primary hover:text-accent hover:border-accent transition-colors text-center shadow-sm">
           Pickering Location
         </a>
+        <a href="<?php echo $base_url; ?>locations/caledon-appliance-repair" class="p-3 bg-white border border-slate-200 rounded-xl text-primary hover:text-accent hover:border-accent transition-colors text-center shadow-sm">
+          Caledon Location
+        </a>
         <a href="<?php echo $base_url; ?>schedule" class="p-3 bg-white border border-slate-200 rounded-xl text-primary hover:text-accent hover:border-accent transition-colors text-center shadow-sm">
           Book Appointment
         </a>

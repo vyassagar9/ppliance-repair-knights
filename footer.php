@@ -87,6 +87,7 @@ $base_url = isset($base_url) ? $base_url : '';
             <li><a href="<?php echo $base_url; ?>locations/toronto-appliance-repair" class="hover:text-white transition-colors">Toronto Repair</a></li>
             <li><a href="<?php echo $base_url; ?>locations/mississauga-appliance-repair" class="hover:text-white transition-colors">Mississauga Repair</a></li>
             <li><a href="<?php echo $base_url; ?>locations/brampton-appliance-repair" class="hover:text-white transition-colors">Brampton Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>locations/caledon-appliance-repair" class="hover:text-white transition-colors">Caledon Repair</a></li>
             <li><a href="<?php echo $base_url; ?>locations/vaughan-appliance-repair" class="hover:text-white transition-colors">Vaughan Repair</a></li>
             <li><a href="<?php echo $base_url; ?>locations/markham-appliance-repair" class="hover:text-white transition-colors">Markham Repair</a></li>
             <li><a href="<?php echo $base_url; ?>locations/oakville-appliance-repair" class="hover:text-white transition-colors">Oakville Repair</a></li>
