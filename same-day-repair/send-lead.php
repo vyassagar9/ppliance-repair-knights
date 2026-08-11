@@ -21,7 +21,7 @@ $phone     = isset($data['phone']) ? trim($data['phone']) : '';
 $email     = isset($data['email']) ? trim($data['email']) : '';
 $city      = isset($data['city']) ? trim($data['city']) : '';
 $appliance = isset($data['appliance']) ? trim($data['appliance']) : '';
-$page      = isset($data['page']) ? trim($data['page']) : 'Landing.html';
+$page      = isset($data['page']) ? trim($data['page']) : 'index.html';
 
 if (empty($name) || empty($phone)) {
     http_response_code(400);

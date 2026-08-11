@@ -34,7 +34,7 @@ function doPost(e) {
     var email = data.email || "";
     var city = data.city || "";
     var appliance = data.appliance || "";
-    var page = data.page || "Landing.html";
+    var page = data.page || "index.html";
 
     // 1. Append row matching Column Order: Timestamp | Name | Phone | Email | City | Appliance | Page
     sheet.appendRow([timestamp, name, phone, email, city, appliance, page]);

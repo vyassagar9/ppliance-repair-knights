@@ -14,8 +14,8 @@ module.exports = {
     "./services/*.php",
     "./forms/*.php",
     "./locations/*.php",
-    "./landing-pages/*.php",
-    "./landing-pages/*.html",
+    "./same-day-repair/*.php",
+    "./same-day-repair/*.html",
     "./html_backup/*.html"
   ],
   theme: {
