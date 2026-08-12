@@ -103,13 +103,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="flex items-center gap-2 sm:gap-3">
       <!-- Phone Call Button CTA -->
       <a href="tel:9057178905" class="gtm-web-call gtm-web-call-header bg-brandDarkBlue hover:bg-brandNavy text-white font-black px-4 py-2.5 sm:px-5 sm:py-2.5 rounded-xl text-sm transition-all flex items-center gap-2 shadow-md">
-        <svg class="w-4 h-4 text-brandOrange animate-bounce" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
-        <span class="hidden sm:inline">CALL:</span> <span>905-717-8905</span>
+        <svg class="w-4 h-4 text-brandOrange animate-bounce pointer-events-none" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+        <span class="hidden sm:inline pointer-events-none">CALL:</span> 
+        <span class="pointer-events-none">905-717-8905</span>
       </a>
 
       <!-- Fast Service Booking CTA -->
       <a href="<?php echo $base_url; ?>schedule.php" class="gtm-web-lead-header hidden sm:flex bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-4 py-2.5 rounded-xl text-xs sm:text-sm transition-all shadow-lg uppercase tracking-wider items-center gap-1.5">
-        <span>BOOK ONLINE</span>
+        <span class="pointer-events-none">BOOK ONLINE</span>
       </a>
 
       <!-- Mobile Menu Toggle Button -->

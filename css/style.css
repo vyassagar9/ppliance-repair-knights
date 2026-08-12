@@ -100,4 +100,10 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 
-
+/* 7. Ensure GTM Tracking Clicks Pass Through Inner Elements */
+.gtm-web-call *,
+.gtm-web-call-header *,
+.gtm-web-call-topbar *,
+.gtm-web-lead-header * {
+  pointer-events: none;
+}
