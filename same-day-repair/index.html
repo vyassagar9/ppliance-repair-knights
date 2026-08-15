@@ -45,8 +45,8 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
   <link rel="manifest" href="../img/site.webmanifest">
   
-  <!-- Preload Critical LCP Assets (Header Logo + Main Heading Font) -->
-  <link rel="preload" as="image" href="../img/logo-sm.avif" type="image/avif" fetchpriority="high">
+  <!-- Preload Critical LCP Assets (Header Logo WebP + Main Heading Font) -->
+  <link rel="preload" as="image" href="../img/logo.webp" type="image/webp" fetchpriority="high">
   <link rel="preload" href="../fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
 
   <!-- Non-Blocking Asynchronous Tailwind CSS -->
@@ -232,8 +232,8 @@
       <!-- Brand Logo -->
       <a href="Landing.html" class="flex items-center gap-2 focus:outline-none flex-shrink-0">
         <picture>
-          <source srcset="../img/logo-sm.avif" type="image/avif">
-          <img src="../img/logo.png" alt="Appliance Repair Knights Logo" width="220" height="64" class="h-14 sm:h-16 w-auto object-contain" fetchpriority="high">
+          <source srcset="../img/logo.webp" type="image/webp">
+          <img src="../img/logo-opt.png" alt="Appliance Repair Knights Logo" width="220" height="64" class="h-14 sm:h-16 w-auto object-contain" fetchpriority="high">
         </picture>
       </a>
 
@@ -1222,8 +1222,8 @@
         <!-- Col 1: Brand & Contact Info -->
         <div class="space-y-3 md:col-span-1">
           <picture>
-            <source srcset="../img/logo-sm.avif" type="image/avif">
-            <img src="../img/logo.png" alt="Appliance Repair Knights Logo" width="180" height="44" class="h-11 w-auto object-contain" loading="lazy" decoding="async">
+            <source srcset="../img/logo.webp" type="image/webp">
+            <img src="../img/logo-opt.png" alt="Appliance Repair Knights Logo" width="180" height="44" class="h-11 w-auto object-contain" loading="lazy" decoding="async">
           </picture>
           <p class="text-slate-400 text-xs leading-relaxed">
             Appliance Repair Knights is your trusted local provider for fast, same-day home appliance repairs across
