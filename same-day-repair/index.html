@@ -29,18 +29,30 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
   <link rel="manifest" href="../img/site.webmanifest">
   
-  <!-- Preload LCP Header Logo (AVIF) -->
-  <link rel="preload" as="image" href="../img/logo.avif" type="image/avif" fetchpriority="high">
+  <!-- Preload LCP Header Logo (Optimized 18KB AVIF) -->
+  <link rel="preload" as="image" href="../img/logo-sm.avif" type="image/avif" fetchpriority="high">
 
-  <!-- Google Fonts: Montserrat & Inter (Streamlined weights with display=swap) -->
+  <!-- Google Fonts: Montserrat & Inter (Non-blocking with display=swap) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;900&display=swap">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;900&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;900&display=swap">
+  </noscript>
 
   <!-- Tailwind CSS Compiled -->
   <link rel="stylesheet" href="../css/tailwind.min.css?v=1.0.1">
 
   <style>
+    /* Instant System Font Fallbacks for Sub-100ms LCP */
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+    h1, h2, h3, .font-heading {
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
     html {
       scroll-behavior: smooth
     }
@@ -190,7 +202,7 @@
       <!-- Brand Logo -->
       <a href="Landing.html" class="flex items-center gap-2 focus:outline-none flex-shrink-0">
         <picture>
-          <source srcset="../img/logo.avif" type="image/avif">
+          <source srcset="../img/logo-sm.avif" type="image/avif">
           <img src="../img/logo.png" alt="Appliance Repair Knights Logo" width="220" height="64" class="h-14 sm:h-16 w-auto object-contain" fetchpriority="high">
         </picture>
       </a>
@@ -1180,7 +1192,7 @@
         <!-- Col 1: Brand & Contact Info -->
         <div class="space-y-3 md:col-span-1">
           <picture>
-            <source srcset="../img/logo.avif" type="image/avif">
+            <source srcset="../img/logo-sm.avif" type="image/avif">
             <img src="../img/logo.png" alt="Appliance Repair Knights Logo" width="180" height="44" class="h-11 w-auto object-contain" loading="lazy" decoding="async">
           </picture>
           <p class="text-slate-400 text-xs leading-relaxed">
