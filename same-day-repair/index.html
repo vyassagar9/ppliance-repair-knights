@@ -2,6 +2,9 @@
 <html lang="en-CA" class="scroll-smooth">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -9,8 +12,6 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-M7B6FLPR');</script>
   <!-- End Google Tag Manager -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary Meta Tags for Google PPC & SEO -->
   <title>Same-Day Appliance Repair Toronto & GTA | Appliance Repair Knights</title>
@@ -28,20 +29,15 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
   <link rel="manifest" href="../img/site.webmanifest">
   
-  <!-- Preload LCP/Hero Image (Logo) -->
-  <link rel="preload" as="image" href="../img/logo.png">
+  <!-- Preload LCP Header Logo (AVIF) -->
+  <link rel="preload" as="image" href="../img/logo.avif" type="image/avif" fetchpriority="high">
 
-  <!-- Google Fonts: Montserrat & Inter (Optimized) -->
+  <!-- Google Fonts: Montserrat & Inter (Streamlined weights with display=swap) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap" media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap">
-  </noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;900&display=swap">
 
-  <!-- Tailwind CSS Compiled (Preloaded) -->
-  <link rel="preload" as="style" href="../css/tailwind.min.css?v=1.0.1">
+  <!-- Tailwind CSS Compiled -->
   <link rel="stylesheet" href="../css/tailwind.min.css?v=1.0.1">
 
   <style>
@@ -193,7 +189,10 @@
 
       <!-- Brand Logo -->
       <a href="Landing.html" class="flex items-center gap-2 focus:outline-none flex-shrink-0">
-        <img src="../img/logo.png" alt="Appliance Repair Knights Logo" class="h-14 sm:h-16 w-auto object-contain">
+        <picture>
+          <source srcset="../img/logo.avif" type="image/avif">
+          <img src="../img/logo.png" alt="Appliance Repair Knights Logo" width="220" height="64" class="h-14 sm:h-16 w-auto object-contain" fetchpriority="high">
+        </picture>
       </a>
 
       <!-- Header CTAs (Clean menu-free header) -->
@@ -489,7 +488,7 @@
           <a href="#ppc-quote-form"
             class="gtm-ppc-service-card bg-white p-4 rounded-2xl border border-slate-200 shadow-sm hover-lift flex flex-col items-center text-center">
             <div class="h-24 w-full flex items-center justify-center p-2 mb-2 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="../img/fridge-repair.avif" alt="Refrigerator Repair"
+              <img src="../img/fridge-repair.avif" alt="Refrigerator Repair" width="160" height="96"
                 class="object-cover h-full w-full rounded-lg" loading="lazy" decoding="async">
             </div>
             <h3 class="font-heading font-bold text-slate-800 text-xs sm:text-sm">Refrigerator Repair</h3>
@@ -499,7 +498,7 @@
           <a href="#ppc-quote-form"
             class="gtm-ppc-service-card bg-white p-4 rounded-2xl border border-slate-200 shadow-sm hover-lift flex flex-col items-center text-center">
             <div class="h-24 w-full flex items-center justify-center p-2 mb-2 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="../img/washer-repair.avif" alt="Washer Repair" class="object-cover h-full w-full rounded-lg" loading="lazy" decoding="async">
+              <img src="../img/washer-repair.avif" alt="Washer Repair" width="160" height="96" class="object-cover h-full w-full rounded-lg" loading="lazy" decoding="async">
             </div>
             <h3 class="font-heading font-bold text-slate-800 text-xs sm:text-sm">Washer Repair</h3>
             <span class="text-[11px] text-brandOrange font-bold mt-1">Book Today →</span>
@@ -508,7 +507,7 @@
           <a href="#ppc-quote-form"
             class="gtm-ppc-service-card bg-white p-4 rounded-2xl border border-slate-200 shadow-sm hover-lift flex flex-col items-center text-center">
             <div class="h-24 w-full flex items-center justify-center p-2 mb-2 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="../img/dryer-repair.avif" alt="Dryer Repair" class="object-cover h-full w-full rounded-lg" loading="lazy" decoding="async">
+              <img src="../img/dryer-repair.avif" alt="Dryer Repair" width="160" height="96" class="object-cover h-full w-full rounded-lg" loading="lazy" decoding="async">
             </div>
             <h3 class="font-heading font-bold text-slate-800 text-xs sm:text-sm">Dryer Repair</h3>
             <span class="text-[11px] text-brandOrange font-bold mt-1">Book Today →</span>
@@ -517,7 +516,7 @@
           <a href="#ppc-quote-form"
             class="gtm-ppc-service-card bg-white p-4 rounded-2xl border border-slate-200 shadow-sm hover-lift flex flex-col items-center text-center">
             <div class="h-24 w-full flex items-center justify-center p-2 mb-2 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="../img/Open Dishwasher.avif" alt="Dishwasher Repair"
+              <img src="../img/Open Dishwasher.avif" alt="Dishwasher Repair" width="160" height="96"
                 class="object-cover h-full w-full rounded-lg" loading="lazy" decoding="async">
             </div>
             <h3 class="font-heading font-bold text-slate-800 text-xs sm:text-sm">Dishwasher Repair</h3>
@@ -527,7 +526,7 @@
           <a href="#ppc-quote-form"
             class="gtm-ppc-service-card bg-white p-4 rounded-2xl border border-slate-200 shadow-sm hover-lift flex flex-col items-center text-center">
             <div class="h-24 w-full flex items-center justify-center p-2 mb-2 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="../img/oven-repair.avif" alt="Oven & Stove Repair"
+              <img src="../img/oven-repair.avif" alt="Oven & Stove Repair" width="160" height="96"
                 class="object-cover h-full w-full rounded-lg" loading="lazy" decoding="async">
             </div>
             <h3 class="font-heading font-bold text-slate-800 text-xs sm:text-sm">Oven & Stove</h3>
@@ -537,7 +536,7 @@
           <a href="#ppc-quote-form"
             class="gtm-ppc-service-card bg-white p-4 rounded-2xl border border-slate-200 shadow-sm hover-lift flex flex-col items-center text-center">
             <div class="h-24 w-full flex items-center justify-center p-2 mb-2 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="../img/induction-repair.avif" alt="Microwave Repair"
+              <img src="../img/induction-repair.avif" alt="Microwave Repair" width="160" height="96"
                 class="object-cover h-full w-full rounded-lg" loading="lazy" decoding="async">
             </div>
             <h3 class="font-heading font-bold text-slate-800 text-xs sm:text-sm">Microwave Repair</h3>
@@ -569,7 +568,7 @@
           <div
             class="group relative rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-sm transition-all duration-300 hover:border-brandOrange hover:shadow-md">
             <div class="aspect-square overflow-hidden">
-              <img src="../img/g1.avif" alt="Refrigerator Repair Toronto" loading="lazy"
+              <img src="../img/g1.avif" alt="Refrigerator Repair Toronto" width="300" height="300" loading="lazy" decoding="async"
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
             </div>
           </div>
@@ -577,7 +576,7 @@
           <div
             class="group relative rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-sm transition-all duration-300 hover:border-brandOrange hover:shadow-md">
             <div class="aspect-square overflow-hidden">
-              <img src="../img/g2.avif" alt="Washer Repair Mississauga" loading="lazy"
+              <img src="../img/g2.avif" alt="Washer Repair Mississauga" width="300" height="300" loading="lazy" decoding="async"
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
             </div>
           </div>
@@ -585,7 +584,7 @@
           <div
             class="group relative rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-sm transition-all duration-300 hover:border-brandOrange hover:shadow-md">
             <div class="aspect-square overflow-hidden">
-              <img src="../img/g3.avif" alt="Oven Stove Repair Brampton" loading="lazy"
+              <img src="../img/g3.avif" alt="Oven Stove Repair Brampton" width="300" height="300" loading="lazy" decoding="async"
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
             </div>
           </div>
@@ -593,7 +592,7 @@
           <div
             class="group relative rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-sm transition-all duration-300 hover:border-brandOrange hover:shadow-md">
             <div class="aspect-square overflow-hidden">
-              <img src="../img/g4.avif" alt="Dishwasher Repair Oakville" loading="lazy"
+              <img src="../img/g4.avif" alt="Dishwasher Repair Oakville" width="300" height="300" loading="lazy" decoding="async"
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
             </div>
           </div>
@@ -601,7 +600,7 @@
           <div
             class="group relative rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-sm transition-all duration-300 hover:border-brandOrange hover:shadow-md">
             <div class="aspect-square overflow-hidden">
-              <img src="../img/g5.avif" alt="Dryer Repair Hamilton" loading="lazy"
+              <img src="../img/g5.avif" alt="Dryer Repair Hamilton" width="300" height="300" loading="lazy" decoding="async"
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
             </div>
           </div>
@@ -1180,7 +1179,10 @@
 
         <!-- Col 1: Brand & Contact Info -->
         <div class="space-y-3 md:col-span-1">
-          <img src="../img/logo.png" alt="Appliance Repair Knights Logo" class="h-11 w-auto object-contain">
+          <picture>
+            <source srcset="../img/logo.avif" type="image/avif">
+            <img src="../img/logo.png" alt="Appliance Repair Knights Logo" width="180" height="44" class="h-11 w-auto object-contain" loading="lazy" decoding="async">
+          </picture>
           <p class="text-slate-400 text-xs leading-relaxed">
             Appliance Repair Knights is your trusted local provider for fast, same-day home appliance repairs across
             Toronto, GTA & Southern Ontario.
