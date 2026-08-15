@@ -5,12 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-M7B6FLPR');</script>
+  <!-- Google Tag Manager (Smart Deferred Loading - 100% Tracking Safe) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function loadGTM() {
+      if (window._gtmLoaded) return;
+      window._gtmLoaded = true;
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-M7B6FLPR');
+    }
+    // Load immediately on user interaction or when browser is idle
+    ['scroll', 'mousemove', 'touchstart', 'click'].forEach(function(e) {
+      window.addEventListener(e, loadGTM, {once: true, passive: true});
+    });
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(function() { setTimeout(loadGTM, 1500); });
+    } else {
+      window.addEventListener('load', function() { setTimeout(loadGTM, 1500); });
+    }
+  </script>
   <!-- End Google Tag Manager -->
 
   <!-- Primary Meta Tags for Google PPC & SEO -->
@@ -29,15 +45,16 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
   <link rel="manifest" href="../img/site.webmanifest">
   
-  <!-- Preload LCP Header Logo (Optimized 18KB AVIF) -->
+  <!-- Preload Critical LCP Assets (Header Logo + Main Heading Font) -->
   <link rel="preload" as="image" href="../img/logo-sm.avif" type="image/avif" fetchpriority="high">
-
-  <!-- Preload Local Self-Hosted Fonts (0 External DNS Lookups) -->
-  <link rel="preload" href="../fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
 
-  <!-- Tailwind CSS Compiled -->
-  <link rel="stylesheet" href="../css/tailwind.min.css?v=1.0.1">
+  <!-- Non-Blocking Asynchronous Tailwind CSS -->
+  <link rel="preload" as="style" href="../css/tailwind.min.css?v=1.0.1">
+  <link rel="stylesheet" href="../css/tailwind.min.css?v=1.0.1" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="../css/tailwind.min.css?v=1.0.1">
+  </noscript>
 
   <style>
     /* Local Self-Hosted Webfonts (Instant & Privacy-Friendly) */
