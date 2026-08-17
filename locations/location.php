@@ -12,6 +12,18 @@ $raw_slug = isset($_GET['slug']) ? strtolower(trim($_GET['slug'])) : '';
 // Remove trailing .php if passed in slug
 $slug = preg_replace('/\.php$/', '', $raw_slug);
 
+// Known slug typo aliases (301 Permanent Redirect)
+$slug_aliases = [
+    'caldeon-appliance-repair' => 'caledon-appliance-repair',
+    'caledeon-appliance-repair' => 'caledon-appliance-repair',
+];
+
+if (isset($slug_aliases[$slug])) {
+    header("HTTP/1.1 301 Moved Permanently");
+    header("Location: https://www.appliancerepairknights.com/locations/" . $slug_aliases[$slug]);
+    exit;
+}
+
 if (empty($slug) || !isset($all_locations[$slug])) {
     http_response_code(404);
     $base_url = '../';
