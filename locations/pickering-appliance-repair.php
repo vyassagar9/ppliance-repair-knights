@@ -493,7 +493,7 @@ include '../header.php';
           <a href="../services/microwave-repair.php" class="group bg-white rounded-2xl border border-slate-200/80 hover:border-accent/40 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between overflow-hidden">
             <div>
               <div class="h-44 sm:h-48 w-full overflow-hidden relative bg-slate-100">
-                <img src="../img/induction-repair.avif" alt="Microwave Repair in Pickering" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="../img/microwave-repair-service.webp" alt="Microwave Repair in Pickering" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-sm text-primary group-hover:text-accent flex items-center justify-center shadow-sm transition-colors">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                 </div>

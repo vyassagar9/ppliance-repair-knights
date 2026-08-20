@@ -337,7 +337,7 @@ include 'head.php';
           <a href="services/microwave-repair.php"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/induction-repair.avif" alt="Microwave Repair Service"
+              <img src="img/microwave-repair-service.webp" alt="Microwave Repair Service"
                 class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
             </div>
             <div>
