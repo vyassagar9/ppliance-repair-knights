@@ -198,7 +198,7 @@ include '../header.php';
 
         <!-- Image -->
         <div class="h-64 md:h-96 bg-slate-200 rounded-xl overflow-hidden flex items-center justify-center border border-bordercolor">
-          <img src="../img/Open Dishwasher.avif" alt="Dishwasher Repair Details" class="object-cover w-full h-full">
+          <img src="../img/Open Dishwasher.avif" alt="Dishwasher Repair Details" loading="lazy" decoding="async" class="object-cover w-full h-full">
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">

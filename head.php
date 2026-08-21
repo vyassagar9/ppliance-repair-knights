@@ -69,11 +69,12 @@ $robots_meta = isset($robots_meta) ? $robots_meta : 'index, follow, max-image-pr
   <meta property="twitter:description" content="<?php echo htmlspecialchars($page_description); ?>">
   <meta property="twitter:image" content="<?php echo htmlspecialchars($og_image); ?>">
 
-  <!-- 7. Performance & Resource Preloading (PageSpeed Optimizer) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- 7. Performance & Resource Preloading (Zero-Latency Self-Hosted Fonts & CSS) -->
+  <link rel="preload" href="<?php echo $base_url; ?>fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="<?php echo $base_url; ?>fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Self-Hosted Zero-Latency Fonts Definition -->
+  <link rel="stylesheet" href="<?php echo $base_url; ?>css/fonts.css">
 
   <!-- Production Local Compiled Tailwind CSS (Fastest Load Speed) -->
   <link rel="stylesheet" href="<?php echo $base_url; ?>css/tailwind.min.css">

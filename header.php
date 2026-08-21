@@ -27,7 +27,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- Brand Logo -->
     <a href="<?php echo $base_url; ?>index.php" class="flex items-center gap-2 group focus:outline-none flex-shrink-0" aria-label="Appliance Repair Knights Homepage">
-      <img src="<?php echo $base_url; ?>img/logo.png" alt="Appliance Repair Knights Logo" class="h-14 sm:h-16 w-auto object-contain transition-transform group-hover:scale-105">
+      <img src="<?php echo $base_url; ?>img/logo.webp" alt="Appliance Repair Knights Logo" width="220" height="88" fetchpriority="high" class="h-14 sm:h-16 w-auto object-contain transition-transform group-hover:scale-105">
     </a>
 
     <!-- Desktop Nav Menu -->

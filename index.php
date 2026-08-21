@@ -226,7 +226,7 @@ include 'head.php';
           <a href="services/fridge-repair.php"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/fridge-repair.avif" alt="Refrigerator Repair Service"
+              <img src="img/fridge-repair.avif" alt="Refrigerator Repair Service" loading="lazy" decoding="async"
                 class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
             </div>
             <div>
@@ -248,7 +248,7 @@ include 'head.php';
           <a href="services/washer-repair.php"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/washer-repair.avif" alt="Washer Repair Service"
+              <img src="img/washer-repair.avif" alt="Washer Repair Service" loading="lazy" decoding="async"
                 class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
             </div>
             <div>
@@ -270,7 +270,7 @@ include 'head.php';
           <a href="services/dryer-repair.php"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/dryer-repair.avif" alt="Dryer Repair Service"
+              <img src="img/dryer-repair.avif" alt="Dryer Repair Service" loading="lazy" decoding="async"
                 class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
             </div>
             <div>
@@ -292,7 +292,7 @@ include 'head.php';
           <a href="services/dishwasher-repair.php"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/Open Dishwasher.avif" alt="Dishwasher Repair Service"
+              <img src="img/Open Dishwasher.avif" alt="Dishwasher Repair Service" loading="lazy" decoding="async"
                 class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
             </div>
             <div>
@@ -314,7 +314,7 @@ include 'head.php';
           <a href="services/stove-repair.php"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/oven-repair.avif" alt="Oven & Stove Repair Service"
+              <img src="img/oven-repair.avif" alt="Oven & Stove Repair Service" loading="lazy" decoding="async"
                 class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
             </div>
             <div>
@@ -336,7 +336,7 @@ include 'head.php';
           <a href="services/microwave-repair.php"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/microwave-repair-service.webp" alt="Microwave Repair Service"
+              <img src="img/microwave-repair-service.webp" alt="Microwave Repair Service" loading="lazy" decoding="async"
                 class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
             </div>
             <div>

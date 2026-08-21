@@ -89,6 +89,9 @@ ErrorDocument 404 /404.php
   RewriteRule ^(.+?)$ $1.php [L]
 </IfModule>
 
+# Disable directory listing for security & speed
+Options -Indexes
+
 # Serve XML Sitemaps with Correct Content-Type Header
 <IfModule mod_headers.c>
   <FilesMatch "sitemap\.xml$">
@@ -96,32 +99,109 @@ ErrorDocument 404 /404.php
   </FilesMatch>
 </IfModule>
 
-# Enable Compression & Browser Caching for Performance & SEO
+# ==============================================================================
+# 1. GZIP / DEFLATE COMPRESSION ENGINE
+# ==============================================================================
 <IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml text/css text/javascript application/javascript application/json image/svg+xml
+  # Force compression for mangled headers
+  <IfModule mod_setenvif.c>
+    <IfModule mod_headers.c>
+      SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+      RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+    </IfModule>
+  </IfModule>
+
+  # Compress all relevant text, script, font, and data formats
+  AddOutputFilterByType DEFLATE text/html \
+                                text/plain \
+                                text/xml \
+                                text/css \
+                                text/javascript \
+                                application/xml \
+                                application/xhtml+xml \
+                                application/rss+xml \
+                                application/javascript \
+                                application/x-javascript \
+                                application/json \
+                                application/ld+json \
+                                application/manifest+json \
+                                application/vnd.ms-fontobject \
+                                application/x-font-ttf \
+                                font/ttf \
+                                font/otf \
+                                font/opentype \
+                                font/woff \
+                                font/woff2 \
+                                image/svg+xml \
+                                image/x-icon
 </IfModule>
 
+# ==============================================================================
+# 2. BROWSER CACHING (EXPIRES HEADERS)
+# ==============================================================================
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresDefault "access plus 1 month"
 
-  # Images & Media
+  # Images & Media (1 Year)
   ExpiresByType image/avif "access plus 1 year"
   ExpiresByType image/webp "access plus 1 year"
   ExpiresByType image/png "access plus 1 year"
   ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/jpg "access plus 1 year"
   ExpiresByType image/gif "access plus 1 year"
   ExpiresByType image/svg+xml "access plus 1 year"
   ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType image/vnd.microsoft.icon "access plus 1 year"
 
-  # Fonts
+  # Web Fonts (1 Year)
   ExpiresByType font/woff2 "access plus 1 year"
   ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/ttf "access plus 1 year"
+  ExpiresByType font/otf "access plus 1 year"
   ExpiresByType application/font-woff2 "access plus 1 year"
+  ExpiresByType application/x-font-woff "access plus 1 year"
+  ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
 
-  # CSS & JavaScript
-  ExpiresByType text/css "access plus 1 month"
-  ExpiresByType application/javascript "access plus 1 month"
-  ExpiresByType text/javascript "access plus 1 month"
+  # CSS & JavaScript (1 Year with cache busting / 1 Month)
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType application/x-javascript "access plus 1 year"
+
+  # Manifest & Structured Data
+  ExpiresByType application/manifest+json "access plus 1 week"
+  ExpiresByType application/json "access plus 0 seconds"
+  ExpiresByType application/ld+json "access plus 0 seconds"
+  ExpiresByType text/html "access plus 0 seconds"
 </IfModule>
+
+# ==============================================================================
+# 3. HTTP CACHE-CONTROL & PERFORMANCE HEADERS
+# ==============================================================================
+<IfModule mod_headers.c>
+  # 1-Year Immutable Caching for Static Assets
+  <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|webp|avif|swf|svg|woff|woff2|ttf|otf|eot)$">
+    Header set Cache-Control "max-age=31536000, public, immutable"
+    Header unset ETag
+  </FilesMatch>
+
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "max-age=31536000, public"
+    Header unset ETag
+  </FilesMatch>
+
+  # Prevent intermediate proxy caching mismatches
+  Header append Vary "Accept-Encoding"
+
+  # Dynamic HTML / PHP Caching Policy
+  <FilesMatch "\.(php|html)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+  </FilesMatch>
+</IfModule>
+
+# Disable ETags to reduce HTTP header size & eliminate redundant round-trips
+FileETag None
 
