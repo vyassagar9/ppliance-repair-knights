@@ -1,11 +1,21 @@
 # robots.txt for Appliance Repair Knights
+# Website: https://www.appliancerepairknights.com
+
 User-agent: *
 Allow: /
 
-# Disallow backend endpoints & internal processing scripts
+# Explicitly allow static assets for page rendering & Core Web Vitals
+Allow: /css/
+Allow: /img/
+Allow: /fonts/
+
+# Disallow internal template includes & processing endpoints
 Disallow: /send-lead.php
 Disallow: /forms/
-Disallow: /html_backup/
+Disallow: /head.php
+Disallow: /header.php
+Disallow: /footer.php
+Disallow: /404.php
 
-# Sitemap Location
+# XML Sitemap Location
 Sitemap: https://www.appliancerepairknights.com/sitemap.xml
