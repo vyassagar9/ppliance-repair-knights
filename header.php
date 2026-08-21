@@ -88,8 +88,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a href="<?php echo $base_url; ?>locations/waterloo-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Waterloo Appliance Repair</a>
             <a href="<?php echo $base_url; ?>locations/cambridge-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Cambridge Appliance Repair</a>
             <a href="<?php echo $base_url; ?>locations/guelph-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Guelph Appliance Repair</a>
+            <a href="<?php echo $base_url; ?>locations/milton-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Milton Appliance Repair</a>
+            <a href="<?php echo $base_url; ?>locations/barrie-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Barrie Appliance Repair</a>
+            <a href="<?php echo $base_url; ?>locations/ajax-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Ajax Appliance Repair</a>
             <a href="<?php echo $base_url; ?>locations/pickering-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Pickering Appliance Repair</a>
-            <a href="<?php echo $base_url; ?>locations/caledon-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Caledon Appliance Repair</a>
             <a href="<?php echo $base_url; ?>locations/oshawa-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Oshawa Appliance Repair</a>
           </div>
         </div>
@@ -163,8 +165,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="<?php echo $base_url; ?>locations/waterloo-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Waterloo</a>
         <a href="<?php echo $base_url; ?>locations/cambridge-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Cambridge</a>
         <a href="<?php echo $base_url; ?>locations/guelph-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Guelph</a>
+        <a href="<?php echo $base_url; ?>locations/milton-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Milton</a>
+        <a href="<?php echo $base_url; ?>locations/barrie-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Barrie</a>
+        <a href="<?php echo $base_url; ?>locations/ajax-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Ajax</a>
         <a href="<?php echo $base_url; ?>locations/pickering-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Pickering</a>
-        <a href="<?php echo $base_url; ?>locations/caledon-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Caledon</a>
         <a href="<?php echo $base_url; ?>locations/oshawa-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Oshawa</a>
       </div>
     </div>

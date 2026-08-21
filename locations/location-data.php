@@ -567,5 +567,107 @@ return [
                 'text' => 'Outstanding service! Replaced the heating element in our GE oven. Reasonable flat rate and 90-day warranty.'
             ]
         ]
+    ],
+    'milton-appliance-repair' => [
+        'slug' => 'milton-appliance-repair',
+        'city_name' => 'Milton',
+        'region' => 'Halton Region',
+        'meta_title' => 'Appliance Repair Milton | Fast & Reliable Local Technicians',
+        'meta_description' => 'Fast same-day appliance repair across Milton & Halton Region. Certified technicians for refrigerators, washers, dryers, and stoves. Call 905-717-8905.',
+        'keywords' => 'appliance repair milton, milton washer repair, fridge repair milton ontario',
+        'h1_title' => 'Fast & Reliable Appliance Repair Services in Milton',
+        'cta_text' => 'Book Milton Service',
+        'badge_text' => 'SAME-DAY MILTON SERVICE',
+        'intro_text' => 'Need dependable appliance repair in Milton? Appliance Repair Knights delivers prompt, expert repairs across all Milton neighborhoods including Dempsey, Clarke, Coates, Beaty, and Harrison. Our licensed technicians arrive equipped with OEM parts to fix your appliances quickly.',
+        'postal_codes' => ['L9E', 'L9T'],
+        'neighborhoods' => ['Dempsey', 'Clarke', 'Coates', 'Beaty', 'Harrison', 'Scott', 'Willmott', 'Timberlea', 'Old Milton'],
+        'geo' => ['latitude' => 43.5183, 'longitude' => -79.8774],
+        'faqs' => [
+            [
+                'q' => 'How quickly can a technician arrive in Milton?',
+                'a' => 'We offer same-day appliance repair across Milton and Halton Region when booked before 2:00 PM.'
+            ],
+            [
+                'q' => 'What appliance brands do you repair in Milton?',
+                'a' => 'We service all major brands including Samsung, LG, Whirlpool, Bosch, GE, KitchenAid, Frigidaire, and Maytag.'
+            ]
+        ],
+        'reviews' => [
+            [
+                'author' => 'Brian T.',
+                'location' => 'Clarke, Milton',
+                'rating' => 5,
+                'date' => '4 days ago',
+                'text' => 'Our dryer stopped heating on a busy weekend. The technician was in Milton within a couple hours, diagnosed the heating element, and replaced it right away.'
+            ]
+        ]
+    ],
+    'barrie-appliance-repair' => [
+        'slug' => 'barrie-appliance-repair',
+        'city_name' => 'Barrie',
+        'region' => 'Simcoe County',
+        'meta_title' => 'Appliance Repair Barrie | Same-Day Service & Warranty',
+        'meta_description' => 'Expert appliance repair in Barrie and Simcoe County. Same-day service for fridges, washers, dryers, stoves & dishwashers. Call 905-717-8905 today!',
+        'keywords' => 'appliance repair barrie, barrie fridge repair, washing machine repair barrie',
+        'h1_title' => 'Trusted Appliance Repair Services in Barrie',
+        'cta_text' => 'Book Barrie Service',
+        'badge_text' => 'SAME-DAY BARRIE SERVICE',
+        'intro_text' => 'Looking for experienced appliance repair specialists in Barrie? Appliance Repair Knights provides fast, reliable, and guaranteed repairs across Barrie and Simcoe County. From South End to Downtown Barrie, our licensed technicians get your appliances running smoothly again.',
+        'postal_codes' => ['L4M', 'L4N', 'L9J'],
+        'neighborhoods' => ['Downtown Barrie', 'South End', 'Holly', 'Painswick', 'Allandale', 'East Bayfield', 'Letitia Heights', 'Ardagh Bluffs'],
+        'geo' => ['latitude' => 44.3894, 'longitude' => -79.6903],
+        'faqs' => [
+            [
+                'q' => 'Do you provide same-day refrigerator repair in Barrie?',
+                'a' => 'Yes, we prioritize emergency refrigerator and freezer repairs throughout Barrie to prevent food spoilage.'
+            ],
+            [
+                'q' => 'Are parts and labor covered under warranty in Barrie?',
+                'a' => 'Every appliance repair completed in Barrie comes with a comprehensive 90-day parts and labor guarantee.'
+            ]
+        ],
+        'reviews' => [
+            [
+                'author' => 'Karen W.',
+                'location' => 'South End, Barrie',
+                'rating' => 5,
+                'date' => '1 week ago',
+                'text' => 'Called for an urgent dishwasher leak in South Barrie. The tech arrived quickly, pinpointed the cracked pump hose, and repaired it on the spot. Great service!'
+            ]
+        ]
+    ],
+    'ajax-appliance-repair' => [
+        'slug' => 'ajax-appliance-repair',
+        'city_name' => 'Ajax',
+        'region' => 'Durham Region',
+        'meta_title' => 'Appliance Repair Ajax | Same-Day Service & Local Technicians',
+        'meta_description' => 'Fast appliance repair in Ajax & Durham Region. Same-day repairs for refrigerators, washers, dryers, and stoves with upfront pricing. Call 905-717-8905!',
+        'keywords' => 'appliance repair ajax, ajax appliance technician, fridge repair ajax',
+        'h1_title' => 'Fast & Reliable Appliance Repair Services in Ajax',
+        'cta_text' => 'Book Ajax Service',
+        'badge_text' => 'SAME-DAY AJAX SERVICE',
+        'intro_text' => 'Need quick appliance repair in Ajax? Appliance Repair Knights provides same-day residential repairs across Ajax and Durham Region. We service South Ajax, Central Ajax, Pickering Village, and surrounding neighborhoods with guaranteed workmanship and fair pricing.',
+        'postal_codes' => ['L1S', 'L1T', 'L1Z'],
+        'neighborhoods' => ['South Ajax', 'Central Ajax', 'Pickering Village', 'Audley', 'Discovery Bay', 'Deer Park', 'Midtown Ajax'],
+        'geo' => ['latitude' => 43.8509, 'longitude' => -79.0204],
+        'faqs' => [
+            [
+                'q' => 'Do you service all neighborhoods in Ajax?',
+                'a' => 'Yes, our technicians cover all areas of Ajax including South Ajax by the lake, Central Ajax, and north of the 401 up to Taunton.'
+            ],
+            [
+                'q' => 'How much does an appliance repair service call cost in Ajax?',
+                'a' => 'Our diagnostic service call fee is completely waived ($0) when you approve the repair estimate provided by our technician.'
+            ]
+        ],
+        'reviews' => [
+            [
+                'author' => 'Derek S.',
+                'location' => 'Central Ajax',
+                'rating' => 5,
+                'date' => '3 days ago',
+                'text' => 'Prompt and courteous technician who fixed our washer drain issue within an hour. Clear pricing with no surprise charges. Highly recommended in Ajax!'
+            ]
+        ]
     ]
 ];

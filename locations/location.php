@@ -41,18 +41,83 @@ $page_description = $loc['meta_description'];
 $page_keywords = $loc['keywords'];
 $canonical_url = 'https://www.appliancerepairknights.com/locations/' . $slug;
 
-// Include Head
-include __DIR__ . '/../head.php';
+$disable_global_schema = true;
 ?>
+<!DOCTYPE html>
+<html lang="en-CA" class="scroll-smooth">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-M7B6FLPR');</script>
+  <!-- End Google Tag Manager -->
 
-  <!-- JSON-LD LocalBusiness Schema -->
+  <!-- Technical Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#0F4C81">
+
+  <!-- Primary On-Page SEO Meta Tags -->
+  <title><?php echo htmlspecialchars($page_title); ?></title>
+  <meta name="title" content="<?php echo htmlspecialchars($page_title); ?>">
+  <meta name="description" content="<?php echo htmlspecialchars($page_description); ?>">
+  <meta name="keywords" content="<?php echo htmlspecialchars($page_keywords); ?>">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="language" content="English">
+  <meta name="author" content="Appliance Repair Knights">
+  <link rel="canonical" href="<?php echo htmlspecialchars($canonical_url); ?>">
+
+  <!-- Local SEO Geo Meta Tags -->
+  <meta name="geo.region" content="CA-ON">
+  <meta name="geo.placename" content="<?php echo htmlspecialchars($loc['city_name']); ?>">
+  <meta name="geo.position" content="<?php echo (float)($loc['geo']['latitude'] ?? 43.6487); ?>;<?php echo (float)($loc['geo']['longitude'] ?? -79.3817); ?>">
+  <meta name="ICBM" content="<?php echo (float)($loc['geo']['latitude'] ?? 43.6487); ?>, <?php echo (float)($loc['geo']['longitude'] ?? -79.3817); ?>">
+
+  <!-- Favicon & App Icons -->
+  <link rel="icon" type="image/x-icon" href="<?php echo $base_url; ?>img/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $base_url; ?>img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $base_url; ?>img/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $base_url; ?>img/apple-touch-icon.png">
+  <link rel="manifest" href="<?php echo $base_url; ?>img/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#0F4C81">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Appliance Repair Knights">
+  <meta property="og:url" content="<?php echo htmlspecialchars($canonical_url); ?>">
+  <meta property="og:title" content="<?php echo htmlspecialchars($page_title); ?>">
+  <meta property="og:description" content="<?php echo htmlspecialchars($page_description); ?>">
+  <meta property="og:image" content="https://www.appliancerepairknights.com/img/logo.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_CA">
+
+  <!-- Twitter Meta Tags -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="<?php echo htmlspecialchars($canonical_url); ?>">
+  <meta property="twitter:title" content="<?php echo htmlspecialchars($page_title); ?>">
+  <meta property="twitter:description" content="<?php echo htmlspecialchars($page_description); ?>">
+  <meta property="twitter:image" content="https://www.appliancerepairknights.com/img/logo.png">
+
+  <!-- Performance & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="<?php echo $base_url; ?>css/tailwind.min.css">
+  <link rel="stylesheet" href="<?php echo $base_url; ?>css/style.css">
+
+  <!-- 1. DYNAMIC CITY-SPECIFIC LOCALBUSINESS SCHEMA -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": "<?php echo $canonical_url; ?>#localbusiness",
     "name": "Appliance Repair Knights Ltd. - <?php echo htmlspecialchars($loc['city_name']); ?>",
     "image": "https://www.appliancerepairknights.com/img/logo.png",
-    "@id": "<?php echo $canonical_url; ?>#localbusiness",
     "url": "<?php echo $canonical_url; ?>",
     "telephone": "905-717-8905",
     "priceRange": "$$",
@@ -72,13 +137,8 @@ include __DIR__ . '/../head.php';
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": <?php echo $loc['geo']['latitude']; ?>,
-      "longitude": <?php echo $loc['geo']['longitude']; ?>
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "18"
+      "latitude": <?php echo (float)($loc['geo']['latitude'] ?? 43.6487); ?>,
+      "longitude": <?php echo (float)($loc['geo']['longitude'] ?? -79.3817); ?>
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -94,18 +154,16 @@ include __DIR__ . '/../head.php';
       {
         "@type": "AdministrativeArea",
         "name": "<?php echo htmlspecialchars($loc['region']); ?>"
-      }
-      <?php foreach ($loc['postal_codes'] as $pc): ?>,
+      }<?php if (!empty($loc['postal_codes'])): ?><?php foreach ($loc['postal_codes'] as $pc): ?>,
       {
         "@type": "PostalCodeRangeSpecification",
         "postalCode": "<?php echo htmlspecialchars($pc); ?>"
-      }
-      <?php endforeach; ?>
+      }<?php endforeach; ?><?php endif; ?>
     ]
   }
   </script>
 
-  <!-- JSON-LD Service Schema -->
+  <!-- 2. JSON-LD SERVICE SCHEMA -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -113,6 +171,7 @@ include __DIR__ . '/../head.php';
     "serviceType": "Appliance Repair Service",
     "provider": {
       "@type": "LocalBusiness",
+      "@id": "<?php echo $canonical_url; ?>#localbusiness",
       "name": "Appliance Repair Knights",
       "telephone": "905-717-8905",
       "url": "https://www.appliancerepairknights.com/"
@@ -125,7 +184,7 @@ include __DIR__ . '/../head.php';
   }
   </script>
 
-  <!-- JSON-LD BreadcrumbList Schema -->
+  <!-- 3. JSON-LD BREADCRUMBLIST SCHEMA -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -154,7 +213,7 @@ include __DIR__ . '/../head.php';
   </script>
 
   <?php if (!empty($loc['faqs'])): ?>
-  <!-- JSON-LD FAQPage Schema -->
+  <!-- 4. JSON-LD FAQPAGE SCHEMA -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -178,9 +237,6 @@ include __DIR__ . '/../head.php';
   }
   </script>
   <?php endif; ?>
-
-  <!-- Global Stylesheet -->
-  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="bg-lightbg text-secondary font-sans antialiased min-h-screen flex flex-col selection:bg-brandOrange selection:text-white">
 

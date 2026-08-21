@@ -952,21 +952,21 @@ include 'head.php';
             </h3>
 
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-y-3 gap-x-4 text-xs sm:text-sm text-slate-700 font-medium">
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Toronto</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Mississauga</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Brampton</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Oakville</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Milton</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Burlington</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Hamilton</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Kitchener</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Waterloo</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Cambridge</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Guelph</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Barrie</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Oshawa</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Ajax</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Pickering</div>
+              <a href="locations/toronto-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Toronto</a>
+              <a href="locations/mississauga-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Mississauga</a>
+              <a href="locations/brampton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Brampton</a>
+              <a href="locations/oakville-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Oakville</a>
+              <a href="locations/milton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Milton</a>
+              <a href="locations/burlington-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Burlington</a>
+              <a href="locations/hamilton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Hamilton</a>
+              <a href="locations/kitchener-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Kitchener</a>
+              <a href="locations/waterloo-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Waterloo</a>
+              <a href="locations/cambridge-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Cambridge</a>
+              <a href="locations/guelph-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Guelph</a>
+              <a href="locations/barrie-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Barrie</a>
+              <a href="locations/oshawa-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Oshawa</a>
+              <a href="locations/ajax-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Ajax</a>
+              <a href="locations/pickering-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Pickering</a>
             </div>
 
             <div class="mt-6 pt-4 border-t border-slate-100">

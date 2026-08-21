@@ -81,6 +81,7 @@ $robots_meta = isset($robots_meta) ? $robots_meta : 'index, follow, max-image-pr
   <!-- Global Custom Stylesheet -->
   <link rel="stylesheet" href="<?php echo $base_url; ?>css/style.css">
 
+  <?php if (empty($disable_global_schema)): ?>
   <!-- Central JSON-LD LocalBusiness Schema for Google SEO & Entity Matching -->
   <script type="application/ld+json">
   {
@@ -123,4 +124,5 @@ $robots_meta = isset($robots_meta) ? $robots_meta : 'index, follow, max-image-pr
     ]
   }
   </script>
+  <?php endif; ?>
 </head>

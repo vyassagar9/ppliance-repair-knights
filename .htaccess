@@ -47,6 +47,9 @@ ErrorDocument 404 /404.php
   RewriteRule ^oakville-appliance-repair/?$ locations/oakville-appliance-repair [R=301,L]
   RewriteRule ^scarborough-appliance-repair/?$ locations/scarborough-appliance-repair [R=301,L]
   RewriteRule ^oshawa-appliance-repair/?$ locations/oshawa-appliance-repair [R=301,L]
+  RewriteRule ^milton-appliance-repair/?$ locations/milton-appliance-repair [R=301,L]
+  RewriteRule ^barrie-appliance-repair/?$ locations/barrie-appliance-repair [R=301,L]
+  RewriteRule ^ajax-appliance-repair/?$ locations/ajax-appliance-repair [R=301,L]
 
   # 2. Service Pages Redirects
   RewriteRule ^refrigerator-repair/?$ services/refrigerator-repair [R=301,L]

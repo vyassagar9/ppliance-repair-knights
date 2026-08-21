@@ -106,8 +106,10 @@ $base_url = isset($base_url) ? $base_url : '';
             <li><a href="<?php echo $base_url; ?>locations/waterloo-appliance-repair" class="hover:text-white transition-colors">Waterloo Repair</a></li>
             <li><a href="<?php echo $base_url; ?>locations/cambridge-appliance-repair" class="hover:text-white transition-colors">Cambridge Repair</a></li>
             <li><a href="<?php echo $base_url; ?>locations/guelph-appliance-repair" class="hover:text-white transition-colors">Guelph Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>locations/milton-appliance-repair" class="hover:text-white transition-colors">Milton Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>locations/barrie-appliance-repair" class="hover:text-white transition-colors">Barrie Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>locations/ajax-appliance-repair" class="hover:text-white transition-colors">Ajax Repair</a></li>
             <li><a href="<?php echo $base_url; ?>locations/pickering-appliance-repair" class="hover:text-white transition-colors">Pickering Repair</a></li>
-            <li><a href="<?php echo $base_url; ?>locations/caledon-appliance-repair" class="hover:text-white transition-colors">Caledon Repair</a></li>
             <li><a href="<?php echo $base_url; ?>locations/oshawa-appliance-repair" class="hover:text-white transition-colors">Oshawa Repair</a></li>
           </ul>
         </div>
