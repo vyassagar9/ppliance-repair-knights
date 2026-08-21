@@ -4,10 +4,10 @@ $page_title = '#1 Appliance Repair Service in GTA & Surrounding Areas | 24/7';
 $page_description = 'Fast, same-day appliance repair across GTA, Kitchener-Waterloo & Hamilton. Certified technicians, transparent pricing & warranty. Call 905-717-8905!';
 $page_keywords = 'appliance repair near me, appliance repair GTA, emergency appliance repair';
 $canonical_url = 'https://www.appliancerepairknights.com/';
-include 'head.php';
-?>
 
-  <!-- JSON-LD LocalBusiness & Service Schema for SEO -->
+// Unified Homepage Schema (@graph: Single LocalBusiness + Service + FAQPage)
+$custom_head_schema = '
+  <!-- Unified JSON-LD LocalBusiness, Service & FAQPage Schema for Homepage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -15,13 +15,14 @@ include 'head.php';
       {
         "@type": "LocalBusiness",
         "@id": "https://www.appliancerepairknights.com/#organization",
-        "name": "Appliance Repair Knights",
+        "name": "Appliance Repair Knights Ltd.",
         "url": "https://www.appliancerepairknights.com/",
         "logo": "https://www.appliancerepairknights.com/img/logo.png",
         "image": "https://www.appliancerepairknights.com/img/bnr.png",
         "telephone": "905-717-8905",
         "email": "info@appliancerepairknights.com",
         "priceRange": "$$",
+        "hasMap": "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059",
         "sameAs": [
           "https://www.facebook.com/Appliancerepairknights",
           "https://www.instagram.com/appliancerepairknights/",
@@ -40,13 +41,6 @@ include 'head.php';
           "latitude": 43.6487,
           "longitude": -79.3817
         },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5.0",
-          "reviewCount": "490",
-          "bestRating": "5",
-          "worstRating": "1"
-        },
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",
@@ -56,15 +50,17 @@ include 'head.php';
           }
         ],
         "areaServed": [
-          "Toronto", "Mississauga", "Brampton", "Oakville", "Milton", 
-          "Burlington", "Hamilton", "Kitchener", "Waterloo", "Cambridge", 
-          "Guelph", "Barrie", "Oshawa", "Ajax", "Pickering"
+          "Toronto", "Mississauga", "Brampton", "Caledon", "Vaughan", "Markham", "Oakville", 
+          "Scarborough", "Richmond Hill", "Milton", "Burlington", "Hamilton", "Kitchener", 
+          "Waterloo", "Cambridge", "Guelph", "Barrie", "Oshawa", "Ajax", "Pickering"
         ]
       },
       {
         "@type": "Service",
         "name": "Same-Day Appliance Repair",
-        "provider": {"@id": "https://www.appliancerepairknights.com/#organization"},
+        "provider": {
+          "@id": "https://www.appliancerepairknights.com/#organization"
+        },
         "areaServed": "Greater Toronto Area & Southern Ontario",
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
@@ -111,7 +107,10 @@ include 'head.php';
     ]
   }
   </script>
-</head>
+';
+
+include 'head.php';
+?>
 
 <body class="bg-white text-slate-800 font-sans antialiased selection:bg-brandOrange selection:text-white">
 
@@ -955,9 +954,14 @@ include 'head.php';
               <a href="locations/toronto-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Toronto</a>
               <a href="locations/mississauga-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Mississauga</a>
               <a href="locations/brampton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Brampton</a>
+              <a href="locations/caledon-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Caledon</a>
+              <a href="locations/vaughan-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Vaughan</a>
+              <a href="locations/markham-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Markham</a>
               <a href="locations/oakville-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Oakville</a>
-              <a href="locations/milton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Milton</a>
+              <a href="locations/scarborough-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Scarborough</a>
+              <a href="locations/richmond-hill-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Richmond Hill</a>
               <a href="locations/burlington-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Burlington</a>
+              <a href="locations/milton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Milton</a>
               <a href="locations/hamilton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Hamilton</a>
               <a href="locations/kitchener-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Kitchener</a>
               <a href="locations/waterloo-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Waterloo</a>
