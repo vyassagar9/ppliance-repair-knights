@@ -1,14 +1,12 @@
 <?php
 $base_url = '../';
+$current_page = 'stove';
 $page_title = 'Stove & Range Repair | Appliance Repair Knights';
 $page_description = 'Gas & electric stove, range, and induction oven repair. Certified technicians, genuine parts, same-day scheduling. Call 905-717-8905.';
 $page_keywords = 'stove repair, induction oven repair, gas range repair GTA';
 $canonical_url = 'https://www.appliancerepairknights.com/services/stove-repair';
-include '../head.php';
-?>
 
-
-
+$custom_head_schema = <<<'HTML'
   <!-- JSON-LD Service Schema -->
   <script type="application/ld+json">
   {
@@ -56,55 +54,13 @@ include '../head.php';
     ]
   }
   </script>
-  <!-- Global Stylesheet -->
-  <link rel="stylesheet" href="../css/style.css">
-</head>
-<body class="bg-lightbg text-secondary font-body min-h-screen flex flex-col">
+HTML;
 
-<?php 
-$base_url = '../';
-$current_page = 'stove';
-include '../header.php'; 
+include __DIR__ . '/../head.php';
 ?>
+<body class="bg-lightbg text-secondary font-sans antialiased min-h-screen flex flex-col selection:bg-brandOrange selection:text-white">
 
-    <!-- Mobile Nav Drawer -->
-    <div id="mobile-menu-drawer" class="hidden md:hidden bg-white border-t border-bordercolor shadow-lg transition-all duration-300">
-      <div class="px-4 py-4 space-y-3 flex flex-col">
-        <a href="../index.php" class="mobile-nav-link font-semibold text-secondary hover:text-accent py-2 px-2 rounded-lg cursor-pointer">Home</a>
-        <a href="../about.php" class="mobile-nav-link font-semibold text-secondary hover:text-accent py-2 px-2 rounded-lg cursor-pointer">About</a>
-        
-        <span class="font-bold text-xs uppercase tracking-wider text-slate-400 px-2">Services</span>
-        <div class="grid grid-cols-2 gap-2 bg-slate-50 p-2.5 rounded-lg border border-bordercolor">
-          <a href="fridge-repair.php" class="text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Fridge</a>
-          <a href="stove-repair.php" class="text-sm font-semibold py-1.5 text-accent cursor-pointer">Stove</a>
-          <a href="microwave-repair.php" class="text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Microwave</a>
-          <a href="washer-repair.php" class="text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Washer</a>
-          <a href="dryer-repair.php" class="text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Dryer</a>
-          <a href="dishwasher-repair.php" class="text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Dishwasher</a>
-        </div>
-
-        <span class="font-bold text-xs uppercase tracking-wider text-slate-400 px-2">Service Areas</span>
-        <div class="grid grid-cols-2 gap-2 bg-slate-50 p-2.5 rounded-lg border border-bordercolor">
-          <a href="../index.php#areas" class="mobile-nav-link text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Toronto & GTA</a>
-          <a href="../index.php#areas" class="mobile-nav-link text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Mississauga</a>
-          <a href="../index.php#areas" class="mobile-nav-link text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Hamilton</a>
-          <a href="../index.php#areas" class="mobile-nav-link text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Oshawa</a>
-          <a href="../index.php#areas" class="mobile-nav-link text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Kitchener-Waterloo</a>
-        </div>
-
-        <a href="../schedule.php" class="mobile-nav-link font-semibold text-secondary hover:text-accent py-2 px-2 rounded-lg cursor-pointer">Book Online</a>
-        <div class="pt-4 border-t border-bordercolor flex flex-col gap-2">
-          <a href="tel:9057178905" class="gtm-web-call bg-primary text-white text-center font-bold py-3 rounded-lg flex justify-center items-center gap-2 cursor-pointer">
-            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
-            Call: 905-717-8905
-          </a>
-          <a href="../schedule.php" class="bg-accent hover:bg-accent-hover text-white text-center font-bold py-3 rounded-lg cursor-pointer">
-            Schedule My Repair
-          </a>
-        </div>
-      </div>
-    </div>
-  </header>
+<?php include __DIR__ . '/../header.php'; ?>
 
   <!-- BREADCRUMBS -->
   <nav class="bg-white border-b border-bordercolor">
@@ -384,58 +340,4 @@ include '../header.php';
     </section>
   </main>
 
-<?php 
-$base_url = '../';
-include '../footer.php'; 
-?>
-
-  <!-- MOBILE FLOATING ACTION BAR -->
-  <div class="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-bordercolor shadow-lg md:hidden flex justify-between items-center px-4 py-2.5">
-    <a href="tel:9057178905" class="gtm-web-call flex-1 bg-primary text-white text-center font-bold py-3 rounded-lg flex justify-center items-center gap-2 cursor-pointer mr-2">
-      <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
-      Call for Fast Repair
-    </a>
-    <a href="../schedule.php" class="flex-1 bg-accent text-white text-center font-bold py-3 rounded-lg cursor-pointer">
-      Book Online
-    </a>
-  </div>
-
-  <script>
-    // FAQ Toggle
-    function toggleFaq(button) {
-      const content = button.nextElementSibling;
-      const svg = button.querySelector('svg');
-      content.classList.toggle('hidden');
-      svg.classList.toggle('rotate-180');
-    }
-
-    // Mobile Hamburger
-    const menuBtn = document.getElementById('mobile-menu-btn');
-    const drawer = document.getElementById('mobile-menu-drawer');
-    const ham = document.getElementById('hamburger-icon');
-    const close = document.getElementById('close-icon');
-
-    menuBtn.addEventListener('click', () => {
-      drawer.classList.toggle('hidden');
-      ham.classList.toggle('hidden');
-      close.classList.toggle('hidden');
-    });
-
-    // Conditional Second Appliance field
-    const addSecondCheck = document.getElementById('add-second-appliance');
-    const secondApplianceContainer = document.getElementById('second-appliance-container');
-    addSecondCheck.addEventListener('change', function() {
-      if (this.checked) {
-        secondApplianceContainer.classList.remove('hidden');
-      } else {
-        secondApplianceContainer.classList.add('hidden');
-      }
-    });
-
-    // Min date block
-    const dateInput = document.getElementById('appt_date');
-    const today = new Date().toISOString().split('T')[0];
-    dateInput.min = today;
-  </script>
-</body>
-</html>
+<?php include __DIR__ . '/../footer.php'; ?>
