@@ -174,11 +174,15 @@
     "@graph": [
       {
         "@type": "LocalBusiness",
-        "name": "Appliance Repair Knights",
-        "image": "https://www.appliancerepairknights.ca/img/bnr.png",
+        "@id": "https://www.appliancerepairknights.com/#organization",
+        "name": "Appliance Repair Knights Ltd.",
+        "url": "https://www.appliancerepairknights.com/",
+        "logo": "https://www.appliancerepairknights.com/img/logo.png",
+        "image": "https://www.appliancerepairknights.com/img/bnr.png",
         "telephone": "905-717-8905",
         "email": "info@appliancerepairknights.com",
         "priceRange": "$$",
+        "hasMap": "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059",
         "sameAs": [
           "https://www.facebook.com/Appliancerepairknights",
           "https://www.instagram.com/appliancerepairknights/",
@@ -186,9 +190,16 @@
         ],
         "address": {
           "@type": "PostalAddress",
+          "streetAddress": "100 King St W",
           "addressLocality": "Toronto",
           "addressRegion": "ON",
+          "postalCode": "M5X 1A9",
           "addressCountry": "CA"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 43.6487,
+          "longitude": -79.3817
         },
         "aggregateRating": {
           "@type": "AggregateRating",
@@ -200,25 +211,29 @@
           "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
           "opens": "08:00",
           "closes": "21:00"
-        }
+        },
+        "areaServed": [
+          "Toronto", "Mississauga", "Brampton", "Milton", "Oakville", "Burlington", "Hamilton",
+          "Kitchener", "Waterloo", "Cambridge", "Guelph", "Oshawa", "Ajax", "Pickering", "Barrie"
+        ]
       },
       {
         "@type": "FAQPage",
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "How quickly can you arrive for a repair?",
+            "name": "How quickly can a technician arrive at my home?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "We offer same-day service! When you call or submit a form before 2:00 PM, our local technician can be at your door within 2-4 hours."
+              "text": "We offer same-day service across Toronto and the GTA! When you call or submit an enquiry before 2:00 PM, our technician can be at your home within 2 to 4 hours."
             }
           },
           {
             "@type": "Question",
-            "name": "What is your pricing model?",
+            "name": "What is your pricing model and service call fee?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "We provide upfront, flat-rate service details after initial diagnosis. The diagnostic fee is 100% FREE when you proceed with any repair."
+              "text": "We provide transparent upfront flat-rate pricing with zero hidden fees. The diagnostic service call fee is 100% FREE when you proceed with any appliance repair."
             }
           },
           {
@@ -226,7 +241,15 @@
             "name": "What warranty do you offer on repairs?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "All repairs come with a written warranty of up to 90 days on both brand-new replacement parts and labor."
+              "text": "All repairs performed by Appliance Repair Knights come with a written warranty of up to 90 days covering both new replacement parts and technician labor."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you carry replacement parts in your service vehicles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! Our service vans are fully stocked with common brand-compatible, high-grade replacement parts for Bosch, GE Appliances, KitchenAid, Frigidaire, Maytag, Sub-Zero, Miele and Samsung appliances to complete 85%+ of repairs on the spot."
             }
           }
         ]
