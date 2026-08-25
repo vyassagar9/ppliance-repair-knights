@@ -106,145 +106,123 @@ $disable_global_schema = true;
   <!-- Performance & Fonts (Zero-Latency Self-Hosted Fonts & CSS) -->
   <link rel="preload" href="<?php echo $base_url; ?>fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="<?php echo $base_url; ?>fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="<?php echo $base_url; ?>css/fonts.css">
+  <link rel="stylesheet" href="<?php echo $base_url; ?>css/fonts.min.css">
   <link rel="stylesheet" href="<?php echo $base_url; ?>css/tailwind.min.css">
-  <link rel="stylesheet" href="<?php echo $base_url; ?>css/style.css">
+  <link rel="stylesheet" href="<?php echo $base_url; ?>css/style.min.css">
 
-  <!-- 1. DYNAMIC CITY-SPECIFIC LOCALBUSINESS SCHEMA -->
+  <!-- UNIFIED DYNAMIC CITY SCHEMA (@graph: LocalBusiness + Service + BreadcrumbList + FAQPage) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": "<?php echo $canonical_url; ?>#localbusiness",
-    "name": "Appliance Repair Knights Ltd. - <?php echo htmlspecialchars($loc['city_name']); ?>",
-    "image": "https://www.appliancerepairknights.com/img/logo.png",
-    "url": "<?php echo $canonical_url; ?>",
-    "telephone": "905-717-8905",
-    "priceRange": "$$",
-    "hasMap": "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059",
-    "sameAs": [
-      "https://www.facebook.com/Appliancerepairknights",
-      "https://www.instagram.com/appliancerepairknights/",
-      "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "100 King St W",
-      "addressLocality": "Toronto",
-      "addressRegion": "ON",
-      "postalCode": "M5X 1A9",
-      "addressCountry": "CA"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": <?php echo (float)($loc['geo']['latitude'] ?? 43.6487); ?>,
-      "longitude": <?php echo (float)($loc['geo']['longitude'] ?? -79.3817); ?>
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-      "opens": "08:00",
-      "closes": "21:00"
-    },
-    "areaServed": [
+    "@graph": [
       {
-        "@type": "AdministrativeArea",
-        "name": "<?php echo htmlspecialchars($loc['city_name']); ?>, ON"
+        "@type": "LocalBusiness",
+        "@id": "<?php echo $canonical_url; ?>#localbusiness",
+        "name": "Appliance Repair Knights Ltd. - <?php echo htmlspecialchars($loc['city_name']); ?>",
+        "image": "https://www.appliancerepairknights.com/img/logo.png",
+        "url": "<?php echo $canonical_url; ?>",
+        "telephone": "905-717-8905",
+        "priceRange": "$$",
+        "hasMap": "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059",
+        "sameAs": [
+          "https://www.facebook.com/Appliancerepairknights",
+          "https://www.instagram.com/appliancerepairknights/",
+          "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "100 King St W",
+          "addressLocality": "Toronto",
+          "addressRegion": "ON",
+          "postalCode": "M5X 1A9",
+          "addressCountry": "CA"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": <?php echo (float)($loc['geo']['latitude'] ?? 43.6487); ?>,
+          "longitude": <?php echo (float)($loc['geo']['longitude'] ?? -79.3817); ?>
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "08:00",
+          "closes": "21:00"
+        },
+        "areaServed": [
+          {
+            "@type": "AdministrativeArea",
+            "name": "<?php echo htmlspecialchars($loc['city_name']); ?>, ON"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "<?php echo htmlspecialchars($loc['region']); ?>"
+          }<?php if (!empty($loc['postal_codes'])): ?><?php foreach ($loc['postal_codes'] as $pc): ?>,
+          {
+            "@type": "PostalCodeRangeSpecification",
+            "postalCode": "<?php echo htmlspecialchars($pc); ?>"
+          }<?php endforeach; ?><?php endif; ?>
+        ]
       },
       {
-        "@type": "AdministrativeArea",
-        "name": "<?php echo htmlspecialchars($loc['region']); ?>"
-      }<?php if (!empty($loc['postal_codes'])): ?><?php foreach ($loc['postal_codes'] as $pc): ?>,
+        "@type": "Service",
+        "@id": "<?php echo $canonical_url; ?>#service",
+        "serviceType": "Appliance Repair Service",
+        "provider": {
+          "@id": "<?php echo $canonical_url; ?>#localbusiness"
+        },
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "<?php echo htmlspecialchars($loc['city_name']); ?>, ON"
+        },
+        "description": "Same-day inspection and repair services for refrigerators, washers, dryers, dishwashers, stoves, ovens, and microwaves in <?php echo htmlspecialchars($loc['city_name']); ?> and <?php echo htmlspecialchars($loc['region']); ?>."
+      },
       {
-        "@type": "PostalCodeRangeSpecification",
-        "postalCode": "<?php echo htmlspecialchars($pc); ?>"
-      }<?php endforeach; ?><?php endif; ?>
+        "@type": "BreadcrumbList",
+        "@id": "<?php echo $canonical_url; ?>#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.appliancerepairknights.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Service Areas",
+            "item": "https://www.appliancerepairknights.com/#service-areas"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "<?php echo htmlspecialchars($loc['city_name']); ?> Appliance Repair",
+            "item": "<?php echo $canonical_url; ?>"
+          }
+        ]
+      }<?php if (!empty($loc['faqs'])): ?>,
+      {
+        "@type": "FAQPage",
+        "@id": "<?php echo $canonical_url; ?>#faq",
+        "mainEntity": [
+          <?php 
+          $faq_json_items = [];
+          foreach ($loc['faqs'] as $f) {
+              $faq_json_items[] = json_encode([
+                  '@type' => 'Question',
+                  'name' => $f['q'],
+                  'acceptedAnswer' => [
+                      '@type' => 'Answer',
+                      'text' => $f['a']
+                  ]
+              ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+          }
+          echo implode(",\n          ", $faq_json_items);
+          ?>
+        ]
+      }<?php endif; ?>
     ]
   }
   </script>
-
-  <!-- 2. JSON-LD SERVICE SCHEMA -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": "Appliance Repair Service",
-    "provider": {
-      "@type": "LocalBusiness",
-      "@id": "<?php echo $canonical_url; ?>#localbusiness",
-      "name": "Appliance Repair Knights Ltd.",
-      "telephone": "905-717-8905",
-      "url": "https://www.appliancerepairknights.com/",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "100 King St W",
-        "addressLocality": "Toronto",
-        "addressRegion": "ON",
-        "postalCode": "M5X 1A9",
-        "addressCountry": "CA"
-      }
-    },
-    "areaServed": {
-      "@type": "AdministrativeArea",
-      "name": "<?php echo htmlspecialchars($loc['city_name']); ?>, ON"
-    },
-    "description": "Same-day inspection and repair services for refrigerators, washers, dryers, dishwashers, stoves, ovens, and microwaves in <?php echo htmlspecialchars($loc['city_name']); ?> and <?php echo htmlspecialchars($loc['region']); ?>."
-  }
-  </script>
-
-  <!-- 3. JSON-LD BREADCRUMBLIST SCHEMA -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://www.appliancerepairknights.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Service Areas",
-        "item": "https://www.appliancerepairknights.com/#service-areas"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "<?php echo htmlspecialchars($loc['city_name']); ?> Appliance Repair",
-        "item": "<?php echo $canonical_url; ?>"
-      }
-    ]
-  }
-  </script>
-
-  <?php if (!empty($loc['faqs'])): ?>
-  <!-- 4. JSON-LD FAQPAGE SCHEMA -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      <?php 
-      $faq_json_items = [];
-      foreach ($loc['faqs'] as $f) {
-          $faq_json_items[] = json_encode([
-              '@type' => 'Question',
-              'name' => $f['q'],
-              'acceptedAnswer' => [
-                  '@type' => 'Answer',
-                  'text' => $f['a']
-              ]
-          ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
-      }
-      echo implode(",\n      ", $faq_json_items);
-      ?>
-    ]
-  }
-  </script>
-  <?php endif; ?>
 </head>
 <body class="bg-lightbg text-secondary font-sans antialiased min-h-screen flex flex-col selection:bg-brandOrange selection:text-white">
 

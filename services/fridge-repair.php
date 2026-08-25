@@ -7,66 +7,85 @@ $page_keywords = 'refrigerator repair near me, fridge installation, fix cooling 
 $canonical_url = 'https://www.appliancerepairknights.com/services/fridge-repair';
 
 $custom_head_schema = <<<'HTML'
-  <!-- JSON-LD Service Schema -->
+  <!-- UNIFIED JSON-LD SCHEMA (@graph: LocalBusiness + Service + FAQPage) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": "Fridge Repair & Installation Service",
-    "provider": {
-      "@type": "LocalBusiness",
-      "@id": "https://www.appliancerepairknights.com/#organization",
-      "name": "Appliance Repair Knights Ltd.",
-      "telephone": "905-717-8905",
-      "url": "https://www.appliancerepairknights.com/",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "100 King St W",
-        "addressLocality": "Toronto",
-        "addressRegion": "ON",
-        "postalCode": "M5X 1A9",
-        "addressCountry": "CA"
-      }
-    },
-    "areaServed": [
-      { "@type": "AdministrativeArea", "name": "Greater Toronto Area" },
-      { "@type": "AdministrativeArea", "name": "Hamilton" },
-      { "@type": "AdministrativeArea", "name": "Oshawa" },
-      { "@type": "AdministrativeArea", "name": "Kitchener-Waterloo" }
-    ],
-    "description": "Expert same-day refrigerator and freezer repair and installation services. We diagnose and fix cooling failures, ice maker leaks, broken thermostats, compressor issues, and built-in panel installs."
-  }
-  </script>
-
-  <!-- JSON-LD FAQPage Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "Why is my refrigerator not cooling but the freezer works?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "This is often caused by an evaporator fan failure, a blocked air damper between the freezer and fridge, or a malfunctioning defrost cycle system. Our technician will isolate the exact part causing the airflow issue during diagnosis."
+        "@type": "LocalBusiness",
+        "@id": "https://www.appliancerepairknights.com/#organization",
+        "name": "Appliance Repair Knights Ltd.",
+        "url": "https://www.appliancerepairknights.com/",
+        "logo": "https://www.appliancerepairknights.com/img/logo.png",
+        "image": "https://www.appliancerepairknights.com/img/bnr.png",
+        "telephone": "905-717-8905",
+        "email": "info@appliancerepairknights.com",
+        "priceRange": "$$",
+        "hasMap": "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059",
+        "sameAs": [
+          "https://www.facebook.com/Appliancerepairknights",
+          "https://www.instagram.com/appliancerepairknights/",
+          "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "100 King St W",
+          "addressLocality": "Toronto",
+          "addressRegion": "ON",
+          "postalCode": "M5X 1A9",
+          "addressCountry": "CA"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 43.6487,
+          "longitude": -79.3817
         }
       },
       {
-        "@type": "Question",
-        "name": "How much does it cost to repair a refrigerator?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We provide a flat-rate quote upfront after diagnosing the issue. The cost depends on the problem and any required parts. We always confirm the price with you before we begin."
-        }
+        "@type": "Service",
+        "@id": "https://www.appliancerepairknights.com/services/fridge-repair#service",
+        "serviceType": "Fridge Repair & Installation Service",
+        "provider": {
+          "@id": "https://www.appliancerepairknights.com/#organization"
+        },
+        "areaServed": [
+          { "@type": "AdministrativeArea", "name": "Greater Toronto Area" },
+          { "@type": "AdministrativeArea", "name": "Hamilton" },
+          { "@type": "AdministrativeArea", "name": "Oshawa" },
+          { "@type": "AdministrativeArea", "name": "Kitchener-Waterloo" }
+        ],
+        "description": "Expert same-day refrigerator and freezer repair and installation services. We diagnose and fix cooling failures, ice maker leaks, broken thermostats, compressor issues, and built-in panel installs."
       },
       {
-        "@type": "Question",
-        "name": "Can you fix my refrigerator today?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, we prioritize same-day calls for refrigerator emergencies to prevent food spoilage. Call before 1 PM and we'll aim to dispatch a technician to your home today."
-        }
+        "@type": "FAQPage",
+        "@id": "https://www.appliancerepairknights.com/services/fridge-repair#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why is my refrigerator not cooling but the freezer works?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This is often caused by an evaporator fan failure, a blocked air damper between the freezer and fridge, or a malfunctioning defrost cycle system. Our technician will isolate the exact part causing the airflow issue during diagnosis."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does it cost to repair a refrigerator?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We provide a flat-rate quote upfront after diagnosing the issue. The cost depends on the problem and any required parts. We always confirm the price with you before we begin."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you fix my refrigerator today?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we prioritize same-day calls for refrigerator emergencies to prevent food spoilage. Call before 1 PM and we'll aim to dispatch a technician to your home today."
+            }
+          }
+        ]
       }
     ]
   }

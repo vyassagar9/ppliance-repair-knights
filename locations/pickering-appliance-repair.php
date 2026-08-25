@@ -7,197 +7,177 @@ $canonical_url = 'https://www.appliancerepairknights.com/locations/pickering-app
 include '../head.php';
 ?>
 
-  <!-- JSON-LD LocalBusiness Schema -->
+  <!-- UNIFIED JSON-LD SCHEMA (@graph: LocalBusiness + Service + BreadcrumbList + FAQPage) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Appliance Repair Knights Ltd. - Pickering",
-    "image": "https://www.appliancerepairknights.com/img/logo.png",
-    "@id": "https://www.appliancerepairknights.com/locations/pickering-appliance-repair#localbusiness",
-    "url": "https://www.appliancerepairknights.com/locations/pickering-appliance-repair",
-    "telephone": "905-717-8905",
-    "priceRange": "$$",
-    "hasMap": "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059",
-    "sameAs": [
-      "https://www.facebook.com/Appliancerepairknights",
-      "https://www.instagram.com/appliancerepairknights/",
-      "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "100 King St W",
-      "addressLocality": "Toronto",
-      "addressRegion": "ON",
-      "postalCode": "M5X 1A9",
-      "addressCountry": "CA"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 43.7836619,
-      "longitude": -79.5314952
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "15"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "opens": "08:00",
-      "closes": "21:00"
-    },
-    "areaServed": [
+    "@graph": [
       {
-        "@type": "AdministrativeArea",
-        "name": "Pickering, ON"
+        "@type": "LocalBusiness",
+        "@id": "https://www.appliancerepairknights.com/locations/pickering-appliance-repair#localbusiness",
+        "name": "Appliance Repair Knights Ltd. - Pickering",
+        "image": "https://www.appliancerepairknights.com/img/logo.png",
+        "url": "https://www.appliancerepairknights.com/locations/pickering-appliance-repair",
+        "telephone": "905-717-8905",
+        "priceRange": "$$",
+        "hasMap": "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059",
+        "sameAs": [
+          "https://www.facebook.com/Appliancerepairknights",
+          "https://www.instagram.com/appliancerepairknights/",
+          "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "100 King St W",
+          "addressLocality": "Toronto",
+          "addressRegion": "ON",
+          "postalCode": "M5X 1A9",
+          "addressCountry": "CA"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 43.7836619,
+          "longitude": -79.5314952
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "reviewCount": "15"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "08:00",
+          "closes": "21:00"
+        },
+        "areaServed": [
+          {
+            "@type": "AdministrativeArea",
+            "name": "Pickering, ON"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Durham Region"
+          },
+          {
+            "@type": "PostalCodeRangeSpecification",
+            "postalCode": "L1V"
+          },
+          {
+            "@type": "PostalCodeRangeSpecification",
+            "postalCode": "L1W"
+          },
+          {
+            "@type": "PostalCodeRangeSpecification",
+            "postalCode": "L1X"
+          },
+          {
+            "@type": "PostalCodeRangeSpecification",
+            "postalCode": "L1Y"
+          },
+          {
+            "@type": "PostalCodeRangeSpecification",
+            "postalCode": "L1Z"
+          }
+        ]
       },
       {
-        "@type": "AdministrativeArea",
-        "name": "Durham Region"
+        "@type": "Service",
+        "@id": "https://www.appliancerepairknights.com/locations/pickering-appliance-repair#service",
+        "serviceType": "Appliance Repair Service",
+        "provider": {
+          "@id": "https://www.appliancerepairknights.com/locations/pickering-appliance-repair#localbusiness"
+        },
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "Pickering, ON"
+        },
+        "description": "Same-day inspection and repair services for refrigerators, washers, dryers, dishwashers, stoves, ovens, and microwaves in Pickering and Durham Region."
       },
       {
-        "@type": "PostalCodeRangeSpecification",
-        "postalCode": "L1V"
+        "@type": "BreadcrumbList",
+        "@id": "https://www.appliancerepairknights.com/locations/pickering-appliance-repair#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.appliancerepairknights.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Service Areas",
+            "item": "https://www.appliancerepairknights.com/#service-areas"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Pickering Appliance Repair",
+            "item": "https://www.appliancerepairknights.com/locations/pickering-appliance-repair"
+          }
+        ]
       },
       {
-        "@type": "PostalCodeRangeSpecification",
-        "postalCode": "L1W"
-      },
-      {
-        "@type": "PostalCodeRangeSpecification",
-        "postalCode": "L1X"
-      },
-      {
-        "@type": "PostalCodeRangeSpecification",
-        "postalCode": "L1Y"
-      },
-      {
-        "@type": "PostalCodeRangeSpecification",
-        "postalCode": "L1Z"
-      }
-    ]
-  }
-  </script>
-
-  <!-- JSON-LD Service Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": "Appliance Repair Service",
-    "provider": {
-      "@type": "LocalBusiness",
-      "@id": "https://www.appliancerepairknights.com/locations/pickering-appliance-repair#localbusiness",
-      "name": "Appliance Repair Knights Ltd.",
-      "telephone": "905-717-8905",
-      "url": "https://www.appliancerepairknights.com/",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "100 King St W",
-        "addressLocality": "Toronto",
-        "addressRegion": "ON",
-        "postalCode": "M5X 1A9",
-        "addressCountry": "CA"
-      }
-    },
-    "areaServed": {
-      "@type": "AdministrativeArea",
-      "name": "Pickering, ON"
-    },
-    "description": "Same-day inspection and repair services for refrigerators, washers, dryers, dishwashers, stoves, ovens, and microwaves in Pickering and Durham Region."
-  }
-  </script>
-
-  <!-- JSON-LD BreadcrumbList Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://www.appliancerepairknights.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Service Areas",
-        "item": "https://www.appliancerepairknights.com/#service-areas"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Pickering Appliance Repair",
-        "item": "https://www.appliancerepairknights.com/locations/pickering-appliance-repair"
-      }
-    ]
-  }
-  </script>
-
-  <!-- JSON-LD FAQPage Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Do you offer same-day appliance repair in Pickering?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, Appliance Repair Knights provides same-day service across all Pickering neighbourhoods including Dunbarton, Amberlea, West Shore, and Bay Ridges when you book before 2:00 PM."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Which appliance brands do you service in Pickering?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We repair all major home appliance brands, including Whirlpool, LG, Samsung, Bosch, GE, Maytag, KitchenAid, Frigidaire, Kenmore, Miele, Sub-Zero, and Viking."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much does appliance repair cost in Pickering?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We offer affordable, flat-rate pricing with no hidden charges. Our technician inspects your unit on-site and provides an exact upfront quote before starting any work."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you offer a warranty on repairs in Pickering?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, all our appliance repairs in Pickering are backed by a comprehensive 90-day warranty on both replacement parts and labor."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What postal codes in Pickering do you cover?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We cover all Pickering postal code zones including L1V, L1W, L1X, L1Y, and L1Z, as well as surrounding Durham Region communities."
-        }
+        "@type": "FAQPage",
+        "@id": "https://www.appliancerepairknights.com/locations/pickering-appliance-repair#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you offer same-day appliance repair in Pickering?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Appliance Repair Knights provides same-day service across all Pickering neighbourhoods including Dunbarton, Amberlea, West Shore, and Bay Ridges when you book before 2:00 PM."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which appliance brands do you service in Pickering?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We repair all major home appliance brands, including Whirlpool, LG, Samsung, Bosch, GE, Maytag, KitchenAid, Frigidaire, Kenmore, Miele, Sub-Zero, and Viking."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does appliance repair cost in Pickering?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We offer affordable, flat-rate pricing with no hidden charges. Our technician inspects your unit on-site and provides an exact upfront quote before starting any work."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer a warranty on repairs in Pickering?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, all our appliance repairs in Pickering are backed by a comprehensive 90-day warranty on both replacement parts and labor."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What postal codes in Pickering do you cover?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We cover all Pickering postal code zones including L1V, L1W, L1X, L1Y, and L1Z, as well as surrounding Durham Region communities."
+            }
+          }
+        ]
       }
     ]
   }
   </script>
 
   <!-- Global Stylesheet -->
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.min.css">
 </head>
 <body class="bg-lightbg text-secondary font-sans antialiased min-h-screen flex flex-col selection:bg-brandOrange selection:text-white">
 

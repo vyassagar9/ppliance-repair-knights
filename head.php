@@ -74,13 +74,13 @@ $robots_meta = isset($robots_meta) ? $robots_meta : 'index, follow, max-image-pr
   <link rel="preload" href="<?php echo $base_url; ?>fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
 
   <!-- Self-Hosted Zero-Latency Fonts Definition -->
-  <link rel="stylesheet" href="<?php echo $base_url; ?>css/fonts.css">
+  <link rel="stylesheet" href="<?php echo $base_url; ?>css/fonts.min.css">
 
   <!-- Production Local Compiled Tailwind CSS (Fastest Load Speed) -->
   <link rel="stylesheet" href="<?php echo $base_url; ?>css/tailwind.min.css">
 
   <!-- Global Custom Stylesheet -->
-  <link rel="stylesheet" href="<?php echo $base_url; ?>css/style.css">
+  <link rel="stylesheet" href="<?php echo $base_url; ?>css/style.min.css">
 
   <?php if (!empty($custom_head_schema)): ?>
   <?php echo $custom_head_schema; ?>

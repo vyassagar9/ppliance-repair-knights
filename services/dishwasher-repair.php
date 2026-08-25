@@ -7,58 +7,77 @@ $page_keywords = 'dishwasher repair service, dishwasher inspection, fix leaking 
 $canonical_url = 'https://www.appliancerepairknights.com/services/dishwasher-repair';
 
 $custom_head_schema = <<<'HTML'
-  <!-- JSON-LD Service Schema -->
+  <!-- UNIFIED JSON-LD SCHEMA (@graph: LocalBusiness + Service + FAQPage) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": "Dishwasher Inspection & Repair Service",
-    "provider": {
-      "@type": "LocalBusiness",
-      "@id": "https://www.appliancerepairknights.com/#organization",
-      "name": "Appliance Repair Knights Ltd.",
-      "telephone": "905-717-8905",
-      "url": "https://www.appliancerepairknights.com/",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "100 King St W",
-        "addressLocality": "Toronto",
-        "addressRegion": "ON",
-        "postalCode": "M5X 1A9",
-        "addressCountry": "CA"
-      }
-    },
-    "areaServed": [
-      { "@type": "AdministrativeArea", "name": "Greater Toronto Area" },
-      { "@type": "AdministrativeArea", "name": "Hamilton" },
-      { "@type": "AdministrativeArea", "name": "Oshawa" },
-      { "@type": "AdministrativeArea", "name": "Kitchener-Waterloo" }
-    ],
-    "description": "Professional same-day dishwasher inspection, diagnostics, and repairs. We resolve draining issues, pump leaks, float switch failures, and door latches."
-  }
-  </script>
-
-  <!-- JSON-LD FAQPage Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "Why is my dishwasher not draining water at the end of a cycle?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "This is commonly caused by a food clog in the drain pump filter, a blockage in the garbage disposal connection, or a failing drain pump impeller. Our technicians can clean or replace the pump to restore proper drainage."
+        "@type": "LocalBusiness",
+        "@id": "https://www.appliancerepairknights.com/#organization",
+        "name": "Appliance Repair Knights Ltd.",
+        "url": "https://www.appliancerepairknights.com/",
+        "logo": "https://www.appliancerepairknights.com/img/logo.png",
+        "image": "https://www.appliancerepairknights.com/img/bnr.png",
+        "telephone": "905-717-8905",
+        "email": "info@appliancerepairknights.com",
+        "priceRange": "$$",
+        "hasMap": "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059",
+        "sameAs": [
+          "https://www.facebook.com/Appliancerepairknights",
+          "https://www.instagram.com/appliancerepairknights/",
+          "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "100 King St W",
+          "addressLocality": "Toronto",
+          "addressRegion": "ON",
+          "postalCode": "M5X 1A9",
+          "addressCountry": "CA"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 43.6487,
+          "longitude": -79.3817
         }
       },
       {
-        "@type": "Question",
-        "name": "Can you fix a leaking dishwasher?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, we regularly repair dishwasher leaks by replacing door gaskets, water inlet valves, pump seals, or float switches that fail to register water limits."
-        }
+        "@type": "Service",
+        "@id": "https://www.appliancerepairknights.com/services/dishwasher-repair#service",
+        "serviceType": "Dishwasher Inspection & Repair Service",
+        "provider": {
+          "@id": "https://www.appliancerepairknights.com/#organization"
+        },
+        "areaServed": [
+          { "@type": "AdministrativeArea", "name": "Greater Toronto Area" },
+          { "@type": "AdministrativeArea", "name": "Hamilton" },
+          { "@type": "AdministrativeArea", "name": "Oshawa" },
+          { "@type": "AdministrativeArea", "name": "Kitchener-Waterloo" }
+        ],
+        "description": "Professional same-day dishwasher inspection, diagnostics, and repairs. We resolve draining issues, pump leaks, float switch failures, and door latches."
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.appliancerepairknights.com/services/dishwasher-repair#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why is my dishwasher not draining water at the end of a cycle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This is commonly caused by a food clog in the drain pump filter, a blockage in the garbage disposal connection, or a failing drain pump impeller. Our technicians can clean or replace the pump to restore proper drainage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you fix a leaking dishwasher?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we regularly repair dishwasher leaks by replacing door gaskets, water inlet valves, pump seals, or float switches that fail to register water limits."
+            }
+          }
+        ]
       }
     ]
   }

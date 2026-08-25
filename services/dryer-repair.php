@@ -7,58 +7,77 @@ $page_keywords = 'dryer repair service, dryer duct cleaning, dryer not heating';
 $canonical_url = 'https://www.appliancerepairknights.com/services/dryer-repair';
 
 $custom_head_schema = <<<'HTML'
-  <!-- JSON-LD Service Schema -->
+  <!-- UNIFIED JSON-LD SCHEMA (@graph: LocalBusiness + Service + FAQPage) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": "Dryer Repair & Duct Cleaning Service",
-    "provider": {
-      "@type": "LocalBusiness",
-      "@id": "https://www.appliancerepairknights.com/#organization",
-      "name": "Appliance Repair Knights Ltd.",
-      "telephone": "905-717-8905",
-      "url": "https://www.appliancerepairknights.com/",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "100 King St W",
-        "addressLocality": "Toronto",
-        "addressRegion": "ON",
-        "postalCode": "M5X 1A9",
-        "addressCountry": "CA"
-      }
-    },
-    "areaServed": [
-      { "@type": "AdministrativeArea", "name": "Greater Toronto Area" },
-      { "@type": "AdministrativeArea", "name": "Hamilton" },
-      { "@type": "AdministrativeArea", "name": "Oshawa" },
-      { "@type": "AdministrativeArea", "name": "Kitchener-Waterloo" }
-    ],
-    "description": "Professional same-day clothes dryer diagnostics, component replacements, and exhaust duct cleaning. We resolve heating element failures, thermal fuse faults, screeching drum rollers, and lint build-ups."
-  }
-  </script>
-
-  <!-- JSON-LD FAQPage Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "Why is my dryer spinning but not producing heat?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "For electric dryers, this is typically a burnt heating element or a tripped thermal fuse. For gas dryers, it points to a faulty gas valve coil or igniter. Exhaust line restriction can also cause safety sensors to cut heat."
+        "@type": "LocalBusiness",
+        "@id": "https://www.appliancerepairknights.com/#organization",
+        "name": "Appliance Repair Knights Ltd.",
+        "url": "https://www.appliancerepairknights.com/",
+        "logo": "https://www.appliancerepairknights.com/img/logo.png",
+        "image": "https://www.appliancerepairknights.com/img/bnr.png",
+        "telephone": "905-717-8905",
+        "email": "info@appliancerepairknights.com",
+        "priceRange": "$$",
+        "hasMap": "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059",
+        "sameAs": [
+          "https://www.facebook.com/Appliancerepairknights",
+          "https://www.instagram.com/appliancerepairknights/",
+          "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "100 King St W",
+          "addressLocality": "Toronto",
+          "addressRegion": "ON",
+          "postalCode": "M5X 1A9",
+          "addressCountry": "CA"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 43.6487,
+          "longitude": -79.3817
         }
       },
       {
-        "@type": "Question",
-        "name": "How often should dryer vent ducts be cleaned?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "It is highly recommended to clean exhaust ducts annually. Clogged lint restrictions cause longer drying cycles, place thermal strain on elements, and are a primary household fire hazard."
-        }
+        "@type": "Service",
+        "@id": "https://www.appliancerepairknights.com/services/dryer-repair#service",
+        "serviceType": "Dryer Repair & Duct Cleaning Service",
+        "provider": {
+          "@id": "https://www.appliancerepairknights.com/#organization"
+        },
+        "areaServed": [
+          { "@type": "AdministrativeArea", "name": "Greater Toronto Area" },
+          { "@type": "AdministrativeArea", "name": "Hamilton" },
+          { "@type": "AdministrativeArea", "name": "Oshawa" },
+          { "@type": "AdministrativeArea", "name": "Kitchener-Waterloo" }
+        ],
+        "description": "Professional same-day clothes dryer diagnostics, component replacements, and exhaust duct cleaning. We resolve heating element failures, thermal fuse faults, screeching drum rollers, and lint build-ups."
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.appliancerepairknights.com/services/dryer-repair#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why is my dryer spinning but not producing heat?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For electric dryers, this is typically a burnt heating element or a tripped thermal fuse. For gas dryers, it points to a faulty gas valve coil or igniter. Exhaust line restriction can also cause safety sensors to cut heat."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How often should dryer vent ducts be cleaned?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It is highly recommended to clean exhaust ducts annually. Clogged lint restrictions cause longer drying cycles, place thermal strain on elements, and are a primary household fire hazard."
+            }
+          }
+        ]
       }
     ]
   }
