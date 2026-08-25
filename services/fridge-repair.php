@@ -15,9 +15,18 @@ $custom_head_schema = <<<'HTML'
     "serviceType": "Fridge Repair & Installation Service",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Appliance Repair Knights",
+      "@id": "https://www.appliancerepairknights.com/#organization",
+      "name": "Appliance Repair Knights Ltd.",
       "telephone": "905-717-8905",
-      "url": "https://www.appliancerepairknights.com/"
+      "url": "https://www.appliancerepairknights.com/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "100 King St W",
+        "addressLocality": "Toronto",
+        "addressRegion": "ON",
+        "postalCode": "M5X 1A9",
+        "addressCountry": "CA"
+      }
     },
     "areaServed": [
       { "@type": "AdministrativeArea", "name": "Greater Toronto Area" },

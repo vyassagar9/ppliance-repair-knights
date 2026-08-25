@@ -172,9 +172,17 @@ $disable_global_schema = true;
     "provider": {
       "@type": "LocalBusiness",
       "@id": "<?php echo $canonical_url; ?>#localbusiness",
-      "name": "Appliance Repair Knights",
+      "name": "Appliance Repair Knights Ltd.",
       "telephone": "905-717-8905",
-      "url": "https://www.appliancerepairknights.com/"
+      "url": "https://www.appliancerepairknights.com/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "100 King St W",
+        "addressLocality": "Toronto",
+        "addressRegion": "ON",
+        "postalCode": "M5X 1A9",
+        "addressCountry": "CA"
+      }
     },
     "areaServed": {
       "@type": "AdministrativeArea",
