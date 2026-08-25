@@ -195,7 +195,7 @@ include __DIR__ . '/../head.php';
 
         <!-- Image -->
         <div class="h-64 md:h-96 bg-slate-200 rounded-xl overflow-hidden flex items-center justify-center border border-bordercolor">
-          <img src="../img/microwave-repair-service.webp" alt="Microwave Oven Repair Details" loading="lazy" decoding="async" class="object-cover w-full h-full">
+          <img src="../img/microwave-repair.webp" alt="Microwave Oven Repair and Installation Details" title="Built-in & Over-the-Range Microwave Repair" loading="lazy" decoding="async" class="object-cover w-full h-full">
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">

@@ -334,7 +334,7 @@ $disable_global_schema = true;
           <a href="../services/fridge-repair" class="group bg-white rounded-2xl border border-slate-200/80 hover:border-accent/40 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between overflow-hidden">
             <div>
               <div class="h-44 sm:h-48 w-full overflow-hidden relative bg-slate-100">
-                <img src="../img/fridge-repair.avif" alt="Refrigerator Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="../img/refrigerator-repair-service.webp" alt="Refrigerator Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" title="Refrigerator Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-sm text-primary group-hover:text-accent flex items-center justify-center shadow-sm transition-colors">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2zm0 8h14M10 3v8M10 15v3"></path></svg>
                 </div>
@@ -356,7 +356,7 @@ $disable_global_schema = true;
           <a href="../services/washer-repair" class="group bg-white rounded-2xl border border-slate-200/80 hover:border-accent/40 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between overflow-hidden">
             <div>
               <div class="h-44 sm:h-48 w-full overflow-hidden relative bg-slate-100">
-                <img src="../img/washer-repair.avif" alt="Washing Machine Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="../img/washing-machine-repair-service.webp" alt="Washing Machine Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" title="Washing Machine Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-sm text-primary group-hover:text-accent flex items-center justify-center shadow-sm transition-colors">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-4a6 6 0 100-12 6 6 0 000 12zm0-2a4 4 0 110-8 4 4 0 010 8z"></path></svg>
                 </div>
@@ -378,7 +378,7 @@ $disable_global_schema = true;
           <a href="../services/dryer-repair" class="group bg-white rounded-2xl border border-slate-200/80 hover:border-accent/40 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between overflow-hidden">
             <div>
               <div class="h-44 sm:h-48 w-full overflow-hidden relative bg-slate-100">
-                <img src="../img/dryer-repair.avif" alt="Clothes Dryer Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="../img/clothes-dryer-repair-service.webp" alt="Clothes Dryer Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" title="Clothes Dryer Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-sm text-primary group-hover:text-accent flex items-center justify-center shadow-sm transition-colors">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                 </div>
@@ -400,7 +400,7 @@ $disable_global_schema = true;
           <a href="../services/dishwasher-repair" class="group bg-white rounded-2xl border border-slate-200/80 hover:border-accent/40 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between overflow-hidden">
             <div>
               <div class="h-44 sm:h-48 w-full overflow-hidden relative bg-slate-100">
-                <img src="../img/Open Dishwasher.avif" alt="Dishwasher Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="../img/open-dishwasher-repair.webp" alt="Dishwasher Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" title="Dishwasher Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-sm text-primary group-hover:text-accent flex items-center justify-center shadow-sm transition-colors">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
                 </div>
@@ -422,7 +422,7 @@ $disable_global_schema = true;
           <a href="../services/stove-repair" class="group bg-white rounded-2xl border border-slate-200/80 hover:border-accent/40 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between overflow-hidden">
             <div>
               <div class="h-44 sm:h-48 w-full overflow-hidden relative bg-slate-100">
-                <img src="../img/oven-repair.avif" alt="Oven and Stove Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="../img/oven-stove-repair-service.webp" alt="Oven and Stove Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" title="Oven and Stove Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-sm text-primary group-hover:text-accent flex items-center justify-center shadow-sm transition-colors">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path></svg>
                 </div>
@@ -444,7 +444,7 @@ $disable_global_schema = true;
           <a href="../services/microwave-repair" class="group bg-white rounded-2xl border border-slate-200/80 hover:border-accent/40 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between overflow-hidden">
             <div>
               <div class="h-44 sm:h-48 w-full overflow-hidden relative bg-slate-100">
-                <img src="../img/microwave-repair-service.webp" alt="Microwave Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="../img/microwave-repair.webp" alt="Microwave Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" title="Microwave Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-sm text-primary group-hover:text-accent flex items-center justify-center shadow-sm transition-colors">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                 </div>
@@ -692,14 +692,17 @@ $disable_global_schema = true;
 
         <div class="space-y-4">
           <?php foreach ($loc['faqs'] as $index => $faq): ?>
-            <div class="bg-lightbg rounded-xl border border-bordercolor p-5">
-              <h3 class="text-base font-bold text-primary flex items-center gap-2">
-                <span class="text-brandOrange font-bold">Q.</span>
-                <?php echo htmlspecialchars($faq['q']); ?>
-              </h3>
-              <p class="text-xs sm:text-sm text-slate-600 mt-2 pl-6 leading-relaxed">
+            <div class="bg-white rounded-xl border border-bordercolor overflow-hidden shadow-xs">
+              <button onclick="toggleFAQ('loc-faq-<?php echo $index; ?>')" class="w-full p-5 text-left font-heading font-bold text-primary text-sm sm:text-base flex justify-between items-center focus:outline-none cursor-pointer hover:text-brandOrange transition-colors">
+                <span class="flex items-center gap-2">
+                  <span class="text-brandOrange font-bold">Q.</span>
+                  <?php echo htmlspecialchars($faq['q']); ?>
+                </span>
+                <span id="icon-loc-faq-<?php echo $index; ?>" class="text-brandOrange font-black text-xl flex-shrink-0 ml-4"><?php echo $index === 0 ? '−' : '+'; ?></span>
+              </button>
+              <div id="loc-faq-<?php echo $index; ?>" class="<?php echo $index === 0 ? '' : 'hidden'; ?> px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
                 <?php echo htmlspecialchars($faq['a']); ?>
-              </p>
+              </div>
             </div>
           <?php endforeach; ?>
         </div>

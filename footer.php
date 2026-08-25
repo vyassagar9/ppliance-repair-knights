@@ -239,20 +239,39 @@ $base_url = isset($base_url) ? $base_url : '';
       }
     }
 
-    function toggleFAQ(faqId) {
-      const content = document.getElementById(faqId);
-      const icon = document.getElementById('icon-' + faqId);
+    function toggleFAQ(param) {
+      if (typeof param === 'string') {
+        const content = document.getElementById(param);
+        const icon = document.getElementById('icon-' + param);
+        if (content) {
+          content.classList.toggle('hidden');
+          if (icon) {
+            icon.innerText = content.classList.contains('hidden') ? '+' : '−';
+          }
+        }
+      } else if (param && (param.nodeType || param instanceof HTMLElement)) {
+        const parent = param.parentElement;
+        const content = param.nextElementSibling || (parent ? parent.querySelector('div:not([class*="hidden"])') || parent.querySelector('div') : null);
+        const svg = param.querySelector('svg');
+        const icon = param.querySelector('span:last-child');
 
-      if (content && icon) {
-        if (content.classList.contains('hidden')) {
-          content.classList.remove('hidden');
-          icon.innerText = '−';
-        } else {
-          content.classList.add('hidden');
-          icon.innerText = '+';
+        if (content) {
+          content.classList.toggle('hidden');
+          if (svg) {
+            if (content.classList.contains('hidden')) {
+              svg.classList.remove('rotate-180');
+            } else {
+              svg.classList.add('rotate-180');
+            }
+          }
+          if (icon && (icon.innerText === '+' || icon.innerText === '−' || icon.innerText === '-')) {
+            icon.innerText = content.classList.contains('hidden') ? '+' : '−';
+          }
         }
       }
     }
+    window.toggleFAQ = toggleFAQ;
+    window.toggleFaq = toggleFAQ;
 
     function toggleHeaderLocations() {
       const list = document.getElementById('header-more-loc-list');

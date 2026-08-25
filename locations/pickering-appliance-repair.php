@@ -337,7 +337,7 @@ include '../header.php';
       <!-- Feature Image -->
       <div class="lg:col-span-5">
         <div class="relative rounded-2xl overflow-hidden shadow-xl border border-bordercolor bg-slate-100 group">
-          <img src="../img/g2.avif" alt="Appliance Repair Technician Servicing Home in Pickering" class="w-full h-80 sm:h-96 object-cover transition-transform duration-500 group-hover:scale-105">
+          <img src="../img/appliance-repair-service-call.webp" alt="Appliance Repair Technician Servicing Home in Pickering" title="Appliance Repair Technician Servicing Home in Pickering" loading="lazy" decoding="async" class="w-full h-80 sm:h-96 object-cover transition-transform duration-500 group-hover:scale-105">
           <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex items-end p-6">
             <div class="text-white space-y-1">
               <p class="text-xs uppercase tracking-widest text-accent font-bold">Pickering Local Team</p>
@@ -372,7 +372,7 @@ include '../header.php';
           <a href="../services/fridge-repair.php" class="group bg-white rounded-2xl border border-slate-200/80 hover:border-accent/40 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between overflow-hidden">
             <div>
               <div class="h-44 sm:h-48 w-full overflow-hidden relative bg-slate-100">
-                <img src="../img/fridge-repair.avif" alt="Refrigerator Repair in Pickering" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="../img/refrigerator-repair-service.webp" alt="Refrigerator Repair in Pickering" title="Refrigerator Repair in Pickering" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-sm text-primary group-hover:text-accent flex items-center justify-center shadow-sm transition-colors">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2zm0 8h14M10 3v8M10 15v3"></path></svg>
                 </div>
@@ -394,7 +394,7 @@ include '../header.php';
           <a href="../services/washer-repair.php" class="group bg-white rounded-2xl border border-slate-200/80 hover:border-accent/40 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between overflow-hidden">
             <div>
               <div class="h-44 sm:h-48 w-full overflow-hidden relative bg-slate-100">
-                <img src="../img/washer-repair.avif" alt="Washing Machine Repair in Pickering" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="../img/washing-machine-repair-service.webp" alt="Washing Machine Repair in Pickering" title="Washing Machine Repair in Pickering" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-sm text-primary group-hover:text-accent flex items-center justify-center shadow-sm transition-colors">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-4a6 6 0 100-12 6 6 0 000 12zm0-2a4 4 0 110-8 4 4 0 010 8z"></path></svg>
                 </div>
@@ -416,7 +416,7 @@ include '../header.php';
           <a href="../services/dryer-repair.php" class="group bg-white rounded-2xl border border-slate-200/80 hover:border-accent/40 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between overflow-hidden">
             <div>
               <div class="h-44 sm:h-48 w-full overflow-hidden relative bg-slate-100">
-                <img src="../img/dryer-repair.avif" alt="Clothes Dryer Repair in Pickering" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="../img/clothes-dryer-repair-service.webp" alt="Clothes Dryer Repair in Pickering" title="Clothes Dryer Repair in Pickering" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-sm text-primary group-hover:text-accent flex items-center justify-center shadow-sm transition-colors">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                 </div>
@@ -438,7 +438,7 @@ include '../header.php';
           <a href="../services/dishwasher-repair.php" class="group bg-white rounded-2xl border border-slate-200/80 hover:border-accent/40 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between overflow-hidden">
             <div>
               <div class="h-44 sm:h-48 w-full overflow-hidden relative bg-slate-100">
-                <img src="../img/Open Dishwasher.avif" alt="Dishwasher Repair in Pickering" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="../img/open-dishwasher-repair.webp" alt="Dishwasher Repair in Pickering" title="Dishwasher Repair in Pickering" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-sm text-primary group-hover:text-accent flex items-center justify-center shadow-sm transition-colors">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
                 </div>
@@ -460,7 +460,7 @@ include '../header.php';
           <a href="../services/stove-repair.php" class="group bg-white rounded-2xl border border-slate-200/80 hover:border-accent/40 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between overflow-hidden">
             <div>
               <div class="h-44 sm:h-48 w-full overflow-hidden relative bg-slate-100">
-                <img src="../img/oven-repair.avif" alt="Oven and Stove Repair in Pickering" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="../img/oven-stove-repair-service.webp" alt="Oven and Stove Repair in Pickering" title="Oven and Stove Repair in Pickering" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-sm text-primary group-hover:text-accent flex items-center justify-center shadow-sm transition-colors">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path></svg>
                 </div>
@@ -482,7 +482,7 @@ include '../header.php';
           <a href="../services/microwave-repair.php" class="group bg-white rounded-2xl border border-slate-200/80 hover:border-accent/40 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between overflow-hidden">
             <div>
               <div class="h-44 sm:h-48 w-full overflow-hidden relative bg-slate-100">
-                <img src="../img/microwave-repair-service.webp" alt="Microwave Repair in Pickering" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <img src="../img/microwave-repair.webp" alt="Microwave Repair in Pickering" title="Microwave Repair in Pickering" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-sm text-primary group-hover:text-accent flex items-center justify-center shadow-sm transition-colors">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                 </div>
