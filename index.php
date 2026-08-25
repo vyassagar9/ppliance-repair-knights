@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . '/config.php';
+
 $base_url = './';
 $page_title = '#1 Appliance Repair Service in GTA & Surrounding Areas | 24/7';
 $page_description = 'Fast, same-day appliance repair across GTA, Kitchener-Waterloo & Hamilton. Certified technicians, transparent pricing & warranty. Call 905-717-8905!';
@@ -40,6 +42,11 @@ $custom_head_schema = '
           "@type": "GeoCoordinates",
           "latitude": 43.6487,
           "longitude": -79.3817
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "' . GMB_RATING_VALUE . '",
+          "reviewCount": "' . GMB_REVIEW_COUNT . '"
         },
         "openingHoursSpecification": [
           {

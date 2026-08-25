@@ -41,8 +41,8 @@ include '../head.php';
         },
         "aggregateRating": {
           "@type": "AggregateRating",
-          "ratingValue": "5.0",
-          "reviewCount": "15"
+          "ratingValue": "<?php echo GMB_RATING_VALUE; ?>",
+          "reviewCount": "<?php echo GMB_REVIEW_COUNT; ?>"
         },
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",

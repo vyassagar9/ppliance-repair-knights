@@ -4,6 +4,8 @@
  * Appliance Repair Knights Ltd.
  */
 
+require_once __DIR__ . '/../config.php';
+
 // Load location dataset
 $all_locations = require __DIR__ . '/location-data.php';
 
@@ -141,6 +143,11 @@ $disable_global_schema = true;
           "@type": "GeoCoordinates",
           "latitude": <?php echo (float)($loc['geo']['latitude'] ?? 43.6487); ?>,
           "longitude": <?php echo (float)($loc['geo']['longitude'] ?? -79.3817); ?>
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "<?php echo GMB_RATING_VALUE; ?>",
+          "reviewCount": "<?php echo GMB_REVIEW_COUNT; ?>"
         },
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",

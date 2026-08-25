@@ -40,6 +40,11 @@ $custom_head_schema = <<<'HTML'
           "@type": "GeoCoordinates",
           "latitude": 43.6487,
           "longitude": -79.3817
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "reviewCount": "12"
         }
       },
       {

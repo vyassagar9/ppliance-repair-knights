@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/config.php';
 // Dynamic Head Variables with Fallbacks
 $base_url = isset($base_url) ? $base_url : '';
 $page_title = isset($page_title) ? $page_title : 'Same-Day Appliance Repair Toronto & GTA | Appliance Repair Knights';
@@ -116,6 +117,11 @@ $robots_meta = isset($robots_meta) ? $robots_meta : 'index, follow, max-image-pr
       "@type": "GeoCoordinates",
       "latitude": 43.6487,
       "longitude": -79.3817
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "<?php echo GMB_RATING_VALUE; ?>",
+      "reviewCount": "<?php echo GMB_REVIEW_COUNT; ?>"
     },
     "openingHoursSpecification": [
       {
