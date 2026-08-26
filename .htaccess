@@ -52,8 +52,12 @@ ErrorDocument 404 /404.php
   RewriteRule ^ajax-appliance-repair/?$ locations/ajax-appliance-repair [R=301,L]
 
   # 2. Service Pages Redirects
-  RewriteRule ^refrigerator-repair/?$ services/refrigerator-repair [R=301,L]
+  RewriteRule ^refrigerator-repair/?$ services/fridge-repair [R=301,L]
   RewriteRule ^service-page/?$ services/stove-repair [R=301,L]
+  RewriteRule ^service-page/microwave-repair-and-installation/?$ services/microwave-repair [R=301,L]
+  RewriteRule ^service-page/dryer-repair-duct-cleaning/?$ services/dryer-repair [R=301,L]
+  RewriteRule ^induction-cooktop-repair-service/?$ services/stove-repair [R=301,L]
+  RewriteRule ^oven-repair-service/?$ services/stove-repair [R=301,L]
 
   # Redirect /index or /index.php to Root Domain (/)
   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index(\.php)?\ HTTP/ [NC]
