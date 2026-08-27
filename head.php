@@ -6,7 +6,7 @@ $page_title = isset($page_title) ? $page_title : 'Same-Day Appliance Repair Toro
 $page_description = isset($page_description) ? $page_description : 'Licensed & insured same-day appliance repair across Toronto, GTA, Hamilton, Kitchener-Waterloo & Oshawa. 24/7 refrigerator, washer, dryer, stove, dishwasher repair. Free service call with repair! Call 905-717-8905.';
 $page_keywords = isset($page_keywords) ? $page_keywords : 'appliance repair Toronto, same day appliance repair GTA, fridge repair Hamilton, washer repair Mississauga, dryer repair Brampton, dishwasher repair Oshawa, stove repair Kitchener, Appliance Repair Knights';
 $canonical_url = isset($canonical_url) ? $canonical_url : 'https://www.appliancerepairknights.com/';
-$og_image = isset($og_image) ? $og_image : 'https://www.appliancerepairknights.com/img/logo.png';
+$og_image = isset($og_image) ? $og_image : 'https://www.appliancerepairknights.com/img/appliance-repair-banner.webp';
 $og_type = isset($og_type) ? $og_type : 'website';
 $robots_meta = isset($robots_meta) ? $robots_meta : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
 ?>
@@ -14,6 +14,10 @@ $robots_meta = isset($robots_meta) ? $robots_meta : 'index, follow, max-image-pr
 <html lang="en-CA" class="scroll-smooth">
 
 <head>
+  <!-- Preconnect & DNS-Prefetch for High-Priority External Assets -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -94,8 +98,8 @@ $robots_meta = isset($robots_meta) ? $robots_meta : 'index, follow, max-image-pr
     "@id": "https://www.appliancerepairknights.com/#organization",
     "name": "Appliance Repair Knights Ltd.",
     "url": "https://www.appliancerepairknights.com/",
-    "logo": "https://www.appliancerepairknights.com/img/logo.png",
-    "image": "https://www.appliancerepairknights.com/img/bnr.png",
+    "logo": "https://www.appliancerepairknights.com/img/logo.webp",
+    "image": "https://www.appliancerepairknights.com/img/appliance-repair-banner.webp",
     "telephone": "905-717-8905",
     "email": "info@appliancerepairknights.com",
     "priceRange": "$$",

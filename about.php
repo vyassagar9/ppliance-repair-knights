@@ -1,9 +1,78 @@
 <?php
+require_once __DIR__ . '/config.php';
 $base_url = './';
 $page_title = 'About Appliance Repair Knights | Trusted Local Technicians';
 $page_description = 'Learn about Appliance Repair Knights. Over 10+ years serving GTA with certified technicians, upfront pricing, and 100% satisfaction guarantee.';
 $page_keywords = 'about appliance repair knights, appliance repair technicians GTA';
 $canonical_url = 'https://www.appliancerepairknights.com/about';
+
+$gmb_rating = GMB_RATING_VALUE;
+$gmb_reviews = GMB_REVIEW_COUNT;
+
+$custom_head_schema = <<<HTML
+  <!-- UNIFIED JSON-LD SCHEMA (@graph: LocalBusiness + BreadcrumbList) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.appliancerepairknights.com/#organization",
+        "name": "Appliance Repair Knights Ltd.",
+        "url": "https://www.appliancerepairknights.com/",
+        "logo": "https://www.appliancerepairknights.com/img/logo.webp",
+        "image": "https://www.appliancerepairknights.com/img/appliance-repair-banner.webp",
+        "telephone": "905-717-8905",
+        "email": "info@appliancerepairknights.com",
+        "priceRange": "$$",
+        "hasMap": "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059",
+        "sameAs": [
+          "https://www.facebook.com/Appliancerepairknights",
+          "https://www.instagram.com/appliancerepairknights/",
+          "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "100 King St W",
+          "addressLocality": "Toronto",
+          "addressRegion": "ON",
+          "postalCode": "M5X 1A9",
+          "addressCountry": "CA"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 43.6487,
+          "longitude": -79.3817
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "{$gmb_rating}",
+          "reviewCount": "{$gmb_reviews}"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.appliancerepairknights.com/about#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.appliancerepairknights.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About Us",
+            "item": "https://www.appliancerepairknights.com/about"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+HTML;
+
 include 'head.php';
 ?>
 
@@ -18,7 +87,7 @@ include 'header.php';
   <!-- BREADCRUMBS -->
   <nav class="bg-white border-b border-bordercolor">
     <div class="max-w-7xl mx-auto px-4 py-3 text-xs font-semibold flex items-center gap-2">
-      <a href="index.php" class="text-secondary hover:text-accent transition-colors">Home</a>
+      <a href="./" class="text-secondary hover:text-accent transition-colors">Home</a>
       <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
       <span class="text-primary font-bold">About Us</span>
     </div>
@@ -53,7 +122,7 @@ include 'header.php';
 
         <!-- CTA Action Buttons after paragraphs -->
         <div class="pt-2 flex flex-wrap gap-4 items-center">
-          <a href="schedule.php" class="bg-brandOrange hover:bg-orange-600 text-white font-bold px-6 py-3.5 rounded-xl transition-all shadow-md inline-flex items-center gap-2 text-xs uppercase tracking-wider">
+          <a href="schedule" class="bg-brandOrange hover:bg-orange-600 text-white font-bold px-6 py-3.5 rounded-xl transition-all shadow-md inline-flex items-center gap-2 text-xs uppercase tracking-wider">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
             Book Online
           </a>
@@ -64,7 +133,7 @@ include 'header.php';
         </div>
       </div>
       <div class="h-64 md:h-96 bg-slate-200 rounded-xl overflow-hidden flex items-center justify-center border border-bordercolor">
-        <img src="img/appliance-repair-knights-team.webp" alt="Appliance Repair Knights Professional Tech Team Toronto" title="Appliance Repair Knights Certified Technicians" loading="lazy" decoding="async" class="object-cover w-full h-full" onerror="this.onerror=null; this.parentNode.innerHTML='<div class=\'text-slate-400 flex flex-col items-center\'><svg class=\'w-16 h-16 mb-2\' fill=\'none\' stroke=\'currentColor\' viewBox=\'0 0 24 24\' xmlns=\'http://www.w3.org/2000/svg\'><path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'1.5\' d=\'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z\'></path></svg><span class=\'text-xs font-bold uppercase tracking-wider\'>Appliance Knights Team Photo</span></div>';">
+        <img src="img/appliance-repair-knights-team.webp" alt="Appliance Repair Knights Professional Tech Team Toronto" title="Appliance Repair Knights Certified Technicians" width="1088" height="920" loading="lazy" decoding="async" class="object-cover w-full h-full" onerror="this.onerror=null; this.parentNode.innerHTML='<div class=\'text-slate-400 flex flex-col items-center\'><svg class=\'w-16 h-16 mb-2\' fill=\'none\' stroke=\'currentColor\' viewBox=\'0 0 24 24\' xmlns=\'http://www.w3.org/2000/svg\'><path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'1.5\' d=\'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z\'></path></svg><span class=\'text-xs font-bold uppercase tracking-wider\'>Appliance Knights Team Photo</span></div>';">
       </div>
     </section>
 
@@ -129,7 +198,7 @@ include 'header.php';
           <div class="lg:col-span-5 bg-slate-950 text-white p-8 rounded-2xl shadow-xl flex flex-col justify-between border border-slate-800 space-y-6">
             <div class="space-y-4">
               <div class="flex items-center gap-3">
-                <img src="img/Appliance_Repair_Knights_Logo-white.avif" alt="Appliance Repair Knights Logo" class="h-12 w-auto object-contain">
+                <img src="img/Appliance_Repair_Knights_Logo-white.avif" alt="Appliance Repair Knights Logo" width="723" height="345" loading="lazy" decoding="async" class="h-12 w-auto object-contain">
                 <div>
                   <h3 class="text-xl font-extrabold text-white">Appliance Repair Knights Ltd.</h3>
                   <p class="text-xs text-amber-400 font-semibold">★ 5.0 Rated on Google Maps</p>
@@ -197,6 +266,9 @@ include 'header.php';
         We serve homeowners across Toronto, Mississauga, Brampton, Oakville, Burlington, Hamilton, Oshawa, and the Kitchener-Waterloo region. Our dispatch zones place qualified technicians close to your neighborhood for prompt arrival.
       </p>
     </section>
+
+    <!-- UNIFIED CUSTOMER REVIEWS -->
+    <?php include __DIR__ . '/reviews-widget.php'; ?>
 
   </main>
 

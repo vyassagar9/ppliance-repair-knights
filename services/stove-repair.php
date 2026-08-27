@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/../config.php';
 $base_url = '../';
 $current_page = 'stove';
 $page_title = 'Stove & Range Repair | Appliance Repair Knights';
@@ -6,8 +7,11 @@ $page_description = 'Gas & electric stove, range, and induction oven repair. Cer
 $page_keywords = 'stove repair, induction oven repair, gas range repair GTA';
 $canonical_url = 'https://www.appliancerepairknights.com/services/stove-repair';
 
-$custom_head_schema = <<<'HTML'
-  <!-- UNIFIED JSON-LD SCHEMA (@graph: LocalBusiness + Service + FAQPage) -->
+$gmb_rating = GMB_RATING_VALUE;
+$gmb_reviews = GMB_REVIEW_COUNT;
+
+$custom_head_schema = <<<HTML
+  <!-- UNIFIED JSON-LD SCHEMA (@graph: LocalBusiness + Service + BreadcrumbList + FAQPage) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -17,8 +21,8 @@ $custom_head_schema = <<<'HTML'
         "@id": "https://www.appliancerepairknights.com/#organization",
         "name": "Appliance Repair Knights Ltd.",
         "url": "https://www.appliancerepairknights.com/",
-        "logo": "https://www.appliancerepairknights.com/img/logo.png",
-        "image": "https://www.appliancerepairknights.com/img/bnr.png",
+        "logo": "https://www.appliancerepairknights.com/img/logo.webp",
+        "image": "https://www.appliancerepairknights.com/img/appliance-repair-banner.webp",
         "telephone": "905-717-8905",
         "email": "info@appliancerepairknights.com",
         "priceRange": "$$",
@@ -43,8 +47,8 @@ $custom_head_schema = <<<'HTML'
         },
         "aggregateRating": {
           "@type": "AggregateRating",
-          "ratingValue": "5.0",
-          "reviewCount": "12"
+          "ratingValue": "{$gmb_rating}",
+          "reviewCount": "{$gmb_reviews}"
         }
       },
       {
@@ -61,6 +65,30 @@ $custom_head_schema = <<<'HTML'
           { "@type": "AdministrativeArea", "name": "Kitchener-Waterloo" }
         ],
         "description": "Expert same-day stove, range, and oven repair and installation services. We diagnose and fix heating elements, gas valves, igniters, electronic control boards, and glass cooktops."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.appliancerepairknights.com/services/stove-repair#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.appliancerepairknights.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://www.appliancerepairknights.com/#services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Stove & Oven Repair",
+            "item": "https://www.appliancerepairknights.com/services/stove-repair"
+          }
+        ]
       },
       {
         "@type": "FAQPage",
@@ -98,7 +126,7 @@ include __DIR__ . '/../head.php';
   <!-- BREADCRUMBS -->
   <nav class="bg-white border-b border-bordercolor">
     <div class="max-w-7xl mx-auto px-4 py-3 text-xs font-semibold flex items-center gap-2">
-      <a href="../index.php" class="text-secondary hover:text-accent transition-colors">Home</a>
+      <a href="../" class="text-secondary hover:text-accent transition-colors">Home</a>
       <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
       <span class="text-slate-400">Services</span>
       <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
@@ -187,7 +215,7 @@ include __DIR__ . '/../head.php';
 
         <!-- Image -->
         <div class="h-64 md:h-96 bg-slate-200 rounded-xl overflow-hidden flex items-center justify-center border border-bordercolor">
-          <img src="../img/oven-stove-repair-service.webp" alt="Oven and Stove Repair and Diagnostics Details" title="Electric & Gas Stove/Oven Diagnostics" loading="lazy" decoding="async" class="object-cover w-full h-full">
+          <img src="../img/oven-stove-repair-service.webp" alt="Oven and Stove Repair and Diagnostics Details" title="Electric & Gas Stove/Oven Diagnostics" width="798" height="448" loading="lazy" decoding="async" class="object-cover w-full h-full">
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
@@ -275,14 +303,14 @@ include __DIR__ . '/../head.php';
           <h4 class="font-heading font-bold text-primary text-base border-b border-slate-100 pb-2">GTA Service Areas</h4>
           <p class="text-xs text-slate-500 leading-relaxed">We dispatch local technicians across:</p>
           <div class="grid grid-cols-2 gap-2 text-xs font-semibold text-secondary">
-            <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Toronto</span>
-            <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Mississauga</span>
-            <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Hamilton</span>
-            <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Oshawa</span>
-            <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Brampton</span>
-            <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Oakville</span>
+            <a href="../locations/toronto-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Toronto</a>
+            <a href="../locations/mississauga-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Mississauga</a>
+            <a href="../locations/hamilton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Hamilton</a>
+            <a href="../locations/oshawa-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Oshawa</a>
+            <a href="../locations/brampton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Brampton</a>
+            <a href="../locations/oakville-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Oakville</a>
           </div>
-          <a href="../contact.php" class="block bg-primary text-white font-bold py-2.5 rounded-lg text-center text-xs hover:bg-primary/95 transition-colors cursor-pointer">
+          <a href="../#service-areas" class="block bg-primary text-white font-bold py-2.5 rounded-lg text-center text-xs hover:bg-brandDarkBlue transition-colors cursor-pointer">
             View All Cities
           </a>
         </div>
@@ -331,46 +359,30 @@ include __DIR__ . '/../head.php';
             </div>
           </div>
         </div>
+
+        <!-- Post-FAQ CTA & Trust Line -->
+        <div class="mt-10 text-center space-y-3">
+          <a href="tel:<?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?>"
+            class="inline-flex items-center justify-center gap-2.5 bg-brandOrange hover:bg-orange-600 text-white font-extrabold px-8 py-4 rounded-xl text-sm sm:text-base shadow-lg hover:shadow-xl transition-all uppercase tracking-wide">
+            <svg class="w-5 h-5 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+            </svg>
+            <span>Still Have Questions? Call <?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?></span>
+          </a>
+          <p class="text-xs text-slate-700 font-semibold flex items-center justify-center gap-2 flex-wrap">
+            <span>🛡️ $0 Service Call With Any Paid Repair</span>
+            <span class="text-slate-400">•</span>
+            <span>⚡ Speak Directly With a Technician</span>
+            <span class="text-slate-400">•</span>
+            <span>Same-Day Availability</span>
+          </p>
+        </div>
+
       </div>
     </section>
 
-    <!-- TESTIMONIALS -->
-    <section class="py-16 max-w-7xl mx-auto px-4 space-y-8">
-      <h2 class="text-2xl font-heading font-bold text-primary text-center">What Our Clients Say</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="p-6 border border-bordercolor bg-white rounded-xl space-y-4 shadow-sm">
-          <div class="flex items-center gap-1.5 text-amber-500">
-            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-          </div>
-          <p class="text-sm text-slate-600 leading-relaxed italic">
-            "Our gas stove igniter was clicking but wouldn't light the burner. They sent a TSSA certified technician the same afternoon. He replaced the spark module cleanly. Upfront fee was exactly what I expected."
-          </p>
-          <div class="text-xs font-bold text-primary">
-            Jeremy F. — Gas Range Repair, Oshawa
-          </div>
-        </div>
-
-        <div class="p-6 border border-bordercolor bg-white rounded-xl space-y-4 shadow-sm">
-          <div class="flex items-center gap-1.5 text-amber-500">
-            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-          </div>
-          <p class="text-sm text-slate-600 leading-relaxed italic">
-            "Bake element on my electric range split during baking. They had a matching replacement element in stock and did the installation in under 30 minutes. High quality and quick service."
-          </p>
-          <div class="text-xs font-bold text-primary">
-            Laura V. — Stove Repair, Hamilton
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- UNIFIED CUSTOMER REVIEWS -->
+    <?php include __DIR__ . '/../reviews-widget.php'; ?>
   </main>
 
 <?php include __DIR__ . '/../footer.php'; ?>

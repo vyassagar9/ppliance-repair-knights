@@ -14,7 +14,7 @@ include 'head.php';
   <!-- BREADCRUMBS -->
   <nav class="bg-slate-50 border-b border-brandBorder py-3">
     <div class="max-w-7xl mx-auto px-4 text-xs font-medium text-slate-500 flex items-center gap-2">
-      <a href="index.php" class="hover:text-brandOrange">Home</a>
+      <a href="./" class="hover:text-brandOrange">Home</a>
       <span>/</span>
       <span class="text-slate-800 font-semibold">Disclaimer</span>
     </div>

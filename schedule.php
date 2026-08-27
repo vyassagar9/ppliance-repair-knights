@@ -1,9 +1,78 @@
 <?php
+require_once __DIR__ . '/config.php';
 $base_url = './';
 $page_title = 'Schedule Appliance Repair Online | Appliance Repair Knights';
 $page_description = 'Book your appliance repair appointment online in under 60 seconds. Choose your date & time slot. 24/7 fast service across GTA. Book now!';
 $page_keywords = 'book appliance repair online, schedule repair service';
 $canonical_url = 'https://www.appliancerepairknights.com/schedule';
+
+$gmb_rating = GMB_RATING_VALUE;
+$gmb_reviews = GMB_REVIEW_COUNT;
+
+$custom_head_schema = <<<HTML
+  <!-- UNIFIED JSON-LD SCHEMA (@graph: LocalBusiness + BreadcrumbList) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.appliancerepairknights.com/#organization",
+        "name": "Appliance Repair Knights Ltd.",
+        "url": "https://www.appliancerepairknights.com/",
+        "logo": "https://www.appliancerepairknights.com/img/logo.webp",
+        "image": "https://www.appliancerepairknights.com/img/appliance-repair-banner.webp",
+        "telephone": "905-717-8905",
+        "email": "info@appliancerepairknights.com",
+        "priceRange": "$$",
+        "hasMap": "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059",
+        "sameAs": [
+          "https://www.facebook.com/Appliancerepairknights",
+          "https://www.instagram.com/appliancerepairknights/",
+          "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "100 King St W",
+          "addressLocality": "Toronto",
+          "addressRegion": "ON",
+          "postalCode": "M5X 1A9",
+          "addressCountry": "CA"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 43.6487,
+          "longitude": -79.3817
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "{$gmb_rating}",
+          "reviewCount": "{$gmb_reviews}"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.appliancerepairknights.com/schedule#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.appliancerepairknights.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Book Online",
+            "item": "https://www.appliancerepairknights.com/schedule"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+HTML;
+
 include 'head.php';
 ?>
 
@@ -15,49 +84,10 @@ $current_page = 'schedule';
 include 'header.php'; 
 ?>
 
-    <!-- Mobile Drawer -->
-    <div id="mobile-menu-drawer" class="hidden md:hidden bg-white border-t border-bordercolor shadow-lg transition-all duration-300">
-      <div class="px-4 py-4 space-y-3 flex flex-col">
-        <a href="index.php" class="mobile-nav-link font-semibold text-secondary hover:text-accent py-2 px-2 rounded-lg cursor-pointer">Home</a>
-        <a href="about.php" class="mobile-nav-link font-semibold text-secondary hover:text-accent py-2 px-2 rounded-lg cursor-pointer">About</a>
-        
-        <span class="font-bold text-xs uppercase tracking-wider text-slate-400 px-2">Services</span>
-        <div class="grid grid-cols-2 gap-2 bg-slate-50 p-2.5 rounded-lg border border-bordercolor">
-          <a href="services/fridge-repair.php" class="text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Fridge</a>
-          <a href="services/stove-repair.php" class="text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Stove</a>
-          <a href="services/microwave-repair.php" class="text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Microwave</a>
-          <a href="services/washer-repair.php" class="text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Washer</a>
-          <a href="services/dryer-repair.php" class="text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Dryer</a>
-          <a href="services/dishwasher-repair.php" class="text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Dishwasher</a>
-        </div>
-
-        <span class="font-bold text-xs uppercase tracking-wider text-slate-400 px-2">Service Areas</span>
-        <div class="grid grid-cols-2 gap-2 bg-slate-50 p-2.5 rounded-lg border border-bordercolor">
-          <a href="index.php#areas" class="mobile-nav-link text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Toronto & GTA</a>
-          <a href="index.php#areas" class="mobile-nav-link text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Mississauga</a>
-          <a href="index.php#areas" class="mobile-nav-link text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Hamilton</a>
-          <a href="index.php#areas" class="mobile-nav-link text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Oshawa</a>
-          <a href="index.php#areas" class="mobile-nav-link text-sm font-medium py-1.5 text-secondary hover:text-accent cursor-pointer">Kitchener-Waterloo</a>
-        </div>
-
-        <a href="schedule.php" class="mobile-nav-link font-semibold text-secondary hover:text-accent py-2 px-2 rounded-lg cursor-pointer">Book Online</a>
-        <div class="pt-4 border-t border-bordercolor flex flex-col gap-2">
-          <a href="tel:9057178905" class="gtm-web-call bg-primary text-white text-center font-bold py-3 rounded-lg flex justify-center items-center gap-2 cursor-pointer">
-            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
-            Call: 905-717-8905
-          </a>
-          <a href="schedule.php" class="bg-accent hover:bg-accent-hover text-white text-center font-bold py-3 rounded-lg cursor-pointer">
-            Schedule My Repair
-          </a>
-        </div>
-      </div>
-    </div>
-  </header>
-
   <!-- BREADCRUMBS -->
   <nav class="bg-white border-b border-bordercolor">
     <div class="max-w-7xl mx-auto px-4 py-3 text-xs font-semibold flex items-center gap-2">
-      <a href="index.php" class="text-secondary hover:text-accent transition-colors">Home</a>
+      <a href="./" class="text-secondary hover:text-accent transition-colors">Home</a>
       <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
       <span class="text-primary font-bold">Schedule Repair</span>
     </div>
@@ -248,24 +278,6 @@ include 'footer.php';
 ?>
 
   <script>
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenuDrawer = document.getElementById('mobile-menu-drawer');
-    const hamburgerIcon = document.getElementById('hamburger-icon');
-    const closeIcon = document.getElementById('close-icon');
-
-    mobileMenuBtn.addEventListener('click', () => {
-      const isDrawerHidden = mobileMenuDrawer.classList.contains('hidden');
-      if (isDrawerHidden) {
-        mobileMenuDrawer.classList.remove('hidden');
-        hamburgerIcon.classList.add('hidden');
-        closeIcon.classList.remove('hidden');
-      } else {
-        mobileMenuDrawer.classList.add('hidden');
-        hamburgerIcon.classList.remove('hidden');
-        closeIcon.classList.add('hidden');
-      }
-    });
-
     // Automatically set default date to tomorrow
     const tomorrow = new Date();
     tomorrow.setDate(tomorrow.getDate() + 1);

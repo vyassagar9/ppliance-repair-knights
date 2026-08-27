@@ -16,6 +16,11 @@ Disallow: /head.php
 Disallow: /header.php
 Disallow: /footer.php
 Disallow: /404.php
+Disallow: /config.php
+Disallow: /reviews-data.php
+Disallow: /reviews-widget.php
+Disallow: /locations/location-data.php
+Disallow: /locations/location.php
 
 # XML Sitemap Location
 Sitemap: https://www.appliancerepairknights.com/sitemap.xml

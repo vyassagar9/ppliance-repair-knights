@@ -16,8 +16,8 @@ ErrorDocument 404 /404.php
   RewriteCond %{HTTP_HOST} ^appliancerepairknights\.ca$ [NC]
   RewriteRule ^(.*)$ https://www.appliancerepairknights.com/$1 [R=301,L]
 
-  # Exclude sitemap.xml, robots.txt, and 404.php from rewriting
-  RewriteRule ^sitemap\.xml$ - [L]
+  # Route sitemap.xml to dynamic sitemap.php (auto filemtime & 304 caching)
+  RewriteRule ^sitemap\.xml$ sitemap.php [L]
   RewriteRule ^robots\.txt$ - [L]
   RewriteRule ^404\.php$ - [L]
 

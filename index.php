@@ -19,8 +19,8 @@ $custom_head_schema = '
         "@id": "https://www.appliancerepairknights.com/#organization",
         "name": "Appliance Repair Knights Ltd.",
         "url": "https://www.appliancerepairknights.com/",
-        "logo": "https://www.appliancerepairknights.com/img/logo.png",
-        "image": "https://www.appliancerepairknights.com/img/bnr.png",
+        "logo": "https://www.appliancerepairknights.com/img/logo.webp",
+        "image": "https://www.appliancerepairknights.com/img/appliance-repair-banner.webp",
         "telephone": "905-717-8905",
         "email": "info@appliancerepairknights.com",
         "priceRange": "$$",
@@ -230,10 +230,10 @@ include 'head.php';
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
 
           <!-- Refrigerator Card -->
-          <a href="services/fridge-repair.php"
+          <a href="services/fridge-repair"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/refrigerator-repair-service.webp" alt="Same-Day Refrigerator Repair Service Toronto" title="Fast Refrigerator Repair & Diagnostics" loading="lazy" decoding="async"
+              <img src="img/refrigerator-repair-service.webp" alt="Same-Day Refrigerator Repair Service Toronto" title="Fast Refrigerator Repair & Diagnostics" width="798" height="448" loading="lazy" decoding="async"
                 class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
             </div>
             <div>
@@ -252,10 +252,10 @@ include 'head.php';
           </a>
 
           <!-- Washer Card -->
-          <a href="services/washer-repair.php"
+          <a href="services/washer-repair"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/washing-machine-repair-service.webp" alt="Washing Machine Repair Service GTA" title="Certified Washer Diagnostics & Repair" loading="lazy" decoding="async"
+              <img src="img/washing-machine-repair-service.webp" alt="Washing Machine Repair Service GTA" title="Certified Washer Diagnostics & Repair" width="739" height="415" loading="lazy" decoding="async"
                 class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
             </div>
             <div>
@@ -274,10 +274,10 @@ include 'head.php';
           </a>
 
           <!-- Dryer Card -->
-          <a href="services/dryer-repair.php"
+          <a href="services/dryer-repair"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/clothes-dryer-repair-service.webp" alt="Clothes Dryer Repair and Vent Cleaning" title="Fast Dryer Inspection & Repair Service" loading="lazy" decoding="async"
+              <img src="img/clothes-dryer-repair-service.webp" alt="Clothes Dryer Repair and Vent Cleaning" title="Fast Dryer Inspection & Repair Service" width="798" height="448" loading="lazy" decoding="async"
                 class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
             </div>
             <div>
@@ -296,10 +296,10 @@ include 'head.php';
           </a>
 
           <!-- Dishwasher Card -->
-          <a href="services/dishwasher-repair.php"
+          <a href="services/dishwasher-repair"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/open-dishwasher-repair.webp" alt="Dishwasher Diagnostic and Repair Service" title="Reliable Dishwasher Repair & Pump Diagnostics" loading="lazy" decoding="async"
+              <img src="img/open-dishwasher-repair.webp" alt="Dishwasher Diagnostic and Repair Service" title="Reliable Dishwasher Repair & Pump Diagnostics" width="798" height="448" loading="lazy" decoding="async"
                 class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
             </div>
             <div>
@@ -318,10 +318,10 @@ include 'head.php';
           </a>
 
           <!-- Oven & Stove Card -->
-          <a href="services/stove-repair.php"
+          <a href="services/stove-repair"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/oven-stove-repair-service.webp" alt="Oven and Stove Repair Service" title="Electric & Gas Stove/Oven Diagnostics" loading="lazy" decoding="async"
+              <img src="img/oven-stove-repair-service.webp" alt="Oven and Stove Repair Service" title="Electric & Gas Stove/Oven Diagnostics" width="798" height="448" loading="lazy" decoding="async"
                 class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
             </div>
             <div>
@@ -340,10 +340,10 @@ include 'head.php';
           </a>
 
           <!-- Microwave Card -->
-          <a href="services/microwave-repair.php"
+          <a href="services/microwave-repair"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/microwave-repair.webp" alt="Microwave Oven Repair and Installation Service" title="Built-in & Over-the-Range Microwave Repair" loading="lazy" decoding="async"
+              <img src="img/microwave-repair.webp" alt="Microwave Oven Repair and Installation Service" title="Built-in & Over-the-Range Microwave Repair" width="1536" height="1024" loading="lazy" decoding="async"
                 class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
             </div>
             <div>
@@ -730,128 +730,8 @@ include 'head.php';
       </div>
     </section>
 
-
     <!-- SECTION 5: VERIFIED CUSTOMER REVIEWS -->
-    <section class="py-16 bg-white border-b border-brandBorder" id="reviews">
-      <div class="max-w-7xl mx-auto px-4 text-center">
-
-        <span class="text-brandOrange font-extrabold text-xs uppercase tracking-widest block mb-1">GOOGLE 5.0★
-          RATING</span>
-        <h2 class="text-2xl sm:text-4xl font-heading font-black text-brandDarkBlue uppercase tracking-tight mb-2">
-          VERIFIED CUSTOMER REVIEWS
-        </h2>
-        <p class="text-slate-600 text-xs sm:text-base max-w-2xl mx-auto mb-4 font-medium">
-          Real reviews from verified Toronto & GTA homeowners.
-        </p>
-        <div class="w-20 h-1 bg-brandOrange mx-auto mb-10 rounded-full"></div>
-
-        <!-- 3 Verified Google Review Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-          <!-- Review 1 -->
-          <div
-            class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 text-left flex flex-col justify-between hover-lift shadow-xs">
-            <div>
-              <div class="flex items-center justify-between mb-3">
-                <div class="flex text-amber-400">★★★★★</div>
-                <span
-                  class="inline-flex items-center gap-1 text-[10px] font-extrabold text-emerald-700 bg-emerald-100/80 px-2.5 py-0.5 rounded-full border border-emerald-300">
-                  <svg class="w-3 h-3 fill-current text-emerald-600" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                  Verified Review
-                </span>
-              </div>
-              <p class="text-slate-600 text-xs sm:text-sm italic leading-relaxed mb-4">
-                "Our fridge stopped cooling on a Saturday morning. Appliance Repair Knights arrived within 2 hours and
-                fixed the relay motor on the spot. Lifesavers!"
-              </p>
-            </div>
-            <div class="flex items-center justify-between border-t border-slate-200/80 pt-3">
-              <span class="font-heading font-bold text-brandDarkBlue text-xs">— Michael R., Toronto</span>
-              <span class="text-[10px] text-slate-400 font-medium">Google Review</span>
-            </div>
-          </div>
-
-          <!-- Review 2 -->
-          <div
-            class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 text-left flex flex-col justify-between hover-lift shadow-xs">
-            <div>
-              <div class="flex items-center justify-between mb-3">
-                <div class="flex text-amber-400">★★★★★</div>
-                <span
-                  class="inline-flex items-center gap-1 text-[10px] font-extrabold text-emerald-700 bg-emerald-100/80 px-2.5 py-0.5 rounded-full border border-emerald-300">
-                  <svg class="w-3 h-3 fill-current text-emerald-600" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                  Verified Review
-                </span>
-              </div>
-              <p class="text-slate-600 text-xs sm:text-sm italic leading-relaxed mb-4">
-                "Super transparent pricing! Technician explained the issue with our Samsung washer, gave upfront
-                pricing, and finished in 45 minutes."
-              </p>
-            </div>
-            <div class="flex items-center justify-between border-t border-slate-200/80 pt-3">
-              <span class="font-heading font-bold text-brandDarkBlue text-xs">— Amanda K., Mississauga</span>
-              <span class="text-[10px] text-slate-400 font-medium">Google Review</span>
-            </div>
-          </div>
-
-          <!-- Review 3 -->
-          <div
-            class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 text-left flex flex-col justify-between hover-lift shadow-xs">
-            <div>
-              <div class="flex items-center justify-between mb-3">
-                <div class="flex text-amber-400">★★★★★</div>
-                <span
-                  class="inline-flex items-center gap-1 text-[10px] font-extrabold text-emerald-700 bg-emerald-100/80 px-2.5 py-0.5 rounded-full border border-emerald-300">
-                  <svg class="w-3 h-3 fill-current text-emerald-600" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                  Verified Review
-                </span>
-              </div>
-              <p class="text-slate-600 text-xs sm:text-sm italic leading-relaxed mb-4">
-                "Fast, polite, and very professional. The free diagnostic call with repair saved us money. Highly
-                recommended for any GTA homeowner."
-              </p>
-            </div>
-            <div class="flex items-center justify-between border-t border-slate-200/80 pt-3">
-              <span class="font-heading font-bold text-brandDarkBlue text-xs">— David L., Hamilton</span>
-              <span class="text-[10px] text-slate-400 font-medium">Google Review</span>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- High-Trust Booking Bar Under Reviews -->
-        <div
-          class="mt-10 pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 bg-slate-50 p-5 rounded-2xl border border-slate-200/80 shadow-xs">
-          <div class="flex items-center gap-3 text-left">
-            <div class="flex text-amber-400 text-base">★★★★★</div>
-            <div>
-              <span class="font-heading font-bold text-brandDarkBlue text-xs sm:text-sm block">Rated 5.0 / 5 Local
-                Reviews</span>
-              <span class="text-[11px] text-slate-500">Verified Toronto, Mississauga, Brampton & GTA Customers</span>
-            </div>
-          </div>
-          <a href="#quick-enquiry-form"
-            class="bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold text-xs px-6 py-3 rounded-xl uppercase tracking-wider transition-all shadow-md flex-shrink-0">
-            BOOK YOUR REPAIR NOW →
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-
+    <?php include __DIR__ . '/reviews-widget.php'; ?>
 
     <!-- SECTION 6: FAQ ACCORDION SECTION -->
     <section class="py-16 bg-slate-50 border-b border-brandBorder" id="faq">
@@ -928,6 +808,24 @@ include 'head.php';
             </div>
           </div>
 
+        </div>
+
+        <!-- Post-FAQ CTA & Trust Line -->
+        <div class="mt-10 text-center space-y-3">
+          <a href="tel:<?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?>"
+            class="inline-flex items-center justify-center gap-2.5 bg-brandOrange hover:bg-orange-600 text-white font-extrabold px-8 py-4 rounded-xl text-sm sm:text-base shadow-lg hover:shadow-xl transition-all uppercase tracking-wide">
+            <svg class="w-5 h-5 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+            </svg>
+            <span>Still Have Questions? Call <?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?></span>
+          </a>
+          <p class="text-xs text-slate-700 font-semibold flex items-center justify-center gap-2 flex-wrap">
+            <span>🛡️ $0 Service Call With Any Paid Repair</span>
+            <span class="text-slate-400">•</span>
+            <span>⚡ Speak Directly With a Technician</span>
+            <span class="text-slate-400">•</span>
+            <span>Same-Day Availability</span>
+          </p>
         </div>
 
       </div>

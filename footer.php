@@ -10,7 +10,7 @@ $base_url = isset($base_url) ? $base_url : '';
 
         <!-- Col 1: Brand & Social -->
         <div class="lg:col-span-1 space-y-4">
-          <img src="<?php echo $base_url; ?>img/Appliance_Repair_Knights_Logo-white.avif" alt="Appliance Repair Knights Logo" class="h-14 w-auto object-contain">
+          <img src="<?php echo $base_url; ?>img/Appliance_Repair_Knights_Logo-white.avif" alt="Appliance Repair Knights Logo" width="723" height="345" loading="lazy" decoding="async" class="h-14 w-auto object-contain">
           <p class="text-slate-400 leading-relaxed">
             Fast, reliable and professional appliance repair services across the GTA &amp; Southern Ontario.
           </p>
@@ -59,11 +59,11 @@ $base_url = isset($base_url) ? $base_url : '';
         <div>
           <h4 class="font-heading font-bold text-white uppercase tracking-wider text-xs mb-3">QUICK LINKS</h4>
           <ul class="space-y-2 text-slate-400">
-            <li><a href="<?php echo $base_url; ?>index.php" class="hover:text-white transition-colors">Home</a></li>
-            <li><a href="<?php echo $base_url; ?>about.php" class="hover:text-white transition-colors">About Us</a></li>
-            <li><a href="<?php echo $base_url; ?>index.php#service-areas" class="hover:text-white transition-colors">Service Areas</a></li>
-            <li><a href="<?php echo $base_url; ?>schedule.php" class="hover:text-white transition-colors">Book Online</a></li>
-            <li><a href="<?php echo $base_url; ?>contact.php" class="hover:text-white transition-colors">Contact</a></li>
+            <li><a href="<?php echo $base_url ? $base_url : './'; ?>" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="<?php echo $base_url; ?>about" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="<?php echo $base_url ? $base_url : './'; ?>#service-areas" class="hover:text-white transition-colors">Service Areas</a></li>
+            <li><a href="<?php echo $base_url; ?>schedule" class="hover:text-white transition-colors">Book Online</a></li>
+            <li><a href="<?php echo $base_url; ?>contact" class="hover:text-white transition-colors">Contact</a></li>
           </ul>
         </div>
 
@@ -71,12 +71,12 @@ $base_url = isset($base_url) ? $base_url : '';
         <div>
           <h4 class="font-heading font-bold text-white uppercase tracking-wider text-xs mb-3">SERVICES</h4>
           <ul class="space-y-2 text-slate-400">
-            <li><a href="<?php echo $base_url; ?>services/fridge-repair.php" class="hover:text-white transition-colors">Refrigerator Repair</a></li>
-            <li><a href="<?php echo $base_url; ?>services/washer-repair.php" class="hover:text-white transition-colors">Washer Repair</a></li>
-            <li><a href="<?php echo $base_url; ?>services/dryer-repair.php" class="hover:text-white transition-colors">Dryer Repair</a></li>
-            <li><a href="<?php echo $base_url; ?>services/dishwasher-repair.php" class="hover:text-white transition-colors">Dishwasher Repair</a></li>
-            <li><a href="<?php echo $base_url; ?>services/stove-repair.php" class="hover:text-white transition-colors">Oven &amp; Stove Repair</a></li>
-            <li><a href="<?php echo $base_url; ?>services/microwave-repair.php" class="hover:text-white transition-colors">Microwave Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>services/fridge-repair" class="hover:text-white transition-colors">Refrigerator Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>services/washer-repair" class="hover:text-white transition-colors">Washer Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>services/dryer-repair" class="hover:text-white transition-colors">Dryer Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>services/dishwasher-repair" class="hover:text-white transition-colors">Dishwasher Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>services/stove-repair" class="hover:text-white transition-colors">Oven &amp; Stove Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>services/microwave-repair" class="hover:text-white transition-colors">Microwave Repair</a></li>
           </ul>
         </div>
 
@@ -153,11 +153,11 @@ $base_url = isset($base_url) ? $base_url : '';
       <div class="pt-6 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-slate-400">
         <p>© <?php echo date('Y'); ?> Appliance Repair Knights. All Rights Reserved.</p>
         <div class="flex gap-4">
-          <a href="<?php echo $base_url; ?>privacy-policy.php" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="<?php echo $base_url; ?>privacy-policy" class="hover:text-white transition-colors">Privacy Policy</a>
           <span class="text-slate-700">•</span>
-          <a href="<?php echo $base_url; ?>terms-and-conditions.php" class="hover:text-white transition-colors">Terms &amp; Conditions</a>
+          <a href="<?php echo $base_url; ?>terms-and-conditions" class="hover:text-white transition-colors">Terms &amp; Conditions</a>
           <span class="text-slate-700">•</span>
-          <a href="<?php echo $base_url; ?>disclaimer.php" class="hover:text-white transition-colors">Disclaimer</a>
+          <a href="<?php echo $base_url; ?>disclaimer" class="hover:text-white transition-colors">Disclaimer</a>
         </div>
       </div>
 
