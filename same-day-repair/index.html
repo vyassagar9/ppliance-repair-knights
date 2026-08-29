@@ -37,9 +37,9 @@
   <!-- End Google Tag Manager -->
 
   <!-- Primary Meta Tags for Google PPC & SEO -->
-  <title>Expert Appliance Repair in GTA & Hamilton | Same-Day Service</title>
-  <meta name="title" content="Expert Appliance Repair in GTA & Hamilton | Same-Day Service">
-  <meta name="description"
+  <title id="page-title">Expert Appliance Repair in GTA & Hamilton | Same-Day Service</title>
+  <meta id="meta-title" name="title" content="Expert Appliance Repair in GTA & Hamilton | Same-Day Service">
+  <meta id="meta-desc" name="description"
     content="Need fast appliance repair? Our local, fully equipped technicians offer same-day service across the GTA, Kitchener, and Hamilton. We fix it on the first visit!">
   <meta name="keywords"
     content="appliance repair Toronto, same day appliance repair GTA, fridge repair Toronto, washer repair Mississauga, dryer repair Brampton, dishwasher repair Hamilton, stove repair">
@@ -275,7 +275,7 @@
     <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
       <div class="flex items-center gap-2 font-medium">
         <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
-        <span class="text-slate-100 font-medium">24/7 Emergency Dispatch Active Across Toronto & Southern Ontario</span>
+        <span id="top-announcement" class="text-slate-100 font-medium">24/7 Emergency Dispatch Active Across Toronto & Southern Ontario</span>
       </div>
       <div class="flex items-center gap-4 text-xs font-extrabold text-amber-400">
         <span>⚡ Technicians Available Today</span>
@@ -314,7 +314,7 @@
         </a>
 
         <!-- WhatsApp Header CTA (Hidden on desktop) -->
-        <a href="https://wa.me/19057178905?text=Hi%2C%20I%20need%20appliance%20repair%20service%20in%20Toronto%2FGTA"
+        <a id="whatsapp-header-btn" href="https://wa.me/19057178905?text=Hi%2C%20I%20need%20appliance%20repair%20service%20in%20Toronto%2FGTA"
           onclick="trackGtmWhatsApp('header')" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"
           class="gtm-ppc-whatsapp-header flex sm:hidden bg-emerald-600 hover:bg-emerald-700 text-white p-2.5 rounded-xl text-xs font-extrabold items-center justify-center gap-1.5 shadow-md transition-all">
           <svg class="w-4 h-4 fill-current flex-shrink-0" viewBox="0 0 24 24">
@@ -345,21 +345,29 @@
           <!-- Hero Left Column: Aggressive PPC Value Props (7 cols) -->
           <div class="lg:col-span-7 space-y-5">
 
-            <div
+            <div id="hero-badge"
               class="inline-flex items-center gap-2 bg-brandOrange/10 text-brandOrange font-extrabold text-xs uppercase tracking-widest px-3.5 py-1.5 rounded-md border border-brandOrange/30">
               <span class="w-2 h-2 rounded-full bg-brandOrange animate-pulse"></span>
-              Fast • Reliable • Professional
+              <span>Fast • Reliable • Professional</span>
             </div>
 
-            <h1
+            <h1 id="hero-title"
               class="text-3xl sm:text-4xl lg:text-5xl font-heading font-black text-brandDarkBlue tracking-tight leading-tight">
               Same-Day Appliance Repair in <span class="text-brandBlue">GTA, Kitchener & Hamilton</span>
             </h1>
 
-            <p class="text-slate-700 text-sm sm:text-base md:text-lg leading-relaxed">
+            <p id="hero-desc" class="text-slate-700 text-sm sm:text-base md:text-lg leading-relaxed">
               Broken appliance? Our licensed technicians arrive today, fully equipped to fix your <strong
                 class="text-slate-900">Refrigerator, Washer, Dryer, Dishwasher, or Stove</strong> on the first visit!
             </p>
+
+            <!-- Dynamic Common Issues Solved Pills (Rendered when ?service= is present) -->
+            <div id="hero-issues-container" class="hidden pt-1 pb-1">
+              <span class="text-xs font-black uppercase tracking-wider text-brandDarkBlue block mb-2">Common Problems We Fix Today:</span>
+              <div id="hero-issues-list" class="flex flex-wrap gap-2">
+                <!-- Injected via JavaScript -->
+              </div>
+            </div>
 
             <!-- Key PPC Value Cards (3 Core Benefits) -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
@@ -388,7 +396,7 @@
 
               <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs flex items-center gap-3">
                 <div
-                  class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0 font-bold text-lg">
+                  class="w-10 h-10 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0 font-bold text-lg">
                   ⚡
                 </div>
                 <div>
@@ -409,7 +417,7 @@
                   <svg class="w-4 h-4 sm:w-5 sm:h-5 text-brandBlue" fill="none" stroke="currentColor"
                     viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 001.946.806 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
+                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 001.946.806 3.42 3.42 0 014.438 0 3.42 3.42 0 00.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
                     </path>
                   </svg>
                 </div>
@@ -480,15 +488,15 @@
           <div id="ppc-quote-form" class="lg:col-span-5">
             <div class="bg-white rounded-3xl p-6 sm:p-7 shadow-2xl border-2 border-brandBlue/20 relative">
 
-              <div
+              <div id="form-badge"
                 class="bg-brandBlue text-white text-xs font-black uppercase tracking-widest py-1.5 px-3 rounded-full inline-block mb-3">
                 ⚡ SAME-DAY ONLINE DISPATCH
               </div>
 
-              <h2 class="text-2xl font-heading font-black text-brandDarkBlue mb-1">
+              <h2 id="form-title" class="text-2xl font-heading font-black text-brandDarkBlue mb-1">
                 Get Your Service Booked
               </h2>
-              <p class="text-slate-600 text-xs mb-4 font-medium">
+              <p id="form-subtitle" class="text-slate-600 text-xs mb-4 font-medium">
                 Fill out the form below. A local technician will contact you within <strong class="text-slate-800">15 minutes</strong>.
               </p>
 
@@ -570,8 +578,8 @@
                   class="gtm-ppc-call-success inline-block bg-brandDarkBlue text-white text-xs font-bold py-2 px-4 rounded-lg mt-2">Call
                   Dispatch Directly: 905-717-8905</a>
               </div>
-
             </div>
+
           </div>
 
         </div>
@@ -589,19 +597,18 @@
           </svg>
           <span>FAST & RELIABLE DISPATCH</span>
         </div>
-        <h2 class="text-2xl sm:text-3xl font-heading font-black text-brandDarkBlue uppercase tracking-tight mb-2">
+        <h2 id="services-title" class="text-2xl sm:text-3xl font-heading font-black text-brandDarkBlue uppercase tracking-tight mb-2">
           APPLIANCES WE REPAIR SAME-DAY
         </h2>
-        <p class="text-slate-700 text-xs sm:text-sm max-w-xl mx-auto mb-4 font-medium leading-relaxed">
+        <p id="services-subtitle" class="text-slate-700 text-xs sm:text-sm max-w-xl mx-auto mb-4 font-medium leading-relaxed">
           Comprehensive diagnostic and repair services for all major household home appliances.
         </p>
         <div class="w-20 h-1 bg-brandOrange mx-auto mb-8 rounded-full"></div>
 
+        <div id="services-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
 
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
-
-          <a href="#ppc-quote-form"
-            class="gtm-ppc-service-card bg-white p-4 rounded-2xl border border-slate-200 shadow-sm hover-lift flex flex-col items-center text-center">
+          <a href="#ppc-quote-form" data-service-card="fridge"
+            class="gtm-ppc-service-card bg-white p-4 rounded-2xl border border-slate-200 shadow-sm hover-lift flex flex-col items-center text-center transition-all relative">
             <div class="h-24 w-full flex items-center justify-center p-2 mb-2 bg-slate-50 rounded-xl overflow-hidden">
               <img src="../img/refrigerator-repair-service.webp" alt="Refrigerator Repair" title="Same-Day Refrigerator Repair" width="160" height="96"
                 class="object-cover h-full w-full rounded-lg" loading="lazy" decoding="async">
@@ -610,8 +617,8 @@
             <span class="text-[11px] text-brandOrange font-extrabold mt-1">Book Today →</span>
           </a>
 
-          <a href="#ppc-quote-form"
-            class="gtm-ppc-service-card bg-white p-4 rounded-2xl border border-slate-200 shadow-sm hover-lift flex flex-col items-center text-center">
+          <a href="#ppc-quote-form" data-service-card="washer"
+            class="gtm-ppc-service-card bg-white p-4 rounded-2xl border border-slate-200 shadow-sm hover-lift flex flex-col items-center text-center transition-all relative">
             <div class="h-24 w-full flex items-center justify-center p-2 mb-2 bg-slate-50 rounded-xl overflow-hidden">
               <img src="../img/washing-machine-repair-service.webp" alt="Washer Repair" title="Same-Day Washer Repair" width="160" height="96"
                 class="object-cover h-full w-full rounded-lg" loading="lazy" decoding="async">
@@ -620,8 +627,8 @@
             <span class="text-[11px] text-brandOrange font-extrabold mt-1">Book Today →</span>
           </a>
 
-          <a href="#ppc-quote-form"
-            class="gtm-ppc-service-card bg-white p-4 rounded-2xl border border-slate-200 shadow-sm hover-lift flex flex-col items-center text-center">
+          <a href="#ppc-quote-form" data-service-card="dryer"
+            class="gtm-ppc-service-card bg-white p-4 rounded-2xl border border-slate-200 shadow-sm hover-lift flex flex-col items-center text-center transition-all relative">
             <div class="h-24 w-full flex items-center justify-center p-2 mb-2 bg-slate-50 rounded-xl overflow-hidden">
               <img src="../img/clothes-dryer-repair-service.webp" alt="Dryer Repair" title="Same-Day Dryer Repair" width="160" height="96"
                 class="object-cover h-full w-full rounded-lg" loading="lazy" decoding="async">
@@ -630,8 +637,8 @@
             <span class="text-[11px] text-brandOrange font-extrabold mt-1">Book Today →</span>
           </a>
 
-          <a href="#ppc-quote-form"
-            class="gtm-ppc-service-card bg-white p-4 rounded-2xl border border-slate-200 shadow-sm hover-lift flex flex-col items-center text-center">
+          <a href="#ppc-quote-form" data-service-card="dishwasher"
+            class="gtm-ppc-service-card bg-white p-4 rounded-2xl border border-slate-200 shadow-sm hover-lift flex flex-col items-center text-center transition-all relative">
             <div class="h-24 w-full flex items-center justify-center p-2 mb-2 bg-slate-50 rounded-xl overflow-hidden">
               <img src="../img/open-dishwasher-repair.webp" alt="Dishwasher Repair" title="Same-Day Dishwasher Repair" width="160" height="96"
                 class="object-cover h-full w-full rounded-lg" loading="lazy" decoding="async">
@@ -640,8 +647,8 @@
             <span class="text-[11px] text-brandOrange font-extrabold mt-1">Book Today →</span>
           </a>
 
-          <a href="#ppc-quote-form"
-            class="gtm-ppc-service-card bg-white p-4 rounded-2xl border border-slate-200 shadow-sm hover-lift flex flex-col items-center text-center">
+          <a href="#ppc-quote-form" data-service-card="stove"
+            class="gtm-ppc-service-card bg-white p-4 rounded-2xl border border-slate-200 shadow-sm hover-lift flex flex-col items-center text-center transition-all relative">
             <div class="h-24 w-full flex items-center justify-center p-2 mb-2 bg-slate-50 rounded-xl overflow-hidden">
               <img src="../img/oven-stove-repair-service.webp" alt="Oven & Stove Repair" title="Same-Day Oven & Stove Repair" width="160" height="96"
                 class="object-cover h-full w-full rounded-lg" loading="lazy" decoding="async">
@@ -650,8 +657,8 @@
             <span class="text-[11px] text-brandOrange font-extrabold mt-1">Book Today →</span>
           </a>
 
-          <a href="#ppc-quote-form"
-            class="gtm-ppc-service-card bg-white p-4 rounded-2xl border border-slate-200 shadow-sm hover-lift flex flex-col items-center text-center">
+          <a href="#ppc-quote-form" data-service-card="microwave"
+            class="gtm-ppc-service-card bg-white p-4 rounded-2xl border border-slate-200 shadow-sm hover-lift flex flex-col items-center text-center transition-all relative">
             <div class="h-24 w-full flex items-center justify-center p-2 mb-2 bg-slate-50 rounded-xl overflow-hidden">
               <img src="../img/microwave-repair.webp" alt="Microwave Repair" title="Same-Day Microwave Repair" width="160" height="96"
                 class="object-cover h-full w-full rounded-lg" loading="lazy" decoding="async">
@@ -670,8 +677,8 @@
       <div
         class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
         <div class="max-w-xl">
-          <h3 class="text-base sm:text-lg font-heading font-black text-white">Need Your Appliance Repaired Today?</h3>
-          <p class="text-xs sm:text-sm text-slate-200">Experienced GTA technicians on standby with high-quality
+          <h3 id="mid-cta-title" class="text-base sm:text-lg font-heading font-black text-white">Need Your Appliance Repaired Today?</h3>
+          <p id="mid-cta-desc" class="text-xs sm:text-sm text-slate-200">Experienced GTA technicians on standby with high-quality
             replacement parts.</p>
         </div>
         <div class="flex items-center justify-center gap-3 flex-shrink-0">
@@ -1959,9 +1966,9 @@
             </svg>
             <span>15-Minute Response</span>
           </span>
-          <h2 class="text-2xl sm:text-4xl font-heading font-black uppercase text-white tracking-tight">NEED AN APPLIANCE
+          <h2 id="bottom-cta-title" class="text-2xl sm:text-4xl font-heading font-black uppercase text-white tracking-tight">NEED AN APPLIANCE
             REPAIRED TODAY?</h2>
-          <p class="text-xs sm:text-sm text-slate-200 mt-2 max-w-xl">
+          <p id="bottom-cta-desc" class="text-xs sm:text-sm text-slate-200 mt-2 max-w-xl">
             Don't let a broken fridge or washer ruin your day. Call our dispatch center now or request a callback!
           </p>
         </div>
@@ -2086,7 +2093,7 @@
     class="fixed bottom-0 left-0 right-0 z-50 bg-brandDarkBlue/95 backdrop-blur-md px-3 py-2.5 border-t border-brandBlue/40 flex items-center justify-between gap-2 md:hidden shadow-2xl">
     
     <!-- 1. WhatsApp Icon CTA (Left Side) -->
-    <a href="https://wa.me/19057178905?text=Hi%2C%20I%20need%20appliance%20repair%20service%20in%20Toronto%2FGTA"
+    <a id="whatsapp-mobile-btn" href="https://wa.me/19057178905?text=Hi%2C%20I%20need%20appliance%20repair%20service%20in%20Toronto%2FGTA"
       onclick="trackGtmWhatsApp('mobile_bar')" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"
       class="gtm-ppc-whatsapp-mobilebar bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold p-3 rounded-xl text-xs flex items-center justify-center shadow-md transition-all flex-shrink-0 active:scale-95">
       <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
@@ -2116,7 +2123,7 @@
     </a>
   </div>
 
-  <!-- Form Interactivity & FAQ Accordion Handler Script -->
+  <!-- Form Interactivity, Dynamic Service Personalization & FAQ Accordion Handler Script -->
   <script>
     // Initialize GTM dataLayer
     window.dataLayer = window.dataLayer || [];
@@ -2145,6 +2152,330 @@
         'city': city,
         'value': 1
       });
+    }
+
+    // Dynamic Services Database for Google Ads Campaigns
+    const DYNAMIC_SERVICES = {
+      fridge: {
+        key: 'fridge',
+        selectValue: 'Refrigerator',
+        title: 'Same-Day Refrigerator Repair in GTA & Hamilton | $0 Service Call',
+        metaDesc: 'Fast same-day refrigerator repair across Toronto, GTA & Hamilton. Certified technicians fix cooling, leaks, and ice makers on the first visit. Call 905-717-8905!',
+        topAnnouncement: '24/7 Emergency Refrigerator Dispatch Active Across Toronto & GTA',
+        heroBadge: '⚡ SAME-DAY REFRIGERATOR REPAIR • GTA & HAMILTON',
+        heroTitle: 'Same-Day <span class="text-brandBlue">Refrigerator Repair</span> in GTA, Kitchener & Hamilton',
+        heroDesc: 'Fridge not cooling, leaking water, ice maker broken, or making strange noises? Our licensed technicians arrive today with fully stocked parts to fix your <strong class="text-slate-900">Refrigerator or Freezer</strong> on the first visit!',
+        issues: [
+          { icon: '❄️', text: 'Not Cooling / Overheating' },
+          { icon: '💧', text: 'Water Leaks & Condensation' },
+          { icon: '🧊', text: 'Ice Maker & Dispenser Broken' },
+          { icon: '🔊', text: 'Compressor & Fan Noise' },
+          { icon: '⚡', text: '$0 Service Call With Repair' }
+        ],
+        formBadge: '⚡ SAME-DAY REFRIGERATOR DISPATCH',
+        formTitle: 'Get Your Refrigerator Repaired',
+        formSubtitle: 'Fill out the form below. A local fridge repair specialist will contact you within <strong class="text-slate-800">15 minutes</strong>.',
+        servicesTitle: 'REFRIGERATOR & ALL MAJOR APPLIANCES WE REPAIR',
+        servicesSubtitle: 'Specialized same-day repair for refrigerators, plus fast service for all household appliances.',
+        midCtaTitle: 'Need Your Refrigerator Repaired Today?',
+        midCtaDesc: 'Experienced GTA fridge technicians on standby with genuine replacement parts.',
+        bottomCtaTitle: 'NEED YOUR REFRIGERATOR REPAIRED TODAY?',
+        bottomCtaDesc: 'Don\'t let spoiled groceries or a leaking fridge ruin your day. Call our GTA fridge dispatch center now for same-day service!',
+        whatsappMsg: 'Hi, I need same-day refrigerator repair service in Toronto/GTA'
+      },
+      washer: {
+        key: 'washer',
+        selectValue: 'Washing Machine',
+        title: 'Same-Day Washer Repair in GTA & Hamilton | Transparent Flat-Rate Pricing',
+        metaDesc: 'Need fast washing machine repair? Licensed technicians repair leaks, drainage, spin cycles, and error codes across Toronto & GTA today. Call 905-717-8905!',
+        topAnnouncement: '24/7 Emergency Washer Dispatch Active Across Toronto & GTA',
+        heroBadge: '⚡ SAME-DAY WASHER REPAIR • GTA & HAMILTON',
+        heroTitle: 'Same-Day <span class="text-brandBlue">Washer Repair</span> in GTA, Kitchener & Hamilton',
+        heroDesc: 'Washer won\'t spin, draining issues, leaking water, or stopping mid-cycle? Our licensed technicians arrive today with stocked parts to fix your <strong class="text-slate-900">Front-Load or Top-Load Washer</strong> on the first visit!',
+        issues: [
+          { icon: '🔄', text: 'Not Spinning or Agitating' },
+          { icon: '💧', text: 'Water Leaking & Drainage Failure' },
+          { icon: '⚠️', text: 'Stopping Mid-Cycle / Error Codes' },
+          { icon: '🔊', text: 'Excessive Shaking & Noise' },
+          { icon: '⚡', text: 'Transparent Flat-Rate Pricing' }
+        ],
+        formBadge: '⚡ SAME-DAY WASHER DISPATCH',
+        formTitle: 'Get Your Washer Repaired',
+        formSubtitle: 'Fill out the form below. A local washer repair specialist will contact you within <strong class="text-slate-800">15 minutes</strong>.',
+        servicesTitle: 'WASHER & ALL MAJOR APPLIANCES WE REPAIR',
+        servicesSubtitle: 'Specialized same-day repair for washing machines, plus fast service for all household appliances.',
+        midCtaTitle: 'Need Your Washing Machine Repaired Today?',
+        midCtaDesc: 'Experienced GTA washer technicians on standby with genuine replacement parts.',
+        bottomCtaTitle: 'NEED YOUR WASHER REPAIRED TODAY?',
+        bottomCtaDesc: 'Don\'t let laundry pile up or water leaks cause damage. Call our GTA washer dispatch center now for same-day service!',
+        whatsappMsg: 'Hi, I need same-day washing machine repair service in Toronto/GTA'
+      },
+      dryer: {
+        key: 'dryer',
+        selectValue: 'Dryer',
+        title: 'Dryer Repair Near Me in GTA & Hamilton | Heating & Drum Repair',
+        metaDesc: 'Dryer not heating or spinning? Same-day clothes dryer repair across Toronto, GTA, Mississauga, Brampton & Hamilton. $0 service call with repair. Call 905-717-8905!',
+        topAnnouncement: '24/7 Emergency Dryer Dispatch Active Across Toronto & GTA',
+        heroBadge: '⚡ SAME-DAY DRYER REPAIR • GTA & HAMILTON',
+        heroTitle: 'Same-Day <span class="text-brandBlue">Dryer Repair Near Me</span> in GTA & Hamilton',
+        heroDesc: 'Dryer not heating, drum not spinning, squeaking noises, or taking multiple cycles? Our licensed technicians arrive today with stocked heating elements, fuses and belts to fix your <strong class="text-slate-900">Dryer</strong> on the first visit!',
+        issues: [
+          { icon: '🔥', text: 'No Heat / Clothes Stay Damp' },
+          { icon: '🔄', text: 'Drum Not Spinning or Turning' },
+          { icon: '🔊', text: 'Squeaking & Grinding Noises' },
+          { icon: '⏱️', text: 'Takes Multiple Cycles to Dry' },
+          { icon: '⚡', text: '$0 Service Call With Repair' }
+        ],
+        formBadge: '⚡ SAME-DAY DRYER DISPATCH',
+        formTitle: 'Get Your Dryer Repaired',
+        formSubtitle: 'Fill out the form below. A local dryer repair specialist will contact you within <strong class="text-slate-800">15 minutes</strong>.',
+        servicesTitle: 'DRYER & ALL MAJOR APPLIANCES WE REPAIR',
+        servicesSubtitle: 'Specialized same-day repair for clothes dryers, plus fast service for all household appliances.',
+        midCtaTitle: 'Need Your Dryer Repaired Today?',
+        midCtaDesc: 'Experienced GTA dryer technicians on standby with genuine heating elements & parts.',
+        bottomCtaTitle: 'NEED YOUR DRYER REPAIRED TODAY?',
+        bottomCtaDesc: 'Don\'t let damp laundry sit. Call our GTA dryer dispatch center now for fast same-day diagnostics & repairs!',
+        whatsappMsg: 'Hi, I need same-day dryer repair service in Toronto/GTA'
+      },
+      dishwasher: {
+        key: 'dishwasher',
+        selectValue: 'Dishwasher',
+        title: 'Same-Day Dishwasher Repair in GTA & Hamilton | Drainage & Leak Fixes',
+        metaDesc: 'Fast dishwasher repair across Toronto, GTA & Hamilton. We fix drainage problems, leaks, wash pump failures, and error codes on the first visit. Call 905-717-8905!',
+        topAnnouncement: '24/7 Emergency Dishwasher Dispatch Active Across Toronto & GTA',
+        heroBadge: '⚡ SAME-DAY DISHWASHER REPAIR • GTA & HAMILTON',
+        heroTitle: 'Same-Day <span class="text-brandBlue">Dishwasher Repair</span> in GTA, Kitchener & Hamilton',
+        heroDesc: 'Dishwasher not draining, leaking water on floor, dishes coming out dirty, or not turning on? Our licensed technicians arrive today with stocked pumps and valves to fix your <strong class="text-slate-900">Dishwasher</strong> on the first visit!',
+        issues: [
+          { icon: '💧', text: 'Not Draining / Standing Water' },
+          { icon: '🚪', text: 'Door & Base Water Leaks' },
+          { icon: '🍽️', text: 'Dishes Not Getting Clean' },
+          { icon: '⚠️', text: 'Error Codes & Won\'t Start' },
+          { icon: '⚡', text: 'Upfront Flat-Rate Pricing' }
+        ],
+        formBadge: '⚡ SAME-DAY DISHWASHER DISPATCH',
+        formTitle: 'Get Your Dishwasher Repaired',
+        formSubtitle: 'Fill out the form below. A local dishwasher repair specialist will contact you within <strong class="text-slate-800">15 minutes</strong>.',
+        servicesTitle: 'DISHWASHER & ALL MAJOR APPLIANCES WE REPAIR',
+        servicesSubtitle: 'Specialized same-day repair for dishwashers, plus fast service for all household appliances.',
+        midCtaTitle: 'Need Your Dishwasher Repaired Today?',
+        midCtaDesc: 'Experienced GTA dishwasher technicians on standby with genuine replacement parts.',
+        bottomCtaTitle: 'NEED YOUR DISHWASHER REPAIRED TODAY?',
+        bottomCtaDesc: 'Stop washing dishes by hand! Call our GTA dishwasher dispatch center now for fast, same-day service.',
+        whatsappMsg: 'Hi, I need same-day dishwasher repair service in Toronto/GTA'
+      },
+      stove: {
+        key: 'stove',
+        selectValue: 'Oven & Stove',
+        title: 'Same-Day Stove & Oven Repair in GTA & Hamilton | Gas & Electric',
+        metaDesc: 'Oven not heating or burners not igniting? Fast same-day stove, range, and oven repair across Toronto & GTA. $0 service call with repair. Call 905-717-8905!',
+        topAnnouncement: '24/7 Emergency Stove & Oven Dispatch Active Across Toronto & GTA',
+        heroBadge: '⚡ SAME-DAY STOVE & OVEN REPAIR • GTA & HAMILTON',
+        heroTitle: 'Same-Day <span class="text-brandBlue">Stove & Oven Repair</span> in GTA, Kitchener & Hamilton',
+        heroDesc: 'Oven not heating up, burners not igniting, uneven baking, or temperature control issues? Our licensed technicians arrive today with stocked igniters, elements, and thermostats to fix your <strong class="text-slate-900">Oven, Range or Stove</strong> on the first visit!',
+        issues: [
+          { icon: '🔥', text: 'Oven Not Heating / Baking' },
+          { icon: '⚡', text: 'Burners Not Igniting / Clicking' },
+          { icon: '🌡️', text: 'Uneven Temperature & Baking' },
+          { icon: '⚙️', text: 'Control Board & Sensor Errors' },
+          { icon: '🛡️', text: '$0 Service Call With Repair' }
+        ],
+        formBadge: '⚡ SAME-DAY STOVE & OVEN DISPATCH',
+        formTitle: 'Get Your Oven & Stove Repaired',
+        formSubtitle: 'Fill out the form below. A local cooking appliance repair specialist will contact you within <strong class="text-slate-800">15 minutes</strong>.',
+        servicesTitle: 'STOVE, OVEN & ALL MAJOR APPLIANCES WE REPAIR',
+        servicesSubtitle: 'Specialized same-day repair for stoves, ovens, and ranges, plus fast service for all household appliances.',
+        midCtaTitle: 'Need Your Stove or Oven Repaired Today?',
+        midCtaDesc: 'Experienced GTA oven & stove technicians on standby with genuine replacement parts.',
+        bottomCtaTitle: 'NEED YOUR OVEN OR STOVE REPAIRED TODAY?',
+        bottomCtaDesc: 'Don\'t let a broken oven delay your meals. Call our GTA cooking appliance dispatch center now for same-day service!',
+        whatsappMsg: 'Hi, I need same-day stove or oven repair service in Toronto/GTA'
+      },
+      microwave: {
+        key: 'microwave',
+        selectValue: 'Microwave',
+        title: 'Same-Day Microwave Repair in GTA & Hamilton | Quick Diagnostics',
+        metaDesc: 'Expert microwave repair across Toronto and the GTA. We repair heating, magnetrons, turntables, and electrical issues. Call 905-717-8905!',
+        topAnnouncement: '24/7 Emergency Microwave Dispatch Active Across Toronto & GTA',
+        heroBadge: '⚡ SAME-DAY MICROWAVE REPAIR • GTA & HAMILTON',
+        heroTitle: 'Same-Day <span class="text-brandBlue">Microwave Repair</span> in GTA, Kitchener & Hamilton',
+        heroDesc: 'Microwave not heating, turntable not spinning, sparking inside, or touchpad unresponsive? Our licensed technicians arrive today with stocked magnetrons, fuses, and door switches to fix your <strong class="text-slate-900">Microwave</strong> on the first visit!',
+        issues: [
+          { icon: '⚡', text: 'Microwave Not Heating Food' },
+          { icon: '🔄', text: 'Turntable Plate Not Spinning' },
+          { icon: '✨', text: 'Sparking / Arcing Inside' },
+          { icon: '🔘', text: 'Touchpad & Buttons Unresponsive' },
+          { icon: '🛡️', text: '$0 Service Call With Repair' }
+        ],
+        formBadge: '⚡ SAME-DAY MICROWAVE DISPATCH',
+        formTitle: 'Get Your Microwave Repaired',
+        formSubtitle: 'Fill out the form below. A local microwave repair specialist will contact you within <strong class="text-slate-800">15 minutes</strong>.',
+        servicesTitle: 'MICROWAVE & ALL MAJOR APPLIANCES WE REPAIR',
+        servicesSubtitle: 'Specialized same-day repair for microwaves, plus fast service for all household appliances.',
+        midCtaTitle: 'Need Your Microwave Repaired Today?',
+        midCtaDesc: 'Experienced GTA microwave technicians on standby with genuine replacement parts.',
+        bottomCtaTitle: 'NEED YOUR MICROWAVE REPAIRED TODAY?',
+        bottomCtaDesc: 'Get your microwave working again today. Call our dispatch center now for same-day service!',
+        whatsappMsg: 'Hi, I need same-day microwave repair service in Toronto/GTA'
+      }
+    };
+
+    function resolveServiceKey(param) {
+      if (!param) return null;
+      const p = param.toLowerCase().trim().replace(/_/g, '-');
+      if (['fridge', 'refrigerator', 'freezer', 'refrigerators', 'fridges'].includes(p)) return 'fridge';
+      if (['washer', 'washing-machine', 'washingmachine', 'washing', 'washers'].includes(p)) return 'washer';
+      if (['dryer', 'clothes-dryer', 'clothesdryer', 'dryers'].includes(p)) return 'dryer';
+      if (['dishwasher', 'dish-washer', 'dishwashers'].includes(p)) return 'dishwasher';
+      if (['stove', 'oven', 'range', 'cooktop', 'stoves', 'ovens', 'ranges'].includes(p)) return 'stove';
+      if (['microwave', 'microwaves'].includes(p)) return 'microwave';
+      return null;
+    }
+
+    function applyDynamicPersonalization() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const serviceParam = urlParams.get('service') || urlParams.get('appliance');
+      const serviceKey = resolveServiceKey(serviceParam);
+
+      if (!serviceKey || !DYNAMIC_SERVICES[serviceKey]) {
+        return; // Retain standard, generic high-converting page
+      }
+
+      const s = DYNAMIC_SERVICES[serviceKey];
+
+      // 1. Page Title & Meta Tags
+      if (s.title) {
+        document.title = s.title;
+        const metaTitle = document.getElementById('meta-title');
+        if (metaTitle) metaTitle.setAttribute('content', s.title);
+      }
+      if (s.metaDesc) {
+        const metaDesc = document.getElementById('meta-desc');
+        if (metaDesc) metaDesc.setAttribute('content', s.metaDesc);
+      }
+
+      // 2. Top Emergency Bar Announcement
+      const topAnnounce = document.getElementById('top-announcement');
+      if (topAnnounce && s.topAnnouncement) {
+        topAnnounce.textContent = s.topAnnouncement;
+      }
+
+      // 3. Hero Section (Badge, H1, Description)
+      const heroBadge = document.getElementById('hero-badge');
+      if (heroBadge && s.heroBadge) {
+        heroBadge.innerHTML = `<span class="w-2 h-2 rounded-full bg-brandOrange animate-pulse"></span><span>${s.heroBadge}</span>`;
+      }
+
+      const heroTitle = document.getElementById('hero-title');
+      if (heroTitle && s.heroTitle) {
+        heroTitle.innerHTML = s.heroTitle;
+      }
+
+      const heroDesc = document.getElementById('hero-desc');
+      if (heroDesc && s.heroDesc) {
+        heroDesc.innerHTML = s.heroDesc;
+      }
+
+      // 4. Hero Dynamic Common Problem Pills
+      const issuesContainer = document.getElementById('hero-issues-container');
+      const issuesList = document.getElementById('hero-issues-list');
+      if (issuesContainer && issuesList && s.issues && s.issues.length) {
+        issuesList.innerHTML = s.issues.map(iss => `
+          <div class="inline-flex items-center gap-1.5 bg-white border border-brandOrange/30 text-brandDarkBlue px-2.5 py-1 rounded-lg text-xs font-bold shadow-2xs">
+            <span>${iss.icon}</span>
+            <span>${iss.text}</span>
+          </div>
+        `).join('');
+        issuesContainer.classList.remove('hidden');
+      }
+
+      // 5. PPC Lead Form Personalization & Dropdown Preselection
+      const formBadge = document.getElementById('form-badge');
+      if (formBadge && s.formBadge) {
+        formBadge.textContent = s.formBadge;
+      }
+
+      const formTitle = document.getElementById('form-title');
+      if (formTitle && s.formTitle) {
+        formTitle.textContent = s.formTitle;
+      }
+
+      const formSubtitle = document.getElementById('form-subtitle');
+      if (formSubtitle && s.formSubtitle) {
+        formSubtitle.innerHTML = s.formSubtitle;
+      }
+
+      const applianceSelect = document.getElementById('ppc-appliance');
+      if (applianceSelect && s.selectValue) {
+        applianceSelect.value = s.selectValue;
+      }
+
+      // 6. Section 2: Services Section & Card Highlighting
+      const servicesTitle = document.getElementById('services-title');
+      if (servicesTitle && s.servicesTitle) {
+        servicesTitle.textContent = s.servicesTitle;
+      }
+
+      const servicesSubtitle = document.getElementById('services-subtitle');
+      if (servicesSubtitle && s.servicesSubtitle) {
+        servicesSubtitle.textContent = s.servicesSubtitle;
+      }
+
+      const cards = document.querySelectorAll('[data-service-card]');
+      cards.forEach(card => {
+        const cardKey = card.getAttribute('data-service-card');
+        if (cardKey === s.key) {
+          card.classList.add('border-2', 'border-brandOrange', 'ring-4', 'ring-brandOrange/20', 'shadow-lg', 'scale-[1.02]', 'bg-orange-50/20');
+          card.classList.remove('border-slate-200');
+          
+          // Add Primary Focus Ribbon
+          const ribbon = document.createElement('div');
+          ribbon.className = 'absolute -top-3 left-1/2 -translate-x-1/2 bg-brandOrange text-white text-[9px] font-black uppercase px-2.5 py-0.5 rounded-full shadow-md whitespace-nowrap z-10 animate-pulse';
+          ribbon.innerText = '★ PRIMARY FOCUS';
+          card.appendChild(ribbon);
+        } else {
+          card.classList.add('opacity-90', 'hover:opacity-100');
+        }
+      });
+
+      // 7. Mid CTA Strip
+      const midCtaTitle = document.getElementById('mid-cta-title');
+      if (midCtaTitle && s.midCtaTitle) {
+        midCtaTitle.textContent = s.midCtaTitle;
+      }
+
+      const midCtaDesc = document.getElementById('mid-cta-desc');
+      if (midCtaDesc && s.midCtaDesc) {
+        midCtaDesc.textContent = s.midCtaDesc;
+      }
+
+      // 8. Bottom CTA Banner
+      const bottomCtaTitle = document.getElementById('bottom-cta-title');
+      if (bottomCtaTitle && s.bottomCtaTitle) {
+        bottomCtaTitle.textContent = s.bottomCtaTitle;
+      }
+
+      const bottomCtaDesc = document.getElementById('bottom-cta-desc');
+      if (bottomCtaDesc && s.bottomCtaDesc) {
+        bottomCtaDesc.textContent = s.bottomCtaDesc;
+      }
+
+      // 9. WhatsApp CTAs (Header and Mobile Bar)
+      if (s.whatsappMsg) {
+        const encodedMsg = encodeURIComponent(s.whatsappMsg);
+        const headerWa = document.getElementById('whatsapp-header-btn');
+        if (headerWa) headerWa.href = `https://wa.me/19057178905?text=${encodedMsg}`;
+
+        const mobileWa = document.getElementById('whatsapp-mobile-btn');
+        if (mobileWa) mobileWa.href = `https://wa.me/19057178905?text=${encodedMsg}`;
+      }
+    }
+
+    // Run dynamic personalization immediately
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', applyDynamicPersonalization);
+    } else {
+      applyDynamicPersonalization();
     }
 
     // Server-side backend (send-lead.php) handles secure Google Sheet & Email dispatch
@@ -2181,7 +2512,7 @@
         email: email,
         city: city,
         appliance: appliance,
-        page: 'index.html'
+        page: 'same-day-repair' + (window.location.search || '')
       };
 
       try {

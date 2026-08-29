@@ -93,8 +93,7 @@ if (empty($name) || empty($phone)) {
     exit();
 }
 
-// 1. Secret Google Apps Script Endpoint (Protected on Server side)
-$googleScriptUrl = "https://script.google.com/macros/s/AKfycbwITHQWhZrzV0M1HklmX7WdlGF1dvllT0g9b4RpxmNUcN0sut79XI23lp_YsSaqc2_-zQ/exec";
+$googleScriptUrl = "https://script.google.com/macros/s/AKfycbz32LNUCMmCP_FKU2gvC-5SPNrTI4IBNqNg_bz1k_97Kk68hf9B8yXeQB9XHcAFKUDO/exec";
 
 // Forward lead data to Google Sheets via cURL
 $gSheetSuccess = false;
