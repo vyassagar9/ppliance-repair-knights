@@ -370,7 +370,7 @@
             </div>
 
             <!-- Key PPC Value Cards (3 Core Benefits) -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+            <div id="hero-ppc-benefits" class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
 
               <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs flex items-center gap-3">
                 <div
@@ -553,7 +553,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                       d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                   </svg>
-                  <span>BOOK ONLINE</span>
+                  <span>Book Repair Now ➔</span>
                 </button>
 
                 <p class="text-[11px] text-center text-slate-500 font-medium mt-2">
@@ -1027,7 +1027,7 @@
     </section>
 
     <!-- SECTION 4: OUR PROCESS - SIMPLE STEPS FROM BOOKING TO COMPLETION -->
-    <section class="py-16 bg-slate-50 border-b border-brandBorder" id="process">
+    <section class="hidden py-16 bg-slate-50 border-b border-brandBorder" id="process">
       <div class="max-w-7xl mx-auto px-4 text-center">
 
         <div class="inline-flex items-center gap-1.5 text-brandOrange font-extrabold text-xs uppercase tracking-widest mb-2.5">
@@ -2387,6 +2387,12 @@
           </div>
         `).join('');
         issuesContainer.classList.remove('hidden');
+      }
+
+      // Hide standard PPC benefit boxes on dynamic service pages
+      const ppcBenefits = document.getElementById('hero-ppc-benefits');
+      if (ppcBenefits) {
+        ppcBenefits.classList.add('hidden');
       }
 
       // 5. PPC Lead Form Personalization & Dropdown Preselection
