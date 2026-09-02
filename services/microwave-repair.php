@@ -96,26 +96,50 @@ $custom_head_schema = <<<HTML
         "mainEntity": [
           {
             "@type": "Question",
+            "name": "How much does microwave repair cost in the GTA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Microwave repair costs vary according to the model and the failed component. Problems involving a door switch, control panel, internal fuse, or other component can have different repair costs. A technician can diagnose the appliance and explain the repair options before work begins. For a more accurate estimate, our team can assess your microwave repair needs in the GTA."
+            }
+          },
+          {
+            "@type": "Question",
             "name": "Why is my microwave sparking inside?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Internal sparks are usually caused by a damaged waveguide cover, exposed metal elements (like racks or chipped interior paint), or dirty splattered food residue absorbing electromagnetic waves. It is critical to address this quickly to protect the magnetron."
+              "text": "Sparking can be caused by metal objects, damaged or burned interior surfaces, a damaged waveguide cover, food residue, or an internal component problem. Stop using the microwave if it sparks and unplug it when it is safe to do so. Do not continue operating it until the cause has been inspected by a microwave repair professional in the GTA."
             }
           },
           {
             "@type": "Question",
-            "name": "Is it worth repairing a microwave or should I replace it?",
+            "name": "Is it worth repairing a microwave or should I buy a new one?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "For premium built-in, over-the-range (OTR), or smart drawer microwaves, repair is highly economical compared to replacement and modification costs. Desktop countertop models are often replaced, but OTR units are easily fixed by replacing magnetrons, fuses, or capacitors."
+              "text": "Consider the microwave's age, condition, original price, and estimated repair cost. Repair can make sense for a newer, premium, built-in, or over-the-range model. For an inexpensive countertop microwave that is several years old, replacement may be more economical. A technician can help you make an informed decision about microwave repair in the GTA."
             }
           },
           {
             "@type": "Question",
-            "name": "Can you install an over-the-range microwave?",
+            "name": "Do you repair built-in and over-the-range microwaves?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Our technicians are fully equipped to install and secure built-in and over-the-range microwaves, including proper alignment with venting channels and cabinet brackets."
+              "text": "Yes. We service built-in and over-the-range microwave models, as well as many common countertop units. Service availability can depend on the brand, model, installation, and type of fault. If your built-in or over-the-range unit needs attention, our GTA microwave repair team can help."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why has my microwave stopped heating food?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A microwave that runs but doesn't heat can have a problem with the magnetron, high-voltage system, door switches, or another internal component. Microwaves contain high-voltage components that can remain dangerous even after the appliance has been unplugged. For this reason, internal repairs should always be handled by a qualified microwave repair technician in the GTA."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you fix unresponsive microwave touchpads?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. An unresponsive touchpad or control panel may be caused by a damaged keypad, control board, wiring issue, or another electrical fault. A technician can diagnose the problem and determine whether the component can be repaired or needs replacement. If the controls remain unresponsive, our microwave repair team in the GTA can diagnose the fault and recommend the right solution."
             }
           }
         ]
@@ -342,53 +366,98 @@ include __DIR__ . '/../head.php';
     <!-- FAQS ACCORDION -->
     <section class="bg-slate-50 border-y border-bordercolor py-16">
       <div class="max-w-4xl mx-auto px-4 space-y-8">
-        <h2 class="text-2xl font-heading font-bold text-primary text-center">Frequently Asked Questions</h2>
+        <div class="text-center space-y-2">
+          <h3 class="text-xs uppercase tracking-widest text-brandOrange font-extrabold">Got Questions?</h3>
+          <h2 class="text-2xl sm:text-3xl font-heading font-bold text-primary">Microwave Repair FAQ – GTA</h2>
+        </div>
         
         <div class="space-y-4">
           <!-- FAQ 1 -->
           <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
             <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
-              <span>Why is my microwave sparking inside?</span>
+              <span>Q. How much does microwave repair cost in the GTA?</span>
               <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
-            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-500 leading-relaxed">
-              Internal sparks are usually caused by a damaged waveguide cover, exposed metal elements (like racks or chipped interior paint), or dirty splattered food residue absorbing electromagnetic waves. It is critical to address this quickly to protect the magnetron.
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              Microwave repair costs vary according to the model and the failed component. Problems involving a door switch, control panel, internal fuse, or other component can have different repair costs. A technician can diagnose the appliance and explain the repair options before work begins. For a more accurate estimate, our team can assess your microwave repair needs in the GTA.
             </div>
           </div>
 
           <!-- FAQ 2 -->
           <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
             <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
-              <span>Is it worth repairing a microwave or should I replace it?</span>
+              <span>Q. Why is my microwave sparking inside?</span>
               <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
-            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-500 leading-relaxed">
-              For premium built-in, over-the-range (OTR), or smart drawer microwaves, repair is highly economical compared to replacement and modification costs. Desktop countertop models are often replaced, but OTR units are easily fixed by replacing magnetrons, fuses, or capacitors.
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              Sparking can be caused by metal objects, damaged or burned interior surfaces, a damaged waveguide cover, food residue, or an internal component problem. Stop using the microwave if it sparks and unplug it when it is safe to do so. Do not continue operating it until the cause has been inspected by a microwave repair professional in the GTA.
             </div>
           </div>
 
           <!-- FAQ 3 -->
           <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
             <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
-              <span>Can you install an over-the-range microwave?</span>
+              <span>Q. Is it worth repairing a microwave or should I buy a new one?</span>
               <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
-            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-500 leading-relaxed">
-              Yes. Our technicians are fully equipped to install and secure built-in and over-the-range microwaves, including proper alignment with venting channels and cabinet brackets.
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              Consider the microwave's age, condition, original price, and estimated repair cost. Repair can make sense for a newer, premium, built-in, or over-the-range model. For an inexpensive countertop microwave that is several years old, replacement may be more economical. A technician can help you make an informed decision about microwave repair in the GTA.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
+            <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
+              <span>Q. Do you repair built-in and over-the-range microwaves?</span>
+              <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              Yes. We service built-in and over-the-range microwave models, as well as many common countertop units. Service availability can depend on the brand, model, installation, and type of fault. If your built-in or over-the-range unit needs attention, our GTA microwave repair team can help.
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
+            <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
+              <span>Q. Why has my microwave stopped heating food?</span>
+              <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              A microwave that runs but doesn't heat can have a problem with the magnetron, high-voltage system, door switches, or another internal component. Microwaves contain high-voltage components that can remain dangerous even after the appliance has been unplugged. For this reason, internal repairs should always be handled by a qualified microwave repair technician in the GTA.
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
+            <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
+              <span>Q. Do you fix unresponsive microwave touchpads?</span>
+              <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              Yes. An unresponsive touchpad or control panel may be caused by a damaged keypad, control board, wiring issue, or another electrical fault. A technician can diagnose the problem and determine whether the component can be repaired or needs replacement. If the controls remain unresponsive, our microwave repair team in the GTA can diagnose the fault and recommend the right solution.
             </div>
           </div>
         </div>
 
         <!-- Post-FAQ CTA & Trust Line -->
-        <div class="mt-10 text-center space-y-3">
-          <a href="tel:<?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?>"
-            class="inline-flex items-center justify-center gap-2.5 bg-brandOrange hover:bg-orange-600 text-white font-extrabold px-8 py-4 rounded-xl text-sm sm:text-base shadow-lg hover:shadow-xl transition-all uppercase tracking-wide">
-            <svg class="w-5 h-5 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-            </svg>
-            <span>Still Have Questions? Call <?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?></span>
-          </a>
-          <p class="text-xs text-slate-700 font-semibold flex items-center justify-center gap-2 flex-wrap">
+        <div class="mt-10 text-center space-y-4">
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+            <a href="tel:<?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?>"
+              class="gtm-web-call inline-flex items-center justify-center gap-2.5 bg-brandOrange hover:bg-orange-600 text-white font-extrabold px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl text-xs sm:text-sm md:text-base shadow-lg hover:shadow-xl transition-all uppercase tracking-wide w-full sm:w-auto">
+              <svg class="w-5 h-5 animate-pulse flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+              </svg>
+              <span class="whitespace-nowrap">Still Have Questions? Call <?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?></span>
+            </a>
+            <a href="<?php echo $base_url; ?>schedule"
+              class="gtm-web-lead inline-flex items-center justify-center gap-2.5 bg-primary hover:bg-brandDarkBlue text-white font-extrabold px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl text-xs sm:text-sm md:text-base shadow-lg hover:shadow-xl transition-all uppercase tracking-wide w-full sm:w-auto">
+              <svg class="w-5 h-5 text-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              <span class="whitespace-nowrap">Schedule Repair</span>
+            </a>
+          </div>
+          <p class="text-xs text-slate-700 font-semibold flex items-center justify-center gap-2 flex-wrap pt-1">
             <span>🛡️ $0 Service Call With Any Paid Repair</span>
             <span class="text-slate-400">•</span>
             <span>⚡ Speak Directly With a Technician</span>

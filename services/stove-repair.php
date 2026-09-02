@@ -96,18 +96,50 @@ $custom_head_schema = <<<HTML
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Why is my electric oven not heating up but the display works?",
+            "name": "How much does oven or stove repair cost in Toronto?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "This usually indicates a failed bake element (which will often show physical blisters or cracks) or a blown thermal fuse. It can also point to a faulty temperature sensor or control board relay. Our techs test each part to isolate the exact cause."
+              "text": "The cost depends on the appliance, the problem, and the parts required. A simple component such as a knob, igniter, or heating element may require a different repair than a control board or other major component. A technician can inspect the appliance and provide an estimate based on the actual issue. For a clearer idea of the cost, our oven and stove repair technicians in Toronto can assess the appliance first."
             }
           },
           {
             "@type": "Question",
-            "name": "My gas stove burner clicks but won't light, what should I do?",
+            "name": "Why is my oven heating unevenly?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "First, make sure the burner cap is aligned properly and that there is no moisture or food debris clogging the igniter. If it's clean and still fails to spark or light, the spark igniter, switch, or gas valve may need replacement."
+              "text": "Uneven heating can be caused by a failing bake or broil element, temperature sensor, thermostat, convection fan, or another component. It can also sometimes be related to how the oven is being used or positioned. If temperature problems continue, professional diagnosis can determine whether a component needs repair or replacement with oven and stove repair in Toronto."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you repair gas range igniters and burners?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Gas stove and range problems can include burners that won't ignite, weak flames, faulty igniters, or inconsistent burner operation. Because gas appliances require careful handling, gas-related repairs should be performed by a properly qualified technician. Our Toronto oven and stove repair team can safely diagnose these issues."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it safe to use my stove if the burner won't light?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If a gas burner fails to ignite and you smell gas, stop using the stove immediately. Turn off the appliance and, if it is safe to do so, shut off the gas supply. Avoid flames, switches, or DIY repairs, and contact an appropriately qualified professional. Once the situation is safe, a technician can determine whether oven and stove repair in Toronto is required."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you fix electronic control boards on ovens?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Oven control problems can cause issues such as an unresponsive display, incorrect temperatures, failed cooking cycles, or buttons that don't work. Depending on the model, the control board may be repairable or may need replacement. Our technicians can diagnose the fault and recommend the right approach to oven and stove repair in Toronto."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does an oven or stove repair take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Repair time depends on the fault and the parts required. Many common oven and stove problems can be resolved during one visit when the necessary parts are available. Same-day service may be available in Toronto and the GTA, depending on appointment availability for your oven and stove repair."
             }
           }
         ]
@@ -334,42 +366,98 @@ include __DIR__ . '/../head.php';
     <!-- FAQS ACCORDION -->
     <section class="bg-slate-50 border-y border-bordercolor py-16">
       <div class="max-w-4xl mx-auto px-4 space-y-8">
-        <h2 class="text-2xl font-heading font-bold text-primary text-center">Frequently Asked Questions</h2>
+        <div class="text-center space-y-2">
+          <h3 class="text-xs uppercase tracking-widest text-brandOrange font-extrabold">Got Questions?</h3>
+          <h2 class="text-2xl sm:text-3xl font-heading font-bold text-primary">Oven &amp; Stove Repair FAQ – GTA</h2>
+        </div>
         
         <div class="space-y-4">
           <!-- FAQ 1 -->
           <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
             <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
-              <span>Why is my electric oven not heating up but the display works?</span>
+              <span>Q. How much does oven or stove repair cost in Toronto?</span>
               <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
-            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-500 leading-relaxed">
-              This usually indicates a failed bake element (which will often show physical blisters or cracks) or a blown thermal fuse. It can also point to a faulty temperature sensor or control board relay. Our techs test each part to isolate the exact cause.
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              The cost depends on the appliance, the problem, and the parts required. A simple component such as a knob, igniter, or heating element may require a different repair than a control board or other major component. A technician can inspect the appliance and provide an estimate based on the actual issue. For a clearer idea of the cost, our oven and stove repair technicians in Toronto can assess the appliance first.
             </div>
           </div>
 
           <!-- FAQ 2 -->
           <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
             <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
-              <span>My gas stove burner clicks but won't light, what should I do?</span>
+              <span>Q. Why is my oven heating unevenly?</span>
               <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
-            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-500 leading-relaxed">
-              First, make sure the burner cap is aligned properly and that there is no moisture or food debris clogging the igniter. If it's clean and still fails to spark or light, the spark igniter, switch, or gas valve may need replacement.
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              Uneven heating can be caused by a failing bake or broil element, temperature sensor, thermostat, convection fan, or another component. It can also sometimes be related to how the oven is being used or positioned. If temperature problems continue, professional diagnosis can determine whether a component needs repair or replacement with oven and stove repair in Toronto.
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
+            <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
+              <span>Q. Do you repair gas range igniters and burners?</span>
+              <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              Yes. Gas stove and range problems can include burners that won't ignite, weak flames, faulty igniters, or inconsistent burner operation. Because gas appliances require careful handling, gas-related repairs should be performed by a properly qualified technician. Our Toronto oven and stove repair team can safely diagnose these issues.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
+            <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
+              <span>Q. Is it safe to use my stove if the burner won't light?</span>
+              <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              If a gas burner fails to ignite and you smell gas, stop using the stove immediately. Turn off the appliance and, if it is safe to do so, shut off the gas supply. Avoid flames, switches, or DIY repairs, and contact an appropriately qualified professional. Once the situation is safe, a technician can determine whether oven and stove repair in Toronto is required.
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
+            <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
+              <span>Q. Do you fix electronic control boards on ovens?</span>
+              <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              Yes. Oven control problems can cause issues such as an unresponsive display, incorrect temperatures, failed cooking cycles, or buttons that don't work. Depending on the model, the control board may be repairable or may need replacement. Our technicians can diagnose the fault and recommend the right approach to oven and stove repair in Toronto.
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
+            <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
+              <span>Q. How long does an oven or stove repair take?</span>
+              <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              Repair time depends on the fault and the parts required. Many common oven and stove problems can be resolved during one visit when the necessary parts are available. Same-day service may be available in Toronto and the GTA, depending on appointment availability for your oven and stove repair.
             </div>
           </div>
         </div>
 
         <!-- Post-FAQ CTA & Trust Line -->
-        <div class="mt-10 text-center space-y-3">
-          <a href="tel:<?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?>"
-            class="inline-flex items-center justify-center gap-2.5 bg-brandOrange hover:bg-orange-600 text-white font-extrabold px-8 py-4 rounded-xl text-sm sm:text-base shadow-lg hover:shadow-xl transition-all uppercase tracking-wide">
-            <svg class="w-5 h-5 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-            </svg>
-            <span>Still Have Questions? Call <?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?></span>
-          </a>
-          <p class="text-xs text-slate-700 font-semibold flex items-center justify-center gap-2 flex-wrap">
+        <div class="mt-10 text-center space-y-4">
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+            <a href="tel:<?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?>"
+              class="gtm-web-call inline-flex items-center justify-center gap-2.5 bg-brandOrange hover:bg-orange-600 text-white font-extrabold px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl text-xs sm:text-sm md:text-base shadow-lg hover:shadow-xl transition-all uppercase tracking-wide w-full sm:w-auto">
+              <svg class="w-5 h-5 animate-pulse flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+              </svg>
+              <span class="whitespace-nowrap">Still Have Questions? Call <?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?></span>
+            </a>
+            <a href="<?php echo $base_url; ?>schedule"
+              class="gtm-web-lead inline-flex items-center justify-center gap-2.5 bg-primary hover:bg-brandDarkBlue text-white font-extrabold px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl text-xs sm:text-sm md:text-base shadow-lg hover:shadow-xl transition-all uppercase tracking-wide w-full sm:w-auto">
+              <svg class="w-5 h-5 text-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              <span class="whitespace-nowrap">Schedule Repair</span>
+            </a>
+          </div>
+          <p class="text-xs text-slate-700 font-semibold flex items-center justify-center gap-2 flex-wrap pt-1">
             <span>🛡️ $0 Service Call With Any Paid Repair</span>
             <span class="text-slate-400">•</span>
             <span>⚡ Speak Directly With a Technician</span>

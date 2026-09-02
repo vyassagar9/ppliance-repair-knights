@@ -96,26 +96,50 @@ $custom_head_schema = <<<HTML
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Why is my refrigerator not cooling but the freezer works?",
+            "name": "How much does refrigerator repair cost in Toronto & the Greater Toronto Area (GTA)?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "This is often caused by an evaporator fan failure, a blocked air damper between the freezer and fridge, or a malfunctioning defrost cycle system. Our technician will isolate the exact part causing the airflow issue during diagnosis."
+              "text": "The cost of refrigerator repair depends on the problem, appliance model, and parts required. A minor repair, such as replacing a sensor or thermostat, will generally cost less than a major component such as a compressor. For an accurate estimate, our technician can diagnose the issue and explain the repair options before work begins."
             }
           },
           {
             "@type": "Question",
-            "name": "How much does it cost to repair a refrigerator?",
+            "name": "Why is my fridge running but not cooling?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "We provide a flat-rate quote upfront after diagnosing the issue. The cost depends on the problem and any required parts. We always confirm the price with you before we begin."
+              "text": "If your refrigerator is running but not cooling properly, several issues could be responsible. Common causes include dirty condenser coils, a faulty thermostat, a problem with the evaporator fan, or a failing compressor. If the temperature continues to rise, have your refrigerator inspected promptly — our refrigerator repair technicians in Toronto can quickly diagnose the issue."
             }
           },
           {
             "@type": "Question",
-            "name": "Can you fix my refrigerator today?",
+            "name": "Is it worth repairing an old refrigerator or should I replace it?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, we prioritize same-day calls for refrigerator emergencies to prevent food spoilage. Call before 1 PM and we'll aim to dispatch a technician to your home today."
+              "text": "It depends on the refrigerator's age, condition, repair cost, and the price of a replacement. If the appliance is relatively new and the problem is a straightforward component failure, repair is often a practical choice. For an older refrigerator requiring an expensive major repair, replacement may make more financial sense. A technician can help you compare your options during a refrigerator repair service visit in Toronto."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you repair built-in and counter-depth refrigerators?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We service many types of refrigerators, including built-in and counter-depth models. Our technicians can diagnose problems with cooling, temperature control, ice makers, water systems, and other components. If you need service for a built-in or counter-depth model, our refrigerator repair technicians in Toronto can help."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a refrigerator repair take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The repair time depends on the problem and whether a replacement part is needed. Many common refrigerator problems can be diagnosed and repaired during the same service visit when the required part is available. We also offer same-day service options in Toronto and the GTA, subject to availability."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the signs of a refrigerant leak in a refrigerator?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Possible signs include poor cooling, unusual hissing or bubbling sounds, or areas of the refrigerator becoming warmer than normal. Refrigerant-related problems should be diagnosed and handled by a qualified professional. If you notice these symptoms, contact our refrigerator repair technicians in Toronto for a professional inspection."
             }
           }
         ]
@@ -342,53 +366,98 @@ include __DIR__ . '/../head.php';
     <!-- FAQS ACCORDION -->
     <section class="bg-slate-50 border-y border-bordercolor py-16">
       <div class="max-w-4xl mx-auto px-4 space-y-8">
-        <h2 class="text-2xl font-heading font-bold text-primary text-center">Frequently Asked Questions</h2>
+        <div class="text-center space-y-2">
+          <h3 class="text-xs uppercase tracking-widest text-brandOrange font-extrabold">Got Questions?</h3>
+          <h2 class="text-2xl sm:text-3xl font-heading font-bold text-primary">Refrigerator Repair FAQ – GTA</h2>
+        </div>
         
         <div class="space-y-4">
           <!-- FAQ 1 -->
           <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
             <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
-              <span>Why is my refrigerator not cooling but the freezer works?</span>
+              <span>Q. How much does refrigerator repair cost in Toronto &amp; the Greater Toronto Area (GTA)?</span>
               <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
-            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-500 leading-relaxed">
-              This is often caused by an evaporator fan failure, a blocked air damper between the freezer and fridge, or a malfunctioning defrost cycle system. Our technician will isolate the exact part causing the airflow issue during diagnosis.
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              The cost of refrigerator repair depends on the problem, appliance model, and parts required. A minor repair, such as replacing a sensor or thermostat, will generally cost less than a major component such as a compressor. For an accurate estimate, our technician can diagnose the issue and explain the repair options before work begins.
             </div>
           </div>
 
           <!-- FAQ 2 -->
           <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
             <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
-              <span>How much does it cost to repair a refrigerator?</span>
+              <span>Q. Why is my fridge running but not cooling?</span>
               <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
-            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-500 leading-relaxed">
-              We provide a flat-rate quote upfront after diagnosing the issue. The cost depends on the problem and any required parts. We always confirm the price with you before we begin.
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              If your refrigerator is running but not cooling properly, several issues could be responsible. Common causes include dirty condenser coils, a faulty thermostat, a problem with the evaporator fan, or a failing compressor. If the temperature continues to rise, have your refrigerator inspected promptly — our refrigerator repair technicians in Toronto can quickly diagnose the issue.
             </div>
           </div>
 
           <!-- FAQ 3 -->
           <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
             <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
-              <span>Can you fix my refrigerator today?</span>
+              <span>Q. Is it worth repairing an old refrigerator or should I replace it?</span>
               <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
-            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-500 leading-relaxed">
-              Yes, we prioritize same-day calls for refrigerator emergencies to prevent food spoilage. Call before 1 PM and we'll aim to dispatch a technician to your home today.
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              It depends on the refrigerator's age, condition, repair cost, and the price of a replacement. If the appliance is relatively new and the problem is a straightforward component failure, repair is often a practical choice. For an older refrigerator requiring an expensive major repair, replacement may make more financial sense. A technician can help you compare your options during a refrigerator repair service visit in Toronto.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
+            <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
+              <span>Q. Do you repair built-in and counter-depth refrigerators?</span>
+              <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              Yes. We service many types of refrigerators, including built-in and counter-depth models. Our technicians can diagnose problems with cooling, temperature control, ice makers, water systems, and other components. If you need service for a built-in or counter-depth model, our refrigerator repair technicians in Toronto can help.
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
+            <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
+              <span>Q. How long does a refrigerator repair take?</span>
+              <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              The repair time depends on the problem and whether a replacement part is needed. Many common refrigerator problems can be diagnosed and repaired during the same service visit when the required part is available. We also offer same-day service options in Toronto and the GTA, subject to availability.
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
+            <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
+              <span>Q. What are the signs of a refrigerant leak in a refrigerator?</span>
+              <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              Possible signs include poor cooling, unusual hissing or bubbling sounds, or areas of the refrigerator becoming warmer than normal. Refrigerant-related problems should be diagnosed and handled by a qualified professional. If you notice these symptoms, contact our refrigerator repair technicians in Toronto for a professional inspection.
             </div>
           </div>
         </div>
 
         <!-- Post-FAQ CTA & Trust Line -->
-        <div class="mt-10 text-center space-y-3">
-          <a href="tel:<?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?>"
-            class="inline-flex items-center justify-center gap-2.5 bg-brandOrange hover:bg-orange-600 text-white font-extrabold px-8 py-4 rounded-xl text-sm sm:text-base shadow-lg hover:shadow-xl transition-all uppercase tracking-wide">
-            <svg class="w-5 h-5 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-            </svg>
-            <span>Still Have Questions? Call <?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?></span>
-          </a>
-          <p class="text-xs text-slate-700 font-semibold flex items-center justify-center gap-2 flex-wrap">
+        <div class="mt-10 text-center space-y-4">
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+            <a href="tel:<?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?>"
+              class="gtm-web-call inline-flex items-center justify-center gap-2.5 bg-brandOrange hover:bg-orange-600 text-white font-extrabold px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl text-xs sm:text-sm md:text-base shadow-lg hover:shadow-xl transition-all uppercase tracking-wide w-full sm:w-auto">
+              <svg class="w-5 h-5 animate-pulse flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+              </svg>
+              <span class="whitespace-nowrap">Still Have Questions? Call <?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?></span>
+            </a>
+            <a href="<?php echo $base_url; ?>schedule"
+              class="gtm-web-lead inline-flex items-center justify-center gap-2.5 bg-primary hover:bg-brandDarkBlue text-white font-extrabold px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl text-xs sm:text-sm md:text-base shadow-lg hover:shadow-xl transition-all uppercase tracking-wide w-full sm:w-auto">
+              <svg class="w-5 h-5 text-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              <span class="whitespace-nowrap">Schedule Repair</span>
+            </a>
+          </div>
+          <p class="text-xs text-slate-700 font-semibold flex items-center justify-center gap-2 flex-wrap pt-1">
             <span>🛡️ $0 Service Call With Any Paid Repair</span>
             <span class="text-slate-400">•</span>
             <span>⚡ Speak Directly With a Technician</span>

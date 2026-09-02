@@ -96,18 +96,50 @@ $custom_head_schema = <<<HTML
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Why is my dishwasher not draining water at the end of a cycle?",
+            "name": "How much does dishwasher repair cost in the GTA?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "This is commonly caused by a food clog in the drain pump filter, a blockage in the garbage disposal connection, or a failing drain pump impeller. Our technicians can clean or replace the pump to restore proper drainage."
+              "text": "Dishwasher repair costs depend on the appliance brand, model, and failed component. Common repairs may involve the drain pump, wash motor, inlet valve, door latch, heating element, or control system. A technician can diagnose the problem and explain the expected repair cost before proceeding. We can provide more specific pricing once your dishwasher repair needs in the GTA have been assessed."
             }
           },
           {
             "@type": "Question",
-            "name": "Can you fix a leaking dishwasher?",
+            "name": "Why is my dishwasher not draining water?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, we regularly repair dishwasher leaks by replacing door gaskets, water inlet valves, pump seals, or float switches that fail to register water limits."
+              "text": "Standing water at the bottom of a dishwasher can be caused by a clogged filter, blocked drain hose, a faulty drain pump, or a drainage connection problem. Start by checking the filter for obvious debris. If the dishwasher still won't drain, professional service can identify and safely resolve the underlying issue through dishwasher repair in the GTA."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why are my dishes coming out dirty after a wash cycle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Poor cleaning can result from blocked spray arms, a dirty filter, hard-water buildup, insufficient water flow, incorrect detergent use, or a problem with the wash motor. Cleaning the filter and spray arms is a good first step. If performance does not improve, a GTA dishwasher repair technician can check the appliance for a deeper mechanical or water-flow problem."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you fix dishwasher door latch and leak issues?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Dishwasher leaks can be related to worn door seals, loose connections, hoses, inlet valves, or other components. A door that doesn't latch properly can also prevent the dishwasher from operating correctly. If you're dealing with either problem, our dishwasher repair team in the GTA can identify the source and recommend the appropriate fix."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a dishwasher repair usually take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The time required depends on the problem and whether a replacement part is needed. Many common issues can be diagnosed quickly, and some repairs can be completed during the first visit when the necessary part is available. Same-day service may be available depending on location and scheduling when you need dishwasher repair in the GTA."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you service built-in and portable dishwashers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We service both built-in and portable dishwasher models, including many major brands. Depending on the model, service may include drainage problems, leaks, cleaning performance, door issues, water-filling problems, and other common faults. Our GTA dishwasher repair technicians can assist with a wide range of models."
             }
           }
         ]
@@ -334,42 +366,98 @@ include __DIR__ . '/../head.php';
     <!-- FAQS ACCORDION -->
     <section class="bg-slate-50 border-y border-bordercolor py-16">
       <div class="max-w-4xl mx-auto px-4 space-y-8">
-        <h2 class="text-2xl font-heading font-bold text-primary text-center">Frequently Asked Questions</h2>
+        <div class="text-center space-y-2">
+          <h3 class="text-xs uppercase tracking-widest text-brandOrange font-extrabold">Got Questions?</h3>
+          <h2 class="text-2xl sm:text-3xl font-heading font-bold text-primary">Dishwasher Repair FAQ – GTA</h2>
+        </div>
         
         <div class="space-y-4">
           <!-- FAQ 1 -->
           <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
             <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
-              <span>Why is my dishwasher not draining water at the end of a cycle?</span>
+              <span>Q. How much does dishwasher repair cost in the GTA?</span>
               <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
-            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-500 leading-relaxed">
-              This is commonly caused by a food clog in the drain pump filter, a blockage in the garbage disposal connection, or a failing drain pump impeller. Our technicians can clean or replace the pump to restore proper drainage.
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              Dishwasher repair costs depend on the appliance brand, model, and failed component. Common repairs may involve the drain pump, wash motor, inlet valve, door latch, heating element, or control system. A technician can diagnose the problem and explain the expected repair cost before proceeding. We can provide more specific pricing once your dishwasher repair needs in the GTA have been assessed.
             </div>
           </div>
 
           <!-- FAQ 2 -->
           <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
             <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
-              <span>Can you fix a leaking dishwasher?</span>
+              <span>Q. Why is my dishwasher not draining water?</span>
               <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
-            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-500 leading-relaxed">
-              Yes, we regularly repair dishwasher leaks by replacing door gaskets, water inlet valves, pump seals, or float switches that fail to register water limits.
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              Standing water at the bottom of a dishwasher can be caused by a clogged filter, blocked drain hose, a faulty drain pump, or a drainage connection problem. Start by checking the filter for obvious debris. If the dishwasher still won't drain, professional service can identify and safely resolve the underlying issue through dishwasher repair in the GTA.
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
+            <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
+              <span>Q. Why are my dishes coming out dirty after a wash cycle?</span>
+              <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              Poor cleaning can result from blocked spray arms, a dirty filter, hard-water buildup, insufficient water flow, incorrect detergent use, or a problem with the wash motor. Cleaning the filter and spray arms is a good first step. If performance does not improve, a GTA dishwasher repair technician can check the appliance for a deeper mechanical or water-flow problem.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
+            <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
+              <span>Q. Do you fix dishwasher door latch and leak issues?</span>
+              <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              Yes. Dishwasher leaks can be related to worn door seals, loose connections, hoses, inlet valves, or other components. A door that doesn't latch properly can also prevent the dishwasher from operating correctly. If you're dealing with either problem, our dishwasher repair team in the GTA can identify the source and recommend the appropriate fix.
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
+            <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
+              <span>Q. How long does a dishwasher repair usually take?</span>
+              <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              The time required depends on the problem and whether a replacement part is needed. Many common issues can be diagnosed quickly, and some repairs can be completed during the first visit when the necessary part is available. Same-day service may be available depending on location and scheduling when you need dishwasher repair in the GTA.
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
+            <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
+              <span>Q. Do you service built-in and portable dishwashers?</span>
+              <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              Yes. We service both built-in and portable dishwasher models, including many major brands. Depending on the model, service may include drainage problems, leaks, cleaning performance, door issues, water-filling problems, and other common faults. Our GTA dishwasher repair technicians can assist with a wide range of models.
             </div>
           </div>
         </div>
 
         <!-- Post-FAQ CTA & Trust Line -->
-        <div class="mt-10 text-center space-y-3">
-          <a href="tel:<?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?>"
-            class="inline-flex items-center justify-center gap-2.5 bg-brandOrange hover:bg-orange-600 text-white font-extrabold px-8 py-4 rounded-xl text-sm sm:text-base shadow-lg hover:shadow-xl transition-all uppercase tracking-wide">
-            <svg class="w-5 h-5 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-            </svg>
-            <span>Still Have Questions? Call <?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?></span>
-          </a>
-          <p class="text-xs text-slate-700 font-semibold flex items-center justify-center gap-2 flex-wrap">
+        <div class="mt-10 text-center space-y-4">
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+            <a href="tel:<?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?>"
+              class="gtm-web-call inline-flex items-center justify-center gap-2.5 bg-brandOrange hover:bg-orange-600 text-white font-extrabold px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl text-xs sm:text-sm md:text-base shadow-lg hover:shadow-xl transition-all uppercase tracking-wide w-full sm:w-auto">
+              <svg class="w-5 h-5 animate-pulse flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+              </svg>
+              <span class="whitespace-nowrap">Still Have Questions? Call <?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?></span>
+            </a>
+            <a href="<?php echo $base_url; ?>schedule"
+              class="gtm-web-lead inline-flex items-center justify-center gap-2.5 bg-primary hover:bg-brandDarkBlue text-white font-extrabold px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl text-xs sm:text-sm md:text-base shadow-lg hover:shadow-xl transition-all uppercase tracking-wide w-full sm:w-auto">
+              <svg class="w-5 h-5 text-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              <span class="whitespace-nowrap">Schedule Repair</span>
+            </a>
+          </div>
+          <p class="text-xs text-slate-700 font-semibold flex items-center justify-center gap-2 flex-wrap pt-1">
             <span>🛡️ $0 Service Call With Any Paid Repair</span>
             <span class="text-slate-400">•</span>
             <span>⚡ Speak Directly With a Technician</span>

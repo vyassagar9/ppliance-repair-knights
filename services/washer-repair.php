@@ -96,26 +96,50 @@ $custom_head_schema = <<<HTML
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Why is my washing machine not draining?",
+            "name": "How much does washing machine repair cost in the GTA?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The most common culprit is a clogged drain pump filter (often full of coins or lint) or a kinked drain hose. If those are clear, the drain pump motor itself has likely failed or has a jammed impeller and needs replacement."
+              "text": "Washer repair costs vary depending on the brand, model, problem, and parts required. A simple issue such as a blocked drain may cost less to resolve than a failed pump, motor, or control component. The best way to determine the cost is to have the washer properly diagnosed first. Our team can provide a clear estimate after assessing your washing machine repair needs across the GTA."
             }
           },
           {
             "@type": "Question",
-            "name": "What causes a washer to vibrate violently during spin?",
+            "name": "Why is my washer not spinning or draining properly?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "This can happen if the washer is unlevel, if shipping bolts were left inside, or if internal suspension rods/shock absorbers have worn out. Overloading can also trigger unbalanced spin cycles."
+              "text": "A washing machine that won't spin or drain may have a clogged drain system, faulty drain pump, worn drive components, an unbalanced load, or a problem with the lid or door lock. If water remains in the drum or clothes are coming out soaking wet, professional diagnosis can identify the underlying problem. For reliable washing machine repair in the GTA, our technicians can diagnose the issue and recommend the right fix."
             }
           },
           {
             "@type": "Question",
-            "name": "Can you fix front-load and top-load washing machines?",
+            "name": "Do you repair both front-load and top-load washers?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. We service both front-load and top-load washers, including replacing door gaskets, pumps, motors, drive belts, and control boards."
+              "text": "Yes. We provide washing machine repair for both front-load and top-load models. Service can include problems such as drainage, spinning, leaking, excessive vibration, unusual noises, and water-filling issues. If your front- or top-load washer needs attention, our GTA washing machine repair team can help."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a leaking washing machine be fixed the same day?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In many cases, yes. A leaking washer can be caused by a damaged door seal, loose or damaged hose, water inlet valve, drain problem, or another component. Same-day service may be available in the Toronto and GTA area, depending on scheduling and parts availability. If water is actively leaking, stop using the appliance to help prevent further water damage and arrange washing machine repair in the GTA as soon as possible."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What causes a washing machine to shake or make loud noises?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Some vibration is normal, but excessive shaking or loud noises can indicate an unbalanced load, an uneven floor, worn suspension components, drum bearings, or another mechanical problem. If the noise continues after balancing the load and checking that the washer is level, a technician should inspect the machine. Our local technicians can find the cause and provide the appropriate washing machine repairs that GTA homeowners need."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer a warranty on washer parts and labour?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Warranty coverage depends on the service and parts used. Before the repair is completed, ask our team about the applicable warranty for your specific washer repair, including what is covered for parts and labour. We can explain the available coverage when you arrange washing machine repair anywhere in the GTA."
             }
           }
         ]
@@ -342,53 +366,98 @@ include __DIR__ . '/../head.php';
     <!-- FAQS ACCORDION -->
     <section class="bg-slate-50 border-y border-bordercolor py-16">
       <div class="max-w-4xl mx-auto px-4 space-y-8">
-        <h2 class="text-2xl font-heading font-bold text-primary text-center">Frequently Asked Questions</h2>
+        <div class="text-center space-y-2">
+          <h3 class="text-xs uppercase tracking-widest text-brandOrange font-extrabold">Got Questions?</h3>
+          <h2 class="text-2xl sm:text-3xl font-heading font-bold text-primary">Washing Machine Repair FAQ – GTA</h2>
+        </div>
         
         <div class="space-y-4">
           <!-- FAQ 1 -->
           <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
             <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
-              <span>Why is my washing machine not draining?</span>
+              <span>Q. How much does washing machine repair cost in the GTA?</span>
               <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
-            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-500 leading-relaxed">
-              The most common culprit is a clogged drain pump filter (often full of coins or lint) or a kinked drain hose. If those are clear, the drain pump motor itself has likely failed or has a jammed impeller and needs replacement.
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              Washer repair costs vary depending on the brand, model, problem, and parts required. A simple issue such as a blocked drain may cost less to resolve than a failed pump, motor, or control component. The best way to determine the cost is to have the washer properly diagnosed first. Our team can provide a clear estimate after assessing your washing machine repair needs across the GTA.
             </div>
           </div>
 
           <!-- FAQ 2 -->
           <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
             <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
-              <span>What causes a washer to vibrate violently during spin?</span>
+              <span>Q. Why is my washer not spinning or draining properly?</span>
               <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
-            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-500 leading-relaxed">
-              This can happen if the washer is unlevel, if shipping bolts were left inside, or if internal suspension rods/shock absorbers have worn out. Overloading can also trigger unbalanced spin cycles.
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              A washing machine that won't spin or drain may have a clogged drain system, faulty drain pump, worn drive components, an unbalanced load, or a problem with the lid or door lock. If water remains in the drum or clothes are coming out soaking wet, professional diagnosis can identify the underlying problem. For reliable washing machine repair in the GTA, our technicians can diagnose the issue and recommend the right fix.
             </div>
           </div>
 
           <!-- FAQ 3 -->
           <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
             <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
-              <span>Can you fix front-load and top-load washing machines?</span>
+              <span>Q. Do you repair both front-load and top-load washers?</span>
               <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
-            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-500 leading-relaxed">
-              Yes. We service both front-load and top-load washers, including replacing door gaskets, pumps, motors, drive belts, and control boards.
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              Yes. We provide washing machine repair for both front-load and top-load models. Service can include problems such as drainage, spinning, leaking, excessive vibration, unusual noises, and water-filling issues. If your front- or top-load washer needs attention, our GTA washing machine repair team can help.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
+            <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
+              <span>Q. Can a leaking washing machine be fixed the same day?</span>
+              <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              In many cases, yes. A leaking washer can be caused by a damaged door seal, loose or damaged hose, water inlet valve, drain problem, or another component. Same-day service may be available in the Toronto and GTA area, depending on scheduling and parts availability. If water is actively leaking, stop using the appliance to help prevent further water damage and arrange washing machine repair in the GTA as soon as possible.
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
+            <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
+              <span>Q. What causes a washing machine to shake or make loud noises?</span>
+              <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              Some vibration is normal, but excessive shaking or loud noises can indicate an unbalanced load, an uneven floor, worn suspension components, drum bearings, or another mechanical problem. If the noise continues after balancing the load and checking that the washer is level, a technician should inspect the machine. Our local technicians can find the cause and provide the appropriate washing machine repairs that GTA homeowners need.
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="bg-white border border-bordercolor rounded-xl overflow-hidden shadow-sm">
+            <button class="w-full px-6 py-5 text-left font-semibold text-primary flex justify-between items-center hover:text-accent focus:outline-none transition-colors" onclick="toggleFaq(this)">
+              <span>Q. Do you offer a warranty on washer parts and labour?</span>
+              <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
+              Warranty coverage depends on the service and parts used. Before the repair is completed, ask our team about the applicable warranty for your specific washer repair, including what is covered for parts and labour. We can explain the available coverage when you arrange washing machine repair anywhere in the GTA.
             </div>
           </div>
         </div>
 
         <!-- Post-FAQ CTA & Trust Line -->
-        <div class="mt-10 text-center space-y-3">
-          <a href="tel:<?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?>"
-            class="inline-flex items-center justify-center gap-2.5 bg-brandOrange hover:bg-orange-600 text-white font-extrabold px-8 py-4 rounded-xl text-sm sm:text-base shadow-lg hover:shadow-xl transition-all uppercase tracking-wide">
-            <svg class="w-5 h-5 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-            </svg>
-            <span>Still Have Questions? Call <?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?></span>
-          </a>
-          <p class="text-xs text-slate-700 font-semibold flex items-center justify-center gap-2 flex-wrap">
+        <div class="mt-10 text-center space-y-4">
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+            <a href="tel:<?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?>"
+              class="gtm-web-call inline-flex items-center justify-center gap-2.5 bg-brandOrange hover:bg-orange-600 text-white font-extrabold px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl text-xs sm:text-sm md:text-base shadow-lg hover:shadow-xl transition-all uppercase tracking-wide w-full sm:w-auto">
+              <svg class="w-5 h-5 animate-pulse flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+              </svg>
+              <span class="whitespace-nowrap">Still Have Questions? Call <?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?></span>
+            </a>
+            <a href="<?php echo $base_url; ?>schedule"
+              class="gtm-web-lead inline-flex items-center justify-center gap-2.5 bg-primary hover:bg-brandDarkBlue text-white font-extrabold px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl text-xs sm:text-sm md:text-base shadow-lg hover:shadow-xl transition-all uppercase tracking-wide w-full sm:w-auto">
+              <svg class="w-5 h-5 text-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              <span class="whitespace-nowrap">Schedule Repair</span>
+            </a>
+          </div>
+          <p class="text-xs text-slate-700 font-semibold flex items-center justify-center gap-2 flex-wrap pt-1">
             <span>🛡️ $0 Service Call With Any Paid Repair</span>
             <span class="text-slate-400">•</span>
             <span>⚡ Speak Directly With a Technician</span>
