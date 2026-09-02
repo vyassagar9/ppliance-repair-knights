@@ -89,60 +89,65 @@ $custom_head_schema = <<<HTML
             "item": "https://www.appliancerepairknights.com/services/fridge-repair"
           }
         ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- DEDICATED TOP-LEVEL FAQPage JSON-LD SCHEMA (Google Rich Results Tool Detection) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://www.appliancerepairknights.com/services/fridge-repair#faq",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does refrigerator repair cost in Toronto & the Greater Toronto Area (GTA)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cost of refrigerator repair depends on the problem, appliance model, and parts required. A minor repair, such as replacing a sensor or thermostat, will generally cost less than a major component such as a compressor. For an accurate estimate, our technician can diagnose the issue and explain the repair options before work begins."
+        }
       },
       {
-        "@type": "FAQPage",
-        "@id": "https://www.appliancerepairknights.com/services/fridge-repair#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How much does refrigerator repair cost in Toronto & the Greater Toronto Area (GTA)?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The cost of refrigerator repair depends on the problem, appliance model, and parts required. A minor repair, such as replacing a sensor or thermostat, will generally cost less than a major component such as a compressor. For an accurate estimate, our technician can diagnose the issue and explain the repair options before work begins."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Why is my fridge running but not cooling?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "If your refrigerator is running but not cooling properly, several issues could be responsible. Common causes include dirty condenser coils, a faulty thermostat, a problem with the evaporator fan, or a failing compressor. If the temperature continues to rise, have your refrigerator inspected promptly — our refrigerator repair technicians in Toronto can quickly diagnose the issue."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is it worth repairing an old refrigerator or should I replace it?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It depends on the refrigerator's age, condition, repair cost, and the price of a replacement. If the appliance is relatively new and the problem is a straightforward component failure, repair is often a practical choice. For an older refrigerator requiring an expensive major repair, replacement may make more financial sense. A technician can help you compare your options during a refrigerator repair service visit in Toronto."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you repair built-in and counter-depth refrigerators?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. We service many types of refrigerators, including built-in and counter-depth models. Our technicians can diagnose problems with cooling, temperature control, ice makers, water systems, and other components. If you need service for a built-in or counter-depth model, our refrigerator repair technicians in Toronto can help."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long does a refrigerator repair take?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The repair time depends on the problem and whether a replacement part is needed. Many common refrigerator problems can be diagnosed and repaired during the same service visit when the required part is available. We also offer same-day service options in Toronto and the GTA, subject to availability."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What are the signs of a refrigerant leak in a refrigerator?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Possible signs include poor cooling, unusual hissing or bubbling sounds, or areas of the refrigerator becoming warmer than normal. Refrigerant-related problems should be diagnosed and handled by a qualified professional. If you notice these symptoms, contact our refrigerator repair technicians in Toronto for a professional inspection."
-            }
-          }
-        ]
+        "@type": "Question",
+        "name": "Why is my fridge running but not cooling?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If your refrigerator is running but not cooling properly, several issues could be responsible. Common causes include dirty condenser coils, a faulty thermostat, a problem with the evaporator fan, or a failing compressor. If the temperature continues to rise, have your refrigerator inspected promptly — our refrigerator repair technicians in Toronto can quickly diagnose the issue."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it worth repairing an old refrigerator or should I replace it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends on the refrigerator's age, condition, repair cost, and the price of a replacement. If the appliance is relatively new and the problem is a straightforward component failure, repair is often a practical choice. For an older refrigerator requiring an expensive major repair, replacement may make more financial sense. A technician can help you compare your options during a refrigerator repair service visit in Toronto."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you repair built-in and counter-depth refrigerators?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We service many types of refrigerators, including built-in and counter-depth models. Our technicians can diagnose problems with cooling, temperature control, ice makers, water systems, and other components. If you need service for a built-in or counter-depth model, our refrigerator repair technicians in Toronto can help."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does a refrigerator repair take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The repair time depends on the problem and whether a replacement part is needed. Many common refrigerator problems can be diagnosed and repaired during the same service visit when the required part is available. We also offer same-day service options in Toronto and the GTA, subject to availability."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the signs of a refrigerant leak in a refrigerator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Possible signs include poor cooling, unusual hissing or bubbling sounds, or areas of the refrigerator becoming warmer than normal. Refrigerant-related problems should be diagnosed and handled by a qualified professional. If you notice these symptoms, contact our refrigerator repair technicians in Toronto for a professional inspection."
+        }
       }
     ]
   }

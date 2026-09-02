@@ -89,60 +89,65 @@ $custom_head_schema = <<<HTML
             "item": "https://www.appliancerepairknights.com/services/washer-repair"
           }
         ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- DEDICATED TOP-LEVEL FAQPage JSON-LD SCHEMA (Google Rich Results Tool Detection) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://www.appliancerepairknights.com/services/washer-repair#faq",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does washing machine repair cost in the GTA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Washer repair costs vary depending on the brand, model, problem, and parts required. A simple issue such as a blocked drain may cost less to resolve than a failed pump, motor, or control component. The best way to determine the cost is to have the washer properly diagnosed first. Our team can provide a clear estimate after assessing your washing machine repair needs across the GTA."
+        }
       },
       {
-        "@type": "FAQPage",
-        "@id": "https://www.appliancerepairknights.com/services/washer-repair#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How much does washing machine repair cost in the GTA?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Washer repair costs vary depending on the brand, model, problem, and parts required. A simple issue such as a blocked drain may cost less to resolve than a failed pump, motor, or control component. The best way to determine the cost is to have the washer properly diagnosed first. Our team can provide a clear estimate after assessing your washing machine repair needs across the GTA."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Why is my washer not spinning or draining properly?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "A washing machine that won't spin or drain may have a clogged drain system, faulty drain pump, worn drive components, an unbalanced load, or a problem with the lid or door lock. If water remains in the drum or clothes are coming out soaking wet, professional diagnosis can identify the underlying problem. For reliable washing machine repair in the GTA, our technicians can diagnose the issue and recommend the right fix."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you repair both front-load and top-load washers?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. We provide washing machine repair for both front-load and top-load models. Service can include problems such as drainage, spinning, leaking, excessive vibration, unusual noises, and water-filling issues. If your front- or top-load washer needs attention, our GTA washing machine repair team can help."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can a leaking washing machine be fixed the same day?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "In many cases, yes. A leaking washer can be caused by a damaged door seal, loose or damaged hose, water inlet valve, drain problem, or another component. Same-day service may be available in the Toronto and GTA area, depending on scheduling and parts availability. If water is actively leaking, stop using the appliance to help prevent further water damage and arrange washing machine repair in the GTA as soon as possible."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What causes a washing machine to shake or make loud noises?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Some vibration is normal, but excessive shaking or loud noises can indicate an unbalanced load, an uneven floor, worn suspension components, drum bearings, or another mechanical problem. If the noise continues after balancing the load and checking that the washer is level, a technician should inspect the machine. Our local technicians can find the cause and provide the appropriate washing machine repairs that GTA homeowners need."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you offer a warranty on washer parts and labour?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Warranty coverage depends on the service and parts used. Before the repair is completed, ask our team about the applicable warranty for your specific washer repair, including what is covered for parts and labour. We can explain the available coverage when you arrange washing machine repair anywhere in the GTA."
-            }
-          }
-        ]
+        "@type": "Question",
+        "name": "Why is my washer not spinning or draining properly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A washing machine that won't spin or drain may have a clogged drain system, faulty drain pump, worn drive components, an unbalanced load, or a problem with the lid or door lock. If water remains in the drum or clothes are coming out soaking wet, professional diagnosis can identify the underlying problem. For reliable washing machine repair in the GTA, our technicians can diagnose the issue and recommend the right fix."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you repair both front-load and top-load washers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We provide washing machine repair for both front-load and top-load models. Service can include problems such as drainage, spinning, leaking, excessive vibration, unusual noises, and water-filling issues. If your front- or top-load washer needs attention, our GTA washing machine repair team can help."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can a leaking washing machine be fixed the same day?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In many cases, yes. A leaking washer can be caused by a damaged door seal, loose or damaged hose, water inlet valve, drain problem, or another component. Same-day service may be available in the Toronto and GTA area, depending on scheduling and parts availability. If water is actively leaking, stop using the appliance to help prevent further water damage and arrange washing machine repair in the GTA as soon as possible."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What causes a washing machine to shake or make loud noises?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Some vibration is normal, but excessive shaking or loud noises can indicate an unbalanced load, an uneven floor, worn suspension components, drum bearings, or another mechanical problem. If the noise continues after balancing the load and checking that the washer is level, a technician should inspect the machine. Our local technicians can find the cause and provide the appropriate washing machine repairs that GTA homeowners need."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer a warranty on washer parts and labour?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Warranty coverage depends on the service and parts used. Before the repair is completed, ask our team about the applicable warranty for your specific washer repair, including what is covered for parts and labour. We can explain the available coverage when you arrange washing machine repair anywhere in the GTA."
+        }
       }
     ]
   }

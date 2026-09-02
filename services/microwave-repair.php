@@ -89,60 +89,65 @@ $custom_head_schema = <<<HTML
             "item": "https://www.appliancerepairknights.com/services/microwave-repair"
           }
         ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- DEDICATED TOP-LEVEL FAQPage JSON-LD SCHEMA (Google Rich Results Tool Detection) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://www.appliancerepairknights.com/services/microwave-repair#faq",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does microwave repair cost in the GTA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Microwave repair costs vary according to the model and the failed component. Problems involving a door switch, control panel, internal fuse, or other component can have different repair costs. A technician can diagnose the appliance and explain the repair options before work begins. For a more accurate estimate, our team can assess your microwave repair needs in the GTA."
+        }
       },
       {
-        "@type": "FAQPage",
-        "@id": "https://www.appliancerepairknights.com/services/microwave-repair#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How much does microwave repair cost in the GTA?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Microwave repair costs vary according to the model and the failed component. Problems involving a door switch, control panel, internal fuse, or other component can have different repair costs. A technician can diagnose the appliance and explain the repair options before work begins. For a more accurate estimate, our team can assess your microwave repair needs in the GTA."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Why is my microwave sparking inside?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Sparking can be caused by metal objects, damaged or burned interior surfaces, a damaged waveguide cover, food residue, or an internal component problem. Stop using the microwave if it sparks and unplug it when it is safe to do so. Do not continue operating it until the cause has been inspected by a microwave repair professional in the GTA."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is it worth repairing a microwave or should I buy a new one?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Consider the microwave's age, condition, original price, and estimated repair cost. Repair can make sense for a newer, premium, built-in, or over-the-range model. For an inexpensive countertop microwave that is several years old, replacement may be more economical. A technician can help you make an informed decision about microwave repair in the GTA."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you repair built-in and over-the-range microwaves?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. We service built-in and over-the-range microwave models, as well as many common countertop units. Service availability can depend on the brand, model, installation, and type of fault. If your built-in or over-the-range unit needs attention, our GTA microwave repair team can help."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Why has my microwave stopped heating food?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "A microwave that runs but doesn't heat can have a problem with the magnetron, high-voltage system, door switches, or another internal component. Microwaves contain high-voltage components that can remain dangerous even after the appliance has been unplugged. For this reason, internal repairs should always be handled by a qualified microwave repair technician in the GTA."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you fix unresponsive microwave touchpads?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. An unresponsive touchpad or control panel may be caused by a damaged keypad, control board, wiring issue, or another electrical fault. A technician can diagnose the problem and determine whether the component can be repaired or needs replacement. If the controls remain unresponsive, our microwave repair team in the GTA can diagnose the fault and recommend the right solution."
-            }
-          }
-        ]
+        "@type": "Question",
+        "name": "Why is my microwave sparking inside?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sparking can be caused by metal objects, damaged or burned interior surfaces, a damaged waveguide cover, food residue, or an internal component problem. Stop using the microwave if it sparks and unplug it when it is safe to do so. Do not continue operating it until the cause has been inspected by a microwave repair professional in the GTA."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it worth repairing a microwave or should I buy a new one?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Consider the microwave's age, condition, original price, and estimated repair cost. Repair can make sense for a newer, premium, built-in, or over-the-range model. For an inexpensive countertop microwave that is several years old, replacement may be more economical. A technician can help you make an informed decision about microwave repair in the GTA."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you repair built-in and over-the-range microwaves?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We service built-in and over-the-range microwave models, as well as many common countertop units. Service availability can depend on the brand, model, installation, and type of fault. If your built-in or over-the-range unit needs attention, our GTA microwave repair team can help."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why has my microwave stopped heating food?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A microwave that runs but doesn't heat can have a problem with the magnetron, high-voltage system, door switches, or another internal component. Microwaves contain high-voltage components that can remain dangerous even after the appliance has been unplugged. For this reason, internal repairs should always be handled by a qualified microwave repair technician in the GTA."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you fix unresponsive microwave touchpads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. An unresponsive touchpad or control panel may be caused by a damaged keypad, control board, wiring issue, or another electrical fault. A technician can diagnose the problem and determine whether the component can be repaired or needs replacement. If the controls remain unresponsive, our microwave repair team in the GTA can diagnose the fault and recommend the right solution."
+        }
       }
     ]
   }

@@ -85,64 +85,69 @@ $custom_head_schema = <<<HTML
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "Stove & Oven Repair",
+            "name": "Oven & Stove Repair",
             "item": "https://www.appliancerepairknights.com/services/stove-repair"
           }
         ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- DEDICATED TOP-LEVEL FAQPage JSON-LD SCHEMA (Google Rich Results Tool Detection) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://www.appliancerepairknights.com/services/stove-repair#faq",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does oven or stove repair cost in Toronto?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cost depends on the appliance, the problem, and the parts required. A simple component such as a knob, igniter, or heating element may require a different repair than a control board or other major component. A technician can inspect the appliance and provide an estimate based on the actual issue. For a clearer idea of the cost, our oven and stove repair technicians in Toronto can assess the appliance first."
+        }
       },
       {
-        "@type": "FAQPage",
-        "@id": "https://www.appliancerepairknights.com/services/stove-repair#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How much does oven or stove repair cost in Toronto?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The cost depends on the appliance, the problem, and the parts required. A simple component such as a knob, igniter, or heating element may require a different repair than a control board or other major component. A technician can inspect the appliance and provide an estimate based on the actual issue. For a clearer idea of the cost, our oven and stove repair technicians in Toronto can assess the appliance first."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Why is my oven heating unevenly?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Uneven heating can be caused by a failing bake or broil element, temperature sensor, thermostat, convection fan, or another component. It can also sometimes be related to how the oven is being used or positioned. If temperature problems continue, professional diagnosis can determine whether a component needs repair or replacement with oven and stove repair in Toronto."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you repair gas range igniters and burners?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Gas stove and range problems can include burners that won't ignite, weak flames, faulty igniters, or inconsistent burner operation. Because gas appliances require careful handling, gas-related repairs should be performed by a properly qualified technician. Our Toronto oven and stove repair team can safely diagnose these issues."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is it safe to use my stove if the burner won't light?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "If a gas burner fails to ignite and you smell gas, stop using the stove immediately. Turn off the appliance and, if it is safe to do so, shut off the gas supply. Avoid flames, switches, or DIY repairs, and contact an appropriately qualified professional. Once the situation is safe, a technician can determine whether oven and stove repair in Toronto is required."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you fix electronic control boards on ovens?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Oven control problems can cause issues such as an unresponsive display, incorrect temperatures, failed cooking cycles, or buttons that don't work. Depending on the model, the control board may be repairable or may need replacement. Our technicians can diagnose the fault and recommend the right approach to oven and stove repair in Toronto."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long does an oven or stove repair take?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Repair time depends on the fault and the parts required. Many common oven and stove problems can be resolved during one visit when the necessary parts are available. Same-day service may be available in Toronto and the GTA, depending on appointment availability for your oven and stove repair."
-            }
-          }
-        ]
+        "@type": "Question",
+        "name": "Why is my oven heating unevenly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Uneven heating can be caused by a failing bake or broil element, temperature sensor, thermostat, convection fan, or another component. It can also sometimes be related to how the oven is being used or positioned. If temperature problems continue, professional diagnosis can determine whether a component needs repair or replacement with oven and stove repair in Toronto."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you repair gas range igniters and burners?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Gas stove and range problems can include burners that won't ignite, weak flames, faulty igniters, or inconsistent burner operation. Because gas appliances require careful handling, gas-related repairs should be performed by a properly qualified technician. Our Toronto oven and stove repair team can safely diagnose these issues."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it safe to use my stove if the burner won't light?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If a gas burner fails to ignite and you smell gas, stop using the stove immediately. Turn off the appliance and, if it is safe to do so, shut off the gas supply. Avoid flames, switches, or DIY repairs, and contact an appropriately qualified professional. Once the situation is safe, a technician can determine whether oven and stove repair in Toronto is required."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you fix electronic control boards on ovens?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Oven control problems can cause issues such as an unresponsive display, incorrect temperatures, failed cooking cycles, or buttons that don't work. Depending on the model, the control board may be repairable or may need replacement. Our technicians can diagnose the fault and recommend the right approach to oven and stove repair in Toronto."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does an oven or stove repair take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Repair time depends on the fault and the parts required. Many common oven and stove problems can be resolved during one visit when the necessary parts are available. Same-day service may be available in Toronto and the GTA, depending on appointment availability for your oven and stove repair."
+        }
       }
     ]
   }

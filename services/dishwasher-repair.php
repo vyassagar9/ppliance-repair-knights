@@ -89,60 +89,65 @@ $custom_head_schema = <<<HTML
             "item": "https://www.appliancerepairknights.com/services/dishwasher-repair"
           }
         ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- DEDICATED TOP-LEVEL FAQPage JSON-LD SCHEMA (Google Rich Results Tool Detection) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://www.appliancerepairknights.com/services/dishwasher-repair#faq",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does dishwasher repair cost in the GTA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dishwasher repair costs depend on the appliance brand, model, and failed component. Common repairs may involve the drain pump, wash motor, inlet valve, door latch, heating element, or control system. A technician can diagnose the problem and explain the expected repair cost before proceeding. We can provide more specific pricing once your dishwasher repair needs in the GTA have been assessed."
+        }
       },
       {
-        "@type": "FAQPage",
-        "@id": "https://www.appliancerepairknights.com/services/dishwasher-repair#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How much does dishwasher repair cost in the GTA?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Dishwasher repair costs depend on the appliance brand, model, and failed component. Common repairs may involve the drain pump, wash motor, inlet valve, door latch, heating element, or control system. A technician can diagnose the problem and explain the expected repair cost before proceeding. We can provide more specific pricing once your dishwasher repair needs in the GTA have been assessed."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Why is my dishwasher not draining water?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Standing water at the bottom of a dishwasher can be caused by a clogged filter, blocked drain hose, a faulty drain pump, or a drainage connection problem. Start by checking the filter for obvious debris. If the dishwasher still won't drain, professional service can identify and safely resolve the underlying issue through dishwasher repair in the GTA."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Why are my dishes coming out dirty after a wash cycle?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Poor cleaning can result from blocked spray arms, a dirty filter, hard-water buildup, insufficient water flow, incorrect detergent use, or a problem with the wash motor. Cleaning the filter and spray arms is a good first step. If performance does not improve, a GTA dishwasher repair technician can check the appliance for a deeper mechanical or water-flow problem."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you fix dishwasher door latch and leak issues?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Dishwasher leaks can be related to worn door seals, loose connections, hoses, inlet valves, or other components. A door that doesn't latch properly can also prevent the dishwasher from operating correctly. If you're dealing with either problem, our dishwasher repair team in the GTA can identify the source and recommend the appropriate fix."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long does a dishwasher repair usually take?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The time required depends on the problem and whether a replacement part is needed. Many common issues can be diagnosed quickly, and some repairs can be completed during the first visit when the necessary part is available. Same-day service may be available depending on location and scheduling when you need dishwasher repair in the GTA."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you service built-in and portable dishwashers?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. We service both built-in and portable dishwasher models, including many major brands. Depending on the model, service may include drainage problems, leaks, cleaning performance, door issues, water-filling problems, and other common faults. Our GTA dishwasher repair technicians can assist with a wide range of models."
-            }
-          }
-        ]
+        "@type": "Question",
+        "name": "Why is my dishwasher not draining water?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Standing water at the bottom of a dishwasher can be caused by a clogged filter, blocked drain hose, a faulty drain pump, or a drainage connection problem. Start by checking the filter for obvious debris. If the dishwasher still won't drain, professional service can identify and safely resolve the underlying issue through dishwasher repair in the GTA."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why are my dishes coming out dirty after a wash cycle?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Poor cleaning can result from blocked spray arms, a dirty filter, hard-water buildup, insufficient water flow, incorrect detergent use, or a problem with the wash motor. Cleaning the filter and spray arms is a good first step. If performance does not improve, a GTA dishwasher repair technician can check the appliance for a deeper mechanical or water-flow problem."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you fix dishwasher door latch and leak issues?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Dishwasher leaks can be related to worn door seals, loose connections, hoses, inlet valves, or other components. A door that doesn't latch properly can also prevent the dishwasher from operating correctly. If you're dealing with either problem, our dishwasher repair team in the GTA can identify the source and recommend the appropriate fix."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does a dishwasher repair usually take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The time required depends on the problem and whether a replacement part is needed. Many common issues can be diagnosed quickly, and some repairs can be completed during the first visit when the necessary part is available. Same-day service may be available depending on location and scheduling when you need dishwasher repair in the GTA."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you service built-in and portable dishwashers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We service both built-in and portable dishwasher models, including many major brands. Depending on the model, service may include drainage problems, leaks, cleaning performance, door issues, water-filling problems, and other common faults. Our GTA dishwasher repair technicians can assist with a wide range of models."
+        }
       }
     ]
   }

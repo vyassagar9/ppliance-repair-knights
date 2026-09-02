@@ -89,60 +89,65 @@ $custom_head_schema = <<<HTML
             "item": "https://www.appliancerepairknights.com/services/dryer-repair"
           }
         ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- DEDICATED TOP-LEVEL FAQPage JSON-LD SCHEMA (Google Rich Results Tool Detection) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://www.appliancerepairknights.com/services/dryer-repair#faq",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does dryer repair cost in Toronto?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cost of dryer repair depends on the appliance type, the problem, and the replacement parts required. Common repairs can involve heating components, thermostats, thermal fuses, belts, rollers, or electrical controls. A proper diagnosis will provide a clearer estimate for your particular dryer. For an accurate dryer repair estimate in Toronto, our technician can first identify the source of the problem."
+        }
       },
       {
-        "@type": "FAQPage",
-        "@id": "https://www.appliancerepairknights.com/services/dryer-repair#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How much does dryer repair cost in Toronto?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The cost of dryer repair depends on the appliance type, the problem, and the replacement parts required. Common repairs can involve heating components, thermostats, thermal fuses, belts, rollers, or electrical controls. A proper diagnosis will provide a clearer estimate for your particular dryer. For an accurate dryer repair estimate in Toronto, our technician can first identify the source of the problem."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Why is my dryer not heating up?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "If the drum is turning but the dryer is not producing heat, possible causes include a failed heating element, thermal fuse, thermostat, or another electrical or airflow issue. Because dryers contain electrical and heating components, professional testing is recommended before replacing parts. A qualified technician providing dryer repair in Toronto can safely test these components and determine what needs attention."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Why is my dryer making a squeaking or grinding noise?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Squeaking, rattling, or grinding noises can come from worn drum rollers, idler pulleys, glide components, or a damaged drive belt. Continuing to operate a noisy dryer can sometimes make the problem worse. Having it inspected early can help identify the faulty component before it causes additional damage, and our Toronto dryer repair team can take care of the problem."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long does a typical dryer repair take?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Repair time varies depending on the issue and parts needed. Many common dryer problems can be resolved during one visit when the required part is available. Same-day service may also be available in Toronto and the GTA, subject to scheduling. Contact us to check the next available appointment for dryer repair in Toronto."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What causes a dryer to take multiple cycles to dry clothes?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Long drying times are often related to restricted airflow, a blocked lint filter or exhaust vent, excessive lint buildup, or a heating problem. Check and clean the lint filter regularly, and make sure the external vent is not blocked. If drying remains slow, our dryer repair technicians in Toronto can diagnose whether an airflow or component issue is responsible."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you repair both gas and electric dryers?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, service is available for both gas and electric dryers. Gas appliances require appropriate safety procedures and qualified service. If you notice a gas smell, stop using the dryer and contact a qualified professional immediately. For either type of appliance, you can arrange dryer repair across Toronto and the GTA."
-            }
-          }
-        ]
+        "@type": "Question",
+        "name": "Why is my dryer not heating up?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If the drum is turning but the dryer is not producing heat, possible causes include a failed heating element, thermal fuse, thermostat, or another electrical or airflow issue. Because dryers contain electrical and heating components, professional testing is recommended before replacing parts. A qualified technician providing dryer repair in Toronto can safely test these components and determine what needs attention."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is my dryer making a squeaking or grinding noise?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Squeaking, rattling, or grinding noises can come from worn drum rollers, idler pulleys, glide components, or a damaged drive belt. Continuing to operate a noisy dryer can sometimes make the problem worse. Having it inspected early can help identify the faulty component before it causes additional damage, and our Toronto dryer repair team can take care of the problem."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does a typical dryer repair take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Repair time varies depending on the issue and parts needed. Many common dryer problems can be resolved during one visit when the required part is available. Same-day service may also be available in Toronto and the GTA, subject to scheduling. Contact us to check the next available appointment for dryer repair in Toronto."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What causes a dryer to take multiple cycles to dry clothes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Long drying times are often related to restricted airflow, a blocked lint filter or exhaust vent, excessive lint buildup, or a heating problem. Check and clean the lint filter regularly, and make sure the external vent is not blocked. If drying remains slow, our dryer repair technicians in Toronto can diagnose whether an airflow or component issue is responsible."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you repair both gas and electric dryers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, service is available for both gas and electric dryers. Gas appliances require appropriate safety procedures and qualified service. If you notice a gas smell, stop using the dryer and contact a qualified professional immediately. For either type of appliance, you can arrange dryer repair across Toronto and the GTA."
+        }
       }
     ]
   }
