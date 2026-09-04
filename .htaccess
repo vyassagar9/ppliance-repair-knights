@@ -1,109 +1,122 @@
-# Apache .htaccess Configuration for Appliance Repair Knights
-# SEO-Friendly Clean URLs & Sitemap Configuration
+# ==============================================================================
+# Apache / LiteSpeed .htaccess Configuration
+# Appliance Repair Knights Ltd. (https://www.appliancerepairknights.com)
+# ==============================================================================
 
-# Custom 404 Error Page
-ErrorDocument 404 /404.php
+# Disable directory browsing
+Options -Indexes
 
-# XML Sitemap Header & Directive
-# Sitemap: https://www.appliancerepairknights.com/sitemap.xml
+# Custom 404 Error Page (Pre-rendered static HTML for zero CPU / PHP overhead)
+ErrorDocument 404 /404.html
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  RewriteBase /
 
-  # -------------------------------------------------------------
-  # CANONICAL DOMAIN & HTTPS REDIRECT (NON-WWW TO WWW 301 ON PRODUCTION)
-  # -------------------------------------------------------------
-  # 1. Force HTTPS on Production
-  RewriteCond %{HTTPS} off
+  # ----------------------------------------------------------------------------
+  # 1. UNIFIED CANONICAL DOMAIN & HTTPS REDIRECT (SINGLE 301 HOP)
+  # Redirects HTTP, non-www, and .ca variations to https://www.appliancerepairknights.com
+  # Handles Hostinger / LiteSpeed reverse proxy SSL (X-Forwarded-Proto)
+  # Safe for local MAMP development (checks domain explicitly)
+  # ----------------------------------------------------------------------------
   RewriteCond %{HTTP_HOST} ^(www\.)?appliancerepairknights\.(com|ca)$ [NC]
-  RewriteRule ^(.*)$ https://www.appliancerepairknights.com/$1 [R=301,L]
+  RewriteCond %{HTTPS} off [OR]
+  RewriteCond %{HTTP:X-Forwarded-Proto} =http [OR]
+  RewriteCond %{HTTP_HOST} !^www\.appliancerepairknights\.com$ [NC]
+  RewriteRule ^(.*)$ https://www.appliancerepairknights.com/$1 [R=301,L,NE]
 
-  # 2. Redirect .ca or non-www to https://www.appliancerepairknights.com
-  RewriteCond %{HTTP_HOST} ^appliancerepairknights\.ca$ [NC,OR]
-  RewriteCond %{HTTP_HOST} ^appliancerepairknights\.com$ [NC]
-  RewriteRule ^(.*)$ https://www.appliancerepairknights.com/$1 [R=301,L]
+  # ----------------------------------------------------------------------------
+  # 2. CORE SITEMAP & SYSTEM EXCEPTIONS
+  # ----------------------------------------------------------------------------
+  # Redirect direct visits to sitemap.php -> canonical sitemap.xml
+  RewriteCond %{THE_REQUEST} \s/+sitemap\.php[\s?] [NC]
+  RewriteRule ^ /sitemap.xml [R=301,L]
 
-  # Route sitemap.xml to dynamic sitemap.php (auto filemtime & 304 caching)
+  # Route sitemap.xml to dynamic sitemap.php
   RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
+  # Pass static files and error pages directly
   RewriteRule ^robots\.txt$ - [L]
+  RewriteRule ^404\.html$ - [L]
   RewriteRule ^404\.php$ - [L]
 
-  # -------------------------------------------------------------
-  # 301 REDIRECTS (OLD WIX URLS TO NEW STRUCTURE)
-  # -------------------------------------------------------------
+  # ----------------------------------------------------------------------------
+  # 3. 301 REDIRECTS (OLD / LEGACY URLS TO NEW CANONICAL STRUCTURE)
+  # All targets have leading slashes to prevent internal path leakage
+  # ----------------------------------------------------------------------------
+  # Location Pages
+  RewriteRule ^burlington-appliance-repair/?$ /locations/burlington-appliance-repair [R=301,L]
+  RewriteRule ^kitchener-appliance-repair/?$ /locations/kitchener-appliance-repair [R=301,L]
+  RewriteRule ^brampton-appliance-repair/?$ /locations/brampton-appliance-repair [R=301,L]
+  RewriteRule ^waterloo-appliance-repair/?$ /locations/waterloo-appliance-repair [R=301,L]
+  RewriteRule ^cambridge-appliance-repair/?$ /locations/cambridge-appliance-repair [R=301,L]
+  RewriteRule ^hamilton-appliance-repair/?$ /locations/hamilton-appliance-repair [R=301,L]
+  RewriteRule ^caledon-appliance-repair/?$ /locations/caledon-appliance-repair [R=301,L]
+  RewriteRule ^caledeon-appliance-repair/?$ /locations/caledon-appliance-repair [R=301,L]
+  RewriteRule ^caldeon-appliance-repair/?$ /locations/caledon-appliance-repair [R=301,L]
+  RewriteRule ^locations/caldeon-appliance-repair/?$ /locations/caledon-appliance-repair [R=301,L]
+  RewriteRule ^locations/caledeon-appliance-repair/?$ /locations/caledon-appliance-repair [R=301,L]
+  RewriteRule ^pickering-appliance-repair/?$ /locations/pickering-appliance-repair [R=301,L]
+  RewriteRule ^vaughan-appliance-repair/?$ /locations/vaughan-appliance-repair [R=301,L]
+  RewriteRule ^richmond-hill-appliance-repair/?$ /locations/richmond-hill-appliance-repair [R=301,L]
+  RewriteRule ^mississauga-appliance-repair/?$ /locations/mississauga-appliance-repair [R=301,L]
+  RewriteRule ^toronto-appliance-repair/?$ /locations/toronto-appliance-repair [R=301,L]
+  RewriteRule ^guelph-appliance-repair/?$ /locations/guelph-appliance-repair [R=301,L]
+  RewriteRule ^markham-appliance-repair/?$ /locations/markham-appliance-repair [R=301,L]
+  RewriteRule ^oakville-appliance-repair/?$ /locations/oakville-appliance-repair [R=301,L]
+  RewriteRule ^scarborough-appliance-repair/?$ /locations/scarborough-appliance-repair [R=301,L]
+  RewriteRule ^oshawa-appliance-repair/?$ /locations/oshawa-appliance-repair [R=301,L]
+  RewriteRule ^milton-appliance-repair/?$ /locations/milton-appliance-repair [R=301,L]
+  RewriteRule ^barrie-appliance-repair/?$ /locations/barrie-appliance-repair [R=301,L]
+  RewriteRule ^ajax-appliance-repair/?$ /locations/ajax-appliance-repair [R=301,L]
 
-  # 1. Location Pages 301 Redirects
-  RewriteRule ^burlington-appliance-repair/?$ locations/burlington-appliance-repair [R=301,L]
-  RewriteRule ^kitchener-appliance-repair/?$ locations/kitchener-appliance-repair [R=301,L]
-  RewriteRule ^brampton-appliance-repair/?$ locations/brampton-appliance-repair [R=301,L]
-  RewriteRule ^waterloo-appliance-repair/?$ locations/waterloo-appliance-repair [R=301,L]
-  RewriteRule ^cambridge-appliance-repair/?$ locations/cambridge-appliance-repair [R=301,L]
-  RewriteRule ^hamilton-appliance-repair/?$ locations/hamilton-appliance-repair [R=301,L]
-  RewriteRule ^caledon-appliance-repair/?$ locations/caledon-appliance-repair [R=301,L]
-  RewriteRule ^caledeon-appliance-repair/?$ locations/caledon-appliance-repair [R=301,L]
-  RewriteRule ^caldeon-appliance-repair/?$ locations/caledon-appliance-repair [R=301,L]
-  RewriteRule ^locations/caldeon-appliance-repair/?$ locations/caledon-appliance-repair [R=301,L]
-  RewriteRule ^locations/caledeon-appliance-repair/?$ locations/caledon-appliance-repair [R=301,L]
-  RewriteRule ^pickering-appliance-repair/?$ locations/pickering-appliance-repair [R=301,L]
-  RewriteRule ^vaughan-appliance-repair/?$ locations/vaughan-appliance-repair [R=301,L]
-  RewriteRule ^richmond-hill-appliance-repair/?$ locations/richmond-hill-appliance-repair [R=301,L]
-  RewriteRule ^mississauga-appliance-repair/?$ locations/mississauga-appliance-repair [R=301,L]
-  RewriteRule ^toronto-appliance-repair/?$ locations/toronto-appliance-repair [R=301,L]
-  RewriteRule ^guelph-appliance-repair/?$ locations/guelph-appliance-repair [R=301,L]
-  RewriteRule ^markham-appliance-repair/?$ locations/markham-appliance-repair [R=301,L]
-  RewriteRule ^oakville-appliance-repair/?$ locations/oakville-appliance-repair [R=301,L]
-  RewriteRule ^scarborough-appliance-repair/?$ locations/scarborough-appliance-repair [R=301,L]
-  RewriteRule ^oshawa-appliance-repair/?$ locations/oshawa-appliance-repair [R=301,L]
-  RewriteRule ^milton-appliance-repair/?$ locations/milton-appliance-repair [R=301,L]
-  RewriteRule ^barrie-appliance-repair/?$ locations/barrie-appliance-repair [R=301,L]
-  RewriteRule ^ajax-appliance-repair/?$ locations/ajax-appliance-repair [R=301,L]
+  # Service Pages
+  RewriteRule ^refrigerator-repair/?$ /services/fridge-repair [R=301,L]
+  RewriteRule ^service-page/?$ /services/stove-repair [R=301,L]
+  RewriteRule ^service-page/microwave-repair-and-installation/?$ /services/microwave-repair [R=301,L]
+  RewriteRule ^service-page/dryer-repair-duct-cleaning/?$ /services/dryer-repair [R=301,L]
+  RewriteRule ^induction-cooktop-repair-service/?$ /services/stove-repair [R=301,L]
+  RewriteRule ^oven-repair-service/?$ /services/stove-repair [R=301,L]
 
-  # 2. Service Pages Redirects
-  RewriteRule ^refrigerator-repair/?$ services/fridge-repair [R=301,L]
-  RewriteRule ^service-page/?$ services/stove-repair [R=301,L]
-  RewriteRule ^service-page/microwave-repair-and-installation/?$ services/microwave-repair [R=301,L]
-  RewriteRule ^service-page/dryer-repair-duct-cleaning/?$ services/dryer-repair [R=301,L]
-  RewriteRule ^induction-cooktop-repair-service/?$ services/stove-repair [R=301,L]
-  RewriteRule ^oven-repair-service/?$ services/stove-repair [R=301,L]
+  # Redirect /index, /index.html or /index.php to root (/)
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index(\.(html|php))?\ HTTP/ [NC]
+  RewriteRule ^index(\.(html|php))?$ / [R=301,L]
 
-  # Redirect /index or /index.php to Root Domain (/)
-  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index(\.php)?\ HTTP/ [NC]
-  RewriteRule ^index(\.php)?$ ./ [R=301,L]
-
-  # -------------------------------------------------------------
-  # DYNAMIC LOCATION ROUTER
-  # -------------------------------------------------------------
+  # ----------------------------------------------------------------------------
+  # 4. DYNAMIC LOCATION ROUTER
+  # ----------------------------------------------------------------------------
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^locations/([a-z0-9\-]+)/?$ locations/location.php?slug=$1 [L,QSA]
+  RewriteRule ^locations/([a-z0-9\-]+)/?$ /locations/location.php?slug=$1 [L,QSA]
 
-  # -------------------------------------------------------------
-  # CLEAN URL ENGINE (.PHP REMOVAL & ROUTING)
-  # -------------------------------------------------------------
+  # ----------------------------------------------------------------------------
+  # 5. CLEAN URL ENGINE (.PHP / .HTML STRIPPING & INTERNAL ROUTING)
+  # ----------------------------------------------------------------------------
+  # Remove trailing slashes from URLs (unless directory)
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} ^(.+)/+$
+  RewriteRule ^ %1 [R=301,L,NE]
 
-  # 1. Redirect GET requests with .php extension to clean URL (301 Permanent Redirect for SEO)
-  # Do NOT redirect POST requests, send-lead.php, or 404.php
+  # Strip .php extension on external GET requests (preserve send-lead & sitemap)
   RewriteCond %{REQUEST_METHOD} !=POST
   RewriteCond %{THE_REQUEST} !/send-lead\.php [NC]
-  RewriteCond %{THE_REQUEST} !/404\.php [NC]
+  RewriteCond %{THE_REQUEST} !/sitemap\.php [NC]
   RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
   RewriteRule ^ /%1 [R=301,L]
 
-  # 2. Remove trailing slashes from URLs (unless directory)
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_URI} ^(.+)/$
-  RewriteRule ^ %1 [R=301,L]
-
-  # 3. Internally route clean extensionless URL to corresponding .php file if it exists
+  # Internal rewrite for extensionless URLs -> .php or .html files
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME}\.php -f
   RewriteRule ^(.+?)$ $1.php [L]
+
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}\.html -f
+  RewriteRule ^(.+?)$ $1.html [L]
 </IfModule>
 
-# Disable directory listing for security & speed
-Options -Indexes
-
-# Serve XML Sitemaps with Correct Content-Type Header
+# ==============================================================================
+# 6. SITEMAP XML CONTENT-TYPE
+# ==============================================================================
 <IfModule mod_headers.c>
   <FilesMatch "sitemap\.xml$">
     Header set Content-Type "application/xml; charset=UTF-8"
@@ -111,7 +124,7 @@ Options -Indexes
 </IfModule>
 
 # ==============================================================================
-# 1. GZIP / DEFLATE COMPRESSION ENGINE
+# 7. GZIP / DEFLATE COMPRESSION ENGINE
 # ==============================================================================
 <IfModule mod_deflate.c>
   # Force compression for mangled headers
@@ -148,7 +161,7 @@ Options -Indexes
 </IfModule>
 
 # ==============================================================================
-# 2. BROWSER CACHING (EXPIRES HEADERS)
+# 8. BROWSER CACHING (EXPIRES HEADERS)
 # ==============================================================================
 <IfModule mod_expires.c>
   ExpiresActive On
@@ -174,13 +187,13 @@ Options -Indexes
   ExpiresByType application/x-font-woff "access plus 1 year"
   ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
 
-  # CSS & JavaScript (1 Year with cache busting / 1 Month)
+  # CSS & JavaScript (1 Year)
   ExpiresByType text/css "access plus 1 year"
   ExpiresByType application/javascript "access plus 1 year"
   ExpiresByType text/javascript "access plus 1 year"
   ExpiresByType application/x-javascript "access plus 1 year"
 
-  # Manifest & Structured Data
+  # HTML & Structured Data (Short cache with revalidation)
   ExpiresByType application/manifest+json "access plus 1 week"
   ExpiresByType application/json "access plus 0 seconds"
   ExpiresByType application/ld+json "access plus 0 seconds"
@@ -188,11 +201,11 @@ Options -Indexes
 </IfModule>
 
 # ==============================================================================
-# 3. HTTP CACHE-CONTROL & PERFORMANCE HEADERS
+# 9. HTTP CACHE-CONTROL & SECURITY HEADERS
 # ==============================================================================
 <IfModule mod_headers.c>
   # 1-Year Immutable Caching for Static Assets
-  <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|webp|avif|swf|svg|woff|woff2|ttf|otf|eot)$">
+  <FilesMatch "\.(ico|pdf|jpg|jpeg|png|gif|webp|avif|svg|woff|woff2|ttf|otf|eot)$">
     Header set Cache-Control "max-age=31536000, public, immutable"
     Header unset ETag
   </FilesMatch>
@@ -202,39 +215,26 @@ Options -Indexes
     Header unset ETag
   </FilesMatch>
 
-  # Prevent intermediate proxy caching mismatches
-  Header append Vary "Accept-Encoding"
-
-  # Dynamic HTML / PHP Caching Policy (Allows 304 Revalidation & Fast History Navigation)
+  # HTML & Dynamic Pages (Allows 304 Revalidation without stale caching)
   <FilesMatch "\.(php|html)$">
-    Header set Cache-Control "public, max-age=0, must-revalidate"
+    Header set Cache-Control "public, max-age=600, must-revalidate"
     Header unset Pragma
     Header unset Expires
   </FilesMatch>
 
-  # -------------------------------------------------------------
-  # 4. MODERN HTTP SECURITY HEADERS
-  # -------------------------------------------------------------
-  # Enforce HTTPS with HSTS (1 Year, includes subdomains)
-  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+  Header append Vary "Accept-Encoding"
 
-  # Prevent clickjacking / frame embedding
+  # Security Headers (Applied directly without env=HTTPS for LiteSpeed reverse proxy compatibility)
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
   Header always set X-Frame-Options "SAMEORIGIN"
-
-  # Prevent MIME-type sniffing
   Header always set X-Content-Type-Options "nosniff"
-
-  # Control referrer info passed to third parties
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
-
-  # Restrict sensitive device APIs
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(self)"
 
-  # Remove server technology disclosure headers
+  # Remove server disclosure
   Header unset X-Powered-By
   Header always unset X-Powered-By
 </IfModule>
 
-# Disable ETags to reduce HTTP header size & eliminate redundant round-trips
+# Disable ETags
 FileETag None
-
