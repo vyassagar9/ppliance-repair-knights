@@ -11,9 +11,16 @@ ErrorDocument 404 /404.php
   RewriteEngine On
 
   # -------------------------------------------------------------
-  # CANONICAL DOMAIN REDIRECT (NON-WWW TO WWW 301 ON PRODUCTION)
+  # CANONICAL DOMAIN & HTTPS REDIRECT (NON-WWW TO WWW 301 ON PRODUCTION)
   # -------------------------------------------------------------
-  RewriteCond %{HTTP_HOST} ^appliancerepairknights\.ca$ [NC]
+  # 1. Force HTTPS on Production
+  RewriteCond %{HTTPS} off
+  RewriteCond %{HTTP_HOST} ^(www\.)?appliancerepairknights\.(com|ca)$ [NC]
+  RewriteRule ^(.*)$ https://www.appliancerepairknights.com/$1 [R=301,L]
+
+  # 2. Redirect .ca or non-www to https://www.appliancerepairknights.com
+  RewriteCond %{HTTP_HOST} ^appliancerepairknights\.ca$ [NC,OR]
+  RewriteCond %{HTTP_HOST} ^appliancerepairknights\.com$ [NC]
   RewriteRule ^(.*)$ https://www.appliancerepairknights.com/$1 [R=301,L]
 
   # Route sitemap.xml to dynamic sitemap.php (auto filemtime & 304 caching)
@@ -198,12 +205,34 @@ Options -Indexes
   # Prevent intermediate proxy caching mismatches
   Header append Vary "Accept-Encoding"
 
-  # Dynamic HTML / PHP Caching Policy
+  # Dynamic HTML / PHP Caching Policy (Allows 304 Revalidation & Fast History Navigation)
   <FilesMatch "\.(php|html)$">
-    Header set Cache-Control "no-cache, no-store, must-revalidate"
-    Header set Pragma "no-cache"
-    Header set Expires 0
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+    Header unset Pragma
+    Header unset Expires
   </FilesMatch>
+
+  # -------------------------------------------------------------
+  # 4. MODERN HTTP SECURITY HEADERS
+  # -------------------------------------------------------------
+  # Enforce HTTPS with HSTS (1 Year, includes subdomains)
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+
+  # Prevent clickjacking / frame embedding
+  Header always set X-Frame-Options "SAMEORIGIN"
+
+  # Prevent MIME-type sniffing
+  Header always set X-Content-Type-Options "nosniff"
+
+  # Control referrer info passed to third parties
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Restrict sensitive device APIs
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(self)"
+
+  # Remove server technology disclosure headers
+  Header unset X-Powered-By
+  Header always unset X-Powered-By
 </IfModule>
 
 # Disable ETags to reduce HTTP header size & eliminate redundant round-trips

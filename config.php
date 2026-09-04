@@ -4,6 +4,12 @@
  * Appliance Repair Knights Ltd.
  */
 
+// Suppress PHP Version exposure in HTTP headers
+if (!headers_sent()) {
+    header_remove('X-Powered-By');
+}
+@ini_set('expose_php', 'off');
+
 if (!defined('BUSINESS_NAME')) {
     define('BUSINESS_NAME', 'Appliance Repair Knights Ltd.');
     define('BUSINESS_PHONE', '905-717-8905');

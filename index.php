@@ -87,26 +87,34 @@ $custom_head_schema = '
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Do you offer same-day appliance repair service?",
+            "name": "How quickly can a technician arrive at my home?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes! We provide same-day appliance repair services across Toronto, GTA, Hamilton, Kitchener-Waterloo, and Oshawa when you call or submit an enquiry before 2:00 PM."
+              "text": "We offer same-day service across Toronto and the GTA! When you call or submit an enquiry before 2:00 PM, our technician can be at your home within 2 to 4 hours. Emergency appointments are also available 24/7."
             }
           },
           {
             "@type": "Question",
-            "name": "Is the service call free?",
+            "name": "What is your pricing model and service call fee?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The service call diagnostic fee is 100% FREE when you proceed with any appliance repair."
+              "text": "We provide transparent upfront flat-rate pricing with zero hidden fees. The diagnostic service call fee is 100% FREE when you proceed with any appliance repair!"
             }
           },
           {
             "@type": "Question",
-            "name": "What warranty do you provide on repairs?",
+            "name": "What warranty do you offer on repairs?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "All repairs conducted by Appliance Repair Knights come with up to a 90-day written warranty on both parts and labor."
+              "text": "All repairs performed by Appliance Repair Knights come with up to a 1-year written warranty covering both replacement OEM parts and technician labor."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you carry replacement parts in your service vehicles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! Our service vans are fully stocked with common OEM replacement parts for Bosch, GE Appliances, KitchenAid, Frigidaire, Maytag, Sub-Zero, Miele and Samsung appliances to complete 85%+ of repairs on the spot."
             }
           }
         ]
@@ -230,7 +238,7 @@ include 'head.php';
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
 
           <!-- Refrigerator Card -->
-          <a href="services/fridge-repair"
+          <a href="/services/fridge-repair"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
               <img src="img/refrigerator-repair-service.webp" alt="Same-Day Refrigerator Repair Service Toronto" title="Fast Refrigerator Repair & Diagnostics" width="798" height="448" loading="lazy" decoding="async"
@@ -252,7 +260,7 @@ include 'head.php';
           </a>
 
           <!-- Washer Card -->
-          <a href="services/washer-repair"
+          <a href="/services/washer-repair"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
               <img src="img/washing-machine-repair-service.webp" alt="Washing Machine Repair Service GTA" title="Certified Washer Diagnostics & Repair" width="739" height="415" loading="lazy" decoding="async"
@@ -274,7 +282,7 @@ include 'head.php';
           </a>
 
           <!-- Dryer Card -->
-          <a href="services/dryer-repair"
+          <a href="/services/dryer-repair"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
               <img src="img/clothes-dryer-repair-service.webp" alt="Clothes Dryer Repair and Vent Cleaning" title="Fast Dryer Inspection & Repair Service" width="798" height="448" loading="lazy" decoding="async"
@@ -296,7 +304,7 @@ include 'head.php';
           </a>
 
           <!-- Dishwasher Card -->
-          <a href="services/dishwasher-repair"
+          <a href="/services/dishwasher-repair"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
               <img src="img/open-dishwasher-repair.webp" alt="Dishwasher Diagnostic and Repair Service" title="Reliable Dishwasher Repair & Pump Diagnostics" width="798" height="448" loading="lazy" decoding="async"
@@ -318,7 +326,7 @@ include 'head.php';
           </a>
 
           <!-- Oven & Stove Card -->
-          <a href="services/stove-repair"
+          <a href="/services/stove-repair"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
               <img src="img/oven-stove-repair-service.webp" alt="Oven and Stove Repair Service" title="Electric & Gas Stove/Oven Diagnostics" width="798" height="448" loading="lazy" decoding="async"
@@ -340,7 +348,7 @@ include 'head.php';
           </a>
 
           <!-- Microwave Card -->
-          <a href="services/microwave-repair"
+          <a href="/services/microwave-repair"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
               <img src="img/microwave-repair.webp" alt="Microwave Oven Repair and Installation Service" title="Built-in & Over-the-Range Microwave Repair" width="1536" height="1024" loading="lazy" decoding="async"
@@ -788,8 +796,7 @@ include 'head.php';
             </button>
             <div id="faq-3"
               class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-              All repairs performed by Appliance Repair Knights come with a written warranty covering both new
-              replacement parts and technician labor.
+              All repairs performed by Appliance Repair Knights come with up to a 1-year written warranty covering both replacement OEM parts and technician labor.
             </div>
           </div>
 
@@ -856,26 +863,26 @@ include 'head.php';
             </h3>
 
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-y-3 gap-x-4 text-xs sm:text-sm text-slate-700 font-medium">
-              <a href="locations/toronto-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Toronto</a>
-              <a href="locations/mississauga-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Mississauga</a>
-              <a href="locations/brampton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Brampton</a>
-              <a href="locations/caledon-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Caledon</a>
-              <a href="locations/vaughan-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Vaughan</a>
-              <a href="locations/markham-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Markham</a>
-              <a href="locations/oakville-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Oakville</a>
-              <a href="locations/scarborough-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Scarborough</a>
-              <a href="locations/richmond-hill-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Richmond Hill</a>
-              <a href="locations/burlington-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Burlington</a>
-              <a href="locations/milton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Milton</a>
-              <a href="locations/hamilton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Hamilton</a>
-              <a href="locations/kitchener-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Kitchener</a>
-              <a href="locations/waterloo-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Waterloo</a>
-              <a href="locations/cambridge-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Cambridge</a>
-              <a href="locations/guelph-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Guelph</a>
-              <a href="locations/barrie-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Barrie</a>
-              <a href="locations/oshawa-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Oshawa</a>
-              <a href="locations/ajax-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Ajax</a>
-              <a href="locations/pickering-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Pickering</a>
+              <a href="/locations/toronto-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Toronto</a>
+              <a href="/locations/mississauga-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Mississauga</a>
+              <a href="/locations/brampton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Brampton</a>
+              <a href="/locations/caledon-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Caledon</a>
+              <a href="/locations/vaughan-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Vaughan</a>
+              <a href="/locations/markham-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Markham</a>
+              <a href="/locations/oakville-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Oakville</a>
+              <a href="/locations/scarborough-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Scarborough</a>
+              <a href="/locations/richmond-hill-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Richmond Hill</a>
+              <a href="/locations/burlington-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Burlington</a>
+              <a href="/locations/milton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Milton</a>
+              <a href="/locations/hamilton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Hamilton</a>
+              <a href="/locations/kitchener-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Kitchener</a>
+              <a href="/locations/waterloo-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Waterloo</a>
+              <a href="/locations/cambridge-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Cambridge</a>
+              <a href="/locations/guelph-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Guelph</a>
+              <a href="/locations/barrie-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Barrie</a>
+              <a href="/locations/oshawa-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Oshawa</a>
+              <a href="/locations/ajax-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Ajax</a>
+              <a href="/locations/pickering-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Pickering</a>
             </div>
 
             <div class="mt-6 pt-4 border-t border-slate-100">
