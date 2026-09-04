@@ -68,11 +68,11 @@ $robots_meta = isset($robots_meta) ? $robots_meta : 'index, follow, max-image-pr
   <meta property="og:locale" content="en_CA">
 
   <!-- Twitter Meta Tags -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="<?php echo htmlspecialchars($canonical_url); ?>">
-  <meta property="twitter:title" content="<?php echo htmlspecialchars($page_title); ?>">
-  <meta property="twitter:description" content="<?php echo htmlspecialchars($page_description); ?>">
-  <meta property="twitter:image" content="<?php echo htmlspecialchars($og_image); ?>">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="<?php echo htmlspecialchars($canonical_url); ?>">
+  <meta name="twitter:title" content="<?php echo htmlspecialchars($page_title); ?>">
+  <meta name="twitter:description" content="<?php echo htmlspecialchars($page_description); ?>">
+  <meta name="twitter:image" content="<?php echo htmlspecialchars($og_image); ?>">
 
   <!-- 7. Performance & Resource Preloading (Zero-Latency Self-Hosted Fonts & CSS) -->
   <link rel="preload" href="<?php echo $base_url; ?>fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>

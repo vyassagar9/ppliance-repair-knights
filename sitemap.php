@@ -10,7 +10,6 @@
 
 // Set proper XML Content-Type header
 header('Content-Type: application/xml; charset=utf-8');
-header('X-Robots-Tag: noindex, follow');
 
 $domain = 'https://www.appliancerepairknights.com';
 $rootDir = __DIR__;

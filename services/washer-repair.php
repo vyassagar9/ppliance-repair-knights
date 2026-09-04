@@ -3,7 +3,7 @@ require_once __DIR__ . '/../config.php';
 $base_url = '../';
 $current_page = 'washer';
 $page_title = 'Washing Machine Repair | Appliance Repair Knights';
-$page_description = 'Fast washing machine repair & diagnostic services. Spin cycle issues, leaks, & error codes fixed fast. Certified techs with 90-day warranty.';
+$page_description = 'Fast washing machine repair & diagnostic services. Spin cycle issues, leaks, & error codes fixed fast. Certified techs with up to 1-year warranty.';
 $page_keywords = 'washing machine repair service, washer diagnostic, fix washer spin cycle';
 $canonical_url = 'https://www.appliancerepairknights.com/services/washer-repair';
 
