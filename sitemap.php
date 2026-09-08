@@ -48,6 +48,12 @@ $pages = [
         'changefreq' => 'weekly',
         'priority' => '0.90'
     ],
+    [
+        'loc' => $domain . '/blog',
+        'file' => $rootDir . '/blog/index.php',
+        'changefreq' => 'weekly',
+        'priority' => '0.85'
+    ],
 
     // 2. Service Pages
     [
@@ -131,6 +137,35 @@ foreach ($locations as $slug) {
         'changefreq' => 'weekly',
         'priority' => '0.95'
     ];
+}
+
+// 3B. Blog Articles (Dynamic from blog-data.php)
+$blogDataFile = $rootDir . '/blog/blog-data.php';
+$blogPostTemplate = $rootDir . '/blog/post.php';
+$blogBaseMod = max(
+    file_exists($blogPostTemplate) ? filemtime($blogPostTemplate) : 0,
+    file_exists($blogDataFile) ? filemtime($blogDataFile) : 0
+);
+
+if (file_exists($blogDataFile)) {
+    $blogPosts = require $blogDataFile;
+    if (is_array($blogPosts)) {
+        foreach ($blogPosts as $bSlug => $bData) {
+            $specificBlogFile = $rootDir . '/blog/' . $bSlug . '.php';
+            $modTime = $blogBaseMod;
+            if (file_exists($specificBlogFile)) {
+                $modTime = max($modTime, filemtime($specificBlogFile));
+            } elseif (!empty($bData['date_modified'])) {
+                $modTime = max($modTime, strtotime($bData['date_modified']));
+            }
+            $pages[] = [
+                'loc' => $domain . '/blog/' . $bSlug,
+                'lastmod' => date('Y-m-d', $modTime > 0 ? $modTime : time()),
+                'changefreq' => 'monthly',
+                'priority' => '0.80'
+            ];
+        }
+    }
 }
 
 // 4. Legal Pages

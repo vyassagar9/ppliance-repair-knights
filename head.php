@@ -84,8 +84,8 @@ $robots_meta = isset($robots_meta) ? $robots_meta : 'index, follow, max-image-pr
   <!-- Production Local Compiled Tailwind CSS (Fastest Load Speed) -->
   <link rel="stylesheet" href="<?php echo $base_url; ?>css/tailwind.min.css">
 
-  <!-- Global Custom Stylesheet -->
-  <link rel="stylesheet" href="<?php echo $base_url; ?>css/style.min.css">
+  <!-- Global Custom Stylesheet (Cache-Busted with filemtime) -->
+  <link rel="stylesheet" href="<?php echo $base_url; ?>css/style.min.css?v=<?php echo file_exists(__DIR__ . '/css/style.min.css') ? filemtime(__DIR__ . '/css/style.min.css') : '1.1'; ?>">
 
   <?php if (!empty($custom_head_schema)): ?>
   <?php echo $custom_head_schema; ?>
@@ -107,6 +107,7 @@ $robots_meta = isset($robots_meta) ? $robots_meta : 'index, follow, max-image-pr
     "sameAs": [
       "https://www.facebook.com/Appliancerepairknights",
       "https://www.instagram.com/appliancerepairknights/",
+      "https://www.tiktok.com/@appliance.service1",
       "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059"
     ],
     "address": {

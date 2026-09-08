@@ -29,6 +29,12 @@
     <priority>0.90</priority>
   </url>
   <url>
+    <loc>https://www.appliancerepairknights.com/blog</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.appliancerepairknights.com/services/fridge-repair</loc>
     <lastmod>2026-09-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -36,7 +42,7 @@
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/services/washer-repair</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
@@ -185,8 +191,14 @@
     <priority>0.95</priority>
   </url>
   <url>
+    <loc>https://www.appliancerepairknights.com/blog/refrigerator-repair-cost-toronto</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://www.appliancerepairknights.com/privacy-policy</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.30</priority>
   </url>

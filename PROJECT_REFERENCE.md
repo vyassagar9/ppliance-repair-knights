@@ -28,3 +28,12 @@
   * Direct top-bar phone number & "Book Online" CTA.
   * Clear service categories (Refrigerator, Dishwasher, Dryer, Washing Machine, Stove/Oven, Microwave, Range Hood).
   * High-converting, trustworthy presentation with clear pricing transparency.
+
+---
+
+## 4. Next Month SEO & On-Page Roadmap (Pending Updates)
+* **Homepage (`index.php`) On-Page Keyword Refinement**:
+  * **Target Query**: Integrate `"appliance repair near you"` / `"appliance repair near me"` naturally into:
+    1. **Hero Subtitle**: Update intro hook to: *"Looking for reliable appliance repair near you? We serve homeowners across the Greater Toronto Area with fast, certified, same-day repairs."*
+    2. **FAQ Section**: Add natural voice-search & audit-compliant question: *"How quickly can an appliance repair technician near me arrive?"* (Answer highlighting 2-4 hr GTA response).
+  * **Timing**: Scheduled for next month's SEO sprint to allow Google to index current schema, UI, and speed updates without index churn.

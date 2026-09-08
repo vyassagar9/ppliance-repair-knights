@@ -21,6 +21,8 @@ Disallow: /reviews-data.php
 Disallow: /reviews-widget.php
 Disallow: /locations/location-data.php
 Disallow: /locations/location.php
+Disallow: /blog/blog-data.php
+Disallow: /blog/post.php
 
 # XML Sitemap Location
 Sitemap: https://www.appliancerepairknights.com/sitemap.xml

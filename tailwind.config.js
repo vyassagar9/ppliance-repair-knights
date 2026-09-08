@@ -16,7 +16,9 @@ module.exports = {
     "./locations/*.php",
     "./same-day-repair/*.php",
     "./same-day-repair/*.html",
-    "./html_backup/*.html"
+    "./html_backup/*.html",
+    "./blog/*.php",
+    "./blog/**/*.php"
   ],
   theme: {
     extend: {

@@ -98,6 +98,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
       <a href="<?php echo $base_url; ?>about" class="<?php echo ($current_page == 'about') ? 'text-brandBlue font-bold' : ''; ?> hover:text-brandOrange transition-colors">About</a>
+      <a href="<?php echo $base_url; ?>blog" class="<?php echo ($current_page == 'blog') ? 'text-brandBlue font-bold' : ''; ?> hover:text-brandOrange transition-colors">Blog</a>
       <a href="<?php echo $base_url; ?>contact" class="<?php echo ($current_page == 'contact') ? 'text-brandBlue font-bold' : ''; ?> hover:text-brandOrange transition-colors">Contact</a>
     </nav>
 
@@ -173,6 +174,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
+    <a href="<?php echo $base_url; ?>blog" class="block font-medium text-slate-700 hover:text-brandOrange">Blog &amp; Guides</a>
     <a href="<?php echo $base_url; ?>about" class="block font-medium text-slate-700 hover:text-brandOrange">About Us</a>
     <a href="<?php echo $base_url; ?>contact" class="block font-medium text-slate-700 hover:text-brandOrange">Contact</a>
   </div>

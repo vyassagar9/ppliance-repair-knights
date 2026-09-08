@@ -128,7 +128,7 @@ window.handleSiteQuoteFormSubmit = async function(formEl) {
 
   try {
     const baseUrl = '<?php echo isset($base_url) ? $base_url : ""; ?>';
-    const isSubfolder = window.location.pathname.includes('/services/') || window.location.pathname.includes('/locations/');
+    const isSubfolder = window.location.pathname.includes('/services/') || window.location.pathname.includes('/locations/') || window.location.pathname.includes('/blog/');
     const scriptPath = isSubfolder ? (baseUrl ? baseUrl + 'send-lead.php' : '../send-lead.php') : (baseUrl ? baseUrl + 'send-lead.php' : 'send-lead.php');
     
     const response = await fetch(scriptPath, {
