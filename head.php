@@ -81,8 +81,8 @@ $robots_meta = isset($robots_meta) ? $robots_meta : 'index, follow, max-image-pr
   <!-- Self-Hosted Zero-Latency Fonts Definition -->
   <link rel="stylesheet" href="<?php echo $base_url; ?>css/fonts.min.css">
 
-  <!-- Production Local Compiled Tailwind CSS (Fastest Load Speed) -->
-  <link rel="stylesheet" href="<?php echo $base_url; ?>css/tailwind.min.css">
+  <!-- Production Local Compiled Tailwind CSS (Fastest Load Speed & Cache-Busted) -->
+  <link rel="stylesheet" href="<?php echo $base_url; ?>css/tailwind.min.css?v=<?php echo file_exists(__DIR__ . '/css/tailwind.min.css') ? filemtime(__DIR__ . '/css/tailwind.min.css') : '2.0'; ?>">
 
   <!-- Global Custom Stylesheet (Cache-Busted with filemtime) -->
   <link rel="stylesheet" href="<?php echo $base_url; ?>css/style.min.css?v=<?php echo file_exists(__DIR__ . '/css/style.min.css') ? filemtime(__DIR__ . '/css/style.min.css') : '1.1'; ?>">
