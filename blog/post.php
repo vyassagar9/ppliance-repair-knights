@@ -165,7 +165,7 @@ require_once __DIR__ . '/../head.php';
 
   <!-- EDITORIAL ARTICLE WRAPPER -->
   <main class="flex-grow py-6 sm:py-10 w-full max-w-full overflow-x-clip">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start blog-main-grid w-full min-w-0 max-w-full">
 

@@ -37,3 +37,22 @@
     1. **Hero Subtitle**: Update intro hook to: *"Looking for reliable appliance repair near you? We serve homeowners across the Greater Toronto Area with fast, certified, same-day repairs."*
     2. **FAQ Section**: Add natural voice-search & audit-compliant question: *"How quickly can an appliance repair technician near me arrive?"* (Answer highlighting 2-4 hr GTA response).
   * **Timing**: Scheduled for next month's SEO sprint to allow Google to index current schema, UI, and speed updates without index churn.
+
+---
+
+## 5. CSS Build & Pre-Upload Safeguards (CRITICAL)
+* **Tailwind CSS Source**:
+  * ALWAYS compile from `./css/input.css` (contains `@tailwind base; @tailwind components; @tailwind utilities;`).
+  * NEVER use `css/style.css` as input for Tailwind CLI!
+* **Automated Build Command**:
+  * `npm run build:css` (runs Tailwind CLI + automated size & lint verification).
+* **Automated Safety Script**:
+  * `scripts/verify-build.js` / `npm run verify`:
+    1. Checks `css/tailwind.min.css` size (MUST be >= 30 KB, verifies core utility classes exist).
+    2. Checks `css/style.min.css` size.
+    3. Verifies `head.php` has active cache-busting tokens (`?v=filemtime`) on both CSS files.
+    4. Lints all PHP files with 0 syntax errors.
+* **Browser Caching Rules**:
+  * Hostinger / LiteSpeed caches static CSS for 1 year (`max-age=31536000`).
+  * Therefore, `head.php` MUST always link CSS with dynamic timestamp cache-busters (`css/tailwind.min.css?v=...` and `css/style.min.css?v=...`).
+
