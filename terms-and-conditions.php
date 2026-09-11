@@ -1,5 +1,6 @@
 <?php 
-$base_url = './';
+require_once __DIR__ . '/config.php';
+$base_url = defined('BASE_URL') ? BASE_URL : './';
 $page_title = 'Terms & Conditions | Appliance Repair Knights';
 $page_description = 'Terms and Conditions for Appliance Repair Knights. Read our service agreements, warranties, service call terms, and payment policies.';
 $canonical_url = 'https://www.appliancerepairknights.com/terms-and-conditions';
@@ -25,7 +26,7 @@ include 'head.php';
       
       <div class="border-b border-brandBorder pb-6">
         <h1 class="text-3xl sm:text-4xl font-heading font-black text-brandDarkBlue tracking-tight">TERMS &amp; CONDITIONS</h1>
-        <p class="text-xs text-slate-400 mt-2">Last Updated: August 2026</p>
+        <p class="text-xs text-slate-400 mt-2">Last Updated: September 2026</p>
       </div>
 
       <div class="prose prose-slate max-w-none text-sm leading-relaxed space-y-6 text-slate-600">
@@ -40,7 +41,7 @@ include 'head.php';
 
         <h2 class="text-lg font-heading font-bold text-brandDarkBlue">2. Warranty Coverage</h2>
         <p>
-          Appliance Repair Knights provides a written warranty (up to 1 year on installed replacement parts and labor) as indicated on your completed service invoice. Warranty claims cover defect issues associated with the specific parts replaced during the original service.
+          Appliance Repair Knights provides a written warranty on installed replacement parts and labor as indicated on your completed service invoice. Warranty claims cover defect issues associated with the specific parts replaced during the original service.
         </p>
 
         <h2 class="text-lg font-heading font-bold text-brandDarkBlue">3. Customer Responsibilities & Access</h2>

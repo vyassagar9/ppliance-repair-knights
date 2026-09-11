@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/config.php';
-$base_url = './';
+$base_url = defined('BASE_URL') ? BASE_URL : './';
 $page_title = 'Contact Us | Appliance Repair Knights';
 $page_description = 'Need urgent appliance repair? Contact Appliance Repair Knights at 905-717-8905. Available 24/7 across GTA, Kitchener, Hamilton & Oshawa.';
 $page_keywords = 'appliance repair knights contact, appliance repair phone number';

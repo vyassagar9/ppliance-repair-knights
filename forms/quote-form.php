@@ -14,7 +14,7 @@ $currentAppliance = isset($defaultAppliance) ? $defaultAppliance : '';
     Get your Appliance fixed today
   </h2>
   <p class="text-slate-500 text-xs mb-4">
-    Fill out the form below. A local technician will contact you within <strong>15 minutes</strong>.
+    Fill out the form below. A local technician will contact you promptly to confirm your appointment window.
   </p>
 
   <form id="site-quote-form" class="gtm-web-form-submit space-y-3" onsubmit="event.preventDefault(); handleSiteQuoteFormSubmit(this);">
@@ -68,7 +68,7 @@ $currentAppliance = isset($defaultAppliance) ? $defaultAppliance : '';
     </button>
 
     <p class="text-[11px] text-center text-slate-400 mt-2">
-      🔒 100% Privacy Protected • $0 Service Call With Any Paid Repair
+      🔒 Privacy Protected • Service Call Fee Waived With Repairs
     </p>
   </form>
 
@@ -79,7 +79,7 @@ $currentAppliance = isset($defaultAppliance) ? $defaultAppliance : '';
     </div>
     <h3 class="text-xl font-heading font-bold text-emerald-900">Quote Request Received!</h3>
     <p class="text-xs text-emerald-800">
-      Thank you! A local technician will contact <strong class="display-user-phone">your phone</strong> within <strong>15 minutes</strong>.
+      Thank you! A local technician will contact <strong class="display-user-phone">your phone</strong> promptly to confirm your visit.
     </p>
     <a href="tel:9057178905" class="gtm-web-call inline-block bg-brandDarkBlue text-white text-xs font-bold py-2 px-4 rounded-lg mt-2">Call Dispatch Directly: 905-717-8905</a>
   </div>
@@ -159,7 +159,7 @@ window.handleSiteQuoteFormSubmit = async function(formEl) {
       alert('Error sending request: ' + (resData.message || 'Server error. Please call 905-717-8905.'));
       if (submitBtn) {
         submitBtn.disabled = false;
-        submitBtn.innerHTML = '<span>GET FREE REPAIR QUOTE</span>';
+        submitBtn.innerHTML = '<span>Book Same-Day Repair</span>';
       }
     }
   } catch (err) {
@@ -167,7 +167,7 @@ window.handleSiteQuoteFormSubmit = async function(formEl) {
     alert('Network error: Could not reach server. Please check your internet or call 905-717-8905.');
     if (submitBtn) {
       submitBtn.disabled = false;
-      submitBtn.innerHTML = '<span>GET FREE REPAIR QUOTE</span>';
+      submitBtn.innerHTML = '<span>Book Same-Day Repair</span>';
     }
   }
 };

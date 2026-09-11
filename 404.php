@@ -1,6 +1,6 @@
 <?php
 http_response_code(404);
-$base_url = isset($base_url) ? $base_url : '/';
+$base_url = isset($base_url) ? $base_url : './';
 $page_title = '404 - Page Not Found | Appliance Repair Knights';
 $page_description = 'The page you are looking for does not exist or has been moved. Explore our appliance repair services or contact Appliance Repair Knights.';
 $page_keywords = 'appliance repair 404, page not found';

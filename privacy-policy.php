@@ -1,7 +1,8 @@
 <?php
-$base_url = './';
+require_once __DIR__ . '/config.php';
+$base_url = defined('BASE_URL') ? BASE_URL : './';
 $page_title = 'Privacy Policy & Service Warranty | Appliance Repair Knights';
-$page_description = 'Read our privacy policy and service warranty terms. Up to 1-year written warranty on parts and labor for appliance repair jobs across GTA.';
+$page_description = 'Read our privacy policy and service warranty terms. Written warranty on parts and labor for appliance repair jobs across GTA.';
 $page_keywords = 'appliance repair knights warranty, privacy policy';
 $canonical_url = 'https://www.appliancerepairknights.com/privacy-policy';
 include 'head.php';
@@ -28,7 +29,7 @@ include 'header.php';
       
       <div class="border-b border-brandBorder pb-6">
         <h1 class="text-3xl sm:text-4xl font-heading font-black text-brandDarkBlue tracking-tight">Privacy Policy & Warranty Terms</h1>
-        <p class="text-xs text-slate-400 mt-2">Last Updated: August 2026</p>
+        <p class="text-xs text-slate-400 mt-2">Last Updated: September 2026</p>
       </div>
 
       <div class="prose prose-slate max-w-none text-sm leading-relaxed space-y-6 text-slate-600">
@@ -59,7 +60,7 @@ include 'header.php';
 
         <h2 class="text-lg font-heading font-bold text-brandDarkBlue">3. Data Security & Service Warranty</h2>
         <p>
-          Appliance Repair Knights implements industry-standard technical and organizational security measures to protect your personal data against unauthorized access. We do not sell or rent your personal contact information to third-party marketing companies. All completed appliance repair jobs include written warranty coverage covering replacement parts and labor (up to 1 year on eligible parts and labor).
+          Appliance Repair Knights implements industry-standard technical and organizational security measures to protect your personal data against unauthorized access. We do not sell or rent your personal contact information to third-party marketing companies. All completed appliance repair jobs include written warranty coverage covering replacement parts and labor.
         </p>
 
         <h2 class="text-lg font-heading font-bold text-brandDarkBlue">4. Contact Us</h2>

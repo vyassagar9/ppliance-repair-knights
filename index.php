@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/config.php';
 
-$base_url = './';
+$base_url = defined('BASE_URL') ? BASE_URL : './';
 $page_title = '#1 Appliance Repair Service in GTA & Surrounding Areas | 24/7';
 $page_description = 'Fast, same-day appliance repair across GTA, Kitchener-Waterloo & Hamilton. Certified technicians, transparent pricing & warranty. Call 905-717-8905!';
 $page_keywords = 'appliance repair near me, appliance repair GTA, emergency appliance repair';
@@ -90,7 +90,7 @@ $custom_head_schema = '
             "name": "How quickly can a technician arrive at my home?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "We offer same-day service across Toronto and the GTA! When you call or submit an enquiry before 2:00 PM, our technician can be at your home within 2 to 4 hours. Emergency appointments are also available 24/7."
+              "text": "We offer prompt same-day service across Toronto and the GTA based on daily schedule availability! When you call or submit an enquiry, our technician coordinates arrival directly to get your appliance running again without delay."
             }
           },
           {
@@ -98,7 +98,7 @@ $custom_head_schema = '
             "name": "What is your pricing model and service call fee?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "We provide transparent upfront flat-rate pricing with zero hidden fees. The diagnostic service call fee is 100% FREE when you proceed with any appliance repair!"
+              "text": "We provide transparent upfront flat-rate pricing with zero hidden fees. The diagnostic service call fee is completely waived off with any completed appliance repair!"
             }
           },
           {
@@ -106,7 +106,7 @@ $custom_head_schema = '
             "name": "What warranty do you offer on repairs?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "All repairs performed by Appliance Repair Knights come with up to a 1-year written warranty covering both replacement OEM parts and technician labor."
+              "text": "All repairs performed by Appliance Repair Knights come with a written warranty covering both replacement OEM parts and technician labor."
             }
           },
           {
@@ -130,7 +130,7 @@ include 'head.php';
 <body class="bg-white text-slate-800 font-sans antialiased selection:bg-brandOrange selection:text-white">
 
   <?php
-  $base_url = './';
+  $base_url = defined('BASE_URL') ? BASE_URL : './';
   $current_page = 'home';
   include 'header.php';
   ?>
@@ -157,10 +157,10 @@ include 'head.php';
             </h1>
 
             <p class="text-slate-600 text-base md:text-lg max-w-xl font-normal leading-relaxed">
-              Serving homeowners across the Greater Toronto Area & Southern Ontario with fast, trusted, and guaranteed local repairs.
+              Serving homeowners across the Greater Toronto Area & Southern Ontario with fast, trusted local repairs backed by warranty.
             </p>
 
-            <!-- Minimalist Trust Highlights Bar with Highlighted 1-Year Warranty Badge -->
+            <!-- Minimalist Trust Highlights Bar with Highlighted Repair with Warranty Badge -->
             <div class="flex flex-wrap items-center gap-2 sm:gap-2.5 text-xs sm:text-sm text-slate-700 font-semibold pt-1">
               <div class="inline-flex items-center gap-1.5 bg-slate-100/90 text-slate-800 px-3 py-1.5 rounded-full border border-slate-200/80 shadow-2xs">
                 <span class="text-amber-400 text-sm">★</span>
@@ -173,14 +173,14 @@ include 'head.php';
               </div>
               <div class="inline-flex items-center gap-1.5 bg-slate-100/90 text-slate-800 px-3 py-1.5 rounded-full border border-slate-200/80 shadow-2xs">
                 <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
-                <span>Free Service Call With Repair</span>
+                <span>Service Call Fee Waived with Repair</span>
               </div>
-              <!-- Highlighted 1-Year Warranty Shield Badge -->
+              <!-- Highlighted Repair with Warranty Shield Badge -->
               <div class="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-900 px-3.5 py-1.5 rounded-full border border-emerald-200/90 shadow-xs font-extrabold">
                 <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                 </svg>
-                <span>Up to 1-Year Warranty</span>
+                <span>Repair With Warranty</span>
                 <span class="text-[10px] bg-emerald-600 text-white font-extrabold px-1.5 py-0.5 rounded-md uppercase tracking-wider">Parts & Labor</span>
               </div>
             </div>
@@ -429,7 +429,7 @@ include 'head.php';
               </p>
             </div>
             <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-bold text-slate-700 flex items-center gap-1.5">
-              <span class="text-emerald-600">✓</span> $0 Call-Out With Repair
+              <span class="text-emerald-600">✓</span> Service Call Fee Waived with Repair
             </div>
           </div>
 
@@ -454,7 +454,7 @@ include 'head.php';
             </div>
           </div>
 
-          <!-- Feature 4: Written Guarantees -->
+          <!-- Feature 4: Written Warranty -->
           <div
             class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
             <div>
@@ -465,13 +465,13 @@ include 'head.php';
                   </path>
                 </svg>
               </div>
-              <h3 class="font-heading font-bold text-brandDarkBlue text-lg mb-2">Written Guarantees</h3>
+              <h3 class="font-heading font-bold text-brandDarkBlue text-lg mb-2">Written Warranty</h3>
               <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                Up to 1 year written warranty covering replacement OEM parts and technician labor.
+                Repairs backed by a written parts and labor warranty on completed services.
               </p>
             </div>
             <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-bold text-slate-700 flex items-center gap-1.5">
-              <span class="text-emerald-600">✓</span> 1-Year Coverage Available
+              <span class="text-emerald-600">✓</span> Repair With Warranty
             </div>
           </div>
 
@@ -729,7 +729,7 @@ include 'head.php';
             </div>
             <div
               class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-emerald-600 font-bold flex items-center gap-1">
-              <span>✓</span> Complete & Guaranteed
+              <span>✓</span> Complete &amp; Covered with Warranty
             </div>
           </div>
 
@@ -768,8 +768,8 @@ include 'head.php';
             </button>
             <div id="faq-1"
               class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-              We offer same-day service across Toronto and the GTA! When you call or submit an enquiry before 2:00 PM,
-              our technician can be at your home within 2 to 4 hours. Emergency appointments are also available 24/7.
+              We offer prompt same-day service across Toronto and the GTA based on daily schedule availability! When you call or submit an enquiry,
+              our technician coordinates directly with you to arrange a prompt visit and get your appliance back up and running.
             </div>
           </div>
 
@@ -783,7 +783,7 @@ include 'head.php';
             <div id="faq-2"
               class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
               We provide transparent upfront flat-rate pricing with zero hidden fees. The diagnostic service call fee is
-              100% <strong>FREE</strong> when you proceed with any appliance repair!
+              completely waived off when you proceed with any appliance repair!
             </div>
           </div>
 
@@ -796,7 +796,7 @@ include 'head.php';
             </button>
             <div id="faq-3"
               class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-              All repairs performed by Appliance Repair Knights come with up to a 1-year written warranty covering both replacement OEM parts and technician labor.
+              All completed repairs performed by Appliance Repair Knights include a written parts and labor warranty covering installed replacement OEM parts and technician labor.
             </div>
           </div>
 
@@ -827,7 +827,7 @@ include 'head.php';
             <span>Still Have Questions? Call <?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?></span>
           </a>
           <p class="text-xs text-slate-700 font-semibold flex items-center justify-center gap-2 flex-wrap">
-            <span>🛡️ $0 Service Call With Any Paid Repair</span>
+            <span>🛡️ Service Call Fee Waived With Repairs</span>
             <span class="text-slate-400">•</span>
             <span>⚡ Speak Directly With a Technician</span>
             <span class="text-slate-400">•</span>
@@ -863,26 +863,26 @@ include 'head.php';
             </h3>
 
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-y-3 gap-x-4 text-xs sm:text-sm text-slate-700 font-medium">
-              <a href="/locations/toronto-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Toronto</a>
-              <a href="/locations/mississauga-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Mississauga</a>
-              <a href="/locations/brampton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Brampton</a>
-              <a href="/locations/caledon-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Caledon</a>
-              <a href="/locations/vaughan-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Vaughan</a>
-              <a href="/locations/markham-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Markham</a>
-              <a href="/locations/oakville-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Oakville</a>
-              <a href="/locations/scarborough-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Scarborough</a>
-              <a href="/locations/richmond-hill-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Richmond Hill</a>
-              <a href="/locations/burlington-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Burlington</a>
-              <a href="/locations/milton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Milton</a>
-              <a href="/locations/hamilton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Hamilton</a>
-              <a href="/locations/kitchener-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Kitchener</a>
-              <a href="/locations/waterloo-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Waterloo</a>
-              <a href="/locations/cambridge-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Cambridge</a>
-              <a href="/locations/guelph-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Guelph</a>
-              <a href="/locations/barrie-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Barrie</a>
-              <a href="/locations/oshawa-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Oshawa</a>
-              <a href="/locations/ajax-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Ajax</a>
-              <a href="/locations/pickering-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Pickering</a>
+              <a href="<?php echo $base_url; ?>locations/toronto-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Toronto</a>
+              <a href="<?php echo $base_url; ?>locations/mississauga-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Mississauga</a>
+              <a href="<?php echo $base_url; ?>locations/brampton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Brampton</a>
+              <a href="<?php echo $base_url; ?>locations/caledon-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Caledon</a>
+              <a href="<?php echo $base_url; ?>locations/vaughan-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Vaughan</a>
+              <a href="<?php echo $base_url; ?>locations/markham-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Markham</a>
+              <a href="<?php echo $base_url; ?>locations/oakville-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Oakville</a>
+              <a href="<?php echo $base_url; ?>locations/scarborough-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Scarborough</a>
+              <a href="<?php echo $base_url; ?>locations/richmond-hill-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Richmond Hill</a>
+              <a href="<?php echo $base_url; ?>locations/burlington-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Burlington</a>
+              <a href="<?php echo $base_url; ?>locations/milton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Milton</a>
+              <a href="<?php echo $base_url; ?>locations/hamilton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Hamilton</a>
+              <a href="<?php echo $base_url; ?>locations/kitchener-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Kitchener</a>
+              <a href="<?php echo $base_url; ?>locations/waterloo-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Waterloo</a>
+              <a href="<?php echo $base_url; ?>locations/cambridge-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Cambridge</a>
+              <a href="<?php echo $base_url; ?>locations/guelph-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Guelph</a>
+              <a href="<?php echo $base_url; ?>locations/barrie-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Barrie</a>
+              <a href="<?php echo $base_url; ?>locations/oshawa-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Oshawa</a>
+              <a href="<?php echo $base_url; ?>locations/ajax-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Ajax</a>
+              <a href="<?php echo $base_url; ?>locations/pickering-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Pickering</a>
             </div>
 
             <div class="mt-6 pt-4 border-t border-slate-100">
@@ -902,7 +902,7 @@ include 'head.php';
                 Center</span>
               <h3 class="text-xl font-heading font-bold mb-2">Same-Day Tech Dispatch Across Ontario</h3>
               <p class="text-xs text-slate-300 max-w-md">
-                Our technicians are stationed across the GTA and surrounding regions to guarantee rapid arrival at your
+                We provide dedicated mobile dispatch across the GTA and surrounding regions to arrive promptly at your
                 doorstep.
               </p>
             </div>
@@ -927,6 +927,6 @@ include 'head.php';
   </main>
 
   <?php
-  $base_url = './';
+  $base_url = defined('BASE_URL') ? BASE_URL : './';
   include 'footer.php';
   ?>

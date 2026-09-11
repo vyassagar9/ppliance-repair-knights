@@ -20,4 +20,11 @@ if (!defined('BUSINESS_NAME')) {
     // Official Google Business Profile (GMB) Real Verified Reviews
     define('GMB_RATING_VALUE', '5.0');
     define('GMB_REVIEW_COUNT', '12');
+
+    // Dynamic Environment-Aware Base URL (Works across localhost subdirectories and production root)
+    $script_dir = dirname($_SERVER['SCRIPT_NAME'] ?? '');
+    $clean_dir = preg_replace('#/(locations|services|blog).*$#', '', $script_dir);
+    $root = ($clean_dir === '/' || $clean_dir === '\\' || $clean_dir === '.') ? '' : rtrim($clean_dir, '/');
+    define('SITE_ROOT', $root);
+    define('BASE_URL', $root . '/');
 }

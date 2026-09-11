@@ -15,6 +15,7 @@ return [
         'h1_title' => 'Professional Appliance Repair Services in Mississauga',
         'cta_text' => 'Book Mississauga Service',
         'badge_text' => 'SAME-DAY MISSISSAUGA SERVICE',
+        'card_desc' => 'Local appliance technicians helping Mississauga homeowners get essential kitchen and laundry appliances working again.',
         'intro_text' => 'Experiencing an appliance breakdown in Mississauga? Our team of licensed, background-checked technicians delivers same-day repair services across all Mississauga communities. From Square One to Port Credit, we restore your refrigerators, washers, dryers, and stoves quickly.',
         'postal_codes' => ['L4T', 'L4W', 'L4X', 'L4Z', 'L5A', 'L5B', 'L5C', 'L5E', 'L5G', 'L5H', 'L5J', 'L5K', 'L5L', 'L5M', 'L5N', 'L5R', 'L5V'],
         'neighborhoods' => ['Square One', 'Port Credit', 'Streetsville', 'Cooksville', 'Erin Mills', 'Lorne Park', 'Meadowvale', 'Malton', 'Clarkson', 'Churchill Meadows'],
@@ -30,23 +31,7 @@ return [
             ],
             [
                 'q' => 'What are your service call fees for Mississauga residents?',
-                'a' => 'Our service call fee ranges from $50 to $80 depending on the unit, and it is completely waived ($0) when you approve your repair quote.'
-            ]
-        ],
-        'reviews' => [
-            [
-                'author' => 'Sarah M.',
-                'location' => 'Port Credit, Mississauga',
-                'rating' => 5,
-                'date' => '2 days ago',
-                'text' => 'Our Samsung fridge stopped cooling unexpectedly. Appliance Repair Knights sent a technician to our Mississauga home within 2 hours. He replaced the defroster sensor on the spot. Excellent service!'
-            ],
-            [
-                'author' => 'David K.',
-                'location' => 'Square One, Mississauga',
-                'rating' => 5,
-                'date' => '1 week ago',
-                'text' => 'Honest pricing and great work! The technician diagnosed our LG washer error code quickly and waived the diagnostic fee once we approved the repair.'
+                'a' => 'Our diagnostic service call fee is completely waived off when you proceed with the repair. You only pay for technician labour and necessary replacement parts.'
             ]
         ]
     ],
@@ -60,6 +45,7 @@ return [
         'h1_title' => 'Trusted Appliance Repair Services in Brampton',
         'cta_text' => 'Call Brampton Tech',
         'badge_text' => 'SAME-DAY BRAMPTON SERVICE',
+        'card_desc' => 'From a noisy washer to a refrigerator that is not cooling, our technicians handle common appliance problems in Brampton homes.',
         'intro_text' => 'Is your refrigerator warming up or washer leaking in Brampton? Appliance Repair Knights provides prompt, reliable appliance repair services throughout Brampton and Peel Region. Equipped with OEM parts, our certified technicians arrive ready to solve your appliance issues in a single visit.',
         'postal_codes' => ['L6P', 'L6R', 'L6S', 'L6T', 'L6U', 'L6V', 'L6W', 'L6X', 'L6Y', 'L6Z', 'L7A'],
         'neighborhoods' => ['Bramalea', 'Heart Lake', 'Mount Pleasant', 'Brampton West', 'Fletcher’s Meadow', 'Springdale', 'Downtown Brampton', 'Snelgrove', 'Gore Meadows'],
@@ -67,31 +53,15 @@ return [
         'faqs' => [
             [
                 'q' => 'How quickly can a technician repair a fridge in Downtown Brampton?',
-                'a' => 'We maintain local dispatch technicians in Brampton and can usually reach your residence within 2 to 4 hours of your booking for emergency fridge repairs.'
+                'a' => 'We provide dedicated mobile dispatch across Brampton and can arrange prompt same-day service based on daily schedule availability to inspect and fix your fridge.'
             ],
             [
                 'q' => 'Are your Brampton appliance repairs backed by a warranty?',
-                'a' => 'Yes! All repairs completed by Appliance Repair Knights in Brampton include a comprehensive 90-day parts and labor warranty.'
+                'a' => 'Yes! All repairs completed by Appliance Repair Knights in Brampton include a written parts and labor warranty.'
             ],
             [
                 'q' => 'Do you fix both gas and electric stoves in Brampton?',
                 'a' => 'Absolutely. Our certified technicians are licensed to inspect and repair both electric cooktops/ovens and gas ranges safely.'
-            ]
-        ],
-        'reviews' => [
-            [
-                'author' => 'Rajesh P.',
-                'location' => 'Springdale, Brampton',
-                'rating' => 5,
-                'date' => '3 days ago',
-                'text' => 'Called in the morning when our Whirlpool dryer stopped heating. Tech arrived by 1 PM with the correct heating element. Super fast repair in Brampton!'
-            ],
-            [
-                'author' => 'Amanda L.',
-                'location' => 'Mount Pleasant, Brampton',
-                'rating' => 5,
-                'date' => '2 weeks ago',
-                'text' => 'Professional technician who explained the problem clearly. Saved us from buying a new dishwasher. 5 stars for Brampton service!'
             ]
         ]
     ],
@@ -105,6 +75,7 @@ return [
         'h1_title' => 'Same-Day Appliance Repair Services in Vaughan',
         'cta_text' => 'Schedule Repair in Vaughan',
         'badge_text' => 'SAME-DAY VAUGHAN SERVICE',
+        'card_desc' => 'Serving Vaughan homes with reliable repairs for everyday appliance problems, including laundry and kitchen equipment.',
         'intro_text' => 'Looking for top-rated appliance repair in Vaughan, Woodbridge, or Maple? Appliance Repair Knights brings expert technicians directly to your doorstep. We specialize in built-in refrigerators, high-end dishwashers, front-load washers, and modern ranges.',
         'postal_codes' => ['L4H', 'L4K', 'L4L', 'L6A'],
         'neighborhoods' => ['Woodbridge', 'Maple', 'Thornhill', 'Kleinburg', 'Vaughan Metropolitan Centre', 'Vellore Village', 'Patterson'],
@@ -118,27 +89,19 @@ return [
                 'q' => 'Is there an extra charge for weekend service calls in Vaughan?',
                 'a' => 'No! We operate 7 days a week from 8:00 AM to 9:00 PM with standard flat-rate pricing regardless of the day.'
             ]
-        ],
-        'reviews' => [
-            [
-                'author' => 'Marco V.',
-                'location' => 'Woodbridge, Vaughan',
-                'rating' => 5,
-                'date' => '4 days ago',
-                'text' => 'Fixed our Sub-Zero built-in refrigerator in Woodbridge. Very knowledgeable technician who had the exact part needed on his vehicle.'
-            ]
         ]
     ],
     'markham-appliance-repair' => [
         'slug' => 'markham-appliance-repair',
         'city_name' => 'Markham',
         'region' => 'York Region',
-        'meta_title' => 'Appliance Repair Markham | Fast 24/7 Service Guarantee',
+        'meta_title' => 'Appliance Repair Markham | Fast 24/7 Service & Warranty',
         'meta_description' => 'Dependable appliance repair in Markham, ON. All home appliances serviced with original spare parts and warranty. Call 905-717-8905.',
         'keywords' => 'appliance repair markham, markham appliance technician, Unionville fridge repair',
         'h1_title' => 'Dependable Appliance Repair Services in Markham',
         'cta_text' => 'Book Markham Tech',
         'badge_text' => 'SAME-DAY MARKHAM SERVICE',
+        'card_desc' => 'Convenient appliance service in Markham for refrigerators, washers, dryers, dishwashers and other household appliances.',
         'intro_text' => 'Appliance Repair Knights is your local choice for fast, honest appliance repair in Markham. Whether you reside in Unionville, Cornell, or Markham Village, our licensed repair specialists arrive promptly with transparent pricing.',
         'postal_codes' => ['L3P', 'L3R', 'L3S', 'L3T', 'L6B', 'L6C', 'L6E', 'L6G'],
         'neighborhoods' => ['Unionville', 'Markham Village', 'Cornell', 'Milliken', 'Thornlea', 'Cachet', 'Wismer', 'Greensborough'],
@@ -152,15 +115,6 @@ return [
                 'q' => 'How can I book a same-day repair appointment in Unionville, Markham?',
                 'a' => 'You can call us directly at 905-717-8905 or submit an online booking form 24/7 for quick scheduling.'
             ]
-        ],
-        'reviews' => [
-            [
-                'author' => 'Kevin C.',
-                'location' => 'Unionville, Markham',
-                'rating' => 5,
-                'date' => '5 days ago',
-                'text' => 'Great experience in Unionville! They fixed our Bosch dishwasher leak within an hour. Clean, polite, and very fair price.'
-            ]
         ]
     ],
     'oakville-appliance-repair' => [
@@ -173,7 +127,8 @@ return [
         'h1_title' => 'Top-Rated Appliance Repair Services in Oakville',
         'cta_text' => 'Call Oakville Tech',
         'badge_text' => 'SAME-DAY OAKVILLE SERVICE',
-        'intro_text' => 'Trust Oakville’s premier appliance repair experts for your home kitchen and laundry equipment. Servicing Old Oakville, Bronte, Glen Abbey, and River Oaks, Appliance Repair Knights ensures fast diagnosis and guaranteed repairs.',
+        'card_desc' => 'Professional appliance repair for Oakville homes, helping restore essential appliances without unnecessary hassle.',
+        'intro_text' => 'Trust Oakville’s premier appliance repair experts for your home kitchen and laundry equipment. Servicing Old Oakville, Bronte, Glen Abbey, and River Oaks, Appliance Repair Knights ensures fast diagnosis and warranty-backed repairs.',
         'postal_codes' => ['L6H', 'L6J', 'L6K', 'L6L', 'L6M'],
         'neighborhoods' => ['Old Oakville', 'Bronte', 'Glen Abbey', 'River Oaks', 'West Oak Trails', 'Iroquois Ridge', 'Falgarwood', 'Clearview'],
         'geo' => ['latitude' => 43.4675, 'longitude' => -79.6877],
@@ -184,16 +139,7 @@ return [
             ],
             [
                 'q' => 'What is your service call fee structure in Oakville?',
-                'a' => 'Our diagnostic fee is $50-$80, which is waived 100% ($0) if you choose to proceed with the repair.'
-            ]
-        ],
-        'reviews' => [
-            [
-                'author' => 'Jennifer T.',
-                'location' => 'Glen Abbey, Oakville',
-                'rating' => 5,
-                'date' => '1 week ago',
-                'text' => 'Extremely prompt service in Glen Abbey. The technician fixed our GE oven temperature sensor quickly. Very satisfied!'
+                'a' => 'Our diagnostic service call fee is completely waived off when you proceed with the repair. You only pay for technician labour and required replacement parts.'
             ]
         ]
     ],
@@ -207,6 +153,7 @@ return [
         'h1_title' => 'Fast Appliance Repair Services in Scarborough',
         'cta_text' => 'Schedule in Scarborough',
         'badge_text' => 'SAME-DAY SCARBOROUGH SERVICE',
+        'card_desc' => 'Dependable appliance repair for Scarborough homes, from everyday laundry problems to kitchen appliance issues.',
         'intro_text' => 'Facing an unexpected breakdown in Scarborough? From Agincourt to Scarborough Bluffs and Rouge, our local service team responds quickly to repair your refrigerator, dishwasher, oven, washer, or dryer.',
         'postal_codes' => ['M1B', 'M1C', 'M1E', 'M1G', 'M1H', 'M1J', 'M1K', 'M1L', 'M1M', 'M1N', 'M1P', 'M1R', 'M1S', 'M1T', 'M1V', 'M1W', 'M1X'],
         'neighborhoods' => ['Agincourt', 'Scarborough Town Centre', 'Guildwood', 'Rouge', 'Cliffside', 'Malvern', 'Woburn', 'Birchcliffe', 'Highland Creek'],
@@ -215,15 +162,6 @@ return [
             [
                 'q' => 'Can you repair my refrigerator on the same day in Agincourt, Scarborough?',
                 'a' => 'Yes, refrigerator cooling issues are high priority. We offer same-day appointments in Scarborough to save your food from spoiling.'
-            ]
-        ],
-        'reviews' => [
-            [
-                'author' => 'Devon B.',
-                'location' => 'Agincourt, Scarborough',
-                'rating' => 5,
-                'date' => '3 days ago',
-                'text' => 'Fast dispatch in Scarborough! Arrived on time and resolved our washer drain pump issue in under 45 minutes.'
             ]
         ]
     ],
@@ -237,6 +175,7 @@ return [
         'h1_title' => 'Expert Appliance Repair Services in Richmond Hill',
         'cta_text' => 'Book Richmond Hill Tech',
         'badge_text' => 'SAME-DAY RICHMOND HILL SERVICE',
+        'card_desc' => 'Local repair support for Richmond Hill homeowners dealing with faulty kitchen, laundry and other major appliances.',
         'intro_text' => 'Providing top-quality appliance repair across Richmond Hill, Bayview Hill, and Oak Ridges. Appliance Repair Knights offers friendly, certified technicians with fair upfront flat rates.',
         'postal_codes' => ['L4B', 'L4C', 'L4E', 'L4S'],
         'neighborhoods' => ['Bayview Hill', 'Oak Ridges', 'Jefferson', 'Langstaff', 'Mill Pond', 'Richmond Green', 'Crosby'],
@@ -245,15 +184,6 @@ return [
             [
                 'q' => 'Do you service electric dryers that are not heating in Richmond Hill?',
                 'a' => 'Yes, thermal fuses, heating elements, igniters, and thermostats are common stock items on our service vehicles.'
-            ]
-        ],
-        'reviews' => [
-            [
-                'author' => 'Helen S.',
-                'location' => 'Bayview Hill, Richmond Hill',
-                'rating' => 5,
-                'date' => '1 week ago',
-                'text' => 'Professional tech who fixed our Samsung fridge control board in Richmond Hill. Highly skilled and clean work.'
             ]
         ]
     ],
@@ -267,6 +197,7 @@ return [
         'h1_title' => 'Quality Appliance Repair Services in Burlington',
         'cta_text' => 'Call Burlington Tech',
         'badge_text' => 'SAME-DAY BURLINGTON SERVICE',
+        'card_desc' => 'Reliable service for Burlington homeowners when refrigerators, washers, dryers or other major appliances stop working properly.',
         'intro_text' => 'Keep your Burlington home running smoothly with Appliance Repair Knights. Serving Downtown Burlington, Alton Village, Millcroft, and Tyandaga, our team delivers high-quality appliance maintenance and emergency repair.',
         'postal_codes' => ['L7L', 'L7M', 'L7P', 'L7R', 'L7S', 'L7T'],
         'neighborhoods' => ['Downtown Burlington', 'Alton Village', 'Millcroft', 'Tyandaga', 'Aldershot', 'Palmer', 'Roseland', 'Mountainside'],
@@ -276,15 +207,6 @@ return [
                 'q' => 'What appliance brands do you service in Burlington?',
                 'a' => 'We repair Whirlpool, Maytag, LG, Samsung, GE, Bosch, Frigidaire, KitchenAid, JennAir, and Kenmore.'
             ]
-        ],
-        'reviews' => [
-            [
-                'author' => 'Robert C.',
-                'location' => 'Alton Village, Burlington',
-                'rating' => 5,
-                'date' => '4 days ago',
-                'text' => 'Awesome service in Alton Village. Tech diagnosed our noisy dryer bearing and replaced it right away. 10/10!'
-            ]
         ]
     ],
     'hamilton-appliance-repair' => [
@@ -292,12 +214,13 @@ return [
         'city_name' => 'Hamilton',
         'region' => 'Greater Hamilton Area',
         'meta_title' => 'Top Appliance Repair Hamilton | Fast & Affordable Service',
-        'meta_description' => 'Expert appliance repair across Hamilton & surrounding areas. Affordable pricing, certified technicians, and 90-day parts warranty.',
+        'meta_description' => 'Expert appliance repair across Hamilton & surrounding areas. Affordable pricing, certified technicians, and written parts & labor warranty.',
         'keywords' => 'appliance repair hamilton, hamilton appliance technician, Ancaster appliance repair',
         'h1_title' => 'Affordable Appliance Repair Services in Hamilton',
         'cta_text' => 'Book Hamilton Service',
         'badge_text' => 'SAME-DAY HAMILTON SERVICE',
-        'intro_text' => 'Dependable, low-cost appliance repair in Hamilton, Ancaster, Stoney Creek, and Dundas. Appliance Repair Knights delivers fast response times and solid 90-day warranties on all completed repairs.',
+        'card_desc' => 'Reliable appliance service for Hamilton homes, helping with breakdowns affecting essential kitchen and laundry appliances.',
+        'intro_text' => 'Dependable, low-cost appliance repair in Hamilton, Ancaster, Stoney Creek, and Dundas. Appliance Repair Knights delivers fast response times and written warranty coverage on all completed repairs.',
         'postal_codes' => ['L8E', 'L8G', 'L8H', 'L8K', 'L8L', 'L8M', 'L8N', 'L8P', 'L8R', 'L8S', 'L8T', 'L8V', 'L8W', 'L9A', 'L9B', 'L9C', 'L9H', 'L9K'],
         'neighborhoods' => ['Downtown Hamilton', 'Ancaster', 'Stoney Creek', 'Dundas', 'Mountain', 'Westdale', 'Hamilton East'],
         'geo' => ['latitude' => 43.2557, 'longitude' => -79.8711],
@@ -305,15 +228,6 @@ return [
             [
                 'q' => 'Do you service Ancaster and Stoney Creek in Hamilton?',
                 'a' => 'Yes, our Hamilton technician dispatch covers all of Hamilton Mountain, Ancaster, Dundas, and Stoney Creek.'
-            ]
-        ],
-        'reviews' => [
-            [
-                'author' => 'Jason H.',
-                'location' => 'Ancaster, Hamilton',
-                'rating' => 5,
-                'date' => '6 days ago',
-                'text' => 'Quick response in Ancaster when our stove burner failed. Upfront pricing and polite technician.'
             ]
         ]
     ],
@@ -327,6 +241,7 @@ return [
         'h1_title' => 'Professional Appliance Repair Services in Kitchener',
         'cta_text' => 'Call Kitchener Tech',
         'badge_text' => 'SAME-DAY KITCHENER SERVICE',
+        'card_desc' => 'Appliance repair for Kitchener homes, covering common issues with refrigerators, laundry appliances and kitchen equipment.',
         'intro_text' => 'Professional appliance repair in Kitchener and the Waterloo Region. We fix all major kitchen and laundry appliances with precision, using genuine factory replacement parts.',
         'postal_codes' => ['N2A', 'N2B', 'N2C', 'N2E', 'N2G', 'N2H', 'N2K', 'N2M', 'N2N', 'N2P', 'N2R'],
         'neighborhoods' => ['Downtown Kitchener', 'Doon', 'Forest Heights', 'Stanley Park', 'Huron Village', 'Chicopee', 'Pioneer Park'],
@@ -335,15 +250,6 @@ return [
             [
                 'q' => 'Do you service dishwashers that won’t drain or start in Kitchener?',
                 'a' => 'Yes, drain pumps, door latches, control boards, and water inlet valves are quickly repaired or replaced by our team.'
-            ]
-        ],
-        'reviews' => [
-            [
-                'author' => 'Emily R.',
-                'location' => 'Forest Heights, Kitchener',
-                'rating' => 5,
-                'date' => '5 days ago',
-                'text' => 'Great experience in Kitchener. Fixed our Maytag washer on the spot with zero hassle.'
             ]
         ]
     ],
@@ -357,6 +263,7 @@ return [
         'h1_title' => 'Trusted Local Appliance Repair Services in Waterloo',
         'cta_text' => 'Schedule in Waterloo',
         'badge_text' => 'SAME-DAY WATERLOO SERVICE',
+        'card_desc' => 'Keep your home running smoothly with appliance repair for everyday kitchen and laundry problems in Waterloo.',
         'intro_text' => 'Fast, courteous home appliance repair in Waterloo, ON. Servicing Beechwood, Laurelwood, Uptown Waterloo, and Lakeshore with zero hidden charges and clear upfront flat rates.',
         'postal_codes' => ['N2J', 'N2K', 'N2L', 'N2V'],
         'neighborhoods' => ['Uptown Waterloo', 'Beechwood', 'Laurelwood', 'Lakeshore', 'Colonial Acres', 'Westvale', 'Eastbridge'],
@@ -366,15 +273,6 @@ return [
                 'q' => 'Can I get a repair quote before the work begins in Waterloo?',
                 'a' => 'Yes! Our technician performs a diagnostic inspection and provides an exact flat-rate quote before any work starts.'
             ]
-        ],
-        'reviews' => [
-            [
-                'author' => 'Liam W.',
-                'location' => 'Beechwood, Waterloo',
-                'rating' => 5,
-                'date' => '1 week ago',
-                'text' => 'Punctual, professional, and friendly technician. Saved our food from spoiling when our fridge went down.'
-            ]
         ]
     ],
     'cambridge-appliance-repair' => [
@@ -382,11 +280,12 @@ return [
         'city_name' => 'Cambridge',
         'region' => 'Waterloo Region',
         'meta_title' => 'Appliance Repair Cambridge | Fast Emergency Repairs',
-        'meta_description' => 'Emergency appliance repair in Cambridge, ON. Servicing all major brands with 100% satisfaction guarantee. Call 905-717-8905.',
+        'meta_description' => 'Emergency appliance repair in Cambridge, ON. Servicing all major brands with reliable same-day service and warranty. Call 905-717-8905.',
         'keywords' => 'appliance repair cambridge, cambridge appliance repairman, Galt appliance fix',
         'h1_title' => 'Emergency Appliance Repair Services in Cambridge',
         'cta_text' => 'Call Cambridge Tech',
         'badge_text' => 'SAME-DAY CAMBRIDGE SERVICE',
+        'card_desc' => 'Serving Cambridge homeowners with dependable repairs for major household appliances, from washers and dryers to kitchen equipment.',
         'intro_text' => 'Need quick appliance repair in Cambridge, Hespeler, Galt, or Preston? Appliance Repair Knights delivers dependable same-day appliance repair solutions across Cambridge, ON.',
         'postal_codes' => ['N1P', 'N1R', 'N1S', 'N1T', 'N3C', 'N3H'],
         'neighborhoods' => ['Galt', 'Hespeler', 'Preston', 'Blair', 'Hespeler Heights', 'Silver Heights'],
@@ -395,15 +294,6 @@ return [
             [
                 'q' => 'Are your Cambridge technicians licensed and insured?',
                 'a' => 'Yes, all our service technicians are fully licensed, factory-trained, and insured for your peace of mind.'
-            ]
-        ],
-        'reviews' => [
-            [
-                'author' => 'Sandra P.',
-                'location' => 'Galt, Cambridge',
-                'rating' => 5,
-                'date' => '3 days ago',
-                'text' => 'Quick repair in Galt! Diagnostic fee was waived upon repair. Very satisfied with the outcome.'
             ]
         ]
     ],
@@ -417,23 +307,15 @@ return [
         'h1_title' => 'Certified Appliance Repair Services in Guelph',
         'cta_text' => 'Book Guelph Service',
         'badge_text' => 'SAME-DAY GUELPH SERVICE',
+        'card_desc' => 'Local appliance repair for Guelph households, with service for common refrigerator, laundry and kitchen appliance problems.',
         'intro_text' => 'Top-rated household appliance repair in Guelph and surrounding Wellington County. From South End to Exhibition Park and Kortright, we repair refrigerators, stoves, washers, and dryers.',
         'postal_codes' => ['N1C', 'N1E', 'N1G', 'N1H', 'N1K', 'N1L'],
         'neighborhoods' => ['Downtown Guelph', 'South End', 'Kortright Hills', 'Exhibition Park', 'Grange Hill', 'Willow West'],
         'geo' => ['latitude' => 43.5448, 'longitude' => -80.2482],
         'faqs' => [
             [
-                'q' => 'How do I qualify for the $15 OFF repair discount in Guelph?',
-                'a' => 'Simply mention our online promotional discount or book your appointment online to receive $15 off any completed repair service.'
-            ]
-        ],
-        'reviews' => [
-            [
-                'author' => 'Derek S.',
-                'location' => 'South End, Guelph',
-                'rating' => 5,
-                'date' => '4 days ago',
-                'text' => 'Excellent service in Guelph. Technician was polite and replaced our broken oven element fast.'
+                'q' => 'How does your service call fee work for Guelph residents?',
+                'a' => 'Our diagnostic service call fee is completely waived off when you proceed with the repair. You only pay for the required replacement parts and technician labour.'
             ]
         ]
     ],
@@ -447,6 +329,7 @@ return [
         'h1_title' => 'Prompt Appliance Repair Services in Pickering',
         'cta_text' => 'Call Pickering Tech',
         'badge_text' => 'SAME-DAY PICKERING SERVICE',
+        'card_desc' => 'Helping Pickering homeowners with dependable repairs for refrigerators, laundry appliances and other major household equipment.',
         'intro_text' => 'Facing a broken refrigerator, non-draining washer, or cold oven in Pickering? Our licensed local technicians provide fast, reliable, same-day repairs across Pickering and Durham Region.',
         'postal_codes' => ['L1V', 'L1W', 'L1X', 'L1Y', 'L1Z'],
         'neighborhoods' => ['Dunbarton', 'Amberlea', 'West Shore', 'Bay Ridges', 'Rougemount', 'Liverpool', 'Highbush'],
@@ -460,27 +343,19 @@ return [
                 'q' => 'Which appliance brands do you service in Pickering?',
                 'a' => 'We repair all major home appliance brands, including Whirlpool, LG, Samsung, Bosch, GE, Maytag, KitchenAid, Frigidaire, Kenmore, Miele, Sub-Zero, and Viking.'
             ]
-        ],
-        'reviews' => [
-            [
-                'author' => 'Chris M.',
-                'location' => 'Bay Ridges, Pickering',
-                'rating' => 5,
-                'date' => '2 days ago',
-                'text' => 'Same day service in Pickering! The tech arrived with the right washer water valve and fixed it in 30 minutes.'
-            ]
         ]
     ],
     'caledon-appliance-repair' => [
         'slug' => 'caledon-appliance-repair',
         'city_name' => 'Caledon',
         'region' => 'Peel Region',
-        'meta_title' => 'Appliance Repair Caledon | Same-Day Service Guarantee',
+        'meta_title' => 'Appliance Repair Caledon | Same-Day Service & Warranty',
         'meta_description' => 'Local appliance repair services in Caledon, ON. Fast troubleshooting and fix for all household appliances. Call 905-717-8905.',
         'keywords' => 'appliance repair caledon, caledon fridge repair, Bolton appliance repair',
         'h1_title' => 'Local Appliance Repair Services in Caledon',
         'cta_text' => 'Schedule in Caledon',
         'badge_text' => 'SAME-DAY CALEDON SERVICE',
+        'card_desc' => 'Appliance repair for Caledon households, with practical service for major kitchen and laundry appliances.',
         'intro_text' => 'Quality home appliance repair across Bolton, Caledon East, and Palgrave. Appliance Repair Knights brings fast diagnostic and repair services to homeowners throughout Caledon.',
         'postal_codes' => ['L7C', 'L7E', 'L7K'],
         'neighborhoods' => ['Bolton', 'Caledon East', 'Palgrave', 'Caledon Village', 'Inglewood', 'Alton'],
@@ -489,15 +364,6 @@ return [
             [
                 'q' => 'Do you service rural Caledon addresses and Bolton?',
                 'a' => 'Yes, our technicians cover all areas of Caledon, including Bolton, Palgrave, and surrounding rural properties.'
-            ]
-        ],
-        'reviews' => [
-            [
-                'author' => 'Gary B.',
-                'location' => 'Bolton, Caledon',
-                'rating' => 5,
-                'date' => '5 days ago',
-                'text' => 'Very reliable service in Bolton. Tech was polite and got our freezer working again quickly.'
             ]
         ]
     ],
@@ -511,7 +377,8 @@ return [
         'h1_title' => 'Expert Appliance Repair Services in Oshawa',
         'cta_text' => 'Call Oshawa Tech',
         'badge_text' => 'SAME-DAY OSHAWA SERVICE',
-        'intro_text' => 'Experienced appliance repair in Oshawa and Durham Region. Servicing North Oshawa, Windfields, Lakeview, and Pinecrest with honest pricing and guaranteed work.',
+        'card_desc' => 'Practical appliance repair for Oshawa homes, covering everyday problems with kitchen and laundry appliances.',
+        'intro_text' => 'Experienced appliance repair in Oshawa and Durham Region. Servicing North Oshawa, Windfields, Lakeview, and Pinecrest with honest pricing and warranty-backed work.',
         'postal_codes' => ['L1G', 'L1H', 'L1J', 'L1K', 'L1L'],
         'neighborhoods' => ['North Oshawa', 'Windfields', 'Lakeview', 'Pinecrest', 'Eastdale', 'Vanier', 'McLaughlin'],
         'geo' => ['latitude' => 43.8971, 'longitude' => -78.8658],
@@ -520,51 +387,27 @@ return [
                 'q' => 'Do you service both kitchen and laundry appliances in Oshawa?',
                 'a' => 'Yes, we repair refrigerators, freezers, dishwashers, ranges, ovens, washing machines, and clothes dryers in Oshawa.'
             ]
-        ],
-        'reviews' => [
-            [
-                'author' => 'Nathan K.',
-                'location' => 'North Oshawa',
-                'rating' => 5,
-                'date' => '3 days ago',
-                'text' => 'Top-notch repair in North Oshawa. Fast, transparent pricing, and quality workmanship.'
-            ]
         ]
     ],
     'toronto-appliance-repair' => [
         'slug' => 'toronto-appliance-repair',
         'city_name' => 'Toronto',
-        'region' => 'Greater Toronto Area',
+        'region' => 'City of Toronto',
         'meta_title' => 'Appliance Repair Toronto | Certified Local Technicians',
         'meta_description' => 'Fast same-day appliance repair across Toronto & GTA. Certified local technicians for refrigerators, washers, dryers, and stoves. Call 905-717-8905.',
         'keywords' => 'appliance repair toronto, gta appliance repair technician, North York appliance fix',
         'h1_title' => 'Fast & Reliable Appliance Repair Services in Toronto',
         'cta_text' => 'Book Toronto Service',
         'badge_text' => 'SAME-DAY TORONTO & GTA SERVICE',
-        'intro_text' => 'Toronto’s trusted appliance repair specialists. Serving Downtown Toronto, Etobicoke, North York, East York, and Scarborough with same-day emergency repair options, flat-rate pricing, and 90-day warranties.',
-        'postal_codes' => ['M4B', 'M4C', 'M4E', 'M4G', 'M4H', 'M4J', 'M4K', 'M4L', 'M4M', 'M4N', 'M4P', 'M4R', 'M4S', 'M4T', 'M4V', 'M4W', 'M4X', 'M4Y', 'M5A', 'M5B', 'M5C', 'M5E', 'M5G', 'M5H', 'M5J', 'M5K', 'M5L', 'M5M', 'M5N', 'M5P', 'M5R', 'M5S', 'M5T', 'M5V', 'M5W', 'M5X', 'M6A', 'M6B', 'M6C', 'M6E', 'M6G', 'M6H', 'M6J', 'M6K', 'M6L', 'M6M', 'M6N', 'M6P', 'M6R', 'M6S'],
+        'card_desc' => 'Get professional appliance service across Toronto for refrigerators, washers, dryers, ovens and other major appliances.',
+        'intro_text' => 'Toronto’s trusted appliance repair specialists. Serving Downtown Toronto, Etobicoke, North York, East York, and Scarborough with same-day emergency repair options, flat-rate pricing, and written parts and labor warranties.',
+        'postal_codes' => ['M5V', 'M5A', 'M5R', 'M5S', 'M5J', 'M5B', 'M4P', 'M4Y', 'M4E', 'M4K', 'M4C', 'M4N', 'M6P', 'M6R', 'M6S', 'M6J', 'M2N', 'M8X'],
         'neighborhoods' => ['Downtown Toronto', 'Etobicoke', 'North York', 'East York', 'Scarborough', 'High Park', 'Yonge & Eglinton', 'The Beaches', 'Leslieville', 'Liberty Village'],
         'geo' => ['latitude' => 43.6532, 'longitude' => -79.3832],
         'faqs' => [
             [
                 'q' => 'Do you serve condo apartments in Downtown Toronto?',
                 'a' => 'Yes! Our technicians carry compact service kits and know how to work smoothly with condo security and visitor parking.'
-            ]
-        ],
-        'reviews' => [
-            [
-                'author' => 'Alexander B.',
-                'location' => 'Downtown Toronto',
-                'rating' => 5,
-                'date' => '2 days ago',
-                'text' => 'Living in a Downtown Toronto condo, quick service can be tough. Appliance Repair Knights arrived on time, respected condo rules, and fixed our washer perfectly!'
-            ],
-            [
-                'author' => 'Sophia G.',
-                'location' => 'North York, Toronto',
-                'rating' => 5,
-                'date' => '1 week ago',
-                'text' => 'Outstanding service! Replaced the heating element in our GE oven. Reasonable flat rate and 90-day warranty.'
             ]
         ]
     ],
@@ -578,6 +421,7 @@ return [
         'h1_title' => 'Fast & Reliable Appliance Repair Services in Milton',
         'cta_text' => 'Book Milton Service',
         'badge_text' => 'SAME-DAY MILTON SERVICE',
+        'card_desc' => 'Appliance repair throughout Milton for common kitchen and laundry appliance issues, with convenient local service.',
         'intro_text' => 'Need dependable appliance repair in Milton? Appliance Repair Knights delivers prompt, expert repairs across all Milton neighborhoods including Dempsey, Clarke, Coates, Beaty, and Harrison. Our licensed technicians arrive equipped with OEM parts to fix your appliances quickly.',
         'postal_codes' => ['L9E', 'L9T'],
         'neighborhoods' => ['Dempsey', 'Clarke', 'Coates', 'Beaty', 'Harrison', 'Scott', 'Willmott', 'Timberlea', 'Old Milton'],
@@ -591,15 +435,6 @@ return [
                 'q' => 'What appliance brands do you repair in Milton?',
                 'a' => 'We service all major brands including Samsung, LG, Whirlpool, Bosch, GE, KitchenAid, Frigidaire, and Maytag.'
             ]
-        ],
-        'reviews' => [
-            [
-                'author' => 'Brian T.',
-                'location' => 'Clarke, Milton',
-                'rating' => 5,
-                'date' => '4 days ago',
-                'text' => 'Our dryer stopped heating on a busy weekend. The technician was in Milton within a couple hours, diagnosed the heating element, and replaced it right away.'
-            ]
         ]
     ],
     'barrie-appliance-repair' => [
@@ -612,7 +447,8 @@ return [
         'h1_title' => 'Trusted Appliance Repair Services in Barrie',
         'cta_text' => 'Book Barrie Service',
         'badge_text' => 'SAME-DAY BARRIE SERVICE',
-        'intro_text' => 'Looking for experienced appliance repair specialists in Barrie? Appliance Repair Knights provides fast, reliable, and guaranteed repairs across Barrie and Simcoe County. From South End to Downtown Barrie, our licensed technicians get your appliances running smoothly again.',
+        'card_desc' => 'Appliance repair for Barrie homes when essential kitchen or laundry appliances need a professional diagnosis and repair.',
+        'intro_text' => 'Looking for experienced appliance repair specialists in Barrie? Appliance Repair Knights provides fast, reliable, and warranty-backed repairs across Barrie and Simcoe County. From South End to Downtown Barrie, our licensed technicians get your appliances running smoothly again.',
         'postal_codes' => ['L4M', 'L4N', 'L9J'],
         'neighborhoods' => ['Downtown Barrie', 'South End', 'Holly', 'Painswick', 'Allandale', 'East Bayfield', 'Letitia Heights', 'Ardagh Bluffs'],
         'geo' => ['latitude' => 44.3894, 'longitude' => -79.6903],
@@ -623,16 +459,7 @@ return [
             ],
             [
                 'q' => 'Are parts and labor covered under warranty in Barrie?',
-                'a' => 'Every appliance repair completed in Barrie comes with a comprehensive 90-day parts and labor guarantee.'
-            ]
-        ],
-        'reviews' => [
-            [
-                'author' => 'Karen W.',
-                'location' => 'South End, Barrie',
-                'rating' => 5,
-                'date' => '1 week ago',
-                'text' => 'Called for an urgent dishwasher leak in South Barrie. The tech arrived quickly, pinpointed the cracked pump hose, and repaired it on the spot. Great service!'
+                'a' => 'Every appliance repair completed in Barrie comes with our written parts and labor warranty.'
             ]
         ]
     ],
@@ -646,7 +473,8 @@ return [
         'h1_title' => 'Fast & Reliable Appliance Repair Services in Ajax',
         'cta_text' => 'Book Ajax Service',
         'badge_text' => 'SAME-DAY AJAX SERVICE',
-        'intro_text' => 'Need quick appliance repair in Ajax? Appliance Repair Knights provides same-day residential repairs across Ajax and Durham Region. We service South Ajax, Central Ajax, Pickering Village, and surrounding neighborhoods with guaranteed workmanship and fair pricing.',
+        'card_desc' => 'Local appliance service for Ajax homeowners when a refrigerator, washer, dryer or other major appliance needs attention.',
+        'intro_text' => 'Need quick appliance repair in Ajax? Appliance Repair Knights provides same-day residential repairs across Ajax and Durham Region. We service South Ajax, Central Ajax, Pickering Village, and surrounding neighborhoods with reliable workmanship, warranty coverage, and fair pricing.',
         'postal_codes' => ['L1S', 'L1T', 'L1Z'],
         'neighborhoods' => ['South Ajax', 'Central Ajax', 'Pickering Village', 'Audley', 'Discovery Bay', 'Deer Park', 'Midtown Ajax'],
         'geo' => ['latitude' => 43.8509, 'longitude' => -79.0204],
@@ -657,16 +485,7 @@ return [
             ],
             [
                 'q' => 'How much does an appliance repair service call cost in Ajax?',
-                'a' => 'Our diagnostic service call fee is completely waived ($0) when you approve the repair estimate provided by our technician.'
-            ]
-        ],
-        'reviews' => [
-            [
-                'author' => 'Derek S.',
-                'location' => 'Central Ajax',
-                'rating' => 5,
-                'date' => '3 days ago',
-                'text' => 'Prompt and courteous technician who fixed our washer drain issue within an hour. Clear pricing with no surprise charges. Highly recommended in Ajax!'
+                'a' => 'Our diagnostic service call fee is completely waived off when you proceed with the repair. You only pay for technician labour and required replacement parts.'
             ]
         ]
     ]

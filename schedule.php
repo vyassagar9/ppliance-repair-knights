@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/config.php';
-$base_url = './';
+$base_url = defined('BASE_URL') ? BASE_URL : './';
 $page_title = 'Schedule Appliance Repair Online | Appliance Repair Knights';
 $page_description = 'Book your appliance repair appointment online in under 60 seconds. Choose your date & time slot. 24/7 fast service across GTA. Book now!';
 $page_keywords = 'book appliance repair online, schedule repair service';
@@ -79,7 +79,7 @@ include 'head.php';
 <body class="bg-lightbg text-secondary font-body min-h-screen flex flex-col">
 
 <?php 
-$base_url = './';
+$base_url = defined('BASE_URL') ? BASE_URL : './';
 $current_page = 'schedule';
 include 'header.php'; 
 ?>
@@ -242,8 +242,8 @@ include 'header.php';
             <li class="flex items-start gap-3 text-xs text-slate-600">
               <svg class="w-5 h-5 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
               <div>
-                <span class="font-bold text-primary block">No Call-Out Fee With Repair</span>
-                If we complete the repair, the diagnostic and call-out fee is completely waived.
+                <span class="font-bold text-primary block">Service Call Fee Waived with Repair</span>
+                If we complete the repair, the diagnostic service call fee is completely waived off.
               </div>
             </li>
             <li class="flex items-start gap-3 text-xs text-slate-600">
@@ -273,7 +273,7 @@ include 'header.php';
   </main>
 
 <?php 
-$base_url = './';
+$base_url = defined('BASE_URL') ? BASE_URL : './';
 include 'footer.php'; 
 ?>
 
@@ -347,7 +347,7 @@ include 'footer.php';
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               </div>
               <h3 class="text-xl font-heading font-bold text-emerald-900">Repair Appointment Requested!</h3>
-              <p class="text-xs text-emerald-800">Thank you, <strong>${fname}</strong>! A dispatcher will call <strong>${phone}</strong> within 15 minutes to confirm your technician visit on ${date}.</p>
+              <p class="text-xs text-emerald-800">Thank you, <strong>${fname}</strong>! Our technician will call <strong>${phone}</strong> promptly to confirm your visit on ${date}.</p>
               <a href="tel:9057178905" class="gtm-web-call inline-block bg-brandDarkBlue text-white text-xs font-bold py-2 px-4 rounded-lg mt-2">Call Dispatch: 905-717-8905</a>
             </div>
           `;

@@ -97,6 +97,7 @@ $base_url = isset($base_url) ? $base_url : '';
         <div>
           <h4 class="font-heading font-bold text-white uppercase tracking-wider text-xs mb-3">SERVICE AREAS</h4>
           <ul class="space-y-1.5 text-slate-400 text-xs">
+            <li><a href="<?php echo $base_url; ?>locations" class="text-brandOrange font-bold hover:text-white transition-colors flex items-center gap-1"><span>All 20+ Service Areas</span> &rarr;</a></li>
             <li><a href="<?php echo $base_url; ?>locations/toronto-appliance-repair" class="hover:text-white transition-colors">Toronto Repair</a></li>
             <li><a href="<?php echo $base_url; ?>locations/mississauga-appliance-repair" class="hover:text-white transition-colors">Mississauga Repair</a></li>
             <li><a href="<?php echo $base_url; ?>locations/brampton-appliance-repair" class="hover:text-white transition-colors">Brampton Repair</a></li>

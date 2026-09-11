@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en-CA" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://www.appliancerepairknights.com/same-day-repair/">
+
+  <title>Same-Day Appliance Repair in GTA | Call 905-717-8905</title>
+  <meta name="description" content="Fast, reliable same-day appliance repair across Toronto & GTA. Refrigerator, washer, dryer, dishwasher & oven repair. Free diagnostic with repair. Call 905-717-8905 now!">
+
+  <!-- Preconnect & DNS-Prefetch for High-Priority External Assets -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-M7B6FLPR');</script>
+
+  <!-- Google Fonts: Rubik + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Rubik:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="../css/fonts.min.css">
+  <link rel="stylesheet" href="../css/tailwind.min.css">
+  <link rel="stylesheet" href="../css/style.min.css">
+
+  <style>
+    :root {
+      --font-heading: 'Rubik', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --primary: #0F4C81;
+      --primary-dark: #0A3256;
+      --accent: #EA580C;
+      --accent-hover: #C2410C;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: #F8FAFC;
+      color: #0F172A;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    h1, h2, h3, h4, .font-heading {
+      font-family: var(--font-heading);
+    }
+
+    /* Gradient Backgrounds */
+    .hero-gradient {
+      background: radial-gradient(circle at top right, #1E3A8A 0%, #0F4C81 40%, #082847 100%);
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+    }
+
+    .glass-dark {
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    /* Vibrant Pulsing Call Button */
+    @keyframes pulse-ring {
+      0% {
+        box-shadow: 0 0 0 0 rgba(234, 88, 12, 0.7), 0 10px 25px -5px rgba(234, 88, 12, 0.5);
+      }
+      70% {
+        box-shadow: 0 0 0 16px rgba(234, 88, 12, 0), 0 10px 25px -5px rgba(234, 88, 12, 0.5);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(234, 88, 12, 0), 0 10px 25px -5px rgba(234, 88, 12, 0.5);
+      }
+    }
+
+    .pulse-call {
+      animation: pulse-ring 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    /* Live Beacon Glow */
+    @keyframes live-glow {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.15); }
+    }
+    .live-dot {
+      animation: live-glow 1.8s ease-in-out infinite;
+    }
+
+    /* Ticker animation */
+    @keyframes scroll-ticker {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-ticker {
+      display: inline-flex;
+      animation: scroll-ticker 25s linear infinite;
+      white-space: nowrap;
+    }
+    .animate-ticker:hover {
+      animation-play-state: paused;
+    }
+
+    /* Appliance Selector Cards */
+    .appliance-chip {
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .appliance-chip:hover, .appliance-chip.active {
+      border-color: #EA580C;
+      background-color: #FFF7ED;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px -5px rgba(234, 88, 12, 0.15);
+    }
+
+    /* Review Slider */
+    #review-track {
+      display: flex;
+      transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    /* FAQ accordion */
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+    }
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+      transition: max-height 0.4s ease-in-out;
+    }
+    .faq-item.active .faq-icon {
+      transform: rotate(180deg);
+    }
+
+    /* Smooth scroll margin */
+    section {
+      scroll-margin-top: 80px;
+    }
+  </style>
+</head>
+
+<body class="selection:bg-brandOrange selection:text-white pb-24 md:pb-0">
+
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <!-- TOP URGENCY TICKER (PPC Urgency Driver)                       -->
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <div class="bg-gradient-to-r from-brandOrange via-orange-600 to-brandOrange text-white py-2 overflow-hidden shadow-inner select-none">
+    <div class="animate-ticker text-[11px] sm:text-xs font-black tracking-wider uppercase flex items-center gap-10">
+      <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-300"></span> SAME-DAY REPAIRS ACROSS GTA</span>
+      <span>•</span>
+      <span class="flex items-center gap-1.5">⚡ $0 DIAGNOSTIC FEE WITH COMPLETED REPAIR</span>
+      <span>•</span>
+      <span class="flex items-center gap-1.5">🛡️ 90-DAY PARTS & LABOR WARRANTY</span>
+      <span>•</span>
+      <span class="flex items-center gap-1.5">👨‍🔧 LICENSED & INSURED TECHNICIANS</span>
+      <span>•</span>
+      <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-300"></span> SAME-DAY REPAIRS ACROSS GTA</span>
+      <span>•</span>
+      <span class="flex items-center gap-1.5">⚡ $0 DIAGNOSTIC FEE WITH COMPLETED REPAIR</span>
+      <span>•</span>
+      <span class="flex items-center gap-1.5">🛡️ 90-DAY PARTS & LABOR WARRANTY</span>
+      <span>•</span>
+      <span class="flex items-center gap-1.5">👨‍🔧 LICENSED & INSURED TECHNICIANS</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <!-- HEADER: NO LEAK NAVIGATION - PURE CALL CONVERSION              -->
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo -->
+      <a href="tel:9057178905" class="flex items-center gap-2 group cursor-pointer" aria-label="Appliance Repair Knights Home">
+        <img src="../img/logo.webp" alt="Appliance Repair Knights" class="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-105" width="160" height="48">
+      </a>
+
+      <!-- Live Technician Indicator (Desktop/Tablet) -->
+      <div class="hidden md:flex items-center gap-2 bg-emerald-50 text-emerald-800 border border-emerald-200 px-3.5 py-1.5 rounded-full text-xs font-bold shadow-2xs">
+        <span class="relative flex h-2.5 w-2.5">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+        </span>
+        <span>Techs on Duty in GTA • Arriving in 2-4 Hours</span>
+      </div>
+
+      <!-- Top Primary Call Button -->
+      <div class="flex items-center gap-2">
+        <a href="tel:9057178905"
+           onclick="if(typeof gtag!=='undefined'){gtag('event','call_click',{event_category:'top_header'});}"
+           class="gtm-web-call pulse-call flex items-center gap-2 bg-brandOrange hover:bg-orange-600 text-white font-extrabold px-4 sm:px-6 py-2.5 rounded-xl text-sm sm:text-base shadow-md transition-all transform active:scale-95 cursor-pointer">
+          <svg class="w-4 h-4 sm:w-5 sm:h-5 fill-current animate-bounce" viewBox="0 0 20 20">
+            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+          </svg>
+          <span class="tracking-tight">905-717-8905</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <!-- HERO SECTION: IMPACTFUL, HIGH-CONVERTING & MOBILE-FIRST        -->
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <section class="hero-gradient text-white relative pt-8 pb-14 sm:pt-14 sm:pb-20 px-4 sm:px-6 overflow-hidden">
+    
+    <!-- Background subtle ambient lights -->
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-brandOrange/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/2 -right-40 w-96 h-96 bg-blue-400/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-6xl mx-auto relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        
+        <!-- Left: Hero Copy & Direct Conversion Hooks (7 Cols) -->
+        <div class="lg:col-span-7 text-center lg:text-left">
+          
+          <!-- Google Rating Pill + Verified Status -->
+          <div class="inline-flex items-center gap-2 glass-dark px-3.5 py-1.5 rounded-full mb-5 shadow-lg border border-white/15">
+            <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24">
+              <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.65v3.03h3.88c2.27-2.09 3.665-5.17 3.665-9.12z"/>
+              <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.03c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.13C3.26 21.37 7.34 24 12 24z"/>
+              <path fill="#FBBC05" d="M5.28 14.29c-.25-.72-.38-1.49-.38-2.29s.13-1.57.38-2.29V6.58H1.25C.45 8.18 0 9.98 0 12s.45 3.82 1.25 5.42l4.03-3.13z"/>
+              <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.34 0 3.26 2.63 1.25 6.58l4.03 3.13c.95-2.83 3.6-4.96 6.72-4.96z"/>
+            </svg>
+            <div class="flex text-amber-400 text-xs tracking-tighter">★★★★★</div>
+            <span class="text-xs font-bold text-slate-100">5.0 (12 Verified GTA Reviews)</span>
+          </div>
+
+          <!-- Main Bold Urgency Headline -->
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-black leading-tight tracking-tight mb-4">
+            Broken Appliance?<br class="hidden sm:block">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-orange-400 to-brandOrange">
+              Fixed Today In 1 Visit.
+            </span>
+          </h1>
+
+          <!-- Value Subhead -->
+          <p class="text-slate-200 text-sm sm:text-base md:text-lg mb-7 max-w-xl mx-auto lg:mx-0 font-medium leading-relaxed">
+            Fast emergency repair across Toronto & the entire GTA. Licensed technicians with fully-stocked trucks ready to dispatch now.
+          </p>
+
+          <!-- 3 Quick Value Bullets -->
+          <div class="grid grid-cols-3 gap-2 sm:gap-3 max-w-md mx-auto lg:mx-0 mb-8 text-left">
+            <div class="bg-white/10 backdrop-blur-xs rounded-xl p-2.5 border border-white/10 text-center">
+              <span class="block text-brandOrange font-black text-base sm:text-lg">$0</span>
+              <span class="text-[11px] text-slate-200 font-semibold leading-tight block">Diag. With Repair</span>
+            </div>
+            <div class="bg-white/10 backdrop-blur-xs rounded-xl p-2.5 border border-white/10 text-center">
+              <span class="block text-amber-300 font-black text-base sm:text-lg">2-4 Hrs</span>
+              <span class="text-[11px] text-slate-200 font-semibold leading-tight block">Same-Day Arrival</span>
+            </div>
+            <div class="bg-white/10 backdrop-blur-xs rounded-xl p-2.5 border border-white/10 text-center">
+              <span class="block text-emerald-400 font-black text-base sm:text-lg">90 Days</span>
+              <span class="text-[11px] text-slate-200 font-semibold leading-tight block">Parts & Labor Guar.</span>
+            </div>
+          </div>
+
+          <!-- Giant Main Hero CTA Button -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="tel:9057178905"
+               onclick="if(typeof gtag!=='undefined'){gtag('event','call_click',{event_category:'hero_giant_btn'});}"
+               class="gtm-web-call pulse-call w-full sm:w-auto bg-gradient-to-r from-brandOrange to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-black text-lg sm:text-xl px-8 py-4 sm:py-5 rounded-2xl shadow-xl flex items-center justify-center gap-3 transition-all transform active:scale-95 cursor-pointer">
+              <svg class="w-6 h-6 sm:w-7 sm:h-7 fill-current flex-shrink-0" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+              </svg>
+              <div class="text-left">
+                <div class="text-xs uppercase tracking-wider text-orange-200 font-bold leading-none">Tap For Immediate Help</div>
+                <div class="text-xl sm:text-2xl font-black leading-tight">CALL 905-717-8905</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Safety & No Hidden Cost Reassurance -->
+          <p class="text-xs text-slate-300 font-medium mt-3 flex items-center justify-center lg:justify-start gap-2">
+            <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+            Upfront price quote approved before any work begins.
+          </p>
+
+        </div>
+
+        <!-- Right: Eye-Catching Visual Card (5 Cols) -->
+        <div class="lg:col-span-5 relative mt-4 lg:mt-0">
+          <div class="relative mx-auto max-w-sm sm:max-w-md">
+            
+            <!-- Main Hero Image Frame -->
+            <div class="relative rounded-3xl overflow-hidden border-4 border-white/20 shadow-2xl bg-slate-900 aspect-4/3 sm:aspect-square">
+              <img src="../img/appliance-repair-technician-toronto.webp" alt="Appliance Repair Technician in Toronto" title="Appliance Repair Technician in Toronto" class="w-full h-full object-cover object-center" width="500" height="500" loading="eager" decoding="async">
+              
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+
+              <!-- Live Badge Floating on Image -->
+              <div class="absolute top-4 left-4 glass-dark rounded-xl px-3 py-1.5 flex items-center gap-2 border border-white/20 shadow-md">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 live-dot"></span>
+                <span class="text-xs font-bold text-white">Live Dispatched in GTA</span>
+              </div>
+
+              <!-- Bottom Image Highlight Bar -->
+              <div class="absolute bottom-4 left-4 right-4 glass-card text-slate-900 rounded-2xl p-3.5 shadow-xl border border-white/80 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-brandDarkBlue text-white font-extrabold flex items-center justify-center text-sm shadow-xs">
+                    ARK
+                  </div>
+                  <div>
+                    <div class="font-heading font-extrabold text-xs text-brandDarkBlue">Certified Master Technicians</div>
+                    <div class="text-[11px] text-slate-500 font-medium">Equipped with 500+ OEM Parts</div>
+                  </div>
+                </div>
+                <span class="text-xs font-black text-emerald-600 bg-emerald-50 px-2 py-1 rounded-lg border border-emerald-200">Ready</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <!-- INTERACTIVE APPLIANCE SELECTOR: INSTANT RELEVANCE & CALL CTAS  -->
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <section class="py-12 sm:py-16 px-4 sm:px-6 max-w-6xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-8">
+      <span class="text-brandOrange font-extrabold text-xs sm:text-sm uppercase tracking-widest block mb-2">Select Your Appliance</span>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-brandDarkBlue tracking-tight">
+        What Needs Fixing Today?
+      </h2>
+      <p class="text-slate-500 text-sm sm:text-base mt-2 font-medium">
+        Tap your appliance below to dispatch a certified technician directly to your GTA home.
+      </p>
+    </div>
+
+    <!-- 6 Interactive Appliance Grid Cards -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
+      
+      <!-- 1. Refrigerator -->
+      <a href="tel:9057178905" onclick="trackApplianceCall('refrigerator')"
+         class="appliance-chip group bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-xs flex flex-col items-center text-center cursor-pointer">
+        <div class="w-14 h-14 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-brandOrange group-hover:text-white transition-all shadow-2xs">
+          <!-- Refrigerator SVG -->
+          <svg class="w-7 h-7 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
+            <rect x="5" y="2" width="14" height="20" rx="2"></rect>
+            <line x1="5" y1="10" x2="19" y2="10"></line>
+            <line x1="9" y1="6" x2="9" y2="8"></line>
+            <line x1="9" y1="14" x2="9" y2="17"></line>
+          </svg>
+        </div>
+        <h3 class="font-heading font-extrabold text-sm sm:text-base text-slate-800 group-hover:text-brandOrange transition-colors">Refrigerator</h3>
+        <span class="text-[11px] text-slate-400 font-semibold mt-1">No cooling • Leaks</span>
+        <span class="mt-3 text-[10px] font-black uppercase text-brandOrange bg-orange-50 px-2 py-0.5 rounded-full border border-orange-200 group-hover:bg-brandOrange group-hover:text-white">Call Now →</span>
+      </a>
+
+      <!-- 2. Washing Machine -->
+      <a href="tel:9057178905" onclick="trackApplianceCall('washer')"
+         class="appliance-chip group bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-xs flex flex-col items-center text-center cursor-pointer">
+        <div class="w-14 h-14 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-brandOrange group-hover:text-white transition-all shadow-2xs">
+          <!-- Washer SVG -->
+          <svg class="w-7 h-7 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
+            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+            <circle cx="12" cy="13" r="5"></circle>
+            <circle cx="12" cy="6" r="1"></circle>
+            <line x1="16" y1="6" x2="18" y2="6"></line>
+          </svg>
+        </div>
+        <h3 class="font-heading font-extrabold text-sm sm:text-base text-slate-800 group-hover:text-brandOrange transition-colors">Washer</h3>
+        <span class="text-[11px] text-slate-400 font-semibold mt-1">Won't spin • Drain</span>
+        <span class="mt-3 text-[10px] font-black uppercase text-brandOrange bg-orange-50 px-2 py-0.5 rounded-full border border-orange-200 group-hover:bg-brandOrange group-hover:text-white">Call Now →</span>
+      </a>
+
+      <!-- 3. Dryer -->
+      <a href="tel:9057178905" onclick="trackApplianceCall('dryer')"
+         class="appliance-chip group bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-xs flex flex-col items-center text-center cursor-pointer">
+        <div class="w-14 h-14 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-brandOrange group-hover:text-white transition-all shadow-2xs">
+          <!-- Dryer SVG -->
+          <svg class="w-7 h-7 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
+            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+            <circle cx="12" cy="12" r="5"></circle>
+            <path d="M10 12c1-2 3-2 4 0"></path>
+          </svg>
+        </div>
+        <h3 class="font-heading font-extrabold text-sm sm:text-base text-slate-800 group-hover:text-brandOrange transition-colors">Dryer</h3>
+        <span class="text-[11px] text-slate-400 font-semibold mt-1">No heat • Noisy</span>
+        <span class="mt-3 text-[10px] font-black uppercase text-brandOrange bg-orange-50 px-2 py-0.5 rounded-full border border-orange-200 group-hover:bg-brandOrange group-hover:text-white">Call Now →</span>
+      </a>
+
+      <!-- 4. Dishwasher -->
+      <a href="tel:9057178905" onclick="trackApplianceCall('dishwasher')"
+         class="appliance-chip group bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-xs flex flex-col items-center text-center cursor-pointer">
+        <div class="w-14 h-14 rounded-2xl bg-cyan-50 text-cyan-600 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-brandOrange group-hover:text-white transition-all shadow-2xs">
+          <!-- Dishwasher SVG -->
+          <svg class="w-7 h-7 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
+            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+            <line x1="4" y1="7" x2="20" y2="7"></line>
+            <circle cx="8" cy="4.5" r="1"></circle>
+            <circle cx="12" cy="4.5" r="1"></circle>
+            <line x1="7" y1="15" x2="17" y2="15"></line>
+          </svg>
+        </div>
+        <h3 class="font-heading font-extrabold text-sm sm:text-base text-slate-800 group-hover:text-brandOrange transition-colors">Dishwasher</h3>
+        <span class="text-[11px] text-slate-400 font-semibold mt-1">Leaks • Error code</span>
+        <span class="mt-3 text-[10px] font-black uppercase text-brandOrange bg-orange-50 px-2 py-0.5 rounded-full border border-orange-200 group-hover:bg-brandOrange group-hover:text-white">Call Now →</span>
+      </a>
+
+      <!-- 5. Stove & Oven -->
+      <a href="tel:9057178905" onclick="trackApplianceCall('stove_oven')"
+         class="appliance-chip group bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-xs flex flex-col items-center text-center cursor-pointer">
+        <div class="w-14 h-14 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-brandOrange group-hover:text-white transition-all shadow-2xs">
+          <!-- Stove SVG -->
+          <svg class="w-7 h-7 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
+            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+            <circle cx="8" cy="6" r="1.5"></circle>
+            <circle cx="16" cy="6" r="1.5"></circle>
+            <rect x="7" y="11" width="10" height="8" rx="1"></rect>
+          </svg>
+        </div>
+        <h3 class="font-heading font-extrabold text-sm sm:text-base text-slate-800 group-hover:text-brandOrange transition-colors">Oven & Stove</h3>
+        <span class="text-[11px] text-slate-400 font-semibold mt-1">Burner • Igniter</span>
+        <span class="mt-3 text-[10px] font-black uppercase text-brandOrange bg-orange-50 px-2 py-0.5 rounded-full border border-orange-200 group-hover:bg-brandOrange group-hover:text-white">Call Now →</span>
+      </a>
+
+      <!-- 6. Microwave -->
+      <a href="tel:9057178905" onclick="trackApplianceCall('microwave')"
+         class="appliance-chip group bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-xs flex flex-col items-center text-center cursor-pointer">
+        <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-brandOrange group-hover:text-white transition-all shadow-2xs">
+          <!-- Microwave SVG -->
+          <svg class="w-7 h-7 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
+            <rect x="3" y="4" width="18" height="15" rx="2"></rect>
+            <rect x="5" y="7" width="10" height="9" rx="1"></rect>
+            <circle cx="18" cy="8" r="1"></circle>
+            <circle cx="18" cy="12" r="1"></circle>
+          </svg>
+        </div>
+        <h3 class="font-heading font-extrabold text-sm sm:text-base text-slate-800 group-hover:text-brandOrange transition-colors">Microwave</h3>
+        <span class="text-[11px] text-slate-400 font-semibold mt-1">No power • Spark</span>
+        <span class="mt-3 text-[10px] font-black uppercase text-brandOrange bg-orange-50 px-2 py-0.5 rounded-full border border-orange-200 group-hover:bg-brandOrange group-hover:text-white">Call Now →</span>
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <!-- 3-STEP EASY PROCESS (Friction Buster)                           -->
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <section class="py-12 bg-white border-y border-slate-200/80 px-4 sm:px-6">
+    <div class="max-w-5xl mx-auto">
+      
+      <div class="text-center max-w-xl mx-auto mb-10">
+        <span class="text-brandOrange font-extrabold text-xs uppercase tracking-widest">How It Works</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-brandDarkBlue tracking-tight mt-1">
+          Simple 3-Step Same-Day Repair
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
+        
+        <!-- Step 1 -->
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 relative text-center flex flex-col items-center">
+          <div class="w-12 h-12 rounded-full bg-brandDarkBlue text-white font-heading font-black text-lg flex items-center justify-center mb-4 shadow-md">
+            1
+          </div>
+          <h3 class="font-heading font-extrabold text-base text-brandDarkBlue mb-1.5">Call Our GTA Line</h3>
+          <p class="text-xs text-slate-500 font-medium leading-relaxed">
+            Speak to a live specialist in under 60 seconds. We confirm your appliance model and lock in your same-day slot.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 relative text-center flex flex-col items-center">
+          <div class="w-12 h-12 rounded-full bg-brandOrange text-white font-heading font-black text-lg flex items-center justify-center mb-4 shadow-md">
+            2
+          </div>
+          <h3 class="font-heading font-extrabold text-base text-brandDarkBlue mb-1.5">On-Site Diagnosis</h3>
+          <p class="text-xs text-slate-500 font-medium leading-relaxed">
+            Technician arrives with full testing gear and parts. You get an exact, transparent quote before work begins.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 relative text-center flex flex-col items-center">
+          <div class="w-12 h-12 rounded-full bg-emerald-600 text-white font-heading font-black text-lg flex items-center justify-center mb-4 shadow-md">
+            3
+          </div>
+          <h3 class="font-heading font-extrabold text-base text-brandDarkBlue mb-1.5">Fixed & Guaranteed</h3>
+          <p class="text-xs text-slate-500 font-medium leading-relaxed">
+            We fix it on the spot. You pay only after you test and approve, protected by our 90-day parts and labor warranty.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Mid-page Call Prompt Strip -->
+      <div class="mt-10 bg-gradient-to-r from-brandDarkBlue to-blue-900 rounded-2xl p-5 sm:p-7 text-white flex flex-col sm:flex-row items-center justify-between gap-5 shadow-lg">
+        <div class="text-center sm:text-left">
+          <h3 class="font-heading font-black text-lg sm:text-xl text-white">Need a technician at your door today?</h3>
+          <p class="text-xs sm:text-sm text-slate-300 mt-1">Our mobile service vans are currently in Toronto, Mississauga, Hamilton & GTA.</p>
+        </div>
+        <a href="tel:9057178905"
+           onclick="if(typeof gtag!=='undefined'){gtag('event','call_click',{event_category:'mid_banner'});}"
+           class="gtm-web-call pulse-call whitespace-nowrap bg-brandOrange hover:bg-orange-600 text-white font-black text-base px-6 py-3.5 rounded-xl shadow-md transition-all flex items-center gap-2 cursor-pointer">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+          CALL 905-717-8905
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <!-- REAL VISUAL PROOF & RECENT COMPLETED REPAIRS                   -->
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <section class="py-12 sm:py-16 px-4 sm:px-6 max-w-6xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-10">
+      <span class="text-brandOrange font-extrabold text-xs uppercase tracking-widest">Real GTA Repairs</span>
+      <h2 class="text-2xl sm:text-3xl font-black text-brandDarkBlue tracking-tight mt-1">
+        Recent Same-Day Fixes Across GTA
+      </h2>
+      <p class="text-slate-500 text-xs sm:text-sm mt-1.5 font-medium">Real photos from our mobile technicians on the road this week.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Proof 1: Refrigerator -->
+      <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-xs hover:shadow-md transition-shadow">
+        <div class="relative h-48 sm:h-52 overflow-hidden bg-slate-100">
+          <img src="../img/refrigerator-repair-service.webp" alt="Refrigerator repair in Toronto" title="Refrigerator repair in Toronto" width="798" height="448" class="w-full h-full object-cover" loading="lazy" decoding="async">
+          <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-full shadow-xs">
+            Fixed in 45 Mins
+          </span>
+          <span class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-xs text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded-md">
+            Toronto, ON
+          </span>
+        </div>
+        <div class="p-4">
+          <h3 class="font-heading font-extrabold text-sm text-brandDarkBlue">Samsung French-Door Fridge</h3>
+          <p class="text-xs text-slate-500 mt-1 font-medium">Issue: Freezer cold, fridge section warm. Evaporator fan replaced on the spot.</p>
+          <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="text-emerald-700 font-bold text-[11px]">✓ $0 Service Call</span>
+            <span class="text-slate-400 font-semibold text-[10px]">90-Day Warranty</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proof 2: Washer -->
+      <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-xs hover:shadow-md transition-shadow">
+        <div class="relative h-48 sm:h-52 overflow-hidden bg-slate-100">
+          <img src="../img/washing-machine-repair-technician.webp" alt="Washing machine repair in Mississauga" title="Washing machine repair in Mississauga" width="338" height="600" class="w-full h-full object-cover" loading="lazy" decoding="async">
+          <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-full shadow-xs">
+            Fixed in 50 Mins
+          </span>
+          <span class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-xs text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded-md">
+            Mississauga, ON
+          </span>
+        </div>
+        <div class="p-4">
+          <h3 class="font-heading font-extrabold text-sm text-brandDarkBlue">Whirlpool Front-Load Washer</h3>
+          <p class="text-xs text-slate-500 mt-1 font-medium">Issue: Water not draining, OE error code. OEM drain pump replaced same-day.</p>
+          <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="text-emerald-700 font-bold text-[11px]">✓ $0 Service Call</span>
+            <span class="text-slate-400 font-semibold text-[10px]">90-Day Warranty</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proof 3: Dryer/Oven -->
+      <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-xs hover:shadow-md transition-shadow sm:col-span-2 lg:col-span-1">
+        <div class="relative h-48 sm:h-52 overflow-hidden bg-slate-100">
+          <img src="../img/oven-dryer-repair-service.webp" alt="Dryer and oven repair in Hamilton" title="Dryer and oven repair in Hamilton" width="338" height="600" class="w-full h-full object-cover" loading="lazy" decoding="async">
+          <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-full shadow-xs">
+            Fixed in 40 Mins
+          </span>
+          <span class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-xs text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded-md">
+            Hamilton, ON
+          </span>
+        </div>
+        <div class="p-4">
+          <h3 class="font-heading font-extrabold text-sm text-brandDarkBlue">LG High-Efficiency Electric Dryer</h3>
+          <p class="text-xs text-slate-500 mt-1 font-medium">Issue: Drum spinning but no heat. Thermal fuse & heating element installed.</p>
+          <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="text-emerald-700 font-bold text-[11px]">✓ $0 Service Call</span>
+            <span class="text-slate-400 font-semibold text-[10px]">90-Day Warranty</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <!-- GOOGLE VERIFIED REVIEWS SECTION                                -->
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <section class="py-12 sm:py-16 bg-slate-100 border-y border-slate-200 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8">
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-amber-500 text-lg">★★★★★</span>
+            <span class="font-heading font-black text-brandDarkBlue text-base sm:text-lg">5.0 Star Rated (12 Reviews)</span>
+          </div>
+          <p class="text-xs text-slate-500 font-medium">Verified Google Customer Feedback across Greater Toronto Area.</p>
+        </div>
+
+        <!-- Google Official Badge -->
+        <div class="bg-white px-4 py-2 rounded-xl border border-slate-200 shadow-2xs flex items-center gap-3">
+          <svg class="w-5 h-5" viewBox="0 0 24 24">
+            <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.65v3.03h3.88c2.27-2.09 3.665-5.17 3.665-9.12z"/>
+            <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.03c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.13C3.26 21.37 7.34 24 12 24z"/>
+            <path fill="#FBBC05" d="M5.28 14.29c-.25-.72-.38-1.49-.38-2.29s.13-1.57.38-2.29V6.58H1.25C.45 8.18 0 9.98 0 12s.45 3.82 1.25 5.42l4.03-3.13z"/>
+            <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.34 0 3.26 2.63 1.25 6.58l4.03 3.13c.95-2.83 3.6-4.96 6.72-4.96z"/>
+          </svg>
+          <div class="text-left">
+            <div class="text-[10px] text-slate-400 font-bold uppercase">Google Verified</div>
+            <div class="text-xs font-black text-brandDarkBlue">100% Recommended</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 Real Reviews Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+        
+        <!-- Review 1 -->
+        <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-full bg-brandDarkBlue text-white font-extrabold flex items-center justify-center text-xs">
+                  MR
+                </div>
+                <div>
+                  <h3 class="font-heading font-extrabold text-xs text-brandDarkBlue">Michael R.</h3>
+                  <span class="text-[10px] text-slate-400 font-medium">Toronto, ON</span>
+                </div>
+              </div>
+              <span class="text-amber-400 text-xs font-bold">★★★★★</span>
+            </div>
+            <p class="text-xs text-slate-600 italic leading-relaxed">
+              "Our fridge stopped cooling on a Saturday morning. Appliance Repair Knights arrived within 2 hours and fixed the relay motor on the spot. Lifesavers!"
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[10px] text-emerald-600 font-bold flex items-center gap-1">
+            <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+            Verified Google Review
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-full bg-brandDarkBlue text-white font-extrabold flex items-center justify-center text-xs">
+                  AK
+                </div>
+                <div>
+                  <h3 class="font-heading font-extrabold text-xs text-brandDarkBlue">Amanda K.</h3>
+                  <span class="text-[10px] text-slate-400 font-medium">Mississauga, ON</span>
+                </div>
+              </div>
+              <span class="text-amber-400 text-xs font-bold">★★★★★</span>
+            </div>
+            <p class="text-xs text-slate-600 italic leading-relaxed">
+              "Super transparent pricing! The tech explained the issue with our Samsung washer, gave upfront pricing, and finished in 45 minutes."
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[10px] text-emerald-600 font-bold flex items-center gap-1">
+            <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+            Verified Google Review
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-full bg-brandDarkBlue text-white font-extrabold flex items-center justify-center text-xs">
+                  DL
+                </div>
+                <div>
+                  <h3 class="font-heading font-extrabold text-xs text-brandDarkBlue">David L.</h3>
+                  <span class="text-[10px] text-slate-400 font-medium">Hamilton, ON</span>
+                </div>
+              </div>
+              <span class="text-amber-400 text-xs font-bold">★★★★★</span>
+            </div>
+            <p class="text-xs text-slate-600 italic leading-relaxed">
+              "Fast, polite, and very professional. The free diagnostic call with repair saved us money. Highly recommended for any GTA homeowner."
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[10px] text-emerald-600 font-bold flex items-center gap-1">
+            <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+            Verified Google Review
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <!-- FAQ ACCORDION (OBJECTION BUSTERS)                              -->
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <section class="py-12 sm:py-16 px-4 sm:px-6 max-w-3xl mx-auto">
+    <div class="text-center mb-8">
+      <span class="text-brandOrange font-extrabold text-xs uppercase tracking-widest">Common Questions</span>
+      <h2 class="text-2xl sm:text-3xl font-black text-brandDarkBlue tracking-tight mt-1">
+        Frequently Asked Questions
+      </h2>
+    </div>
+
+    <div class="space-y-3">
+      
+      <!-- FAQ 1 -->
+      <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden shadow-2xs">
+        <button onclick="toggleFaq(this)" class="w-full text-left p-4 sm:p-5 font-heading font-extrabold text-sm sm:text-base text-brandDarkBlue flex items-center justify-between gap-4 cursor-pointer">
+          <span>How fast can a technician arrive at my home?</span>
+          <svg class="faq-icon w-4 h-4 text-brandOrange flex-shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-answer px-4 sm:px-5 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+          We offer same-day emergency appointments across Toronto, Mississauga, Brampton, Hamilton, and the GTA. Most technicians arrive within 2 to 4 hours of your initial call.
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden shadow-2xs">
+        <button onclick="toggleFaq(this)" class="w-full text-left p-4 sm:p-5 font-heading font-extrabold text-sm sm:text-base text-brandDarkBlue flex items-center justify-between gap-4 cursor-pointer">
+          <span>How does the $0 Service Call / Diagnostic work?</span>
+          <svg class="faq-icon w-4 h-4 text-brandOrange flex-shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-answer px-4 sm:px-5 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+          When you approve the repair quote, the diagnostic inspection fee is 100% waived! You only pay for the necessary parts and labor, with no hidden travel fees.
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden shadow-2xs">
+        <button onclick="toggleFaq(this)" class="w-full text-left p-4 sm:p-5 font-heading font-extrabold text-sm sm:text-base text-brandDarkBlue flex items-center justify-between gap-4 cursor-pointer">
+          <span>Do you carry parts in your trucks?</span>
+          <svg class="faq-icon w-4 h-4 text-brandOrange flex-shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-answer px-4 sm:px-5 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+          Yes! Our service vehicles are stocked with OEM parts for all major brands (Samsung, LG, Whirlpool, Bosch, GE, Maytag, Frigidaire). Over 90% of repairs are completed on the very first visit.
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden shadow-2xs">
+        <button onclick="toggleFaq(this)" class="w-full text-left p-4 sm:p-5 font-heading font-extrabold text-sm sm:text-base text-brandDarkBlue flex items-center justify-between gap-4 cursor-pointer">
+          <span>Is your repair work guaranteed?</span>
+          <svg class="faq-icon w-4 h-4 text-brandOrange flex-shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="faq-answer px-4 sm:px-5 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+          Every repair comes with our comprehensive 90-Day Warranty on all parts and labor. If anything goes wrong, we return and fix it at zero extra charge to you.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <!-- BOTTOM CONVERSION CTA BANNER                                   -->
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <section class="bg-gradient-to-br from-brandDarkBlue via-slate-900 to-brandDarkBlue text-white py-14 px-4 sm:px-6 text-center">
+    <div class="max-w-2xl mx-auto">
+      <div class="inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-300 text-xs font-bold px-3 py-1 rounded-full border border-emerald-500/30 mb-4">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 live-dot"></span>
+        Fast Service Dispatch Available Right Now
+      </div>
+      
+      <h2 class="text-2xl sm:text-4xl font-black tracking-tight mb-4">
+        Don't Let Food Spoil or Laundry Pile Up.
+      </h2>
+      
+      <p class="text-slate-300 text-sm sm:text-base mb-8 max-w-lg mx-auto font-medium">
+        Call now to lock in your same-day technician visit. Average wait time to speak to a dispatch coordinator is under 45 seconds.
+      </p>
+
+      <a href="tel:9057178905"
+         onclick="if(typeof gtag!=='undefined'){gtag('event','call_click',{event_category:'bottom_cta_block'});}"
+         class="gtm-web-call pulse-call inline-flex items-center justify-center gap-3 bg-brandOrange hover:bg-orange-600 text-white font-black text-lg sm:text-2xl px-8 sm:px-10 py-4 sm:py-5 rounded-2xl shadow-2xl transition-all transform active:scale-95 cursor-pointer w-full sm:w-auto">
+        <svg class="w-6 h-6 sm:w-7 sm:h-7 fill-current animate-bounce" viewBox="0 0 20 20">
+          <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+        </svg>
+        <span>CALL 905-717-8905 NOW</span>
+      </a>
+
+      <!-- Service Areas Tag Cloud -->
+      <div class="mt-8 pt-8 border-t border-white/10 text-slate-400 text-xs font-semibold">
+        <span class="text-slate-200 block mb-2 font-bold uppercase tracking-wider">Service Coverage:</span>
+        <div class="flex flex-wrap items-center justify-center gap-2">
+          <span class="bg-white/10 px-2.5 py-1 rounded-md">Toronto</span>
+          <span class="bg-white/10 px-2.5 py-1 rounded-md">Mississauga</span>
+          <span class="bg-white/10 px-2.5 py-1 rounded-md">Brampton</span>
+          <span class="bg-white/10 px-2.5 py-1 rounded-md">Hamilton</span>
+          <span class="bg-white/10 px-2.5 py-1 rounded-md">Vaughan</span>
+          <span class="bg-white/10 px-2.5 py-1 rounded-md">Markham</span>
+          <span class="bg-white/10 px-2.5 py-1 rounded-md">Oakville</span>
+          <span class="bg-white/10 px-2.5 py-1 rounded-md">Burlington</span>
+          <span class="bg-white/10 px-2.5 py-1 rounded-md">Oshawa</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <!-- MINIMAL CLEAN FOOTER                                           -->
+  <!-- ══════════════════════════════════════════════ -->
+  <footer class="bg-slate-950 text-slate-500 py-6 px-4 text-center">
+    <div class="max-w-4xl mx-auto">
+      <img src="../img/Appliance_Repair_Knights_Logo-white.avif" alt="Appliance Repair Knights" width="723" height="345" class="h-8 w-auto object-contain mx-auto mb-3 opacity-50" loading="lazy" decoding="async">
+      <p class="text-[11px] text-slate-500">&copy; 2026 Appliance Repair Knights. Professional Appliance Repair Services across Toronto & GTA.</p>
+    </div>
+  </footer>
+
+
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <!-- STICKY BOTTOM CALL BAR (MOBILE ONLY — ULTRA THUMB FRIENDLY)     -->
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-300 p-2.5 md:hidden shadow-[0_-8px_25px_rgba(0,0,0,0.12)]">
+    <div class="max-w-md mx-auto">
+      <a href="tel:9057178905"
+         onclick="if(typeof gtag!=='undefined'){gtag('event','call_click',{event_category:'mobile_sticky_bar'});}"
+         class="gtm-web-call pulse-call flex items-center justify-center gap-3 bg-gradient-to-r from-brandOrange to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-black text-lg py-3.5 px-4 rounded-xl shadow-lg transform active:scale-95 transition-transform cursor-pointer">
+        <svg class="w-5 h-5 fill-current animate-bounce flex-shrink-0" viewBox="0 0 20 20">
+          <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+        </svg>
+        <div class="text-left">
+          <div class="text-[10px] text-orange-200 uppercase tracking-widest font-bold leading-none">Same-Day Dispatch • $0 Diag.</div>
+          <div class="text-base font-black leading-tight">CALL 905-717-8905 NOW</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <!-- JAVASCRIPT CONTROLLERS                                        -->
+  <!-- ══════════════════════════════════════════════════════════════ -->
+  <script>
+    // FAQ Accordion Handler
+    function toggleFaq(button) {
+      const item = button.closest('.faq-item');
+      const isActive = item.classList.contains('active');
+      
+      // Close all items
+      document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('active'));
+      
+      // Toggle clicked item
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    }
+
+    // Open first FAQ by default
+    document.addEventListener('DOMContentLoaded', () => {
+      const firstFaq = document.querySelector('.faq-item');
+      if (firstFaq) {
+        firstFaq.classList.add('active');
+      }
+    });
+
+    // Tracking helper for appliance chips
+    function trackApplianceCall(applianceName) {
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'call_click', {
+          event_category: 'appliance_selector',
+          appliance: applianceName
+        });
+      }
+    }
+  </script>
+
+</body>
+</html>

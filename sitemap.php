@@ -49,6 +49,12 @@ $pages = [
         'priority' => '0.90'
     ],
     [
+        'loc' => $domain . '/locations',
+        'file' => $rootDir . '/locations/index.php',
+        'changefreq' => 'weekly',
+        'priority' => '0.95'
+    ],
+    [
         'loc' => $domain . '/blog',
         'file' => $rootDir . '/blog/index.php',
         'changefreq' => 'weekly',

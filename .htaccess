@@ -45,39 +45,31 @@ ErrorDocument 404 /404.html
   # ----------------------------------------------------------------------------
   # 3. 301 REDIRECTS (OLD / LEGACY URLS TO NEW CANONICAL STRUCTURE)
   # ----------------------------------------------------------------------------
-  # Location Pages
-  RewriteRule ^burlington-appliance-repair/?$ locations/burlington-appliance-repair [R=301,L]
-  RewriteRule ^kitchener-appliance-repair/?$ locations/kitchener-appliance-repair [R=301,L]
-  RewriteRule ^brampton-appliance-repair/?$ locations/brampton-appliance-repair [R=301,L]
-  RewriteRule ^waterloo-appliance-repair/?$ locations/waterloo-appliance-repair [R=301,L]
-  RewriteRule ^cambridge-appliance-repair/?$ locations/cambridge-appliance-repair [R=301,L]
-  RewriteRule ^hamilton-appliance-repair/?$ locations/hamilton-appliance-repair [R=301,L]
-  RewriteRule ^caledon-appliance-repair/?$ locations/caledon-appliance-repair [R=301,L]
-  RewriteRule ^caledeon-appliance-repair/?$ locations/caledon-appliance-repair [R=301,L]
-  RewriteRule ^caldeon-appliance-repair/?$ locations/caledon-appliance-repair [R=301,L]
-  RewriteRule ^locations/caldeon-appliance-repair/?$ locations/caledon-appliance-repair [R=301,L]
-  RewriteRule ^locations/caledeon-appliance-repair/?$ locations/caledon-appliance-repair [R=301,L]
-  RewriteRule ^pickering-appliance-repair/?$ locations/pickering-appliance-repair [R=301,L]
-  RewriteRule ^vaughan-appliance-repair/?$ locations/vaughan-appliance-repair [R=301,L]
-  RewriteRule ^richmond-hill-appliance-repair/?$ locations/richmond-hill-appliance-repair [R=301,L]
-  RewriteRule ^mississauga-appliance-repair/?$ locations/mississauga-appliance-repair [R=301,L]
-  RewriteRule ^toronto-appliance-repair/?$ locations/toronto-appliance-repair [R=301,L]
-  RewriteRule ^guelph-appliance-repair/?$ locations/guelph-appliance-repair [R=301,L]
-  RewriteRule ^markham-appliance-repair/?$ locations/markham-appliance-repair [R=301,L]
-  RewriteRule ^oakville-appliance-repair/?$ locations/oakville-appliance-repair [R=301,L]
-  RewriteRule ^scarborough-appliance-repair/?$ locations/scarborough-appliance-repair [R=301,L]
-  RewriteRule ^oshawa-appliance-repair/?$ locations/oshawa-appliance-repair [R=301,L]
-  RewriteRule ^milton-appliance-repair/?$ locations/milton-appliance-repair [R=301,L]
-  RewriteRule ^barrie-appliance-repair/?$ locations/barrie-appliance-repair [R=301,L]
-  RewriteRule ^ajax-appliance-repair/?$ locations/ajax-appliance-repair [R=301,L]
+  # Typo aliases for Caledon
+  RewriteCond %{REQUEST_URI} ^(.*?)/locations/cal(e)?deon-appliance-repair/?$ [NC]
+  RewriteRule ^ %1/locations/caledon-appliance-repair [R=301,L]
+
+  # Location Pages (e.g. /burlington-appliance-repair -> /locations/burlington-appliance-repair)
+  RewriteCond %{REQUEST_URI} !/locations/ [NC]
+  RewriteCond %{REQUEST_URI} ^(.*?)/(burlington|kitchener|brampton|waterloo|cambridge|hamilton|caledon|caledeon|caldeon|pickering|vaughan|richmond-hill|mississauga|toronto|guelph|markham|oakville|scarborough|oshawa|milton|barrie|ajax)-appliance-repair/?$ [NC]
+  RewriteRule ^ %1/locations/%2-appliance-repair [R=301,L]
 
   # Service Pages
-  RewriteRule ^refrigerator-repair/?$ services/fridge-repair [R=301,L]
-  RewriteRule ^service-page/?$ services/stove-repair [R=301,L]
-  RewriteRule ^service-page/microwave-repair-and-installation/?$ services/microwave-repair [R=301,L]
-  RewriteRule ^service-page/dryer-repair-duct-cleaning/?$ services/dryer-repair [R=301,L]
-  RewriteRule ^induction-cooktop-repair-service/?$ services/stove-repair [R=301,L]
-  RewriteRule ^oven-repair-service/?$ services/stove-repair [R=301,L]
+  RewriteCond %{REQUEST_URI} !/services/ [NC]
+  RewriteCond %{REQUEST_URI} ^(.*?)/refrigerator-repair/?$ [NC]
+  RewriteRule ^ %1/services/fridge-repair [R=301,L]
+
+  RewriteCond %{REQUEST_URI} !/services/ [NC]
+  RewriteCond %{REQUEST_URI} ^(.*?)/service-page/microwave-repair-and-installation/?$ [NC]
+  RewriteRule ^ %1/services/microwave-repair [R=301,L]
+
+  RewriteCond %{REQUEST_URI} !/services/ [NC]
+  RewriteCond %{REQUEST_URI} ^(.*?)/service-page/dryer-repair-duct-cleaning/?$ [NC]
+  RewriteRule ^ %1/services/dryer-repair [R=301,L]
+
+  RewriteCond %{REQUEST_URI} !/services/ [NC]
+  RewriteCond %{REQUEST_URI} ^(.*?)/(service-page|induction-cooktop-repair-service|oven-repair-service)/?$ [NC]
+  RewriteRule ^ %1/services/stove-repair [R=301,L]
 
   # Redirect /index, /index.html or /index.php to root (/)
   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index(\.(html|php))?\ HTTP/ [NC]
@@ -86,9 +78,11 @@ ErrorDocument 404 /404.html
   # ----------------------------------------------------------------------------
   # 4. DYNAMIC LOCATION ROUTER
   # ----------------------------------------------------------------------------
+  RewriteRule ^locations/?$ locations/index.php [L,QSA]
+  RewriteRule ^locations/index(\.php)?/?$ locations/index.php [L,QSA]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^locations/([a-z0-9\-]+)/?$ locations/location.php?slug=$1 [L,QSA]
+  RewriteRule ^locations/([a-z0-9\-]+)(\.php)?/?$ locations/location.php?slug=$1 [L,QSA]
 
   # ----------------------------------------------------------------------------
   # 4B. DYNAMIC BLOG ROUTER

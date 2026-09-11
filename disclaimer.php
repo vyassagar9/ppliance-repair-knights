@@ -1,5 +1,6 @@
 <?php 
-$base_url = './';
+require_once __DIR__ . '/config.php';
+$base_url = defined('BASE_URL') ? BASE_URL : './';
 $page_title = 'Disclaimer | Appliance Repair Knights';
 $page_description = 'Official Disclaimer for Appliance Repair Knights. Important information regarding out-of-warranty repairs and brand servicing policies.';
 $canonical_url = 'https://www.appliancerepairknights.com/disclaimer';
@@ -25,7 +26,7 @@ include 'head.php';
       
       <div class="border-b border-brandBorder pb-6">
         <h1 class="text-3xl sm:text-4xl font-heading font-black text-brandDarkBlue tracking-tight">WEBSITE &amp; SERVICE DISCLAIMER</h1>
-        <p class="text-xs text-slate-400 mt-2">Last Updated: August 2026</p>
+        <p class="text-xs text-slate-400 mt-2">Last Updated: September 2026</p>
       </div>
 
       <div class="prose prose-slate max-w-none text-sm leading-relaxed space-y-6 text-slate-600">

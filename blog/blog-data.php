@@ -9,7 +9,7 @@ return [
         'slug' => 'refrigerator-repair-cost-toronto',
         'title' => 'Is It Worth Repairing a Refrigerator? Toronto Repair Costs & When to Replace',
         'meta_title' => 'Is It Worth Repairing a Refrigerator? Toronto Repair Costs & When to Replace',
-        'meta_description' => 'Wondering if your fridge is worth fixing? Learn how to evaluate refrigerator repair costs in Toronto, the 50% rule, common part repairs, and our $0 service call fee.',
+        'meta_description' => 'Wondering if your fridge is worth fixing? Learn how to evaluate refrigerator repair costs in Toronto, the 50% rule, common part repairs, and our waived service call fee policy.',
         'primary_keyword' => 'refrigerator repair cost toronto',
         'related_keywords' => 'fridge repair vs replace, average refrigerator repair cost Ontario, fridge compressor repair cost, when to replace a refrigerator, refrigerator repair Toronto, fridge repair GTA',
         'category' => 'Refrigerator Repair',
@@ -22,11 +22,11 @@ return [
         'read_time' => '8 min read',
         'featured_image' => 'img/refrigerator-repair-cost-toronto.webp',
         'summary' => "A refrigerator that stops cooling properly can quickly become more than an inconvenience. In many cases, repairing a refrigerator is much more practical than replacing it. Here is our guide to evaluating refrigerator repair costs in Toronto, the 50% rule, common part repairs, and when replacement makes more sense.",
-        'quick_answer' => "In many cases, repairing a refrigerator is much more practical than replacing it—especially when the issue involves a thermostat, fan motor, door gasket, temperature sensor, or start relay. The 50% rule is a helpful starting point: if the repair quote is significantly less than half the cost of a comparable new unit and the appliance is under 10–12 years old, repairing is generally the smarter financial choice. Appliance Repair Knights provides upfront diagnostics with a $0 Service Call Fee with repair.",
+        'quick_answer' => "In many cases, repairing a refrigerator is much more practical than replacing it—especially when the issue involves a thermostat, fan motor, door gasket, temperature sensor, or start relay. The 50% rule is a helpful starting point: if the repair quote is significantly less than half the cost of a comparable new unit and the appliance is under 10–12 years old, repairing is generally the smarter financial choice. Appliance Repair Knights provides upfront diagnostics with service call fee waived off with repairs.",
         'faqs' => [
             [
                 'q' => 'How much does refrigerator repair typically cost in Toronto?',
-                'a' => 'Refrigerator repair costs in Toronto depend on the exact part, brand complexity, and diagnostic requirements. Electrical repairs like start relays, sensors, and fans are straightforward and very economical, whereas sealed-system compressor replacements require certified refrigeration procedures. Appliance Repair Knights operates with complete transparency: we provide a written upfront quote with a $0 Service Call Fee when you approve the repair.'
+                'a' => 'Refrigerator repair costs in Toronto depend on the exact part, brand complexity, and diagnostic requirements. Electrical repairs like start relays, sensors, and fans are straightforward and very economical, whereas sealed-system compressor replacements require certified refrigeration procedures. Appliance Repair Knights operates with complete transparency: we provide a written upfront quote with our service call fee completely waived off when you approve the repair.'
             ],
             [
                 'q' => 'Is it worth repairing a 10-year-old refrigerator?',
@@ -34,7 +34,7 @@ return [
             ],
             [
                 'q' => 'Do you waive the diagnostic fee if I proceed with the repair?',
-                'a' => 'Yes, absolutely. At Appliance Repair Knights, our service call fee is $0 with any approved repair. Our licensed technician thoroughly inspects the appliance, diagnoses the root issue, explains the solution, and waives the service call charge when you give the go-ahead.'
+                'a' => 'Yes, absolutely. At Appliance Repair Knights, our service call fee is completely waived off with any approved repair. Our licensed technician thoroughly inspects the appliance, diagnoses the root issue, explains the solution, and waives the diagnostic service call fee when you give the go-ahead.'
             ],
             [
                 'q' => 'How fast can a refrigerator technician arrive at my home in the GTA?',
@@ -147,7 +147,7 @@ return [
     <div class="bg-slate-50 border border-slate-200/90 rounded-2xl p-6 sm:p-7 my-6 flex flex-col sm:flex-row items-center justify-between gap-6">
       <div class="space-y-1 text-center sm:text-left">
         <span class="inline-block px-2.5 py-1 bg-brandBlue/10 text-brandBlue text-xs font-bold uppercase tracking-wider rounded-md">Transparent Pricing Policy</span>
-        <h3 class="text-xl sm:text-2xl font-heading font-bold text-slate-900">$0 Service Call Fee with Repair</h3>
+        <h3 class="text-xl sm:text-2xl font-heading font-bold text-slate-900">Service Call Fee Waived with Repair</h3>
         <p class="text-slate-600 text-sm max-w-xl">
           At Appliance Repair Knights, our licensed technician performs an in-depth diagnosis at your location. When you approve the upfront repair quote, the entire diagnostic fee is completely waived!
         </p>
@@ -455,7 +455,7 @@ return [
         </table>
       </div>
       <p class="text-xs text-slate-500 italic bg-slate-50 p-3 rounded-xl border border-slate-200/70">
-        * Note: Cost ranges reflect typical residential repair invoices in Toronto and the Greater Toronto Area (GTA) based on common component replacements and professional labour. Exact pricing depends on your specific brand, model, and diagnostic findings. At Appliance Repair Knights, our initial service call fee is completely waived ($0) with any approved repair.
+        * Note: Cost ranges reflect typical residential repair invoices in Toronto and the Greater Toronto Area (GTA) based on common component replacements and professional labour. Exact pricing depends on your specific brand, model, and diagnostic findings. At Appliance Repair Knights, our initial service call fee is completely waived off with any approved repair.
       </p>
     </div>
 

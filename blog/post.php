@@ -511,7 +511,7 @@ require_once __DIR__ . '/../head.php';
           </div>
           <?php endif; ?>
 
-          <!-- 3. ACTION CARD ($0 Service Call Fee with Repair) -->
+          <!-- 3. ACTION CARD (Service Call Fee Waived with Repair) -->
           <div class="bg-white border border-slate-200/90 rounded-2xl p-6 shadow-sm space-y-4">
             <div class="inline-flex items-center gap-1.5 bg-brandOrange/10 text-brandOrange text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">
               <span>⚡</span> Same-Day Priority Dispatch
@@ -526,11 +526,11 @@ require_once __DIR__ . '/../head.php';
               </p>
             </div>
 
-            <!-- Client's Rule: Highlight $0 Service Call Fee with Repair -->
+            <!-- Client's Rule: Highlight Service Call Fee Waived with Repair -->
             <div class="p-3.5 bg-slate-50 border border-slate-200/80 rounded-xl text-center">
               <span class="text-[11px] text-slate-500 uppercase tracking-wider font-semibold block">Transparent Policy</span>
               <strong class="text-base font-heading font-extrabold text-brandBlue block mt-0.5">
-                $0 Service Call Fee with Repair
+                Service Call Fee Waived with Repair
               </strong>
               <span class="text-[11px] text-slate-500 block mt-0.5">Diagnostic charge waived upon repair approval</span>
             </div>
@@ -547,7 +547,7 @@ require_once __DIR__ . '/../head.php';
             </div>
 
             <div class="pt-3 border-t border-slate-100 grid grid-cols-3 gap-1 text-[11px] text-slate-500 font-medium text-center">
-              <div>✓ 90-Day Parts</div>
+              <div>✓ Parts Warranty</div>
               <div>✓ Licensed</div>
               <div>✓ 5.0★ Google</div>
             </div>
@@ -770,7 +770,7 @@ require_once __DIR__ . '/../head.php';
       <!-- Sheet Footer: Urgent Booking / Call Link -->
       <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
         <div class="text-slate-500">
-          <strong class="text-slate-900 block">$0 Service Fee w/ Repair</strong>
+          <strong class="text-slate-900 block">Service Call Fee Waived w/ Repair</strong>
           <span>Same-Day GTA Diagnostics</span>
         </div>
         <a href="tel:9057178905" class="gtm-web-call px-4 py-2 bg-brandOrange text-white font-bold rounded-xl shadow-sm">

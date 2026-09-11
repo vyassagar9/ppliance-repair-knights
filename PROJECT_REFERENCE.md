@@ -9,25 +9,29 @@
 
 ## 2. Business Model & Pricing Rules
 * **Service Call / Diagnostic Fee**:
-  * **$50 – $80** standard fee to visit customer's location and diagnose machine issues.
-  * Fee depends on appliance type and customer location within the service zone.
-* **Diagnostic Fee Waiver**:
-  * **$0 Service Call Fee with Repair** (Inspection fee is waived if customer agrees to the repair quote).
-* **Average Repair Cost**:
-  * Average ticket price: **~$300** (Covers parts, technician labor, fuel, and overhead expenses).
+  * Diagnostic fee IS the service call fee (covers technician travel, inspection, and diagnosis).
+  * **Waiver Rule**: **"Service call fee waived off with repairs"** (or **"Service Call Fee Waived with Repair"**).
+  * **Strict Constraint**: Never write "100% free" or "$0 service call" on client-facing pages.
+* **Average Repair Cost Policy**:
+  * **Strict Constraint**: Do NOT publish or mention average repair cost numbers (e.g., "$300" or "$50–$80 ranges") on client-facing pages, as it anchors arbitrary numbers in customers' minds before diagnosing the specific issue.
 * **Discount Policy**:
-  * **Max Discount Allowed**: **$15 OFF**.
-  * **Strict Constraint**: Offering a $50 discount is **NOT profitable** and MUST NOT be offered.
+  * Do NOT offer isolated, unverified coupon claims (e.g., "$15 OFF" / "$50 OFF") that confuse users. Focus on the service call fee waiver with repair.
+* **Warranty Policy**:
+  * Standardized terminology across the site: **"Repair with Warranty"** / **"Written Parts & Labor Warranty"**.
+  * **Strict Constraint**: Do NOT specify timeframes (no "90-day", "1-year", "months", "days").
+  * **Wording Rule**: Strictly use **"warranty"**; do not mix or use "guarantee" in warranty copy.
+* **Dispatch & Response Time Policy (Solopreneur Logistics)**:
+  * Business is managed directly by a dedicated solo owner/operator.
+  * **Strict Constraint**: Do NOT promise rigid arrival windows like "within 2 to 4 hours across 20 locations" or callbacks "within 15 minutes".
+  * **Standard Phrasing**: Use **"Prompt same-day service based on daily schedule availability"** and **"Our team will contact you promptly to confirm your appointment window"**.
 
 ---
 
-## 3. Design Benchmark & Content Reference
-* **Benchmark Website**: [appliancerepaircompany.ca](https://appliancerepaircompany.ca)
-* **Design Objectives**:
-  * **Simple, Clean & Easy to Navigate** layout structure.
-  * Direct top-bar phone number & "Book Online" CTA.
-  * Clear service categories (Refrigerator, Dishwasher, Dryer, Washing Machine, Stove/Oven, Microwave, Range Hood).
-  * High-converting, trustworthy presentation with clear pricing transparency.
+## 3. Design Benchmark & Content References
+* **Primary Benchmark (Design & Content Structure)**: [appliancerepaircompany.ca](https://appliancerepaircompany.ca)
+  * Clean, accessible card layouts, clear service categories, professional tone, and transparent warranty/fee messaging.
+* **Secondary Benchmark (Header & CTA Layout)**: [appliancerepairteam.ca](https://www.appliancerepairteam.ca) (The A-Team Appliance Repair)
+  * Top-bar regional dispatch contacts, prominent click-to-call, and "Book Online" action triggers.
 
 ---
 
@@ -35,7 +39,7 @@
 * **Homepage (`index.php`) On-Page Keyword Refinement**:
   * **Target Query**: Integrate `"appliance repair near you"` / `"appliance repair near me"` naturally into:
     1. **Hero Subtitle**: Update intro hook to: *"Looking for reliable appliance repair near you? We serve homeowners across the Greater Toronto Area with fast, certified, same-day repairs."*
-    2. **FAQ Section**: Add natural voice-search & audit-compliant question: *"How quickly can an appliance repair technician near me arrive?"* (Answer highlighting 2-4 hr GTA response).
+    2. **FAQ Section**: Add natural voice-search & audit-compliant question: *"How quickly can an appliance repair technician near me arrive?"* (Answer highlighting prompt GTA same-day dispatch).
   * **Timing**: Scheduled for next month's SEO sprint to allow Google to index current schema, UI, and speed updates without index churn.
 
 ---

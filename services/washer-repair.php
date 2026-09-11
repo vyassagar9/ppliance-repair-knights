@@ -3,7 +3,7 @@ require_once __DIR__ . '/../config.php';
 $base_url = '../';
 $current_page = 'washer';
 $page_title = 'Washing Machine Repair | Appliance Repair Knights';
-$page_description = 'Fast washing machine repair & diagnostic services. Spin cycle issues, leaks, & error codes fixed fast. Certified techs with up to 1-year warranty.';
+$page_description = 'Fast washing machine repair & diagnostic services. Spin cycle issues, leaks, & error codes fixed fast. Certified techs with written parts & labor warranty.';
 $page_keywords = 'washing machine repair service, washer diagnostic, fix washer spin cycle';
 $canonical_url = 'https://www.appliancerepairknights.com/services/washer-repair';
 
@@ -146,7 +146,7 @@ $custom_head_schema = <<<HTML
         "name": "Do you offer a warranty on washer parts and labour?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Warranty coverage depends on the service and parts used. Before the repair is completed, ask our team about the applicable warranty for your specific washer repair, including what is covered for parts and labour. We can explain the available coverage when you arrange washing machine repair anywhere in the GTA."
+          "text": "Yes, all completed washing machine repairs include written warranty coverage on installed OEM replacement parts and technician labour."
         }
       }
     ]
@@ -192,7 +192,7 @@ include __DIR__ . '/../head.php';
             </div>
             <div class="flex items-center gap-2.5 text-slate-200">
               <svg class="w-4 h-4 text-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              <span>90-day warranty on labor & parts</span>
+              <span>Repair with written warranty on labor & parts</span>
             </div>
           </div>
           <div class="flex pt-4">
@@ -347,7 +347,7 @@ include __DIR__ . '/../head.php';
             <a href="../locations/brampton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Brampton</a>
             <a href="../locations/oakville-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Oakville</a>
           </div>
-          <a href="../#service-areas" class="block bg-primary text-white font-bold py-2.5 rounded-lg text-center text-xs hover:bg-brandDarkBlue transition-colors cursor-pointer">
+          <a href="../locations" class="block bg-primary text-white font-bold py-2.5 rounded-lg text-center text-xs hover:bg-brandDarkBlue transition-colors cursor-pointer">
             View All Cities
           </a>
         </div>
@@ -439,7 +439,7 @@ include __DIR__ . '/../head.php';
               <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
             <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
-              Warranty coverage depends on the service and parts used. Before the repair is completed, ask our team about the applicable warranty for your specific washer repair, including what is covered for parts and labour. We can explain the available coverage when you arrange washing machine repair anywhere in the GTA.
+              Yes, all completed washing machine repairs include written warranty coverage on installed OEM replacement parts and technician labour.
             </div>
           </div>
         </div>
@@ -463,7 +463,7 @@ include __DIR__ . '/../head.php';
             </a>
           </div>
           <p class="text-xs text-slate-700 font-semibold flex items-center justify-center gap-2 flex-wrap pt-1">
-            <span>🛡️ $0 Service Call With Any Paid Repair</span>
+            <span>🛡️ Service Call Fee Waived With Repairs</span>
             <span class="text-slate-400">•</span>
             <span>⚡ Speak Directly With a Technician</span>
             <span class="text-slate-400">•</span>

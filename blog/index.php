@@ -216,7 +216,7 @@ require_once __DIR__ . '/../head.php';
         <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
           <div>
             <span class="inline-block px-3 py-1 bg-emerald-500 text-white text-xs font-extrabold uppercase rounded-full mb-3 shadow">
-              $0 Service Call Fee with Repair
+              Service Call Fee Waived with Repair
             </span>
             <h3 class="text-2xl sm:text-3xl md:text-4xl font-heading font-extrabold text-white">
               Need Appliance Repair Right Away?

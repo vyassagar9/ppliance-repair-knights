@@ -1,8 +1,8 @@
 <?php
 require_once __DIR__ . '/config.php';
-$base_url = './';
+$base_url = defined('BASE_URL') ? BASE_URL : './';
 $page_title = 'About Appliance Repair Knights | Trusted Local Technicians';
-$page_description = 'Learn about Appliance Repair Knights. Over 10+ years serving GTA with certified technicians, upfront pricing, and 100% satisfaction guarantee.';
+$page_description = 'Learn about Appliance Repair Knights. Over 10+ years serving GTA with certified technicians, upfront pricing, and repair with warranty.';
 $page_keywords = 'about appliance repair knights, appliance repair technicians GTA';
 $canonical_url = 'https://www.appliancerepairknights.com/about';
 
@@ -79,7 +79,7 @@ include 'head.php';
 <body class="bg-lightbg text-secondary font-body min-h-screen flex flex-col">
 
 <?php 
-$base_url = './';
+$base_url = defined('BASE_URL') ? BASE_URL : './';
 $current_page = 'about';
 include 'header.php'; 
 ?>
@@ -273,6 +273,6 @@ include 'header.php';
   </main>
 
 <?php 
-$base_url = './';
+$base_url = defined('BASE_URL') ? BASE_URL : './';
 include 'footer.php'; 
 ?>

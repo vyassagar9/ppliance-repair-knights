@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </svg>
         </button>
         <div class="absolute top-full left-0 w-64 bg-white border border-brandBorder shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2 max-h-[75vh] overflow-y-auto">
-          <a href="<?php echo $base_url ? $base_url : './'; ?>#service-areas" class="block px-4 py-2 text-xs font-bold uppercase tracking-wider text-brandOrange bg-slate-50 border-b border-slate-100">All Service Areas (GTA)</a>
+          <a href="<?php echo $base_url; ?>locations" class="block px-4 py-2 text-xs font-bold uppercase tracking-wider text-brandOrange bg-slate-50 border-b border-slate-100">All Service Areas (GTA) &rarr;</a>
           
           <!-- Top Initial Locations -->
           <a href="<?php echo $base_url; ?>locations/toronto-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Toronto Appliance Repair</a>
@@ -81,7 +81,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
           <!-- Hidden Remaining Locations -->
           <div id="header-more-loc-list" class="hidden border-t border-slate-100 bg-slate-50/50">
-            <a href="<?php echo $base_url; ?>locations/richmond-hill-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Richmond Hill Repair</a>
+            <a href="<?php echo $base_url; ?>locations/richmond-hill-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Richmond Hill Appliance Repair</a>
             <a href="<?php echo $base_url; ?>locations/burlington-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Burlington Appliance Repair</a>
             <a href="<?php echo $base_url; ?>locations/hamilton-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Hamilton Appliance Repair</a>
             <a href="<?php echo $base_url; ?>locations/kitchener-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Kitchener Appliance Repair</a>
@@ -142,7 +142,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="pl-2 space-y-1.5 border-l-2 border-brandBlue/30 my-2">
       <span class="text-xs uppercase text-slate-400 font-bold tracking-wider">Service Areas</span>
-      <a href="<?php echo $base_url ? $base_url : './'; ?>#service-areas" class="block text-sm font-bold text-brandOrange">Toronto &amp; GTA Overview</a>
+      <a href="<?php echo $base_url; ?>locations" class="block text-sm font-bold text-brandOrange">All Service Areas &amp; Locations &rarr;</a>
       
       <!-- Top Mobile Locations -->
       <a href="<?php echo $base_url; ?>locations/toronto-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Toronto</a>
