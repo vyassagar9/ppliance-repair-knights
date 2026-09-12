@@ -146,7 +146,8 @@ include 'head.php';
           <!-- Hero Left Column: Minimalist Headline, Badges & CTAs (7 cols) -->
           <div class="lg:col-span-7 space-y-5">
 
-            <div class="inline-flex items-center gap-2 bg-brandOrange/10 text-brandOrange font-bold text-xs uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-brandOrange/20">
+            <div
+              class="inline-flex items-center gap-2 bg-brandOrange/10 text-brandOrange font-bold text-xs uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-brandOrange/20">
               <span class="w-2 h-2 rounded-full bg-brandOrange animate-pulse"></span>
               Fast • Reliable • Professional
             </div>
@@ -157,31 +158,45 @@ include 'head.php';
             </h1>
 
             <p class="text-slate-600 text-base md:text-lg max-w-xl font-normal leading-relaxed">
-              Serving homeowners across the Greater Toronto Area & Southern Ontario with fast, trusted local repairs backed by warranty.
+              Serving homeowners across the Greater Toronto Area & Southern Ontario with fast, trusted local repairs
+              backed by warranty.
             </p>
 
             <!-- Minimalist Trust Highlights Bar with Highlighted Repair with Warranty Badge -->
-            <div class="flex flex-wrap items-center gap-2 sm:gap-2.5 text-xs sm:text-sm text-slate-700 font-semibold pt-1">
-              <div class="inline-flex items-center gap-1.5 bg-slate-100/90 text-slate-800 px-3 py-1.5 rounded-full border border-slate-200/80 shadow-2xs">
+            <div
+              class="flex flex-wrap items-center gap-2 sm:gap-2.5 text-xs sm:text-sm text-slate-700 font-semibold pt-1">
+              <div
+                class="inline-flex items-center gap-1.5 bg-slate-100/90 text-slate-800 px-3 py-1.5 rounded-full border border-slate-200/80 shadow-2xs">
                 <span class="text-amber-400 text-sm">★</span>
                 <span class="font-extrabold text-slate-900">5.0/5</span>
                 <span class="text-slate-500 font-medium text-xs">(Google Rated)</span>
               </div>
-              <div class="inline-flex items-center gap-1.5 bg-slate-100/90 text-slate-800 px-3 py-1.5 rounded-full border border-slate-200/80 shadow-2xs">
-                <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+              <div
+                class="inline-flex items-center gap-1.5 bg-slate-100/90 text-slate-800 px-3 py-1.5 rounded-full border border-slate-200/80 shadow-2xs">
+                <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                </svg>
                 <span>Licensed & TSSA Certified</span>
               </div>
-              <div class="inline-flex items-center gap-1.5 bg-slate-100/90 text-slate-800 px-3 py-1.5 rounded-full border border-slate-200/80 shadow-2xs">
-                <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+              <div
+                class="inline-flex items-center gap-1.5 bg-slate-100/90 text-slate-800 px-3 py-1.5 rounded-full border border-slate-200/80 shadow-2xs">
+                <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                </svg>
                 <span>Service Call Fee Waived with Repair</span>
               </div>
               <!-- Highlighted Repair with Warranty Shield Badge -->
-              <div class="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-900 px-3.5 py-1.5 rounded-full border border-emerald-200/90 shadow-xs font-extrabold">
+              <div
+                class="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-900 px-3.5 py-1.5 rounded-full border border-emerald-200/90 shadow-xs font-extrabold">
                 <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                  </path>
                 </svg>
                 <span>Repair With Warranty</span>
-                <span class="text-[10px] bg-emerald-600 text-white font-extrabold px-1.5 py-0.5 rounded-md uppercase tracking-wider">Parts & Labor</span>
+                <span
+                  class="text-[10px] bg-emerald-600 text-white font-extrabold px-1.5 py-0.5 rounded-md uppercase tracking-wider">Parts
+                  & Labor</span>
               </div>
             </div>
 
@@ -241,7 +256,8 @@ include 'head.php';
           <a href="/services/fridge-repair"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/refrigerator-repair-service.webp" alt="Same-Day Refrigerator Repair Service Toronto" title="Fast Refrigerator Repair & Diagnostics" width="798" height="448" loading="lazy" decoding="async"
+              <img src="img/refrigerator-repair-service.webp" alt="Same-Day Refrigerator Repair Service Toronto"
+                title="Fast Refrigerator Repair & Diagnostics" width="798" height="448" loading="lazy" decoding="async"
                 class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
             </div>
             <div>
@@ -250,8 +266,8 @@ include 'head.php';
                 Refrigerator Repair
               </h3>
               <span class="inline-flex items-center gap-1 text-xs text-brandOrange font-semibold mt-2">
-                Explore Refrigerator Repair <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none"
-                  stroke="currentColor" viewBox="0 0 24 24">
+                Explore Refrigerator Repair <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
                   </path>
                 </svg>
@@ -263,7 +279,8 @@ include 'head.php';
           <a href="/services/washer-repair"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/washing-machine-repair-service.webp" alt="Washing Machine Repair Service GTA" title="Certified Washer Diagnostics & Repair" width="739" height="415" loading="lazy" decoding="async"
+              <img src="img/washing-machine-repair-service.webp" alt="Washing Machine Repair Service GTA"
+                title="Certified Washer Diagnostics & Repair" width="739" height="415" loading="lazy" decoding="async"
                 class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
             </div>
             <div>
@@ -272,8 +289,8 @@ include 'head.php';
                 Washer Repair
               </h3>
               <span class="inline-flex items-center gap-1 text-xs text-brandOrange font-semibold mt-2">
-                Explore Washer Repair <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none"
-                  stroke="currentColor" viewBox="0 0 24 24">
+                Explore Washer Repair <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
                   </path>
                 </svg>
@@ -285,7 +302,8 @@ include 'head.php';
           <a href="/services/dryer-repair"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/clothes-dryer-repair-service.webp" alt="Clothes Dryer Repair and Vent Cleaning" title="Fast Dryer Inspection & Repair Service" width="798" height="448" loading="lazy" decoding="async"
+              <img src="img/clothes-dryer-repair-service.webp" alt="Clothes Dryer Repair and Vent Cleaning"
+                title="Fast Dryer Inspection & Repair Service" width="798" height="448" loading="lazy" decoding="async"
                 class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
             </div>
             <div>
@@ -307,7 +325,9 @@ include 'head.php';
           <a href="/services/dishwasher-repair"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/open-dishwasher-repair.webp" alt="Dishwasher Diagnostic and Repair Service" title="Reliable Dishwasher Repair & Pump Diagnostics" width="798" height="448" loading="lazy" decoding="async"
+              <img src="img/open-dishwasher-repair.webp" alt="Dishwasher Diagnostic and Repair Service"
+                title="Reliable Dishwasher Repair & Pump Diagnostics" width="798" height="448" loading="lazy"
+                decoding="async"
                 class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
             </div>
             <div>
@@ -316,8 +336,8 @@ include 'head.php';
                 Dishwasher Repair
               </h3>
               <span class="inline-flex items-center gap-1 text-xs text-brandOrange font-semibold mt-2">
-                Explore Dishwasher Repair <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none"
-                  stroke="currentColor" viewBox="0 0 24 24">
+                Explore Dishwasher Repair <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
                   </path>
                 </svg>
@@ -329,7 +349,8 @@ include 'head.php';
           <a href="/services/stove-repair"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/oven-stove-repair-service.webp" alt="Oven and Stove Repair Service" title="Electric & Gas Stove/Oven Diagnostics" width="798" height="448" loading="lazy" decoding="async"
+              <img src="img/oven-stove-repair-service.webp" alt="Oven and Stove Repair Service"
+                title="Electric & Gas Stove/Oven Diagnostics" width="798" height="448" loading="lazy" decoding="async"
                 class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
             </div>
             <div>
@@ -338,8 +359,8 @@ include 'head.php';
                 Oven & Stove Repair
               </h3>
               <span class="inline-flex items-center gap-1 text-xs text-brandOrange font-semibold mt-2">
-                Explore Oven &amp; Stove Repair <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none"
-                  stroke="currentColor" viewBox="0 0 24 24">
+                Explore Oven &amp; Stove Repair <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
                   </path>
                 </svg>
@@ -351,7 +372,9 @@ include 'head.php';
           <a href="/services/microwave-repair"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/microwave-repair.webp" alt="Microwave Oven Repair and Installation Service" title="Built-in & Over-the-Range Microwave Repair" width="1536" height="1024" loading="lazy" decoding="async"
+              <img src="img/microwave-repair.webp" alt="Microwave Oven Repair and Installation Service"
+                title="Built-in & Over-the-Range Microwave Repair" width="1536" height="1024" loading="lazy"
+                decoding="async"
                 class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
             </div>
             <div>
@@ -360,8 +383,8 @@ include 'head.php';
                 Microwave Repair
               </h3>
               <span class="inline-flex items-center gap-1 text-xs text-brandOrange font-semibold mt-2">
-                Explore Microwave Repair <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none"
-                  stroke="currentColor" viewBox="0 0 24 24">
+                Explore Microwave Repair <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
                   </path>
                 </svg>
@@ -484,25 +507,39 @@ include 'head.php';
     <!-- SECTION 3: BRANDS WE REPAIR (DUAL DIRECTION INFINITE MARQUEE TICKER) -->
     <style>
       @keyframes brandSlideLeft {
-        0% { transform: translate3d(0, 0, 0); }
-        100% { transform: translate3d(-50%, 0, 0); }
+        0% {
+          transform: translate3d(0, 0, 0);
+        }
+
+        100% {
+          transform: translate3d(-50%, 0, 0);
+        }
       }
+
       @keyframes brandSlideRight {
-        0% { transform: translate3d(-50%, 0, 0); }
-        100% { transform: translate3d(0, 0, 0); }
+        0% {
+          transform: translate3d(-50%, 0, 0);
+        }
+
+        100% {
+          transform: translate3d(0, 0, 0);
+        }
       }
+
       .brand-track-left {
         display: flex !important;
         width: max-content !important;
         animation: brandSlideLeft 20s linear infinite !important;
         will-change: transform;
       }
+
       .brand-track-right {
         display: flex !important;
         width: max-content !important;
         animation: brandSlideRight 22s linear infinite !important;
         will-change: transform;
       }
+
       .brand-track-left:hover,
       .brand-track-right:hover {
         animation-play-state: paused !important;
@@ -510,7 +547,8 @@ include 'head.php';
     </style>
     <section class="py-12 bg-white border-b border-brandBorder overflow-hidden" id="brands">
       <div class="max-w-7xl mx-auto px-4 text-center mb-8">
-        <span class="text-brandOrange font-extrabold text-xs uppercase tracking-widest block mb-1">FACTORY-TRAINED TECHNICIANS</span>
+        <span class="text-brandOrange font-extrabold text-xs uppercase tracking-widest block mb-1">FACTORY-TRAINED
+          TECHNICIANS</span>
         <h2 class="text-2xl sm:text-3xl font-heading font-black text-brandDarkBlue uppercase tracking-tight mb-2">
           MAJOR APPLIANCE BRANDS WE SERVICE
         </h2>
@@ -523,61 +561,81 @@ include 'head.php';
       <!-- Infinite Dual-Marquee Wrapper -->
       <div class="relative w-full overflow-hidden space-y-4">
         <!-- Side Fade Gradient Masks -->
-        <div class="pointer-events-none absolute inset-y-0 left-0 w-20 sm:w-36 bg-gradient-to-r from-white to-transparent z-10"></div>
-        <div class="pointer-events-none absolute inset-y-0 right-0 w-20 sm:w-36 bg-gradient-to-l from-white to-transparent z-10"></div>
+        <div
+          class="pointer-events-none absolute inset-y-0 left-0 w-20 sm:w-36 bg-gradient-to-r from-white to-transparent z-10">
+        </div>
+        <div
+          class="pointer-events-none absolute inset-y-0 right-0 w-20 sm:w-36 bg-gradient-to-l from-white to-transparent z-10">
+        </div>
 
         <!-- Marquee Row 1 (Moves Left) -->
         <div class="brand-track-left space-x-4 py-1">
           <div class="flex space-x-3 sm:space-x-4 shrink-0 items-center">
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>SAMSUNG
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>LG
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>WHIRLPOOL
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>BOSCH
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>GE APPLIANCES
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>MAYTAG
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>KITCHENAID
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>FRIGIDAIRE
             </span>
           </div>
           <!-- Duplicate Row 1 -->
           <div class="flex space-x-3 sm:space-x-4 shrink-0 items-center">
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>SAMSUNG
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>LG
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>WHIRLPOOL
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>BOSCH
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>GE APPLIANCES
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>MAYTAG
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>KITCHENAID
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>FRIGIDAIRE
             </span>
           </div>
@@ -586,61 +644,79 @@ include 'head.php';
         <!-- Marquee Row 2 (Moves Right) -->
         <div class="brand-track-right space-x-4 py-1">
           <div class="flex space-x-3 sm:space-x-4 shrink-0 items-center">
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>ELECTROLUX
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>MIELE
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>SUB-ZERO
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>KENMORE
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>VIKING
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>JENNAIR
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>DACOR
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>AMANA
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>SPEED QUEEN
             </span>
           </div>
           <!-- Duplicate Row 2 -->
           <div class="flex space-x-3 sm:space-x-4 shrink-0 items-center">
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>ELECTROLUX
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>MIELE
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>SUB-ZERO
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>KENMORE
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>VIKING
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>JENNAIR
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>DACOR
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>AMANA
             </span>
-            <span class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
+            <span
+              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
               <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>SPEED QUEEN
             </span>
           </div>
@@ -648,7 +724,8 @@ include 'head.php';
       </div>
 
       <div class="mt-6 text-center">
-        <div class="inline-flex items-center gap-2 bg-slate-100 px-4 py-2 rounded-full border border-slate-200 text-xs text-slate-600 font-medium">
+        <div
+          class="inline-flex items-center gap-2 bg-slate-100 px-4 py-2 rounded-full border border-slate-200 text-xs text-slate-600 font-medium">
           <span class="text-brandOrange font-bold">Note:</span>
           <span>We repair all out-of-warranty residential appliances across Toronto & GTA.</span>
         </div>
@@ -768,8 +845,10 @@ include 'head.php';
             </button>
             <div id="faq-1"
               class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-              We offer prompt same-day service across Toronto and the GTA based on daily schedule availability! When you call or submit an enquiry,
-              our technician coordinates directly with you to arrange a prompt visit and get your appliance back up and running.
+              We offer prompt same-day service across Toronto and the GTA based on daily schedule availability! When you
+              call or submit an enquiry,
+              our technician coordinates directly with you to arrange a prompt visit and get your appliance back up and
+              running.
             </div>
           </div>
 
@@ -796,7 +875,8 @@ include 'head.php';
             </button>
             <div id="faq-3"
               class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-              All completed repairs performed by Appliance Repair Knights include a written parts and labor warranty covering installed replacement OEM parts and technician labor.
+              All completed repairs performed by Appliance Repair Knights include a written parts and labor warranty
+              covering installed replacement OEM parts and technician labor.
             </div>
           </div>
 
@@ -822,9 +902,12 @@ include 'head.php';
           <a href="tel:<?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?>"
             class="inline-flex items-center justify-center gap-2.5 bg-brandOrange hover:bg-orange-600 text-white font-extrabold px-8 py-4 rounded-xl text-sm sm:text-base shadow-lg hover:shadow-xl transition-all uppercase tracking-wide">
             <svg class="w-5 h-5 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+              <path
+                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+              </path>
             </svg>
-            <span>Still Have Questions? Call <?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?></span>
+            <span>Still Have Questions? Call
+              <?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?></span>
           </a>
           <p class="text-xs text-slate-700 font-semibold flex items-center justify-center gap-2 flex-wrap">
             <span>🛡️ Service Call Fee Waived With Repairs</span>
@@ -863,32 +946,73 @@ include 'head.php';
             </h3>
 
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-y-3 gap-x-4 text-xs sm:text-sm text-slate-700 font-medium">
-              <a href="<?php echo $base_url; ?>locations/toronto-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Toronto</a>
-              <a href="<?php echo $base_url; ?>locations/mississauga-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Mississauga</a>
-              <a href="<?php echo $base_url; ?>locations/brampton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Brampton</a>
-              <a href="<?php echo $base_url; ?>locations/caledon-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Caledon</a>
-              <a href="<?php echo $base_url; ?>locations/vaughan-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Vaughan</a>
-              <a href="<?php echo $base_url; ?>locations/markham-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Markham</a>
-              <a href="<?php echo $base_url; ?>locations/oakville-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Oakville</a>
-              <a href="<?php echo $base_url; ?>locations/scarborough-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Scarborough</a>
-              <a href="<?php echo $base_url; ?>locations/richmond-hill-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Richmond Hill</a>
-              <a href="<?php echo $base_url; ?>locations/burlington-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Burlington</a>
-              <a href="<?php echo $base_url; ?>locations/milton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Milton</a>
-              <a href="<?php echo $base_url; ?>locations/hamilton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Hamilton</a>
-              <a href="<?php echo $base_url; ?>locations/kitchener-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Kitchener</a>
-              <a href="<?php echo $base_url; ?>locations/waterloo-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Waterloo</a>
-              <a href="<?php echo $base_url; ?>locations/cambridge-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Cambridge</a>
-              <a href="<?php echo $base_url; ?>locations/guelph-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Guelph</a>
-              <a href="<?php echo $base_url; ?>locations/barrie-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Barrie</a>
-              <a href="<?php echo $base_url; ?>locations/oshawa-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Oshawa</a>
-              <a href="<?php echo $base_url; ?>locations/ajax-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Ajax</a>
-              <a href="<?php echo $base_url; ?>locations/pickering-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span class="text-brandOrange">📍</span> Pickering</a>
+              <a href="<?php echo $base_url; ?>locations/toronto-appliance-repair"
+                class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span
+                  class="text-brandOrange">📍</span> Toronto</a>
+              <a href="<?php echo $base_url; ?>locations/mississauga-appliance-repair"
+                class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span
+                  class="text-brandOrange">📍</span> Mississauga</a>
+              <a href="<?php echo $base_url; ?>locations/brampton-appliance-repair"
+                class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span
+                  class="text-brandOrange">📍</span> Brampton</a>
+              <a href="<?php echo $base_url; ?>locations/caledon-appliance-repair"
+                class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span
+                  class="text-brandOrange">📍</span> Caledon</a>
+              <a href="<?php echo $base_url; ?>locations/vaughan-appliance-repair"
+                class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span
+                  class="text-brandOrange">📍</span> Vaughan</a>
+              <a href="<?php echo $base_url; ?>locations/markham-appliance-repair"
+                class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span
+                  class="text-brandOrange">📍</span> Markham</a>
+              <a href="<?php echo $base_url; ?>locations/oakville-appliance-repair"
+                class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span
+                  class="text-brandOrange">📍</span> Oakville</a>
+              <a href="<?php echo $base_url; ?>locations/scarborough-appliance-repair"
+                class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span
+                  class="text-brandOrange">📍</span> Scarborough</a>
+              <a href="<?php echo $base_url; ?>locations/richmond-hill-appliance-repair"
+                class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span
+                  class="text-brandOrange">📍</span> Richmond Hill</a>
+              <a href="<?php echo $base_url; ?>locations/burlington-appliance-repair"
+                class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span
+                  class="text-brandOrange">📍</span> Burlington</a>
+              <a href="<?php echo $base_url; ?>locations/milton-appliance-repair"
+                class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span
+                  class="text-brandOrange">📍</span> Milton</a>
+              <a href="<?php echo $base_url; ?>locations/hamilton-appliance-repair"
+                class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span
+                  class="text-brandOrange">📍</span> Hamilton</a>
+              <a href="<?php echo $base_url; ?>locations/kitchener-appliance-repair"
+                class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span
+                  class="text-brandOrange">📍</span> Kitchener</a>
+              <a href="<?php echo $base_url; ?>locations/waterloo-appliance-repair"
+                class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span
+                  class="text-brandOrange">📍</span> Waterloo</a>
+              <a href="<?php echo $base_url; ?>locations/cambridge-appliance-repair"
+                class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span
+                  class="text-brandOrange">📍</span> Cambridge</a>
+              <a href="<?php echo $base_url; ?>locations/guelph-appliance-repair"
+                class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span
+                  class="text-brandOrange">📍</span> Guelph</a>
+              <a href="<?php echo $base_url; ?>locations/barrie-appliance-repair"
+                class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span
+                  class="text-brandOrange">📍</span> Barrie</a>
+              <a href="<?php echo $base_url; ?>locations/oshawa-appliance-repair"
+                class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span
+                  class="text-brandOrange">📍</span> Oshawa</a>
+              <a href="<?php echo $base_url; ?>locations/ajax-appliance-repair"
+                class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span
+                  class="text-brandOrange">📍</span> Ajax</a>
+              <a href="<?php echo $base_url; ?>locations/pickering-appliance-repair"
+                class="flex items-center gap-1.5 hover:text-brandOrange hover:underline transition-colors"><span
+                  class="text-brandOrange">📍</span> Pickering</a>
             </div>
 
             <div class="mt-6 pt-4 border-t border-slate-100">
-              <a href="#enquiry-form"
-                class="inline-block border border-slate-300 hover:border-brandBlue text-brandBlue font-bold px-5 py-2 rounded-lg text-xs uppercase tracking-wider transition-all">
-                VIEW ALL SERVICE AREAS
+              <a href="<?php echo $base_url; ?>locations"
+                class="inline-flex items-center gap-2 border border-slate-300 hover:border-brandBlue hover:bg-slate-50 text-brandBlue font-bold px-5 py-2.5 rounded-lg text-xs uppercase tracking-wider transition-all">
+                <span>VIEW ALL LOCATIONS &amp; SERVICE AREAS</span>
+                <span class="text-sm font-normal">&rarr;</span>
               </a>
             </div>
           </div>
@@ -916,7 +1040,9 @@ include 'head.php';
 
             <div class="relative z-10 flex items-center justify-between pt-4 border-t border-white/10">
               <span class="text-xs text-brandOrange font-bold">● Active Technicians Nearby</span>
-              <a href="tel:9057178905" class="gtm-web-call text-xs font-bold text-white hover:text-brandOrange transition-colors">Call: 905-717-8905</a>
+              <a href="tel:9057178905"
+                class="gtm-web-call text-xs font-bold text-white hover:text-brandOrange transition-colors">Call:
+                905-717-8905</a>
             </div>
           </div>
 

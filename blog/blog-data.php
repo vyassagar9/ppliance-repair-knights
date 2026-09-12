@@ -158,18 +158,18 @@ return [
       </a>
     </div>
 
-    <!-- REFRIGERATOR REPAIR COST COMPARISON TABLE (SEO Table Snippet Target) -->
+    <!-- REFRIGERATOR REPAIR COMPARISON TABLE (SEO Table Snippet Target) -->
     <div class="space-y-4 pt-2">
       <div class="flex items-center justify-between flex-wrap gap-2">
         <h3 class="text-xl sm:text-2xl font-heading font-bold text-slate-900">
-          Typical Refrigerator Repair Costs in Toronto &amp; GTA
+          Typical Refrigerator Repairs in Toronto &amp; GTA
         </h3>
         <span class="text-xs font-semibold text-brandBlue bg-brandBlue/10 px-3 py-1 rounded-full">
-          Typical Toronto &amp; GTA Repair Cost Ranges (CAD)
+          Toronto &amp; GTA Component Repair Guide
         </span>
       </div>
       <p class="text-sm sm:text-base text-slate-600">
-        Below are typical refrigerator repair cost ranges in Toronto and the GTA for common component failures. Prices can vary by brand, model, parts availability, labour requirements, and the technician's diagnosis.
+        Below is an overview of common refrigerator component failures in Toronto and the GTA, their repair feasibility, and recommended repair-versus-replace outlook. Every appliance is evaluated on-site by our certified technicians with an upfront quote before any work begins.
       </p>
 
       <!-- RESPONSIVE COMPARISON: Clean Mobile Cards (Screens < 768px, Zero Horizontal Scroll) -->
@@ -185,11 +185,7 @@ return [
               Worth Repairing
             </span>
           </div>
-          <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs">
-            <span class="text-slate-500 font-medium">Typical GTA Cost:</span>
-            <span class="font-extrabold text-slate-900 text-sm">$110 – $190 CAD</span>
-          </div>
-          <div class="mt-2 text-[11px] text-slate-600 bg-slate-50 p-2.5 rounded-xl">
+          <div class="mt-2.5 text-[11px] text-slate-600 bg-slate-50 p-2.5 rounded-xl">
             <strong class="text-slate-800 font-semibold">Outlook:</strong> High — Inexpensive compared with replacement
           </div>
         </div>
@@ -205,11 +201,7 @@ return [
               Worth Repairing
             </span>
           </div>
-          <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs">
-            <span class="text-slate-500 font-medium">Typical GTA Cost:</span>
-            <span class="font-extrabold text-slate-900 text-sm">$130 – $220 CAD</span>
-          </div>
-          <div class="mt-2 text-[11px] text-slate-600 bg-slate-50 p-2.5 rounded-xl">
+          <div class="mt-2.5 text-[11px] text-slate-600 bg-slate-50 p-2.5 rounded-xl">
             <strong class="text-slate-800 font-semibold">Outlook:</strong> High — Lower-cost component replacement
           </div>
         </div>
@@ -225,11 +217,7 @@ return [
               Worth Repairing
             </span>
           </div>
-          <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs">
-            <span class="text-slate-500 font-medium">Typical GTA Cost:</span>
-            <span class="font-extrabold text-slate-900 text-sm">$120 – $210 CAD</span>
-          </div>
-          <div class="mt-2 text-[11px] text-slate-600 bg-slate-50 p-2.5 rounded-xl">
+          <div class="mt-2.5 text-[11px] text-slate-600 bg-slate-50 p-2.5 rounded-xl">
             <strong class="text-slate-800 font-semibold">Outlook:</strong> High — Stops cooling loss and frost buildup
           </div>
         </div>
@@ -245,11 +233,7 @@ return [
               Worth Repairing
             </span>
           </div>
-          <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs">
-            <span class="text-slate-500 font-medium">Typical GTA Cost:</span>
-            <span class="font-extrabold text-slate-900 text-sm">$120 – $210 CAD</span>
-          </div>
-          <div class="mt-2 text-[11px] text-slate-600 bg-slate-50 p-2.5 rounded-xl">
+          <div class="mt-2.5 text-[11px] text-slate-600 bg-slate-50 p-2.5 rounded-xl">
             <strong class="text-slate-800 font-semibold">Outlook:</strong> High — Routine maintenance and drain clearing service
           </div>
         </div>
@@ -265,11 +249,7 @@ return [
               Worth Repairing
             </span>
           </div>
-          <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs">
-            <span class="text-slate-500 font-medium">Typical GTA Cost:</span>
-            <span class="font-extrabold text-slate-900 text-sm">$150 – $260 CAD</span>
-          </div>
-          <div class="mt-2 text-[11px] text-slate-600 bg-slate-50 p-2.5 rounded-xl">
+          <div class="mt-2.5 text-[11px] text-slate-600 bg-slate-50 p-2.5 rounded-xl">
             <strong class="text-slate-800 font-semibold">Outlook:</strong> High — Restores automatic defrost cycle
           </div>
         </div>
@@ -285,11 +265,7 @@ return [
               Worth Repairing
             </span>
           </div>
-          <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs">
-            <span class="text-slate-500 font-medium">Typical GTA Cost:</span>
-            <span class="font-extrabold text-slate-900 text-sm">$160 – $280 CAD</span>
-          </div>
-          <div class="mt-2 text-[11px] text-slate-600 bg-slate-50 p-2.5 rounded-xl">
+          <div class="mt-2.5 text-[11px] text-slate-600 bg-slate-50 p-2.5 rounded-xl">
             <strong class="text-slate-800 font-semibold">Outlook:</strong> High — Manageable repair if cabinet is sound
           </div>
         </div>
@@ -305,11 +281,7 @@ return [
               Evaluate Cost
             </span>
           </div>
-          <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs">
-            <span class="text-slate-500 font-medium">Typical GTA Cost:</span>
-            <span class="font-extrabold text-slate-900 text-sm">$220 – $380 CAD</span>
-          </div>
-          <div class="mt-2 text-[11px] text-slate-600 bg-slate-50 p-2.5 rounded-xl">
+          <div class="mt-2.5 text-[11px] text-slate-600 bg-slate-50 p-2.5 rounded-xl">
             <strong class="text-slate-800 font-semibold">Outlook:</strong> Moderate — Depends on appliance age and condition
           </div>
         </div>
@@ -325,11 +297,7 @@ return [
               Compare Options
             </span>
           </div>
-          <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs">
-            <span class="text-slate-500 font-medium">Typical GTA Cost:</span>
-            <span class="font-extrabold text-slate-900 text-sm">$450 – $850+ CAD</span>
-          </div>
-          <div class="mt-2 text-[11px] text-slate-600 bg-slate-50 p-2.5 rounded-xl">
+          <div class="mt-2.5 text-[11px] text-slate-600 bg-slate-50 p-2.5 rounded-xl">
             <strong class="text-slate-800 font-semibold">Outlook:</strong> Low — Compare major repair cost with replacement
           </div>
         </div>
@@ -341,7 +309,6 @@ return [
           <thead>
             <tr class="bg-slate-50 border-b border-slate-200 text-slate-700 font-heading font-bold text-[11px] sm:text-xs uppercase tracking-wider">
               <th scope="col" class="p-3.5 sm:p-4">Failed Component / Issue</th>
-              <th scope="col" class="p-3.5 sm:p-4">Typical GTA Cost (Parts &amp; Labour)</th>
               <th scope="col" class="p-3.5 sm:p-4">Recommended Action</th>
               <th scope="col" class="p-3.5 sm:p-4">Repair vs. Replace Outlook</th>
             </tr>
@@ -352,7 +319,6 @@ return [
                 Start Relay / Capacitor
                 <span class="block text-[11px] text-slate-500 font-normal mt-0.5">Fridge runs warm, click sound heard</span>
               </td>
-              <td class="p-3.5 sm:p-4 font-bold text-slate-900">$110 – $190 CAD</td>
               <td class="p-3.5 sm:p-4">
                 <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">
                   Usually Worth Repairing
@@ -365,7 +331,6 @@ return [
                 Thermostat / Temp Sensor
                 <span class="block text-[11px] text-slate-500 font-normal mt-0.5">Inconsistent temperature or overcooling</span>
               </td>
-              <td class="p-3.5 sm:p-4 font-bold text-slate-900">$130 – $220 CAD</td>
               <td class="p-3.5 sm:p-4">
                 <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">
                   Usually Worth Repairing
@@ -378,7 +343,6 @@ return [
                 Door Gasket (Magnetic Seal)
                 <span class="block text-[11px] text-slate-500 font-normal mt-0.5">Frost buildup, continuous compressor running</span>
               </td>
-              <td class="p-3.5 sm:p-4 font-bold text-slate-900">$120 – $210 CAD</td>
               <td class="p-3.5 sm:p-4">
                 <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">
                   Usually Worth Repairing
@@ -391,7 +355,6 @@ return [
                 Clogged Defrost Drain
                 <span class="block text-[11px] text-slate-500 font-normal mt-0.5">Water pooling under crisper drawers or leaking</span>
               </td>
-              <td class="p-3.5 sm:p-4 font-bold text-slate-900">$120 – $210 CAD</td>
               <td class="p-3.5 sm:p-4">
                 <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">
                   Usually Worth Repairing
@@ -404,7 +367,6 @@ return [
                 Defrost Heater / Bi-Metal Assembly
                 <span class="block text-[11px] text-slate-500 font-normal mt-0.5">Heavy frost on back wall, airflow blockage</span>
               </td>
-              <td class="p-3.5 sm:p-4 font-bold text-slate-900">$150 – $260 CAD</td>
               <td class="p-3.5 sm:p-4">
                 <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">
                   Usually Worth Repairing
@@ -417,7 +379,6 @@ return [
                 Fan Motor (Evaporator / Condenser)
                 <span class="block text-[11px] text-slate-500 font-normal mt-0.5">Loud humming/buzzing, poor airflow</span>
               </td>
-              <td class="p-3.5 sm:p-4 font-bold text-slate-900">$160 – $280 CAD</td>
               <td class="p-3.5 sm:p-4">
                 <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">
                   Usually Worth Repairing
@@ -430,7 +391,6 @@ return [
                 Main Control Board
                 <span class="block text-[11px] text-slate-500 font-normal mt-0.5">Display error codes, power or defrost failure</span>
               </td>
-              <td class="p-3.5 sm:p-4 font-bold text-slate-900">$220 – $380 CAD</td>
               <td class="p-3.5 sm:p-4">
                 <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800">
                   Evaluate Age &amp; Cost
@@ -443,7 +403,6 @@ return [
                 Compressor / Sealed System
                 <span class="block text-[11px] text-slate-500 font-normal mt-0.5">Total cooling failure, sealed refrigerant leak</span>
               </td>
-              <td class="p-3.5 sm:p-4 font-bold text-slate-900">$450 – $850+ CAD</td>
               <td class="p-3.5 sm:p-4">
                 <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-rose-100 text-rose-800">
                   Compare Repair vs. Replace
@@ -455,7 +414,7 @@ return [
         </table>
       </div>
       <p class="text-xs text-slate-500 italic bg-slate-50 p-3 rounded-xl border border-slate-200/70">
-        * Note: Cost ranges reflect typical residential repair invoices in Toronto and the Greater Toronto Area (GTA) based on common component replacements and professional labour. Exact pricing depends on your specific brand, model, and diagnostic findings. At Appliance Repair Knights, our initial service call fee is completely waived off with any approved repair.
+        * Note: Repair feasibility and recommendations depend on your specific brand, model, parts availability, and technician diagnostic findings. At Appliance Repair Knights, our initial service call fee is completely waived off with any approved repair.
       </p>
     </div>
 
