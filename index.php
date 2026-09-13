@@ -15,7 +15,7 @@ $custom_head_schema = '
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "LocalBusiness",
+        "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
         "@id": "https://www.appliancerepairknights.com/#organization",
         "name": "Appliance Repair Knights Ltd.",
         "url": "https://www.appliancerepairknights.com/",
@@ -24,10 +24,13 @@ $custom_head_schema = '
         "telephone": "905-717-8905",
         "email": "info@appliancerepairknights.com",
         "priceRange": "$$",
+        "currenciesAccepted": "CAD",
+        "paymentAccepted": "Cash, Credit Card, Debit Card, Interac e-Transfer",
         "hasMap": "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059",
         "sameAs": [
           "https://www.facebook.com/Appliancerepairknights",
           "https://www.instagram.com/appliancerepairknights/",
+          "https://www.tiktok.com/@appliance.service1",
           "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059"
         ],
         "address": {
@@ -55,6 +58,18 @@ $custom_head_schema = '
             "opens": "08:00",
             "closes": "21:00"
           }
+        ],
+        "knowsAbout": [
+          "Refrigerator Repair",
+          "Washing Machine Repair",
+          "Dryer Repair",
+          "Dishwasher Repair",
+          "Stove and Oven Repair",
+          "Microwave Repair",
+          "Samsung Appliance Repair",
+          "LG Appliance Repair",
+          "Whirlpool Appliance Repair",
+          "Bosch Appliance Repair"
         ],
         "areaServed": [
           "Toronto", "Mississauga", "Brampton", "Caledon", "Vaughan", "Markham", "Oakville", 

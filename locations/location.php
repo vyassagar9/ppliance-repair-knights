@@ -122,17 +122,19 @@ $disable_global_schema = true;
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "LocalBusiness",
-        "@id": "<?php echo $canonical_url; ?>#localbusiness",
-        "name": "Appliance Repair Knights Ltd. - <?php echo htmlspecialchars($loc['city_name']); ?>",
+        "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+        "@id": "https://www.appliancerepairknights.com/#organization",
+        "name": "Appliance Repair Knights Ltd.",
         "image": "https://www.appliancerepairknights.com/img/appliance-repair-banner.webp",
-        "url": "<?php echo $canonical_url; ?>",
+        "url": "https://www.appliancerepairknights.com/",
         "telephone": "905-717-8905",
+        "email": "info@appliancerepairknights.com",
         "priceRange": "$$",
         "hasMap": "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059",
         "sameAs": [
           "https://www.facebook.com/Appliancerepairknights",
           "https://www.instagram.com/appliancerepairknights/",
+          "https://www.tiktok.com/@appliance.service1",
           "https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059"
         ],
         "address": {
@@ -145,24 +147,34 @@ $disable_global_schema = true;
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": <?php echo (float)($loc['geo']['latitude'] ?? 43.6487); ?>,
-          "longitude": <?php echo (float)($loc['geo']['longitude'] ?? -79.3817); ?>
+          "latitude": 43.6487,
+          "longitude": -79.3817
         },
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "<?php echo GMB_RATING_VALUE; ?>",
           "reviewCount": "<?php echo GMB_REVIEW_COUNT; ?>"
         },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-          "opens": "08:00",
-          "closes": "21:00"
-        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "08:00",
+            "closes": "21:00"
+          }
+        ],
+        "knowsAbout": [
+          "Refrigerator Repair",
+          "Washing Machine Repair",
+          "Dryer Repair",
+          "Dishwasher Repair",
+          "Stove and Oven Repair",
+          "Microwave Repair"
+        ],
         "areaServed": [
           {
-            "@type": "AdministrativeArea",
-            "name": "<?php echo htmlspecialchars($loc['city_name']); ?>, ON"
+            "@type": "City",
+            "name": "<?php echo htmlspecialchars($loc['city_name']); ?>"
           },
           {
             "@type": "AdministrativeArea",
@@ -177,15 +189,20 @@ $disable_global_schema = true;
       {
         "@type": "Service",
         "@id": "<?php echo $canonical_url; ?>#service",
+        "name": "Appliance Repair in <?php echo htmlspecialchars($loc['city_name']); ?>",
         "serviceType": "Appliance Repair Service",
         "provider": {
-          "@id": "<?php echo $canonical_url; ?>#localbusiness"
+          "@id": "https://www.appliancerepairknights.com/#organization"
         },
         "areaServed": {
-          "@type": "AdministrativeArea",
-          "name": "<?php echo htmlspecialchars($loc['city_name']); ?>, ON"
+          "@type": "City",
+          "name": "<?php echo htmlspecialchars($loc['city_name']); ?>",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "<?php echo htmlspecialchars($loc['region']); ?>"
+          }
         },
-        "description": "Same-day inspection and repair services for refrigerators, washers, dryers, dishwashers, stoves, ovens, and microwaves in <?php echo htmlspecialchars($loc['city_name']); ?> and <?php echo htmlspecialchars($loc['region']); ?>."
+        "description": "Same-day inspection and repair services for refrigerators, washers, dryers, dishwashers, stoves, ovens, and microwaves in <?php echo htmlspecialchars($loc['city_name']); ?> and <?php echo htmlspecialchars($loc['region']); ?> by certified technicians from Appliance Repair Knights Ltd."
       },
       {
         "@type": "BreadcrumbList",
