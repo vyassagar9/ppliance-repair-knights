@@ -313,6 +313,114 @@ include __DIR__ . '/../head.php';
           </div>
         </div>
 
+        <!-- DIAGNOSTIC & TROUBLESHOOTING GUIDE (AEO & RICH SNIPPET TABLE) -->
+        <div class="space-y-4 pt-2">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 border-b border-bordercolor pb-3">
+            <div>
+              <span class="text-accent text-xs font-bold uppercase tracking-wider block mb-1">Quick Diagnostic Guide</span>
+              <h3 class="text-xl sm:text-2xl font-heading font-bold text-primary">Common Refrigerator Symptoms & Solutions</h3>
+            </div>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 bg-slate-100 px-3 py-1.5 rounded-lg self-start sm:self-auto">
+              <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              Service Call Fee Waived with Repair
+            </span>
+          </div>
+
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Use our field diagnostic matrix below to identify likely causes for your cooling, ice maker, or electrical issues before booking your technician:
+          </p>
+
+          <div class="overflow-x-auto rounded-2xl border border-bordercolor bg-white shadow-xs">
+            <table class="w-full text-left border-collapse text-xs sm:text-sm min-w-[620px]">
+              <thead class="bg-slate-50 border-b border-bordercolor text-primary font-heading font-bold uppercase tracking-wider text-[11px]">
+                <tr>
+                  <th scope="col" class="p-4">Observed Problem</th>
+                  <th scope="col" class="p-4">Probable Root Cause</th>
+                  <th scope="col" class="p-4">Certified Technician Action</th>
+                  <th scope="col" class="p-4 text-center">Dispatch Status</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100 text-slate-700">
+                <tr class="hover:bg-slate-50/70 transition-colors">
+                  <td class="p-4 font-semibold text-primary">
+                    Fridge warm, but freezer cold
+                    <span class="block text-[11px] text-slate-400 font-normal mt-0.5">Airflow blocked or frost buildup</span>
+                  </td>
+                  <td class="p-4 text-slate-600">Faulty evaporator fan motor or defective defrost thermostat</td>
+                  <td class="p-4 text-slate-600">Sensor load testing, coil thaw & OEM fan motor replacement</td>
+                  <td class="p-4 text-center">
+                    <span class="inline-block px-2.5 py-1 rounded-full text-[10px] font-bold bg-emerald-50 text-emerald-800 border border-emerald-200">
+                      Prompt Same-Day
+                    </span>
+                  </td>
+                </tr>
+                <tr class="hover:bg-slate-50/70 transition-colors">
+                  <td class="p-4 font-semibold text-primary">
+                    Water leaking under crisper drawers
+                    <span class="block text-[11px] text-slate-400 font-normal mt-0.5">Puddle inside bottom cabinet</span>
+                  </td>
+                  <td class="p-4 text-slate-600">Clogged, frozen, or cracked defrost drain tube</td>
+                  <td class="p-4 text-slate-600">Thorough drain line flush, thermal thaw & drain trough reseal</td>
+                  <td class="p-4 text-center">
+                    <span class="inline-block px-2.5 py-1 rounded-full text-[10px] font-bold bg-emerald-50 text-emerald-800 border border-emerald-200">
+                      Routine On-Site Fix
+                    </span>
+                  </td>
+                </tr>
+                <tr class="hover:bg-slate-50/70 transition-colors">
+                  <td class="p-4 font-semibold text-primary">
+                    Clicking / buzzing sound every 3 mins
+                    <span class="block text-[11px] text-slate-400 font-normal mt-0.5">Compressor attempts start then clicks off</span>
+                  </td>
+                  <td class="p-4 text-slate-600">Burned PTC start relay, run capacitor, or compressor overload</td>
+                  <td class="p-4 text-slate-600">Electrical ohm testing & OEM starter relay/capacitor replacement</td>
+                  <td class="p-4 text-center">
+                    <span class="inline-block px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-50 text-amber-800 border border-amber-200">
+                      Priority Dispatch
+                    </span>
+                  </td>
+                </tr>
+                <tr class="hover:bg-slate-50/70 transition-colors">
+                  <td class="p-4 font-semibold text-primary">
+                    Ice maker stopped producing ice
+                    <span class="block text-[11px] text-slate-400 font-normal mt-0.5">No ice in bucket or undersized cubes</span>
+                  </td>
+                  <td class="p-4 text-slate-600">Jammed ejector arm, blocked water inlet valve, or frozen line</td>
+                  <td class="p-4 text-slate-600">Water pressure testing, dual solenoid replacement & cycle reset</td>
+                  <td class="p-4 text-center">
+                    <span class="inline-block px-2.5 py-1 rounded-full text-[10px] font-bold bg-emerald-50 text-emerald-800 border border-emerald-200">
+                      In-Stock OEM Parts
+                    </span>
+                  </td>
+                </tr>
+                <tr class="hover:bg-slate-50/70 transition-colors">
+                  <td class="p-4 font-semibold text-primary">
+                    Excessive frost buildup on freezer walls
+                    <span class="block text-[11px] text-slate-400 font-normal mt-0.5">Snowy frost coating food packages</span>
+                  </td>
+                  <td class="p-4 text-slate-600">Torn magnetic door gasket or failed defrost heater element</td>
+                  <td class="p-4 text-slate-600">Door alignment & gasket replacement or defrost heater repair</td>
+                  <td class="p-4 text-center">
+                    <span class="inline-block px-2.5 py-1 rounded-full text-[10px] font-bold bg-emerald-50 text-emerald-800 border border-emerald-200">
+                      Written Warranty
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="p-4 bg-slate-50 rounded-xl border border-bordercolor flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-slate-600">
+            <span class="flex items-center gap-2">
+              <span class="text-accent font-bold">🛡️ Written Warranty:</span>
+              All completed refrigerator repairs include original OEM parts & technician labor warranty.
+            </span>
+            <a href="tel:9057178905" class="font-bold text-accent hover:underline flex items-center gap-1 flex-shrink-0">
+              Book Diagnosis Window &rarr;
+            </a>
+          </div>
+        </div>
+
         <!-- WHY CHOOSE US BENTO STYLE -->
         <div class="space-y-6 pt-6">
           <h3 class="text-xl font-heading font-bold text-primary text-center">Quality & Reliable Services at Reasonable Prices</h3>

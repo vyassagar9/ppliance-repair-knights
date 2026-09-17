@@ -71,6 +71,10 @@ ErrorDocument 404 /404.html
   RewriteCond %{REQUEST_URI} ^(.*?)/(service-page|induction-cooktop-repair-service|oven-repair-service)/?$ [NC]
   RewriteRule ^ %1/services/stove-repair [R=301,L]
 
+  # Legacy Blog Post Redirects
+  RewriteCond %{REQUEST_URI} ^(.*?)/post/your-go-to-appliance-repair-tips-blog/?$ [NC]
+  RewriteRule ^ %1/blog/appliance-repair-tips [R=301,L]
+
   # Redirect /index, /index.html or /index.php to root (/)
   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index(\.(html|php))?\ HTTP/ [NC]
   RewriteRule ^index(\.(html|php))?$ ./ [R=301,L]

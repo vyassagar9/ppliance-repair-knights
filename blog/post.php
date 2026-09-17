@@ -104,7 +104,11 @@ $custom_head_schema = '<script type="application/ld+json">' . "\n" . json_encode
             'image' => $og_image,
             'datePublished' => $post['date_published'] . 'T08:00:00-04:00',
             'dateModified' => $post['date_modified'] . 'T08:00:00-04:00',
-            'mainEntityOfPage' => $canonical_url,
+            'mainEntityOfPage' => [
+                '@type' => 'WebPage',
+                '@id' => $canonical_url
+            ],
+            'inLanguage' => 'en-CA',
             'author' => [
                 '@type' => 'Organization',
                 'name' => $post['author'],
@@ -190,7 +194,7 @@ require_once __DIR__ . '/../head.php';
                   <span><?php echo htmlspecialchars($post['author']); ?></span>
                 </div>
                 <span class="text-slate-300">•</span>
-                <span>Updated: <?php echo date('M j, Y', strtotime($post['date_published'])); ?></span>
+                <span>Updated: <?php echo date('M j, Y', strtotime(!empty($post['date_modified']) ? $post['date_modified'] : $post['date_published'])); ?></span>
                 <span class="text-slate-300">•</span>
                 <span>⏱️ <?php echo htmlspecialchars($post['read_time']); ?></span>
                 <span class="text-slate-300">•</span>
@@ -272,6 +276,7 @@ require_once __DIR__ . '/../head.php';
           </header>
 
           <!-- QUICK ANSWER BOX (Targeting Google Featured Snippet #0) -->
+          <?php if (!empty($post['quick_answer'])): ?>
           <div class="bg-slate-50/90 border-l-4 border-brandBlue rounded-r-2xl p-5 sm:p-6 shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
             <div class="flex items-center gap-2 mb-2 text-slate-900 font-heading font-bold text-sm sm:text-base">
               <span>⚡</span>
@@ -281,13 +286,17 @@ require_once __DIR__ . '/../head.php';
               <?php echo htmlspecialchars($post['quick_answer']); ?>
             </p>
           </div>
+          <?php endif; ?>
 
-          <!-- Featured Image (SEO Optimized with Primary Keyword) -->
-          <?php if (!empty($post['featured_image'])): ?>
+          <!-- Featured Image (SEO Optimized with Primary Keyword & Descriptive Alt) -->
+          <?php if (!empty($post['featured_image'])): 
+            $img_alt_val = !empty($post['featured_image_alt']) ? $post['featured_image_alt'] : $post['primary_keyword'];
+            $img_title_val = !empty($post['featured_image_title']) ? $post['featured_image_title'] : $img_alt_val;
+          ?>
           <div class="rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm bg-slate-100">
             <img src="<?php echo $base_url . htmlspecialchars($post['featured_image']); ?>" 
-                 alt="<?php echo htmlspecialchars($post['primary_keyword']); ?>" 
-                 title="<?php echo htmlspecialchars($post['primary_keyword']); ?>" 
+                 alt="<?php echo htmlspecialchars($img_alt_val); ?>" 
+                 title="<?php echo htmlspecialchars($img_title_val); ?>" 
                  width="1200" 
                  height="675" 
                  fetchpriority="high"
@@ -300,14 +309,14 @@ require_once __DIR__ . '/../head.php';
             <?php echo $post['content_html']; ?>
           </div>
 
-          <!-- FAQ ACCORDION (Minimalist design) -->
+          <!-- FAQ ACCORDION (Minimalist design - H2 semantic heading) -->
           <?php if (!empty($post['faqs'])): ?>
           <section class="mt-12 pt-8 border-t border-slate-200 scroll-mt-24 space-y-6" id="faqs">
             <div>
               <span class="text-xs font-bold uppercase tracking-wider text-brandBlue">Knowledge Base</span>
-              <h3 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 mt-1">
+              <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 mt-1">
                 Frequently Asked Questions
-              </h3>
+              </h2>
             </div>
 
             <div class="divide-y divide-slate-200 border-y border-slate-200">
@@ -351,12 +360,13 @@ require_once __DIR__ . '/../head.php';
           <!-- RELATED SERVICE CALLOUT (Dynamic category matching) -->
           <?php 
           $cat_service_map = [
+            'Appliance Repair Tips' => ['name' => 'Appliance Repair', 'url' => 'schedule', 'desc' => 'Need professional appliance diagnostics in Toronto or the GTA? Book fast same-day service with licensed field technicians.'],
             'Refrigerator' => ['name' => 'Refrigerator Repair', 'url' => 'services/fridge-repair', 'desc' => 'Need emergency refrigerator or freezer repair? Our licensed GTA technicians carry OEM compressors, thermostats, and coils.'],
             'Washing Machine' => ['name' => 'Washing Machine Repair', 'url' => 'services/washer-repair', 'desc' => 'Washing machine leaking or not draining? Certified technicians ready with drain pumps, belts, and bearings across Toronto.'],
             'Dryer' => ['name' => 'Dryer Repair & Venting', 'url' => 'services/dryer-repair', 'desc' => 'Dryer not heating or taking multiple cycles? We repair heating elements, thermal fuses, and clean blocked vents.'],
             'Dishwasher' => ['name' => 'Dishwasher Repair', 'url' => 'services/dishwasher-repair', 'desc' => 'Dishwasher leaving cloudy dishes or not draining? Professional circulation pump and spray arm restoration in Toronto.'],
           ];
-          $target_srv = isset($cat_service_map[$post['category']]) ? $cat_service_map[$post['category']] : $cat_service_map['Refrigerator'];
+          $target_srv = isset($cat_service_map[$post['category']]) ? $cat_service_map[$post['category']] : $cat_service_map['Appliance Repair Tips'];
           ?>
           <div class="p-6 bg-slate-50 border border-slate-200/90 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>

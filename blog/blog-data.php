@@ -699,5 +699,289 @@ return [
 
 </div>
 HTML
+    ],
+    'appliance-repair-tips' => [
+        'slug' => 'appliance-repair-tips',
+        'title' => 'Appliance Repair Tips: Common Problems & What to Check',
+        'meta_title' => 'Appliance Repair Tips: Common Problems & What to Check',
+        'meta_description' => 'Practical appliance repair tips for common problems in Canada, Toronto and the GTA, plus safe checks and signs you need professional help.',
+        'primary_keyword' => 'appliance repair tips',
+        'related_keywords' => 'dryer repair tips, washer repair tips, refrigerator repair tips, dishwasher repair tips, stove repair tips, microwave repair tips Toronto GTA',
+        'category' => 'Appliance Repair Tips',
+        'category_slug' => 'tips',
+        'service_link' => 'schedule',
+        'date_published' => '2026-09-17',
+        'date_modified' => '2026-09-17',
+        'author' => 'Appliance Repair Knights Certified Technicians',
+        'author_role' => 'Licensed Diagnostic & Field Team',
+        'read_time' => '6 min read',
+        'featured_image' => 'img/appliance-repair-tips-toronto-gta.webp',
+        'featured_image_alt' => 'Collage of appliance repair services — refrigerator, washer, dryer, dishwasher, oven and stove',
+        'featured_image_title' => 'Collage of appliance repair services — refrigerator, washer, dryer, dishwasher, oven and stove',
+        'summary' => 'Practical appliance repair tips for common problems in Canada, Toronto and the GTA, plus safe checks and signs you need professional help.',
+        'faqs' => [
+            [
+                'q' => 'What should I check first when an appliance stops working?',
+                'a' => 'You should start with the power supply, circuit breaker, controls, doors or lids, visible blockages and any error codes. Make sure that you follow the manufacturer\'s instructions for your model.'
+            ],
+            [
+                'q' => 'Can I repair an appliance myself?',
+                'a' => 'You can go ahead with simple maintenance and basic checks. But internal electrical, gas and mechanical repairs are not recommended, as it can involve safety risks. You must therefore let an appropriate qualified professional handle such complex repairs.'
+            ],
+            [
+                'q' => 'How do I know if my appliance needs professional repair?',
+                'a' => 'If you notice persistent problems, unusual smells or noises, leaks, repeated error codes, electrical symptoms or failures that return even after basic troubleshooting, then you must consider professional diagnosis.'
+            ],
+            [
+                'q' => 'Why should I get an appliance diagnosed before replacing parts?',
+                'a' => 'Because different faults can produce similar symptoms, a proper professional diagnosis helps identify the actual cause and reduces the risk of replacing a part that was not responsible for the problem.'
+            ],
+            [
+                'q' => 'Should I repair or replace my appliance?',
+                'a' => 'Consider the appliance\'s age, overall condition, repair requirements and replacement cost. A proper diagnosis can give you better information before making that decision.'
+            ]
+        ],
+        'content_html' => <<<HTML
+<div class="space-y-10 text-slate-700 leading-relaxed text-base sm:text-lg">
+
+  <!-- Introduction -->
+  <div class="space-y-4 text-slate-700 leading-relaxed text-base sm:text-lg">
+    <p class="text-lg sm:text-xl text-slate-800 font-normal leading-relaxed">
+      Home appliances are part of everyday life. From refrigerators and dishwashers to washers, dryers and cooking appliances, we rely on them to keep our homes running smoothly. When one suddenly stops working, it can be tempting to start taking things apart or assume that an expensive repair is needed.
+    </p>
+    <p>
+      A better first step is to understand the symptoms and check the simple things that can safely be inspected. These appliance repair tips can help homeowners across Canada, including Toronto and the GTA, understand common appliance problems and recognize when professional service may be necessary.
+    </p>
+  </div>
+
+  <!-- H2 1: Start With the Simple Checks -->
+  <section id="simple-checks" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      Start With the Simple Checks
+    </h2>
+    <p>
+      Before troubleshooting an appliance, start with the basics.
+    </p>
+    <p>
+      Check that the appliance is receiving power and that the circuit breaker has not tripped. Make sure doors, lids and controls are properly positioned. If the appliance displays an error code, write it down and check the owner's manual for the manufacturer's recommended troubleshooting steps.
+    </p>
+    <p>
+      Also look for obvious problems such as a blocked vent, kinked hose, visible buildup or an overloaded machine.
+    </p>
+    <p>
+      These checks will not solve every problem, but they can sometimes identify a simple issue without unnecessary repairs.
+    </p>
+  </section>
+
+  <!-- H2 2: Dryer Repair Tips -->
+  <section id="dryer-repair-tips" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      Dryer Repair Tips
+    </h2>
+    <p>
+      A dryer that runs but does not dry clothes properly may have an airflow or heating issue. Start by checking the lint filter and looking for obvious restrictions around the exhaust system.
+    </p>
+    <p>
+      A blocked or restricted vent can reduce airflow and make a dryer take longer to finish a load. It can also cause the appliance to become hotter than intended. The <a href="https://www.cpsc.gov/Safety-Education/Safety-Alerts" target="_blank" rel="noopener noreferrer" class="text-brandBlue hover:underline">U.S. Consumer Product Safety Commission</a> recommends regularly cleaning dryer lint filters and vents as part of dryer fire prevention.
+    </p>
+    <p>
+      If the dryer still does not heat, takes much longer than usual, stops unexpectedly or makes unusual noises, the cause may involve an internal component that requires professional diagnosis.
+    </p>
+    <p class="pt-2 text-sm sm:text-base font-medium text-slate-600">
+      Related service: <a href="https://www.appliancerepairknights.com/services/dryer-repair" class="text-brandBlue font-semibold hover:underline">Dryer Repair</a>
+    </p>
+  </section>
+
+  <!-- H2 3: Washer Repair Tips -->
+  <section id="washer-repair-tips" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      Washer Repair Tips
+    </h2>
+    <p>
+      A washer that will not drain or spin can sometimes have a straightforward cause. Check whether the drain hose is kinked and make sure the machine has not been overloaded.
+    </p>
+    <p>
+      An uneven load can also cause excessive vibration or prevent a washer from completing a cycle correctly. Redistributing the clothes and checking that the appliance is sitting level can be useful first steps.
+    </p>
+    <p>
+      If the washer continues to leak, refuses to drain, stops during cycles or makes unusual sounds, repeated use may make the problem worse. A technician can inspect the appliance and determine whether the issue involves the drain system, pump, controls or another component.
+    </p>
+    <p class="pt-2 text-sm sm:text-base font-medium text-slate-600">
+      Related service: <a href="https://www.appliancerepairknights.com/services/washer-repair" class="text-brandBlue font-semibold hover:underline">Washer Repair</a>
+    </p>
+  </section>
+
+  <!-- H2 4: Refrigerator Repair Tips -->
+  <section id="refrigerator-repair-tips" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      Refrigerator Repair Tips
+    </h2>
+    <p>
+      A refrigerator that is not cooling properly needs attention because food can spoil if temperatures remain too high.
+    </p>
+    <p>
+      Start by checking the temperature setting and making sure the refrigerator and freezer doors close completely. Look for anything preventing the doors from sealing properly or blocking airflow inside the appliance.
+    </p>
+    <p>
+      Pay attention to changes in performance. Excessive frost, unusual noises, water collecting where it should not, or noticeable changes in cooling can all indicate that further diagnosis is needed.
+    </p>
+    <p>
+      Avoid replacing parts based only on symptoms. Several different problems can produce similar signs, and professional diagnosis can help identify the underlying cause.
+    </p>
+    <p class="pt-2 text-sm sm:text-base font-medium text-slate-600">
+      Related service: <a href="https://www.appliancerepairknights.com/services/fridge-repair" class="text-brandBlue font-semibold hover:underline">Refrigerator Repair</a>
+    </p>
+  </section>
+
+  <!-- H2 5: Dishwasher Repair Tips -->
+  <section id="dishwasher-repair-tips" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      Dishwasher Repair Tips
+    </h2>
+    <p>
+      If your dishwasher leaves dishes dirty, check the filter and spray arms for food particles or buildup. Make sure dishes are loaded so the spray arms can rotate freely.
+    </p>
+    <p>
+      If the dishwasher is not draining, inspect the accessible filter and drain area for visible debris. Standing water can sometimes result from a blockage, but persistent drainage problems may involve the pump, drain system or another component.
+    </p>
+    <p>
+      A dishwasher that leaks should also be checked rather than repeatedly operated. Water around an appliance can damage flooring or cabinets and may indicate a problem that needs professional attention.
+    </p>
+    <p>
+      Regular cleaning and following the maintenance instructions for your specific model can help keep the dishwasher operating properly.
+    </p>
+    <p class="pt-2 text-sm sm:text-base font-medium text-slate-600">
+      Related service: <a href="https://www.appliancerepairknights.com/services/dishwasher-repair" class="text-brandBlue font-semibold hover:underline">Dishwasher Repair</a>
+    </p>
+  </section>
+
+  <!-- H2 6: Oven and Stove Repair Tips -->
+  <section id="oven-stove-repair-tips" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      Oven and Stove Repair Tips
+    </h2>
+    <p>
+      When an oven is not heating correctly, first check the selected cooking mode, temperature and basic controls. If only one burner or cooking zone is affected, compare its behaviour with the other burners to help identify whether the problem is isolated.
+    </p>
+    <p>
+      Uneven heating can have several causes, while ignition problems on gas appliances may require professional attention.
+    </p>
+    <p>
+      If you notice unusual smells, repeated shutdowns, ignition problems or electrical symptoms, stop using the appliance and seek professional assistance.
+    </p>
+    <p>
+      Gas and electrical appliances can involve significant safety risks. Internal components should not be opened or tested unless you have the appropriate training.
+    </p>
+    <p class="pt-2 text-sm sm:text-base font-medium text-slate-600">
+      Related service: <a href="https://www.appliancerepairknights.com/services/stove-repair" class="text-brandBlue font-semibold hover:underline">Stove Repair</a>
+    </p>
+  </section>
+
+  <!-- H2 7: Microwave Repair Tips -->
+  <section id="microwave-repair-tips" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      Microwave Repair Tips
+    </h2>
+    <p>
+      A microwave that does not heat may still appear to operate normally. The display, light, fan or turntable can work even when the appliance is not heating food correctly.
+    </p>
+    <p>
+      Start with simple checks such as the power supply, door closure and cooking settings. If the microwave continues to run without heating, avoid opening the appliance yourself.
+    </p>
+    <p>
+      Microwaves contain high-voltage components that can remain hazardous even after the appliance has been unplugged. Internal microwave repairs should therefore be left to a qualified professional.
+    </p>
+    <p class="pt-2 text-sm sm:text-base font-medium text-slate-600">
+      Related service: <a href="https://www.appliancerepairknights.com/services/microwave-repair" class="text-brandBlue font-semibold hover:underline">Microwave Repair</a>
+    </p>
+  </section>
+
+  <!-- H2 8: When Should You Call a Professional? -->
+  <section id="when-to-call-professional" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      When Should You Call a Professional?
+    </h2>
+    <p>
+      Basic troubleshooting is useful, but it has limits. Professional appliance repair is appropriate when the problem involves components that are difficult to access, electrical or gas systems, persistent leaks or repeated failures.
+    </p>
+    <p class="font-semibold text-slate-800">
+      Arrange professional help if you notice:
+    </p>
+    <ul class="space-y-2.5 my-4 pl-2">
+      <li class="flex items-start gap-2.5 text-slate-700">
+        <span class="w-2 h-2 rounded-full bg-brandBlue mt-2 flex-shrink-0"></span>
+        <span>Burning smells, smoke or unusual electrical sounds</span>
+      </li>
+      <li class="flex items-start gap-2.5 text-slate-700">
+        <span class="w-2 h-2 rounded-full bg-brandBlue mt-2 flex-shrink-0"></span>
+        <span>Repeated circuit-breaker trips</span>
+      </li>
+      <li class="flex items-start gap-2.5 text-slate-700">
+        <span class="w-2 h-2 rounded-full bg-brandBlue mt-2 flex-shrink-0"></span>
+        <span>Gas or ignition concerns</span>
+      </li>
+      <li class="flex items-start gap-2.5 text-slate-700">
+        <span class="w-2 h-2 rounded-full bg-brandBlue mt-2 flex-shrink-0"></span>
+        <span>Persistent water leaks</span>
+      </li>
+      <li class="flex items-start gap-2.5 text-slate-700">
+        <span class="w-2 h-2 rounded-full bg-brandBlue mt-2 flex-shrink-0"></span>
+        <span>Recurring error codes</span>
+      </li>
+      <li class="flex items-start gap-2.5 text-slate-700">
+        <span class="w-2 h-2 rounded-full bg-brandBlue mt-2 flex-shrink-0"></span>
+        <span>An appliance that repeatedly stops during a cycle</span>
+      </li>
+      <li class="flex items-start gap-2.5 text-slate-700">
+        <span class="w-2 h-2 rounded-full bg-brandBlue mt-2 flex-shrink-0"></span>
+        <span>A problem that returns after a basic reset or maintenance check</span>
+      </li>
+      <li class="flex items-start gap-2.5 text-slate-700">
+        <span class="w-2 h-2 rounded-full bg-brandBlue mt-2 flex-shrink-0"></span>
+        <span>Internal components that need testing or replacement</span>
+      </li>
+    </ul>
+    <p>
+      A proper diagnosis can help determine what is causing the problem before repair work is carried out.
+    </p>
+  </section>
+
+  <!-- H2 9: How to Prevent Common Appliance Problems -->
+  <section id="how-to-prevent-common-problems" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      How to Prevent Common Appliance Problems
+    </h2>
+    <p>
+      Good maintenance can help reduce avoidable appliance issues.
+    </p>
+    <p>
+      Clean filters regularly, keep accessible vents clear, inspect hoses for visible damage and avoid overloading washers and dryers. Follow the maintenance instructions provided with your specific appliance rather than relying on a one-size-fits-all routine.
+    </p>
+    <p>
+      It is also worth paying attention to small changes. A refrigerator that gradually becomes warmer, a dryer that takes longer to finish a load or a washer that suddenly becomes noisy may be showing signs of a developing problem.
+    </p>
+    <p>
+      Catching these changes early does not guarantee that a repair can be avoided, but it gives you an opportunity to investigate the issue before it becomes a larger inconvenience.
+    </p>
+  </section>
+
+  <!-- H2 10: Appliance Repair in Toronto and the GTA -->
+  <section id="appliance-repair-toronto-gta" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      Appliance Repair in Toronto and the GTA
+    </h2>
+    <p>
+      For homeowners in Toronto and the Greater Toronto Area, an appliance problem can quickly disrupt everyday routines. A refrigerator that is not cooling, a washer that will not drain or a dryer that stops heating can all become difficult to manage when you depend on the appliance every day.
+    </p>
+    <p>
+      Appliance Repair Knights serves customers across its listed service areas in Toronto and the GTA, as well as surrounding communities. If basic troubleshooting has not resolved the problem, you can <a href="https://www.appliancerepairknights.com/schedule" class="text-brandBlue font-semibold hover:underline">schedule an appliance repair appointment</a> or explore the available <a href="https://www.appliancerepairknights.com/locations" class="text-brandBlue font-semibold hover:underline">service areas</a>.
+    </p>
+    <p>
+      Not every appliance problem has an obvious cause. Professional diagnosis can help determine what needs attention and whether repair is appropriate.
+    </p>
+  </section>
+
+</div>
+HTML
     ]
 ];

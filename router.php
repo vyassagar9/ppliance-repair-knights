@@ -6,6 +6,12 @@
 
 $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
+// 0. Legacy 301 Redirects
+if (preg_match('#^/post/your-go-to-appliance-repair-tips-blog/?$#i', $path)) {
+    header('Location: /blog/appliance-repair-tips', true, 301);
+    exit;
+}
+
 // 1. Direct file or directory match
 if ($path !== '/' && file_exists(__DIR__ . $path)) {
     return false; // serve requested resource as-is

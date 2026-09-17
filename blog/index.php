@@ -130,6 +130,9 @@ require_once __DIR__ . '/../head.php';
         <a href="?category=all" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all <?php echo ($selected_cat === 'all') ? 'bg-accent text-white shadow-lg' : 'bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-slate-700'; ?>">
           All Guides (<?php echo count($all_posts); ?>)
         </a>
+        <a href="?category=tips" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all <?php echo ($selected_cat === 'tips') ? 'bg-accent text-white shadow-lg' : 'bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-slate-700'; ?>">
+          Repair Tips
+        </a>
         <a href="?category=fridge" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all <?php echo ($selected_cat === 'fridge') ? 'bg-accent text-white shadow-lg' : 'bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-slate-700'; ?>">
           Refrigerator
         </a>
@@ -161,14 +164,17 @@ require_once __DIR__ . '/../head.php';
 
       <!-- 3-COLUMN CARDS GRID (Unified with brand design tokens) -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <?php foreach ($filtered_posts as $post_slug => $item): ?>
+        <?php foreach ($filtered_posts as $post_slug => $item): 
+          $card_alt = !empty($item['featured_image_alt']) ? $item['featured_image_alt'] : $item['primary_keyword'];
+          $card_title = !empty($item['featured_image_title']) ? $item['featured_image_title'] : $card_alt;
+        ?>
         <article class="bg-white border border-bordercolor rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
           
           <!-- Image Banner -->
           <a href="<?php echo $base_url; ?>blog/<?php echo htmlspecialchars($post_slug); ?>" class="block relative aspect-[16/9] overflow-hidden bg-slate-100">
             <img src="<?php echo $base_url . htmlspecialchars($item['featured_image']); ?>" 
-                 alt="<?php echo htmlspecialchars($item['primary_keyword']); ?>" 
-                 title="<?php echo htmlspecialchars($item['primary_keyword']); ?>" 
+                 alt="<?php echo htmlspecialchars($card_alt); ?>" 
+                 title="<?php echo htmlspecialchars($card_title); ?>" 
                  width="400" 
                  height="225"
                  loading="lazy"
