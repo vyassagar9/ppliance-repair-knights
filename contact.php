@@ -143,7 +143,8 @@ include 'header.php';
             </div>
             <div>
               <span class="text-xs uppercase tracking-wider text-slate-400 font-bold block">Email Inquiry</span>
-              <span class="text-sm font-semibold text-secondary">info@appliancerepairknights.com</span>
+              <a href="mailto:info@appliancerepairknights.com" class="text-sm font-semibold text-secondary hover:text-accent block transition-colors">info@appliancerepairknights.com</a>
+              <a href="mailto:appliancerepairknights@gmail.com" class="text-sm font-semibold text-secondary hover:text-accent block transition-colors">appliancerepairknights@gmail.com</a>
             </div>
           </div>
 

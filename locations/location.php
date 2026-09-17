@@ -391,7 +391,7 @@ $disable_global_schema = true;
               </div>
             </div>
             <div class="px-6 pb-6 pt-0 flex items-center justify-between text-xs font-semibold text-accent">
-              <span>Explore Refrigerator Repair</span>
+              <span>Explore <?php echo htmlspecialchars($loc['city_name']); ?> Refrigerator Repair</span>
               <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
             </div>
           </a>
@@ -413,7 +413,7 @@ $disable_global_schema = true;
               </div>
             </div>
             <div class="px-6 pb-6 pt-0 flex items-center justify-between text-xs font-semibold text-accent">
-              <span>Explore Washer Repair</span>
+              <span>Book <?php echo htmlspecialchars($loc['city_name']); ?> Washer Diagnostics</span>
               <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
             </div>
           </a>
@@ -435,7 +435,7 @@ $disable_global_schema = true;
               </div>
             </div>
             <div class="px-6 pb-6 pt-0 flex items-center justify-between text-xs font-semibold text-accent">
-              <span>Explore Dryer Repair</span>
+              <span>Fast Dryer Repair in <?php echo htmlspecialchars($loc['city_name']); ?></span>
               <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
             </div>
           </a>
@@ -457,7 +457,7 @@ $disable_global_schema = true;
               </div>
             </div>
             <div class="px-6 pb-6 pt-0 flex items-center justify-between text-xs font-semibold text-accent">
-              <span>Explore Dishwasher Repair</span>
+              <span>Explore <?php echo htmlspecialchars($loc['city_name']); ?> Dishwasher Service</span>
               <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
             </div>
           </a>
@@ -479,7 +479,7 @@ $disable_global_schema = true;
               </div>
             </div>
             <div class="px-6 pb-6 pt-0 flex items-center justify-between text-xs font-semibold text-accent">
-              <span>Explore Oven & Stove Repair</span>
+              <span>Oven & Stove Diagnostics in <?php echo htmlspecialchars($loc['city_name']); ?></span>
               <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
             </div>
           </a>
@@ -501,7 +501,7 @@ $disable_global_schema = true;
               </div>
             </div>
             <div class="px-6 pb-6 pt-0 flex items-center justify-between text-xs font-semibold text-accent">
-              <span>Explore Microwave Repair</span>
+              <span>Book <?php echo htmlspecialchars($loc['city_name']); ?> Microwave Repair</span>
               <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
             </div>
           </a>

@@ -342,20 +342,20 @@ include __DIR__ . '/../head.php';
 
       <!-- SIDEBAR -->
       <aside class="lg:col-span-4 space-y-8">
-        <!-- GTA Areas Widget -->
+        <!-- GTA Areas Widget (Clean & Natural Semantic Linking) -->
         <div class="bg-white border border-bordercolor rounded-xl p-6 shadow-sm space-y-4">
-          <h4 class="font-heading font-bold text-primary text-base border-b border-slate-100 pb-2">GTA Service Areas</h4>
-          <p class="text-xs text-slate-500 leading-relaxed">We dispatch local technicians across:</p>
+          <h4 class="font-heading font-bold text-primary text-base border-b border-slate-100 pb-2">Dishwasher Repair Service Areas</h4>
+          <p class="text-xs text-slate-500 leading-relaxed">Same-day technician dispatch across:</p>
           <div class="grid grid-cols-2 gap-2 text-xs font-semibold text-secondary">
-            <a href="../locations/toronto-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Toronto</a>
-            <a href="../locations/mississauga-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Mississauga</a>
-            <a href="../locations/hamilton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Hamilton</a>
-            <a href="../locations/oshawa-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Oshawa</a>
-            <a href="../locations/brampton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Brampton</a>
-            <a href="../locations/oakville-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Oakville</a>
+            <a href="../locations/toronto-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span> Toronto</a>
+            <a href="../locations/mississauga-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span> Mississauga</a>
+            <a href="../locations/brampton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span> Brampton</a>
+            <a href="../locations/vaughan-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span> Vaughan</a>
+            <a href="../locations/hamilton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span> Hamilton</a>
+            <a href="../locations/oakville-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span> Oakville</a>
           </div>
           <a href="../locations" class="block bg-primary text-white font-bold py-2.5 rounded-lg text-center text-xs hover:bg-brandDarkBlue transition-colors cursor-pointer">
-            View All Cities
+            View All 20+ Service Cities &rarr;
           </a>
         </div>
 
