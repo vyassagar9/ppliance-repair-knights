@@ -8,7 +8,6 @@ $robots_meta = 'noindex, follow';
 $canonical_url = 'https://www.appliancerepairknights.com/404';
 include __DIR__ . '/head.php';
 ?>
-</head>
 <body class="bg-lightbg text-secondary font-sans antialiased min-h-screen flex flex-col selection:bg-brandOrange selection:text-white">
 
 <?php 

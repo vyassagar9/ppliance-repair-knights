@@ -18,12 +18,29 @@ $robots_meta = isset($robots_meta) ? $robots_meta : 'index, follow, max-image-pr
   <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
   <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-M7B6FLPR');</script>
+  <!-- Google Tag Manager (Smart Deferred Loading - 100% Tracking Safe) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function loadGTM() {
+      if (window._gtmLoaded) return;
+      window._gtmLoaded = true;
+      (function(w,d,s,l,i){
+        w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-M7B6FLPR');
+    }
+    // Load immediately on user interaction or when browser is idle
+    ['scroll', 'mousemove', 'touchstart', 'click'].forEach(function(e) {
+      window.addEventListener(e, loadGTM, { once: true, passive: true });
+    });
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(function() { setTimeout(loadGTM, 1500); });
+    } else {
+      window.addEventListener('load', function() { setTimeout(loadGTM, 1500); });
+    }
+  </script>
   <!-- End Google Tag Manager -->
   <!-- 1. Technical Meta Tags -->
   <meta charset="UTF-8">
@@ -75,11 +92,15 @@ $robots_meta = isset($robots_meta) ? $robots_meta : 'index, follow, max-image-pr
   <meta name="twitter:image" content="<?php echo htmlspecialchars($og_image); ?>">
 
   <!-- 7. Performance & Resource Preloading (Zero-Latency Self-Hosted Fonts & CSS) -->
+  <link rel="preload" as="image" href="<?php echo $base_url; ?>img/logo.webp" type="image/webp" fetchpriority="high">
   <link rel="preload" href="<?php echo $base_url; ?>fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="<?php echo $base_url; ?>fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
 
-  <!-- Self-Hosted Zero-Latency Fonts Definition -->
-  <link rel="stylesheet" href="<?php echo $base_url; ?>css/fonts.min.css">
+  <!-- Inlined Self-Hosted Zero-Latency Fonts (Zero Render-Blocking HTTP Roundtrip) -->
+  <style>
+    @font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url('<?php echo $base_url; ?>fonts/inter-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+    @font-face{font-family:'Montserrat';font-style:normal;font-weight:100 900;font-display:swap;src:url('<?php echo $base_url; ?>fonts/montserrat-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+  </style>
 
   <!-- Production Local Compiled Tailwind CSS (Fastest Load Speed & Cache-Busted) -->
   <link rel="stylesheet" href="<?php echo $base_url; ?>css/tailwind.min.css?v=<?php echo file_exists(__DIR__ . '/css/tailwind.min.css') ? filemtime(__DIR__ . '/css/tailwind.min.css') : '2.0'; ?>">
