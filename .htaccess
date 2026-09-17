@@ -49,12 +49,12 @@ ErrorDocument 404 /404.html
   RewriteCond %{REQUEST_URI} ^(.*?)/locations/cal(e)?deon-appliance-repair/?$ [NC]
   RewriteRule ^ %1/locations/caledon-appliance-repair [R=301,L]
 
-  # Location Pages (e.g. /burlington-appliance-repair -> /locations/burlington-appliance-repair)
+  # Location Pages & Legacy Wix Cloned Pages (e.g. /mississauga-appliance-repair-1, /markham-appliance-repair-5-1-1 -> /locations/...)
   RewriteCond %{REQUEST_URI} !/locations/ [NC]
-  RewriteCond %{REQUEST_URI} ^(.*?)/(burlington|kitchener|brampton|waterloo|cambridge|hamilton|caledon|caledeon|caldeon|pickering|vaughan|richmond-hill|mississauga|toronto|guelph|markham|oakville|scarborough|oshawa|milton|barrie|ajax)-appliance-repair/?$ [NC]
+  RewriteCond %{REQUEST_URI} ^(.*?)/(burlington|kitchener|brampton|waterloo|cambridge|hamilton|caledon|caledeon|caldeon|pickering|vaughan|richmond-hill|mississauga|toronto|guelph|markham|oakville|scarborough|oshawa|milton|barrie|ajax)-appliance-repair([0-9\-_]*)/?$ [NC]
   RewriteRule ^ %1/locations/%2-appliance-repair [R=301,L]
 
-  # Service Pages
+  # Service Pages & Legacy Wix Service Slugs
   RewriteCond %{REQUEST_URI} !/services/ [NC]
   RewriteCond %{REQUEST_URI} ^(.*?)/refrigerator-repair/?$ [NC]
   RewriteRule ^ %1/services/fridge-repair [R=301,L]
@@ -68,8 +68,16 @@ ErrorDocument 404 /404.html
   RewriteRule ^ %1/services/dryer-repair [R=301,L]
 
   RewriteCond %{REQUEST_URI} !/services/ [NC]
-  RewriteCond %{REQUEST_URI} ^(.*?)/(service-page|induction-cooktop-repair-service|oven-repair-service)/?$ [NC]
+  RewriteCond %{REQUEST_URI} ^(.*?)/service-page/washing-machine-diagnostic-repair/?$ [NC]
+  RewriteRule ^ %1/services/washer-repair [R=301,L]
+
+  RewriteCond %{REQUEST_URI} !/services/ [NC]
+  RewriteCond %{REQUEST_URI} ^(.*?)/(service-page|induction-cooktop-repair-service|oven-repair-service|stove-range-repair-service)/?$ [NC]
   RewriteRule ^ %1/services/stove-repair [R=301,L]
+
+  # Legacy Wix Duplicate Home Redirect
+  RewriteCond %{REQUEST_URI} ^(.*?)/home-1/?$ [NC]
+  RewriteRule ^ %1/ [R=301,L]
 
   # Legacy Blog Post Redirects
   RewriteCond %{REQUEST_URI} ^(.*?)/post/your-go-to-appliance-repair-tips-blog/?$ [NC]

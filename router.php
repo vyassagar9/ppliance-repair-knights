@@ -11,6 +11,22 @@ if (preg_match('#^/post/your-go-to-appliance-repair-tips-blog/?$#i', $path)) {
     header('Location: /blog/appliance-repair-tips', true, 301);
     exit;
 }
+if (preg_match('#^/home-1/?$#i', $path)) {
+    header('Location: /', true, 301);
+    exit;
+}
+if (preg_match('#^/service-page/washing-machine-diagnostic-repair/?$#i', $path)) {
+    header('Location: /services/washer-repair', true, 301);
+    exit;
+}
+if (preg_match('#^/(service-page|induction-cooktop-repair-service|oven-repair-service|stove-range-repair-service)/?$#i', $path)) {
+    header('Location: /services/stove-repair', true, 301);
+    exit;
+}
+if (preg_match('#^/(burlington|kitchener|brampton|waterloo|cambridge|hamilton|caledon|pickering|vaughan|richmond-hill|mississauga|toronto|guelph|markham|oakville|scarborough|oshawa|milton|barrie|ajax)-appliance-repair([0-9\-_]*)/?$#i', $path, $m)) {
+    header('Location: /locations/' . strtolower($m[1]) . '-appliance-repair', true, 301);
+    exit;
+}
 
 // 1. Direct file or directory match
 if ($path !== '/' && file_exists(__DIR__ . $path)) {
