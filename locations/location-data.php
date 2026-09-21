@@ -7,6 +7,7 @@
 return [
     'mississauga-appliance-repair' => [
         'slug' => 'mississauga-appliance-repair',
+        'date_modified' => '2026-09-21',
         'city_name' => 'Mississauga',
         'region' => 'Peel Region',
         'meta_title' => 'Appliance Repair Mississauga | Certified Local Technicians',
@@ -22,21 +23,38 @@ return [
         'geo' => ['latitude' => 43.5890, 'longitude' => -79.6441],
         'faqs' => [
             [
-                'q' => 'Do you provide same-day appliance repair in Mississauga near Square One?',
-                'a' => 'Yes, Appliance Repair Knights offers same-day repair services across all Mississauga neighborhoods including Port Credit, Streetsville, Lorne Park, and Square One when booked before 2:00 PM.'
+                'q' => 'Do you provide same-day appliance repair in Mississauga?',
+                'a' => "Yes — same-day appliance repair in Mississauga is one of our most requested services, though appointment availability depends on daily scheduling and technician routes. Use our online booking form or call 905-717-8905 to confirm same-day availability for your area."
             ],
             [
-                'q' => 'What brands do you service in Mississauga?',
-                'a' => 'We service all leading home appliance brands including Samsung, LG, Whirlpool, Bosch, GE, KitchenAid, Maytag, Frigidaire, Kenmore, Miele, and Sub-Zero.'
+                'q' => 'Which neighborhoods in Mississauga do you service?',
+                'a' => 'We cover all Mississauga neighborhoods, including Port Credit, Streetsville, Meadowvale, Square One, Cooksville, Erin Mills, Lorne Park, Clarkson, and Churchill Meadows. We also regularly service condo apartments and stacked townhouses throughout the city.'
             ],
             [
-                'q' => 'What are your service call fees for Mississauga residents?',
-                'a' => 'Our diagnostic service call fee is completely waived off when you proceed with the repair. You only pay for technician labour and necessary replacement parts.'
+                'q' => 'How much does appliance repair cost in Mississauga?',
+                'a' => 'For Mississauga residents, our diagnostic service call fee is completely waived when you proceed with the repair. If you choose not to go ahead, only the standard diagnostic fee applies. Total repair costs depend on the appliance type, specific fault, and any required replacement parts. Our technician always provides a transparent, upfront written quote before beginning any work.'
+            ],
+            [
+                'q' => 'What appliances do you repair in Mississauga?',
+                'a' => 'Our licensed technicians repair all major household appliances in Mississauga, including refrigerators, washing machines, dryers, dishwashers, electric and gas stoves, ovens, and induction cooktops.'
+            ],
+            [
+                'q' => 'Which appliance brands do you repair in Mississauga?',
+                'a' => 'We repair all popular household brands in Mississauga, including Whirlpool, Samsung, LG, GE, and KitchenAid, along with premium units like Bosch and Sub-Zero. Our service vehicles carry genuine OEM parts for faster same-day fixes.'
+            ],
+            [
+                'q' => 'Do you offer a warranty on appliance repairs in Mississauga?',
+                'a' => 'Yes. Every appliance repair completed in Mississauga includes a written warranty on both parts and labor, ensuring your repair is dependable and fully protected.'
+            ],
+            [
+                'q' => "Can you fix a washing machine that won't spin or drain in Mississauga?",
+                'a' => "Yes. Drain and spin failures are among our most frequent washing machine repairs in Mississauga. Whether caused by a clogged pump filter, a jammed impeller, a faulty lid switch, or a worn drain pump, our technicians can accurately diagnose and repair the problem on-site."
             ]
         ]
     ],
     'brampton-appliance-repair' => [
         'slug' => 'brampton-appliance-repair',
+        'date_modified' => '2026-09-21',
         'city_name' => 'Brampton',
         'region' => 'Peel Region',
         'meta_title' => 'Expert Appliance Repair Brampton | 24/7 Local Technicians',
@@ -52,21 +70,38 @@ return [
         'geo' => ['latitude' => 43.7315, 'longitude' => -79.7624],
         'faqs' => [
             [
-                'q' => 'How quickly can a technician repair a fridge in Downtown Brampton?',
-                'a' => 'We provide dedicated mobile dispatch across Brampton and can arrange prompt same-day service based on daily schedule availability to inspect and fix your fridge.'
+                'q' => 'Do you provide same-day appliance repair in Brampton?',
+                'a' => "Yes — same-day appliance repair in Brampton is one of our most requested services, though appointment availability depends on the day's schedule and the details of your repair. Use our booking form or call 905-717-8905 to discuss your appliance issue and confirm an available appointment with our team."
             ],
             [
-                'q' => 'Are your Brampton appliance repairs backed by a warranty?',
-                'a' => 'Yes! All repairs completed by Appliance Repair Knights in Brampton include a written parts and labor warranty.'
+                'q' => 'Which neighborhoods in Brampton do you service?',
+                'a' => "We serve Brampton as part of our Southern Ontario service coverage, including areas like Bramalea, Castlemore, and Springdale. Provide your exact address when booking so our team can confirm service availability for your location. We also help customers across Brampton's many newer-build homes, where recent appliance models are common."
             ],
             [
-                'q' => 'Do you fix both gas and electric stoves in Brampton?',
-                'a' => 'Absolutely. Our certified technicians are licensed to inspect and repair both electric cooktops/ovens and gas ranges safely.'
+                'q' => 'How much does appliance repair cost in Brampton?',
+                'a' => 'For Brampton customers, the diagnostic service call fee is waived when you proceed with the repair. If you decide not to proceed, the service call fee applies. Repair costs vary depending on the appliance, the issue identified, and the parts or work required — our technician can explain the repair options and pricing after diagnosing the problem.'
+            ],
+            [
+                'q' => 'What appliances do you repair in Brampton?',
+                'a' => 'Our Brampton appliance repair services cover common household appliances, including refrigerators, washing machines, dryers, dishwashers, ovens and stoves, and induction ovens. Describe your appliance and the issue when booking so our team can help arrange the appropriate repair service.'
+            ],
+            [
+                'q' => 'Which appliance brands do you repair in Brampton?',
+                'a' => "We service all major appliance brands in Brampton, including Samsung, GE, Whirlpool, LG, and Maytag, along with premium brands like Bosch and Miele. Our technicians carry genuine OEM parts on every service vehicle to support quick, same-visit repairs. If your appliance is an older model or a brand not covered here, reach out with your model number and we'll confirm parts availability."
+            ],
+            [
+                'q' => 'Do you offer a warranty on appliance repairs in Brampton?',
+                'a' => 'Yes. Repairs completed in Brampton come with a written warranty on parts and labor. Ask our technician about the specific warranty terms for your repair when the work is completed.'
+            ],
+            [
+                'q' => "Can you fix a dryer that runs but doesn't heat up in Brampton?",
+                'a' => "Yes. Our Brampton appliance repair technicians can help diagnose this — a dryer that runs but doesn't heat up is a repair we see regularly. Whether caused by a blown thermal fuse, a broken heating element, or a faulty cycling thermostat, our team can test each component, identify the issue, and complete the repair on-site."
             ]
         ]
     ],
     'vaughan-appliance-repair' => [
         'slug' => 'vaughan-appliance-repair',
+        'date_modified' => '2026-09-21',
         'city_name' => 'Vaughan',
         'region' => 'York Region',
         'meta_title' => 'Same Day Appliance Repair Vaughan | Licensed Technicians',
@@ -82,17 +117,38 @@ return [
         'geo' => ['latitude' => 43.8361, 'longitude' => -79.4982],
         'faqs' => [
             [
-                'q' => 'Do you service high-end built-in appliances in Vaughan and Kleinburg?',
-                'a' => 'Yes, our technicians are certified to service luxury brands like Miele, Sub-Zero, Viking, Thermador, and Bosch across Vaughan, Woodbridge, and Kleinburg.'
+                'q' => 'Do you provide same-day appliance repair in Vaughan?',
+                'a' => "Yes — same-day appliance repair in Vaughan is available, subject to daily appointment availability and the details of your repair. Use our booking form or call 905-717-8905 to discuss your appliance issue and confirm an available appointment with our team."
             ],
             [
-                'q' => 'Is there an extra charge for weekend service calls in Vaughan?',
-                'a' => 'No! We operate 7 days a week from 8:00 AM to 9:00 PM with standard flat-rate pricing regardless of the day.'
+                'q' => 'Which neighborhoods in Vaughan do you service?',
+                'a' => 'We serve all areas across Vaughan as part of our Southern Ontario service coverage, including Woodbridge, Maple, Kleinburg, Thornhill, and Vellore Village. Provide your exact address when booking so our team can confirm service availability and dispatch details for your location.'
+            ],
+            [
+                'q' => 'How much does appliance repair cost in Vaughan?',
+                'a' => 'For Vaughan customers, the diagnostic service call fee is waived when you proceed with the repair. If you decide not to proceed, only the standard service call fee applies. Repair costs vary depending on the appliance, the issue identified, and any required replacement parts. Our technician always explains the repair options and provides upfront pricing after diagnosing the problem.'
+            ],
+            [
+                'q' => 'What appliances do you repair in Vaughan?',
+                'a' => 'Our Vaughan appliance repair services cover all major household appliances, including refrigerators, washing machines, dryers, dishwashers, electric and gas ovens, stoves, and induction cooktops. Describe your appliance and the symptoms when booking so our team can arrange the appropriate repair service.'
+            ],
+            [
+                'q' => 'Which appliance brands do you repair in Vaughan?',
+                'a' => 'We repair all popular household brands in Vaughan, including Samsung, LG, Whirlpool, and Maytag, as well as premium and built-in systems like Bosch, Miele, and Sub-Zero. Our technicians carry genuine OEM replacement parts to support efficient, same-visit repairs. If your appliance is an older model or a brand not listed here, contact our team with your model number to confirm parts availability.'
+            ],
+            [
+                'q' => 'Do you offer a warranty on appliance repairs in Vaughan?',
+                'a' => 'Yes. Every repair completed in Vaughan comes with a written warranty covering both parts and labor. Ask our technician about the specific warranty terms for your repair when the work is completed.'
+            ],
+            [
+                'q' => 'Can you repair luxury built-in appliances and induction cooktops in Vaughan?',
+                'a' => 'Yes. Our Vaughan technicians are experienced with premium built-in units and induction cooktops, including Sub-Zero, Miele, Thermador, and Bosch. Whether dealing with dual-compressor cooling faults, induction touch-control issues, or specialized electronic boards, we use authentic OEM parts to restore factory performance.'
             ]
         ]
     ],
     'markham-appliance-repair' => [
         'slug' => 'markham-appliance-repair',
+        'date_modified' => '2026-09-21',
         'city_name' => 'Markham',
         'region' => 'York Region',
         'meta_title' => 'Appliance Repair Markham | Fast 24/7 Service & Warranty',
@@ -108,17 +164,38 @@ return [
         'geo' => ['latitude' => 43.8561, 'longitude' => -79.3370],
         'faqs' => [
             [
-                'q' => 'What happens if my appliance requires a replacement part in Markham?',
-                'a' => 'Our service vans carry hundreds of common OEM factory parts. If a specialty part is needed, we source it immediately and return to complete the job.'
+                'q' => 'Do you provide same-day appliance repair in Markham?',
+                'a' => "Yes — same-day appliance repair in Markham is available, subject to appointment availability and the details of your repair. Use our booking form or call 905-717-8905 to discuss your appliance issue and confirm an available appointment with our team."
             ],
             [
-                'q' => 'How can I book a same-day repair appointment in Unionville, Markham?',
-                'a' => 'You can call us directly at 905-717-8905 or submit an online booking form 24/7 for quick scheduling.'
+                'q' => 'Which neighborhoods in Markham do you service?',
+                'a' => 'We serve Markham as part of our Southern Ontario service coverage, including areas such as Unionville, Cornell, and Markham Village. Provide your exact address when booking so our team can confirm service availability and appointment details for your location.'
+            ],
+            [
+                'q' => 'How much does appliance repair cost in Markham?',
+                'a' => 'For Markham customers, the diagnostic service call fee is waived when you proceed with the repair. If you decide not to proceed, the service call fee applies. Repair costs vary depending on the appliance, the issue identified, and the parts or work required. Our technician can explain the repair options and pricing after diagnosing the problem.'
+            ],
+            [
+                'q' => 'What appliances do you repair in Markham?',
+                'a' => 'Our Markham appliance repair services cover common household appliances, including refrigerators, washing machines, dryers, dishwashers, ovens and stoves, and induction ovens. Describe your appliance and the issue when booking so our team can help arrange the appropriate repair service.'
+            ],
+            [
+                'q' => 'Which appliance brands do you repair in Markham?',
+                'a' => 'We repair popular appliance brands in Markham, including Samsung, LG, Whirlpool, and GE, as well as premium units like Bosch and Miele. Our technicians use genuine OEM replacement parts to support efficient, dependable repairs. If your appliance is an older model or a brand not listed here, contact our team with your model number to confirm parts availability.'
+            ],
+            [
+                'q' => 'Do you offer a warranty on appliance repairs in Markham?',
+                'a' => 'Yes. Repairs completed in Markham come with a written warranty on parts and labor. Ask our technician about the specific warranty terms for your repair when the work is completed.'
+            ],
+            [
+                'q' => "Can you fix an oven or stove that isn't heating properly in Markham?",
+                'a' => "Yes. Oven and stove heating failures are repairs we regularly handle across Markham. Whether caused by a burnt-out bake element, a failed gas igniter, a broken temperature sensor, or a faulty control board, our technicians can inspect the unit and complete the repair on-site."
             ]
         ]
     ],
     'oakville-appliance-repair' => [
         'slug' => 'oakville-appliance-repair',
+        'date_modified' => '2026-09-21',
         'city_name' => 'Oakville',
         'region' => 'Halton Region',
         'meta_title' => 'Appliance Repair Oakville | Fast Local Service & Repairs',
@@ -134,17 +211,38 @@ return [
         'geo' => ['latitude' => 43.4675, 'longitude' => -79.6877],
         'faqs' => [
             [
-                'q' => 'Do you repair high-efficiency washing machines in Glen Abbey, Oakville?',
-                'a' => 'Yes, we specialize in front-load and top-load high-efficiency washers, addressing leaks, noise, spin cycle failures, and error codes.'
+                'q' => 'Do you provide same-day appliance repair in Oakville?',
+                'a' => "Yes — same-day appliance repair in Oakville is available, subject to appointment availability and the details of your repair. Use our booking form or call 905-717-8905 to discuss your appliance issue and confirm an available appointment with our team."
             ],
             [
-                'q' => 'What is your service call fee structure in Oakville?',
-                'a' => 'Our diagnostic service call fee is completely waived off when you proceed with the repair. You only pay for technician labour and required replacement parts.'
+                'q' => 'Which neighborhoods in Oakville do you service?',
+                'a' => 'We serve Oakville as part of our Southern Ontario service coverage, including areas such as Bronte, Glen Abbey, Kerr Village, Old Oakville, and River Oaks. Provide your exact address when booking so our team can confirm service availability and appointment details for your location.'
+            ],
+            [
+                'q' => 'How much does appliance repair cost in Oakville?',
+                'a' => 'For Oakville customers, the diagnostic service call fee is waived when you proceed with the repair. If you decide not to proceed, the service call fee applies. Repair costs vary depending on the appliance, the issue identified, and the parts or work required. Our technician can explain the repair options and pricing after diagnosing the problem.'
+            ],
+            [
+                'q' => 'What appliances do you repair in Oakville?',
+                'a' => 'Our Oakville appliance repair services cover common household appliances, including refrigerators, washing machines, dryers, dishwashers, ovens and stoves, and induction ovens. Describe your appliance and the issue when booking so our team can help arrange the appropriate repair service.'
+            ],
+            [
+                'q' => 'Which appliance brands do you repair in Oakville?',
+                'a' => 'We repair popular appliance brands in Oakville, including Samsung, LG, Whirlpool, and GE, as well as premium units like Bosch and Sub-Zero. Our technicians carry genuine OEM replacement parts to support efficient, reliable repairs. If your appliance is an older model or a brand not listed here, contact our team with your model number to confirm parts availability.'
+            ],
+            [
+                'q' => 'Do you offer a warranty on appliance repairs in Oakville?',
+                'a' => 'Yes. Repairs completed in Oakville come with a written warranty on parts and labor. Ask our technician about the specific warranty terms for your repair when the work is completed.'
+            ],
+            [
+                'q' => "Can you fix a refrigerator ice maker or water dispenser that isn't working in Oakville?",
+                'a' => "Yes. Refrigerator ice maker jams, water dispenser leaks, and faulty water inlet valves are repairs we frequently service in Oakville. Whether you have a French-door, side-by-side, or built-in model, our technicians can inspect the water line, ice maker module, and valve assembly to restore normal operation on-site."
             ]
         ]
     ],
     'scarborough-appliance-repair' => [
         'slug' => 'scarborough-appliance-repair',
+        'date_modified' => '2026-09-17',
         'city_name' => 'Scarborough',
         'region' => 'City of Toronto',
         'meta_title' => 'Same-Day Appliance Repair Scarborough | 24/7 Availability',
@@ -167,6 +265,7 @@ return [
     ],
     'richmond-hill-appliance-repair' => [
         'slug' => 'richmond-hill-appliance-repair',
+        'date_modified' => '2026-09-17',
         'city_name' => 'Richmond Hill',
         'region' => 'York Region',
         'meta_title' => 'Appliance Repair Richmond Hill | Expert Local Repairmen',
@@ -189,6 +288,7 @@ return [
     ],
     'burlington-appliance-repair' => [
         'slug' => 'burlington-appliance-repair',
+        'date_modified' => '2026-09-17',
         'city_name' => 'Burlington',
         'region' => 'Halton Region',
         'meta_title' => 'Appliance Repair Burlington | Fast Response 24/7',
@@ -211,6 +311,7 @@ return [
     ],
     'hamilton-appliance-repair' => [
         'slug' => 'hamilton-appliance-repair',
+        'date_modified' => '2026-09-17',
         'city_name' => 'Hamilton',
         'region' => 'Greater Hamilton Area',
         'meta_title' => 'Top Appliance Repair Hamilton | Fast & Affordable Service',
@@ -233,6 +334,7 @@ return [
     ],
     'kitchener-appliance-repair' => [
         'slug' => 'kitchener-appliance-repair',
+        'date_modified' => '2026-09-17',
         'city_name' => 'Kitchener',
         'region' => 'Waterloo Region',
         'meta_title' => 'Appliance Repair Kitchener | Kitchener-Waterloo Region',
@@ -255,6 +357,7 @@ return [
     ],
     'waterloo-appliance-repair' => [
         'slug' => 'waterloo-appliance-repair',
+        'date_modified' => '2026-09-17',
         'city_name' => 'Waterloo',
         'region' => 'Waterloo Region',
         'meta_title' => 'Same-Day Appliance Repair Waterloo | Trusted Local Pros',
@@ -277,6 +380,7 @@ return [
     ],
     'cambridge-appliance-repair' => [
         'slug' => 'cambridge-appliance-repair',
+        'date_modified' => '2026-09-17',
         'city_name' => 'Cambridge',
         'region' => 'Waterloo Region',
         'meta_title' => 'Appliance Repair Cambridge | Fast Emergency Repairs',
@@ -299,6 +403,7 @@ return [
     ],
     'guelph-appliance-repair' => [
         'slug' => 'guelph-appliance-repair',
+        'date_modified' => '2026-09-17',
         'city_name' => 'Guelph',
         'region' => 'Wellington County',
         'meta_title' => 'Appliance Repair Guelph | Certified Local Technicians',
@@ -321,6 +426,7 @@ return [
     ],
     'pickering-appliance-repair' => [
         'slug' => 'pickering-appliance-repair',
+        'date_modified' => '2026-09-17',
         'city_name' => 'Pickering',
         'region' => 'Durham Region',
         'meta_title' => 'Appliance Repair Pickering | Durham Region Specialists',
@@ -347,6 +453,7 @@ return [
     ],
     'caledon-appliance-repair' => [
         'slug' => 'caledon-appliance-repair',
+        'date_modified' => '2026-09-21',
         'city_name' => 'Caledon',
         'region' => 'Peel Region',
         'meta_title' => 'Appliance Repair Caledon | Same-Day Service & Warranty',
@@ -362,13 +469,38 @@ return [
         'geo' => ['latitude' => 43.8687, 'longitude' => -79.8665],
         'faqs' => [
             [
-                'q' => 'Do you service rural Caledon addresses and Bolton?',
-                'a' => 'Yes, our technicians cover all areas of Caledon, including Bolton, Palgrave, and surrounding rural properties.'
+                'q' => 'Do you provide same-day appliance repair in Caledon?',
+                'a' => "Yes — same-day appliance repair in Caledon is available, subject to appointment availability and the details of your repair. Use our booking form or call 905-717-8905 to discuss your appliance issue and confirm an available appointment with our team."
+            ],
+            [
+                'q' => 'Which neighborhoods in Caledon do you service?',
+                'a' => 'We serve Caledon as part of our Southern Ontario service coverage, including areas such as Bolton, Caledon East, and Inglewood. Since Caledon covers a broad geographic area, provide your exact address when booking so our team can confirm service availability and appointment details for your location.'
+            ],
+            [
+                'q' => 'How much does appliance repair cost in Caledon?',
+                'a' => 'For Caledon customers, the diagnostic service call fee is waived when you proceed with the repair. If you decide not to proceed, the service call fee applies. Repair costs vary depending on the appliance, the issue identified, and the parts or work required. Our technician can explain the repair options and pricing after diagnosing the problem.'
+            ],
+            [
+                'q' => 'What appliances do you repair in Caledon?',
+                'a' => 'Our Caledon appliance repair services cover common household appliances, including refrigerators, washing machines, dryers, dishwashers, ovens and stoves, and induction ovens. Describe your appliance and the issue when booking so our team can help arrange the appropriate repair service.'
+            ],
+            [
+                'q' => 'Which appliance brands do you repair in Caledon?',
+                'a' => 'We repair popular appliance brands in Caledon, including Samsung, LG, Whirlpool, and Maytag, as well as premium brands like Bosch and Sub-Zero. Our technicians use genuine OEM replacement parts to support efficient, long-lasting repairs. If your appliance is an older model or a brand not listed here, contact our team with your model number to confirm parts availability.'
+            ],
+            [
+                'q' => 'Do you offer a warranty on appliance repairs in Caledon?',
+                'a' => 'Yes. Repairs completed in Caledon come with a written warranty on parts and labor. Ask our technician about the specific warranty terms for your repair when the work is completed.'
+            ],
+            [
+                'q' => "Can you fix a dishwasher that won't drain or is leaking in Caledon?",
+                'a' => "Yes. Dishwasher drainage issues and water leaks are repairs we frequently handle in Caledon. Whether caused by a clogged filter, a faulty drain pump, or a worn door gasket, our technicians can inspect the unit, identify the root cause, and complete the repair on-site."
             ]
         ]
     ],
     'oshawa-appliance-repair' => [
         'slug' => 'oshawa-appliance-repair',
+        'date_modified' => '2026-09-17',
         'city_name' => 'Oshawa',
         'region' => 'Durham Region',
         'meta_title' => 'Appliance Repair Oshawa | Fast & Affordable Repairs',
@@ -391,6 +523,7 @@ return [
     ],
     'toronto-appliance-repair' => [
         'slug' => 'toronto-appliance-repair',
+        'date_modified' => '2026-09-21',
         'city_name' => 'Toronto',
         'region' => 'City of Toronto',
         'meta_title' => 'Appliance Repair Toronto | Certified Local Technicians',
@@ -406,13 +539,38 @@ return [
         'geo' => ['latitude' => 43.6532, 'longitude' => -79.3832],
         'faqs' => [
             [
-                'q' => 'Do you serve condo apartments in Downtown Toronto?',
-                'a' => 'Yes! Our technicians carry compact service kits and know how to work smoothly with condo security and visitor parking.'
+                'q' => 'Do you provide same-day appliance repair in Toronto?',
+                'a' => "Yes — same-day appliance repair in Toronto is one of our most requested services, though appointment availability depends on daily scheduling and technician routes. Use our online booking form or call 905-717-8905 to confirm same-day availability for your area."
+            ],
+            [
+                'q' => 'Which neighborhoods in Toronto do you service?',
+                'a' => 'We cover all areas of Toronto, including Downtown Toronto, North York, Etobicoke, Scarborough, East York, High Park, Liberty Village, and Leslieville. We also regularly service residential condos and high-rise apartments across the city, navigating building access and visitor parking protocols seamlessly.'
+            ],
+            [
+                'q' => 'How much does appliance repair cost in Toronto?',
+                'a' => 'For Toronto residents, our diagnostic service call fee is completely waived when you proceed with the repair. If you choose not to go ahead, only the standard diagnostic fee applies. Total repair costs depend on the appliance type, specific issue diagnosed, and any required replacement parts. Our technician always provides a transparent, upfront written quote before beginning any repair.'
+            ],
+            [
+                'q' => 'What appliances do you repair in Toronto?',
+                'a' => 'Our licensed Toronto technicians repair all major household appliances, including refrigerators, washing machines, dryers, dishwashers, electric and gas stoves, ovens, and induction cooktops in single-family homes, townhouses, and condos.'
+            ],
+            [
+                'q' => 'Which appliance brands do you repair in Toronto?',
+                'a' => 'We service all leading residential appliance brands across Toronto, including Samsung, LG, Whirlpool, and GE, as well as premium models like Bosch, Miele, and Sub-Zero. Our service vehicles carry common OEM replacement parts for faster, one-visit repairs. If you have an older or less common brand, call us with your model number to confirm parts availability.'
+            ],
+            [
+                'q' => 'Do you offer a warranty on appliance repairs in Toronto?',
+                'a' => 'Yes. Every repair completed in Toronto comes with a written warranty on both parts and labor, ensuring your repair is dependable and fully protected.'
+            ],
+            [
+                'q' => "Can you fix a refrigerator that isn't cooling in Toronto?",
+                'a' => "Yes. Cooling failures are among our most frequent emergency refrigerator repairs in Toronto. Whether the issue is a faulty start relay, a failed condenser fan, a defective defrost thermostat, or a temperature sensor problem, our technicians can accurately diagnose and resolve the issue on-site."
             ]
         ]
     ],
     'milton-appliance-repair' => [
         'slug' => 'milton-appliance-repair',
+        'date_modified' => '2026-09-17',
         'city_name' => 'Milton',
         'region' => 'Halton Region',
         'meta_title' => 'Appliance Repair Milton | Fast & Reliable Local Technicians',
@@ -439,6 +597,7 @@ return [
     ],
     'barrie-appliance-repair' => [
         'slug' => 'barrie-appliance-repair',
+        'date_modified' => '2026-09-17',
         'city_name' => 'Barrie',
         'region' => 'Simcoe County',
         'meta_title' => 'Appliance Repair Barrie | Same-Day Service & Warranty',
@@ -465,6 +624,7 @@ return [
     ],
     'ajax-appliance-repair' => [
         'slug' => 'ajax-appliance-repair',
+        'date_modified' => '2026-09-17',
         'city_name' => 'Ajax',
         'region' => 'Durham Region',
         'meta_title' => 'Appliance Repair Ajax | Same-Day Service & Local Technicians',

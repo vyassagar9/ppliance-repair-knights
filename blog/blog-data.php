@@ -5,47 +5,47 @@
  */
 
 return [
-    'refrigerator-repair-cost-toronto' => [
-        'slug' => 'refrigerator-repair-cost-toronto',
-        'title' => 'Is It Worth Repairing a Refrigerator? Toronto Repair Costs & When to Replace',
-        'meta_title' => 'Is It Worth Repairing a Refrigerator? Toronto Repair Costs & When to Replace',
-        'meta_description' => 'Wondering if your fridge is worth fixing? Learn how to evaluate refrigerator repair costs in Toronto, the 50% rule, common part repairs, and our waived service call fee policy.',
-        'primary_keyword' => 'refrigerator repair cost toronto',
-        'related_keywords' => 'fridge repair vs replace, average refrigerator repair cost Ontario, fridge compressor repair cost, when to replace a refrigerator, refrigerator repair Toronto, fridge repair GTA',
-        'category' => 'Refrigerator Repair',
-        'category_slug' => 'fridge',
-        'service_link' => 'services/fridge-repair',
-        'date_published' => '2026-09-07',
-        'date_modified' => '2026-09-07',
-        'author' => 'Appliance Repair Knights Certified Technicians',
-        'author_role' => 'Licensed Diagnostic & Field Team',
-        'read_time' => '8 min read',
-        'featured_image' => 'img/refrigerator-repair-cost-toronto.webp',
-        'summary' => "A refrigerator that stops cooling properly can quickly become more than an inconvenience. In many cases, repairing a refrigerator is much more practical than replacing it. Here is our guide to evaluating refrigerator repair costs in Toronto, the 50% rule, common part repairs, and when replacement makes more sense.",
-        'quick_answer' => "In many cases, repairing a refrigerator is much more practical than replacing it—especially when the issue involves a thermostat, fan motor, door gasket, temperature sensor, or start relay. The 50% rule is a helpful starting point: if the repair quote is significantly less than half the cost of a comparable new unit and the appliance is under 10–12 years old, repairing is generally the smarter financial choice. Appliance Repair Knights provides upfront diagnostics with service call fee waived off with repairs.",
-        'faqs' => [
-            [
-                'q' => 'How much does refrigerator repair typically cost in Toronto?',
-                'a' => 'Refrigerator repair costs in Toronto depend on the exact part, brand complexity, and diagnostic requirements. Electrical repairs like start relays, sensors, and fans are straightforward and very economical, whereas sealed-system compressor replacements require certified refrigeration procedures. Appliance Repair Knights operates with complete transparency: we provide a written upfront quote with our service call fee completely waived off when you approve the repair.'
-            ],
-            [
-                'q' => 'Is it worth repairing a 10-year-old refrigerator?',
-                'a' => 'Yes, if the failure is a common, accessible part such as a defrost thermostat, condenser fan, or door seal. Replacing these components can easily grant the refrigerator another 3 to 5 years of reliable service. However, if an older 10+ year unit experiences a major compressor failure or sealed refrigerant leak, replacement is generally the more sensible investment.'
-            ],
-            [
-                'q' => 'Do you waive the diagnostic fee if I proceed with the repair?',
-                'a' => 'Yes, absolutely. At Appliance Repair Knights, our service call fee is completely waived off with any approved repair. Our licensed technician thoroughly inspects the appliance, diagnoses the root issue, explains the solution, and waives the diagnostic service call fee when you give the go-ahead.'
-            ],
-            [
-                'q' => 'How fast can a refrigerator technician arrive at my home in the GTA?',
-                'a' => 'Because refrigeration failures jeopardize perishable groceries, we treat cooling issues with priority. We provide same-day service across Toronto, Mississauga, Brampton, Vaughan, Markham, Richmond Hill, Oakville, and surrounding GTA regions when booked early.'
-            ],
-            [
-                'q' => 'What refrigerator brands do your technicians service?',
-                'a' => 'Our certified technicians service all leading residential brands across Ontario, including Samsung, LG, Whirlpool, Bosch, GE, KitchenAid, Frigidaire, Maytag, Kenmore, Sub-Zero, and Miele.'
-            ]
-        ],
-        'content_html' => <<<HTML
+  'refrigerator-repair-cost-toronto' => [
+    'slug' => 'refrigerator-repair-cost-toronto',
+    'title' => 'Is It Worth Repairing a Refrigerator? Toronto Repair Costs & When to Replace',
+    'meta_title' => 'Is It Worth Repairing a Refrigerator? Toronto Repair Costs & When to Replace',
+    'meta_description' => 'Wondering if your fridge is worth fixing? Learn how to evaluate refrigerator repair costs in Toronto, the 50% rule, common part repairs, and our waived service call fee policy.',
+    'primary_keyword' => 'refrigerator repair cost toronto',
+    'related_keywords' => 'fridge repair vs replace, average refrigerator repair cost Ontario, fridge compressor repair cost, when to replace a refrigerator, refrigerator repair Toronto, fridge repair GTA',
+    'category' => 'Refrigerator Repair',
+    'category_slug' => 'fridge',
+    'service_link' => 'services/fridge-repair',
+    'date_published' => '2026-09-07',
+    'date_modified' => '2026-09-07',
+    'author' => 'Appliance Repair Knights Certified Technicians',
+    'author_role' => 'Licensed Diagnostic & Field Team',
+    'read_time' => '8 min read',
+    'featured_image' => 'img/refrigerator-repair-cost-toronto.webp',
+    'summary' => "A refrigerator that stops cooling properly can quickly become more than an inconvenience. In many cases, repairing a refrigerator is much more practical than replacing it. Here is our guide to evaluating refrigerator repair costs in Toronto, the 50% rule, common part repairs, and when replacement makes more sense.",
+    'quick_answer' => "In many cases, repairing a refrigerator is much more practical than replacing it—especially when the issue involves a thermostat, fan motor, door gasket, temperature sensor, or start relay. The 50% rule is a helpful starting point: if the repair quote is significantly less than half the cost of a comparable new unit and the appliance is under 10–12 years old, repairing is generally the smarter financial choice. Appliance Repair Knights provides upfront diagnostics with service call fee waived off with repairs.",
+    'faqs' => [
+      [
+        'q' => 'How much does refrigerator repair typically cost in Toronto?',
+        'a' => 'Refrigerator repair costs in Toronto depend on the exact part, brand complexity, and diagnostic requirements. Electrical repairs like start relays, sensors, and fans are straightforward and very economical, whereas sealed-system compressor replacements require certified refrigeration procedures. Appliance Repair Knights operates with complete transparency: we provide a written upfront quote with our service call fee completely waived off when you approve the repair.'
+      ],
+      [
+        'q' => 'Is it worth repairing a 10-year-old refrigerator?',
+        'a' => 'Yes, if the failure is a common, accessible part such as a defrost thermostat, condenser fan, or door seal. Replacing these components can easily grant the refrigerator another 3 to 5 years of reliable service. However, if an older 10+ year unit experiences a major compressor failure or sealed refrigerant leak, replacement is generally the more sensible investment.'
+      ],
+      [
+        'q' => 'Do you waive the diagnostic fee if I proceed with the repair?',
+        'a' => 'Yes, absolutely. At Appliance Repair Knights, our service call fee is completely waived off with any approved repair. Our licensed technician thoroughly inspects the appliance, diagnoses the root issue, explains the solution, and waives the diagnostic service call fee when you give the go-ahead.'
+      ],
+      [
+        'q' => 'How fast can a refrigerator technician arrive at my home in the GTA?',
+        'a' => 'Because refrigeration failures jeopardize perishable groceries, we treat cooling issues with priority. We provide same-day service across Toronto, Mississauga, Brampton, Vaughan, Markham, Richmond Hill, Oakville, and surrounding GTA regions when booked early.'
+      ],
+      [
+        'q' => 'What refrigerator brands do your technicians service?',
+        'a' => 'Our certified technicians service all leading residential brands across Ontario, including Samsung, LG, Whirlpool, Bosch, GE, KitchenAid, Frigidaire, Maytag, Kenmore, Sub-Zero, and Miele.'
+      ]
+    ],
+    'content_html' => <<<HTML
 <div class="space-y-10 text-slate-700 leading-relaxed text-base sm:text-lg">
 
   <!-- Introduction -->
@@ -699,49 +699,49 @@ return [
 
 </div>
 HTML
+  ],
+  'appliance-repair-tips' => [
+    'slug' => 'appliance-repair-tips',
+    'title' => 'Appliance Repair Tips: Common Problems & What to Check',
+    'meta_title' => 'Appliance Repair Tips: Common Problems & What to Check',
+    'meta_description' => 'Practical appliance repair tips for common problems in Canada, Toronto and the GTA, plus safe checks and signs you need professional help.',
+    'primary_keyword' => 'appliance repair tips',
+    'related_keywords' => 'dryer repair tips, washer repair tips, refrigerator repair tips, dishwasher repair tips, stove repair tips, microwave repair tips Toronto GTA',
+    'category' => 'Appliance Repair Tips',
+    'category_slug' => 'tips',
+    'service_link' => 'schedule',
+    'date_published' => '2026-09-17',
+    'date_modified' => '2026-09-17',
+    'author' => 'Appliance Repair Knights Certified Technicians',
+    'author_role' => 'Licensed Diagnostic & Field Team',
+    'read_time' => '6 min read',
+    'featured_image' => 'img/appliance-repair-tips-toronto-gta.webp',
+    'featured_image_alt' => 'Collage of appliance repair services — refrigerator, washer, dryer, dishwasher, oven and stove',
+    'featured_image_title' => 'Collage of appliance repair services — refrigerator, washer, dryer, dishwasher, oven and stove',
+    'summary' => 'Practical appliance repair tips for common problems in Canada, Toronto and the GTA, plus safe checks and signs you need professional help.',
+    'faqs' => [
+      [
+        'q' => 'What should I check first when an appliance stops working?',
+        'a' => 'You should start with the power supply, circuit breaker, controls, doors or lids, visible blockages and any error codes. Make sure that you follow the manufacturer\'s instructions for your model.'
+      ],
+      [
+        'q' => 'Can I repair an appliance myself?',
+        'a' => 'You can go ahead with simple maintenance and basic checks. But internal electrical, gas and mechanical repairs are not recommended, as it can involve safety risks. You must therefore let an appropriate qualified professional handle such complex repairs.'
+      ],
+      [
+        'q' => 'How do I know if my appliance needs professional repair?',
+        'a' => 'If you notice persistent problems, unusual smells or noises, leaks, repeated error codes, electrical symptoms or failures that return even after basic troubleshooting, then you must consider professional diagnosis.'
+      ],
+      [
+        'q' => 'Why should I get an appliance diagnosed before replacing parts?',
+        'a' => 'Because different faults can produce similar symptoms, a proper professional diagnosis helps identify the actual cause and reduces the risk of replacing a part that was not responsible for the problem.'
+      ],
+      [
+        'q' => 'Should I repair or replace my appliance?',
+        'a' => 'Consider the appliance\'s age, overall condition, repair requirements and replacement cost. A proper diagnosis can give you better information before making that decision.'
+      ]
     ],
-    'appliance-repair-tips' => [
-        'slug' => 'appliance-repair-tips',
-        'title' => 'Appliance Repair Tips: Common Problems & What to Check',
-        'meta_title' => 'Appliance Repair Tips: Common Problems & What to Check',
-        'meta_description' => 'Practical appliance repair tips for common problems in Canada, Toronto and the GTA, plus safe checks and signs you need professional help.',
-        'primary_keyword' => 'appliance repair tips',
-        'related_keywords' => 'dryer repair tips, washer repair tips, refrigerator repair tips, dishwasher repair tips, stove repair tips, microwave repair tips Toronto GTA',
-        'category' => 'Appliance Repair Tips',
-        'category_slug' => 'tips',
-        'service_link' => 'schedule',
-        'date_published' => '2026-09-17',
-        'date_modified' => '2026-09-17',
-        'author' => 'Appliance Repair Knights Certified Technicians',
-        'author_role' => 'Licensed Diagnostic & Field Team',
-        'read_time' => '6 min read',
-        'featured_image' => 'img/appliance-repair-tips-toronto-gta.webp',
-        'featured_image_alt' => 'Collage of appliance repair services — refrigerator, washer, dryer, dishwasher, oven and stove',
-        'featured_image_title' => 'Collage of appliance repair services — refrigerator, washer, dryer, dishwasher, oven and stove',
-        'summary' => 'Practical appliance repair tips for common problems in Canada, Toronto and the GTA, plus safe checks and signs you need professional help.',
-        'faqs' => [
-            [
-                'q' => 'What should I check first when an appliance stops working?',
-                'a' => 'You should start with the power supply, circuit breaker, controls, doors or lids, visible blockages and any error codes. Make sure that you follow the manufacturer\'s instructions for your model.'
-            ],
-            [
-                'q' => 'Can I repair an appliance myself?',
-                'a' => 'You can go ahead with simple maintenance and basic checks. But internal electrical, gas and mechanical repairs are not recommended, as it can involve safety risks. You must therefore let an appropriate qualified professional handle such complex repairs.'
-            ],
-            [
-                'q' => 'How do I know if my appliance needs professional repair?',
-                'a' => 'If you notice persistent problems, unusual smells or noises, leaks, repeated error codes, electrical symptoms or failures that return even after basic troubleshooting, then you must consider professional diagnosis.'
-            ],
-            [
-                'q' => 'Why should I get an appliance diagnosed before replacing parts?',
-                'a' => 'Because different faults can produce similar symptoms, a proper professional diagnosis helps identify the actual cause and reduces the risk of replacing a part that was not responsible for the problem.'
-            ],
-            [
-                'q' => 'Should I repair or replace my appliance?',
-                'a' => 'Consider the appliance\'s age, overall condition, repair requirements and replacement cost. A proper diagnosis can give you better information before making that decision.'
-            ]
-        ],
-        'content_html' => <<<HTML
+    'content_html' => <<<HTML
 <div class="space-y-10 text-slate-700 leading-relaxed text-base sm:text-lg">
 
   <!-- Introduction -->
@@ -983,55 +983,55 @@ HTML
 
 </div>
 HTML
-    ],
+  ],
 
-    'washing-machine-not-draining-toronto' => [
-        'slug' => 'washing-machine-not-draining-toronto',
-        'title' => 'Washing Machine Not Draining in Toronto? Common Causes, Fixes & Repair Costs',
-        'meta_title' => 'Washing Machine Not Draining in Toronto? Causes & Costs',
-        'meta_description' => 'Washing machine not draining in Toronto? Learn common causes, simple checks, drain pump problems, and what can affect washer repair costs.',
-        'primary_keyword' => 'washing machine not draining toronto',
-        'related_keywords' => 'washer not draining water, washing machine standing water, washer drain pump Toronto, washing machine repair Toronto, washer won\'t spin standing water',
-        'category' => 'Washing Machine',
-        'category_slug' => 'washer',
-        'service_link' => 'services/washer-repair',
-        'date_published' => '2026-09-21',
-        'date_modified' => '2026-09-21',
-        'author' => 'Appliance Repair Knights Certified Technicians',
-        'author_role' => 'Licensed Diagnostic & Field Team',
-        'read_time' => '7 min read',
-        'featured_image' => 'img/washing-machine-not-draining-toronto.webp',
-        'featured_image_alt' => 'Washing machine not draining in Toronto with standing water',
-        'featured_image_title' => 'Washing machine not draining in Toronto with standing water',
-        'summary' => "Is there still water sitting in your washing machine after the cycle should have finished? If your washing machine is not draining in Toronto, the cause could be something fairly simple, such as a clogged filter or kinked hose. In some cases, though, the drain pump or another internal component may need attention. Here is what to check, how to spot a failing pump, and what affects repair costs.",
-        'quick_answer' => "When a washing machine won't drain in Toronto, the most frequent causes are a blocked pump filter, a kinked drain hose, small foreign objects (like coins or socks) jamming the impeller, or a failing drain pump motor. In many cases, clearing the cleanout filter resolves the issue. If the pump or lid switch has failed, professional diagnosis and component replacement will restore normal drainage.",
-        'faqs' => [
-            [
-                'q' => 'Why is my washing machine not draining?',
-                'a' => 'A blocked pump filter, restricted drain hose, foreign object, or problem with the drain pump can all prevent a washer from draining properly. If basic checks don\'t fix the problem, the drainage system may need to be inspected.'
-            ],
-            [
-                'q' => 'Can a sock or coin stop a washing machine from draining?',
-                'a' => 'Yes. Small objects such as socks, coins, buttons, or other debris can get into the drainage system and restrict the filter, hose, or drain pump.'
-            ],
-            [
-                'q' => 'Can a clogged drain filter cause standing water?',
-                'a' => 'Yes. If the pump filter is heavily blocked, water may drain very slowly or remain inside the washer when the cycle ends.'
-            ],
-            [
-                'q' => 'Why does my washer drain but not spin?',
-                'a' => 'If the washer drains but does not spin, drainage should be checked first, since some models limit the spin cycle when water remains in the drum. If the drum is empty and it still won\'t spin, the cause is likely unrelated to drainage.'
-            ],
-            [
-                'q' => 'How do I know if my washing machine drain pump needs repair?',
-                'a' => 'Standing water, repeated drainage errors, unusual pump noises, or a pump that runs without actually removing water can point to a possible drain-pump problem. These symptoms can have other causes too, so proper diagnosis is recommended.'
-            ],
-            [
-                'q' => 'Can a washer with standing water be repaired the same day?',
-                'a' => 'Same-day washer repair may be available depending on technician availability and scheduling. A technician can inspect the drainage problem and determine what repair is needed.'
-            ]
-        ],
-        'content_html' => <<<HTML
+  'washing-machine-not-draining-toronto' => [
+    'slug' => 'washing-machine-not-draining-toronto',
+    'title' => 'Washing Machine Not Draining in Toronto? Common Causes, Fixes & Repair Costs',
+    'meta_title' => 'Washing Machine Not Draining in Toronto? Causes & Costs',
+    'meta_description' => 'Washing machine not draining in Toronto? Learn common causes, simple checks, drain pump problems, and what can affect washer repair costs.',
+    'primary_keyword' => 'washing machine not draining toronto',
+    'related_keywords' => 'washer not draining water, washing machine standing water, washer drain pump Toronto, washing machine repair Toronto, washer won\'t spin standing water',
+    'category' => 'Washing Machine',
+    'category_slug' => 'washer',
+    'service_link' => 'services/washer-repair',
+    'date_published' => '2026-09-21',
+    'date_modified' => '2026-09-21',
+    'author' => 'Appliance Repair Knights Certified Technicians',
+    'author_role' => 'Licensed Diagnostic & Field Team',
+    'read_time' => '7 min read',
+    'featured_image' => 'img/washing-machine-not-draining-toronto.webp',
+    'featured_image_alt' => 'Washing machine not draining in Toronto with standing water',
+    'featured_image_title' => 'Washing machine not draining in Toronto with standing water',
+    'summary' => "Is there still water sitting in your washing machine after the cycle should have finished? If your washing machine is not draining in Toronto, the cause could be something fairly simple, such as a clogged filter or kinked hose. In some cases, though, the drain pump or another internal component may need attention. Here is what to check, how to spot a failing pump, and what affects repair costs.",
+    'quick_answer' => "When a washing machine won't drain in Toronto, the most frequent causes are a blocked pump filter, a kinked drain hose, small foreign objects (like coins or socks) jamming the impeller, or a failing drain pump motor. In many cases, clearing the cleanout filter resolves the issue. If the pump or lid switch has failed, professional diagnosis and component replacement will restore normal drainage.",
+    'faqs' => [
+      [
+        'q' => 'Why is my washing machine not draining?',
+        'a' => 'A blocked pump filter, restricted drain hose, foreign object, or problem with the drain pump can all prevent a washer from draining properly. If basic checks don\'t fix the problem, the drainage system may need to be inspected.'
+      ],
+      [
+        'q' => 'Can a sock or coin stop a washing machine from draining?',
+        'a' => 'Yes. Small objects such as socks, coins, buttons, or other debris can get into the drainage system and restrict the filter, hose, or drain pump.'
+      ],
+      [
+        'q' => 'Can a clogged drain filter cause standing water?',
+        'a' => 'Yes. If the pump filter is heavily blocked, water may drain very slowly or remain inside the washer when the cycle ends.'
+      ],
+      [
+        'q' => 'Why does my washer drain but not spin?',
+        'a' => 'If the washer drains but does not spin, drainage should be checked first, since some models limit the spin cycle when water remains in the drum. If the drum is empty and it still won\'t spin, the cause is likely unrelated to drainage.'
+      ],
+      [
+        'q' => 'How do I know if my washing machine drain pump needs repair?',
+        'a' => 'Standing water, repeated drainage errors, unusual pump noises, or a pump that runs without actually removing water can point to a possible drain-pump problem. These symptoms can have other causes too, so proper diagnosis is recommended.'
+      ],
+      [
+        'q' => 'Can a washer with standing water be repaired the same day?',
+        'a' => 'Same-day washer repair may be available depending on technician availability and scheduling. A technician can inspect the drainage problem and determine what repair is needed.'
+      ]
+    ],
+    'content_html' => <<<HTML
 <div class="space-y-10 text-slate-700 leading-relaxed text-base sm:text-lg">
 
   <!-- Introduction -->
@@ -1329,5 +1329,5 @@ HTML
 
 </div>
 HTML
-    ]
+  ]
 ];

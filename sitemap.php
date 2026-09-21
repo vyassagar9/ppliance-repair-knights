@@ -126,20 +126,20 @@ $locations = [
 
 $locTemplate = $rootDir . '/locations/location.php';
 $locData = $rootDir . '/locations/location-data.php';
-$locBaseMod = max(
-    file_exists($locTemplate) ? filemtime($locTemplate) : 0,
-    file_exists($locData) ? filemtime($locData) : 0
-);
+$locDataArr = file_exists($locData) ? (include $locData) : [];
 
 foreach ($locations as $slug) {
     $specificFile = $rootDir . '/locations/' . $slug . '.php';
-    $modTime = $locBaseMod;
-    if (file_exists($specificFile)) {
-        $modTime = max($modTime, filemtime($specificFile));
+    if (!empty($locDataArr[$slug]['date_modified'])) {
+        $lastmod = $locDataArr[$slug]['date_modified'];
+    } elseif (file_exists($specificFile)) {
+        $lastmod = date('Y-m-d', filemtime($specificFile));
+    } else {
+        $lastmod = '2026-09-17';
     }
     $pages[] = [
         'loc' => $domain . '/locations/' . $slug,
-        'lastmod' => date('Y-m-d', $modTime > 0 ? $modTime : time()),
+        'lastmod' => $lastmod,
         'changefreq' => 'weekly',
         'priority' => '0.95'
     ];
