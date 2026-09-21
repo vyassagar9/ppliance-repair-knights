@@ -983,5 +983,351 @@ HTML
 
 </div>
 HTML
+    ],
+
+    'washing-machine-not-draining-toronto' => [
+        'slug' => 'washing-machine-not-draining-toronto',
+        'title' => 'Washing Machine Not Draining in Toronto? Common Causes, Fixes & Repair Costs',
+        'meta_title' => 'Washing Machine Not Draining in Toronto? Causes & Costs',
+        'meta_description' => 'Washing machine not draining in Toronto? Learn common causes, simple checks, drain pump problems, and what can affect washer repair costs.',
+        'primary_keyword' => 'washing machine not draining toronto',
+        'related_keywords' => 'washer not draining water, washing machine standing water, washer drain pump Toronto, washing machine repair Toronto, washer won\'t spin standing water',
+        'category' => 'Washing Machine',
+        'category_slug' => 'washer',
+        'service_link' => 'services/washer-repair',
+        'date_published' => '2026-09-21',
+        'date_modified' => '2026-09-21',
+        'author' => 'Appliance Repair Knights Certified Technicians',
+        'author_role' => 'Licensed Diagnostic & Field Team',
+        'read_time' => '7 min read',
+        'featured_image' => 'img/washing-machine-not-draining-toronto.webp',
+        'featured_image_alt' => 'Washing machine not draining in Toronto with standing water',
+        'featured_image_title' => 'Washing machine not draining in Toronto with standing water',
+        'summary' => "Is there still water sitting in your washing machine after the cycle should have finished? If your washing machine is not draining in Toronto, the cause could be something fairly simple, such as a clogged filter or kinked hose. In some cases, though, the drain pump or another internal component may need attention. Here is what to check, how to spot a failing pump, and what affects repair costs.",
+        'quick_answer' => "When a washing machine won't drain in Toronto, the most frequent causes are a blocked pump filter, a kinked drain hose, small foreign objects (like coins or socks) jamming the impeller, or a failing drain pump motor. In many cases, clearing the cleanout filter resolves the issue. If the pump or lid switch has failed, professional diagnosis and component replacement will restore normal drainage.",
+        'faqs' => [
+            [
+                'q' => 'Why is my washing machine not draining?',
+                'a' => 'A blocked pump filter, restricted drain hose, foreign object, or problem with the drain pump can all prevent a washer from draining properly. If basic checks don\'t fix the problem, the drainage system may need to be inspected.'
+            ],
+            [
+                'q' => 'Can a sock or coin stop a washing machine from draining?',
+                'a' => 'Yes. Small objects such as socks, coins, buttons, or other debris can get into the drainage system and restrict the filter, hose, or drain pump.'
+            ],
+            [
+                'q' => 'Can a clogged drain filter cause standing water?',
+                'a' => 'Yes. If the pump filter is heavily blocked, water may drain very slowly or remain inside the washer when the cycle ends.'
+            ],
+            [
+                'q' => 'Why does my washer drain but not spin?',
+                'a' => 'If the washer drains but does not spin, drainage should be checked first, since some models limit the spin cycle when water remains in the drum. If the drum is empty and it still won\'t spin, the cause is likely unrelated to drainage.'
+            ],
+            [
+                'q' => 'How do I know if my washing machine drain pump needs repair?',
+                'a' => 'Standing water, repeated drainage errors, unusual pump noises, or a pump that runs without actually removing water can point to a possible drain-pump problem. These symptoms can have other causes too, so proper diagnosis is recommended.'
+            ],
+            [
+                'q' => 'Can a washer with standing water be repaired the same day?',
+                'a' => 'Same-day washer repair may be available depending on technician availability and scheduling. A technician can inspect the drainage problem and determine what repair is needed.'
+            ]
+        ],
+        'content_html' => <<<HTML
+<div class="space-y-10 text-slate-700 leading-relaxed text-base sm:text-lg">
+
+  <!-- Introduction -->
+  <div class="space-y-4 text-slate-700 leading-relaxed text-base sm:text-lg">
+    <p class="text-lg sm:text-xl text-slate-800 font-normal leading-relaxed">
+      Is there still water sitting in your washing machine after the cycle should have finished? If your washing machine is not draining in Toronto, the cause could be something fairly simple, such as a clogged filter or kinked hose. In some cases, though, the drain pump or another internal component may need attention.
+    </p>
+    <p>
+      Before you book a repair, there are a few things worth checking yourself. Below, we'll go through the common reasons a washer won't drain, what you can safely look at, signs that the drain pump may be involved, and what can affect the cost of washing machine repair in Toronto.
+    </p>
+  </div>
+
+  <!-- Key Takeaways Callout -->
+  <div class="bg-blue-50/80 border border-blue-200/90 rounded-2xl p-6 my-6 shadow-xs">
+    <h3 class="font-heading font-bold text-slate-900 text-base sm:text-lg mb-3 flex items-center gap-2">
+      <span class="text-brandBlue">📌</span> Key Takeaways
+    </h3>
+    <ul class="space-y-2.5 text-sm sm:text-base text-slate-700">
+      <li class="flex items-start gap-2.5">
+        <span class="w-1.5 h-1.5 rounded-full bg-brandBlue flex-shrink-0 mt-2"></span>
+        <span>A blocked pump filter or drain hose can leave water sitting inside the washer.</span>
+      </li>
+      <li class="flex items-start gap-2.5">
+        <span class="w-1.5 h-1.5 rounded-full bg-brandBlue flex-shrink-0 mt-2"></span>
+        <span>Small items such as socks, coins, or buttons can sometimes block the drainage system.</span>
+      </li>
+      <li class="flex items-start gap-2.5">
+        <span class="w-1.5 h-1.5 rounded-full bg-brandBlue flex-shrink-0 mt-2"></span>
+        <span>A jammed or failing drain pump may need professional repair or replacement.</span>
+      </li>
+      <li class="flex items-start gap-2.5">
+        <span class="w-1.5 h-1.5 rounded-full bg-brandBlue flex-shrink-0 mt-2"></span>
+        <span>When a washer cannot drain properly, it may also stop before the spin cycle.</span>
+      </li>
+      <li class="flex items-start gap-2.5">
+        <span class="w-1.5 h-1.5 rounded-full bg-brandBlue flex-shrink-0 mt-2"></span>
+        <span>Repair costs vary depending on the problem, parts, labour, and washer model.</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- H2 1: Why Is My Washing Machine Not Draining? -->
+  <section id="why-washer-not-draining" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      Why Is My Washing Machine Not Draining?
+    </h2>
+    <p>
+      When a washing machine won't drain, it means the water is not being pumped out of the drum as it should. A restriction in the filter, drain hose, or pump is often responsible, although an electrical or mechanical problem can cause similar symptoms.
+    </p>
+    <p>
+      You may notice that the washer drains very slowly, leaves the drum full of water, or stops partway through the cycle. Sometimes the pump can also make a humming or unusual noise while the water level barely changes.
+    </p>
+  </section>
+
+  <!-- H2 2: Common Reasons a Washer Won't Drain -->
+  <section id="common-reasons" class="space-y-6 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      Common Reasons a Washer Won't Drain
+    </h2>
+    
+    <div class="space-y-5">
+      <!-- Reason 1 -->
+      <div class="bg-white border border-slate-200/90 rounded-2xl p-5 sm:p-6 shadow-xs">
+        <h3 class="text-lg font-heading font-bold text-slate-900 flex items-center gap-2.5">
+          <span class="w-7 h-7 rounded-lg bg-blue-100 text-brandBlue flex items-center justify-center text-sm font-extrabold flex-shrink-0">1</span>
+          <span>The Pump Filter Is Blocked</span>
+        </h3>
+        <p class="text-slate-700 text-sm sm:text-base mt-2.5 leading-relaxed">
+          Many front-load washers have a pump filter that catches things such as lint, coins, hair, and other small debris. Over time, that filter can become clogged enough to slow down or completely stop drainage.
+        </p>
+        <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+          If your washer has an accessible pump filter, check the owner's instructions before opening it. There may be quite a bit of water behind the filter, so have a container and some towels ready before you start.
+        </p>
+
+        <!-- Filter / Pump Image -->
+        <figure class="mt-4 rounded-xl overflow-hidden border border-slate-200/90 shadow-sm bg-slate-50">
+          <img src="../img/washing-machine-drain-filter-blocked.webp" 
+               alt="Blocked washing machine drain filter with debris and standing water" 
+               title="Blocked washing machine drain filter with debris and standing water" 
+               width="800" 
+               height="450" 
+               loading="lazy" 
+               class="w-full h-auto object-cover max-h-[400px]">
+          <figcaption class="p-2.5 text-xs text-slate-500 text-center border-t border-slate-100 bg-white">
+            Blocked washing machine drain filter with debris and standing water.
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Reason 2 -->
+      <div class="bg-white border border-slate-200/90 rounded-2xl p-5 sm:p-6 shadow-xs">
+        <h3 class="text-lg font-heading font-bold text-slate-900 flex items-center gap-2.5">
+          <span class="w-7 h-7 rounded-lg bg-blue-100 text-brandBlue flex items-center justify-center text-sm font-extrabold flex-shrink-0">2</span>
+          <span>A Sock, Coin, or Other Object Is Blocking the Pump</span>
+        </h3>
+        <p class="text-slate-700 text-sm sm:text-base mt-2.5 leading-relaxed">
+          It is surprisingly easy for a small item to end up in the washer's drainage system. A sock, coin, button, or similar object can restrict the pump or stop its impeller from turning properly.
+        </p>
+        <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+          You may notice standing water, slow drainage, or a humming sound from the washer. The cycle may also stop before it reaches the final spin.
+        </p>
+      </div>
+
+      <!-- Reason 3 -->
+      <div class="bg-white border border-slate-200/90 rounded-2xl p-5 sm:p-6 shadow-xs">
+        <h3 class="text-lg font-heading font-bold text-slate-900 flex items-center gap-2.5">
+          <span class="w-7 h-7 rounded-lg bg-blue-100 text-brandBlue flex items-center justify-center text-sm font-extrabold flex-shrink-0">3</span>
+          <span>The Drain Hose Is Kinked or Restricted</span>
+        </h3>
+        <p class="text-slate-700 text-sm sm:text-base mt-2.5 leading-relaxed">
+          Take a quick look behind the washer. If the drain hose is sharply bent, crushed against the wall, or otherwise restricted, water may not be able to leave the machine properly.
+        </p>
+        <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+          If the visible part of the hose looks fine but the washer still won't drain, the restriction could be farther inside the drainage system.
+        </p>
+      </div>
+
+      <!-- Reason 4 -->
+      <div class="bg-white border border-slate-200/90 rounded-2xl p-5 sm:p-6 shadow-xs">
+        <h3 class="text-lg font-heading font-bold text-slate-900 flex items-center gap-2.5">
+          <span class="w-7 h-7 rounded-lg bg-blue-100 text-brandBlue flex items-center justify-center text-sm font-extrabold flex-shrink-0">4</span>
+          <span>The Drain Pump Is Jammed or Failing</span>
+        </h3>
+        <p class="text-slate-700 text-sm sm:text-base mt-2.5 leading-relaxed">
+          The drain pump moves wastewater out of the washing machine. If debris gets caught in it, the pump can become jammed. A worn or failed pump motor can cause the same basic symptom: the washer finishes part of the cycle but leaves water behind.
+        </p>
+        <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+          A humming, buzzing, or grinding sound can sometimes point toward a pump problem. It is not proof on its own, though, because a blockage elsewhere can create similar noises.
+        </p>
+      </div>
+
+      <!-- Reason 5 -->
+      <div class="bg-white border border-slate-200/90 rounded-2xl p-5 sm:p-6 shadow-xs">
+        <h3 class="text-lg font-heading font-bold text-slate-900 flex items-center gap-2.5">
+          <span class="w-7 h-7 rounded-lg bg-blue-100 text-brandBlue flex items-center justify-center text-sm font-extrabold flex-shrink-0">5</span>
+          <span>A Lid Switch or Door Lock Problem</span>
+        </h3>
+        <p class="text-slate-700 text-sm sm:text-base mt-2.5 leading-relaxed">
+          Depending on the washer, the lid switch or door-lock system helps confirm that the lid or door is safely closed before certain parts of the cycle can run.
+        </p>
+        <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+          If the washer does not detect the closed lid or door correctly, it may not continue with draining or spinning as expected.
+        </p>
+      </div>
+
+      <!-- Reason 6 -->
+      <div class="bg-white border border-slate-200/90 rounded-2xl p-5 sm:p-6 shadow-xs">
+        <h3 class="text-lg font-heading font-bold text-slate-900 flex items-center gap-2.5">
+          <span class="w-7 h-7 rounded-lg bg-blue-100 text-brandBlue flex items-center justify-center text-sm font-extrabold flex-shrink-0">6</span>
+          <span>Drain Hose Installation or Positioning Problem</span>
+        </h3>
+        <p class="text-slate-700 text-sm sm:text-base mt-2.5 leading-relaxed">
+          If the washing machine was recently moved, installed, or reconnected, take a closer look at the drain hose. Incorrect positioning or a poor connection can restrict drainage or allow water to flow back toward the washer.
+        </p>
+        <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+          This is particularly worth checking if the drainage problem started soon after the appliance was moved or reinstalled. Compare the hose setup with the installation instructions for your specific washer.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- H2 3: What Can You Check Before Calling for Repair? -->
+  <section id="what-to-check" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      What Can You Check Before Calling for Repair?
+    </h2>
+    <p>
+      If there is water left in the drum, start with the simple things. A few basic checks may help you narrow down what is happening:
+    </p>
+    <div class="bg-slate-50 border border-slate-200/90 rounded-2xl p-6 my-4">
+      <ul class="space-y-3 text-slate-700 text-sm sm:text-base">
+        <li class="flex items-start gap-2.5">
+          <span class="w-2 h-2 rounded-full bg-brandOrange flex-shrink-0 mt-2"></span>
+          <span><strong>Stop and unplug:</strong> Stop the washer and unplug it before inspecting any accessible components.</span>
+        </li>
+        <li class="flex items-start gap-2.5">
+          <span class="w-2 h-2 rounded-full bg-brandOrange flex-shrink-0 mt-2"></span>
+          <span><strong>Inspect the drain hose:</strong> Look behind the appliance and make sure the drain hose is not kinked, twisted, or crushed against the wall.</span>
+        </li>
+        <li class="flex items-start gap-2.5">
+          <span class="w-2 h-2 rounded-full bg-brandOrange flex-shrink-0 mt-2"></span>
+          <span><strong>Examine the pump filter:</strong> If your model has an accessible pump filter, inspect and clean it according to the manufacturer's instructions.</span>
+        </li>
+        <li class="flex items-start gap-2.5">
+          <span class="w-2 h-2 rounded-full bg-brandOrange flex-shrink-0 mt-2"></span>
+          <span><strong>Check for foreign objects:</strong> Check for visible debris (coins, hairpins, bra wires) that could be restricting the drainage path.</span>
+        </li>
+        <li class="flex items-start gap-2.5">
+          <span class="w-2 h-2 rounded-full bg-brandOrange flex-shrink-0 mt-2"></span>
+          <span><strong>Test the drain cycle:</strong> Once the checks are complete, test the drain or spin cycle if it is appropriate for your washer.</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Image 3: Drain Hose in Troubleshooting Section -->
+    <figure class="my-6 rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm bg-slate-50">
+      <img src="../img/washing-machine-drain-hose-installation.webp" 
+           alt="Washing machine drain hose connected to household drain standpipe" 
+           title="Washing machine drain hose connected to household drain standpipe" 
+           width="800" 
+           height="450" 
+           loading="lazy" 
+           class="w-full h-auto object-cover max-h-[420px]">
+      <figcaption class="p-2.5 text-xs text-slate-500 text-center border-t border-slate-100 bg-white">
+        Washing machine drain hose connected to household drain standpipe.
+      </figcaption>
+    </figure>
+
+    <p>
+      For model-specific instructions, your owner's manual or the manufacturer's support documentation is the best place to start.
+    </p>
+    <p>
+      If those basic checks don't solve the problem, a technician can inspect the drainage system and determine whether the washer needs a cleaning, adjustment, component repair, or replacement part.
+    </p>
+  </section>
+
+  <!-- H2 4: Why Won't My Washer Spin When There Is Water Inside? -->
+  <section id="why-wont-spin" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      Why Won't My Washer Spin When There Is Water Inside?
+    </h2>
+    <p>
+      If there is still water in the drum, it is normal for some washing machines to prevent or limit the spin cycle. The washer may need to drain first before it can safely move into a high-speed spin.
+    </p>
+    <p>
+      So if your washer won't spin and you also find standing water inside, the drainage system is a good place to start. Checking the hose, filter, and pump can help narrow down the issue.
+    </p>
+  </section>
+
+  <!-- H2 5: How Can You Tell If the Drain Pump Is the Problem? -->
+  <section id="drain-pump-problem" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      How Can You Tell If the Drain Pump Is the Problem?
+    </h2>
+    <p>
+      One clue is when you can hear the washer trying to drain, but the water is barely moving. Standing water combined with repeated drainage errors or unusual humming and grinding noises can also point toward the pump.
+    </p>
+    <p>
+      That said, these symptoms do not automatically mean the pump needs to be replaced. A blocked filter, restricted hose, wiring issue, or another drainage problem can look very similar.
+    </p>
+    <p>
+      Proper testing is the best way to find out whether the drain pump itself is actually at fault.
+    </p>
+  </section>
+
+  <!-- H2 6: When Should You Get Professional Washer Repair? -->
+  <section id="when-to-get-repair" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      When Should You Get Professional Washer Repair?
+    </h2>
+    <p>
+      If your washer continues to hold water after the basic checks, repeatedly shows a drainage error, or makes unusual pump noises, it may be time to have it inspected.
+    </p>
+    <p>
+      Professional help is also a good idea if you are not comfortable opening the washer or working around its internal components. A proper diagnosis can help determine whether you are dealing with a simple blockage or a part that needs repair or replacement.
+    </p>
+  </section>
+
+  <!-- H2 7: How Much Does Washing Machine Repair Cost in Toronto? -->
+  <section id="repair-costs" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      How Much Does Washing Machine Repair Cost in Toronto?
+    </h2>
+    <p>
+      There isn't one fixed price for a washer that won't drain. The cost depends on what is actually causing the problem, the washer model, the parts involved, and the labour needed to complete the repair.
+    </p>
+    <p>
+      For example, clearing a blocked filter or removing a foreign object can be a very different job from replacing a failed drain pump. The exact cost should be clear after the problem has been diagnosed.
+    </p>
+    <p>
+      Before approving a repair, it is reasonable to ask what caused the problem, whether a replacement part is needed, what labour is included, and whether the repair comes with any applicable warranty.
+    </p>
+    <div class="bg-amber-50/80 border border-amber-200/90 rounded-2xl p-5 sm:p-6 my-4">
+      <p class="text-slate-800 font-medium text-sm sm:text-base leading-relaxed">
+        <strong class="text-slate-900">Appliance Repair Knights Pricing Policy:</strong> We currently offer flat-rate, upfront pricing and waive the diagnostic service-call fee when you proceed with the repair.
+      </p>
+    </div>
+  </section>
+
+  <!-- H2 8: Washing Machine Repair in Toronto & the GTA -->
+  <section id="washer-repair-gta" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      Washing Machine Repair in Toronto &amp; the GTA
+    </h2>
+    <p>
+      Appliance Repair Knights provides washing machine repair across Toronto and surrounding GTA communities. <a href="../locations" class="text-brandBlue font-semibold hover:underline">See all appliance repair service areas</a> to check coverage in your city.
+    </p>
+    <p>
+      Same-day service may be available depending on technician availability and scheduling. If your washer is holding water, draining slowly, or stopping before the spin cycle, getting the problem checked can help get the appliance back to normal.
+    </p>
+    <p>
+      If the issue needs professional attention, you can get <a href="../services/washer-repair" class="text-brandBlue font-semibold hover:underline">washer repair in Toronto</a> from Appliance Repair Knights.
+    </p>
+  </section>
+
+</div>
+HTML
     ]
 ];

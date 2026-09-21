@@ -268,7 +268,7 @@ include 'head.php';
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
 
           <!-- Refrigerator Card -->
-          <a href="/services/fridge-repair"
+          <a href="<?php echo $base_url; ?>services/fridge-repair"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
               <img src="img/refrigerator-repair-service.webp" alt="Same-Day Refrigerator Repair Service Toronto"
@@ -291,7 +291,7 @@ include 'head.php';
           </a>
 
           <!-- Washer Card -->
-          <a href="/services/washer-repair"
+          <a href="<?php echo $base_url; ?>services/washer-repair"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
               <img src="img/washing-machine-repair-service.webp" alt="Washing Machine Repair Service GTA"
@@ -314,7 +314,7 @@ include 'head.php';
           </a>
 
           <!-- Dryer Card -->
-          <a href="/services/dryer-repair"
+          <a href="<?php echo $base_url; ?>services/dryer-repair"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
               <img src="img/clothes-dryer-repair-service.webp" alt="Clothes Dryer Repair and Vent Cleaning"
@@ -337,7 +337,7 @@ include 'head.php';
           </a>
 
           <!-- Dishwasher Card -->
-          <a href="/services/dishwasher-repair"
+          <a href="<?php echo $base_url; ?>services/dishwasher-repair"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
               <img src="img/open-dishwasher-repair.webp" alt="Dishwasher Diagnostic and Repair Service"
@@ -361,7 +361,7 @@ include 'head.php';
           </a>
 
           <!-- Oven & Stove Card -->
-          <a href="/services/stove-repair"
+          <a href="<?php echo $base_url; ?>services/stove-repair"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
               <img src="img/oven-stove-repair-service.webp" alt="Oven and Stove Repair Service"
@@ -384,7 +384,7 @@ include 'head.php';
           </a>
 
           <!-- Microwave Card -->
-          <a href="/services/microwave-repair"
+          <a href="<?php echo $base_url; ?>services/microwave-repair"
             class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
             <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
               <img src="img/microwave-repair.webp" alt="Microwave Oven Repair and Installation Service"

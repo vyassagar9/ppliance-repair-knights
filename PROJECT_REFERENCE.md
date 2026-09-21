@@ -60,3 +60,44 @@
   * Hostinger / LiteSpeed caches static CSS for 1 year (`max-age=31536000`).
   * Therefore, `head.php` MUST always link CSS with dynamic timestamp cache-busters (`css/tailwind.min.css?v=...` and `css/style.min.css?v=...`).
 
+---
+
+## 6. Service + Location SEO Strategy & Navigation Blueprint (Saved for Later)
+
+### A. High-Level Strategy & Goal
+* **Target Intent**: Capture high-intent queries where homeowners search specific appliance + city (e.g., *"refrigerator repair mississauga"*, *"washing machine repair brampton"*).
+* **Current Limitation**: 
+  * `/services/fridge-repair` is broad GTA-level.
+  * `/locations/mississauga-appliance-repair` is generic city-level.
+  * Dedicated service + location pages bridge this gap to maximize organic rankings and conversion rates (3x–4x higher conversion).
+
+### B. Safe Launch Protocol (Avoid Google "Doorway Page" / Thin Content Penalty)
+* **Rule**: DO NOT auto-generate 120 low-quality pages via simple find-and-replace.
+* **Phase 1 Pilot**: Start with Top 5 Cities × Top 4 Services (15–20 high-value pages):
+  * **Cities**: Toronto, Mississauga, Brampton, Vaughan, Markham.
+  * **Services**: Refrigerator Repair, Washing Machine Repair, Dryer Repair, Dishwasher Repair.
+* **Unique Content Checklist per Page**:
+  1. Specific symptom breakdown (e.g. for fridge: not cooling, water leak, ice maker jammed).
+  2. Localized neighborhood mentions (e.g. Square One, Port Credit, Streetsville) & postal codes.
+  3. Unique Local FAQ section with schema (`FAQPage` + `LocalBusiness` JSON-LD).
+  4. Core trust messaging: Diagnostic service call fee waived with repairs, written parts & labor warranty, prompt same-day dispatch.
+
+### C. Site Architecture & Navigation Menu Placement
+To avoid cluttering the primary header navigation, place links strategically:
+1. **Header Dropdowns**: 
+   * Inside `Services` dropdown: Add top city quick-links (e.g., *Refrigerator Repair → Toronto | Mississauga | Brampton*).
+   * Inside `Service Areas` dropdown: Include popular sub-service links under primary cities.
+2. **City Hub Cross-Links (Highest PageRank Pass-through)**:
+   * On `/locations/[city]-appliance-repair`: Add a prominent grid *"Popular Appliance Repairs in [City]"* linking directly to the sub-service pages.
+3. **Service Page Cross-Links**:
+   * On `/services/[service]`: Add an *"Areas We Service for [Service]"* grid linking to city subpages.
+4. **Sitewide Footer**:
+   * Add a *"Top Local Repairs"* column with high-priority service + city pages for instant crawlability.
+
+### D. Preferred URL Structure
+* **Option A (Recommended & Consistent with codebase)**:
+  `https://www.appliancerepairknights.com/locations/mississauga-fridge-repair`
+* **Option B (Folder / Silo)**:
+  `https://www.appliancerepairknights.com/locations/mississauga/fridge-repair`
+
+

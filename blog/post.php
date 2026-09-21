@@ -55,99 +55,114 @@ if (!empty($post['faqs'])) {
     }
 }
 
-// Build Unified JSON-LD Schema (@graph: LocalBusiness + BlogPosting + BreadcrumbList + FAQPage)
-$custom_head_schema = '<script type="application/ld+json">' . "\n" . json_encode([
-    '@context' => 'https://schema.org',
-    '@graph' => [
-        [
-            '@type' => 'LocalBusiness',
-            '@id' => 'https://www.appliancerepairknights.com/#organization',
-            'name' => 'Appliance Repair Knights Ltd.',
-            'url' => 'https://www.appliancerepairknights.com/',
-            'logo' => 'https://www.appliancerepairknights.com/img/logo.webp',
-            'image' => 'https://www.appliancerepairknights.com/img/appliance-repair-banner.webp',
-            'telephone' => '905-717-8905',
-            'email' => 'info@appliancerepairknights.com',
-            'priceRange' => '$$',
-            'address' => [
-                '@type' => 'PostalAddress',
-                'streetAddress' => '100 King St W',
-                'addressLocality' => 'Toronto',
-                'addressRegion' => 'ON',
-                'postalCode' => 'M5X 1A9',
-                'addressCountry' => 'CA'
-            ],
-            'geo' => [
-                '@type' => 'GeoCoordinates',
-                'latitude' => 43.6487,
-                'longitude' => -79.3817
-            ],
-            'aggregateRating' => [
-                '@type' => 'AggregateRating',
-                'ratingValue' => (string)$gmb_rating,
-                'reviewCount' => (string)$gmb_reviews
-            ]
+// Build Unified JSON-LD Schema (@graph: LocalBusiness + BlogPosting + BreadcrumbList + Yoast-style FAQPage)
+$schema_graph = [
+    [
+        '@type' => 'LocalBusiness',
+        '@id' => 'https://www.appliancerepairknights.com/#organization',
+        'name' => 'Appliance Repair Knights Ltd.',
+        'url' => 'https://www.appliancerepairknights.com/',
+        'logo' => 'https://www.appliancerepairknights.com/img/logo.webp',
+        'image' => 'https://www.appliancerepairknights.com/img/appliance-repair-banner.webp',
+        'telephone' => '905-717-8905',
+        'email' => 'info@appliancerepairknights.com',
+        'priceRange' => '$$',
+        'address' => [
+            '@type' => 'PostalAddress',
+            'streetAddress' => '100 King St W',
+            'addressLocality' => 'Toronto',
+            'addressRegion' => 'ON',
+            'postalCode' => 'M5X 1A9',
+            'addressCountry' => 'CA'
         ],
-        [
-            '@type' => 'BlogPosting',
-            '@id' => $canonical_url . '#article',
-            'isPartOf' => [
-                '@type' => 'Blog',
-                '@id' => 'https://www.appliancerepairknights.com/blog#blog',
-                'name' => 'Appliance Repair Knights Blog & Guides',
-                'publisher' => [
-                    '@id' => 'https://www.appliancerepairknights.com/#organization'
-                ]
-            ],
-            'headline' => $post['title'],
-            'description' => $post['meta_description'],
-            'image' => $og_image,
-            'datePublished' => $post['date_published'] . 'T08:00:00-04:00',
-            'dateModified' => $post['date_modified'] . 'T08:00:00-04:00',
-            'mainEntityOfPage' => [
-                '@type' => 'WebPage',
-                '@id' => $canonical_url
-            ],
-            'inLanguage' => 'en-CA',
-            'author' => [
-                '@type' => 'Organization',
-                'name' => $post['author'],
-                'url' => 'https://www.appliancerepairknights.com/about'
-            ],
+        'geo' => [
+            '@type' => 'GeoCoordinates',
+            'latitude' => 43.6487,
+            'longitude' => -79.3817
+        ],
+        'aggregateRating' => [
+            '@type' => 'AggregateRating',
+            'ratingValue' => (string)$gmb_rating,
+            'reviewCount' => (string)$gmb_reviews
+        ]
+    ],
+    [
+        '@type' => 'BlogPosting',
+        '@id' => $canonical_url . '#article',
+        'isPartOf' => [
+            '@type' => 'Blog',
+            '@id' => 'https://www.appliancerepairknights.com/blog#blog',
+            'name' => 'Appliance Repair Knights Blog & Guides',
             'publisher' => [
                 '@id' => 'https://www.appliancerepairknights.com/#organization'
-            ],
-            'articleSection' => $post['category'],
-            'keywords' => $post['primary_keyword'] . ', ' . $post['related_keywords']
-        ],
-        [
-            '@type' => 'BreadcrumbList',
-            'itemListElement' => [
-                [
-                    '@type' => 'ListItem',
-                    'position' => 1,
-                    'name' => 'Home',
-                    'item' => 'https://www.appliancerepairknights.com/'
-                ],
-                [
-                    '@type' => 'ListItem',
-                    'position' => 2,
-                    'name' => 'Blog & Guides',
-                    'item' => 'https://www.appliancerepairknights.com/blog'
-                ],
-                [
-                    '@type' => 'ListItem',
-                    'position' => 3,
-                    'name' => $post['title'],
-                    'item' => $canonical_url
-                ]
             ]
         ],
-        [
-            '@type' => 'FAQPage',
-            'mainEntity' => $faq_schema_items
+        'headline' => $post['title'],
+        'description' => $post['meta_description'],
+        'image' => $og_image,
+        'datePublished' => $post['date_published'] . 'T08:00:00-04:00',
+        'dateModified' => $post['date_modified'] . 'T08:00:00-04:00',
+        'mainEntityOfPage' => [
+            '@type' => 'WebPage',
+            '@id' => $canonical_url
+        ],
+        'inLanguage' => 'en-CA',
+        'author' => [
+            '@type' => 'Organization',
+            'name' => $post['author'],
+            'url' => 'https://www.appliancerepairknights.com/about'
+        ],
+        'publisher' => [
+            '@id' => 'https://www.appliancerepairknights.com/#organization'
+        ],
+        'articleSection' => $post['category'],
+        'keywords' => $post['primary_keyword'] . ', ' . $post['related_keywords']
+    ],
+    [
+        '@type' => 'BreadcrumbList',
+        '@id' => $canonical_url . '#breadcrumb',
+        'itemListElement' => [
+            [
+                '@type' => 'ListItem',
+                'position' => 1,
+                'name' => 'Home',
+                'item' => 'https://www.appliancerepairknights.com/'
+            ],
+            [
+                '@type' => 'ListItem',
+                'position' => 2,
+                'name' => 'Blog & Guides',
+                'item' => 'https://www.appliancerepairknights.com/blog'
+            ],
+            [
+                '@type' => 'ListItem',
+                'position' => 3,
+                'name' => $post['title'],
+                'item' => $canonical_url
+            ]
         ]
     ]
+];
+
+// Append Yoast-Style FAQPage Block to @graph only if FAQs exist
+if (!empty($faq_schema_items)) {
+    $schema_graph[] = [
+        '@type' => 'FAQPage',
+        '@id' => $canonical_url . '#faq',
+        'isPartOf' => [
+            '@id' => $canonical_url
+        ],
+        'breadcrumb' => [
+            '@id' => $canonical_url . '#breadcrumb'
+        ],
+        'inLanguage' => 'en-CA',
+        'mainEntity' => $faq_schema_items
+    ];
+}
+
+$custom_head_schema = '<script type="application/ld+json">' . "\n" . json_encode([
+    '@context' => 'https://schema.org',
+    '@graph' => $schema_graph
 ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) . "\n</script>\n";
 
 require_once __DIR__ . '/../head.php';
