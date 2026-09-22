@@ -26,3 +26,7 @@ Disallow: /blog/post.php
 
 # XML Sitemap Location
 Sitemap: https://www.appliancerepairknights.com/sitemap.xml
+
+# LLM Discoverability (AI Overviews, ChatGPT Search, Perplexity)
+Allow: /llms.txt
+
