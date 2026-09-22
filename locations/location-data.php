@@ -242,7 +242,7 @@ return [
     ],
     'scarborough-appliance-repair' => [
         'slug' => 'scarborough-appliance-repair',
-        'date_modified' => '2026-09-17',
+        'date_modified' => '2026-09-22',
         'city_name' => 'Scarborough',
         'region' => 'City of Toronto',
         'meta_title' => 'Same-Day Appliance Repair Scarborough | 24/7 Availability',
@@ -258,14 +258,34 @@ return [
         'geo' => ['latitude' => 43.7764, 'longitude' => -79.2318],
         'faqs' => [
             [
-                'q' => 'Can you repair my refrigerator on the same day in Agincourt, Scarborough?',
-                'a' => 'Yes, refrigerator cooling issues are high priority. We offer same-day appointments in Scarborough to save your food from spoiling.'
+                'q' => 'Do you provide same-day appliance repair in Scarborough?',
+                'a' => "Yes — same-day appliance repair in Scarborough is available for urgent situations, such as a refrigerator that stopped cooling or a leaking washer. Appointment availability depends on daily technician routes and scheduling. You can book online or call 905-717-8905 to secure the earliest available appointment."
+            ],
+            [
+                'q' => 'Which neighborhoods in Scarborough do you service?',
+                'a' => "We provide complete repair coverage across all Scarborough communities, including Agincourt, Scarborough Town Centre, Guildwood, Malvern, Cliffside, Rouge, Woburn, Birchcliffe, and Highland Creek. Our technicians also service condos, townhomes, and detached properties throughout the area."
+            ],
+            [
+                'q' => 'How much does appliance repair cost in Scarborough?',
+                'a' => "For Scarborough homeowners, our diagnostic service call fee is completely waived when you approve and proceed with the repair. Total repair costs depend on the appliance type, specific component needed, and labour required. Our technician always provides a transparent, upfront written quote before any repair work begins."
+            ],
+            [
+                'q' => 'What appliances do your technicians repair in Scarborough?',
+                'a' => "Our certified technicians service all primary residential appliances in Scarborough, including refrigerators, freezers, front-load and top-load washers, gas and electric dryers, dishwashers, electric and gas stoves, ovens, and cooktops."
+            ],
+            [
+                'q' => 'Which appliance brands do you service in Scarborough?',
+                'a' => "We repair all major appliance brands in Scarborough, including Whirlpool, Samsung, LG, GE, Frigidaire, Maytag, and KitchenAid, as well as European and premium lines such as Bosch and Sub-Zero. Our service vans carry genuine OEM parts for faster same-visit resolution."
+            ],
+            [
+                'q' => 'Do you provide a warranty on appliance repairs in Scarborough?',
+                'a' => "Yes. Every completed repair in Scarborough includes a comprehensive written warranty on both replacement parts and labour, giving you full protection and peace of mind."
             ]
         ]
     ],
     'richmond-hill-appliance-repair' => [
         'slug' => 'richmond-hill-appliance-repair',
-        'date_modified' => '2026-09-17',
+        'date_modified' => '2026-09-22',
         'city_name' => 'Richmond Hill',
         'region' => 'York Region',
         'meta_title' => 'Appliance Repair Richmond Hill | Expert Local Repairmen',
@@ -281,14 +301,34 @@ return [
         'geo' => ['latitude' => 43.8828, 'longitude' => -79.4403],
         'faqs' => [
             [
-                'q' => 'Do you service electric dryers that are not heating in Richmond Hill?',
-                'a' => 'Yes, thermal fuses, heating elements, igniters, and thermostats are common stock items on our service vehicles.'
+                'q' => 'Do you offer same-day appliance repair in Richmond Hill?',
+                'a' => "Yes — we offer prompt same-day appliance repair appointments in Richmond Hill depending on daily scheduling and technician availability. For priority breakdowns like non-cooling fridges or water leaks, book online or call 905-717-8905 for the fastest dispatch."
+            ],
+            [
+                'q' => 'Which areas and neighborhoods in Richmond Hill do you cover?',
+                'a' => "Our service vehicles cover all of Richmond Hill and York Region, including Bayview Hill, Oak Ridges, Jefferson, Langstaff, Mill Pond, Crosby, and Richmond Green. We service single-family homes, townhouses, and condominium suites."
+            ],
+            [
+                'q' => 'How does pricing and diagnostic fees work in Richmond Hill?',
+                'a' => "Our diagnostic service call fee is 100% waived whenever you proceed with the recommended repair. If you choose not to proceed after diagnosis, only the standard service call fee applies. You will always receive a clear, upfront written quote before any work starts."
+            ],
+            [
+                'q' => 'What household appliances do you service in Richmond Hill?',
+                'a' => "Our licensed Richmond Hill technicians repair all major kitchen and laundry appliances: refrigerators, built-in freezers, washing machines, electric and gas clothes dryers, dishwashers, slide-in ranges, wall ovens, and induction cooktops."
+            ],
+            [
+                'q' => 'What brands of appliances do you repair in Richmond Hill?',
+                'a' => "We service all leading household manufacturers, including Samsung, LG, Whirlpool, KitchenAid, GE, and Maytag, alongside luxury European appliances like Bosch, Miele, and Sub-Zero. Our service vehicles carry genuine factory-certified OEM replacement parts."
+            ],
+            [
+                'q' => 'Is there a warranty on repairs completed in Richmond Hill?',
+                'a' => "Yes. All appliance repairs completed in Richmond Hill come with a solid written warranty covering both replacement parts and technician labour."
             ]
         ]
     ],
     'burlington-appliance-repair' => [
         'slug' => 'burlington-appliance-repair',
-        'date_modified' => '2026-09-17',
+        'date_modified' => '2026-09-22',
         'city_name' => 'Burlington',
         'region' => 'Halton Region',
         'meta_title' => 'Appliance Repair Burlington | Fast Response 24/7',
@@ -304,8 +344,28 @@ return [
         'geo' => ['latitude' => 43.3255, 'longitude' => -79.7990],
         'faqs' => [
             [
-                'q' => 'What appliance brands do you service in Burlington?',
-                'a' => 'We repair Whirlpool, Maytag, LG, Samsung, GE, Bosch, Frigidaire, KitchenAid, JennAir, and Kenmore.'
+                'q' => 'Do you provide same-day appliance repair in Burlington?',
+                'a' => "Yes — same-day appliance repair in Burlington is available based on daily technician routing and appointment availability. When an essential appliance breaks down, book online or call 905-717-8905 to schedule prompt local service."
+            ],
+            [
+                'q' => 'Which neighborhoods in Burlington do you service?',
+                'a' => "We provide repair coverage throughout Burlington and Halton Region, including Downtown Burlington, Alton Village, Millcroft, Tyandaga, Aldershot, Roseland, Palmer, and Mountainside."
+            ],
+            [
+                'q' => 'How much does appliance repair cost in Burlington?',
+                'a' => "Our diagnostic service call fee is completely waived when you approve and complete the repair with us. You always receive an upfront, transparent written estimate detailing parts and labour before any work begins, with no hidden surprises."
+            ],
+            [
+                'q' => 'What home appliances do you repair in Burlington?',
+                'a' => "Our certified technicians repair all major residential appliances in Burlington homes, including refrigerators, freezers, dishwashers, washing machines, dryers, electric and gas ovens, stoves, and ranges."
+            ],
+            [
+                'q' => 'Which appliance brands do you repair in Burlington?',
+                'a' => "We service all prominent brands in Burlington, including Whirlpool, LG, Samsung, Maytag, GE, Frigidaire, KitchenAid, and Kenmore, as well as premium models like Bosch and Sub-Zero. We install genuine OEM parts to maintain manufacturer standards."
+            ],
+            [
+                'q' => 'Do you offer a warranty on appliance repairs in Burlington?',
+                'a' => "Yes. Every repair performed in Burlington is backed by our comprehensive written warranty on parts and labour, ensuring durable, dependable performance."
             ]
         ]
     ],
