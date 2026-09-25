@@ -2,7 +2,7 @@
 require_once __DIR__ . '/config.php';
 $base_url = defined('BASE_URL') ? BASE_URL : './';
 $page_title = 'Contact Us | Appliance Repair Knights';
-$page_description = 'Need urgent appliance repair? Contact Appliance Repair Knights at 905-717-8905. Available 24/7 across GTA, Kitchener, Hamilton & Oshawa.';
+$page_description = 'Need urgent appliance repair? Contact Appliance Repair Knights at 905-717-8905. Available daily from 8:00 AM – 8:00 PM across GTA, Kitchener, Hamilton & Oshawa.';
 $page_keywords = 'appliance repair knights contact, appliance repair phone number';
 $canonical_url = 'https://www.appliancerepairknights.com/contact';
 
@@ -42,10 +42,8 @@ $custom_head_schema = <<<HTML
         ],
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "100 King St W",
           "addressLocality": "Toronto",
           "addressRegion": "ON",
-          "postalCode": "M5X 1A9",
           "addressCountry": "CA"
         },
         "geo": {
@@ -53,6 +51,22 @@ $custom_head_schema = <<<HTML
           "latitude": 43.6487,
           "longitude": -79.3817
         },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "08:00",
+            "closes": "20:00"
+          }
+        ],
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "{$gmb_rating}",
@@ -154,18 +168,8 @@ include 'header.php';
             </div>
             <div>
               <span class="text-xs uppercase tracking-wider text-slate-400 font-bold block">Service Hours</span>
-              <span class="text-sm font-semibold text-secondary block">Monday - Sunday: 7:00 AM - 10:00 PM</span>
-              <span class="text-xs text-slate-500">Emergency support calls handled 24/7.</span>
-            </div>
-          </div>
-          <div class="flex items-start gap-4">
-            <div class="bg-accent/15 p-3 rounded-lg text-accent mt-1">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-            </div>
-            <div>
-              <span class="text-xs uppercase tracking-wider text-slate-400 font-bold block">Headquarters Address (NAP)</span>
-              <strong class="text-sm font-bold text-primary block">100 King St W, Toronto, ON M5X 1A9</strong>
-              <span class="text-xs text-slate-500 block mt-0.5">(Proudly Serving Toronto &amp; the entire GTA)</span>
+              <span class="text-sm font-semibold text-secondary block">Monday – Sunday: 8:00 AM – 8:00 PM</span>
+              <span class="text-xs text-slate-500">Available daily for prompt dispatch and emergency diagnostics.</span>
             </div>
           </div>
         </div>
@@ -184,7 +188,7 @@ include 'header.php';
       <div class="max-w-7xl mx-auto px-4">
         <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
           <span class="inline-flex items-center gap-2 bg-brandOrange/10 border border-brandOrange/30 text-brandOrange text-xs font-extrabold uppercase tracking-widest px-3.5 py-1 rounded-full">
-            📍 Local Headquarters & Verified GMB Listing
+            📍 Verified Service Area &amp; GMB Listing
           </span>
           <h2 class="text-3xl font-heading font-extrabold text-white">
             Find Us On <span class="text-brandOrange">Google Maps</span>
@@ -211,11 +215,10 @@ include 'header.php';
 
               <div class="space-y-3.5 text-xs sm:text-sm text-slate-300">
                 <div class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-brandOrange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                  <svg class="w-5 h-5 text-brandOrange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                   <div>
-                    <strong class="text-white block">Service Address (GTA HQ):</strong>
-                    <span>100 King St W, Toronto, ON M5X 1A9</span>
-                    <span class="block text-slate-400 text-xs mt-0.5">(Proudly Serving Toronto &amp; the entire GTA)</span>
+                    <strong class="text-white block">Email Support:</strong>
+                    <a href="mailto:info@appliancerepairknights.com" class="text-slate-300 hover:text-white transition-colors">info@appliancerepairknights.com</a>
                   </div>
                 </div>
 
@@ -231,7 +234,7 @@ include 'header.php';
                   <svg class="w-5 h-5 text-brandOrange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                   <div>
                     <strong class="text-white block">Operating Hours:</strong>
-                    <span>Open 7 Days a Week: 8:00 AM – 9:00 PM</span>
+                    <span>Available Daily: 8:00 AM – 8:00 PM</span>
                   </div>
                 </div>
               </div>
@@ -247,7 +250,7 @@ include 'header.php';
           <div class="lg:col-span-7 bg-lightbg rounded-2xl overflow-hidden border border-bordercolor shadow-md min-h-[380px]">
             <iframe 
               title="Appliance Repair Knights Google Maps Location"
-              src="https://maps.google.com/maps?q=Appliance+Repair+Knights+Ltd.+100+King+St+W+Toronto+ON&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed" 
+              src="https://maps.google.com/maps?q=Appliance+Repair+Knights+Ltd.+Toronto+ON&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed" 
               width="100%" 
               height="100%" 
               style="border:0; min-height: 380px;" 

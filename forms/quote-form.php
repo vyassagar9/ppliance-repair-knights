@@ -5,15 +5,16 @@
  */
 $currentAppliance = isset($defaultAppliance) ? $defaultAppliance : '';
 ?>
-<div id="quote-form-container" class="bg-white rounded-3xl p-6 sm:p-7 shadow-2xl border-2 border-brandBlue/20 relative">
-  <div class="bg-brandBlue text-white text-xs font-black uppercase tracking-widest py-1.5 px-3 rounded-full inline-block mb-3">
-    ⚡ SAME-DAY ONLINE DISPATCH
+<div id="quote-form-container" class="bg-white rounded-2xl p-5 sm:p-6 shadow-2xl border border-slate-200/80 relative">
+  <div class="bg-brandBlue text-white text-[11px] font-black uppercase tracking-wider py-1 px-3 rounded-full inline-flex items-center gap-1.5 mb-2.5">
+    <svg class="w-3 h-3 fill-current text-brandOrange" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path></svg>
+    <span>Same-Day Online Dispatch</span>
   </div>
 
-  <h2 class="text-2xl font-heading font-black text-brandDarkBlue mb-1">
+  <h2 class="text-xl sm:text-2xl font-heading font-black text-brandDarkBlue mb-1">
     Get your Appliance fixed today
   </h2>
-  <p class="text-slate-500 text-xs mb-4">
+  <p class="text-slate-500 text-xs mb-3.5">
     Fill out the form below. A local technician will contact you promptly to confirm your appointment window.
   </p>
 
@@ -67,8 +68,9 @@ $currentAppliance = isset($defaultAppliance) ? $defaultAppliance : '';
       <span>Book Same-Day Repair</span>
     </button>
 
-    <p class="text-[11px] text-center text-slate-400 mt-2">
-      🔒 Privacy Protected • Service Call Fee Waived With Repairs
+    <p class="text-[11px] text-center text-slate-400 mt-2 flex items-center justify-center gap-1">
+      <svg class="w-3 h-3 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+      <span>Privacy Protected • Service Call Fee Waived With Repairs</span>
     </p>
   </form>
 

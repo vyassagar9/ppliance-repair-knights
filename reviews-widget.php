@@ -113,8 +113,11 @@ $widget_base_url = isset($base_url) ? $base_url : './';
               <div class="border-t border-slate-100 pt-3 flex items-center justify-between text-xs">
                 <div>
                   <h3 class="font-heading font-bold text-brandDarkBlue text-xs sm:text-sm"><?php echo htmlspecialchars($rev['author']); ?></h3>
-                  <p class="text-[11px] text-slate-500 mt-0.5">
-                    📍 <?php echo htmlspecialchars($rev['location']); ?> • <span class="text-brandOrange font-semibold"><?php echo htmlspecialchars($rev['service']); ?></span>
+                  <p class="text-[11px] text-slate-500 mt-0.5 flex items-center gap-1">
+                    <svg class="w-3 h-3 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    <span><?php echo htmlspecialchars($rev['location']); ?></span>
+                    <span>•</span>
+                    <span class="text-brandOrange font-semibold"><?php echo htmlspecialchars($rev['service']); ?></span>
                   </p>
                 </div>
                 <span class="text-[10px] text-slate-400 font-medium">Google Review</span>
