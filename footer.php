@@ -147,11 +147,14 @@ $base_url = isset($base_url) ? $base_url : '';
                 <a href="mailto:appliancerepairknights@gmail.com" class="hover:text-white transition-colors block">appliancerepairknights@gmail.com</a>
               </div>
             </li>
-            <li class="flex items-center gap-2">
-              <svg class="w-4 h-4 text-brandOrange flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-brandOrange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
-              <span>Open 7 Days a Week <br>8:00am - 9:00pm</span>
+              <div>
+                <span>Monday – Sunday: 8:00am - 8:00pm</span>
+                <span class="block text-xs text-brandOrange font-medium">24/7 Emergency Support</span>
+              </div>
             </li>
           </ul>
 
@@ -180,6 +183,55 @@ $base_url = isset($base_url) ? $base_url : '';
 
     </div>
   </footer>
+
+  <!-- FIXED RIGHT-SIDE FLOATING CTA BUTTONS (3 COMPACT MINIMALIST BUTTONS) -->
+  <aside id="fixed-side-ctas" aria-label="Quick Contact Actions" class="select-none" style="position: fixed; right: 0; bottom: 75px; z-index: 9999; display: flex; flex-direction: column; gap: 5px; align-items: flex-end;">
+    
+    <!-- 1. WhatsApp Button (WhatsApp Green) -->
+    <a href="https://wa.me/19057178905?text=Hi%2C%20I%20need%20appliance%20repair%20service%20in%20Toronto%2FGTA" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Chat on WhatsApp" 
+       title="Chat on WhatsApp"
+       class="transition-transform duration-200 hover:-translate-x-1 active:scale-95"
+       style="width: 38px; height: 38px; background-color: #25D366; border-radius: 19px 0 0 19px; padding-left: 2px; display: flex; align-items: center; justify-content: center; box-shadow: -2px 2px 8px rgba(0,0,0,0.18); text-decoration: none;">
+      <div style="width: 26px; height: 26px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,0.75); display: flex; align-items: center; justify-content: center; background: transparent;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="#ffffff" style="display: block; width: 15px; height: 15px;">
+          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.12c-1.5 0-2.97-.4-4.26-1.16l-.31-.18-3.13.82.83-3.05-.2-.32a8.04 8.04 0 0 1-1.24-4.32c0-4.47 3.64-8.11 8.11-8.11 2.17 0 4.2 0.85 5.73 2.38a8.06 8.06 0 0 1 2.38 5.73c0 4.47-3.64 8.11-8.11 8.11zm4.45-6.09c-.24-.12-1.44-.71-1.66-.79-.22-.08-.38-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.95-1.21-.72-.64-1.21-1.44-1.35-1.68-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02s.87 2.34.99 2.5c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/>
+        </svg>
+      </div>
+    </a>
+
+    <!-- 2. Booking / Shop Button (Brand Orange #FF6B00) -->
+    <a href="<?php echo (isset($base_url) && $base_url ? $base_url : './'); ?>schedule" 
+       aria-label="Book Appliance Repair Online" 
+       title="Book Online"
+       class="transition-transform duration-200 hover:-translate-x-1 active:scale-95"
+       style="width: 38px; height: 38px; background-color: #FF6B00; border-radius: 19px 0 0 19px; padding-left: 2px; display: flex; align-items: center; justify-content: center; box-shadow: -2px 2px 8px rgba(0,0,0,0.18); text-decoration: none;">
+      <div style="width: 26px; height: 26px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,0.75); display: flex; align-items: center; justify-content: center; background: transparent;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block; width: 15px; height: 15px;">
+          <path d="M3 9l1-5h16l1 5"/>
+          <path d="M4 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 4 0"/>
+          <path d="M4 14v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-6"/>
+          <path d="M9 21v-4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4"/>
+        </svg>
+      </div>
+    </a>
+
+    <!-- 3. Phone Call Button (Brand Dark Blue #0A2E52) -->
+    <a href="tel:9057178905" 
+       aria-label="Call Appliance Repair Knights" 
+       title="Call 905-717-8905"
+       class="gtm-web-call transition-transform duration-200 hover:-translate-x-1 active:scale-95"
+       style="width: 38px; height: 38px; background-color: #0A2E52; border-radius: 19px 0 0 19px; padding-left: 2px; display: flex; align-items: center; justify-content: center; box-shadow: -2px 2px 8px rgba(0,0,0,0.18); text-decoration: none;">
+      <div style="width: 26px; height: 26px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,0.75); display: flex; align-items: center; justify-content: center; background: transparent;">
+        <svg width="14" height="14" viewBox="0 0 20 20" fill="#ffffff" style="display: block; width: 14px; height: 14px;">
+          <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+        </svg>
+      </div>
+    </a>
+
+  </aside>
 
   <!-- Interactivity Scripts -->
   <script>

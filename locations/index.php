@@ -182,7 +182,7 @@ $custom_head_schema = '<script type="application/ld+json">' . "\n" . json_encode
                     '@type' => 'OpeningHoursSpecification',
                     'dayOfWeek' => ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
                     'opens' => '08:00',
-                    'closes' => '21:00'
+                    'closes' => '20:00'
                 ]
             ],
             'areaServed' => $area_served_entities
@@ -469,7 +469,7 @@ require_once __DIR__ . '/../head.php';
           <p class="text-xs text-slate-700 font-semibold flex items-center justify-center gap-2 flex-wrap pt-1">
             <span>🛡️ Service Call Fee Waived With Repairs</span>
             <span class="text-slate-400">•</span>
-            <span>⚡ Speak Directly With a Technician</span>
+            <span>Speak Directly With a Technician</span>
             <span class="text-slate-400">•</span>
             <span>Same-Day Availability</span>
           </p>

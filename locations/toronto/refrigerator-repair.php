@@ -14,7 +14,7 @@ $page_title = 'Refrigerator Repair Toronto | Certified Local Same-Day Technician
 $page_description = 'Professional refrigerator repair in Toronto & GTA. Fast diagnostics for cooling issues, compressor faults, defrost leaks, and ice makers. Written warranty. Call 905-717-8905.';
 $page_keywords = 'refrigerator repair toronto, fridge repair toronto, fridge not cooling toronto, refrigerator repair north york, downtown toronto fridge repair, same day fridge repair toronto, sub zero fridge repair toronto, samsung fridge repair toronto, lg fridge repair toronto';
 $canonical_url = 'https://www.appliancerepairknights.com/locations/toronto/refrigerator-repair';
-$robots_meta = 'noindex, nofollow';
+$robots_meta = 'index, follow';
 
 $gmb_rating = defined('GMB_RATING_VALUE') ? GMB_RATING_VALUE : '5.0';
 $gmb_reviews = defined('GMB_REVIEW_COUNT') ? GMB_REVIEW_COUNT : '120+';
@@ -57,6 +57,14 @@ $custom_head_schema = <<<HTML
           "ratingValue": "{$gmb_rating}",
           "reviewCount": "{$gmb_reviews}"
         },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "08:00",
+            "closes": "20:00"
+          }
+        ],
         "areaServed": {
           "@type": "City",
           "name": "Toronto",
@@ -317,28 +325,28 @@ require_once __DIR__ . '/../../head.php';
     <section class="bg-white border-b border-bordercolor py-5 shadow-xs">
       <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
         <div class="flex items-center justify-center gap-3">
-          <div class="p-2.5 bg-blue-50 text-brandBlue rounded-xl">
+          <div class="p-2.5 bg-orange-50 text-brandOrange rounded-xl border border-orange-100">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          </div>
+          <span class="text-xs sm:text-sm font-bold text-primary">Same-Day Repair</span>
+        </div>
+        <div class="flex items-center justify-center gap-3">
+          <div class="p-2.5 bg-blue-50 text-brandBlue rounded-xl border border-blue-100">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
           </div>
           <span class="text-xs sm:text-sm font-bold text-primary">Licensed &amp; Insured</span>
         </div>
         <div class="flex items-center justify-center gap-3">
-          <div class="p-2.5 bg-blue-50 text-brandBlue rounded-xl">
+          <div class="p-2.5 bg-emerald-50 text-emerald-600 rounded-xl border border-emerald-100">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+          </div>
+          <span class="text-xs sm:text-sm font-bold text-primary">Highly Skilled Technicians</span>
+        </div>
+        <div class="flex items-center justify-center gap-3">
+          <div class="p-2.5 bg-amber-50 text-amber-700 rounded-xl border border-amber-100">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
           </div>
-          <span class="text-xs sm:text-sm font-bold text-primary">Upfront Written Quotes</span>
-        </div>
-        <div class="flex items-center justify-center gap-3">
-          <div class="p-2.5 bg-blue-50 text-brandBlue rounded-xl">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-          </div>
-          <span class="text-xs sm:text-sm font-bold text-primary">Same-Day Availability</span>
-        </div>
-        <div class="flex items-center justify-center gap-3">
-          <div class="p-2.5 bg-blue-50 text-brandBlue rounded-xl">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
-          </div>
-          <span class="text-xs sm:text-sm font-bold text-primary">Certified Field Technicians</span>
+          <span class="text-xs sm:text-sm font-bold text-primary">Affordable Rates</span>
         </div>
       </div>
     </section>
@@ -348,7 +356,7 @@ require_once __DIR__ . '/../../head.php';
       <div class="bg-gradient-to-br from-blue-50/90 to-slate-50 border-l-4 border-brandBlue rounded-r-2xl p-6 sm:p-7 shadow-xs border-y border-r border-slate-200/80">
         <div class="flex items-center gap-2.5 mb-2 text-brandNavy font-heading font-bold text-base sm:text-lg">
           <span class="w-8 h-8 rounded-lg bg-brandBlue/10 text-brandBlue inline-flex items-center justify-center flex-shrink-0">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
           </span>
           <h2>Quick Answer: Toronto Refrigerator Diagnostics &amp; Repair</h2>
         </div>
@@ -374,7 +382,7 @@ require_once __DIR__ . '/../../head.php';
               Complete Refrigerator &amp; Freezer Diagnostics Across Toronto
             </h2>
             <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-              A failing refrigerator quickly escalates into hundreds of dollars of spoiled groceries. Our diagnostic vehicles arrive loaded with factory-original components to address the root mechanical or electrical fault on the spot.
+              A failing refrigerator quickly escalates into spoiled groceries and household disruption. Our diagnostic vehicles arrive loaded with factory-original components to address the root mechanical or electrical fault on the spot.
             </p>
             <div class="space-y-3 text-xs sm:text-sm text-slate-700">
               <div class="flex items-start gap-3 bg-slate-50 p-3 rounded-xl border border-slate-100">
@@ -520,7 +528,7 @@ require_once __DIR__ . '/../../head.php';
           <div class="bg-white rounded-2xl p-6 border border-bordercolor hover:border-brandBlue/50 hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
             <div>
               <div class="w-12 h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
               </div>
               <h3 class="font-heading font-bold text-primary text-lg mb-2">Constant Running &amp; Warm Cabinet Sides</h3>
               <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
@@ -686,8 +694,6 @@ require_once __DIR__ . '/../../head.php';
       </div>
     </section>
 
-    <!-- UNIFIED VERIFIED GOOGLE REVIEWS SLIDER -->
-    <?php include __DIR__ . '/../../reviews-widget.php'; ?>
 
     <!-- CITY-SERVICE FAQ ACCORDION -->
     <section class="py-16 bg-white border-t border-bordercolor" id="faqs">

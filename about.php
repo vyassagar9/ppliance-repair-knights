@@ -154,7 +154,7 @@ include 'header.php';
           
           <div class="bg-white p-6 rounded-xl border border-bordercolor shadow-sm space-y-4">
             <div class="bg-accent/15 w-12 h-12 rounded-lg flex items-center justify-center text-accent mx-auto">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
             </div>
             <h3 class="font-heading font-bold text-lg text-primary">Responsive Speed</h3>
             <p class="text-xs text-slate-500 leading-relaxed">
@@ -238,7 +238,8 @@ include 'header.php';
                   <svg class="w-5 h-5 text-brandOrange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                   <div>
                     <strong class="text-white block">Operating Hours:</strong>
-                    <span>Open 7 Days a Week: 8:00 AM – 9:00 PM</span>
+                    <span>Monday – Sunday: 8:00 AM – 8:00 PM</span>
+                    <span class="block text-slate-400 text-xs mt-0.5">24/7 Emergency Support Available</span>
                   </div>
                 </div>
               </div>

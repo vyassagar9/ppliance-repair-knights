@@ -6,7 +6,13 @@
 
 $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-// 0. Legacy 301 Redirects
+// 0. Root / Index Page Handling
+if ($path === '/' || $path === '' || $path === '/index.php') {
+    require __DIR__ . '/index.php';
+    return true;
+}
+
+// 0B. Legacy 301 Redirects
 if (preg_match('#^/post/your-go-to-appliance-repair-tips-blog/?$#i', $path)) {
     header('Location: /blog/appliance-repair-tips', true, 301);
     exit;
@@ -29,7 +35,7 @@ if (preg_match('#^/(burlington|kitchener|brampton|waterloo|cambridge|hamilton|ca
 }
 
 // 1. Direct file or directory match
-if ($path !== '/' && file_exists(__DIR__ . $path)) {
+if ($path !== '/' && file_exists(__DIR__ . $path) && !is_dir(__DIR__ . $path)) {
     return false; // serve requested resource as-is
 }
 

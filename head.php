@@ -156,7 +156,7 @@ $robots_meta = isset($robots_meta) ? $robots_meta : 'index, follow, max-image-pr
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
         "opens": "08:00",
-        "closes": "21:00"
+        "closes": "20:00"
       }
     ],
     "knowsAbout": [

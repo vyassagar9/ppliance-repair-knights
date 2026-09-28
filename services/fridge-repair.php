@@ -455,7 +455,7 @@ include __DIR__ . '/../head.php';
           <h4 class="font-heading font-bold text-primary text-base border-b border-slate-100 pb-2">Fridge Repair Service Areas</h4>
           <p class="text-xs text-slate-500 leading-relaxed">Same-day technician dispatch across:</p>
           <div class="grid grid-cols-2 gap-2 text-xs font-semibold text-secondary">
-            <a href="../locations/toronto-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span> Toronto</a>
+            <a href="../locations/toronto/refrigerator-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span> Toronto</a>
             <a href="../locations/mississauga-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span> Mississauga</a>
             <a href="../locations/brampton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span> Brampton</a>
             <a href="../locations/vaughan-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span> Vaughan</a>
@@ -580,7 +580,7 @@ include __DIR__ . '/../head.php';
           <p class="text-xs text-slate-700 font-semibold flex items-center justify-center gap-2 flex-wrap pt-1">
             <span>🛡️ Service Call Fee Waived With Repairs</span>
             <span class="text-slate-400">•</span>
-            <span>⚡ Speak Directly With a Technician</span>
+            <span>Speak Directly With a Technician</span>
             <span class="text-slate-400">•</span>
             <span>Same-Day Availability</span>
           </p>

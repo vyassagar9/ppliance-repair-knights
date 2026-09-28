@@ -217,7 +217,7 @@
           "@type": "OpeningHoursSpecification",
           "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
           "opens": "08:00",
-          "closes": "21:00"
+          "closes": "20:00"
         },
         "areaServed": [
           "Toronto", "Mississauga", "Brampton", "Milton", "Oakville", "Burlington", "Hamilton",
@@ -248,7 +248,7 @@
             "name": "What warranty do you offer on repairs?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "All repairs performed by Appliance Repair Knights come with a written warranty of up to 90 days covering both new replacement parts and technician labor."
+              "text": "All repairs performed by Appliance Repair Knights come with a comprehensive written warranty covering both genuine OEM replacement parts and technician labor."
             }
           },
           {
@@ -277,7 +277,7 @@
     <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
       <div class="flex items-center gap-2 font-medium">
         <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
-        <span id="top-announcement" class="text-slate-100 font-medium">24/7 Emergency Dispatch Active Across Toronto &
+        <span id="top-announcement" class="text-slate-100 font-medium">Daily Emergency Dispatch Active Across Toronto &
           Southern Ontario</span>
       </div>
       <div class="flex items-center gap-4 text-xs font-extrabold text-amber-400">
@@ -309,7 +309,7 @@
         <!-- Phone Call Button CTA -->
         <a href="tel:9057178905" onclick="trackGtmCall('header')"
           class="gtm-ppc-call-header bg-brandDarkBlue hover:bg-brandNavy text-white font-black px-3.5 py-2.5 sm:px-6 sm:py-3 rounded-xl text-xs sm:text-base transition-all flex items-center gap-2 shadow-md">
-          <svg class="w-4 h-4 text-amber-400 animate-bounce" fill="currentColor" viewBox="0 0 20 20">
+          <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
             <path
               d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
             </path>
@@ -391,8 +391,10 @@
 
               <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs flex items-center gap-3">
                 <div
-                  class="w-10 h-10 rounded-lg bg-brandBlue/10 text-brandBlue flex items-center justify-center flex-shrink-0 font-bold text-lg">
-                  🛡️
+                  class="w-10 h-10 rounded-lg bg-brandBlue/10 text-brandBlue flex items-center justify-center flex-shrink-0 font-bold">
+                  <svg class="w-5 h-5 text-brandBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                  </svg>
                 </div>
                 <div>
                   <h3 class="text-xs font-bold text-slate-800 leading-tight">Upfront Pricing</h3>
@@ -402,8 +404,10 @@
 
               <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs flex items-center gap-3">
                 <div
-                  class="w-10 h-10 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0 font-bold text-lg">
-                  ⚡
+                  class="w-10 h-10 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0 font-bold">
+                  <svg class="w-5 h-5 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
                 </div>
                 <div>
                   <h3 class="text-xs font-bold text-slate-800 leading-tight">Same-Day Service</h3>
@@ -485,7 +489,7 @@
             <div class="flex flex-wrap items-center gap-4 pt-2">
               <a href="tel:9057178905" onclick="trackGtmCall('hero')"
                 class="gtm-ppc-call-hero bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-7 py-3.5 rounded-xl text-base transition-all shadow-lg flex items-center gap-2 uppercase tracking-wide">
-                <svg class="w-5 h-5 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
+                <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path
                     d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
                   </path>
@@ -540,10 +544,13 @@
                       <option value="Toronto">Toronto & GTA</option>
                       <option value="Mississauga">Mississauga</option>
                       <option value="Brampton">Brampton</option>
+                      <option value="Vaughan">Vaughan & Woodbridge</option>
+                      <option value="Markham">Markham & Richmond Hill</option>
+                      <option value="Oakville">Oakville</option>
+                      <option value="Burlington">Burlington</option>
                       <option value="Hamilton">Hamilton</option>
                       <option value="Kitchener">Kitchener-Waterloo</option>
                       <option value="Oshawa">Oshawa / Durham</option>
-                      <option value="Burlington">Burlington & Oakville</option>
                     </select>
                   </div>
                   <div>
@@ -562,15 +569,14 @@
 
                 <button type="submit"
                   class="gtm-ppc-btn-submit w-full bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold py-3.5 px-6 rounded-xl text-xs sm:text-sm shadow-lg transition-all flex items-center justify-center gap-2 uppercase tracking-wider cursor-pointer mt-2 active:scale-98">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                  </svg>
                   <span>CHECK AVAILABILITY & LOCK $0 FEE →</span>
                 </button>
 
-                <p class="text-[11px] text-center text-slate-500 font-medium mt-2">
-                  🔒 100% Privacy Protected • $0 Service Call With Any Paid Repair
+                <p class="text-[11px] text-center text-slate-500 font-medium mt-2 flex items-center justify-center gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span>100% Privacy Protected • $0 Service Call With Any Paid Repair</span>
                 </p>
               </form>
 
@@ -706,7 +712,7 @@
         <div class="flex items-center justify-center gap-3 flex-shrink-0">
           <a href="tel:9057178905" onclick="trackGtmCall('appliance_mid_cta')"
             class="gtm-ppc-call-mid bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-7 py-3.5 rounded-xl text-sm sm:text-base transition-all shadow-lg flex items-center justify-center gap-2 uppercase tracking-wide">
-            <svg class="w-4 h-4 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
+            <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
               <path
                 d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
               </path>
@@ -1024,7 +1030,7 @@
           <div class="flex items-center gap-3 flex-shrink-0">
             <a href="tel:9057178905" onclick="trackGtmCall('why_us_bottom_cta')"
               class="gtm-ppc-call-why-us bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-6 py-3 rounded-xl text-xs sm:text-sm uppercase tracking-wide transition-all shadow-md flex items-center gap-2">
-              <svg class="w-4 h-4 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path
                   d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
                 </path>
@@ -1110,7 +1116,7 @@
         <div
           class="inline-flex items-center gap-1.5 text-brandOrange font-extrabold text-xs uppercase tracking-widest mb-2.5">
           <svg class="w-4 h-4 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z">
             </path>
           </svg>
           <span>EASY 4-STEP REPAIR</span>
@@ -1224,21 +1230,21 @@
 
             <div
               class="grid grid-cols-2 sm:grid-cols-3 gap-y-3 gap-x-4 text-xs sm:text-sm text-slate-800 font-semibold">
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Toronto & GTA</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Mississauga</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Brampton</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Milton</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Oakville</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Burlington</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Hamilton</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Kitchener</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Waterloo</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Cambridge</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Guelph</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Oshawa</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Ajax</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Pickering</div>
-              <div class="flex items-center gap-1.5"><span class="text-brandOrange">📍</span> Barrie</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Toronto & GTA</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Mississauga</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Brampton</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Milton</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Oakville</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Burlington</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Hamilton</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Kitchener</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Waterloo</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Cambridge</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Guelph</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Oshawa</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Ajax</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Pickering</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Barrie</div>
             </div>
 
             <div class="mt-6 pt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
@@ -1330,7 +1336,7 @@
             <div id="faq-1"
               class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-700 leading-relaxed border-t border-slate-100 pt-3">
               We offer same-day service across Toronto and the GTA! When you call or submit an enquiry before 2:00 PM,
-              our technician can be at your home within 2 to 4 hours. Emergency appointments are also available 24/7.
+              our technician can be at your home within 2 to 4 hours. Emergency appointments are also available daily.
             </div>
           </div>
 
@@ -1357,9 +1363,8 @@
             </button>
             <div id="faq-3"
               class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-700 leading-relaxed border-t border-slate-100 pt-3">
-              All repairs performed by Appliance Repair Knights come with a written warranty of up to <strong
-                class="text-slate-900">90
-                days</strong> covering both new replacement parts and technician labor.
+              All repairs performed by Appliance Repair Knights come with a comprehensive <strong
+                class="text-slate-900">written warranty</strong> covering both genuine OEM replacement parts and technician labor.
             </div>
           </div>
 
@@ -1382,8 +1387,8 @@
           <!-- Minimalist CTA & Trust Line directly under FAQs -->
           <div class="mt-10 text-center space-y-3">
             <a href="tel:9057178905" onclick="trackGtmCall('post_faq')"
-              class="gtm-ppc-call-faq inline-flex items-center justify-center gap-2.5 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-8 py-4 rounded-xl text-sm sm:text-base shadow-lg transition-all uppercase tracking-wide pulse-ring">
-              <svg class="w-5 h-5 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
+              class="gtm-ppc-call-faq inline-flex items-center justify-center gap-2.5 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-8 py-4 rounded-xl text-sm sm:text-base shadow-lg transition-all uppercase tracking-wide">
+              <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path
                   d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
                 </path>
@@ -2045,7 +2050,7 @@
                     </div>
 
                     <p class="text-slate-700 text-xs sm:text-sm italic leading-relaxed mb-4">
-                      "Great service experience with Sunny 🙂 Very prompt response, honest pricing, and professional
+                      "Great service experience with Sunny! Very prompt response, honest pricing, and professional
                       diagnosis."
                     </p>
                   </div>
@@ -2269,7 +2274,7 @@
           <span
             class="inline-flex items-center gap-1.5 bg-brandOrange text-white text-[10px] font-black uppercase px-3 py-1 rounded-md mb-2">
             <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z">
               </path>
             </svg>
             <span>15-Minute Response</span>
@@ -2285,7 +2290,7 @@
         <div class="flex flex-wrap items-center justify-center gap-4 flex-shrink-0">
           <a href="tel:9057178905" onclick="trackGtmCall('cta_banner')"
             class="gtm-ppc-call-banner bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-8 py-4 rounded-2xl text-base shadow-xl transition-all uppercase tracking-wider flex items-center gap-2">
-            <svg class="w-5 h-5 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
+            <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
               <path
                 d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
               </path>
@@ -2320,12 +2325,12 @@
             Toronto, GTA & Southern Ontario.
           </p>
           <div class="pt-1 space-y-1.5 text-xs text-slate-200 font-medium">
-            <p><strong>📞 Dispatch:</strong> <a href="tel:9057178905" onclick="trackGtmCall('footer')"
+            <p><strong>Dispatch:</strong> <a href="tel:9057178905" onclick="trackGtmCall('footer')"
                 class="gtm-ppc-call-footer text-amber-400 hover:text-white font-extrabold hover:underline">905-717-8905</a>
             </p>
-            <p><strong>✉️ Email:</strong> <a href="mailto:info@appliancerepairknights.com"
+            <p><strong>Email:</strong> <a href="mailto:info@appliancerepairknights.com"
                 class="hover:text-white text-slate-200 font-medium">info@appliancerepairknights.com</a></p>
-            <p><strong>📍 Region:</strong> Toronto & GTA Service Zones</p>
+            <p><strong>Region:</strong> Toronto & GTA Service Zones</p>
           </div>
         </div>
 
@@ -2349,16 +2354,12 @@
             DISPATCH HOURS</h4>
           <ul class="space-y-2 text-slate-300 text-xs font-medium">
             <li class="flex justify-between border-b border-slate-800 pb-1">
-              <span>Monday – Friday:</span>
-              <span class="text-white font-semibold">8:00 AM – 9:00 PM</span>
-            </li>
-            <li class="flex justify-between border-b border-slate-800 pb-1">
-              <span>Saturday – Sunday:</span>
+              <span>Monday – Sunday:</span>
               <span class="text-white font-semibold">8:00 AM – 8:00 PM</span>
             </li>
             <li class="flex justify-between pt-1">
               <span class="text-emerald-400 font-bold">Emergency Dispatch:</span>
-              <span class="text-emerald-400 font-bold">24/7 Active</span>
+              <span class="text-emerald-400 font-bold">24/7 Available</span>
             </li>
           </ul>
         </div>
@@ -2427,7 +2428,7 @@
     <!-- 3. Dominant Phone Call CTA (No. 1 Right Position) -->
     <a href="tel:9057178905" onclick="trackGtmCall('mobile_bar')"
       class="gtm-ppc-call-mobilebar flex-grow bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold py-3 px-3.5 rounded-xl text-xs sm:text-sm text-center uppercase tracking-wide shadow-[0_4px_18px_rgba(255,107,0,0.5)] flex items-center justify-center gap-2 transition-all active:scale-95">
-      <svg class="w-5 h-5 animate-bounce text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+      <svg class="w-5 h-5 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
         <path
           d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
         </path>
@@ -2471,10 +2472,12 @@
     const DYNAMIC_SERVICES = {
       fridge: {
         key: 'fridge',
+        name: 'Refrigerator',
+        noun: 'refrigerator',
         selectValue: 'Refrigerator',
         title: 'Same-Day Refrigerator Repair in GTA & Hamilton | $0 Service Call',
         metaDesc: 'Fast same-day refrigerator repair across Toronto, GTA & Hamilton. Certified technicians fix cooling, leaks, and ice makers on the first visit. Call 905-717-8905!',
-        topAnnouncement: '24/7 Emergency Refrigerator Dispatch Active Across Toronto & GTA',
+        topAnnouncement: 'Daily Emergency Refrigerator Dispatch Active Across Toronto & GTA',
         heroBadge: 'SAME-DAY REFRIGERATOR REPAIR • GTA & HAMILTON',
         heroTitle: 'Same-Day <span class="text-brandBlue">Refrigerator Repair</span> in GTA, Kitchener & Hamilton',
         heroDesc: 'Fridge not cooling, leaking water, ice maker broken, or making strange noises? Our licensed technicians arrive today with fully stocked parts to fix your <strong class="text-slate-900">Refrigerator or Freezer</strong> on the first visit!',
@@ -2498,10 +2501,12 @@
       },
       washer: {
         key: 'washer',
+        name: 'Washer',
+        noun: 'washing machine',
         selectValue: 'Washing Machine',
         title: 'Same-Day Washer Repair in GTA & Hamilton | Transparent Flat-Rate Pricing',
         metaDesc: 'Need fast washing machine repair? Licensed technicians repair leaks, drainage, spin cycles, and error codes across Toronto & GTA today. Call 905-717-8905!',
-        topAnnouncement: '24/7 Emergency Washer Dispatch Active Across Toronto & GTA',
+        topAnnouncement: 'Daily Emergency Washer Dispatch Active Across Toronto & GTA',
         heroBadge: 'SAME-DAY WASHER REPAIR • GTA & HAMILTON',
         heroTitle: 'Same-Day <span class="text-brandBlue">Washer Repair</span> in GTA, Kitchener & Hamilton',
         heroDesc: 'Washer won\'t spin, draining issues, leaking water, or stopping mid-cycle? Our licensed technicians arrive today with stocked parts to fix your <strong class="text-slate-900">Front-Load or Top-Load Washer</strong> on the first visit!',
@@ -2526,10 +2531,12 @@
       },
       dryer: {
         key: 'dryer',
+        name: 'Dryer',
+        noun: 'clothes dryer',
         selectValue: 'Dryer',
         title: 'Dryer Repair Near Me in GTA & Hamilton | Heating & Drum Repair',
         metaDesc: 'Dryer not heating or spinning? Same-day clothes dryer repair across Toronto, GTA, Mississauga, Brampton & Hamilton. $0 service call with repair. Call 905-717-8905!',
-        topAnnouncement: '24/7 Emergency Dryer Dispatch Active Across Toronto & GTA',
+        topAnnouncement: 'Daily Emergency Dryer Dispatch Active Across Toronto & GTA',
         heroBadge: 'SAME-DAY DRYER REPAIR • GTA & HAMILTON',
         heroTitle: 'Same-Day <span class="text-brandBlue">Dryer Repair Near Me</span> in GTA & Hamilton',
         heroDesc: 'Dryer not heating, drum not spinning, squeaking noises, or taking multiple cycles? Our licensed technicians arrive today with stocked heating elements, fuses and belts to fix your <strong class="text-slate-900">Dryer</strong> on the first visit!',
@@ -2553,10 +2560,12 @@
       },
       dishwasher: {
         key: 'dishwasher',
+        name: 'Dishwasher',
+        noun: 'dishwasher',
         selectValue: 'Dishwasher',
         title: 'Same-Day Dishwasher Repair in GTA & Hamilton | Drainage & Leak Fixes',
         metaDesc: 'Fast dishwasher repair across Toronto, GTA & Hamilton. We fix drainage problems, leaks, wash pump failures, and error codes on the first visit. Call 905-717-8905!',
-        topAnnouncement: '24/7 Emergency Dishwasher Dispatch Active Across Toronto & GTA',
+        topAnnouncement: 'Daily Emergency Dishwasher Dispatch Active Across Toronto & GTA',
         heroBadge: 'SAME-DAY DISHWASHER REPAIR • GTA & HAMILTON',
         heroTitle: 'Same-Day <span class="text-brandBlue">Dishwasher Repair</span> in GTA, Kitchener & Hamilton',
         heroDesc: 'Dishwasher not draining, leaking water on floor, dishes coming out dirty, or not turning on? Our licensed technicians arrive today with stocked pumps and valves to fix your <strong class="text-slate-900">Dishwasher</strong> on the first visit!',
@@ -2580,10 +2589,12 @@
       },
       stove: {
         key: 'stove',
+        name: 'Stove & Oven',
+        noun: 'stove or oven',
         selectValue: 'Oven & Stove',
         title: 'Same-Day Stove & Oven Repair in GTA & Hamilton | Gas & Electric',
         metaDesc: 'Oven not heating or burners not igniting? Fast same-day stove, range, and oven repair across Toronto & GTA. $0 service call with repair. Call 905-717-8905!',
-        topAnnouncement: '24/7 Emergency Stove & Oven Dispatch Active Across Toronto & GTA',
+        topAnnouncement: 'Daily Emergency Stove & Oven Dispatch Active Across Toronto & GTA',
         heroBadge: 'SAME-DAY STOVE & OVEN REPAIR • GTA & HAMILTON',
         heroTitle: 'Same-Day <span class="text-brandBlue">Stove & Oven Repair</span> in GTA, Kitchener & Hamilton',
         heroDesc: 'Oven not heating up, burners not igniting, uneven baking, or temperature control issues? Our licensed technicians arrive today with stocked igniters, elements, and thermostats to fix your <strong class="text-slate-900">Oven, Range or Stove</strong> on the first visit!',
@@ -2607,10 +2618,12 @@
       },
       microwave: {
         key: 'microwave',
+        name: 'Microwave',
+        noun: 'microwave',
         selectValue: 'Microwave',
         title: 'Same-Day Microwave Repair in GTA & Hamilton | Quick Diagnostics',
         metaDesc: 'Expert microwave repair across Toronto and the GTA. We repair heating, magnetrons, turntables, and electrical issues. Call 905-717-8905!',
-        topAnnouncement: '24/7 Emergency Microwave Dispatch Active Across Toronto & GTA',
+        topAnnouncement: 'Daily Emergency Microwave Dispatch Active Across Toronto & GTA',
         heroBadge: 'SAME-DAY MICROWAVE REPAIR • GTA & HAMILTON',
         heroTitle: 'Same-Day <span class="text-brandBlue">Microwave Repair</span> in GTA, Kitchener & Hamilton',
         heroDesc: 'Microwave not heating, turntable not spinning, sparking inside, or touchpad unresponsive? Our licensed technicians arrive today with stocked magnetrons, fuses, and door switches to fix your <strong class="text-slate-900">Microwave</strong> on the first visit!',
@@ -2634,6 +2647,90 @@
       }
     };
 
+    // Dynamic Cities Database for Location Personalization
+    const DYNAMIC_CITIES = {
+      toronto: {
+        key: 'toronto',
+        name: 'Toronto',
+        region: 'Toronto & GTA',
+        topBarSuffix: 'in Toronto & the GTA',
+        heroBadgeSuffix: 'TORONTO & GTA',
+        selectValue: 'Toronto'
+      },
+      mississauga: {
+        key: 'mississauga',
+        name: 'Mississauga',
+        region: 'Mississauga & Peel Region',
+        topBarSuffix: 'in Mississauga & Peel Region',
+        heroBadgeSuffix: 'MISSISSAUGA & PEEL',
+        selectValue: 'Mississauga'
+      },
+      brampton: {
+        key: 'brampton',
+        name: 'Brampton',
+        region: 'Brampton & Peel Region',
+        topBarSuffix: 'in Brampton & Peel Region',
+        heroBadgeSuffix: 'BRAMPTON & PEEL',
+        selectValue: 'Brampton'
+      },
+      vaughan: {
+        key: 'vaughan',
+        name: 'Vaughan',
+        region: 'Vaughan & York Region',
+        topBarSuffix: 'in Vaughan & York Region',
+        heroBadgeSuffix: 'VAUGHAN & YORK REGION',
+        selectValue: 'Vaughan'
+      },
+      markham: {
+        key: 'markham',
+        name: 'Markham',
+        region: 'Markham & York Region',
+        topBarSuffix: 'in Markham & York Region',
+        heroBadgeSuffix: 'MARKHAM & YORK REGION',
+        selectValue: 'Markham'
+      },
+      oakville: {
+        key: 'oakville',
+        name: 'Oakville',
+        region: 'Oakville & Halton Region',
+        topBarSuffix: 'in Oakville & Halton Region',
+        heroBadgeSuffix: 'OAKVILLE & HALTON',
+        selectValue: 'Oakville'
+      },
+      burlington: {
+        key: 'burlington',
+        name: 'Burlington',
+        region: 'Burlington & Halton Region',
+        topBarSuffix: 'in Burlington & Halton Region',
+        heroBadgeSuffix: 'BURLINGTON & HALTON',
+        selectValue: 'Burlington'
+      },
+      hamilton: {
+        key: 'hamilton',
+        name: 'Hamilton',
+        region: 'Hamilton & Wentworth',
+        topBarSuffix: 'in Hamilton & Wentworth',
+        heroBadgeSuffix: 'HAMILTON & WENTWORTH',
+        selectValue: 'Hamilton'
+      },
+      kitchener: {
+        key: 'kitchener',
+        name: 'Kitchener',
+        region: 'Kitchener-Waterloo',
+        topBarSuffix: 'in Kitchener-Waterloo',
+        heroBadgeSuffix: 'KITCHENER-WATERLOO',
+        selectValue: 'Kitchener'
+      },
+      oshawa: {
+        key: 'oshawa',
+        name: 'Oshawa',
+        region: 'Oshawa & Durham Region',
+        topBarSuffix: 'in Oshawa & Durham Region',
+        heroBadgeSuffix: 'OSHAWA & DURHAM',
+        selectValue: 'Oshawa'
+      }
+    };
+
     function resolveServiceKey(param) {
       if (!param) return null;
       const p = param.toLowerCase().trim().replace(/_/g, '-');
@@ -2646,54 +2743,181 @@
       return null;
     }
 
+    function resolveCityKey(param) {
+      if (!param) return null;
+      const p = param.toLowerCase().trim().replace(/_/g, '-');
+      if (DYNAMIC_CITIES[p]) return DYNAMIC_CITIES[p];
+      if (['to', 'toronto', 'gta', 'north-york', 'scarborough', 'etobicoke', 'downtown-toronto'].includes(p)) return DYNAMIC_CITIES.toronto;
+      if (['sauga', 'mississauga', 'missisauga'].includes(p)) return DYNAMIC_CITIES.mississauga;
+      if (['brampton', 'bramp'].includes(p)) return DYNAMIC_CITIES.brampton;
+      if (['vaughan', 'woodbridge', 'maple', 'thornhill'].includes(p)) return DYNAMIC_CITIES.vaughan;
+      if (['markham', 'unionville', 'richmond-hill'].includes(p)) return DYNAMIC_CITIES.markham;
+      if (['oakville'].includes(p)) return DYNAMIC_CITIES.oakville;
+      if (['burlington'].includes(p)) return DYNAMIC_CITIES.burlington;
+      if (['hamilton', 'ancaster', 'stoney-creek', 'dundas'].includes(p)) return DYNAMIC_CITIES.hamilton;
+      if (['kitchener', 'waterloo', 'cambridge', 'kw'].includes(p)) return DYNAMIC_CITIES.kitchener;
+      if (['oshawa', 'whitby', 'ajax', 'pickering', 'durham'].includes(p)) return DYNAMIC_CITIES.oshawa;
+
+      // Dynamic fallback for any other city / area passed by Google Ads
+      const formatted = param.replace(/[-_]/g, ' ').replace(/\b\w/g, c => c.toUpperCase()).trim();
+      if (formatted.length > 1) {
+        return {
+          key: p,
+          name: formatted,
+          region: formatted,
+          topBarSuffix: 'in ' + formatted,
+          heroBadgeSuffix: formatted.toUpperCase(),
+          selectValue: formatted
+        };
+      }
+      return null;
+    }
+
     function applyDynamicPersonalization() {
       const urlParams = new URLSearchParams(window.location.search);
-      const serviceParam = urlParams.get('service') || urlParams.get('appliance');
-      const serviceKey = resolveServiceKey(serviceParam);
+      const serviceParam = urlParams.get('service') || urlParams.get('appliance') || urlParams.get('s') || urlParams.get('a');
+      const cityParam = urlParams.get('city') || urlParams.get('location') || urlParams.get('area') || urlParams.get('c') || urlParams.get('l');
 
-      if (!serviceKey || !DYNAMIC_SERVICES[serviceKey]) {
+      const serviceKey = resolveServiceKey(serviceParam);
+      const s = serviceKey ? DYNAMIC_SERVICES[serviceKey] : null;
+      const c = resolveCityKey(cityParam);
+
+      if (!s && !c) {
         return; // Retain standard, generic high-converting page
       }
 
-      const s = DYNAMIC_SERVICES[serviceKey];
+      let newTitle = '';
+      let newMetaDesc = '';
+      let newTopAnnouncement = '';
+      let newHeroBadge = '';
+      let newHeroTitle = '';
+      let newHeroDesc = '';
+      let newFormBadge = '';
+      let newFormTitle = '';
+      let newFormSubtitle = '';
+      let newServicesTitle = '';
+      let newServicesSubtitle = '';
+      let newMidCtaTitle = '';
+      let newMidCtaDesc = '';
+      let newBottomCtaTitle = '';
+      let newBottomCtaDesc = '';
+      let newWhatsappMsg = '';
+
+      if (s && c) {
+        // --- CASE 1: COMBINED SERVICE + CITY PERSONALIZATION ---
+        newTitle = `Same-Day ${s.name} Repair in ${c.name} | Local Certified Technicians`;
+        newMetaDesc = `Need fast ${s.noun} repair in ${c.name}? Local certified technicians fix cooling, leaks, mechanical problems, and error codes today. Upfront quotes & $0 diagnostic with repair.`;
+        newTopAnnouncement = `Daily Emergency ${s.name} Dispatch Active ${c.topBarSuffix}`;
+        newHeroBadge = `SAME-DAY ${s.name.toUpperCase()} REPAIR • ${c.heroBadgeSuffix}`;
+        newHeroTitle = `Same-Day <span class="text-brandBlue">${s.name} Repair</span> in ${c.name}`;
+
+        if (s.key === 'fridge') {
+          newHeroDesc = `Fridge not cooling, leaking water, ice maker broken, or making strange noises? Our licensed <strong class="text-slate-900">${c.name} appliance technicians</strong> arrive today with fully stocked parts to fix your <strong class="text-slate-900">Refrigerator or Freezer</strong> on the first visit!`;
+        } else if (s.key === 'washer') {
+          newHeroDesc = `Washer won't spin, draining issues, leaking water, or stopping mid-cycle? Our licensed <strong class="text-slate-900">${c.name} technicians</strong> arrive today with stocked parts to fix your <strong class="text-slate-900">Front-Load or Top-Load Washer</strong> on the first visit!`;
+        } else if (s.key === 'dryer') {
+          newHeroDesc = `Dryer not heating, drum not spinning, squeaking noises, or taking multiple cycles? Our licensed <strong class="text-slate-900">${c.name} technicians</strong> arrive today with stocked heating elements, fuses and belts to fix your <strong class="text-slate-900">Dryer</strong> on the first visit!`;
+        } else if (s.key === 'dishwasher') {
+          newHeroDesc = `Dishwasher not draining, leaking water on floor, dishes dirty, or not turning on? Our licensed <strong class="text-slate-900">${c.name} technicians</strong> arrive today with stocked pumps and valves to fix your <strong class="text-slate-900">Dishwasher</strong> on the first visit!`;
+        } else if (s.key === 'stove') {
+          newHeroDesc = `Oven not heating up, burners not igniting, uneven baking, or temperature control issues? Our licensed <strong class="text-slate-900">${c.name} technicians</strong> arrive today with stocked igniters, elements, and thermostats to fix your <strong class="text-slate-900">Oven or Stove</strong> on the first visit!`;
+        } else if (s.key === 'microwave') {
+          newHeroDesc = `Microwave not heating, turntable not spinning, sparking inside, or touchpad unresponsive? Our licensed <strong class="text-slate-900">${c.name} technicians</strong> arrive today with stocked magnetrons, fuses, and door switches to fix your <strong class="text-slate-900">Microwave</strong> on the first visit!`;
+        } else {
+          newHeroDesc = `Fast, reliable ${s.noun} repair in ${c.name}. Our licensed technicians arrive today with stocked OEM parts to fix your appliance on the first visit!`;
+        }
+
+        newFormBadge = `SAME-DAY ${c.name.toUpperCase()} ${s.name.toUpperCase()} DISPATCH`;
+        newFormTitle = `Request ${s.name} Repair in ${c.name} & Claim Your $0 Diagnostic`;
+        newFormSubtitle = `Tell us what's broken with your ${s.noun} in ${c.name}. A local technician will call in <strong class="text-slate-900">&lt;15 mins</strong> with upfront pricing & arrival time.`;
+        newServicesTitle = `${s.name.toUpperCase()} & ALL MAJOR APPLIANCES WE REPAIR IN ${c.name.toUpperCase()}`;
+        newServicesSubtitle = `Specialized same-day repair for ${s.noun}s in ${c.name}, plus fast service for all household appliances.`;
+        newMidCtaTitle = `Need Your ${s.name} Repaired in ${c.name} Today?`;
+        newMidCtaDesc = `Experienced ${c.name} ${s.noun} technicians on standby with genuine OEM replacement parts.`;
+        newBottomCtaTitle = `NEED YOUR ${s.name.toUpperCase()} REPAIRED IN ${c.name.toUpperCase()} TODAY?`;
+        newBottomCtaDesc = `Don't wait! Call our ${c.name} dispatch center now for guaranteed same-day ${s.noun} diagnostics & repairs.`;
+        newWhatsappMsg = `Hi, I need same-day ${s.noun} repair in ${c.name}`;
+
+      } else if (s && !c) {
+        // --- CASE 2: SERVICE ONLY PERSONALIZATION ---
+        newTitle = s.title;
+        newMetaDesc = s.metaDesc;
+        newTopAnnouncement = s.topAnnouncement;
+        newHeroBadge = s.heroBadge;
+        newHeroTitle = s.heroTitle;
+        newHeroDesc = s.heroDesc;
+        newFormBadge = s.formBadge;
+        newFormTitle = s.formTitle;
+        newFormSubtitle = s.formSubtitle;
+        newServicesTitle = s.servicesTitle;
+        newServicesSubtitle = s.servicesSubtitle;
+        newMidCtaTitle = s.midCtaTitle;
+        newMidCtaDesc = s.midCtaDesc;
+        newBottomCtaTitle = s.bottomCtaTitle;
+        newBottomCtaDesc = s.bottomCtaDesc;
+        newWhatsappMsg = s.whatsappMsg;
+
+      } else if (!s && c) {
+        // --- CASE 3: CITY ONLY PERSONALIZATION ---
+        newTitle = `Same-Day Appliance Repair in ${c.name} | Local Certified Technicians`;
+        newMetaDesc = `Need fast appliance repair in ${c.name}? Local certified technicians repair refrigerators, washing machines, dryers, dishwashers & stoves today. Upfront quotes & $0 diagnostic with repair.`;
+        newTopAnnouncement = `Daily Emergency Dispatch Active ${c.topBarSuffix}`;
+        newHeroBadge = `SAME-DAY APPLIANCE REPAIR • ${c.heroBadgeSuffix}`;
+        newHeroTitle = `Same-Day <span class="text-brandBlue">Appliance Repair</span> in ${c.name}`;
+        newHeroDesc = `Refrigerator, washer, dryer, dishwasher, or stove broken in ${c.name}? Our licensed local technicians arrive same-day with stocked service vehicles to deliver fast, transparent, guaranteed repairs on the first visit!`;
+        newFormBadge = `SAME-DAY ${c.name.toUpperCase()} DISPATCH`;
+        newFormTitle = `Request Fast Repair in ${c.name} & Claim Your $0 Diagnostic`;
+        newFormSubtitle = `Tell us what's broken in ${c.name}. A local technician will call in <strong class="text-slate-900">&lt;15 mins</strong> with upfront pricing & arrival time.`;
+        newServicesTitle = `MAJOR APPLIANCES WE REPAIR IN ${c.name.toUpperCase()}`;
+        newServicesSubtitle = `Fast, guaranteed same-day repairs across ${c.name} for all major residential appliance brands.`;
+        newMidCtaTitle = `Need Appliance Repair in ${c.name} Today?`;
+        newMidCtaDesc = `Licensed ${c.name} appliance technicians ready for prompt same-day dispatch.`;
+        newBottomCtaTitle = `NEED SAME-DAY APPLIANCE REPAIR IN ${c.name.toUpperCase()}?`;
+        newBottomCtaDesc = `Call our local ${c.name} dispatch team now for same-day arrival and upfront guaranteed repairs!`;
+        newWhatsappMsg = `Hi, I need same-day appliance repair service in ${c.name}`;
+      }
+
+      // --- APPLY UPDATES TO DOM ---
 
       // 1. Page Title & Meta Tags
-      if (s.title) {
-        document.title = s.title;
+      if (newTitle) {
+        document.title = newTitle;
         const metaTitle = document.getElementById('meta-title');
-        if (metaTitle) metaTitle.setAttribute('content', s.title);
+        if (metaTitle) metaTitle.setAttribute('content', newTitle);
       }
-      if (s.metaDesc) {
+      if (newMetaDesc) {
         const metaDesc = document.getElementById('meta-desc');
-        if (metaDesc) metaDesc.setAttribute('content', s.metaDesc);
+        if (metaDesc) metaDesc.setAttribute('content', newMetaDesc);
       }
 
       // 2. Top Emergency Bar Announcement
       const topAnnounce = document.getElementById('top-announcement');
-      if (topAnnounce && s.topAnnouncement) {
-        topAnnounce.textContent = s.topAnnouncement;
+      if (topAnnounce && newTopAnnouncement) {
+        topAnnounce.textContent = newTopAnnouncement;
       }
 
       // 3. Hero Section (Badge, H1, Description)
       const heroBadge = document.getElementById('hero-badge');
-      if (heroBadge && s.heroBadge) {
-        heroBadge.innerHTML = `<span class="w-2 h-2 rounded-full bg-brandOrange animate-pulse"></span><span>${s.heroBadge}</span>`;
+      if (heroBadge && newHeroBadge) {
+        heroBadge.innerHTML = `<span class="w-2 h-2 rounded-full bg-brandOrange animate-pulse"></span><span>${newHeroBadge}</span>`;
       }
 
       const heroTitle = document.getElementById('hero-title');
-      if (heroTitle && s.heroTitle) {
-        heroTitle.innerHTML = s.heroTitle;
+      if (heroTitle && newHeroTitle) {
+        heroTitle.innerHTML = newHeroTitle;
       }
 
       const heroDesc = document.getElementById('hero-desc');
-      if (heroDesc && s.heroDesc) {
-        heroDesc.innerHTML = s.heroDesc;
+      if (heroDesc && newHeroDesc) {
+        heroDesc.innerHTML = newHeroDesc;
       }
 
-      // 4. Hero Dynamic Common Problem Pills
+      // 4. Hero Dynamic Common Problem Pills (When service is selected)
       const issuesContainer = document.getElementById('hero-issues-container');
       const issuesList = document.getElementById('hero-issues-list');
-      if (issuesContainer && issuesList && s.issues && s.issues.length) {
+      const ppcBenefits = document.getElementById('hero-ppc-benefits');
+
+      if (s && s.issues && s.issues.length && issuesContainer && issuesList) {
         issuesList.innerHTML = s.issues.map(iss => {
           if (iss.highlight || (iss.text && iss.text.includes('$0'))) {
             return `
@@ -2711,88 +2935,108 @@
           `;
         }).join('');
         issuesContainer.classList.remove('hidden');
+        if (ppcBenefits) ppcBenefits.classList.add('hidden');
       }
 
-      // Hide standard PPC benefit boxes on dynamic service pages
-      const ppcBenefits = document.getElementById('hero-ppc-benefits');
-      if (ppcBenefits) {
-        ppcBenefits.classList.add('hidden');
-      }
-
-      // 5. PPC Lead Form Personalization & Dropdown Preselection
+      // 5. PPC Lead Form Personalization & Dropdown Preselections
       const formBadge = document.getElementById('form-badge');
-      if (formBadge && s.formBadge) {
-        formBadge.textContent = s.formBadge;
+      if (formBadge && newFormBadge) {
+        formBadge.textContent = newFormBadge;
       }
 
       const formTitle = document.getElementById('form-title');
-      if (formTitle && s.formTitle) {
-        formTitle.textContent = s.formTitle;
+      if (formTitle && newFormTitle) {
+        formTitle.textContent = newFormTitle;
       }
 
       const formSubtitle = document.getElementById('form-subtitle');
-      if (formSubtitle && s.formSubtitle) {
-        formSubtitle.innerHTML = s.formSubtitle;
+      if (formSubtitle && newFormSubtitle) {
+        formSubtitle.innerHTML = newFormSubtitle;
       }
 
+      // Pre-select Appliance Dropdown if service exists
       const applianceSelect = document.getElementById('ppc-appliance');
-      if (applianceSelect && s.selectValue) {
+      if (applianceSelect && s && s.selectValue) {
         applianceSelect.value = s.selectValue;
+      }
+
+      // Pre-select City Dropdown if city exists
+      const citySelect = document.getElementById('ppc-city');
+      if (citySelect && c) {
+        let matched = false;
+        for (let i = 0; i < citySelect.options.length; i++) {
+          if (citySelect.options[i].value.toLowerCase() === c.selectValue.toLowerCase()) {
+            citySelect.selectedIndex = i;
+            citySelect.value = citySelect.options[i].value;
+            matched = true;
+            break;
+          }
+        }
+        if (!matched && c.selectValue) {
+          const opt = document.createElement('option');
+          opt.value = c.selectValue;
+          opt.textContent = c.name;
+          opt.selected = true;
+          citySelect.appendChild(opt);
+          citySelect.value = c.selectValue;
+        }
       }
 
       // 6. Section 2: Services Section & Card Highlighting
       const servicesTitle = document.getElementById('services-title');
-      if (servicesTitle && s.servicesTitle) {
-        servicesTitle.textContent = s.servicesTitle;
+      if (servicesTitle && newServicesTitle) {
+        servicesTitle.textContent = newServicesTitle;
       }
 
       const servicesSubtitle = document.getElementById('services-subtitle');
-      if (servicesSubtitle && s.servicesSubtitle) {
-        servicesSubtitle.textContent = s.servicesSubtitle;
+      if (servicesSubtitle && newServicesSubtitle) {
+        servicesSubtitle.textContent = newServicesSubtitle;
       }
 
-      const cards = document.querySelectorAll('[data-service-card]');
-      cards.forEach(card => {
-        const cardKey = card.getAttribute('data-service-card');
-        if (cardKey === s.key) {
-          card.classList.add('border-2', 'border-brandOrange', 'ring-4', 'ring-brandOrange/20', 'shadow-lg', 'scale-[1.02]', 'bg-orange-50/20');
-          card.classList.remove('border-slate-200');
+      if (s) {
+        const cards = document.querySelectorAll('[data-service-card]');
+        cards.forEach(card => {
+          const cardKey = card.getAttribute('data-service-card');
+          if (cardKey === s.key) {
+            card.classList.add('border-2', 'border-brandOrange', 'ring-4', 'ring-brandOrange/20', 'shadow-lg', 'scale-[1.02]', 'bg-orange-50/20');
+            card.classList.remove('border-slate-200');
 
-          // Add Primary Focus Ribbon
-          const ribbon = document.createElement('div');
-          ribbon.className = 'absolute -top-3 left-1/2 -translate-x-1/2 bg-brandOrange text-white text-[9px] font-black uppercase px-2.5 py-0.5 rounded-full shadow-md whitespace-nowrap z-10 animate-pulse';
-          ribbon.innerText = '★ PRIMARY FOCUS';
-          card.appendChild(ribbon);
-        } else {
-          card.classList.add('opacity-90', 'hover:opacity-100');
-        }
-      });
+            // Add Primary Focus Ribbon
+            const ribbon = document.createElement('div');
+            ribbon.className = 'absolute -top-3 left-1/2 -translate-x-1/2 bg-brandOrange text-white text-[9px] font-black uppercase px-2.5 py-0.5 rounded-full shadow-md whitespace-nowrap z-10 animate-pulse';
+            ribbon.innerText = '★ PRIMARY FOCUS';
+            card.appendChild(ribbon);
+          } else {
+            card.classList.add('opacity-90', 'hover:opacity-100');
+          }
+        });
+      }
 
       // 7. Mid CTA Strip
       const midCtaTitle = document.getElementById('mid-cta-title');
-      if (midCtaTitle && s.midCtaTitle) {
-        midCtaTitle.textContent = s.midCtaTitle;
+      if (midCtaTitle && newMidCtaTitle) {
+        midCtaTitle.textContent = newMidCtaTitle;
       }
 
       const midCtaDesc = document.getElementById('mid-cta-desc');
-      if (midCtaDesc && s.midCtaDesc) {
-        midCtaDesc.textContent = s.midCtaDesc;
+      if (midCtaDesc && newMidCtaDesc) {
+        midCtaDesc.textContent = newMidCtaDesc;
       }
 
       // 8. Bottom CTA Banner
       const bottomCtaTitle = document.getElementById('bottom-cta-title');
-      if (bottomCtaTitle && s.bottomCtaTitle) {
-        bottomCtaTitle.textContent = s.bottomCtaTitle;
+      if (bottomCtaTitle && newBottomCtaTitle) {
+        bottomCtaTitle.textContent = newBottomCtaTitle;
       }
 
       const bottomCtaDesc = document.getElementById('bottom-cta-desc');
-      if (bottomCtaDesc && s.bottomCtaDesc) {
-        bottomCtaDesc.textContent = s.bottomCtaDesc;
+      if (bottomCtaDesc && newBottomCtaDesc) {
+        bottomCtaDesc.textContent = newBottomCtaDesc;
       }
 
       // 9. WhatsApp CTAs (Header and Mobile Bar)
-      if (s.whatsappMsg) {
-        const encodedMsg = encodeURIComponent(s.whatsappMsg);
+      if (newWhatsappMsg) {
+        const encodedMsg = encodeURIComponent(newWhatsappMsg);
         const headerWa = document.getElementById('whatsapp-header-btn');
         if (headerWa) headerWa.href = `https://wa.me/19057178905?text=${encodedMsg}`;
 

@@ -56,7 +56,7 @@ $custom_head_schema = '
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
             "opens": "08:00",
-            "closes": "21:00"
+            "closes": "20:00"
           }
         ],
         "knowsAbout": [
@@ -151,20 +151,30 @@ include 'head.php';
   ?>
 
   <main>
-    <!-- HERO SECTION 1 (WITH ENQUIRY FORM) -->
+    <!-- HERO SECTION 1 (WITH ENQUIRY FORM & INTEGRATED TRUST PILLARS) -->
     <section
-      class="bg-gradient-to-b from-slate-50 via-white to-slate-50 py-8 lg:py-14 border-b border-brandBorder relative overflow-hidden">
+      class="bg-gradient-to-b from-slate-50 via-white to-slate-50 pt-8 sm:pt-10 lg:pt-12 pb-5 sm:pb-6 border-b border-brandBorder relative overflow-hidden">
       <div class="max-w-7xl mx-auto px-4">
 
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
 
           <!-- Hero Left Column: Minimalist Headline, Badges & CTAs (7 cols) -->
-          <div class="lg:col-span-7 space-y-5">
+          <div class="lg:col-span-7 space-y-5 flex flex-col justify-center">
 
+            <!-- Hero Pill Badge: Fast • Reliable • Professional -->
             <div
-              class="inline-flex items-center gap-2 bg-brandOrange/10 text-brandOrange font-bold text-xs uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-brandOrange/20">
-              <span class="w-2 h-2 rounded-full bg-brandOrange animate-pulse"></span>
-              Fast • Reliable • Professional
+              class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-orange-50 via-amber-50/60 to-orange-50 border border-brandOrange/25 shadow-sm w-fit hover:border-brandOrange/40 transition-all">
+              <span class="relative flex h-2 w-2 flex-shrink-0">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brandOrange opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-brandOrange"></span>
+              </span>
+              <div class="flex items-center gap-2 text-xs font-black tracking-wider uppercase">
+                <span class="text-brandOrange">Fast</span>
+                <span class="w-1 h-1 rounded-full bg-brandOrange/40"></span>
+                <span class="text-brandDarkBlue">Reliable</span>
+                <span class="w-1 h-1 rounded-full bg-brandOrange/40"></span>
+                <span class="text-brandBlue">Professional</span>
+              </div>
             </div>
 
             <h1
@@ -185,13 +195,6 @@ include 'head.php';
                 <span class="text-amber-400 text-sm">★</span>
                 <span class="font-extrabold text-slate-900">5.0/5</span>
                 <span class="text-slate-500 font-medium text-xs">(Google Rated)</span>
-              </div>
-              <div
-                class="inline-flex items-center gap-1.5 bg-slate-100/90 text-slate-800 px-3 py-1.5 rounded-full border border-slate-200/80 shadow-2xs">
-                <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span>Licensed & TSSA Certified</span>
               </div>
               <div
                 class="inline-flex items-center gap-1.5 bg-slate-100/90 text-slate-800 px-3 py-1.5 rounded-full border border-slate-200/80 shadow-2xs">
@@ -239,16 +242,69 @@ include 'head.php';
           </div>
 
           <!-- Hero Right Column: ENQUIRY FORM CARD (5 cols) -->
-          <div id="enquiry-form" class="lg:col-span-5">
+          <div id="enquiry-form" class="lg:col-span-5 flex flex-col justify-center">
             <?php include __DIR__ . '/forms/quote-form.php'; ?>
           </div>
 
         </div>
 
+        <!-- INTEGRATED TRUST PILLARS BAR (VERTICALLY CENTERED & BALANCED) -->
+        <div class="mt-6 sm:mt-7 pt-3.5 sm:pt-4 border-t border-slate-200/80">
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3.5 md:gap-4">
+
+            <!-- Pillar 1: Same-Day Repair Service (Primary Focus) -->
+            <div class="group flex items-center gap-2.5 sm:gap-3 py-2.5 sm:py-3 px-3 sm:px-3.5 rounded-xl sm:rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:border-brandOrange/40 hover:shadow-md transition-all h-full">
+              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-orange-50 border border-orange-100/80 text-brandOrange flex-shrink-0 flex items-center justify-center group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div class="min-w-0 text-left">
+                <span class="block text-xs sm:text-sm font-extrabold text-brandDarkBlue leading-tight group-hover:text-brandBlue transition-colors">Same-Day Repair Service</span>
+              </div>
+            </div>
+
+            <!-- Pillar 2: Highly Skilled Technicians -->
+            <div class="group flex items-center gap-2.5 sm:gap-3 py-2.5 sm:py-3 px-3 sm:px-3.5 rounded-xl sm:rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:border-brandOrange/40 hover:shadow-md transition-all h-full">
+              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-orange-50 border border-orange-100/80 text-brandOrange flex-shrink-0 flex items-center justify-center group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                </svg>
+              </div>
+              <div class="min-w-0 text-left">
+                <span class="block text-xs sm:text-sm font-extrabold text-brandDarkBlue leading-tight group-hover:text-brandBlue transition-colors">Highly Skilled Technicians</span>
+              </div>
+            </div>
+
+            <!-- Pillar 3: All Major Brands -->
+            <div class="group flex items-center gap-2.5 sm:gap-3 py-2.5 sm:py-3 px-3 sm:px-3.5 rounded-xl sm:rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:border-brandOrange/40 hover:shadow-md transition-all h-full">
+              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-orange-50 border border-orange-100/80 text-brandOrange flex-shrink-0 flex items-center justify-center group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                </svg>
+              </div>
+              <div class="min-w-0 text-left">
+                <span class="block text-xs sm:text-sm font-extrabold text-brandDarkBlue leading-tight group-hover:text-brandBlue transition-colors">All Major Brands</span>
+              </div>
+            </div>
+
+            <!-- Pillar 4: Affordable Rates -->
+            <div class="group flex items-center gap-2.5 sm:gap-3 py-2.5 sm:py-3 px-3 sm:px-3.5 rounded-xl sm:rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:border-brandOrange/40 hover:shadow-md transition-all h-full">
+              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-orange-50 border border-orange-100/80 text-brandOrange flex-shrink-0 flex items-center justify-center group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div class="min-w-0 text-left">
+                <span class="block text-xs sm:text-sm font-extrabold text-brandDarkBlue leading-tight group-hover:text-brandBlue transition-colors">Affordable Rates</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </section>
-
-
 
     <!-- SECTION 1: WE REPAIR ALL MAJOR APPLIANCES -->
     <section class="py-16 bg-white border-b border-brandBorder" id="services">
@@ -738,123 +794,25 @@ include 'head.php';
         </div>
       </div>
 
-      <div class="mt-6 text-center">
+      <div class="mt-8 text-center px-4">
         <div
-          class="inline-flex items-center gap-2 bg-slate-100 px-4 py-2 rounded-full border border-slate-200 text-xs text-slate-600 font-medium">
-          <span class="text-brandOrange font-bold">Note:</span>
-          <span>We repair all out-of-warranty residential appliances across Toronto & GTA.</span>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- SECTION 5: VERIFIED CUSTOMER REVIEWS -->
-    <?php include __DIR__ . '/reviews-widget.php'; ?>
-
-    <!-- SECTION 6: FAQ ACCORDION SECTION -->
-    <section class="py-16 bg-slate-50 border-b border-brandBorder" id="faq">
-      <div class="max-w-4xl mx-auto px-4">
-
-        <div class="text-center mb-10">
-          <span class="text-brandOrange font-extrabold text-xs uppercase tracking-widest block mb-1">GOT
-            QUESTIONS?</span>
-          <h2 class="text-2xl sm:text-4xl font-heading font-black text-brandDarkBlue uppercase tracking-tight mb-2">
-            FREQUENTLY ASKED QUESTIONS
-          </h2>
-          <p class="text-slate-600 text-xs sm:text-base max-w-2xl mx-auto mb-4 font-medium">
-            Clear answers to common questions about our Toronto & GTA appliance repair services.
-          </p>
-          <div class="w-20 h-1 bg-brandOrange mx-auto rounded-full"></div>
-        </div>
-
-        <div class="space-y-4">
-
-          <!-- FAQ 1 -->
-          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs">
-            <button onclick="toggleFAQ('faq-1')"
-              class="w-full p-5 text-left font-heading font-bold text-brandDarkBlue text-sm sm:text-base flex justify-between items-center focus:outline-none cursor-pointer">
-              <span>How quickly can a technician arrive at my home?</span>
-              <span id="icon-faq-1" class="text-brandOrange font-black text-xl">+</span>
-            </button>
-            <div id="faq-1"
-              class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-              We offer prompt same-day service across Toronto and the GTA based on daily schedule availability! When you
-              call or submit an enquiry,
-              our technician coordinates directly with you to arrange a prompt visit and get your appliance back up and
-              running.
-            </div>
-          </div>
-
-          <!-- FAQ 2 -->
-          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs">
-            <button onclick="toggleFAQ('faq-2')"
-              class="w-full p-5 text-left font-heading font-bold text-brandDarkBlue text-sm sm:text-base flex justify-between items-center focus:outline-none cursor-pointer">
-              <span>What is your pricing model and service call fee?</span>
-              <span id="icon-faq-2" class="text-brandOrange font-black text-xl">+</span>
-            </button>
-            <div id="faq-2"
-              class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-              We provide transparent upfront flat-rate pricing with zero hidden fees. The diagnostic service call fee is
-              completely waived off when you proceed with any appliance repair!
-            </div>
-          </div>
-
-          <!-- FAQ 3 -->
-          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs">
-            <button onclick="toggleFAQ('faq-3')"
-              class="w-full p-5 text-left font-heading font-bold text-brandDarkBlue text-sm sm:text-base flex justify-between items-center focus:outline-none cursor-pointer">
-              <span>What warranty do you offer on repairs?</span>
-              <span id="icon-faq-3" class="text-brandOrange font-black text-xl">+</span>
-            </button>
-            <div id="faq-3"
-              class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-              All completed repairs performed by Appliance Repair Knights include a written parts and labor warranty
-              covering installed replacement OEM parts and technician labor.
-            </div>
-          </div>
-
-          <!-- FAQ 4 -->
-          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs">
-            <button onclick="toggleFAQ('faq-4')"
-              class="w-full p-5 text-left font-heading font-bold text-brandDarkBlue text-sm sm:text-base flex justify-between items-center focus:outline-none cursor-pointer">
-              <span>Do you carry replacement parts in your service vehicles?</span>
-              <span id="icon-faq-4" class="text-brandOrange font-black text-xl">+</span>
-            </button>
-            <div id="faq-4"
-              class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-              Yes! Our service vans are fully stocked with common OEM replacement parts for Bosch, GE Appliances,
-              KitchenAid, Frigidaire, Maytag, Sub-Zero, Miele and Samsung appliances to complete 85%+ of repairs on
-              the spot.
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Post-FAQ CTA & Trust Line -->
-        <div class="mt-10 text-center space-y-3">
-          <a href="tel:<?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?>"
-            class="inline-flex items-center justify-center gap-2.5 bg-brandOrange hover:bg-orange-600 text-white font-extrabold px-8 py-4 rounded-xl text-sm sm:text-base shadow-lg hover:shadow-xl transition-all uppercase tracking-wide">
-            <svg class="w-5 h-5 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
-              <path
-                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
-              </path>
+          class="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 bg-white px-4 sm:px-6 py-2.5 rounded-full border border-slate-200/90 shadow-sm text-xs sm:text-sm text-slate-800">
+          <span class="inline-flex items-center gap-1.5 bg-brandOrange/10 text-brandOrange font-extrabold px-2.5 py-0.5 rounded-full text-xs">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
-            <span>Still Have Questions? Call
-              <?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?></span>
-          </a>
-          <p class="text-xs text-slate-700 font-semibold flex items-center justify-center gap-2 flex-wrap">
-            <span>🛡️ Service Call Fee Waived With Repairs</span>
-            <span class="text-slate-400">•</span>
-            <span>⚡ Speak Directly With a Technician</span>
-            <span class="text-slate-400">•</span>
-            <span>Same-Day Availability</span>
-          </p>
+            <span>Note</span>
+          </span>
+          <span class="font-semibold text-slate-800">
+            We repair all <strong class="font-black text-brandDarkBlue">out-of-warranty</strong> residential appliances across Toronto &amp; GTA.
+          </span>
         </div>
-
       </div>
     </section>
 
-    <!-- SECTION 7: WE SERVICE THESE AREAS -->
+
+
+    <!-- SECTION 5: WE SERVICE THESE AREAS -->
     <section class="py-16 bg-slate-50 border-b border-brandBorder" id="service-areas">
       <div class="max-w-7xl mx-auto px-4">
 
@@ -979,6 +937,109 @@ include 'head.php';
             </div>
           </div>
 
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: FAQ ACCORDION SECTION (BOTTOM SECTION) -->
+    <section class="py-16 bg-white border-b border-brandBorder" id="faq">
+      <div class="max-w-4xl mx-auto px-4">
+
+        <div class="text-center mb-10">
+          <span class="text-brandOrange font-extrabold text-xs uppercase tracking-widest block mb-1">GOT
+            QUESTIONS?</span>
+          <h2 class="text-2xl sm:text-4xl font-heading font-black text-brandDarkBlue uppercase tracking-tight mb-2">
+            FREQUENTLY ASKED QUESTIONS
+          </h2>
+          <p class="text-slate-600 text-xs sm:text-base max-w-2xl mx-auto mb-4 font-medium">
+            Clear answers to common questions about our Toronto & GTA appliance repair services.
+          </p>
+          <div class="w-20 h-1 bg-brandOrange mx-auto rounded-full"></div>
+        </div>
+
+        <div class="space-y-4">
+
+          <!-- FAQ 1 -->
+          <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-xs">
+            <button onclick="toggleFAQ('faq-1')"
+              class="w-full p-5 text-left font-heading font-bold text-brandDarkBlue text-sm sm:text-base flex justify-between items-center focus:outline-none cursor-pointer">
+              <span>How quickly can a technician arrive at my home?</span>
+              <span id="icon-faq-1" class="text-brandOrange font-black text-xl">+</span>
+            </button>
+            <div id="faq-1"
+              class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200/70 pt-3">
+              We offer prompt same-day service across Toronto and the GTA based on daily schedule availability! When you
+              call or submit an enquiry,
+              our technician coordinates directly with you to arrange a prompt visit and get your appliance back up and
+              running.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-xs">
+            <button onclick="toggleFAQ('faq-2')"
+              class="w-full p-5 text-left font-heading font-bold text-brandDarkBlue text-sm sm:text-base flex justify-between items-center focus:outline-none cursor-pointer">
+              <span>What is your pricing model and service call fee?</span>
+              <span id="icon-faq-2" class="text-brandOrange font-black text-xl">+</span>
+            </button>
+            <div id="faq-2"
+              class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200/70 pt-3">
+              We provide transparent upfront flat-rate pricing with zero hidden fees. The diagnostic service call fee is
+              completely waived off when you proceed with any appliance repair!
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-xs">
+            <button onclick="toggleFAQ('faq-3')"
+              class="w-full p-5 text-left font-heading font-bold text-brandDarkBlue text-sm sm:text-base flex justify-between items-center focus:outline-none cursor-pointer">
+              <span>What warranty do you offer on repairs?</span>
+              <span id="icon-faq-3" class="text-brandOrange font-black text-xl">+</span>
+            </button>
+            <div id="faq-3"
+              class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200/70 pt-3">
+              All completed repairs performed by Appliance Repair Knights include a written parts and labor warranty
+              covering installed replacement OEM parts and technician labor.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-xs">
+            <button onclick="toggleFAQ('faq-4')"
+              class="w-full p-5 text-left font-heading font-bold text-brandDarkBlue text-sm sm:text-base flex justify-between items-center focus:outline-none cursor-pointer">
+              <span>Do you carry replacement parts in your service vehicles?</span>
+              <span id="icon-faq-4" class="text-brandOrange font-black text-xl">+</span>
+            </button>
+            <div id="faq-4"
+              class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200/70 pt-3">
+              Yes! Our service vans are fully stocked with common OEM replacement parts for Bosch, GE Appliances,
+              KitchenAid, Frigidaire, Maytag, Sub-Zero, Miele and Samsung appliances to complete 85%+ of repairs on
+              the spot.
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Post-FAQ CTA & Trust Line -->
+        <div class="mt-10 text-center space-y-3">
+          <a href="tel:<?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?>"
+            class="inline-flex items-center justify-center gap-2.5 bg-brandOrange hover:bg-orange-600 text-white font-extrabold px-8 py-4 rounded-xl text-sm sm:text-base shadow-lg hover:shadow-xl transition-all uppercase tracking-wide">
+            <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+              </path>
+            </svg>
+            <span>Still Have Questions? Call
+              <?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?></span>
+          </a>
+          <p class="text-xs text-slate-700 font-semibold flex items-center justify-center gap-2 flex-wrap">
+            <span>🛡️ Service Call Fee Waived With Repairs</span>
+            <span class="text-slate-400">•</span>
+            <span>Speak Directly With a Technician</span>
+            <span class="text-slate-400">•</span>
+            <span>Same-Day Availability</span>
+          </p>
         </div>
 
       </div>

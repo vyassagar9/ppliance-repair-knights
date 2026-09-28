@@ -23,6 +23,9 @@ Disallow: /locations/location-data.php
 Disallow: /locations/location.php
 Disallow: /blog/blog-data.php
 Disallow: /blog/post.php
+Disallow: /locations/test-location.php
+Disallow: /*.bak$
+Disallow: /*.bak
 
 # XML Sitemap Location
 Sitemap: https://www.appliancerepairknights.com/sitemap.xml

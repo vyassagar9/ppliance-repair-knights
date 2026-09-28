@@ -145,7 +145,15 @@ foreach ($locations as $slug) {
     ];
 }
 
-// 3B. Blog Articles (Dynamic from blog-data.php)
+// 3B. Dedicated Location-Service Pages
+$pages[] = [
+    'loc' => $domain . '/locations/toronto/refrigerator-repair',
+    'file' => $rootDir . '/locations/toronto/refrigerator-repair.php',
+    'changefreq' => 'weekly',
+    'priority' => '0.90'
+];
+
+// 3C. Blog Articles (Dynamic from blog-data.php)
 $blogDataFile = $rootDir . '/blog/blog-data.php';
 $blogPostTemplate = $rootDir . '/blog/post.php';
 $blogBaseMod = max(

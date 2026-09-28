@@ -6,19 +6,19 @@
 
   <url>
     <loc>https://www.appliancerepairknights.com/</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/about</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/contact</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/locations</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
@@ -42,43 +42,43 @@
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/services/fridge-repair</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/services/washer-repair</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/services/dryer-repair</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/services/dishwasher-repair</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/services/stove-repair</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/services/microwave-repair</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/locations/toronto-appliance-repair</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
@@ -195,6 +195,12 @@
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.appliancerepairknights.com/locations/toronto/refrigerator-repair</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/blog/refrigerator-repair-cost-toronto</loc>
