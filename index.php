@@ -1022,24 +1022,49 @@ include 'head.php';
         </div>
 
         <!-- Post-FAQ CTA & Trust Line -->
-        <div class="mt-10 text-center space-y-3">
-          <a href="tel:<?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?>"
-            class="inline-flex items-center justify-center gap-2.5 bg-brandOrange hover:bg-orange-600 text-white font-extrabold px-8 py-4 rounded-xl text-sm sm:text-base shadow-lg hover:shadow-xl transition-all uppercase tracking-wide">
-            <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-              <path
-                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
-              </path>
-            </svg>
-            <span>Still Have Questions? Call
-              <?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?></span>
-          </a>
-          <p class="text-xs text-slate-700 font-semibold flex items-center justify-center gap-2 flex-wrap">
-            <span>🛡️ Service Call Fee Waived With Repairs</span>
-            <span class="text-slate-400">•</span>
-            <span>Speak Directly With a Technician</span>
-            <span class="text-slate-400">•</span>
-            <span>Same-Day Availability</span>
-          </p>
+        <div class="mt-10 text-center">
+          <div class="inline-flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 max-w-full mx-auto">
+            <!-- Button 1: Call -->
+            <a href="tel:<?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?>"
+              class="gtm-web-call inline-flex items-center justify-center gap-2.5 bg-brandOrange hover:bg-orange-600 text-white font-extrabold px-6 sm:px-8 py-3.5 rounded-xl text-xs sm:text-sm md:text-[15px] whitespace-nowrap shadow-md hover:shadow-lg transition-all uppercase tracking-wider leading-none">
+              <svg class="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+                </path>
+              </svg>
+              <span>Still Have Questions? Call <?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?></span>
+            </a>
+
+            <!-- Button 2: Schedule Repair -->
+            <a href="<?php echo $base_url; ?>schedule"
+              class="inline-flex items-center justify-center gap-2.5 bg-brandDarkBlue hover:bg-[#091e33] text-white font-extrabold px-6 sm:px-8 py-3.5 rounded-xl text-xs sm:text-sm md:text-[15px] whitespace-nowrap shadow-md hover:shadow-lg transition-all uppercase tracking-wider leading-none">
+              <svg class="w-4 h-4 sm:w-5 sm:h-5 text-brandOrange flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              <span>Schedule Repair</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges Line -->
+          <div class="mt-4 sm:mt-5">
+            <p class="text-xs sm:text-[13px] text-slate-700 font-bold inline-flex items-center justify-center gap-2 sm:gap-2.5 flex-wrap">
+              <span class="inline-flex items-center gap-1.5 whitespace-nowrap">
+                <svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+                Service Call Fee Waived With Repairs
+              </span>
+              <span class="text-slate-300">•</span>
+              <span class="inline-flex items-center gap-1.5 whitespace-nowrap">
+                <svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+                </svg>
+                Speak Directly With a Technician
+              </span>
+              <span class="text-slate-300">•</span>
+              <span class="whitespace-nowrap">Same-Day Availability</span>
+            </p>
+          </div>
         </div>
 
       </div>
