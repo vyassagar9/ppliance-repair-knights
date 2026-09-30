@@ -59,6 +59,7 @@ $currentAppliance = isset($defaultAppliance) ? $defaultAppliance : '';
           <option value="Dishwasher" <?php echo ($currentAppliance === 'Dishwasher') ? 'selected' : ''; ?>>Dishwasher</option>
           <option value="Oven & Stove" <?php echo ($currentAppliance === 'Oven & Stove') ? 'selected' : ''; ?>>Oven / Stove / Range</option>
           <option value="Microwave" <?php echo ($currentAppliance === 'Microwave') ? 'selected' : ''; ?>>Microwave</option>
+          <option value="Coffee Machine" <?php echo ($currentAppliance === 'Coffee Machine') ? 'selected' : ''; ?>>Coffee Machine (Home / Office)</option>
         </select>
       </div>
     </div>
