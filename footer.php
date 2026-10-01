@@ -84,10 +84,12 @@ $base_url = isset($base_url) ? $base_url : '';
         <div>
           <h4 class="font-heading font-bold text-white uppercase tracking-wider text-xs mb-3">SERVICES</h4>
           <ul class="space-y-2 text-slate-400">
+            <li><a href="<?php echo $base_url; ?>services" class="text-brandOrange font-bold hover:text-white transition-colors flex items-center gap-1"><span>All Repair Services</span> &rarr;</a></li>
             <li><a href="<?php echo $base_url; ?>services/fridge-repair" class="hover:text-white transition-colors">Refrigerator Repair</a></li>
             <li><a href="<?php echo $base_url; ?>services/washer-repair" class="hover:text-white transition-colors">Washer Repair</a></li>
-            <li><a href="<?php echo $base_url; ?>services/dryer-repair" class="hover:text-white transition-colors">Dryer Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>services/coffee-machine-repair" class="hover:text-white transition-colors">Coffee Machine Repair</a></li>
             <li><a href="<?php echo $base_url; ?>services/dishwasher-repair" class="hover:text-white transition-colors">Dishwasher Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>services/dryer-repair" class="hover:text-white transition-colors">Dryer Repair</a></li>
             <li><a href="<?php echo $base_url; ?>services/stove-repair" class="hover:text-white transition-colors">Oven &amp; Stove Repair</a></li>
             <li><a href="<?php echo $base_url; ?>services/microwave-repair" class="hover:text-white transition-colors">Microwave Repair</a></li>
           </ul>

@@ -55,13 +55,19 @@ $pages = [
         'priority' => '0.95'
     ],
     [
+        'loc' => $domain . '/services',
+        'file' => $rootDir . '/services/index.php',
+        'changefreq' => 'weekly',
+        'priority' => '0.95'
+    ],
+    [
         'loc' => $domain . '/blog',
         'file' => $rootDir . '/blog/index.php',
         'changefreq' => 'weekly',
         'priority' => '0.85'
     ],
 
-    // 2. Service Pages
+    // 2. Service Pages (Standard 7-Service Sequence)
     [
         'loc' => $domain . '/services/fridge-repair',
         'file' => $rootDir . '/services/fridge-repair.php',
@@ -75,14 +81,20 @@ $pages = [
         'priority' => '0.90'
     ],
     [
-        'loc' => $domain . '/services/dryer-repair',
-        'file' => $rootDir . '/services/dryer-repair.php',
+        'loc' => $domain . '/services/coffee-machine-repair',
+        'file' => $rootDir . '/services/coffee-machine-repair.php',
         'changefreq' => 'weekly',
         'priority' => '0.90'
     ],
     [
         'loc' => $domain . '/services/dishwasher-repair',
         'file' => $rootDir . '/services/dishwasher-repair.php',
+        'changefreq' => 'weekly',
+        'priority' => '0.90'
+    ],
+    [
+        'loc' => $domain . '/services/dryer-repair',
+        'file' => $rootDir . '/services/dryer-repair.php',
         'changefreq' => 'weekly',
         'priority' => '0.90'
     ],

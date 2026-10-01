@@ -87,7 +87,7 @@ $custom_head_schema = <<<HTML
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://www.appliancerepairknights.com/#services"
+            "item": "https://www.appliancerepairknights.com/services"
           },
           {
             "@type": "ListItem",
@@ -172,7 +172,7 @@ include __DIR__ . '/../head.php';
     <div class="max-w-7xl mx-auto px-4 py-3 text-xs font-semibold flex items-center gap-2">
       <a href="../" class="text-secondary hover:text-accent transition-colors">Home</a>
       <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-      <span class="text-slate-400">Services</span>
+      <a href="../services" class="text-secondary hover:text-accent transition-colors">Services</a>
       <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
       <span class="text-primary font-bold">Washing Machine Repair</span>
     </div>

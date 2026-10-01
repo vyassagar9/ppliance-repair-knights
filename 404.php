@@ -66,6 +66,9 @@ include __DIR__ . '/header.php';
         <a href="<?php echo $base_url; ?>services/microwave-repair" class="p-3 bg-white border border-slate-200 rounded-xl text-primary hover:text-accent hover:border-accent transition-colors text-center shadow-sm">
           Microwave Repair
         </a>
+        <a href="<?php echo $base_url; ?>services/coffee-machine-repair" class="p-3 bg-white border border-slate-200 rounded-xl text-primary hover:text-accent hover:border-accent transition-colors text-center shadow-sm">
+          Coffee Machine Repair
+        </a>
         <a href="<?php echo $base_url; ?>locations" class="p-3 bg-white border border-slate-200 rounded-xl text-primary hover:text-accent hover:border-accent transition-colors text-center shadow-sm">
           All Service Areas
         </a>

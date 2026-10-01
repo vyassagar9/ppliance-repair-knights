@@ -7,7 +7,6 @@ $page_description = 'On-site coffee machine repair, servicing & preventative mai
 $page_keywords = 'coffee machine repair toronto, office coffee machine repair gta, espresso machine repair, commercial coffee maker maintenance, built-in coffee system service, gaggia repair, mastrena repair, bunn repair, breville repair, delonghi repair, bravilor bonamat repair, saeco professional repair, nespresso repair, vki coffee repair, keurig repair';
 $canonical_url = 'https://www.appliancerepairknights.com/services/coffee-machine-repair';
 $og_image = 'https://www.appliancerepairknights.com/img/coffee-machine-repair-service.webp';
-$robots_meta = 'noindex, nofollow';
 
 $gmb_rating = GMB_RATING_VALUE;
 $gmb_reviews = GMB_REVIEW_COUNT;
@@ -113,7 +112,7 @@ $custom_head_schema = <<<HTML
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://www.appliancerepairknights.com/#services"
+            "item": "https://www.appliancerepairknights.com/services"
           },
           {
             "@type": "ListItem",
@@ -198,7 +197,7 @@ include __DIR__ . '/../head.php';
     <div class="max-w-7xl mx-auto px-4 py-3 text-xs font-semibold flex items-center gap-2">
       <a href="../" class="text-secondary hover:text-accent transition-colors">Home</a>
       <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-      <span class="text-slate-400">Services</span>
+      <a href="../services" class="text-secondary hover:text-accent transition-colors">Services</a>
       <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
       <span class="text-primary font-bold">Coffee Machine Repair, Servicing &amp; Maintenance</span>
     </div>

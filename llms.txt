@@ -31,10 +31,12 @@
 
 ## Core Appliance Repair Services
 
+- [All Appliance Repair Services Directory](https://www.appliancerepairknights.com/services): Master directory and certified service portfolio covering all 7 residential and commercial appliance categories across Toronto & the GTA.
 - [Refrigerator & Freezer Repair](https://www.appliancerepairknights.com/services/fridge-repair): Diagnostics and repair for cooling failures, compressor faults, start relays, frost build-up, defrost timer issues, condenser coils, evaporator fan motors, water dispenser leaks, and dual-zone temperature regulation.
 - [Washing Machine Repair](https://www.appliancerepairknights.com/services/washer-repair): Repairs for front-load and top-load washers failing to drain, spin, agitate, or fill. Expert drain pump cleanouts, impeller replacements, door boot gaskets, lid lock switches, drive belts, and drum bearings.
-- [Dryer Repair (Gas & Electric)](https://www.appliancerepairknights.com/services/dryer-repair): Troubleshooting for dryers running with no heat, prolonged cycle times, squeaking drums, blown thermal fuses, heating elements, high-limit thermostats, igniters, and motor pulleys.
+- [Coffee Machine Repair & Maintenance](https://www.appliancerepairknights.com/services/coffee-machine-repair): On-site diagnostic repair, descaling, pump/boiler service, and preventative maintenance for residential luxury built-in coffee makers and commercial office espresso systems across Toronto & GTA.
 - [Dishwasher Repair](https://www.appliancerepairknights.com/services/dishwasher-repair): Service for dishwashers not cleaning, standing water in the bottom, drainage errors, spray arm blockages, circulation pumps, water inlet valves, door latch sensors, and float switches.
+- [Dryer Repair (Gas & Electric)](https://www.appliancerepairknights.com/services/dryer-repair): Troubleshooting for dryers running with no heat, prolonged cycle times, squeaking drums, blown thermal fuses, heating elements, high-limit thermostats, igniters, and motor pulleys.
 - [Stove, Oven & Range Repair](https://www.appliancerepairknights.com/services/stove-repair): Diagnostics for gas burners failing to ignite, electric bake and broil elements not glowing, oven temperature calibration faults, infinite surface switches, and electronic control boards.
 - [Microwave Repair](https://www.appliancerepairknights.com/services/microwave-repair): Built-in and over-the-range microwave repairs for turntable motor failures, faulty door interlock microswitches, high-voltage diodes, and control board error codes.
 

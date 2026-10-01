@@ -43,10 +43,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </svg>
         </button>
         <div class="absolute top-full left-0 w-64 bg-white border border-brandBorder shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+          <a href="<?php echo $base_url; ?>services" class="block px-4 py-2 text-xs font-bold uppercase tracking-wider text-brandOrange bg-slate-50 border-b border-slate-100">All Repair Services &rarr;</a>
           <a href="<?php echo $base_url; ?>services/fridge-repair" class="block px-4 py-2.5 text-sm <?php echo ($current_page == 'fridge') ? 'text-brandOrange bg-slate-50 font-bold' : 'text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium'; ?>">Refrigerator Repair</a>
           <a href="<?php echo $base_url; ?>services/washer-repair" class="block px-4 py-2.5 text-sm <?php echo ($current_page == 'washer') ? 'text-brandOrange bg-slate-50 font-bold' : 'text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium'; ?>">Washing Machine Repair</a>
-          <a href="<?php echo $base_url; ?>services/dryer-repair" class="block px-4 py-2.5 text-sm <?php echo ($current_page == 'dryer') ? 'text-brandOrange bg-slate-50 font-bold' : 'text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium'; ?>">Dryer Repair &amp; Venting</a>
+          <a href="<?php echo $base_url; ?>services/coffee-machine-repair" class="block px-4 py-2.5 text-sm <?php echo ($current_page == 'coffee-machine') ? 'text-brandOrange bg-slate-50 font-bold' : 'text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium'; ?>">Coffee Machine Repair</a>
           <a href="<?php echo $base_url; ?>services/dishwasher-repair" class="block px-4 py-2.5 text-sm <?php echo ($current_page == 'dishwasher') ? 'text-brandOrange bg-slate-50 font-bold' : 'text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium'; ?>">Dishwasher Repair</a>
+          <a href="<?php echo $base_url; ?>services/dryer-repair" class="block px-4 py-2.5 text-sm <?php echo ($current_page == 'dryer') ? 'text-brandOrange bg-slate-50 font-bold' : 'text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium'; ?>">Dryer Repair &amp; Venting</a>
           <a href="<?php echo $base_url; ?>services/stove-repair" class="block px-4 py-2.5 text-sm <?php echo ($current_page == 'stove') ? 'text-brandOrange bg-slate-50 font-bold' : 'text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium'; ?>">Oven &amp; Stove Repair</a>
           <a href="<?php echo $base_url; ?>services/microwave-repair" class="block px-4 py-2.5 text-sm <?php echo ($current_page == 'microwave') ? 'text-brandOrange bg-slate-50 font-bold' : 'text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium'; ?>">Microwave Repair</a>
         </div>
@@ -132,10 +134,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     <div class="pl-2 space-y-1.5 border-l-2 border-brandOrange/30 my-2">
       <span class="text-xs uppercase text-slate-400 font-bold tracking-wider">Services</span>
+      <a href="<?php echo $base_url; ?>services" class="block text-sm font-bold text-brandOrange">All Repair Services &rarr;</a>
       <a href="<?php echo $base_url; ?>services/fridge-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Refrigerator Repair</a>
       <a href="<?php echo $base_url; ?>services/washer-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Washing Machine Repair</a>
-      <a href="<?php echo $base_url; ?>services/dryer-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Dryer Repair</a>
+      <a href="<?php echo $base_url; ?>services/coffee-machine-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Coffee Machine Repair</a>
       <a href="<?php echo $base_url; ?>services/dishwasher-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Dishwasher Repair</a>
+      <a href="<?php echo $base_url; ?>services/dryer-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Dryer Repair</a>
       <a href="<?php echo $base_url; ?>services/stove-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Oven &amp; Stove Repair</a>
       <a href="<?php echo $base_url; ?>services/microwave-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Microwave Repair</a>
     </div>

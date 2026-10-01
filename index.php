@@ -62,6 +62,7 @@ $custom_head_schema = '
         "knowsAbout": [
           "Refrigerator Repair",
           "Washing Machine Repair",
+          "Coffee Machine Repair",
           "Dryer Repair",
           "Dishwasher Repair",
           "Stove and Oven Repair",
@@ -90,6 +91,7 @@ $custom_head_schema = '
           "itemListElement": [
             {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Refrigerator Repair"}},
             {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Washing Machine Repair"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Coffee Machine Repair"}},
             {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Dryer Repair"}},
             {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Dishwasher Repair"}},
             {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Oven & Stove Repair"}},
@@ -306,164 +308,383 @@ include 'head.php';
       </div>
     </section>
 
-    <!-- SECTION 1: WE REPAIR ALL MAJOR APPLIANCES -->
+    <!-- SECTION 1: WE REPAIR ALL MAJOR APPLIANCES (GOOGLE STORE STYLE CAROUSEL) -->
     <section class="py-16 bg-white border-b border-brandBorder" id="services">
-      <div class="max-w-7xl mx-auto px-4 text-center">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <span class="text-brandOrange font-extrabold text-xs uppercase tracking-widest block mb-1">SAME-DAY LOCAL
-          DISPATCH</span>
-        <h2 class="text-2xl sm:text-4xl font-heading font-black text-brandDarkBlue uppercase tracking-tight mb-2">
-          WE REPAIR ALL MAJOR APPLIANCES
-        </h2>
-        <p class="text-slate-600 text-xs sm:text-base max-w-2xl mx-auto mb-4 font-medium">
-          Fast, reliable diagnostic & repair services for home appliances across Toronto & GTA.
-        </p>
-        <div class="w-20 h-1 bg-brandOrange mx-auto mb-10 rounded-full"></div>
-
-        <!-- 6 Appliance Service Cards Grid -->
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
-
-          <!-- Refrigerator Card -->
-          <a href="<?php echo $base_url; ?>services/fridge-repair"
-            class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
-            <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/refrigerator-repair-service.webp" alt="Same-Day Refrigerator Repair Service Toronto"
-                title="Fast Refrigerator Repair & Diagnostics" width="798" height="448" loading="lazy" decoding="async"
-                class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
-            </div>
-            <div>
-              <h3
-                class="font-heading font-bold text-slate-800 text-sm mb-1 group-hover:text-brandOrange transition-colors">
-                Refrigerator Repair
-              </h3>
-              <span class="inline-flex items-center gap-1 text-xs text-brandOrange font-semibold mt-2">
-                Explore Refrigerator Repair <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"
-                  fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
-                  </path>
-                </svg>
-              </span>
-            </div>
-          </a>
-
-          <!-- Washer Card -->
-          <a href="<?php echo $base_url; ?>services/washer-repair"
-            class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
-            <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/washing-machine-repair-service.webp" alt="Washing Machine Repair Service GTA"
-                title="Certified Washer Diagnostics & Repair" width="739" height="415" loading="lazy" decoding="async"
-                class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
-            </div>
-            <div>
-              <h3
-                class="font-heading font-bold text-slate-800 text-sm mb-1 group-hover:text-brandOrange transition-colors">
-                Washer Repair
-              </h3>
-              <span class="inline-flex items-center gap-1 text-xs text-brandOrange font-semibold mt-2">
-                Explore Washer Repair <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"
-                  fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
-                  </path>
-                </svg>
-              </span>
-            </div>
-          </a>
-
-          <!-- Dryer Card -->
-          <a href="<?php echo $base_url; ?>services/dryer-repair"
-            class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
-            <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/clothes-dryer-repair-service.webp" alt="Clothes Dryer Repair and Vent Cleaning"
-                title="Fast Dryer Inspection & Repair Service" width="798" height="448" loading="lazy" decoding="async"
-                class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
-            </div>
-            <div>
-              <h3
-                class="font-heading font-bold text-slate-800 text-sm mb-1 group-hover:text-brandOrange transition-colors">
-                Dryer Repair
-              </h3>
-              <span class="inline-flex items-center gap-1 text-xs text-brandOrange font-semibold mt-2">
-                Explore Dryer Repair <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none"
-                  stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
-                  </path>
-                </svg>
-              </span>
-            </div>
-          </a>
-
-          <!-- Dishwasher Card -->
-          <a href="<?php echo $base_url; ?>services/dishwasher-repair"
-            class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
-            <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/open-dishwasher-repair.webp" alt="Dishwasher Diagnostic and Repair Service"
-                title="Reliable Dishwasher Repair & Pump Diagnostics" width="798" height="448" loading="lazy"
-                decoding="async"
-                class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
-            </div>
-            <div>
-              <h3
-                class="font-heading font-bold text-slate-800 text-sm mb-1 group-hover:text-brandOrange transition-colors">
-                Dishwasher Repair
-              </h3>
-              <span class="inline-flex items-center gap-1 text-xs text-brandOrange font-semibold mt-2">
-                Explore Dishwasher Repair <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"
-                  fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
-                  </path>
-                </svg>
-              </span>
-            </div>
-          </a>
-
-          <!-- Oven & Stove Card -->
-          <a href="<?php echo $base_url; ?>services/stove-repair"
-            class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
-            <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/oven-stove-repair-service.webp" alt="Oven and Stove Repair Service"
-                title="Electric & Gas Stove/Oven Diagnostics" width="798" height="448" loading="lazy" decoding="async"
-                class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
-            </div>
-            <div>
-              <h3
-                class="font-heading font-bold text-slate-800 text-sm mb-1 group-hover:text-brandOrange transition-colors">
-                Oven & Stove Repair
-              </h3>
-              <span class="inline-flex items-center gap-1 text-xs text-brandOrange font-semibold mt-2">
-                Explore Oven &amp; Stove Repair <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"
-                  fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
-                  </path>
-                </svg>
-              </span>
-            </div>
-          </a>
-
-          <!-- Microwave Card -->
-          <a href="<?php echo $base_url; ?>services/microwave-repair"
-            class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover-lift group flex flex-col justify-between items-center text-center">
-            <div class="h-28 w-full flex items-center justify-center p-2 mb-3 bg-slate-50 rounded-xl overflow-hidden">
-              <img src="img/microwave-repair.webp" alt="Microwave Oven Repair and Installation Service"
-                title="Built-in & Over-the-Range Microwave Repair" width="1536" height="1024" loading="lazy"
-                decoding="async"
-                class="object-cover h-full w-full rounded-lg group-hover:scale-105 transition-transform duration-300">
-            </div>
-            <div>
-              <h3
-                class="font-heading font-bold text-slate-800 text-sm mb-1 group-hover:text-brandOrange transition-colors">
-                Microwave Repair
-              </h3>
-              <span class="inline-flex items-center gap-1 text-xs text-brandOrange font-semibold mt-2">
-                Explore Microwave Repair <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"
-                  fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
-                  </path>
-                </svg>
-              </span>
-            </div>
-          </a>
-
+        <!-- Section Header (Centered with Brand Orange Accent) -->
+        <div class="max-w-3xl mx-auto text-center mb-10">
+          <span class="text-brandOrange font-extrabold text-xs uppercase tracking-widest block mb-1">SAME-DAY LOCAL DISPATCH</span>
+          <h2 class="text-2xl sm:text-4xl font-heading font-black text-brandDarkBlue uppercase tracking-tight mb-2">
+            WE REPAIR ALL MAJOR APPLIANCES
+          </h2>
+          <p class="text-slate-600 text-xs sm:text-base max-w-2xl mx-auto mb-4 font-medium">
+            Fast, reliable diagnostic &amp; repair services across Toronto &amp; the GTA. Diagnostic fee waived with repair.
+          </p>
+          <div class="w-20 h-1 bg-brandOrange mx-auto rounded-full"></div>
         </div>
+
+        <style>
+          /* Strict Google Store Carousel Styling - 5 Boxes Layout */
+          .google-carousel-wrap {
+            position: relative;
+            width: 100%;
+          }
+          .google-carousel-track {
+            display: flex !important;
+            flex-wrap: nowrap !important;
+            gap: 16px !important;
+            overflow-x: auto !important;
+            overflow-y: hidden !important;
+            scroll-behavior: smooth !important;
+            -webkit-overflow-scrolling: touch !important;
+            scrollbar-width: none !important;
+            padding: 6px 4px 20px 4px !important;
+          }
+          .google-carousel-track::-webkit-scrollbar {
+            display: none !important;
+          }
+          
+          /* Strict 5-Box Card Sizing */
+          .google-card {
+            flex: 0 0 200px !important;
+            width: 200px !important;
+            min-width: 200px !important;
+            max-width: 200px !important;
+            text-decoration: none !important;
+            display: flex !important;
+            flex-direction: column !important;
+            transition: transform 0.25s ease;
+            box-sizing: border-box !important;
+          }
+          @media (min-width: 640px) {
+            .google-card {
+              flex: 0 0 215px !important;
+              width: 215px !important;
+              min-width: 215px !important;
+              max-width: 215px !important;
+            }
+          }
+          @media (min-width: 1024px) {
+            .google-card {
+              flex: 0 0 228px !important;
+              width: 228px !important;
+              min-width: 228px !important;
+              max-width: 228px !important;
+            }
+          }
+          .google-card:hover {
+            transform: translateY(-4px);
+          }
+          
+          /* Top Image Stage - Google Store Stage with 265px Height & 45px Padding */
+          .google-card-stage {
+            width: 100%;
+            height: 265px;
+            border-radius: 28px;
+            background: #f8f9fa;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #edf0f3;
+            padding: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            box-sizing: border-box !important;
+          }
+          .google-card:hover .google-card-stage {
+            background-color: #f1f3f6;
+            border-color: #e2e8f0;
+            box-shadow: 0 10px 24px rgba(10, 46, 82, 0.08);
+          }
+          .google-img-box {
+            width: 100%;
+            height: 100%;
+            border-radius: 18px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+            background: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .google-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+          }
+          .google-card:hover .google-img-box img {
+            transform: scale(1.06);
+          }
+
+          /* Floating Circular Arrows matching Google Store Reference */
+          .google-floating-arrow {
+            position: absolute;
+            top: 132px;
+            transform: translateY(-50%);
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: #ffffff;
+            border: 1px solid #dadce0;
+            box-shadow: 0 3px 12px rgba(60, 64, 67, 0.18);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #202124;
+            cursor: pointer;
+            z-index: 30;
+            transition: all 0.2s ease;
+          }
+          .google-floating-arrow:hover {
+            background: #ffffff;
+            color: #1a73e8;
+            border-color: #1a73e8;
+            box-shadow: 0 5px 16px rgba(26, 115, 232, 0.25);
+            transform: translateY(-50%) scale(1.08);
+          }
+          .google-floating-arrow:active {
+            transform: translateY(-50%) scale(0.95);
+          }
+        </style>
+
+        <div class="google-carousel-wrap">
+          
+          <!-- Prev Floating Circular Button (Floating Left) -->
+          <button type="button" id="slider-prev-btn" onclick="slideGoogleCarousel('prev')" aria-label="Previous Appliance Services"
+            class="google-floating-arrow -left-3 sm:-left-5 opacity-0 pointer-events-none">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+          </button>
+
+          <!-- Next Floating Circular Button (Floating Right - Exact Google Store Arrow) -->
+          <button type="button" id="slider-next-btn" onclick="slideGoogleCarousel('next')" aria-label="Next Appliance Services"
+            class="google-floating-arrow -right-3 sm:-right-5">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+          </button>
+
+          <!-- Google Store Carousel Track (5 Boxes Layout) -->
+          <div id="services-slider-track" class="google-carousel-track">
+            
+            <!-- 1. Refrigerator -->
+            <a href="<?php echo $base_url; ?>services/fridge-repair" class="google-card group">
+              <div class="google-card-stage">
+                <div class="google-img-box">
+                  <img src="img/refrigerator-repair-service.webp" alt="Refrigerator Repair in Toronto & GTA" width="798" height="448" loading="lazy" decoding="async">
+                </div>
+              </div>
+              <div class="pt-3.5 text-left">
+                <h3 class="font-heading font-extrabold text-slate-900 text-[17px] group-hover:text-brandOrange transition-colors leading-snug">Refrigerator Repair</h3>
+                <div class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#1a73e8] group-hover:text-brandOrange transition-colors mt-2">
+                  <span>Explore Refrigerator</span>
+                  <svg class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+                </div>
+              </div>
+            </a>
+
+            <!-- 2. Washer -->
+            <a href="<?php echo $base_url; ?>services/washer-repair" class="google-card group">
+              <div class="google-card-stage">
+                <div class="google-img-box">
+                  <img src="img/washing-machine-studio.webp?v=5" alt="Washing Machine Repair GTA" width="798" height="448" loading="lazy" decoding="async">
+                </div>
+              </div>
+              <div class="pt-3.5 text-left">
+                <h3 class="font-heading font-extrabold text-slate-900 text-[17px] group-hover:text-brandOrange transition-colors leading-snug">Washing Machine Repair</h3>
+                <div class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#1a73e8] group-hover:text-brandOrange transition-colors mt-2">
+                  <span>Explore Washer</span>
+                  <svg class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+                </div>
+              </div>
+            </a>
+
+            <!-- 3. Coffee Machine -->
+            <a href="<?php echo $base_url; ?>services/coffee-machine-repair" class="google-card group">
+              <div class="google-card-stage">
+                <div class="google-img-box">
+                  <img src="img/coffee-machine-studio.webp?v=4" alt="Coffee Machine Repair Service Toronto" width="798" height="448" loading="lazy" decoding="async">
+                </div>
+              </div>
+              <div class="pt-3.5 text-left">
+                <h3 class="font-heading font-extrabold text-slate-900 text-[17px] group-hover:text-brandOrange transition-colors leading-snug">Coffee Machine Repair</h3>
+                <div class="inline-flex items-center gap-1.5 text-sm font-semibold text-brandOrange group-hover:text-brandOrangeHover transition-colors mt-2">
+                  <span>Explore Coffee Repair</span>
+                  <svg class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+                </div>
+              </div>
+            </a>
+
+            <!-- 4. Dishwasher -->
+            <a href="<?php echo $base_url; ?>services/dishwasher-repair" class="google-card group">
+              <div class="google-card-stage">
+                <div class="google-img-box">
+                  <img src="img/open-dishwasher-repair.webp" alt="Dishwasher Diagnostic and Repair" width="798" height="448" loading="lazy" decoding="async">
+                </div>
+              </div>
+              <div class="pt-3.5 text-left">
+                <h3 class="font-heading font-extrabold text-slate-900 text-[17px] group-hover:text-brandOrange transition-colors leading-snug">Dishwasher Repair</h3>
+                <div class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#1a73e8] group-hover:text-brandOrange transition-colors mt-2">
+                  <span>Explore Dishwasher</span>
+                  <svg class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+                </div>
+              </div>
+            </a>
+
+            <!-- 5. Dryer -->
+            <a href="<?php echo $base_url; ?>services/dryer-repair" class="google-card group">
+              <div class="google-card-stage">
+                <div class="google-img-box">
+                  <img src="img/clothes-dryer-repair-service.webp" alt="Clothes Dryer Repair Service" width="798" height="448" loading="lazy" decoding="async">
+                </div>
+              </div>
+              <div class="pt-3.5 text-left">
+                <h3 class="font-heading font-extrabold text-slate-900 text-[17px] group-hover:text-brandOrange transition-colors leading-snug">Dryer Repair &amp; Venting</h3>
+                <div class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#1a73e8] group-hover:text-brandOrange transition-colors mt-2">
+                  <span>Explore Dryer</span>
+                  <svg class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+                </div>
+              </div>
+            </a>
+
+            <!-- 6. Stove & Oven -->
+            <a href="<?php echo $base_url; ?>services/stove-repair" class="google-card group">
+              <div class="google-card-stage">
+                <div class="google-img-box">
+                  <img src="img/oven-stove-repair-service.webp" alt="Oven and Stove Repair GTA" width="798" height="448" loading="lazy" decoding="async">
+                </div>
+              </div>
+              <div class="pt-3.5 text-left">
+                <h3 class="font-heading font-extrabold text-slate-900 text-[17px] group-hover:text-brandOrange transition-colors leading-snug">Oven &amp; Stove Repair</h3>
+                <div class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#1a73e8] group-hover:text-brandOrange transition-colors mt-2">
+                  <span>Explore Oven &amp; Stove</span>
+                  <svg class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+                </div>
+              </div>
+            </a>
+
+            <!-- 7. Microwave -->
+            <a href="<?php echo $base_url; ?>services/microwave-repair" class="google-card group">
+              <div class="google-card-stage">
+                <div class="google-img-box">
+                  <img src="img/microwave-repair-service.webp" alt="Microwave Oven Repair Toronto" width="1536" height="1024" loading="lazy" decoding="async">
+                </div>
+              </div>
+              <div class="pt-3.5 text-left">
+                <h3 class="font-heading font-extrabold text-slate-900 text-[17px] group-hover:text-brandOrange transition-colors leading-snug">Microwave Repair</h3>
+                <div class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#1a73e8] group-hover:text-brandOrange transition-colors mt-2">
+                  <span>Explore Microwave</span>
+                  <svg class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Google Store Carousel JavaScript Engine -->
+        <script>
+          window.slideGoogleCarousel = function(direction) {
+            var track = document.getElementById('services-slider-track');
+            if (!track) return;
+            var step = 244;
+            if (window.innerWidth >= 1024) {
+              step = (228 + 16) * 2; // ~488px (slide 2 cards on desktop)
+            } else if (window.innerWidth >= 640) {
+              step = (215 + 16);
+            } else {
+              step = (200 + 16);
+            }
+            track.scrollBy({
+              left: direction === 'next' ? step : -step,
+              behavior: 'smooth'
+            });
+          };
+
+          window.updateGoogleCarouselButtons = function() {
+            var track = document.getElementById('services-slider-track');
+            var prevBtn = document.getElementById('slider-prev-btn');
+            var nextBtn = document.getElementById('slider-next-btn');
+            if (!track) return;
+
+            var scrollLeft = track.scrollLeft;
+            var maxScroll = track.scrollWidth - track.clientWidth;
+            var isAtStart = scrollLeft <= 10;
+            var isAtEnd = scrollLeft >= (maxScroll - 15);
+
+            if (prevBtn) {
+              prevBtn.style.opacity = isAtStart ? '0' : '1';
+              prevBtn.style.pointerEvents = isAtStart ? 'none' : 'auto';
+            }
+            if (nextBtn) {
+              nextBtn.style.opacity = isAtEnd ? '0' : '1';
+              nextBtn.style.pointerEvents = isAtEnd ? 'none' : 'auto';
+            }
+          };
+
+          document.addEventListener('DOMContentLoaded', function () {
+            var track = document.getElementById('services-slider-track');
+            if (!track) return;
+
+            track.addEventListener('scroll', window.updateGoogleCarouselButtons, { passive: true });
+            window.addEventListener('resize', window.updateGoogleCarouselButtons, { passive: true });
+
+            // Smooth touch and drag support
+            var isDown = false;
+            var startX = 0;
+            var scrollStart = 0;
+            var hasDragged = false;
+
+            track.addEventListener('mousedown', function (e) {
+              isDown = true;
+              hasDragged = false;
+              startX = e.pageX - track.offsetLeft;
+              scrollStart = track.scrollLeft;
+              track.style.cursor = 'grabbing';
+            });
+
+            window.addEventListener('mouseup', function () {
+              if (!isDown) return;
+              isDown = false;
+              if (track) track.style.cursor = 'grab';
+              setTimeout(function () { hasDragged = false; }, 50);
+            });
+
+            track.addEventListener('mousemove', function (e) {
+              if (!isDown) return;
+              var x = e.pageX - track.offsetLeft;
+              var walk = x - startX;
+              if (Math.abs(walk) > 5) {
+                hasDragged = true;
+                e.preventDefault();
+                track.scrollLeft = scrollStart - (walk * 1.4);
+              }
+            });
+
+            // Prevent link navigation if drag occurred
+            var links = track.querySelectorAll('a');
+            links.forEach(function (link) {
+              link.addEventListener('click', function (e) {
+                if (hasDragged) {
+                  e.preventDefault();
+                  e.stopPropagation();
+                }
+              });
+            });
+
+            window.updateGoogleCarouselButtons();
+          });
+
+          // Run immediately in case DOM is already ready
+          setTimeout(function() {
+            if (window.updateGoogleCarouselButtons) {
+              window.updateGoogleCarouselButtons();
+            }
+          }, 150);
+        </script>
 
       </div>
     </section>
@@ -615,6 +836,126 @@ include 'head.php';
       .brand-track-right:hover {
         animation-play-state: paused !important;
       }
+
+      /* Authentic Brand Badges Styling */
+      .brand-pill {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 0.5rem !important;
+        padding: 0.55rem 1.25rem !important;
+        border-radius: 9999px !important;
+        font-family: inherit !important;
+        font-weight: 800 !important;
+        font-size: 0.8125rem !important;
+        letter-spacing: 0.05em !important;
+        text-transform: uppercase !important;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+        transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        cursor: default !important;
+        white-space: nowrap !important;
+        border-width: 1.5px !important;
+        border-style: solid !important;
+      }
+      .brand-pill .brand-dot {
+        width: 7px !important;
+        height: 7px !important;
+        border-radius: 9999px !important;
+        flex-shrink: 0 !important;
+        transition: transform 0.25s ease, background-color 0.25s ease !important;
+      }
+      .brand-pill:hover {
+        transform: translateY(-2px) scale(1.03) !important;
+        box-shadow: 0 6px 18px rgba(10, 46, 82, 0.12) !important;
+      }
+      .brand-pill:hover .brand-dot {
+        transform: scale(1.25) !important;
+      }
+
+      /* Specific Brand Color Palettes */
+      .brand-samsung { color: #034ea2 !important; border-color: #c8daf2 !important; background: #f0f5fc !important; }
+      .brand-samsung .brand-dot { background: #034ea2 !important; }
+      .brand-samsung:hover { background: #034ea2 !important; color: #ffffff !important; border-color: #034ea2 !important; }
+      .brand-samsung:hover .brand-dot { background: #ffffff !important; }
+
+      .brand-lg { color: #a50034 !important; border-color: #fad0dc !important; background: #fdf0f4 !important; }
+      .brand-lg .brand-dot { background: #a50034 !important; }
+      .brand-lg:hover { background: #a50034 !important; color: #ffffff !important; border-color: #a50034 !important; }
+      .brand-lg:hover .brand-dot { background: #ffffff !important; }
+
+      .brand-whirlpool { color: #003865 !important; border-color: #cce0f0 !important; background: #f0f5fa !important; }
+      .brand-whirlpool .brand-dot { background: #edaa00 !important; }
+      .brand-whirlpool:hover { background: #003865 !important; color: #ffffff !important; border-color: #003865 !important; }
+      .brand-whirlpool:hover .brand-dot { background: #edaa00 !important; }
+
+      .brand-bosch { color: #e20015 !important; border-color: #facfd3 !important; background: #fdf0f1 !important; }
+      .brand-bosch .brand-dot { background: #e20015 !important; }
+      .brand-bosch:hover { background: #e20015 !important; color: #ffffff !important; border-color: #e20015 !important; }
+      .brand-bosch:hover .brand-dot { background: #ffffff !important; }
+
+      .brand-ge { color: #085a9c !important; border-color: #cbe2f5 !important; background: #f0f6fb !important; }
+      .brand-ge .brand-dot { background: #085a9c !important; }
+      .brand-ge:hover { background: #085a9c !important; color: #ffffff !important; border-color: #085a9c !important; }
+      .brand-ge:hover .brand-dot { background: #ffffff !important; }
+
+      .brand-maytag { color: #002f6c !important; border-color: #cad9ec !important; background: #f0f4fa !important; }
+      .brand-maytag .brand-dot { background: #002f6c !important; }
+      .brand-maytag:hover { background: #002f6c !important; color: #ffffff !important; border-color: #002f6c !important; }
+      .brand-maytag:hover .brand-dot { background: #ffffff !important; }
+
+      .brand-kitchenaid { color: #b71a2b !important; border-color: #f8cfd4 !important; background: #fdf1f3 !important; }
+      .brand-kitchenaid .brand-dot { background: #b71a2b !important; }
+      .brand-kitchenaid:hover { background: #b71a2b !important; color: #ffffff !important; border-color: #b71a2b !important; }
+      .brand-kitchenaid:hover .brand-dot { background: #ffffff !important; }
+
+      .brand-frigidaire { color: #004b87 !important; border-color: #c8ddf1 !important; background: #eff5fb !important; }
+      .brand-frigidaire .brand-dot { background: #004b87 !important; }
+      .brand-frigidaire:hover { background: #004b87 !important; color: #ffffff !important; border-color: #004b87 !important; }
+      .brand-frigidaire:hover .brand-dot { background: #ffffff !important; }
+
+      .brand-electrolux { color: #011e41 !important; border-color: #cad6e5 !important; background: #f0f3f8 !important; }
+      .brand-electrolux .brand-dot { background: #011e41 !important; }
+      .brand-electrolux:hover { background: #011e41 !important; color: #ffffff !important; border-color: #011e41 !important; }
+      .brand-electrolux:hover .brand-dot { background: #ffffff !important; }
+
+      .brand-miele { color: #c41230 !important; border-color: #f8ced5 !important; background: #fdf0f3 !important; }
+      .brand-miele .brand-dot { background: #c41230 !important; }
+      .brand-miele:hover { background: #c41230 !important; color: #ffffff !important; border-color: #c41230 !important; }
+      .brand-miele:hover .brand-dot { background: #ffffff !important; }
+
+      .brand-subzero { color: #1e2022 !important; border-color: #d8dce2 !important; background: #f5f6f8 !important; }
+      .brand-subzero .brand-dot { background: #c8102e !important; }
+      .brand-subzero:hover { background: #1e2022 !important; color: #ffffff !important; border-color: #1e2022 !important; }
+      .brand-subzero:hover .brand-dot { background: #c8102e !important; }
+
+      .brand-kenmore { color: #005a9c !important; border-color: #cbe2f4 !important; background: #f0f6fb !important; }
+      .brand-kenmore .brand-dot { background: #005a9c !important; }
+      .brand-kenmore:hover { background: #005a9c !important; color: #ffffff !important; border-color: #005a9c !important; }
+      .brand-kenmore:hover .brand-dot { background: #ffffff !important; }
+
+      .brand-viking { color: #6b1d2f !important; border-color: #eecfd6 !important; background: #fbf1f3 !important; }
+      .brand-viking .brand-dot { background: #6b1d2f !important; }
+      .brand-viking:hover { background: #6b1d2f !important; color: #ffffff !important; border-color: #6b1d2f !important; }
+      .brand-viking:hover .brand-dot { background: #ffffff !important; }
+
+      .brand-jennair { color: #111827 !important; border-color: #d1d5db !important; background: #f8f9fa !important; }
+      .brand-jennair .brand-dot { background: #d97706 !important; }
+      .brand-jennair:hover { background: #111827 !important; color: #ffffff !important; border-color: #111827 !important; }
+      .brand-jennair:hover .brand-dot { background: #f59e0b !important; }
+
+      .brand-dacor { color: #1f2937 !important; border-color: #d1d5db !important; background: #f3f4f6 !important; }
+      .brand-dacor .brand-dot { background: #2563eb !important; }
+      .brand-dacor:hover { background: #1f2937 !important; color: #ffffff !important; border-color: #1f2937 !important; }
+      .brand-dacor:hover .brand-dot { background: #60a5fa !important; }
+
+      .brand-amana { color: #006a4e !important; border-color: #c9e5db !important; background: #eff7f4 !important; }
+      .brand-amana .brand-dot { background: #006a4e !important; }
+      .brand-amana:hover { background: #006a4e !important; color: #ffffff !important; border-color: #006a4e !important; }
+      .brand-amana:hover .brand-dot { background: #ffffff !important; }
+
+      .brand-speedqueen { color: #ba0c2f !important; border-color: #f8ccd5 !important; background: #fdf0f3 !important; }
+      .brand-speedqueen .brand-dot { background: #ba0c2f !important; }
+      .brand-speedqueen:hover { background: #ba0c2f !important; color: #ffffff !important; border-color: #ba0c2f !important; }
+      .brand-speedqueen:hover .brand-dot { background: #ffffff !important; }
     </style>
     <section class="py-12 bg-white border-b border-brandBorder overflow-hidden" id="brands">
       <div class="max-w-7xl mx-auto px-4 text-center mb-8">
@@ -642,154 +983,52 @@ include 'head.php';
         <!-- Marquee Row 1 (Moves Left) -->
         <div class="brand-track-left space-x-4 py-1">
           <div class="flex space-x-3 sm:space-x-4 shrink-0 items-center">
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>SAMSUNG
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>LG
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>WHIRLPOOL
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>BOSCH
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>GE APPLIANCES
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>MAYTAG
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>KITCHENAID
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>FRIGIDAIRE
-            </span>
+            <span class="brand-pill brand-samsung"><span class="brand-dot"></span>SAMSUNG</span>
+            <span class="brand-pill brand-lg"><span class="brand-dot"></span>LG</span>
+            <span class="brand-pill brand-whirlpool"><span class="brand-dot"></span>WHIRLPOOL</span>
+            <span class="brand-pill brand-bosch"><span class="brand-dot"></span>BOSCH</span>
+            <span class="brand-pill brand-ge"><span class="brand-dot"></span>GE APPLIANCES</span>
+            <span class="brand-pill brand-maytag"><span class="brand-dot"></span>MAYTAG</span>
+            <span class="brand-pill brand-kitchenaid"><span class="brand-dot"></span>KITCHENAID</span>
+            <span class="brand-pill brand-frigidaire"><span class="brand-dot"></span>FRIGIDAIRE</span>
           </div>
           <!-- Duplicate Row 1 -->
           <div class="flex space-x-3 sm:space-x-4 shrink-0 items-center">
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>SAMSUNG
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>LG
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>WHIRLPOOL
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>BOSCH
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>GE APPLIANCES
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>MAYTAG
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>KITCHENAID
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandDarkBlue hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span>FRIGIDAIRE
-            </span>
+            <span class="brand-pill brand-samsung"><span class="brand-dot"></span>SAMSUNG</span>
+            <span class="brand-pill brand-lg"><span class="brand-dot"></span>LG</span>
+            <span class="brand-pill brand-whirlpool"><span class="brand-dot"></span>WHIRLPOOL</span>
+            <span class="brand-pill brand-bosch"><span class="brand-dot"></span>BOSCH</span>
+            <span class="brand-pill brand-ge"><span class="brand-dot"></span>GE APPLIANCES</span>
+            <span class="brand-pill brand-maytag"><span class="brand-dot"></span>MAYTAG</span>
+            <span class="brand-pill brand-kitchenaid"><span class="brand-dot"></span>KITCHENAID</span>
+            <span class="brand-pill brand-frigidaire"><span class="brand-dot"></span>FRIGIDAIRE</span>
           </div>
         </div>
 
         <!-- Marquee Row 2 (Moves Right) -->
         <div class="brand-track-right space-x-4 py-1">
           <div class="flex space-x-3 sm:space-x-4 shrink-0 items-center">
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>ELECTROLUX
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>MIELE
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>SUB-ZERO
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>KENMORE
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>VIKING
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>JENNAIR
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>DACOR
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>AMANA
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>SPEED QUEEN
-            </span>
+            <span class="brand-pill brand-electrolux"><span class="brand-dot"></span>ELECTROLUX</span>
+            <span class="brand-pill brand-miele"><span class="brand-dot"></span>MIELE</span>
+            <span class="brand-pill brand-subzero"><span class="brand-dot"></span>SUB-ZERO</span>
+            <span class="brand-pill brand-kenmore"><span class="brand-dot"></span>KENMORE</span>
+            <span class="brand-pill brand-viking"><span class="brand-dot"></span>VIKING</span>
+            <span class="brand-pill brand-jennair"><span class="brand-dot"></span>JENNAIR</span>
+            <span class="brand-pill brand-dacor"><span class="brand-dot"></span>DACOR</span>
+            <span class="brand-pill brand-amana"><span class="brand-dot"></span>AMANA</span>
+            <span class="brand-pill brand-speedqueen"><span class="brand-dot"></span>SPEED QUEEN</span>
           </div>
           <!-- Duplicate Row 2 -->
           <div class="flex space-x-3 sm:space-x-4 shrink-0 items-center">
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>ELECTROLUX
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>MIELE
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>SUB-ZERO
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>KENMORE
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>VIKING
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>JENNAIR
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>DACOR
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>AMANA
-            </span>
-            <span
-              class="inline-flex items-center gap-2 bg-slate-50 hover:bg-brandOrange hover:text-white px-5 py-2.5 rounded-full border border-slate-200 text-brandDarkBlue font-heading font-extrabold text-xs sm:text-sm shadow-xs uppercase tracking-wider transition-all duration-200">
-              <span class="w-1.5 h-1.5 rounded-full bg-brandBlue"></span>SPEED QUEEN
-            </span>
+            <span class="brand-pill brand-electrolux"><span class="brand-dot"></span>ELECTROLUX</span>
+            <span class="brand-pill brand-miele"><span class="brand-dot"></span>MIELE</span>
+            <span class="brand-pill brand-subzero"><span class="brand-dot"></span>SUB-ZERO</span>
+            <span class="brand-pill brand-kenmore"><span class="brand-dot"></span>KENMORE</span>
+            <span class="brand-pill brand-viking"><span class="brand-dot"></span>VIKING</span>
+            <span class="brand-pill brand-jennair"><span class="brand-dot"></span>JENNAIR</span>
+            <span class="brand-pill brand-dacor"><span class="brand-dot"></span>DACOR</span>
+            <span class="brand-pill brand-amana"><span class="brand-dot"></span>AMANA</span>
+            <span class="brand-pill brand-speedqueen"><span class="brand-dot"></span>SPEED QUEEN</span>
           </div>
         </div>
       </div>
