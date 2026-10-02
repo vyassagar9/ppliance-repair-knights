@@ -145,6 +145,28 @@ $disable_global_schema = true;
       background-color: #FF6B00 !important;
       color: #FFFFFF !important;
       border-color: #FF6B00 !important;
+      box-shadow: 0 4px 12px rgba(255, 107, 0, 0.22) !important;
+    }
+    #problem-tabs {
+      display: flex !important;
+      gap: 0.5rem !important;
+    }
+    @media (max-width: 639px) {
+      #problem-tabs {
+        overflow-x: auto !important;
+        flex-wrap: nowrap !important;
+        -webkit-overflow-scrolling: touch;
+        padding-top: 0.25rem;
+        padding-bottom: 0.5rem;
+      }
+    }
+    @media (min-width: 640px) {
+      #problem-tabs {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        overflow-x: visible !important;
+        gap: 0.625rem !important;
+      }
     }
     .no-scrollbar::-webkit-scrollbar {
       display: none;
@@ -152,6 +174,63 @@ $disable_global_schema = true;
     .no-scrollbar {
       -ms-overflow-style: none;
       scrollbar-width: none;
+    }
+    /* Responsive Appliance Row: 2-Col Grid on Mobile, Carousel on Tablet & Desktop */
+    #appliance-scroll-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+    .appliance-carousel-card {
+      width: 100%;
+    }
+    .appliance-carousel-card:last-child {
+      grid-column: span 2;
+      max-width: calc(50% - 0.375rem);
+      justify-self: center;
+    }
+    #appliance-track-wrapper {
+      display: none;
+    }
+
+    @media (min-width: 640px) {
+      #appliance-scroll-row {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        gap: 1rem !important;
+        padding-top: 0.25rem;
+        padding-bottom: 0.5rem;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        cursor: grab;
+      }
+      #appliance-scroll-row:active {
+        cursor: grabbing;
+      }
+      .appliance-carousel-card {
+        flex: 0 0 calc((100% - 2rem) / 3) !important;
+        width: calc((100% - 2rem) / 3) !important;
+        min-width: 170px !important;
+        scroll-snap-align: start;
+      }
+      .appliance-carousel-card:last-child {
+        grid-column: auto !important;
+        max-width: none !important;
+        justify-self: auto !important;
+      }
+      #appliance-track-wrapper {
+        display: flex !important;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .appliance-carousel-card {
+        flex: 0 0 calc((100% - 5rem) / 6) !important;
+        width: calc((100% - 5rem) / 6) !important;
+        min-width: 0 !important;
+      }
     }
     .accordion-content-open {
       display: block !important;
@@ -545,79 +624,108 @@ $disable_global_schema = true;
           </p>
         </div>
 
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
-          
-          <!-- Item 1: Refrigerator -->
-          <?php 
-            $fridge_link = ($slug === 'toronto-appliance-repair' || (isset($loc['city_name']) && strtolower($loc['city_name']) === 'toronto')) 
-              ? ($base_url . 'locations/toronto/refrigerator-repair') 
-              : ($base_url . 'services/fridge-repair'); 
-          ?>
-          <a href="<?php echo $fridge_link; ?>" class="group bg-white rounded-xl p-3 sm:p-4 border border-slate-200/80 hover:border-brandOrange hover:shadow-md transition-all text-center flex flex-col items-center justify-between shadow-2xs">
-            <div class="w-full h-20 sm:h-28 bg-slate-50/80 rounded-lg p-2 flex items-center justify-center mb-2 overflow-hidden">
-              <img src="<?php echo $base_url; ?>img/refrigerator-repair-service.webp" alt="Refrigerator Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" width="200" height="200" loading="lazy" decoding="async" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
-            </div>
-            <div>
-              <h3 class="font-heading font-bold text-slate-900 text-sm sm:text-base leading-tight group-hover:text-brandOrange transition-colors">Refrigerator</h3>
-              <span class="text-xs font-bold text-brandOrange block mt-1">Repair Service</span>
-            </div>
-          </a>
+        <!-- Appliances Carousel / Scrollable Row with 7 Items (2-Col Grid on Mobile, 6-Box Carousel on Desktop) -->
+        <div class="relative group/scroll">
+          <div id="appliance-scroll-row" class="no-scrollbar select-none" style="scrollbar-width: none; -ms-overflow-style: none;">
+            
+            <!-- Item 1: Refrigerator -->
+            <?php 
+              $fridge_link = ($slug === 'toronto-appliance-repair' || (isset($loc['city_name']) && strtolower($loc['city_name']) === 'toronto')) 
+                ? ($base_url . 'locations/toronto/refrigerator-repair') 
+                : ($base_url . 'services/fridge-repair'); 
+            ?>
+            <a href="<?php echo $fridge_link; ?>" class="appliance-carousel-card snap-start group bg-white rounded-xl p-3 sm:p-4 border border-slate-200/80 hover:border-brandOrange hover:shadow-md transition-all text-center flex flex-col items-center justify-between shadow-2xs">
+              <div class="w-full h-20 sm:h-28 bg-slate-50/80 rounded-lg p-2 flex items-center justify-center mb-2 overflow-hidden">
+                <img src="<?php echo $base_url; ?>img/refrigerator-repair-service.webp" alt="Refrigerator Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" width="200" height="200" loading="lazy" decoding="async" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300 pointer-events-none">
+              </div>
+              <div>
+                <h3 class="font-heading font-bold text-slate-900 text-sm sm:text-base leading-tight group-hover:text-brandOrange transition-colors">Refrigerator</h3>
+                <span class="text-xs font-bold text-brandOrange block mt-1">Repair Service</span>
+              </div>
+            </a>
 
-          <!-- Item 2: Stove & Oven -->
-          <a href="<?php echo $base_url; ?>services/stove-repair" class="group bg-white rounded-xl p-3 sm:p-4 border border-slate-200/80 hover:border-brandOrange hover:shadow-md transition-all text-center flex flex-col items-center justify-between shadow-2xs">
-            <div class="w-full h-20 sm:h-28 bg-slate-50/80 rounded-lg p-2 flex items-center justify-center mb-2 overflow-hidden">
-              <img src="<?php echo $base_url; ?>img/oven-stove-repair-service.webp" alt="Stove and Oven Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" width="200" height="200" loading="lazy" decoding="async" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
-            </div>
-            <div>
-              <h3 class="font-heading font-bold text-slate-900 text-sm sm:text-base leading-tight group-hover:text-brandOrange transition-colors">Stove &amp; Oven</h3>
-              <span class="text-xs font-bold text-brandOrange block mt-1">Repair Service</span>
-            </div>
-          </a>
+            <!-- Item 2: Coffee Machine -->
+            <a href="<?php echo $base_url; ?>services/coffee-machine-repair" class="appliance-carousel-card snap-start group bg-white rounded-xl p-3 sm:p-4 border border-slate-200/80 hover:border-brandOrange hover:shadow-md transition-all text-center flex flex-col items-center justify-between shadow-2xs">
+              <div class="w-full h-20 sm:h-28 bg-slate-50/80 rounded-lg p-2 flex items-center justify-center mb-2 overflow-hidden">
+                <img src="<?php echo $base_url; ?>img/coffee-machine-studio.webp" alt="Coffee Machine Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" width="200" height="200" loading="lazy" decoding="async" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300 pointer-events-none">
+              </div>
+              <div>
+                <h3 class="font-heading font-bold text-slate-900 text-sm sm:text-base leading-tight group-hover:text-brandOrange transition-colors">Coffee Machine</h3>
+                <span class="text-xs font-bold text-brandOrange block mt-1">Repair Service</span>
+              </div>
+            </a>
 
-          <!-- Item 3: Washer -->
-          <a href="<?php echo $base_url; ?>services/washer-repair" class="group bg-white rounded-xl p-3 sm:p-4 border border-slate-200/80 hover:border-brandOrange hover:shadow-md transition-all text-center flex flex-col items-center justify-between shadow-2xs">
-            <div class="w-full h-20 sm:h-28 bg-slate-50/80 rounded-lg p-2 flex items-center justify-center mb-2 overflow-hidden">
-              <img src="<?php echo $base_url; ?>img/washing-machine-repair-service.webp" alt="Washer Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" width="200" height="200" loading="lazy" decoding="async" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
-            </div>
-            <div>
-              <h3 class="font-heading font-bold text-slate-900 text-sm sm:text-base leading-tight group-hover:text-brandOrange transition-colors">Washer</h3>
-              <span class="text-xs font-bold text-brandOrange block mt-1">Repair Service</span>
-            </div>
-          </a>
+            <!-- Item 3: Washer -->
+            <a href="<?php echo $base_url; ?>services/washer-repair" class="appliance-carousel-card snap-start group bg-white rounded-xl p-3 sm:p-4 border border-slate-200/80 hover:border-brandOrange hover:shadow-md transition-all text-center flex flex-col items-center justify-between shadow-2xs">
+              <div class="w-full h-20 sm:h-28 bg-slate-50/80 rounded-lg p-2 flex items-center justify-center mb-2 overflow-hidden">
+                <img src="<?php echo $base_url; ?>img/washing-machine-repair-service.webp" alt="Washer Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" width="200" height="200" loading="lazy" decoding="async" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300 pointer-events-none">
+              </div>
+              <div>
+                <h3 class="font-heading font-bold text-slate-900 text-sm sm:text-base leading-tight group-hover:text-brandOrange transition-colors">Washer</h3>
+                <span class="text-xs font-bold text-brandOrange block mt-1">Repair Service</span>
+              </div>
+            </a>
 
-          <!-- Item 4: Dryer -->
-          <a href="<?php echo $base_url; ?>services/dryer-repair" class="group bg-white rounded-xl p-3 sm:p-4 border border-slate-200/80 hover:border-brandOrange hover:shadow-md transition-all text-center flex flex-col items-center justify-between shadow-2xs">
-            <div class="w-full h-20 sm:h-28 bg-slate-50/80 rounded-lg p-2 flex items-center justify-center mb-2 overflow-hidden">
-              <img src="<?php echo $base_url; ?>img/clothes-dryer-repair-service.webp" alt="Dryer Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" width="200" height="200" loading="lazy" decoding="async" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
-            </div>
-            <div>
-              <h3 class="font-heading font-bold text-slate-900 text-sm sm:text-base leading-tight group-hover:text-brandOrange transition-colors">Dryer</h3>
-              <span class="text-xs font-bold text-brandOrange block mt-1">Repair Service</span>
-            </div>
-          </a>
+            <!-- Item 4: Dryer -->
+            <a href="<?php echo $base_url; ?>services/dryer-repair" class="appliance-carousel-card snap-start group bg-white rounded-xl p-3 sm:p-4 border border-slate-200/80 hover:border-brandOrange hover:shadow-md transition-all text-center flex flex-col items-center justify-between shadow-2xs">
+              <div class="w-full h-20 sm:h-28 bg-slate-50/80 rounded-lg p-2 flex items-center justify-center mb-2 overflow-hidden">
+                <img src="<?php echo $base_url; ?>img/clothes-dryer-repair-service.webp" alt="Dryer Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" width="200" height="200" loading="lazy" decoding="async" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300 pointer-events-none">
+              </div>
+              <div>
+                <h3 class="font-heading font-bold text-slate-900 text-sm sm:text-base leading-tight group-hover:text-brandOrange transition-colors">Dryer</h3>
+                <span class="text-xs font-bold text-brandOrange block mt-1">Repair Service</span>
+              </div>
+            </a>
 
-          <!-- Item 5: Dishwasher -->
-          <a href="<?php echo $base_url; ?>services/dishwasher-repair" class="group bg-white rounded-xl p-3 sm:p-4 border border-slate-200/80 hover:border-brandOrange hover:shadow-md transition-all text-center flex flex-col items-center justify-between shadow-2xs">
-            <div class="w-full h-20 sm:h-28 bg-slate-50/80 rounded-lg p-2 flex items-center justify-center mb-2 overflow-hidden">
-              <img src="<?php echo $base_url; ?>img/open-dishwasher-repair.webp" alt="Dishwasher Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" width="200" height="200" loading="lazy" decoding="async" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
-            </div>
-            <div>
-              <h3 class="font-heading font-bold text-slate-900 text-sm sm:text-base leading-tight group-hover:text-brandOrange transition-colors">Dishwasher</h3>
-              <span class="text-xs font-bold text-brandOrange block mt-1">Repair Service</span>
-            </div>
-          </a>
+            <!-- Item 5: Stove & Oven -->
+            <a href="<?php echo $base_url; ?>services/stove-repair" class="appliance-carousel-card snap-start group bg-white rounded-xl p-3 sm:p-4 border border-slate-200/80 hover:border-brandOrange hover:shadow-md transition-all text-center flex flex-col items-center justify-between shadow-2xs">
+              <div class="w-full h-20 sm:h-28 bg-slate-50/80 rounded-lg p-2 flex items-center justify-center mb-2 overflow-hidden">
+                <img src="<?php echo $base_url; ?>img/oven-stove-repair-service.webp" alt="Stove and Oven Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" width="200" height="200" loading="lazy" decoding="async" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300 pointer-events-none">
+              </div>
+              <div>
+                <h3 class="font-heading font-bold text-slate-900 text-sm sm:text-base leading-tight group-hover:text-brandOrange transition-colors">Stove &amp; Oven</h3>
+                <span class="text-xs font-bold text-brandOrange block mt-1">Repair Service</span>
+              </div>
+            </a>
 
-          <!-- Item 6: Microwave -->
-          <a href="<?php echo $base_url; ?>services/microwave-repair" class="group bg-white rounded-xl p-3 sm:p-4 border border-slate-200/80 hover:border-brandOrange hover:shadow-md transition-all text-center flex flex-col items-center justify-between shadow-2xs">
-            <div class="w-full h-20 sm:h-28 bg-slate-50/80 rounded-lg p-2 flex items-center justify-center mb-2 overflow-hidden">
-              <img src="<?php echo $base_url; ?>img/microwave-repair.webp" alt="Microwave Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" width="200" height="200" loading="lazy" decoding="async" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
-            </div>
-            <div>
-              <h3 class="font-heading font-bold text-slate-900 text-sm sm:text-base leading-tight group-hover:text-brandOrange transition-colors">Microwave</h3>
-              <span class="text-xs font-bold text-brandOrange block mt-1">Repair Service</span>
-            </div>
-          </a>
+            <!-- Item 6: Dishwasher -->
+            <a href="<?php echo $base_url; ?>services/dishwasher-repair" class="appliance-carousel-card snap-start group bg-white rounded-xl p-3 sm:p-4 border border-slate-200/80 hover:border-brandOrange hover:shadow-md transition-all text-center flex flex-col items-center justify-between shadow-2xs">
+              <div class="w-full h-20 sm:h-28 bg-slate-50/80 rounded-lg p-2 flex items-center justify-center mb-2 overflow-hidden">
+                <img src="<?php echo $base_url; ?>img/open-dishwasher-repair.webp" alt="Dishwasher Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" width="200" height="200" loading="lazy" decoding="async" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300 pointer-events-none">
+              </div>
+              <div>
+                <h3 class="font-heading font-bold text-slate-900 text-sm sm:text-base leading-tight group-hover:text-brandOrange transition-colors">Dishwasher</h3>
+                <span class="text-xs font-bold text-brandOrange block mt-1">Repair Service</span>
+              </div>
+            </a>
 
+            <!-- Item 7: Microwave -->
+            <a href="<?php echo $base_url; ?>services/microwave-repair" class="appliance-carousel-card snap-start group bg-white rounded-xl p-3 sm:p-4 border border-slate-200/80 hover:border-brandOrange hover:shadow-md transition-all text-center flex flex-col items-center justify-between shadow-2xs">
+              <div class="w-full h-20 sm:h-28 bg-slate-50/80 rounded-lg p-2 flex items-center justify-center mb-2 overflow-hidden">
+                <img src="<?php echo $base_url; ?>img/microwave-repair.webp" alt="Microwave Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" width="200" height="200" loading="lazy" decoding="async" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300 pointer-events-none">
+              </div>
+              <div>
+                <h3 class="font-heading font-bold text-slate-900 text-sm sm:text-base leading-tight group-hover:text-brandOrange transition-colors">Microwave</h3>
+                <span class="text-xs font-bold text-brandOrange block mt-1">Repair Service</span>
+              </div>
+            </a>
+
+          </div>
+
+          <!-- Horizontal Scroll Progress / Slider Track (Hidden on Mobile, Visible on Tablet & Desktop) -->
+          <div id="appliance-track-wrapper" class="mt-4 sm:mt-5 items-center justify-center gap-3">
+            <button type="button" id="appliance-scroll-left" class="w-8 h-8 rounded-full bg-white border border-slate-200 text-slate-600 hover:text-brandOrange hover:border-brandOrange flex items-center justify-center shadow-xs transition-colors cursor-pointer" aria-label="Scroll left">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            
+            <div id="appliance-scroll-track" class="w-48 sm:w-64 md:w-80 h-2 bg-slate-200/90 rounded-full overflow-hidden relative cursor-pointer shadow-inner">
+              <div id="appliance-scroll-thumb" class="h-full bg-brandOrange rounded-full transition-all duration-75 ease-out shadow-xs" style="width: 35%; transform: translateX(0%);"></div>
+            </div>
+
+            <button type="button" id="appliance-scroll-right" class="w-8 h-8 rounded-full bg-white border border-slate-200 text-slate-600 hover:text-brandOrange hover:border-brandOrange flex items-center justify-center shadow-xs transition-colors cursor-pointer" aria-label="Scroll right">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
         </div>
 
       </div>
@@ -638,30 +746,34 @@ $disable_global_schema = true;
             Select your appliance type below to see common symptoms our licensed technicians encounter and fix daily across <?php echo htmlspecialchars($loc['city_name']); ?> homes.
           </p>
 
-          <!-- Interactive Appliance Switcher Pills (Horizontal Swipe on Mobile, Grid on Tablet/Desktop) -->
+          <!-- Interactive Appliance Switcher Pills (Horizontal Swipe on Mobile, Centered Flex Wrap on Tablet/Desktop) -->
           <div class="pt-5 sm:pt-6 w-full max-w-5xl mx-auto">
-            <div class="flex overflow-x-auto gap-2 no-scrollbar py-1 -mx-4 px-4 sm:mx-0 sm:px-0 sm:grid sm:grid-cols-6" id="problem-tabs">
-              <button onclick="switchProblemTab('fridge')" id="tab-btn-fridge" class="flex-shrink-0 sm:w-full px-4 py-2.5 rounded-xl text-[13px] sm:text-sm font-bold border border-slate-300 bg-white text-slate-700 hover:border-brandOrange transition-all test-pill-active cursor-pointer whitespace-nowrap text-center shadow-2xs inline-flex items-center justify-center gap-1.5">
+            <div class="flex no-scrollbar py-1 -mx-4 px-4 sm:mx-0 sm:px-0" id="problem-tabs">
+              <button onclick="switchProblemTab('fridge')" id="tab-btn-fridge" class="flex-shrink-0 w-auto px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl text-[13px] sm:text-sm font-bold border border-slate-300 bg-white text-slate-700 hover:border-brandOrange hover:text-brandOrange transition-all test-pill-active cursor-pointer whitespace-nowrap text-center shadow-2xs inline-flex items-center justify-center gap-1.5">
                 <svg class="w-4 h-4 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="5" y1="10" x2="19" y2="10"></line><line x1="9" y1="6" x2="9" y2="7"></line><line x1="9" y1="13" x2="9" y2="16"></line></svg>
                 <span>Refrigerator</span>
               </button>
-              <button onclick="switchProblemTab('washer')" id="tab-btn-washer" class="flex-shrink-0 sm:w-full px-4 py-2.5 rounded-xl text-[13px] sm:text-sm font-bold border border-slate-300 bg-white text-slate-700 hover:border-brandOrange transition-all cursor-pointer whitespace-nowrap text-center shadow-2xs inline-flex items-center justify-center gap-1.5">
+              <button onclick="switchProblemTab('coffee')" id="tab-btn-coffee" class="flex-shrink-0 w-auto px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl text-[13px] sm:text-sm font-bold border border-slate-300 bg-white text-slate-700 hover:border-brandOrange hover:text-brandOrange transition-all cursor-pointer whitespace-nowrap text-center shadow-2xs inline-flex items-center justify-center gap-1.5">
+                <svg class="w-4 h-4 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+                <span>Coffee Machine</span>
+              </button>
+              <button onclick="switchProblemTab('washer')" id="tab-btn-washer" class="flex-shrink-0 w-auto px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl text-[13px] sm:text-sm font-bold border border-slate-300 bg-white text-slate-700 hover:border-brandOrange hover:text-brandOrange transition-all cursor-pointer whitespace-nowrap text-center shadow-2xs inline-flex items-center justify-center gap-1.5">
                 <svg class="w-4 h-4 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"></rect><circle cx="12" cy="13" r="5"></circle><circle cx="8" cy="6" r="1" fill="currentColor"></circle><circle cx="11" cy="6" r="1" fill="currentColor"></circle></svg>
                 <span>Washer</span>
               </button>
-              <button onclick="switchProblemTab('dryer')" id="tab-btn-dryer" class="flex-shrink-0 sm:w-full px-4 py-2.5 rounded-xl text-[13px] sm:text-sm font-bold border border-slate-300 bg-white text-slate-700 hover:border-brandOrange transition-all cursor-pointer whitespace-nowrap text-center shadow-2xs inline-flex items-center justify-center gap-1.5">
+              <button onclick="switchProblemTab('dryer')" id="tab-btn-dryer" class="flex-shrink-0 w-auto px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl text-[13px] sm:text-sm font-bold border border-slate-300 bg-white text-slate-700 hover:border-brandOrange hover:text-brandOrange transition-all cursor-pointer whitespace-nowrap text-center shadow-2xs inline-flex items-center justify-center gap-1.5">
                 <svg class="w-4 h-4 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"></rect><circle cx="12" cy="13" r="5"></circle><path d="M12 10.5c1 .5 1.5 1.5.5 2.5s-1.5 1.5-.5 2.5"></path></svg>
                 <span>Dryer</span>
               </button>
-              <button onclick="switchProblemTab('dishwasher')" id="tab-btn-dishwasher" class="flex-shrink-0 sm:w-full px-4 py-2.5 rounded-xl text-[13px] sm:text-sm font-bold border border-slate-300 bg-white text-slate-700 hover:border-brandOrange transition-all cursor-pointer whitespace-nowrap text-center shadow-2xs inline-flex items-center justify-center gap-1.5">
+              <button onclick="switchProblemTab('dishwasher')" id="tab-btn-dishwasher" class="flex-shrink-0 w-auto px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl text-[13px] sm:text-sm font-bold border border-slate-300 bg-white text-slate-700 hover:border-brandOrange hover:text-brandOrange transition-all cursor-pointer whitespace-nowrap text-center shadow-2xs inline-flex items-center justify-center gap-1.5">
                 <svg class="w-4 h-4 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"></rect><line x1="4" y1="8" x2="20" y2="8"></line><line x1="8" y1="5.5" x2="11" y2="5.5"></line></svg>
                 <span>Dishwasher</span>
               </button>
-              <button onclick="switchProblemTab('oven')" id="tab-btn-oven" class="flex-shrink-0 sm:w-full px-4 py-2.5 rounded-xl text-[13px] sm:text-sm font-bold border border-slate-300 bg-white text-slate-700 hover:border-brandOrange transition-all cursor-pointer whitespace-nowrap text-center shadow-2xs inline-flex items-center justify-center gap-1.5">
+              <button onclick="switchProblemTab('oven')" id="tab-btn-oven" class="flex-shrink-0 w-auto px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl text-[13px] sm:text-sm font-bold border border-slate-300 bg-white text-slate-700 hover:border-brandOrange hover:text-brandOrange transition-all cursor-pointer whitespace-nowrap text-center shadow-2xs inline-flex items-center justify-center gap-1.5">
                 <svg class="w-4 h-4 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"></rect><circle cx="8" cy="6" r="1" fill="currentColor"></circle><circle cx="16" cy="6" r="1" fill="currentColor"></circle><rect x="7" y="11" width="10" height="7" rx="1"></rect></svg>
                 <span>Oven &amp; Stove</span>
               </button>
-              <button onclick="switchProblemTab('microwave')" id="tab-btn-microwave" class="flex-shrink-0 sm:w-full px-4 py-2.5 rounded-xl text-[13px] sm:text-sm font-bold border border-slate-300 bg-white text-slate-700 hover:border-brandOrange transition-all cursor-pointer whitespace-nowrap text-center shadow-2xs inline-flex items-center justify-center gap-1.5">
+              <button onclick="switchProblemTab('microwave')" id="tab-btn-microwave" class="flex-shrink-0 w-auto px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl text-[13px] sm:text-sm font-bold border border-slate-300 bg-white text-slate-700 hover:border-brandOrange hover:text-brandOrange transition-all cursor-pointer whitespace-nowrap text-center shadow-2xs inline-flex items-center justify-center gap-1.5">
                 <svg class="w-4 h-4 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><rect x="6" y="8" width="9" height="8" rx="1"></rect><line x1="18" y1="9" x2="18" y2="9.01"></line><line x1="18" y1="13" x2="18" y2="13.01"></line></svg>
                 <span>Microwave</span>
               </button>
@@ -736,6 +848,73 @@ $disable_global_schema = true;
                       <div class="min-w-0">
                         <p class="text-xs font-bold text-brandDarkBlue truncate">OEM Parts &amp; Quick Diagnosis</p>
                         <p class="text-[11px] text-slate-500 truncate">Compressor, start relay, inverter &amp; defrost</p>
+                      </div>
+                      <a href="tel:9057178905" class="gtm-web-call inline-flex items-center gap-1 text-xs font-extrabold text-brandOrange hover:text-orange-600 transition-colors flex-shrink-0">
+                        <span>Call Now</span>
+                        <span aria-hidden="true">&rarr;</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- TAB: COFFEE MACHINE -->
+          <div id="problem-panel-coffee" class="hidden space-y-4">
+            <div class="bg-slate-50/80 -mx-4 sm:mx-0 rounded-none sm:rounded-3xl px-4 py-5 sm:p-7 border-y sm:border border-slate-200/90 shadow-xs">
+              
+              <div class="mb-4 sm:mb-6 pb-3 sm:pb-4 border-b border-slate-200/80">
+                <h3 class="text-lg sm:text-xl font-heading font-extrabold text-brandDarkBlue flex items-center gap-2">
+                  Common Coffee &amp; Espresso Machine Faults in <?php echo htmlspecialchars($loc['city_name']); ?>
+                </h3>
+              </div>
+
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 items-start">
+                <!-- Left: Fault Accordions -->
+                <div class="w-full lg:col-span-7 space-y-3">
+                  <details class="group bg-white rounded-xl border border-slate-200/90 shadow-2xs overflow-hidden" open>
+                    <summary class="flex items-center justify-between p-4 font-bold text-[15px] sm:text-base text-brandDarkBlue cursor-pointer hover:text-brandOrange select-none">
+                      <span class="flex items-center gap-2">⚠️ Low Brew Pressure or Weak Coffee Flow</span>
+                      <span class="text-brandOrange font-bold group-open:rotate-180 transition-transform flex-shrink-0 ml-2">▼</span>
+                    </summary>
+                    <div class="px-4 pb-4 pt-1 sm:pt-0 text-[14px] sm:text-[15px] text-slate-700 leading-relaxed border-t border-slate-100">
+                      When coffee trickles drop-by-drop or extraction pressure drops below optimal brewing bars, common causes include heavy scale blockage inside boiler waterways, a failing high-pressure vibration or rotary pump, or defective solenoid 3-way valves. Our technicians carry specialized descaling compounds and universal high-pressure pump replacements.
+                    </div>
+                  </details>
+
+                  <details class="group bg-white rounded-xl border border-slate-200/90 shadow-2xs overflow-hidden">
+                    <summary class="flex items-center justify-between p-4 font-bold text-[15px] sm:text-base text-brandDarkBlue cursor-pointer hover:text-brandOrange select-none">
+                      <span class="flex items-center gap-2">⚠️ Integrated Coffee Grinder Jammed or Screeching</span>
+                      <span class="text-brandOrange font-bold group-open:rotate-180 transition-transform flex-shrink-0 ml-2">▼</span>
+                    </summary>
+                    <div class="px-4 pb-4 pt-1 sm:pt-0 text-[14px] sm:text-[15px] text-slate-700 leading-relaxed border-t border-slate-100">
+                      Oily bean residue buildup, foreign objects trapped between conical burrs, or a stripped drive gear in the grinder motor. We carefully disassemble the grinding chamber, calibrate burr spacing, and service or replace worn gear assemblies on built-in systems.
+                    </div>
+                  </details>
+
+                  <details class="group bg-white rounded-xl border border-slate-200/90 shadow-2xs overflow-hidden">
+                    <summary class="flex items-center justify-between p-4 font-bold text-[15px] sm:text-base text-brandDarkBlue cursor-pointer hover:text-brandOrange select-none">
+                      <span class="flex items-center gap-2">⚠️ Steam Wand / Milk Frother Not Heating or No Foam</span>
+                      <span class="text-brandOrange font-bold group-open:rotate-180 transition-transform flex-shrink-0 ml-2">▼</span>
+                    </summary>
+                    <div class="px-4 pb-4 pt-1 sm:pt-0 text-[14px] sm:text-[15px] text-slate-700 leading-relaxed border-t border-slate-100">
+                      Caused by calcium build-up blocking the steam tip orifices, a malfunctioning thermal fuse / thermoblock sensor, or a failed secondary steam boiler element. We restore rapid microfoam texture and precise milk heating performance on-site.
+                    </div>
+                  </details>
+                </div>
+
+                <!-- Right: Dedicated Appliance Image Showcase (Hidden on Mobile) -->
+                <div class="hidden lg:flex lg:col-span-5 flex-col gap-3">
+                  <div class="rounded-2xl overflow-hidden border border-slate-200/90 shadow-xs bg-white flex flex-col">
+                    <div class="h-52 sm:h-60 lg:h-64 overflow-hidden bg-slate-100 relative group">
+                      <img src="<?php echo $base_url; ?>img/coffee-machine-repair-service.webp" alt="Coffee Machine Diagnostics and Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" width="1280" height="720" loading="lazy" decoding="async" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 bg-white flex items-center justify-between gap-2 border-t border-slate-100">
+                      <div class="min-w-0">
+                        <p class="text-xs font-bold text-brandDarkBlue truncate">Pump, Boiler &amp; Grinder Service</p>
+                        <p class="text-[11px] text-slate-500 truncate">Solenoid valves, pumps &amp; heating thermoblocks</p>
                       </div>
                       <a href="tel:9057178905" class="gtm-web-call inline-flex items-center gap-1 text-xs font-extrabold text-brandOrange hover:text-orange-600 transition-colors flex-shrink-0">
                         <span>Call Now</span>
@@ -1537,7 +1716,7 @@ $disable_global_schema = true;
 
     // Problem Tab Switcher
     function switchProblemTab(tabKey) {
-      const panels = ['fridge', 'washer', 'dryer', 'dishwasher', 'oven', 'microwave'];
+      const panels = ['fridge', 'coffee', 'washer', 'dryer', 'dishwasher', 'oven', 'microwave'];
       panels.forEach(function(p) {
         const panelEl = document.getElementById('problem-panel-' + p);
         const btnEl = document.getElementById('tab-btn-' + p);
@@ -1562,6 +1741,124 @@ $disable_global_schema = true;
         }
       });
     }
+
+    // Appliance Carousel Scroll & Progress Bar Sync
+    (function initApplianceScroll() {
+      const row = document.getElementById('appliance-scroll-row');
+      const track = document.getElementById('appliance-scroll-track');
+      const thumb = document.getElementById('appliance-scroll-thumb');
+      const btnLeft = document.getElementById('appliance-scroll-left');
+      const btnRight = document.getElementById('appliance-scroll-right');
+      if (!row || !track || !thumb) return;
+
+      function updateThumb() {
+        const maxScroll = row.scrollWidth - row.clientWidth;
+        if (maxScroll <= 0) {
+          thumb.style.width = '100%';
+          thumb.style.transform = 'translateX(0)';
+          if (btnLeft) btnLeft.classList.add('opacity-40', 'pointer-events-none');
+          if (btnRight) btnRight.classList.add('opacity-40', 'pointer-events-none');
+          return;
+        }
+        if (btnLeft) {
+          if (row.scrollLeft <= 5) {
+            btnLeft.classList.add('opacity-40', 'pointer-events-none');
+          } else {
+            btnLeft.classList.remove('opacity-40', 'pointer-events-none');
+          }
+        }
+        if (btnRight) {
+          if (row.scrollLeft >= maxScroll - 5) {
+            btnRight.classList.add('opacity-40', 'pointer-events-none');
+          } else {
+            btnRight.classList.remove('opacity-40', 'pointer-events-none');
+          }
+        }
+
+        const visibleRatio = row.clientWidth / row.scrollWidth;
+        const thumbWidthPct = Math.max(18, Math.min(50, visibleRatio * 100));
+        const scrollPct = row.scrollLeft / maxScroll;
+        const maxTranslatePct = ((100 - thumbWidthPct) / thumbWidthPct) * 100;
+        const translatePct = scrollPct * maxTranslatePct;
+
+        thumb.style.width = thumbWidthPct + '%';
+        thumb.style.transform = 'translateX(' + translatePct + '%)';
+      }
+
+      row.addEventListener('scroll', updateThumb, { passive: true });
+      window.addEventListener('resize', updateThumb);
+      // Wait for image render to calculate accurate scrollWidth
+      window.addEventListener('load', updateThumb);
+      setTimeout(updateThumb, 250);
+
+      function getScrollStep() {
+        const firstCard = row.querySelector('.appliance-carousel-card');
+        if (!firstCard) return 220;
+        const gap = window.innerWidth >= 640 ? 16 : 12;
+        return firstCard.offsetWidth + gap;
+      }
+
+      // Left & Right Buttons
+      if (btnLeft) {
+        btnLeft.addEventListener('click', function() {
+          row.scrollBy({ left: -getScrollStep(), behavior: 'smooth' });
+        });
+      }
+      if (btnRight) {
+        btnRight.addEventListener('click', function() {
+          row.scrollBy({ left: getScrollStep(), behavior: 'smooth' });
+        });
+      }
+
+      // Click on track to jump
+      track.addEventListener('click', function(e) {
+        const rect = track.getBoundingClientRect();
+        const clickX = e.clientX - rect.left;
+        const pct = Math.max(0, Math.min(1, clickX / rect.width));
+        const maxScroll = row.scrollWidth - row.clientWidth;
+        row.scrollTo({ left: pct * maxScroll, behavior: 'smooth' });
+      });
+
+      // Mouse drag to scroll
+      let isDown = false;
+      let hasDragged = false;
+      let startX = 0;
+      let scrollLeft = 0;
+
+      row.addEventListener('mousedown', function(e) {
+        if (window.innerWidth < 640) return;
+        isDown = true;
+        hasDragged = false;
+        startX = e.pageX - row.offsetLeft;
+        scrollLeft = row.scrollLeft;
+      });
+
+      window.addEventListener('mouseup', function() {
+        if (!isDown) return;
+        isDown = false;
+      });
+
+      row.addEventListener('mousemove', function(e) {
+        if (!isDown) return;
+        const x = e.pageX - row.offsetLeft;
+        const walk = (x - startX) * 1.5;
+        if (Math.abs(walk) > 6) {
+          hasDragged = true;
+          e.preventDefault();
+        }
+        row.scrollLeft = scrollLeft - walk;
+      });
+
+      row.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+          if (hasDragged) {
+            e.preventDefault();
+            e.stopPropagation();
+            hasDragged = false;
+          }
+        });
+      });
+    })();
   </script>
 
 </body>
