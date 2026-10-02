@@ -1587,32 +1587,35 @@ $disable_global_schema = true;
       // Sort alphabetically by name
       ksort($service_areas_list);
     ?>
-    <section class="py-10 md:py-14 bg-slate-50/60 border-t border-slate-200/80">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6">
+    <section class="py-10 md:py-14 bg-white border-t border-slate-200/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
         
         <!-- Section Header (Uniform with Brands, FAQs, and Appliance Grid) -->
-        <div class="text-center max-w-xl mx-auto mb-6 sm:mb-10">
+        <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
           <span class="text-xs font-bold uppercase tracking-wider text-brandOrange">Regional Coverage</span>
           <h2 class="text-2xl sm:text-3xl font-heading font-extrabold text-slate-900 mt-1 sm:mt-1.5">
             Service Areas in <span class="text-brandBlue"><?php echo htmlspecialchars($loc['city_name']); ?></span> &amp; GTA
           </h2>
-          <p class="text-[14px] sm:text-base text-slate-700 mt-2 max-w-xl mx-auto leading-relaxed">
+          <p class="text-[14px] sm:text-base text-slate-600 mt-2 max-w-xl mx-auto leading-relaxed">
             Our appliance repair technicians service locations across <?php echo htmlspecialchars($loc['city_name']); ?> and surrounding Greater Toronto &amp; Southern Ontario communities, including:
           </p>
         </div>
 
-        <!-- Clean Multi-Column Bullet List: Orange Bullet Dots + Screenshot Text Color -->
-        <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-4 sm:gap-x-6 gap-y-2 sm:gap-y-2.5 text-left">
+        <!-- Clean Multi-Column Bullet Grid Matching Brand Design -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-y-3.5 gap-x-6 text-sm sm:text-base">
           <?php foreach ($service_areas_list as $area): ?>
-            <li class="flex items-center gap-1.5 min-w-0">
-              <span class="text-brandOrange text-base leading-none select-none">•</span>
-              <a href="<?php echo htmlspecialchars($area['url']); ?>" 
-                 class="text-[13.5px] sm:text-[14.5px] font-medium text-[#558b2f] hover:text-brandOrange hover:underline truncate transition-colors <?php echo $area['is_current'] ? 'font-bold' : ''; ?>">
-                <?php echo htmlspecialchars($area['name']); ?>
-              </a>
-            </li>
+            <a href="<?php echo htmlspecialchars($area['url']); ?>" 
+               class="flex items-center gap-2 font-medium text-slate-800 hover:text-brandOrange transition-colors <?php echo $area['is_current'] ? 'font-bold text-brandOrange' : ''; ?>">
+              <span class="w-1.5 h-1.5 rounded-full bg-brandOrange flex-shrink-0"></span>
+              <span class="truncate sm:overflow-visible"><?php echo htmlspecialchars($area['name']); ?></span>
+            </a>
           <?php endforeach; ?>
-        </ul>
+        </div>
+
+        <!-- Bottom Helper Note & Border Line Matching Design -->
+        <p class="text-xs text-slate-500 text-center pt-5 sm:pt-6 mt-8 sm:mt-10 border-t border-slate-200/80">
+          Don't see your specific neighborhood or community listed? We dispatch mobile service vans across the entire Greater Toronto Area. Call <a href="tel:9057178905" class="gtm-web-call text-brandOrange font-bold hover:underline">905-717-8905</a> to verify immediate technician dispatch.
+        </p>
 
       </div>
     </section>
