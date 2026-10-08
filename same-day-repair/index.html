@@ -3339,6 +3339,67 @@
     });
   </script>
 
+  <!-- Exit Intent Popup -->
+  <div id="exit-popup" class="hidden fixed inset-0 z-[100] flex items-center justify-center bg-slate-900/60 backdrop-blur-sm p-4 transition-opacity">
+    <div class="bg-white w-full max-w-md rounded-2xl p-6 md:p-8 shadow-2xl relative transform transition-all">
+      <button onclick="closeExitPopup()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 transition-colors cursor-pointer p-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+      <div class="text-center">
+        <div class="inline-block bg-brandDarkBlue text-white text-[10px] font-black uppercase tracking-widest py-1.5 px-3 rounded-full mb-4">
+          Wait! Before you leave...
+        </div>
+        <h3 class="font-heading font-extrabold text-2xl text-slate-900 mb-2">Need Priority Dispatch?</h3>
+        <p class="text-sm text-slate-500 mb-6">Lock in your time slot now. Diagnostic fee is waived when you proceed with the repair.</p>
+        <a href="tel:9057178905" onclick="trackGtmCall('exit_popup'); closeExitPopup();" class="w-full inline-flex bg-brandOrange hover:bg-brandOrangeHover text-white font-black py-3.5 px-6 rounded-2xl text-lg shadow-xl transition-all items-center justify-center gap-2 cursor-pointer hover:scale-[1.02] mb-4">
+          <svg class="w-5 h-5 fill-current animate-pulse text-white" viewBox="0 0 20 20">
+            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+          </svg>
+          <span>Call 905-717-8905</span>
+        </a>
+        <button onclick="closeExitPopup()" class="text-[11px] font-bold text-slate-400 hover:text-slate-600 underline cursor-pointer uppercase tracking-wider">No thanks</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- DESKTOP FLOATING CTAS (Hidden on mobile where sticky bar rules) -->
+  <aside id="desktop-floating-ctas" aria-label="Quick Contact" class="hidden lg:flex flex-col gap-2 select-none" style="position: fixed; right: 0; bottom: 40px; z-index: 90;">
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/19057178905" 
+       target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" title="Chat on WhatsApp"
+       class="transition-transform duration-200 hover:-translate-x-1 active:scale-95"
+       style="width: 44px; height: 44px; background-color: #25D366; border-radius: 22px 0 0 22px; padding-left: 4px; display: flex; align-items: center; justify-content: center; box-shadow: -2px 2px 8px rgba(0,0,0,0.18);">
+      <div style="width: 30px; height: 30px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,0.75); display: flex; align-items: center; justify-content: center;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffffff">
+          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.12c-1.5 0-2.97-.4-4.26-1.16l-.31-.18-3.13.82.83-3.05-.2-.32a8.04 8.04 0 0 1-1.24-4.32c0-4.47 3.64-8.11 8.11-8.11 2.17 0 4.2 0.85 5.73 2.38a8.06 8.06 0 0 1 2.38 5.73c0 4.47-3.64 8.11-8.11 8.11zm4.45-6.09c-.24-.12-1.44-.71-1.66-.79-.22-.08-.38-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.95-1.21-.72-.64-1.21-1.44-1.35-1.68-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02s.87 2.34.99 2.5c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/>
+        </svg>
+      </div>
+    </a>
+    <!-- Phone Call Floating Button -->
+    <a href="tel:9057178905" onclick="trackGtmCall('desktop_floating');" aria-label="Call Now" title="Call 905-717-8905"
+       class="gtm-ppc-call transition-transform duration-200 hover:-translate-x-1 active:scale-95"
+       style="width: 44px; height: 44px; background-color: #0A2E52; border-radius: 22px 0 0 22px; padding-left: 4px; display: flex; align-items: center; justify-content: center; box-shadow: -2px 2px 8px rgba(0,0,0,0.18);">
+      <div style="width: 30px; height: 30px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,0.75); display: flex; align-items: center; justify-content: center;">
+        <svg width="15" height="15" viewBox="0 0 20 20" fill="#ffffff">
+          <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+        </svg>
+      </div>
+    </a>
+  </aside>
+
+  <script>
+    let popupShown = false;
+    document.addEventListener('mouseout', function(e) {
+      if (e.clientY < 0 && !popupShown) {
+        document.getElementById('exit-popup').classList.remove('hidden');
+        popupShown = true;
+      }
+    });
+    function closeExitPopup() {
+      document.getElementById('exit-popup').classList.add('hidden');
+    }
+  </script>
+
 </body>
 
 </html>
