@@ -1507,86 +1507,89 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
     </div>
   </section>
 
-  <!-- COMPREHENSIVE FOOTER -->
-  <footer class="bg-slate-900 text-slate-300 py-12 sm:py-16 border-t border-slate-800 overflow-hidden">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      
-      <!-- Top Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-        
-        <!-- Col 1: Brand Info -->
-        <div class="space-y-4">
-          <div class="flex items-center gap-2">
-            <h2 class="text-lg font-heading font-black text-white tracking-tight uppercase">
-              <span class="text-brandOrange">Appliance</span> Repair Knights
-            </h2>
-          </div>
-          <p class="text-xs sm:text-sm leading-relaxed text-slate-400">
-            Appliance Repair Knights is your trusted local provider for fast, same-day home appliance repairs across Toronto, GTA &amp; Southern Ontario.
+  <!-- GOOGLE ADS COMPLIANT & MOBILE-FIRST FOOTER -->
+  <footer class="bg-slate-900 text-slate-200 py-12 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 space-y-8">
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+        <!-- Col 1: Brand & Contact Info -->
+        <div class="space-y-3 md:col-span-1">
+          <picture>
+            <source srcset="../img/logo.webp" type="image/webp">
+            <img src="../img/logo-opt.png" alt="Appliance Repair Knights Logo" width="180" height="44"
+              class="h-11 w-auto object-contain" loading="lazy" decoding="async">
+          </picture>
+          <p class="text-slate-300 text-xs leading-relaxed">
+            Appliance Repair Knights is your trusted local provider for fast, same-day coffee and espresso machine repairs across
+            Toronto, GTA & Southern Ontario.
           </p>
-          <div class="text-xs sm:text-sm space-y-1.5 pt-2 text-slate-400">
-            <div><strong class="text-slate-200">Dispatch:</strong> <a href="tel:9057178905" onclick="trackGtmCall('footer');" class="text-brandOrange hover:underline font-bold">905-717-8905</a></div>
-            <div><strong class="text-slate-200">Email:</strong> <a href="mailto:info@appliancerepairknights.com" class="hover:underline break-all">info@appliancerepairknights.com</a></div>
-            <div><strong class="text-slate-200">Region:</strong> Toronto &amp; GTA Service Zones</div>
+          <div class="pt-1 space-y-1.5 text-xs text-slate-200 font-medium">
+            <p><strong>Dispatch:</strong> <a href="tel:9057178905" onclick="trackGtmCall('footer')"
+                class="gtm-ppc-call gtm-ppc-call-footer text-amber-400 hover:text-white font-extrabold hover:underline">905-717-8905</a>
+            </p>
+            <p><strong>Email:</strong> <a href="mailto:info@appliancerepairknights.com"
+                class="hover:text-white text-slate-200 font-medium">info@appliancerepairknights.com</a></p>
+            <p><strong>Region:</strong> Toronto & GTA Service Zones</p>
           </div>
         </div>
 
-        <!-- Col 2: Services -->
-        <div class="space-y-4">
-          <h4 class="text-xs font-black tracking-widest uppercase text-amber-500">Repair Services</h4>
-          <ul class="text-xs sm:text-sm space-y-2.5 text-slate-400">
+        <!-- Col 2: Services List -->
+        <div>
+          <h4 class="font-heading font-extrabold text-amber-400 uppercase tracking-wider text-xs mb-3">
+            REPAIR SERVICES</h4>
+          <ul class="space-y-2 text-slate-300 text-xs font-medium">
             <li><span class="hover:text-white transition-colors cursor-pointer" onclick="document.getElementById('lead-appliance').value='Commercial Office Coffee System'; document.getElementById('book-form').scrollIntoView({behavior:'smooth'});">Commercial Office Coffee Repair</span></li>
             <li><span class="hover:text-white transition-colors cursor-pointer" onclick="document.getElementById('lead-appliance').value='Luxury Built-In Cabinet System'; document.getElementById('book-form').scrollIntoView({behavior:'smooth'});">Residential Espresso Machine Repair</span></li>
           </ul>
         </div>
 
-        <!-- Col 3: Hours -->
-        <div class="space-y-4">
-          <h4 class="text-xs font-black tracking-widest uppercase text-amber-500">Dispatch Hours</h4>
-          <div class="text-xs sm:text-sm space-y-2.5 text-slate-400">
-            <div class="flex justify-between items-center gap-4">
-              <span>Availability:</span>
-              <span class="text-slate-200 font-semibold text-right">Available daily for prompt dispatch</span>
-            </div>
-            <div class="mt-4 pt-4 border-t border-slate-800">
-              <strong class="text-slate-200 block mb-1">Corporate Office:</strong>
-              123 Appliance Way, Toronto, ON<br>
-              <span class="text-[10px] italic">(Mobile Dispatch Center)</span>
-            </div>
-          </div>
+        <!-- Col 3: Service Hours & Dispatch Area -->
+        <div>
+          <h4 class="font-heading font-extrabold text-amber-400 uppercase tracking-wider text-xs mb-3">
+            DISPATCH HOURS</h4>
+          <ul class="space-y-2 text-slate-300 text-xs font-medium">
+            <li class="flex justify-between border-b border-slate-800 pb-1">
+              <span>Monday – Sunday:</span>
+              <span class="text-white font-semibold">8:00 AM – 8:00 PM</span>
+            </li>
+            <li class="flex justify-between pt-1">
+              <span class="text-emerald-400 font-bold">Emergency Dispatch:</span>
+              <span class="text-emerald-400 font-bold">24/7 Available</span>
+            </li>
+          </ul>
         </div>
 
-        <!-- Col 4: Legal -->
-        <div class="space-y-4">
-          <h4 class="text-xs font-black tracking-widest uppercase text-amber-500">Legal &amp; Policies</h4>
-          <ul class="text-xs sm:text-sm space-y-2.5 text-slate-400">
-            <li><a href="../privacy-policy" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Privacy Policy</a></li>
-            <li><a href="../terms-and-conditions" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Terms of Service</a></li>
-            <li><a href="../privacy-policy#google-ads" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Disclosure</a></li>
+        <!-- Col 4: Legal, Policy & Disclaimers -->
+        <div>
+          <h4 class="font-heading font-extrabold text-amber-400 uppercase tracking-wider text-xs mb-3">
+            LEGAL & POLICIES</h4>
+          <ul class="space-y-2 text-slate-300 text-xs font-medium mb-4">
+            <li><a href="../privacy-policy" target="_blank" class="hover:text-white transition-colors">Privacy
+                Policy</a></li>
+            <li><a href="../terms-and-conditions" target="_blank" class="hover:text-white transition-colors">Terms
+                of Service</a></li>
+            <li><a href="../privacy-policy#google-ads" target="_blank" class="hover:text-white transition-colors">Disclosure</a></li>
           </ul>
         </div>
 
       </div>
 
-      <!-- Divider & Legal Disclaimer -->
-      <div class="border-t border-slate-800/80 pt-8 space-y-4 text-[10px] sm:text-[11px] leading-relaxed text-slate-500">
+      <!-- Google Ads & Third-Party Trademark Mandatory Compliance Footer Disclosure -->
+      <div class="pt-6 border-t border-slate-800 text-[11px] text-slate-300 leading-relaxed space-y-2.5">
         <p>
-          <strong class="text-slate-300">Third-Party Independent Service &amp; Trademark Disclosure:</strong> Appliance Repair Knights is an independent appliance service provider specializing in prompt, out-of-warranty coffee and espresso machine repairs across Toronto and the Greater Toronto Area. All brand names, trademarks, model designations, and logos referenced on this website (including Jura, Breville, De'Longhi, Miele, Bunn, Franke, and others) are the property of their respective trademark holders and are utilized strictly for identification and descriptive purposes to indicate parts and diagnostic repair compatibility. Appliance Repair Knights is not affiliated with, sponsored by, or endorsed by any of these original equipment manufacturers.
+          <strong class="text-slate-100 font-semibold">Third-Party Independent Service &amp; Trademark Disclosure:</strong> Appliance Repair Knights is an independent appliance service provider specializing in prompt, out-of-warranty coffee and espresso machine repairs across Toronto and the Greater Toronto Area. All brand names, trademarks, model designations, and logos referenced on this website (including Jura, Breville, De'Longhi, Miele, Bunn, Franke, and others) are the property of their respective trademark holders and are utilized strictly for identification and descriptive purposes to indicate parts and diagnostic repair compatibility. Appliance Repair Knights is not affiliated with, sponsored by, or endorsed by any of these original equipment manufacturers.
         </p>
-        <p>
+        <p class="text-slate-400">
           Transparent, upfront written quotes are provided prior to starting any repair work. The diagnostic service call fee is completely waived when you proceed with repairs. All qualifying repairs are backed by our comprehensive written parts and labour warranty.
         </p>
-      </div>
-
-      <!-- Copyright Bottom Bar -->
-      <div class="border-t border-slate-800/80 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] sm:text-xs text-slate-500">
-        <div>
-          &copy; <?php echo date('Y'); ?> Appliance Repair Knights. All Rights Reserved.
-        </div>
-        <div class="flex gap-4">
-          <a href="../privacy-policy" target="_blank" rel="noopener noreferrer" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
-          <span>&bull;</span>
-          <a href="../terms-and-conditions" target="_blank" rel="noopener noreferrer" class="hover:text-slate-300 transition-colors">Terms of Service</a>
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-2 pt-2 text-slate-400">
+          <p>© <?php echo date('Y'); ?> Appliance Repair Knights. All Rights Reserved.</p>
+          <div class="flex items-center gap-3">
+            <a href="../privacy-policy" target="_blank" class="hover:text-white underline transition-colors">Privacy Policy</a>
+            <span>•</span>
+            <a href="../terms-and-conditions" target="_blank" class="hover:text-white underline transition-colors">Terms of Service</a>
+          </div>
         </div>
       </div>
       
