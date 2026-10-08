@@ -3,7 +3,7 @@
 $base_url = isset($base_url) ? $base_url : '';
 ?>
   <!-- FOOTER -->
-  <footer class="bg-brandNavy text-slate-300 py-12 border-t border-slate-800 text-xs">
+  <footer class="mt-auto bg-brandNavy text-slate-300 py-12 border-t border-slate-800 text-xs">
     <div class="max-w-7xl mx-auto px-4">
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-10">

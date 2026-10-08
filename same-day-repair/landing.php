@@ -23,6 +23,12 @@ if (isset($service_aliases[$service_param])) {
     $service_param = $service_aliases[$service_param];
 }
 
+// Forward to dedicated 100% Coffee Machine & Espresso PPC landing page
+if (in_array($service_param, ['coffee', 'coffee-machine', 'espresso'])) {
+    include __DIR__ . '/coffee-machine-repair.php';
+    exit();
+}
+
 $city_names = [
     'toronto' => 'Toronto',
     'mississauga' => 'Mississauga',

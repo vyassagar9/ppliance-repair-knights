@@ -126,11 +126,19 @@ ErrorDocument 404 /404.html
   # ----------------------------------------------------------------------------
   # 4C. PPC SAME-DAY REPAIR SERVICE + LOCATION ROUTER
   # Supports clean URLs e.g. /same-day-repair/refrigerator-toronto
-  # Also supports legacy /same-day-repair/refrigerator-repair-toronto
+  # Dedicated 100% Coffee Machine & Espresso PPC landing page routing
   # ----------------------------------------------------------------------------
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^same-day-repair/(refrigerator|fridge|washer|dryer|dishwasher|oven|stove|cooktop|appliance)(?:-repair)?-([a-z0-9\-]+)(\.html)?/?$ same-day-repair/landing.php?service=$1&city=$2 [L,QSA]
+  RewriteRule ^same-day-repair/(?:coffee-machine|coffee|espresso)(?:-repair)?-([a-z0-9\-]+)(\.html)?/?$ same-day-repair/coffee-machine-repair.php?city=$1 [L,QSA]
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^same-day-repair/(?:coffee-machine|coffee|espresso)(?:-repair)?/?$ same-day-repair/coffee-machine-repair.php [L,QSA]
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^same-day-repair/(refrigerator|fridge|washer|dryer|dishwasher|oven|stove|cooktop|coffee(?:-machine)?|espresso|appliance)(?:-repair)?-([a-z0-9\-]+)(\.html)?/?$ same-day-repair/landing.php?service=$1&city=$2 [L,QSA]
 
   # ----------------------------------------------------------------------------
   # 5. CLEAN URL ENGINE (.PHP / .HTML STRIPPING & INTERNAL ROUTING)

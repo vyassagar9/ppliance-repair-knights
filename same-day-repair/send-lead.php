@@ -22,6 +22,7 @@ $email     = isset($data['email']) ? trim($data['email']) : '';
 $city      = isset($data['city']) ? trim($data['city']) : '';
 $appliance = isset($data['appliance']) ? trim($data['appliance']) : '';
 $page      = isset($data['page']) ? trim($data['page']) : 'index.html';
+$gclid     = isset($data['gclid']) ? trim($data['gclid']) : '';
 
 if (empty($name) || empty($phone)) {
     http_response_code(400);
@@ -83,6 +84,7 @@ $body = '
     <div class="field"><span class="label">City / Region:</span><span class="val">' . htmlspecialchars($city ?: 'GTA') . '</span></div>
     <div class="field"><span class="label">Appliance:</span><span class="val">' . htmlspecialchars($appliance ?: 'N/A') . '</span></div>
     <div class="field"><span class="label">Source Page:</span><span class="val">' . htmlspecialchars($page) . '</span></div>
+    <div class="field"><span class="label">GCLID:</span><span class="val" style="word-break: break-all; font-size: 11px;">' . htmlspecialchars($gclid ?: 'None') . '</span></div>
     <div class="field"><span class="label">Time Received:</span><span class="val">' . date('Y-m-d H:i:s') . ' (EST)</span></div>
   </div>
 </body>

@@ -9,30 +9,14 @@
   <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
   <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 
-  <!-- Google Tag Manager (Mobile-First Smart Deferred Loading - 100/100 Speed & Zero Tracking Loss) -->
+  <!-- Google Tag Manager -->
   <script>
     window.dataLayer = window.dataLayer || [];
-    function loadGTM() {
-      if (window._gtmLoaded) return;
-      window._gtmLoaded = true;
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || []; w[l].push({
-          'gtm.start':
-            new Date().getTime(), event: 'gtm.js'
-        }); var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-M7B6FLPR');
-    }
-    // Mobile-First: Load immediately on first touch/interaction or idle timeout
-    ['scroll', 'mousemove', 'touchstart', 'pointerdown', 'click'].forEach(function (e) {
-      window.addEventListener(e, loadGTM, { once: true, passive: true });
-    });
-    if ('requestIdleCallback' in window) {
-      requestIdleCallback(function () { setTimeout(loadGTM, 1500); });
-    } else {
-      window.addEventListener('load', function () { setTimeout(loadGTM, 1500); });
-    }
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M7B6FLPR');
   </script>
   <!-- End Google Tag Manager -->
 
@@ -563,6 +547,7 @@
                       <option value="Dishwasher">Dishwasher</option>
                       <option value="Oven & Stove">Oven / Stove / Range</option>
                       <option value="Microwave">Microwave</option>
+                      <option value="Coffee Machine">Coffee Machine (Commercial / Built-In)</option>
                     </select>
                   </div>
                 </div>
@@ -2536,14 +2521,7 @@
 
     // GTM PPC Conversion Trackers (Directly mapped to GTM-M7B6FLPR Container Rules)
     function trackGtmCall(location) {
-      if (typeof loadGTM === 'function') loadGTM();
       window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        'event': 'click_phone_ppc',
-        'button_location': location,
-        'click_location': location,
-        'value': 1
-      });
       window.dataLayer.push({
         'event': 'ppc_phone_click',
         'click_location': location,
@@ -2552,28 +2530,10 @@
     }
 
     function trackGtmWhatsApp(location) {
-      if (typeof loadGTM === 'function') loadGTM();
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({
         'event': 'ppc_whatsapp_click',
         'click_location': location,
-        'value': 1
-      });
-    }
-
-    function trackGtmFormSuccess(appliance, city) {
-      if (typeof loadGTM === 'function') loadGTM();
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        'event': 'ppc_form_success',
-        'appliance': appliance,
-        'city': city,
-        'value': 1
-      });
-      window.dataLayer.push({
-        'event': 'generate_lead',
-        'service': appliance,
-        'city': city,
         'value': 1
       });
     }
@@ -2754,6 +2714,35 @@
         bottomCtaTitle: 'NEED YOUR MICROWAVE REPAIRED TODAY?',
         bottomCtaDesc: 'Get your microwave working again today. Call our dispatch center now for same-day service!',
         whatsappMsg: 'Hi, I need same-day microwave repair service in Toronto/GTA'
+      },
+      coffee: {
+        key: 'coffee',
+        name: 'Coffee & Espresso Machine',
+        noun: 'coffee or espresso machine',
+        selectValue: 'Coffee Machine',
+        title: 'Same-Day Coffee Machine & Espresso Repair in Toronto, Mississauga & GTA',
+        metaDesc: 'Specialized coffee machine & commercial espresso repair across Toronto, Mississauga & GTA. Miele, Jura, Breville, Bunn. $0 diagnostic with repair. Call 905-717-8905!',
+        topAnnouncement: 'Daily Emergency Coffee Machine & Espresso Dispatch Active Across Toronto & GTA',
+        heroBadge: 'SAME-DAY COFFEE & ESPRESSO REPAIR • TORONTO, MISSISSAUGA & GTA',
+        heroTitle: 'Same-Day <span class="text-brandBlue">Coffee Machine & Espresso Repair</span> in Toronto & GTA',
+        heroDesc: 'Low extraction pressure, leaking gaskets, lukewarm coffee, or grinder error codes? Our certified technicians arrive today with stocked pumps, solenoids, and valves to fix your <strong class="text-slate-900">Commercial Office Breakroom Brewer or Luxury Built-In Espresso Machine</strong> across Toronto, Mississauga, Markham, Vaughan, Oakville & GTA on the first visit!',
+        issues: [
+          { text: 'Low Pump Pressure (<15 Bar)' },
+          { text: 'Water Leaking From Base / Seals' },
+          { text: 'Thermoblock Not Heating Coffee' },
+          { text: 'Grinder Jammed / Bean Errors' },
+          { text: '$0 Diagnostic With Repair', highlight: true }
+        ],
+        formBadge: 'SAME-DAY COFFEE & ESPRESSO DISPATCH',
+        formTitle: 'Request Coffee Machine Repair & Claim Your $0 Diagnostic',
+        formSubtitle: 'Tell us what\'s broken. A certified espresso technician will call in <strong class="text-slate-900">&lt;15 mins</strong> with upfront pricing & arrival time.',
+        servicesTitle: 'COFFEE MACHINE & ALL MAJOR APPLIANCES WE REPAIR',
+        servicesSubtitle: 'Specialized same-day repair for commercial breakroom brewers & luxury built-in espresso systems, plus full appliance services.',
+        midCtaTitle: 'Need Your Coffee Machine Repaired Today?',
+        midCtaDesc: 'Experienced GTA coffee & espresso technicians on standby with genuine OEM replacement parts.',
+        bottomCtaTitle: 'NEED YOUR COFFEE MACHINE REPAIRED TODAY?',
+        bottomCtaDesc: 'Don\'t let a broken coffee system disrupt your morning or office breakroom. Call our priority dispatch center now!',
+        whatsappMsg: 'Hi, I need same-day coffee machine or espresso repair service in Toronto/GTA'
       }
     };
 
@@ -2850,6 +2839,7 @@
       if (['dishwasher', 'dish-washer', 'dishwashers'].includes(p)) return 'dishwasher';
       if (['stove', 'oven', 'range', 'cooktop', 'stoves', 'ovens', 'ranges'].includes(p)) return 'stove';
       if (['microwave', 'microwaves'].includes(p)) return 'microwave';
+      if (['coffee', 'coffee-machine', 'coffeemachine', 'espresso', 'espresso-machine', 'espressomachine', 'bunn', 'jura', 'miele'].includes(p)) return 'coffee';
       return null;
     }
 
@@ -2933,6 +2923,8 @@
           newHeroDesc = `Oven not heating up, burners not igniting, uneven baking, or temperature control issues? Our licensed <strong class="text-slate-900">${c.name} technicians</strong> arrive today with stocked igniters, elements, and thermostats to fix your <strong class="text-slate-900">Oven or Stove</strong> on the first visit!`;
         } else if (s.key === 'microwave') {
           newHeroDesc = `Microwave not heating, turntable not spinning, sparking inside, or touchpad unresponsive? Our licensed <strong class="text-slate-900">${c.name} technicians</strong> arrive today with stocked magnetrons, fuses, and door switches to fix your <strong class="text-slate-900">Microwave</strong> on the first visit!`;
+        } else if (s.key === 'coffee') {
+          newHeroDesc = `Low extraction pressure, water leaks, lukewarm coffee, or grinder error codes? Our certified <strong class="text-slate-900">${c.name} coffee technicians</strong> arrive today with stocked 15-19 bar pumps, solenoids, and food-grade seals to fix your <strong class="text-slate-900">Commercial Office Brewer or Luxury Built-In Espresso Machine</strong> on the first visit!`;
         } else {
           newHeroDesc = `Fast, reliable ${s.noun} repair in ${c.name}. Our licensed technicians arrive today with stocked factory replacement parts to fix your appliance on the first visit!`;
         }
@@ -3165,7 +3157,7 @@
     // Server-side backend (send-lead.php) handles secure Google Sheet & Email dispatch
     const GOOGLE_SHEET_SCRIPT_URL = "";
 
-    async function handlePPCFormSubmit() {
+    function handlePPCFormSubmit() {
       const name = document.getElementById('ppc-name').value.trim();
       const phone = document.getElementById('ppc-phone').value.trim();
       const email = document.getElementById('ppc-email').value.trim();
@@ -3178,7 +3170,6 @@
         return;
       }
 
-      // Show loading indicator on submit button
       if (submitBtn) {
         submitBtn.disabled = true;
         submitBtn.innerHTML = `
@@ -3199,38 +3190,39 @@
         page: 'same-day-repair' + (window.location.search || '')
       };
 
-      try {
-        // 1. Post to Hostinger PHP Endpoint (send-lead.php)
-        const phpPromise = fetch('send-lead.php', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload)
-        }).catch(err => console.log('PHP endpoint notice:', err));
+      const urlParams = new URLSearchParams(window.location.search);
+      payload.gclid = urlParams.get('gclid') || '';
 
-        // 2. Post to Google Apps Script Web App Endpoint (Optional client fallback)
-        let sheetPromise = Promise.resolve();
-        if (GOOGLE_SHEET_SCRIPT_URL && !GOOGLE_SHEET_SCRIPT_URL.includes('YOUR_SCRIPT_ID')) {
-          sheetPromise = fetch(GOOGLE_SHEET_SCRIPT_URL, {
-            method: 'POST',
-            mode: 'no-cors',
-            headers: { 'Content-Type': 'text/plain' },
-            body: JSON.stringify(payload)
-          }).catch(err => console.log('GSheet endpoint notice:', err));
+      fetch('send-lead.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.status === 'success') {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            'event': 'ppc_lead_form_submitted',
+            'lead_appliance': appliance,
+            'lead_city': city
+          });
+
+          document.getElementById('display-user-phone').innerText = phone || 'your number';
+          document.getElementById('ppc-lead-form').classList.add('hidden');
+          document.getElementById('ppc-success').classList.remove('hidden');
+        } else {
+          throw new Error(data.message || 'Server error');
         }
-
-        await Promise.allSettled([phpPromise, sheetPromise]);
-
-      } catch (error) {
+      })
+      .catch(error => {
         console.error('Submission error:', error);
-      } finally {
-        // Track GTM Form Conversion Event
-        trackGtmFormSuccess(appliance, city);
-
-        // Display Success View
-        document.getElementById('display-user-phone').innerText = phone || 'your number';
-        document.getElementById('ppc-lead-form').classList.add('hidden');
-        document.getElementById('ppc-success').classList.remove('hidden');
-      }
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = '<span>CHECK AVAILABILITY & LOCK $0 FEE →</span>';
+        }
+        alert('There was a connection error. Please call us directly at 905-717-8905 for immediate dispatch.');
+      });
     }
 
     function toggleFAQ(faqId) {
