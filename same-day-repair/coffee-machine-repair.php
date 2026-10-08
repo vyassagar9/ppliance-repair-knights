@@ -84,7 +84,7 @@ $coffee_brands = [
 ];
 
 $page_title = "Same-Day Coffee Machine & Espresso Repair in {$city_name} | Local Certified Technicians";
-$meta_desc  = "Specialized coffee machine & espresso repair in {$city_name}. Commercial office systems & luxury built-in units. Genuine OEM parts, fast dispatch & diagnostic fee waived with repair.";
+$meta_desc  = "Specialized coffee machine & espresso repair in {$city_name}. Commercial office systems & luxury built-in units. Genuine factory parts, fast dispatch & diagnostic fee waived with repair.";
 $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-machine-{$city_slug}";
 ?>
 <!DOCTYPE html>
@@ -548,7 +548,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
 
           <!-- Concise Mechanism Subhead -->
           <p class="text-slate-700 text-sm sm:text-base leading-relaxed max-w-xl">
-            Don't haul heavy <?php echo $type_param === 'commercial' ? 'commercial brewers' : 'built-in cabinetry machines'; ?> to a repair depot. <strong class="text-slate-900 font-bold">Our certified technicians travel directly to your <?php echo $type_param === 'commercial' ? 'office or restaurant' : 'home'; ?></strong>. Same-day diagnostics and genuine OEM parts.
+            Don't haul heavy <?php echo $type_param === 'commercial' ? 'commercial brewers' : 'built-in cabinetry machines'; ?> to a repair depot. <strong class="text-slate-900 font-bold">Our certified technicians travel directly to your <?php echo $type_param === 'commercial' ? 'office or restaurant' : 'home'; ?></strong>. Same-day diagnostics and genuine factory parts.
           </p>
           
           <div class="flex items-start sm:items-center gap-2 mt-2 bg-slate-50 border border-slate-200 p-2.5 rounded-lg max-w-xl">
@@ -588,7 +588,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
             <div class="absolute bottom-3 left-3 right-3 flex flex-wrap gap-2">
               <span class="bg-white/95 text-slate-900 text-[11px] font-bold px-2.5 py-1 rounded-full shadow-sm">✓ 100% On-Site Service (No Drop-Off)</span>
               <span class="bg-white/95 text-slate-900 text-[11px] font-bold px-2.5 py-1 rounded-full shadow-sm">✓ Diagnostic fee waived with repair</span>
-              <span class="bg-white/95 text-slate-900 text-[11px] font-bold px-2.5 py-1 rounded-full shadow-sm">✓ Genuine OEM parts &amp; warranty</span>
+              <span class="bg-white/95 text-slate-900 text-[11px] font-bold px-2.5 py-1 rounded-full shadow-sm">✓ Genuine factory parts &amp; warranty</span>
             </div>
           </div>
 
@@ -760,7 +760,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
               </svg>
             </div>
             <div class="min-w-0 text-left">
-              <span class="block text-xs sm:text-sm font-extrabold text-slate-900 leading-tight group-hover:text-brandBlue transition-colors">OEM Factory Parts</span>
+              <span class="block text-xs sm:text-sm font-extrabold text-slate-900 leading-tight group-hover:text-brandBlue transition-colors">Genuine Factory Parts</span>
               <span class="block text-[10px] text-slate-500 font-medium truncate">Office &amp; Luxury Units</span>
             </div>
           </div>
@@ -789,7 +789,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
       <div
         class="inline-flex items-center gap-1.5 bg-blue-50 text-blue-700 font-extrabold text-[11px] uppercase tracking-wider px-3.5 py-1.5 rounded-full mb-2.5 border border-blue-200">
         <svg class="w-3.5 h-3.5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-        <span>ALL MAJOR COFFEE &amp; ESPRESSO BRANDS SERVICED WITH OEM PARTS</span>
+        <span>ALL MAJOR COFFEE &amp; ESPRESSO BRANDS SERVICED WITH GENUINE FACTORY PARTS</span>
       </div>
       <h2 class="text-xl sm:text-2xl font-heading font-black text-brandDarkBlue tracking-tight mb-2">We Service Your Brand With Genuine Parts</h2>
       <p class="text-slate-700 text-xs sm:text-sm max-w-xl mx-auto mb-4 leading-relaxed font-medium">
@@ -1153,7 +1153,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
           </div>
           <div class="px-4 pb-4 pt-0">
             <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-100">
-              ✓ Genuine OEM components
+              ✓ Genuine factory components
             </span>
           </div>
         </div>
@@ -1231,7 +1231,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
           Issues We Resolve Same-Day in <?php echo htmlspecialchars($city_name); ?>
         </h2>
         <p class="text-slate-500 text-xs sm:text-sm mt-1.5">
-          Mobile service vehicles stocked with genuine OEM pumps, microswitches, valves, and food-grade gaskets.
+          Mobile service vehicles stocked with genuine factory pumps, microswitches, valves, and food-grade gaskets.
         </p>
       </div>
 
@@ -1371,10 +1371,10 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
             03
           </div>
           <h3 class="font-heading font-bold text-base text-slate-900 mb-2">
-            Precision OEM Repair &amp; Warranty
+            Precision Factory Repair &amp; Warranty
           </h3>
           <p class="text-xs text-slate-600 leading-relaxed">
-            We install genuine OEM parts and calibrate extraction pressure. Every completed repair is backed by our comprehensive written warranty on parts and labour.
+            We install genuine factory parts and calibrate extraction pressure. Every completed repair is backed by our comprehensive written warranty on parts and labour.
           </p>
         </div>
 
@@ -1440,7 +1440,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
 
         <details class="group border border-slate-200 rounded-xl p-4 sm:p-5 bg-white open:bg-slate-50/40 transition-colors">
           <summary class="flex justify-between items-center font-heading font-bold text-sm sm:text-base text-slate-900 cursor-pointer list-none">
-            <span>Do your technicians use genuine OEM factory parts?</span>
+            <span>Do your technicians use genuine factory parts?</span>
             <span class="transition group-open:rotate-180 text-slate-400">▼</span>
           </summary>
           <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-3 pt-3 border-t border-slate-100">
@@ -1562,7 +1562,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
           <ul class="text-xs sm:text-sm space-y-2.5 text-slate-400">
             <li><a href="../privacy-policy" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Privacy Policy</a></li>
             <li><a href="../terms-and-conditions" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Terms of Service</a></li>
-            <li><a href="../privacy-policy#google-ads" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Google Ads Policy Disclaimer</a></li>
+            <li><a href="../privacy-policy#google-ads" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Disclosure</a></li>
           </ul>
         </div>
 
