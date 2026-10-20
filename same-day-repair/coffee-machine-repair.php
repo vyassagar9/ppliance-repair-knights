@@ -437,7 +437,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
       <div class="flex items-center gap-2">
         <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 live-pulse"></span>
         <span class="text-slate-300 font-medium text-[11px] sm:text-xs">
-          Priority Same-Day Dispatch in <strong class="text-white font-semibold"><?php echo htmlspecialchars($city_name); ?></strong> &amp; GTA — Zero Shop Drop-Off
+          Priority Same-Day Dispatch in <strong class="text-white font-semibold"><?php echo htmlspecialchars($city_name); ?></strong> — Zero Shop Drop-Off
         </span>
       </div>
       <div class="hidden sm:flex items-center gap-3 text-xs text-slate-300">
@@ -664,7 +664,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
                   <label for="lead-city" class="block text-[11px] font-bold uppercase tracking-wider text-slate-600 mb-1">Service Location *</label>
                   <select id="lead-city" name="city" required
                     class="minimal-input w-full px-3 py-2.5 text-slate-900 text-sm bg-white font-medium">
-                    <option value="Toronto" <?php echo $city_slug === 'toronto' ? 'selected' : ''; ?>>Toronto (Downtown &amp; GTA)</option>
+                    <option value="Toronto" <?php echo $city_slug === 'toronto' ? 'selected' : ''; ?>>Toronto (All Areas)</option>
                     <option value="Mississauga" <?php echo $city_slug === 'mississauga' ? 'selected' : ''; ?>>Mississauga</option>
                     <option value="Brampton" <?php echo $city_slug === 'brampton' ? 'selected' : ''; ?>>Brampton</option>
                     <option value="Vaughan" <?php echo $city_slug === 'vaughan' ? 'selected' : ''; ?>>Vaughan / Concord</option>
@@ -748,7 +748,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
             </div>
             <div class="min-w-0 text-left">
               <span class="block text-xs sm:text-sm font-extrabold text-slate-900 leading-tight group-hover:text-brandBlue transition-colors">Same-Day Dispatch</span>
-              <span class="block text-[10px] text-slate-500 font-medium truncate"><?php echo htmlspecialchars($city_name); ?> &amp; GTA Wide</span>
+              <span class="block text-[10px] text-slate-500 font-medium truncate">Across <?php echo htmlspecialchars($city_name); ?></span>
             </div>
           </div>
 
@@ -793,7 +793,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
       </div>
       <h2 class="text-xl sm:text-2xl font-heading font-black text-brandDarkBlue tracking-tight mb-2">We Service Your Brand With Genuine Parts</h2>
       <p class="text-slate-700 text-xs sm:text-sm max-w-xl mx-auto mb-4 leading-relaxed font-medium">
-        Jura, Breville, De'Longhi, Miele, Bunn, Franke, La Marzocco, and more — our certified technicians carry original factory parts for same-day repairs across <?php echo htmlspecialchars($city_name); ?> &amp; the GTA.
+        Jura, Breville, De'Longhi, Miele, Bunn, Franke, La Marzocco, and more — our certified technicians carry original factory parts for same-day repairs across <?php echo htmlspecialchars($city_name); ?>.
       </p>
       <div class="w-20 h-1 bg-brandOrange mx-auto rounded-full"></div>
     </div>
@@ -828,7 +828,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
       <div
         class="inline-flex items-center gap-2 bg-slate-100 px-4 py-2 rounded-full border border-slate-200 text-xs text-slate-700 font-medium">
         <span class="text-brandOrange font-bold">Fast Local Dispatch:</span>
-        <span>Our mobile vans carry certified factory replacement parts for commercial office brewers and luxury residential espresso models across <?php echo htmlspecialchars($city_name); ?> &amp; GTA.</span>
+        <span>Our mobile vans carry certified factory replacement parts for commercial office brewers and luxury residential espresso models across <?php echo htmlspecialchars($city_name); ?>.</span>
       </div>
     </div>
   </section>
@@ -856,7 +856,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
           <div>
             <div class="relative h-52 sm:h-60 overflow-hidden bg-slate-900">
               <img src="../img/commercial-coffee-machine.webp" 
-                   alt="Commercial Office Coffee Machine Repair Toronto &amp; GTA" 
+                   alt="Commercial Office Coffee Machine Repair in <?php echo htmlspecialchars($city_name); ?>" 
                    class="w-full h-full object-cover opacity-90 hover:scale-103 transition-transform duration-500"
                    loading="lazy">
               <div class="absolute top-3 left-3 bg-slate-900 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md border border-slate-700">
@@ -869,7 +869,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
                 Commercial Office &amp; Workplace Coffee Systems
               </h3>
               <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
-                Avoid sudden morning coffee downtime in your office. We provide emergency breakdown diagnostics, sanitary descaling, solenoid rebuilds, and rotary pump replacements for corporate breakrooms, medical clinics, and cafes.
+                Avoid sudden morning coffee downtime in your office. We provide same-day breakdown diagnostics, sanitary descaling, solenoid rebuilds, and rotary pump replacements for corporate breakrooms, medical clinics, and cafes.
               </p>
 
               <ul class="space-y-2 text-xs text-slate-700">
@@ -883,7 +883,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="text-emerald-600 font-bold">✔</span>
-                  <span><strong>Zero Workflow Interruption:</strong> Priority same-day emergency dispatch across <?php echo htmlspecialchars($city_name); ?>.</span>
+                  <span><strong>Zero Workflow Interruption:</strong> Priority same-day dispatch across <?php echo htmlspecialchars($city_name); ?>.</span>
                 </li>
               </ul>
             </div>
@@ -904,7 +904,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
           <div>
             <div class="relative h-52 sm:h-60 overflow-hidden bg-slate-900">
               <img src="../img/residential-coffee-machine.webp" 
-                   alt="Residential Built-In Coffee Machine Repair Toronto &amp; GTA" 
+                   alt="Residential Built-In Coffee Machine Repair in <?php echo htmlspecialchars($city_name); ?>" 
                    class="w-full h-full object-cover opacity-90 hover:scale-103 transition-transform duration-500"
                    loading="lazy">
               <div class="absolute top-3 left-3 bg-slate-900 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md border border-slate-700">
@@ -1064,7 +1064,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
           <span>100% Mobile Field Service</span>
         </div>
         <h2 class="text-2xl sm:text-3xl font-heading font-black text-slate-900 tracking-tight">
-          Recent On-Site Repairs Across <?php echo htmlspecialchars($city_name); ?> &amp; the GTA
+          Recent On-Site Repairs Across <?php echo htmlspecialchars($city_name); ?>
         </h2>
         <p class="text-slate-500 text-xs sm:text-sm mt-2">
           From corporate office breakrooms to custom residential kitchens, our certified technicians diagnose and repair espresso equipment right where it sits. No heavy lifting, no shop drop-off.
@@ -1079,7 +1079,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
           <div>
             <div class="gallery-card-img-wrap">
               <img src="../img/coffee-repair-office.webp"
-                   alt="Commercial office coffee machine repair on-site in Toronto &amp; GTA"
+                   alt="Commercial office coffee machine repair on-site in <?php echo htmlspecialchars($city_name); ?>"
                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                    loading="lazy" width="900" height="675">
               <div class="absolute top-2.5 left-2.5 bg-slate-900/90 backdrop-blur-xs text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md border border-slate-700 shadow-xs">
@@ -1522,7 +1522,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
           </picture>
           <p class="text-slate-300 text-xs leading-relaxed">
             Appliance Repair Knights is your trusted local provider for fast, same-day coffee and espresso machine repairs across
-            Toronto, GTA & Southern Ontario.
+            the Greater Toronto Area (GTA) & Southern Ontario.
           </p>
           <div class="pt-1 space-y-1.5 text-xs text-slate-200 font-medium">
             <p><strong>Dispatch:</strong> <a href="tel:9057178905" onclick="trackGtmCall('footer')"
@@ -1530,7 +1530,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
             </p>
             <p><strong>Email:</strong> <a href="mailto:info@appliancerepairknights.com"
                 class="hover:text-white text-slate-200 font-medium">info@appliancerepairknights.com</a></p>
-            <p><strong>Region:</strong> Toronto & GTA Service Zones</p>
+            <p><strong>Region:</strong> Greater Toronto Area (GTA) Service Zones</p>
           </div>
         </div>
 
@@ -1554,8 +1554,8 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
               <span class="text-white font-semibold">8:00 AM – 8:00 PM</span>
             </li>
             <li class="flex justify-between pt-1">
-              <span class="text-emerald-400 font-bold">Emergency Dispatch:</span>
-              <span class="text-emerald-400 font-bold">24/7 Available</span>
+              <span class="text-emerald-400 font-bold">Same-Day Service:</span>
+              <span class="text-emerald-400 font-bold">8:00 AM – 8:00 PM</span>
             </li>
           </ul>
         </div>

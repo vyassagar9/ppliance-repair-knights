@@ -3,7 +3,7 @@
  * Appliance Repair Knights - High-Conversion Same-Day PPC Landing Page Template
  * Supports all 6 Appliances & GTA Cities via clean URL rewriting
  * Adheres strictly to AGENTS.md:
- * - No specific pricing/cost numbers (upfront written quotes, $0 diagnostic waived with repair)
+ * - No specific pricing/cost numbers (upfront written quotes, diagnostic fee waived with repair)
  * - No specific warranty day/month/year numbers (comprehensive written parts and labour warranty)
  * - No hardcoded operational day counts (available daily for prompt dispatch)
  * - Isolated PPC page: noindex, follow
@@ -77,7 +77,7 @@ $services_data = [
             'Ice Maker Jammed / Broken',
             'Defrost / Heavy Frost Buildup',
             'Noisy Humming Compressor',
-            '$0 Diagnostic With Repair'
+            'Fee Waived w/ Repair'
         ],
         'faults' => [
             [
@@ -121,11 +121,11 @@ $services_data = [
         'faqs' => [
             [
                 'q' => "How fast can a technician arrive for refrigerator repair in {$city_name}?",
-                'a' => "We offer priority same-day emergency dispatch across {$city_name}. When you book online or call before 2:00 PM, our certified technician can typically arrive at your home within 2 to 4 hours with a fully stocked service vehicle."
+                'a' => "We offer priority same-day dispatch across {$city_name}. When you book online or call before 2:00 PM, our certified technician can typically arrive at your home within 2 to 4 hours with a fully stocked service vehicle."
             ],
             [
                 'q' => "How does your diagnostic fee work?",
-                'a' => "We believe in complete transparency. Our diagnostic service call fee is completely waived ($0 diagnostic fee) when you proceed with the authorized repair. You receive a firm, upfront written quote before any work begins, with zero hidden travel charges or surprise fees."
+                'a' => "We believe in complete transparency. Our diagnostic service call fee is completely waived when you proceed with the authorized repair. You receive a firm, upfront written quote before any work begins, with zero hidden travel charges or surprise fees."
             ],
             [
                 'q' => "Do your technicians carry genuine refrigerator parts in their vans?",
@@ -155,7 +155,7 @@ $services_data = [
             'Water Leaking Underneath',
             'Violent Banging & Shaking',
             'Door Lock / Lid Jammed',
-            '$0 Diagnostic With Repair'
+            'Fee Waived w/ Repair'
         ],
         'faults' => [
             [
@@ -166,7 +166,7 @@ $services_data = [
             [
                 'title' => 'Water Not Draining / Standing Water',
                 'desc' => 'Clogged drain pump filter, coin or sock obstruction in pump impeller, or defective drain solenoid preventing spin cycle.',
-                'badge' => 'DRAINAGE EMERGENCY'
+                'badge' => 'DRAINAGE FAILURE'
             ],
             [
                 'title' => 'Water Leaking on Laundry Floor',
@@ -199,11 +199,11 @@ $services_data = [
         'faqs' => [
             [
                 'q' => "How fast can a technician arrive for washing machine repair in {$city_name}?",
-                'a' => "We prioritize emergency laundry repairs across {$city_name}. When you book before 2:00 PM, a certified technician is dispatched same-day and typically arrives at your home within 2 to 4 hours with a fully stocked vehicle."
+                'a' => "We prioritize same-day laundry repairs across {$city_name}. When you book before 2:00 PM, a certified technician is dispatched same-day and typically arrives at your home within 2 to 4 hours with a fully stocked vehicle."
             ],
             [
                 'q' => "Is the service call diagnostic fee included?",
-                'a' => "Yes! When you choose to proceed with our recommended repair, your diagnostic service fee is 100% waived ($0 diagnostic). We provide a clear, upfront written quote before beginning any work."
+                'a' => "Yes! When you choose to proceed with our recommended repair, your diagnostic service fee is completely waived. We provide a clear, upfront written quote before beginning any work."
             ],
             [
                 'q' => "Do your technicians carry common washer parts?",
@@ -233,13 +233,13 @@ $services_data = [
             'High-Pitched Squealing Noise',
             'Takes Multiple Cycles to Dry',
             'Overheating & Burning Smell',
-            '$0 Diagnostic With Repair'
+            'Fee Waived w/ Repair'
         ],
         'faults' => [
             [
                 'title' => 'Dryer Not Heating / Cold Drum',
                 'desc' => 'Burnt-out nichrome heating element coil, blown high-limit thermal fuse, or failed gas solenoid coils leaving clothes damp.',
-                'badge' => 'NO HEAT EMERGENCY'
+                'badge' => 'NO HEAT FAULT'
             ],
             [
                 'title' => "Drum Won't Spin or Turn",
@@ -281,7 +281,7 @@ $services_data = [
             ],
             [
                 'q' => "How much is the diagnostic service call?",
-                'a' => "Our diagnostic fee is completely waived ($0 diagnostic) when you authorize the repair. You get a transparent, upfront written quote before work begins."
+                'a' => "Our diagnostic fee is completely waived when you authorize the repair. You get a transparent, upfront written quote before work begins."
             ],
             [
                 'q' => "Do you carry heating elements and belts in the van?",
@@ -311,7 +311,7 @@ $services_data = [
             'Water Leaking from Underneath',
             'Not Filling with Hot Water',
             "Door Latch Won't Catch",
-            '$0 Diagnostic With Repair'
+            'Fee Waived w/ Repair'
         ],
         'faults' => [
             [
@@ -355,11 +355,11 @@ $services_data = [
         'faqs' => [
             [
                 'q' => "How quickly can you fix a leaking or non-draining dishwasher in {$city_name}?",
-                'a' => "We prioritize dishwasher water leaks and standing water emergencies. Book before 2:00 PM and a certified technician will typically arrive within 2 to 4 hours anywhere in {$city_name}."
+                'a' => "We prioritize dishwasher water leaks and standing water issues. Book before 2:00 PM and a certified technician will typically arrive within 2 to 4 hours anywhere in {$city_name}."
             ],
             [
                 'q' => "Is the service call diagnostic fee waived?",
-                'a' => "Yes! When you proceed with the repair, your diagnostic service call fee is completely waived ($0 diagnostic). You receive an upfront written quote before we start."
+                'a' => "Yes! When you proceed with the repair, your diagnostic service call fee is completely waived. You receive an upfront written quote before we start."
             ],
             [
                 'q' => "Do you fix Bosch, Miele, and KitchenAid dishwashers?",
@@ -389,7 +389,7 @@ $services_data = [
             'Bake / Broil Element Burned Out',
             "Gas Igniter Won't Light",
             'Oven Door Lock / Hinge Jammed',
-            '$0 Diagnostic With Repair'
+            'Fee Waived w/ Repair'
         ],
         'faults' => [
             [
@@ -437,7 +437,7 @@ $services_data = [
             ],
             [
                 'q' => "How does the diagnostic fee work for oven repair?",
-                'a' => "Our diagnostic service call fee is completely waived ($0 diagnostic) when you choose to proceed with the recommended repair. You receive a firm upfront written quote before work begins."
+                'a' => "Our diagnostic service call fee is completely waived when you choose to proceed with the recommended repair. You receive a firm upfront written quote before work begins."
             ],
             [
                 'q' => "Do you carry oven bake elements in the service van?",
@@ -467,7 +467,7 @@ $services_data = [
             'Continuous Igniter Clicking',
             'Touch Controls Unresponsive',
             'Hot Surface Indicator Stuck On',
-            '$0 Diagnostic With Repair'
+            'Fee Waived w/ Repair'
         ],
         'faults' => [
             [
@@ -515,7 +515,7 @@ $services_data = [
             ],
             [
                 'q' => "How does your diagnostic fee work?",
-                'a' => "Your diagnostic service call fee is completely waived ($0 diagnostic) when you choose to proceed with our authorized repair. We provide an upfront, transparent written quote before any work begins."
+                'a' => "Your diagnostic service call fee is completely waived when you choose to proceed with our authorized repair. We provide an upfront, transparent written quote before any work begins."
             ],
             [
                 'q' => "Do you repair glass ceramic and induction cooktops?",
@@ -540,7 +540,7 @@ $page_identifier = "{$service_slug}-{$city_slug}";
 
 // Page Metadata
 $page_title = "Same-Day {$srv['name']} Repair in {$city_name} | Local Certified Technicians";
-$meta_desc  = "Need fast {$srv['name']} repair in {$city_name}? Licensed technicians fix all issues today. $0 diagnostic with repair. Genuine factory parts & written warranty.";
+$meta_desc  = "Need fast {$srv['name']} repair in {$city_name}? Licensed technicians fix all issues today. Diagnostic fee waived with repair. Genuine factory parts & written warranty.";
 $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_identifier}";
 ?>
 <!DOCTYPE html>
@@ -585,7 +585,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
   <title id="page-title"><?php echo htmlspecialchars($page_title); ?></title>
   <meta id="meta-title" name="title" content="<?php echo htmlspecialchars($page_title); ?>">
   <meta id="meta-desc" name="description" content="<?php echo htmlspecialchars($meta_desc); ?>">
-  <meta name="keywords" content="<?php echo htmlspecialchars(strtolower($srv['name']) . ' repair ' . $city_name . ', ' . strtolower($srv['title']) . ' repair ' . $city_name . ', emergency appliance repair ' . $city_name); ?>">
+  <meta name="keywords" content="<?php echo htmlspecialchars(strtolower($srv['name']) . ' repair ' . $city_name . ', ' . strtolower($srv['title']) . ' repair ' . $city_name . ', same-day appliance repair ' . $city_name); ?>">
   <meta name="robots" content="noindex, follow"> <!-- PPC Landing Page best practice: focus ad budget -->
   <link rel="canonical" href="<?php echo htmlspecialchars($canonical_url); ?>">
 
@@ -775,7 +775,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
             "name": "How quickly can a technician arrive at my home?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "We offer same-day service across Toronto and the GTA! When you call or submit an enquiry before 2:00 PM, our technician can be at your home within 2 to 4 hours."
+              "text": "We offer same-day service across the Greater Toronto Area (GTA)! When you call or submit an enquiry before 2:00 PM, our technician can be at your home within 2 to 4 hours."
             }
           },
           {
@@ -783,7 +783,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
             "name": "What is your pricing model and service call fee?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "We provide transparent upfront flat-rate pricing with zero hidden fees. The diagnostic service call fee is 100% FREE when you proceed with any appliance repair."
+              "text": "We provide transparent upfront flat-rate pricing with zero hidden fees. The diagnostic service call fee is completely waived when you proceed with any appliance repair."
             }
           },
           {
@@ -815,12 +815,12 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <!-- TOP DISPATCH EMERGENCY ANNOUNCEMENT BAR (HIDDEN ON MOBILE FOR PPC CONVERSION SPACE) -->
+  <!-- TOP DISPATCH ANNOUNCEMENT BAR (HIDDEN ON MOBILE FOR PPC CONVERSION SPACE) -->
   <div class="hidden sm:block bg-brandDarkBlue text-white text-xs py-2.5 px-4 border-b border-brandBlue/30">
     <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
       <div class="flex items-center gap-2 font-medium">
         <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
-        <span id="top-announcement" class="text-slate-100 font-medium">Daily Emergency <?php echo htmlspecialchars($srv['name']); ?> Repair Dispatch Active in <?php echo htmlspecialchars($city_name); ?> &amp; GTA</span>
+        <span id="top-announcement" class="text-slate-100 font-medium">Same-Day <?php echo htmlspecialchars($srv['name']); ?> Repair Dispatch Active in <?php echo htmlspecialchars($city_name); ?></span>
       </div>
       <div class="flex items-center gap-4 text-xs font-extrabold text-amber-400">
         <span>Toronto Technicians On Standby</span>
@@ -914,7 +914,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
               <div id="hero-issues-list" class="flex flex-wrap gap-2">
                 <div class="inline-flex items-center gap-1.5 bg-emerald-600 text-white border border-emerald-700 px-2.5 py-1 rounded-lg text-xs font-black shadow-xs">
                   <svg class="w-3.5 h-3.5 text-emerald-200 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
-                  <span>$0 Service Call With Any Repair</span>
+                  <span>Service Call Fee Waived w/ Repair</span>
                 </div>
                 <?php foreach (array_slice($srv['pills'], 0, 5) as $pill): ?>
                 <div class="inline-flex items-center gap-1.5 bg-white border border-brandOrange/30 text-brandDarkBlue px-2.5 py-1 rounded-lg text-xs font-bold shadow-2xs">
@@ -931,11 +931,13 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
               <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs flex items-center gap-3">
                 <div
                   class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 font-bold">
-                  $0
+                  <svg class="w-5 h-5 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                  </svg>
                 </div>
                 <div>
-                  <h3 class="text-xs font-bold text-slate-800 leading-tight">Free Diagnostic</h3>
-                  <span class="text-[11px] text-slate-600 font-medium">With Any Paid Repair</span>
+                  <h3 class="text-xs font-bold text-slate-800 leading-tight">Fee Waived w/ Repair</h3>
+                  <span class="text-[11px] text-slate-600 font-medium">Diagnostic Service Call</span>
                 </div>
               </div>
 
@@ -961,7 +963,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
                 </div>
                 <div>
                   <h3 class="text-xs font-bold text-slate-800 leading-tight">Same-Day Arrival</h3>
-                  <span class="text-[11px] text-slate-600 font-medium">Across Toronto &amp; GTA</span>
+                  <span class="text-[11px] text-slate-600 font-medium">Across <?php echo htmlspecialchars($city_name); ?></span>
                 </div>
               </div>
 
@@ -1058,7 +1060,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
               </div>
 
               <h2 id="form-title" class="text-2xl font-heading font-black text-brandDarkBlue mb-1">
-                Request <?php echo htmlspecialchars($srv['name']); ?> Repair in <?php echo htmlspecialchars($city_name); ?> &amp; Claim Your $0 Diagnostic
+                Request <?php echo htmlspecialchars($srv['name']); ?> Repair in <?php echo htmlspecialchars($city_name); ?> (Fee Waived w/ Repair)
               </h2>
               <p id="form-subtitle" class="text-slate-600 text-xs mb-4 font-medium">
                 Tell us what's broken. A local technician will call in <strong class="text-slate-900">&lt;15 mins</strong> with upfront pricing &amp; arrival time.
@@ -1115,14 +1117,14 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
 
                 <button type="submit"
                   class="gtm-ppc-btn-submit w-full bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold py-3.5 px-6 rounded-xl text-xs sm:text-sm shadow-lg transition-all flex items-center justify-center gap-2 uppercase tracking-wider cursor-pointer mt-2 active:scale-98">
-                  <span>CHECK AVAILABILITY &amp; LOCK $0 FEE →</span>
+                  <span>CHECK AVAILABILITY &amp; BOOK DISPATCH →</span>
                 </button>
 
                 <p class="text-[11px] text-center text-slate-500 font-medium mt-2 flex items-center justify-center gap-1.5">
                   <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span>100% Privacy Protected • $0 Diagnostic Fee Waived With Repair</span>
+                  <span>100% Privacy Protected • Service Call Fee Waived w/ Repair</span>
                 </p>
                 <p class="text-[10px] text-center text-slate-400 mt-1 leading-tight">
                   Your information is secure and used solely for dispatching your technician. See our <a href="../privacy-policy" target="_blank" class="text-brandBlue font-semibold underline hover:text-brandOrange">Privacy Policy</a>.
@@ -1331,7 +1333,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
         <div
           class="inline-flex items-center gap-2 bg-slate-100 px-4 py-2 rounded-full border border-slate-200 text-xs text-slate-700 font-medium">
           <span class="text-brandOrange font-bold">Fast Local Dispatch:</span>
-          <span>Our mobile vans carry certified factory replacement parts for all residential makes &amp; models across <?php echo htmlspecialchars($city_name); ?> &amp; GTA.</span>
+          <span>Our mobile vans carry certified factory replacement parts for all residential makes &amp; models across <?php echo htmlspecialchars($city_name); ?>.</span>
         </div>
       </div>
     </section>
@@ -1586,7 +1588,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
         </div>
         <h2 class="text-2xl sm:text-4xl font-heading font-black text-brandDarkBlue uppercase tracking-tight mb-2">WHY LOCAL HOMEOWNERS TRUST US FIRST</h2>
         <p class="text-slate-700 text-xs sm:text-base max-w-2xl mx-auto mb-4 font-medium leading-relaxed">
-          Fast response times, transparent written quotes with $0 diagnostic fee, and fully guaranteed workmanship.
+          Fast response times, transparent written quotes (diagnostic fee waived w/ repair), and fully guaranteed workmanship.
         </p>
         <div class="w-20 h-1 bg-brandOrange mx-auto mb-12 rounded-full"></div>
 
@@ -1607,8 +1609,8 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
                 (TIME)</span>
               <h3 class="font-heading font-bold text-brandDarkBlue text-xl mb-3">Same-Day Rapid Dispatch</h3>
               <p class="text-slate-700 text-xs sm:text-sm leading-relaxed">
-                Appliance emergencies require swift action. Our local mobile vans are strategically deployed across
-                Toronto & GTA to arrive fast with fully stocked parts, completing 85%+ of repairs on the very first
+                Broken appliances require swift action. Our local mobile vans are strategically deployed across
+                <?php echo htmlspecialchars($city_name); ?> to arrive fast with fully stocked parts, completing 85%+ of repairs on the very first
                 visit.
               </p>
             </div>
@@ -1661,13 +1663,13 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
               <h3 class="font-heading font-bold text-brandDarkBlue text-xl mb-3">Upfront Flat-Rate Pricing</h3>
               <p class="text-slate-700 text-xs sm:text-sm leading-relaxed">
                 Zero hidden charges or surprise invoices. We provide clear, transparent diagnostic quotes before
-                starting any work. Plus, your diagnostic service call fee is 100% <strong
-                  class="text-slate-900">FREE</strong> when you proceed
+                starting any work. Plus, your diagnostic service call fee is <strong
+                  class="text-slate-900">completely waived</strong> when you proceed
                 with the repair!
               </p>
             </div>
             <div class="mt-6 pt-4 border-t border-slate-200 flex items-center gap-2 text-xs font-bold text-slate-800">
-              <svg class="w-4 h-4 text-emerald-600 inline-block mr-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg> $0 Service Call With Repair
+              <svg class="w-4 h-4 text-emerald-600 inline-block mr-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg> Service Call Fee Waived w/ Repair
             </div>
           </div>
 
@@ -1679,8 +1681,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
           <div class="text-center sm:text-left">
             <h4 class="font-heading font-black text-brandDarkBlue text-sm sm:text-base">Experience Fast, Reliable
               Appliance Repairs</h4>
-            <p class="text-xs text-slate-600 font-medium mt-0.5">Licensed technicians ready to dispatch across Toronto &
-              GTA today.</p>
+            <p class="text-xs text-slate-600 font-medium mt-0.5">Licensed technicians ready to dispatch across <?php echo htmlspecialchars($city_name); ?> today.</p>
           </div>
           <div class="flex items-center gap-3 flex-shrink-0">
             <a href="tel:9057178905" onclick="trackGtmCall('why_us_bottom_cta')"
@@ -2517,7 +2518,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
                 <span class="text-[11px] text-slate-600 font-bold">(12)</span>
               </div>
               <span class="text-[11px] text-slate-600 font-medium block mt-0.5">Verified Google Business Profile •
-                Toronto, Mississauga, Brampton & GTA</span>
+                Toronto, Mississauga, Brampton & Vaughan</span>
             </div>
           </div>
           <a href="tel:905-717-8905" onclick="trackGtmCall('reviews_trust_bar')"
@@ -2662,7 +2663,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
             FREQUENTLY ASKED QUESTIONS
           </h2>
           <p class="text-slate-700 text-xs sm:text-sm max-w-xl mx-auto mb-4 leading-relaxed font-medium">
-            Everything you need to know about our same-day repair process, $0 diagnostic fee, and written warranty.
+            Everything you need to know about our same-day repair process, diagnostic fee waiver, and written warranty.
           </p>
           <div class="w-20 h-1 bg-brandOrange mx-auto rounded-full"></div>
         </div>
@@ -2678,8 +2679,8 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
             </button>
             <div id="faq-1"
               class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-700 leading-relaxed border-t border-slate-100 pt-3">
-              We offer same-day refrigerator repair across Toronto and the GTA! When you call or submit an enquiry before 2:00 PM,
-              our certified technician can arrive at your home within 2 to 4 hours. Daily emergency appointments are available to prevent food spoilage.
+              We offer same-day <?php echo htmlspecialchars($srv['noun']); ?> repair across <?php echo htmlspecialchars($city_name); ?>! When you call or submit an enquiry before 2:00 PM,
+              our certified technician can arrive at your home within 2 to 4 hours during regular service hours (8:00 AM – 8:00 PM).
             </div>
           </div>
 
@@ -2693,7 +2694,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
             <div id="faq-2"
               class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-700 leading-relaxed border-t border-slate-100 pt-3">
               We provide transparent upfront written quotes before any repair begins with zero hidden charges. The diagnostic service call fee is
-              completely <strong class="text-slate-900">WAIVED ($0)</strong> when you proceed with the refrigerator repair!
+              completely <strong class="text-slate-900">WAIVED</strong> when you proceed with the refrigerator repair!
             </div>
           </div>
 
@@ -2754,7 +2755,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
                   <path fill-rule="evenodd"
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                     clip-rule="evenodd"></path>
-                </svg> $0 Service Call With Any Paid Repair</span>
+                </svg> Service Call Fee Waived w/ Repair</span>
               <span class="text-slate-400">•</span>
               <span class="flex items-center gap-1"><svg class="w-3 h-3 text-brandOrange" fill="currentColor"
                   viewBox="0 0 20 20">
@@ -2834,7 +2835,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
             </div>
             <h3 class="font-heading font-bold text-brandDarkBlue text-base mb-2">3. Diagnosis & Quote</h3>
             <p class="text-slate-700 text-xs sm:text-sm leading-relaxed">
-              We diagnose the issue and provide a clear, upfront quote before starting. $0 diagnostic fee with repair!
+              We diagnose the issue and provide a clear, upfront quote before starting. Diagnostic fee waived with repair!
             </p>
           </div>
 
@@ -2873,7 +2874,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
             class="text-2xl sm:text-4xl font-heading font-black uppercase text-white tracking-tight">NEED YOUR REFRIGERATOR
             REPAIRED IN TORONTO TODAY?</h2>
           <p id="bottom-cta-desc" class="text-xs sm:text-sm text-slate-200 mt-2 max-w-xl">
-            Don't let food spoil or laundry pile up. Call our local <?php echo htmlspecialchars($city_name); ?> dispatch team now for same-day arrival &amp; your $0 diagnostic quote!
+            Don't let food spoil or laundry pile up. Call our local <?php echo htmlspecialchars($city_name); ?> dispatch team now for same-day arrival (Fee Waived w/ Repair)!
           </p>
         </div>
 
@@ -2889,7 +2890,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
           </a>
           <a href="#ppc-quote-form"
             class="border-2 border-white/90 hover:bg-white hover:text-brandDarkBlue text-white font-extrabold px-7 py-4 rounded-2xl text-sm transition-all uppercase tracking-wider">
-            CLAIM $0 DIAGNOSTIC ONLINE ↑
+            BOOK SAME-DAY REPAIR ONLINE ↑
           </a>
         </div>
 
@@ -2913,7 +2914,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
           </picture>
           <p class="text-slate-300 text-xs leading-relaxed">
             Appliance Repair Knights is your trusted local provider for fast, same-day home appliance repairs across
-            Toronto, GTA & Southern Ontario.
+            the Greater Toronto Area (GTA) & Southern Ontario.
           </p>
           <div class="pt-1 space-y-1.5 text-xs text-slate-200 font-medium">
             <p><strong>Dispatch:</strong> <a href="tel:9057178905" onclick="trackGtmCall('footer')"
@@ -2921,7 +2922,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
             </p>
             <p><strong>Email:</strong> <a href="mailto:info@appliancerepairknights.com"
                 class="hover:text-white text-slate-200 font-medium">info@appliancerepairknights.com</a></p>
-            <p><strong>Region:</strong> Toronto & GTA Service Zones</p>
+            <p><strong>Region:</strong> Greater Toronto Area (GTA) Service Zones</p>
           </div>
         </div>
 
@@ -2949,8 +2950,8 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
               <span class="text-white font-semibold">8:00 AM – 8:00 PM</span>
             </li>
             <li class="flex justify-between pt-1">
-              <span class="text-emerald-400 font-bold">Emergency Dispatch:</span>
-              <span class="text-emerald-400 font-bold">24/7 Available</span>
+              <span class="text-emerald-400 font-bold">Same-Day Service:</span>
+              <span class="text-emerald-400 font-bold">8:00 AM – 8:00 PM</span>
             </li>
           </ul>
         </div>
@@ -3265,6 +3266,67 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
         updateReviewSlider();
       });
     });
+  </script>
+
+  <!-- Exit Intent Popup -->
+  <div id="exit-popup" class="hidden fixed inset-0 z-[100] flex items-center justify-center bg-slate-900/60 backdrop-blur-sm p-4 transition-opacity">
+    <div class="bg-white w-full max-w-md rounded-2xl p-6 md:p-8 shadow-2xl relative transform transition-all">
+      <button onclick="closeExitPopup()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 transition-colors cursor-pointer p-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+      <div class="text-center">
+        <div class="inline-block bg-brandDarkBlue text-white text-[10px] font-black uppercase tracking-widest py-1.5 px-3 rounded-full mb-4">
+          Wait! Before you leave...
+        </div>
+        <h3 class="font-heading font-extrabold text-2xl text-slate-900 mb-2">Need Priority Dispatch?</h3>
+        <p class="text-sm text-slate-500 mb-6">Lock in your time slot now. Diagnostic fee is waived when you proceed with the repair.</p>
+        <a href="tel:9057178905" onclick="trackGtmCall('exit_popup'); closeExitPopup();" class="w-full inline-flex bg-brandOrange hover:bg-brandOrangeHover text-white font-black py-3.5 px-6 rounded-2xl text-lg shadow-xl transition-all items-center justify-center gap-2 cursor-pointer hover:scale-[1.02] mb-4">
+          <svg class="w-5 h-5 fill-current animate-pulse text-white" viewBox="0 0 20 20">
+            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+          </svg>
+          <span>Call 905-717-8905</span>
+        </a>
+        <button onclick="closeExitPopup()" class="text-[11px] font-bold text-slate-400 hover:text-slate-600 underline cursor-pointer uppercase tracking-wider">No thanks</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- DESKTOP FLOATING CTAS (Hidden on mobile where sticky bar rules) -->
+  <aside id="desktop-floating-ctas" aria-label="Quick Contact" class="hidden lg:flex flex-col gap-2 select-none" style="position: fixed; right: 0; bottom: 40px; z-index: 90;">
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/19057178905" 
+       target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" title="Chat on WhatsApp"
+       class="transition-transform duration-200 hover:-translate-x-1 active:scale-95"
+       style="width: 44px; height: 44px; background-color: #25D366; border-radius: 22px 0 0 22px; padding-left: 4px; display: flex; align-items: center; justify-content: center; box-shadow: -2px 2px 8px rgba(0,0,0,0.18);">
+      <div style="width: 30px; height: 30px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,0.75); display: flex; align-items: center; justify-content: center;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffffff">
+          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.12c-1.5 0-2.97-.4-4.26-1.16l-.31-.18-3.13.82.83-3.05-.2-.32a8.04 8.04 0 0 1-1.24-4.32c0-4.47 3.64-8.11 8.11-8.11 2.17 0 4.2 0.85 5.73 2.38a8.06 8.06 0 0 1 2.38 5.73c0 4.47-3.64 8.11-8.11 8.11zm4.45-6.09c-.24-.12-1.44-.71-1.66-.79-.22-.08-.38-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.95-1.21-.72-.64-1.21-1.44-1.35-1.68-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02s.87 2.34.99 2.5c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/>
+        </svg>
+      </div>
+    </a>
+    <!-- Phone Call Floating Button -->
+    <a href="tel:9057178905" onclick="trackGtmCall('desktop_floating');" aria-label="Call Now" title="Call 905-717-8905"
+       class="gtm-ppc-call transition-transform duration-200 hover:-translate-x-1 active:scale-95"
+       style="width: 44px; height: 44px; background-color: #0A2E52; border-radius: 22px 0 0 22px; padding-left: 4px; display: flex; align-items: center; justify-content: center; box-shadow: -2px 2px 8px rgba(0,0,0,0.18);">
+      <div style="width: 30px; height: 30px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,0.75); display: flex; align-items: center; justify-content: center;">
+        <svg width="15" height="15" viewBox="0 0 20 20" fill="#ffffff">
+          <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+        </svg>
+      </div>
+    </a>
+  </aside>
+
+  <script>
+    let popupShown = false;
+    document.addEventListener('mouseout', function(e) {
+      if (e.clientY < 0 && !popupShown) {
+        document.getElementById('exit-popup').classList.remove('hidden');
+        popupShown = true;
+      }
+    });
+    function closeExitPopup() {
+      document.getElementById('exit-popup').classList.add('hidden');
+    }
   </script>
 
 </body>
