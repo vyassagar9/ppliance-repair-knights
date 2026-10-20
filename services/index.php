@@ -36,7 +36,7 @@ $services = [
         'badge_color' => 'bg-blue-50 text-blue-700 border-blue-200',
         'image'       => 'img/refrigerator-repair-service.webp',
         'image_alt'   => 'Certified Refrigerator and Freezer Repair Service Toronto',
-        'summary'     => 'Fast, emergency cooling diagnostics for all major refrigerator types. From dead compressors to frost buildup, we restore your cold storage on the first visit.',
+        'summary'     => 'Fast, same-day cooling diagnostics for all major refrigerator types. From dead compressors to frost buildup, we restore your cold storage on the first visit.',
         'types'       => ['French Door', 'Side-by-Side', 'Bottom Freezer', 'Built-In & Panel', 'Wine Coolers'],
         'issues'      => [
             'Not cooling or uneven temperature between fridge and freezer',

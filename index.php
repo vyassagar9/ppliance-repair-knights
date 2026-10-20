@@ -2,9 +2,9 @@
 require_once __DIR__ . '/config.php';
 
 $base_url = defined('BASE_URL') ? BASE_URL : './';
-$page_title = '#1 Appliance Repair Service in GTA & Surrounding Areas | 24/7';
+$page_title = '#1 Appliance Repair Service in GTA & Surrounding Areas | Same-Day Service';
 $page_description = 'Fast, same-day appliance repair across GTA, Kitchener-Waterloo & Hamilton. Certified technicians, transparent pricing & warranty. Call 905-717-8905!';
-$page_keywords = 'appliance repair near me, appliance repair GTA, emergency appliance repair';
+$page_keywords = 'appliance repair near me, appliance repair GTA, same day appliance repair';
 $canonical_url = 'https://www.appliancerepairknights.com/';
 
 // Unified Homepage Schema (@graph: Single LocalBusiness + Service + FAQPage)
@@ -718,7 +718,7 @@ include 'head.php';
               </div>
               <h3 class="font-heading font-bold text-brandDarkBlue text-lg mb-2">Same-Day Service</h3>
               <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                Emergency calls are immediately dispatched to the closest technician hub for prompt arrival.
+                Service requests are immediately dispatched to the closest technician hub for prompt arrival.
               </p>
             </div>
             <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-bold text-slate-700 flex items-center gap-1.5">
@@ -748,7 +748,7 @@ include 'head.php';
             </div>
           </div>
 
-          <!-- Feature 3: Licensed Specialists -->
+          <!-- Feature 3: Licensed and Insured -->
           <div
             class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
             <div>
@@ -759,7 +759,7 @@ include 'head.php';
                   </path>
                 </svg>
               </div>
-              <h3 class="font-heading font-bold text-brandDarkBlue text-lg mb-2">Licensed Specialists</h3>
+              <h3 class="font-heading font-bold text-brandDarkBlue text-lg mb-2">Licensed and Insured</h3>
               <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
                 Background-checked, insured, TSSA gas certified technicians who respect your home.
               </p>

@@ -2,7 +2,7 @@
 require_once __DIR__ . '/config.php';
 $base_url = defined('BASE_URL') ? BASE_URL : './';
 $page_title = 'Schedule Appliance Repair Online | Appliance Repair Knights';
-$page_description = 'Book your appliance repair appointment online in under 60 seconds. Choose your date & time slot. 24/7 fast service across GTA. Book now!';
+$page_description = 'Book your appliance repair appointment online in under 60 seconds. Choose your date & time slot. Same-day fast service across the GTA. Book now!';
 $page_keywords = 'book appliance repair online, schedule repair service';
 $canonical_url = 'https://www.appliancerepairknights.com/schedule';
 
@@ -135,8 +135,8 @@ include 'header.php';
                 <input type="text" id="fname" required class="w-full px-4 py-2.5 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm transition-all-300">
               </div>
               <div>
-                <label for="lname" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Last name *</label>
-                <input type="text" id="lname" required class="w-full px-4 py-2.5 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm transition-all-300">
+                <label for="lname" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Last name <span class="text-slate-400 font-normal lowercase">(optional)</span></label>
+                <input type="text" id="lname" class="w-full px-4 py-2.5 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm transition-all-300">
               </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -145,27 +145,31 @@ include 'header.php';
                 <input type="tel" id="phone" required placeholder="e.g. 905-123-4567" class="w-full px-4 py-2.5 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm transition-all-300">
               </div>
               <div>
-                <label for="email" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Email address *</label>
-                <input type="email" id="email" required placeholder="e.g. john@example.com" class="w-full px-4 py-2.5 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm transition-all-300">
+                <label for="email" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Email address <span class="text-slate-400 font-normal lowercase">(optional)</span></label>
+                <input type="email" id="email" placeholder="e.g. john@example.com" class="w-full px-4 py-2.5 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm transition-all-300">
               </div>
             </div>
           </div>
 
           <!-- Service Address Section -->
           <div class="space-y-4">
-            <h3 class="font-heading font-bold text-sm text-primary uppercase tracking-wider border-b border-bordercolor pb-2">2. Service Location</h3>
+            <h3 class="font-heading font-bold text-sm text-primary uppercase tracking-wider border-b border-bordercolor pb-2">2. Service Location <span class="text-slate-400 font-normal lowercase text-xs">(optional)</span></h3>
             <div>
-              <label for="street" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Street address *</label>
-              <input type="text" id="street" required placeholder="e.g. 123 King Street West" class="w-full px-4 py-2.5 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm transition-all-300">
+              <label for="street" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Street address <span class="text-slate-400 font-normal lowercase">(optional)</span></label>
+              <input type="text" id="street" placeholder="e.g. 123 King Street West" class="w-full px-4 py-2.5 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm transition-all-300">
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div>
-                <label for="city" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">City *</label>
-                <select id="city" required class="w-full px-4 py-2.5 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm text-secondary bg-white transition-all-300">
-                  <option value="" disabled selected>Select city</option>
+                <label for="city" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">City <span class="text-slate-400 font-normal lowercase">(optional)</span></label>
+                <select id="city" class="w-full px-4 py-2.5 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm text-secondary bg-white transition-all-300">
+                  <option value="" selected>Select city (optional)</option>
                   <option value="Toronto">Toronto</option>
                   <option value="Mississauga">Mississauga</option>
                   <option value="Brampton">Brampton</option>
+                  <option value="Vaughan">Vaughan</option>
+                  <option value="Markham">Markham</option>
+                  <option value="Oakville">Oakville</option>
+                  <option value="Burlington">Burlington</option>
                   <option value="Hamilton">Hamilton</option>
                   <option value="Oshawa">Oshawa</option>
                   <option value="Kitchener">Kitchener</option>
@@ -173,12 +177,12 @@ include 'header.php';
                 </select>
               </div>
               <div>
-                <label for="province" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Province *</label>
+                <label for="province" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Province <span class="text-slate-400 font-normal lowercase">(optional)</span></label>
                 <input type="text" id="province" value="Ontario" readonly class="w-full px-4 py-2.5 border border-bordercolor bg-slate-50 rounded-lg text-sm text-slate-500 font-medium">
               </div>
               <div>
-                <label for="postal" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Postal code *</label>
-                <input type="text" id="postal" required placeholder="e.g. M5V 1A1" class="w-full px-4 py-2.5 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm transition-all-300">
+                <label for="postal" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Postal code <span class="text-slate-400 font-normal lowercase">(optional)</span></label>
+                <input type="text" id="postal" placeholder="e.g. M5V 1A1" class="w-full px-4 py-2.5 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm transition-all-300">
               </div>
             </div>
           </div>
@@ -190,42 +194,43 @@ include 'header.php';
               <div>
                 <label for="appliance" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Appliance type *</label>
                 <select id="appliance" required class="w-full px-4 py-2.5 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm text-secondary bg-white transition-all-300">
-                  <option value="" disabled selected>Select appliance</option>
+                  <option value="" disabled selected>Select appliance *</option>
                   <option value="Refrigerator">Fridge Repair & Installation</option>
                   <option value="OvenStove">Stove & Range Repair</option>
                   <option value="Microwave">Microwave Repair & Installation</option>
                   <option value="Washer">Washing Machine Diagnostic & Repair</option>
                   <option value="Dryer">Dryer Repair & Duct Cleaning</option>
                   <option value="Dishwasher">Dishwasher Inspection & Repair</option>
+                  <option value="Coffee Machine">Coffee & Espresso Machine Repair</option>
                 </select>
               </div>
               <div>
-                <label for="brand" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Brand *</label>
-                <input type="text" id="brand" required placeholder="e.g. Whirlpool, Samsung, LG" class="w-full px-4 py-2.5 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm transition-all-300">
+                <label for="brand" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Brand <span class="text-slate-400 font-normal lowercase">(optional)</span></label>
+                <input type="text" id="brand" placeholder="e.g. Whirlpool, Samsung, LG" class="w-full px-4 py-2.5 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm transition-all-300">
               </div>
               <div>
-                <label for="model" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Model number (optional)</label>
+                <label for="model" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Model number <span class="text-slate-400 font-normal lowercase">(optional)</span></label>
                 <input type="text" id="model" placeholder="e.g. RF28HDEDBSR" class="w-full px-4 py-2.5 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm transition-all-300">
               </div>
             </div>
             <div>
-              <label for="issue" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Describe the problem *</label>
-              <textarea id="issue" rows="4" required placeholder="Describe what the appliance is doing. (e.g. Fridge making clicking noise and not cooling, water pooling under washer)" class="w-full px-4 py-2.5 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm transition-all-300"></textarea>
+              <label for="issue" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Describe the problem <span class="text-slate-400 font-normal lowercase">(optional)</span></label>
+              <textarea id="issue" rows="4" placeholder="Describe what the appliance is doing. (e.g. Fridge making clicking noise and not cooling, water pooling under washer)" class="w-full px-4 py-2.5 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm transition-all-300"></textarea>
             </div>
           </div>
 
           <!-- Schedule Preferences -->
           <div class="space-y-4">
-            <h3 class="font-heading font-bold text-sm text-primary uppercase tracking-wider border-b border-bordercolor pb-2">4. Preferred Booking Slot</h3>
+            <h3 class="font-heading font-bold text-sm text-primary uppercase tracking-wider border-b border-bordercolor pb-2">4. Preferred Booking Slot <span class="text-slate-400 font-normal lowercase text-xs">(optional)</span></h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label for="date" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Preferred date *</label>
-                <input type="date" id="date" required class="w-full px-4 py-2.5 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm text-secondary transition-all-300">
+                <label for="date" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Preferred date <span class="text-slate-400 font-normal lowercase">(optional)</span></label>
+                <input type="date" id="date" class="w-full px-4 py-2.5 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm text-secondary transition-all-300">
               </div>
               <div>
-                <label for="time" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Time window preference *</label>
-                <select id="time" required class="w-full px-4 py-2.5 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm text-secondary bg-white transition-all-300">
-                  <option value="" disabled selected>Select time slot</option>
+                <label for="time" class="block text-xs font-bold text-primary uppercase tracking-wide mb-1">Time window preference <span class="text-slate-400 font-normal lowercase">(optional)</span></label>
+                <select id="time" class="w-full px-4 py-2.5 border border-bordercolor rounded-lg focus:outline-none focus:border-accent text-sm text-secondary bg-white transition-all-300">
+                  <option value="" selected>Select time slot (optional)</option>
                   <option value="Morning">Morning (8:00 AM - 12:00 PM)</option>
                   <option value="Afternoon">Afternoon (12:00 PM - 4:00 PM)</option>
                   <option value="Evening">Evening (4:00 PM - 8:00 PM)</option>
@@ -302,15 +307,17 @@ include 'footer.php';
       const phone = formEl.querySelector('#phone') ? formEl.querySelector('#phone').value.trim() : '';
       const email = formEl.querySelector('#email') ? formEl.querySelector('#email').value.trim() : '';
       const street = formEl.querySelector('#street') ? formEl.querySelector('#street').value.trim() : '';
-      const city = formEl.querySelector('#city') ? formEl.querySelector('#city').value : 'GTA';
-      const appliance = formEl.querySelector('#appliance') ? formEl.querySelector('#appliance').value : 'Appliance';
+      const city = (formEl.querySelector('#city') && formEl.querySelector('#city').value) ? formEl.querySelector('#city').value : 'GTA';
+      const postal = formEl.querySelector('#postal') ? formEl.querySelector('#postal').value.trim() : '';
+      const appliance = formEl.querySelector('#appliance') ? formEl.querySelector('#appliance').value : '';
       const brand = formEl.querySelector('#brand') ? formEl.querySelector('#brand').value.trim() : '';
+      const model = formEl.querySelector('#model') ? formEl.querySelector('#model').value.trim() : '';
       const issue = formEl.querySelector('#issue') ? formEl.querySelector('#issue').value.trim() : '';
       const date = formEl.querySelector('#date') ? formEl.querySelector('#date').value : '';
       const time = formEl.querySelector('#time') ? formEl.querySelector('#time').value : '';
 
-      if (!fname || !phone) {
-        alert('Please fill in your Name and Phone Number.');
+      if (!fname || !phone || !appliance) {
+        alert('Please fill in your Name, Phone Number, and Appliance Type.');
         return;
       }
 
@@ -320,13 +327,27 @@ include 'footer.php';
         submitBtn.innerText = 'BOOKING APPOINTMENT...';
       }
 
+      const msgParts = [];
+      if (street || city !== 'GTA' || postal) {
+        msgParts.push('Address: ' + [street, city !== 'GTA' ? city : '', postal].filter(Boolean).join(', '));
+      }
+      if (date || time) {
+        msgParts.push('Preferred Slot: ' + [date, time].filter(Boolean).join(' '));
+      }
+      if (model) {
+        msgParts.push('Model: ' + model);
+      }
+      if (issue) {
+        msgParts.push('Issue: ' + issue);
+      }
+
       const payload = {
         name: (fname + ' ' + lname).trim(),
         phone: phone,
         email: email,
         city: city,
         appliance: appliance + (brand ? ' (' + brand + ')' : ''),
-        message: `Address: ${street}, ${city}. Preferred: ${date} ${time}. Issue: ${issue}`,
+        message: msgParts.join(' | ') || 'Online Service Request',
         form_type: 'schedule',
         page: 'schedule.php'
       };

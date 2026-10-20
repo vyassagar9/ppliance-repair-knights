@@ -46,7 +46,7 @@ include 'head.php';
 
         <h2 class="text-lg font-heading font-bold text-brandDarkBlue">3. Accuracy &amp; Availability</h2>
         <p>
-          While we strive to ensure that all information on this site is accurate, service response times and technician arrival windows may vary depending on weather, traffic, and high-volume emergency periods across Southern Ontario.
+          While we strive to ensure that all information on this site is accurate, service response times and technician arrival windows may vary depending on weather, traffic, and high-volume service periods across Southern Ontario.
         </p>
       </div>
 

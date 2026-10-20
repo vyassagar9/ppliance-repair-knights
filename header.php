@@ -11,11 +11,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <aside class="bg-brandDarkBlue text-white text-xs py-2 px-4 border-b border-brandBlue/30">
   <div class="max-w-7xl mx-auto flex justify-between items-center">
     <div class="flex items-center gap-2">
-      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-      <span class="font-medium text-slate-200">Daily Emergency Dispatch Active Across Toronto &amp; GTA</span>
+      <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+      <span class="font-medium text-slate-200">Same-Day Appliance Repair Across the GTA</span>
     </div>
     <div class="flex items-center gap-4 text-xs font-extrabold text-brandOrange">
-      <span>Technicians Available Today</span>
+      <span>Hours: 8:00 AM – 8:00 PM</span>
       <a href="tel:9057178905" class="gtm-web-call gtm-web-call-topbar hover:underline text-white hidden sm:inline">Call: 905-717-8905</a>
     </div>
   </div>

@@ -199,7 +199,7 @@ return [
         'city_name' => 'Oakville',
         'region' => 'Halton Region',
         'meta_title' => 'Appliance Repair Oakville | Fast Local Service & Repairs',
-        'meta_description' => 'Top-rated appliance repair service in Oakville. Emergency fridge, washer, dryer, and stove repairs. Book online or call 905-717-8905.',
+        'meta_description' => 'Top-rated appliance repair service in Oakville. Same-day fridge, washer, dryer, and stove repairs. Book online or call 905-717-8905.',
         'keywords' => 'appliance repair oakville, oakville dryer repair, Bronte appliance fix',
         'h1_title' => 'Top-Rated Appliance Repair Services in Oakville',
         'cta_text' => 'Call Oakville Tech',
@@ -338,7 +338,7 @@ return [
         'cta_text' => 'Call Burlington Tech',
         'badge_text' => 'SAME-DAY BURLINGTON SERVICE',
         'card_desc' => 'Reliable service for Burlington homeowners when refrigerators, washers, dryers or other major appliances stop working properly.',
-        'intro_text' => 'Keep your Burlington home running smoothly with Appliance Repair Knights. Serving Downtown Burlington, Alton Village, Millcroft, and Tyandaga, our team delivers high-quality appliance maintenance and emergency repair.',
+        'intro_text' => 'Keep your Burlington home running smoothly with Appliance Repair Knights. Serving Downtown Burlington, Alton Village, Millcroft, and Tyandaga, our team delivers high-quality appliance maintenance and same-day repair.',
         'postal_codes' => ['L7L', 'L7M', 'L7P', 'L7R', 'L7S', 'L7T'],
         'neighborhoods' => ['Downtown Burlington', 'Alton Village', 'Millcroft', 'Tyandaga', 'Aldershot', 'Palmer', 'Roseland', 'Mountainside'],
         'geo' => ['latitude' => 43.3255, 'longitude' => -79.7990],
@@ -443,10 +443,10 @@ return [
         'date_modified' => '2026-09-17',
         'city_name' => 'Cambridge',
         'region' => 'Waterloo Region',
-        'meta_title' => 'Appliance Repair Cambridge | Fast Emergency Repairs',
-        'meta_description' => 'Emergency appliance repair in Cambridge, ON. Servicing all major brands with reliable same-day service and warranty. Call 905-717-8905.',
+        'meta_title' => 'Appliance Repair Cambridge | Fast Same-Day Repairs',
+        'meta_description' => 'Same-day appliance repair in Cambridge, ON. Servicing all major brands with reliable same-day service and warranty. Call 905-717-8905.',
         'keywords' => 'appliance repair cambridge, cambridge appliance repairman, Galt appliance fix',
-        'h1_title' => 'Emergency Appliance Repair Services in Cambridge',
+        'h1_title' => 'Same-Day Appliance Repair Services in Cambridge',
         'cta_text' => 'Call Cambridge Tech',
         'badge_text' => 'SAME-DAY CAMBRIDGE SERVICE',
         'card_desc' => 'Serving Cambridge homeowners with dependable repairs for major household appliances, from washers and dryers to kitchen equipment.',
@@ -624,7 +624,7 @@ return [
             ],
             [
                 'q' => "Can you fix a refrigerator that isn't cooling in Toronto?",
-                'a' => "Yes. Cooling failures are among our most frequent emergency refrigerator repairs in Toronto. Whether the issue is a faulty start relay, a failed condenser fan, a defective defrost thermostat, or a temperature sensor problem, our technicians can accurately diagnose and resolve the issue on-site."
+                'a' => "Yes. Cooling failures are among our most frequent same-day refrigerator repairs in Toronto. Whether the issue is a faulty start relay, a failed condenser fan, a defective defrost thermostat, or a temperature sensor problem, our technicians can accurately diagnose and resolve the issue on-site."
             ]
         ]
     ],
@@ -674,7 +674,7 @@ return [
         'faqs' => [
             [
                 'q' => 'Do you provide same-day refrigerator repair in Barrie?',
-                'a' => 'Yes, we prioritize emergency refrigerator and freezer repairs throughout Barrie to prevent food spoilage.'
+                'a' => 'Yes, we prioritize same-day refrigerator and freezer repairs throughout Barrie to prevent food spoilage.'
             ],
             [
                 'q' => 'Are parts and labor covered under warranty in Barrie?',

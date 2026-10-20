@@ -147,7 +147,7 @@ include 'header.php';
             <div>
               <span class="text-xs uppercase tracking-wider text-slate-400 font-bold block">Phone Dispatch</span>
               <a href="tel:9057178905" class="gtm-web-call text-xl font-bold text-primary hover:text-accent transition-colors">905-717-8905</a>
-              <span class="text-xs text-slate-500 block mt-1">Lines open 24/7 for emergency bookings.</span>
+              <span class="text-xs text-slate-500 block mt-1">Monday – Sunday: 8:00 AM – 8:00 PM</span>
             </div>
           </div>
 
@@ -169,7 +169,7 @@ include 'header.php';
             <div>
               <span class="text-xs uppercase tracking-wider text-slate-400 font-bold block">Service Hours</span>
               <span class="text-sm font-semibold text-secondary block">Monday – Sunday: 8:00 AM – 8:00 PM</span>
-              <span class="text-xs text-slate-500">Available daily for prompt dispatch and emergency diagnostics.</span>
+              <span class="text-xs text-slate-500">Available daily for prompt dispatch and same-day diagnostics.</span>
             </div>
           </div>
         </div>
@@ -183,31 +183,31 @@ include 'header.php';
 
     </section>
 
-    <!-- GOOGLE MY BUSINESS MAP & LOCATION SECTION -->
-    <section class="py-16 bg-slate-900 text-white border-t border-bordercolor" id="google-map-section">
+    <!-- APPLIANCE REPAIR DISPATCH & SUPPORT SECTION -->
+    <section class="py-16 bg-slate-900 text-white border-t border-bordercolor" id="dispatch-support-section">
       <div class="max-w-7xl mx-auto px-4">
         <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
           <span class="inline-flex items-center gap-2 bg-brandOrange/10 border border-brandOrange/30 text-brandOrange text-xs font-extrabold uppercase tracking-widest px-3.5 py-1 rounded-full">
-            📍 Verified Service Area &amp; GMB Listing
+            🛠️ Same-Day In-Home Service
           </span>
           <h2 class="text-3xl font-heading font-extrabold text-white">
-            Find Us On <span class="text-brandOrange">Google Maps</span>
+            Expert Repair For <span class="text-brandOrange">All Major Appliances</span>
           </h2>
           <p class="text-slate-400 text-sm md:text-base">
-            Verified Service Area & Local Business NAP for Appliance Repair Knights Ltd.
+            Prompt diagnostics and certified repairs for refrigerators, washers, dryers, dishwashers, and stoves across the Greater Toronto Area &amp; Southern Ontario.
           </p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           
-          <!-- Left: NAP Business Card -->
+          <!-- Left: Dispatch Support Card -->
           <div class="lg:col-span-5 bg-slate-950 text-white p-8 rounded-2xl shadow-xl flex flex-col justify-between border border-slate-800 space-y-6">
             <div class="space-y-4">
               <div class="flex items-center gap-3">
                 <img src="img/Appliance_Repair_Knights_Logo-white.avif" alt="Appliance Repair Knights Logo" width="723" height="345" loading="lazy" decoding="async" class="h-12 w-auto object-contain">
                 <div>
                   <h3 class="text-xl font-extrabold text-white">Appliance Repair Knights Ltd.</h3>
-                  <p class="text-xs text-amber-400 font-semibold">★ 5.0 Rated on Google Maps</p>
+                  <p class="text-xs text-amber-400 font-semibold">★ 5.0 Rated Local Appliance Technicians</p>
                 </div>
               </div>
 
@@ -240,23 +240,22 @@ include 'header.php';
               </div>
             </div>
 
-            <a href="https://www.google.com/maps/place/Appliance+Repair+Knights+Ltd./@43.7836619,-79.5314951,9z/data=!3m1!4b1!4m6!3m5!1s0xe5ee0ed024e04c1:0x1cd11e5ae2d44b97!8m2!3d43.7836619!4d-79.5314952!16s%2Fg%2F11z82qh059" target="_blank" rel="noopener noreferrer" class="w-full bg-brandOrange hover:bg-orange-600 text-white font-bold text-xs py-3 px-4 rounded-xl text-center flex items-center justify-center gap-2 transition-all shadow-md">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-              View Listing on Google Maps
+            <a href="schedule" class="w-full bg-brandOrange hover:bg-orange-600 text-white font-bold text-xs py-3 px-4 rounded-xl text-center flex items-center justify-center gap-2 transition-all shadow-md">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+              Schedule Repair Online
             </a>
           </div>
 
-          <!-- Right: Google Maps Embed Iframe -->
-          <div class="lg:col-span-7 bg-lightbg rounded-2xl overflow-hidden border border-bordercolor shadow-md min-h-[380px]">
-            <iframe 
-              title="Appliance Repair Knights Google Maps Location"
-              src="https://maps.google.com/maps?q=Appliance+Repair+Knights+Ltd.+Toronto+ON&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed" 
-              width="100%" 
-              height="100%" 
-              style="border:0; min-height: 380px;" 
-              allowfullscreen="" 
-              loading="lazy">
-            </iframe>
+          <!-- Right: Appliance Showcase Image -->
+          <div class="lg:col-span-7 bg-slate-950 rounded-2xl overflow-hidden border border-slate-800 shadow-xl min-h-[380px] relative group">
+            <img 
+              src="img/appliance-repair-tips-toronto-gta.webp" 
+              alt="Appliance Repair Knights - Refrigerator, Washer, Dryer, Dishwasher and Oven Repair across the Greater Toronto Area" 
+              width="1024" 
+              height="682" 
+              loading="lazy" 
+              decoding="async" 
+              class="w-full h-full object-cover object-center min-h-[380px] group-hover:scale-[1.02] transition-transform duration-500">
           </div>
 
         </div>

@@ -823,7 +823,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
         <span id="top-announcement" class="text-slate-100 font-medium">Same-Day <?php echo htmlspecialchars($srv['name']); ?> Repair Dispatch Active in <?php echo htmlspecialchars($city_name); ?></span>
       </div>
       <div class="flex items-center gap-4 text-xs font-extrabold text-amber-400">
-        <span>Toronto Technicians On Standby</span>
+        <span>Hours: 8:00 AM – 8:00 PM</span>
         <a href="tel:9057178905" onclick="trackGtmCall('topbar')"
           class="gtm-ppc-call gtm-ppc-call-topbar hover:underline text-white hidden sm:inline font-bold">Call:
           905-717-8905</a>

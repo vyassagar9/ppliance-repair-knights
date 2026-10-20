@@ -242,7 +242,7 @@ include __DIR__ . '/../head.php';
             </div>
             <div class="flex items-center gap-2.5 text-slate-200 text-sm">
               <svg class="w-4 h-4 text-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              <span>Emergency breakdown fixes, deep descaling, and scheduled maintenance</span>
+              <span>Same-day breakdown fixes, deep descaling, and scheduled maintenance</span>
             </div>
             <div class="flex items-center gap-2.5 text-slate-200 text-sm">
               <svg class="w-4 h-4 text-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>

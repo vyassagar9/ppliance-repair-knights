@@ -253,7 +253,7 @@ include __DIR__ . '/../head.php';
         <div class="space-y-4">
           <h2 class="text-2xl font-heading font-bold text-primary">Fridge Repair & Diagnostics</h2>
           <p class="text-slate-600 leading-relaxed text-sm md:text-base">
-            Your refrigerator is the most vital appliance in your home, running continuously to protect your food supplies. When a compressor relay fails, frost clogs the evaporator, or a door seal gaps, temperatures quickly rise. Our licensed, local technicians carry original replacement parts to handle any emergency.
+            Your refrigerator is the most vital appliance in your home, running continuously to protect your food supplies. When a compressor relay fails, frost clogs the evaporator, or a door seal gaps, temperatures quickly rise. Our licensed, local technicians carry original replacement parts to handle any breakdown.
           </p>
         </div>
 

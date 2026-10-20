@@ -1340,7 +1340,7 @@ $disable_global_schema = true;
                       <span class="text-slate-300">•</span>
                       <h3 class="font-heading font-extrabold text-slate-900 text-[15px] sm:text-base">Prompt In-Home Arrival</h3>
                     </div>
-                    <span class="text-[11px] sm:text-xs font-bold text-orange-700 bg-orange-50 border border-orange-200/70 px-2.5 py-0.5 rounded-full uppercase tracking-wide">Daily Dispatch</span>
+                    <span class="text-[11px] sm:text-xs font-bold text-orange-700 bg-orange-50 border border-orange-200/70 px-2.5 py-0.5 rounded-full uppercase tracking-wide">Same-Day Service</span>
                   </div>
                   
                   <p class="text-[14px] sm:text-[15px] text-slate-700 leading-relaxed">

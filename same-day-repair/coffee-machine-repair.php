@@ -1483,7 +1483,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
   <section class="py-12 sm:py-16 bg-slate-900 text-white">
     <div class="max-w-4xl mx-auto px-4 text-center space-y-4">
       <div class="inline-flex items-center gap-1.5 bg-slate-800 text-amber-300 text-xs font-semibold px-3 py-1 rounded-full border border-slate-700">
-        <span>Prompt Daily Dispatch In <?php echo htmlspecialchars($city_name); ?></span>
+        <span>Same-Day Service In <?php echo htmlspecialchars($city_name); ?></span>
       </div>
       <h2 class="text-2xl sm:text-4xl font-heading font-extrabold tracking-tight">
         Need Your Coffee Flowing Flawlessly Today?

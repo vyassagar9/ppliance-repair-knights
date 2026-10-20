@@ -155,7 +155,6 @@ $base_url = isset($base_url) ? $base_url : '';
               </svg>
               <div>
                 <span>Monday – Sunday: 8:00am - 8:00pm</span>
-                <span class="block text-xs text-brandOrange font-medium">24/7 Emergency Support</span>
               </div>
             </li>
           </ul>
