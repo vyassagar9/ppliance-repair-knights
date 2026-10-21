@@ -704,90 +704,58 @@ include 'head.php';
         </p>
         <div class="w-20 h-1 bg-brandOrange mx-auto mb-12 rounded-full"></div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
 
           <!-- Feature 1: Same-Day Service -->
           <div
-            class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
-            <div>
-              <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-600 flex items-center justify-center mb-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
-              <h3 class="font-heading font-bold text-brandDarkBlue text-lg mb-2">Same-Day Service</h3>
-              <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                Service requests are immediately dispatched to the closest technician hub for prompt arrival.
-              </p>
+            class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200 shadow-sm hover-lift flex flex-col items-center text-center">
+            <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-600 flex items-center justify-center mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
             </div>
-            <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-bold text-slate-700 flex items-center gap-1.5">
-              <span class="text-emerald-600">✓</span> Rapid Dispatch Active
-            </div>
+            <h3 class="font-heading font-bold text-brandDarkBlue text-lg">Same-Day Service</h3>
           </div>
 
           <!-- Feature 2: Transparent Fixed Pricing -->
           <div
-            class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
-            <div>
-              <div
-                class="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center mb-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                  </path>
-                </svg>
-              </div>
-              <h3 class="font-heading font-bold text-brandDarkBlue text-lg mb-2">Transparent Fixed Pricing</h3>
-              <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                Flat upfront rates quoted post-diagnosis. No surprise hourly charges or hidden service fees.
-              </p>
+            class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200 shadow-sm hover-lift flex flex-col items-center text-center">
+            <div
+              class="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                </path>
+              </svg>
             </div>
-            <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-bold text-slate-700 flex items-center gap-1.5">
-              <span class="text-emerald-600">✓</span> Service Call Fee Waived with Repair
-            </div>
+            <h3 class="font-heading font-bold text-brandDarkBlue text-lg">Transparent Fixed Pricing</h3>
           </div>
 
           <!-- Feature 3: Licensed and Insured -->
           <div
-            class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
-            <div>
-              <div class="w-12 h-12 rounded-2xl bg-brandBlue/10 text-brandBlue flex items-center justify-center mb-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
-                  </path>
-                </svg>
-              </div>
-              <h3 class="font-heading font-bold text-brandDarkBlue text-lg mb-2">Licensed and Insured</h3>
-              <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                Background-checked, insured, TSSA gas certified technicians who respect your home.
-              </p>
+            class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200 shadow-sm hover-lift flex flex-col items-center text-center">
+            <div class="w-12 h-12 rounded-2xl bg-brandBlue/10 text-brandBlue flex items-center justify-center mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                </path>
+              </svg>
             </div>
-            <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-bold text-slate-700 flex items-center gap-1.5">
-              <span class="text-emerald-600">✓</span> TSSA Gas Certified
-            </div>
+            <h3 class="font-heading font-bold text-brandDarkBlue text-lg">Licensed and Insured</h3>
           </div>
 
           <!-- Feature 4: Written Warranty -->
           <div
-            class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
-            <div>
-              <div class="w-12 h-12 rounded-2xl bg-purple-500/10 text-purple-600 flex items-center justify-center mb-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
-                  </path>
-                </svg>
-              </div>
-              <h3 class="font-heading font-bold text-brandDarkBlue text-lg mb-2">Written Warranty</h3>
-              <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                Repairs backed by a written parts and labor warranty on completed services.
-              </p>
+            class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200 shadow-sm hover-lift flex flex-col items-center text-center">
+            <div class="w-12 h-12 rounded-2xl bg-purple-500/10 text-purple-600 flex items-center justify-center mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
+                </path>
+              </svg>
             </div>
-            <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-bold text-slate-700 flex items-center gap-1.5">
-              <span class="text-emerald-600">✓</span> Repair With Warranty
-            </div>
+            <h3 class="font-heading font-bold text-brandDarkBlue text-lg">Written Warranty</h3>
           </div>
 
         </div>
@@ -965,7 +933,7 @@ include 'head.php';
           MAJOR APPLIANCE BRANDS WE SERVICE
         </h2>
         <p class="text-slate-600 text-xs sm:text-sm max-w-xl mx-auto font-medium">
-          Licensed diagnostic & repair services for all top household appliance makes and models across Toronto & GTA.
+          Licensed diagnostic & repair services for all top household appliance makes and models across the GTA and surrounding areas.
         </p>
         <div class="w-20 h-1 bg-brandOrange mx-auto mt-3 rounded-full"></div>
       </div>
@@ -1033,20 +1001,7 @@ include 'head.php';
         </div>
       </div>
 
-      <div class="mt-8 text-center px-4">
-        <div
-          class="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 bg-white px-4 sm:px-6 py-2.5 rounded-full border border-slate-200/90 shadow-sm text-xs sm:text-sm text-slate-800">
-          <span class="inline-flex items-center gap-1.5 bg-brandOrange/10 text-brandOrange font-extrabold px-2.5 py-0.5 rounded-full text-xs">
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-            <span>Note</span>
-          </span>
-          <span class="font-semibold text-slate-800">
-            We repair all <strong class="font-black text-brandDarkBlue">out-of-warranty</strong> residential appliances across Toronto &amp; GTA.
-          </span>
-        </div>
-      </div>
+
     </section>
 
 

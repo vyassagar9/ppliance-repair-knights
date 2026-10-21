@@ -350,6 +350,23 @@
                 class="text-slate-900">Refrigerator, Washer, Dryer, Dishwasher, or Stove</strong> across Toronto, Mississauga, Markham, Vaughan, Oakville & Richmond Hill on the first visit!
             </p>
 
+            <!-- Direct Sub-Heading Call CTA & Booking CTA Button -->
+            <div class="flex flex-wrap items-center gap-3 pt-1 pb-1">
+              <a href="tel:9057178905" onclick="trackGtmCall('hero')"
+                class="gtm-ppc-call gtm-ppc-call-hero inline-flex items-center justify-center gap-2 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl text-sm sm:text-base shadow-lg hover:shadow-xl transition-all uppercase tracking-wide transform active:scale-98">
+                <svg class="w-5 h-5 flex-shrink-0 text-white fill-current" viewBox="0 0 20 20">
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                </svg>
+                <span>Call Now For Same-Day Repair</span>
+              </a>
+              <a href="#ppc-quote-form" id="hero-action-cta"
+                class="hidden inline-flex items-center justify-center gap-2 bg-brandBlue hover:bg-brandDarkBlue text-white font-extrabold px-5 sm:px-6 py-3.5 sm:py-4 rounded-xl text-xs sm:text-sm shadow-md hover:shadow-lg transition-all uppercase tracking-wide transform active:scale-98">
+                <span id="hero-action-cta-text">Book Repair</span>
+                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+              </a>
+              <span class="text-xs text-slate-600 font-bold">Or fill out quick form for immediate dispatch</span>
+            </div>
+
             <!-- Dynamic Common Issues Solved Pills (Rendered when ?service= is present) -->
             <div id="hero-issues-container" class="hidden pt-1 pb-1">
               <span class="text-xs font-black uppercase tracking-wider text-brandDarkBlue block mb-2">Common Problems We
@@ -471,19 +488,7 @@
 
             </div>
 
-            <!-- Urgent Call CTA Row -->
-            <div class="flex flex-wrap items-center gap-4 pt-2">
-              <a href="tel:9057178905" onclick="trackGtmCall('hero')"
-                class="gtm-ppc-call gtm-ppc-call-hero bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-7 py-3.5 rounded-xl text-base transition-all shadow-lg flex items-center gap-2 uppercase tracking-wide">
-                <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path
-                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
-                  </path>
-                </svg>
-                CALL 905-717-8905 NOW
-              </a>
-              <span class="text-xs text-slate-600 font-bold">Or fill out quick form for immediate dispatch</span>
-            </div>
+
 
           </div>
 
@@ -2523,6 +2528,14 @@
     // GTM PPC Conversion Trackers (Directly mapped to GTM-M7B6FLPR Container Rules)
     function trackGtmCall(location) {
       window.dataLayer = window.dataLayer || [];
+      // 1. Tag 2: GA4 Event 'click_phone_ppc' (with parameter button_location)
+      window.dataLayer.push({
+        'event': 'click_phone_ppc',
+        'button_location': location,
+        'click_location': location,
+        'value': 1
+      });
+      // 2. Fallback event for custom PPC triggers
       window.dataLayer.push({
         'event': 'ppc_phone_click',
         'click_location': location,
@@ -2539,6 +2552,29 @@
       });
     }
 
+    function trackGtmFormSuccess(appliance, city) {
+      window.dataLayer = window.dataLayer || [];
+      // Rule 3: Triggers Tag 8 (Google Ads Conversion) and Tag 3 (GA4 generate_lead)
+      window.dataLayer.push({
+        'event': 'ppc_form_success',
+        'appliance': appliance,
+        'city': city,
+        'value': 1
+      });
+      // GA4 standard recommended lead event
+      window.dataLayer.push({
+        'event': 'generate_lead',
+        'service': appliance,
+        'city': city,
+        'value': 1
+      });
+      window.dataLayer.push({
+        'event': 'ppc_lead_form_submitted',
+        'lead_appliance': appliance,
+        'lead_city': city
+      });
+    }
+
     // Dynamic Services Database for Google Ads Campaigns
     const DYNAMIC_SERVICES = {
       fridge: {
@@ -2546,12 +2582,13 @@
         name: 'Refrigerator',
         noun: 'refrigerator',
         selectValue: 'Refrigerator',
-        title: 'Same-Day Refrigerator Repair Across the Greater Toronto Area (GTA) | Fee Waived w/ Repair',
-        metaDesc: 'Fast same-day refrigerator repair across the Greater Toronto Area (GTA). Certified technicians fix cooling, leaks, and ice makers on the first visit. Call 905-717-8905!',
+        title: 'Same-Day Refrigerator Repair Across the Greater Toronto Area (GTA) | Transparent Estimates',
+        metaDesc: 'Refrigerator not cooling, leaking or ice maker broken? Get fast, professional fridge repair from experienced local technicians across the GTA. Call 905-717-8905!',
         topAnnouncement: 'Same-Day Refrigerator Repair Dispatch Active Across the GTA',
         heroBadge: 'SAME-DAY REFRIGERATOR REPAIR • GREATER TORONTO AREA (GTA)',
-        heroTitle: 'Same-Day <span class="text-brandBlue">Refrigerator Repair</span> Across the Greater Toronto Area',
-        heroDesc: 'Fridge not cooling, leaking water, ice maker broken, or making strange noises? Our licensed technicians arrive today with fully stocked parts to fix your <strong class="text-slate-900">Refrigerator or Freezer</strong> across Toronto, Mississauga, Markham, Vaughan, Oakville & Richmond Hill on the first visit!',
+        heroTitle: 'Refrigerator Not Cooling, Leaking or <span class="text-brandBlue">Ice Maker Broken?</span>',
+        heroDesc: 'Get fast, professional refrigerator repair from experienced local technicians. We service Samsung, LG, Whirlpool, Bosch, and other major brands, with clear repair estimates before work begins.',
+        ctaText: 'Book Your Refrigerator Repair Today',
         issues: [
           { text: 'Not Cooling / Overheating' },
           { text: 'Water Leaks & Condensation' },
@@ -2560,13 +2597,13 @@
           { text: 'Fee Waived w/ Repair', highlight: true }
         ],
         formBadge: 'SAME-DAY REFRIGERATOR DISPATCH',
-        formTitle: 'Request Refrigerator Repair Today (Fee Waived w/ Repair)',
+        formTitle: 'Book Your Refrigerator Repair Today (Fee Waived w/ Repair)',
         formSubtitle: 'Tell us what\'s broken. A local technician will call in <strong class="text-slate-900">&lt;15 mins</strong> with upfront pricing & arrival time.',
         servicesTitle: 'REFRIGERATOR & ALL MAJOR APPLIANCES WE REPAIR',
         servicesSubtitle: 'Specialized same-day repair for refrigerators, plus fast service for all household appliances.',
-        midCtaTitle: 'Need Your Refrigerator Repaired Today?',
+        midCtaTitle: 'Book Your Refrigerator Repair Today',
         midCtaDesc: 'Experienced GTA fridge technicians on standby with genuine replacement parts.',
-        bottomCtaTitle: 'NEED YOUR REFRIGERATOR REPAIRED TODAY?',
+        bottomCtaTitle: 'BOOK YOUR REFRIGERATOR REPAIR TODAY',
         bottomCtaDesc: 'Don\'t let spoiled groceries or a leaking fridge ruin your day. Call our GTA fridge dispatch center now for same-day service!',
         whatsappMsg: 'Hi, I need same-day refrigerator repair service in the GTA'
       },
@@ -2575,12 +2612,13 @@
         name: 'Washer',
         noun: 'washing machine',
         selectValue: 'Washing Machine',
-        title: 'Same-Day Washer Repair Across the Greater Toronto Area (GTA) | Transparent Flat-Rate Pricing',
-        metaDesc: 'Need fast washing machine repair? Licensed technicians repair leaks, drainage, spin cycles, and error codes across the Greater Toronto Area (GTA) today. Call 905-717-8905!',
+        title: 'Same-Day Washer Repair Across the Greater Toronto Area (GTA) | Transparent Estimates',
+        metaDesc: 'Washer leaking, not draining or won\'t spin? Get fast, professional washing machine repair from experienced local technicians across the GTA. Call 905-717-8905!',
         topAnnouncement: 'Same-Day Washer Repair Dispatch Active Across the GTA',
         heroBadge: 'SAME-DAY WASHER REPAIR • GREATER TORONTO AREA (GTA)',
-        heroTitle: 'Same-Day <span class="text-brandBlue">Washer Repair</span> Across the Greater Toronto Area',
-        heroDesc: 'Washer won\'t spin, draining issues, leaking water, or stopping mid-cycle? Our licensed technicians arrive today with stocked parts to fix your <strong class="text-slate-900">Front-Load or Top-Load Washer</strong> across Toronto, Mississauga, Markham, Vaughan, Oakville & Richmond Hill on the first visit!',
+        heroTitle: 'Washer Leaking, Not Draining or <span class="text-brandBlue">Won\'t Spin?</span>',
+        heroDesc: 'Get fast, professional washing machine repair from experienced local technicians. We service Samsung, LG, Whirlpool, Maytag, and other major brands, with clear repair estimates before work begins.',
+        ctaText: 'Book Your Washer Repair Today',
         issues: [
           { text: 'Not Spinning or Agitating' },
           { text: 'Water Leaking & Drainage Failure' },
@@ -2590,13 +2628,13 @@
           { text: 'Fee Waived w/ Repair', highlight: true }
         ],
         formBadge: 'SAME-DAY WASHER DISPATCH',
-        formTitle: 'Request Washer Repair Today (Fee Waived w/ Repair)',
+        formTitle: 'Book Your Washer Repair Today (Fee Waived w/ Repair)',
         formSubtitle: 'Tell us what\'s broken. A local technician will call in <strong class="text-slate-900">&lt;15 mins</strong> with upfront pricing & arrival time.',
         servicesTitle: 'WASHER & ALL MAJOR APPLIANCES WE REPAIR',
         servicesSubtitle: 'Specialized same-day repair for washing machines, plus fast service for all household appliances.',
-        midCtaTitle: 'Need Your Washing Machine Repaired Today?',
+        midCtaTitle: 'Book Your Washer Repair Today',
         midCtaDesc: 'Experienced GTA washer technicians on standby with genuine replacement parts.',
-        bottomCtaTitle: 'NEED YOUR WASHER REPAIRED TODAY?',
+        bottomCtaTitle: 'BOOK YOUR WASHER REPAIR TODAY',
         bottomCtaDesc: 'Don\'t let laundry pile up or water leaks cause damage. Call our GTA washer dispatch center now for same-day service!',
         whatsappMsg: 'Hi, I need same-day washing machine repair service in the GTA'
       },
@@ -2606,11 +2644,12 @@
         noun: 'clothes dryer',
         selectValue: 'Dryer',
         title: 'Same-Day Dryer Repair Across the Greater Toronto Area (GTA) | Heating & Drum Repair',
-        metaDesc: 'Dryer not heating or spinning? Same-day clothes dryer repair across the Greater Toronto Area (GTA). Service call fee waived with repair. Call 905-717-8905!',
+        metaDesc: 'Dryer not heating or taking too long to dry? Same-day clothes dryer repair across the Greater Toronto Area (GTA). Service call fee waived with repair. Call 905-717-8905!',
         topAnnouncement: 'Same-Day Dryer Repair Dispatch Active Across the GTA',
         heroBadge: 'SAME-DAY DRYER REPAIR • GREATER TORONTO AREA (GTA)',
-        heroTitle: 'Same-Day <span class="text-brandBlue">Dryer Repair</span> Across the Greater Toronto Area',
-        heroDesc: 'Dryer not heating, drum not spinning, squeaking noises, or taking multiple cycles? Our licensed technicians arrive today with stocked heating elements, fuses and belts to fix your <strong class="text-slate-900">Dryer</strong> across Toronto, Mississauga, Markham, Vaughan, Oakville & Richmond Hill on the first visit!',
+        heroTitle: 'Dryer Not Heating or <span class="text-brandBlue">Taking Too Long to Dry?</span>',
+        heroDesc: 'From heating problems and unusual noises to dryers that won\'t start, our experienced technicians diagnose and repair major dryer brands. Same-day appointments may be available in your area.',
+        ctaText: 'Schedule Dryer Repair',
         issues: [
           { text: 'No Heat / Clothes Stay Damp' },
           { text: 'Drum Not Spinning or Turning' },
@@ -2619,13 +2658,13 @@
           { text: 'Fee Waived w/ Repair', highlight: true }
         ],
         formBadge: 'SAME-DAY DRYER DISPATCH',
-        formTitle: 'Request Dryer Repair Today (Fee Waived w/ Repair)',
+        formTitle: 'Schedule Dryer Repair Today (Fee Waived w/ Repair)',
         formSubtitle: 'Tell us what\'s broken. A local technician will call in <strong class="text-slate-900">&lt;15 mins</strong> with upfront pricing & arrival time.',
         servicesTitle: 'DRYER & ALL MAJOR APPLIANCES WE REPAIR',
         servicesSubtitle: 'Specialized same-day repair for clothes dryers, plus fast service for all household appliances.',
-        midCtaTitle: 'Need Your Dryer Repaired Today?',
+        midCtaTitle: 'Schedule Dryer Repair Today',
         midCtaDesc: 'Experienced GTA dryer technicians on standby with genuine heating elements & parts.',
-        bottomCtaTitle: 'NEED YOUR DRYER REPAIRED TODAY?',
+        bottomCtaTitle: 'SCHEDULE YOUR DRYER REPAIR TODAY',
         bottomCtaDesc: 'Don\'t let damp laundry sit. Call our GTA dryer dispatch center now for fast same-day diagnostics & repairs!',
         whatsappMsg: 'Hi, I need same-day dryer repair service in the GTA'
       },
@@ -2635,11 +2674,12 @@
         noun: 'dishwasher',
         selectValue: 'Dishwasher',
         title: 'Same-Day Dishwasher Repair Across the Greater Toronto Area (GTA) | Drainage & Leak Fixes',
-        metaDesc: 'Fast dishwasher repair across the Greater Toronto Area (GTA). We fix drainage problems, leaks, wash pump failures, and error codes on the first visit. Call 905-717-8905!',
+        metaDesc: 'Dishwasher not draining, cleaning or leaking? Fast dishwasher repair across the Greater Toronto Area (GTA). Clear estimates & convenient scheduling. Call 905-717-8905!',
         topAnnouncement: 'Same-Day Dishwasher Repair Dispatch Active Across the GTA',
         heroBadge: 'SAME-DAY DISHWASHER REPAIR • GREATER TORONTO AREA (GTA)',
-        heroTitle: 'Same-Day <span class="text-brandBlue">Dishwasher Repair</span> Across the Greater Toronto Area',
-        heroDesc: 'Dishwasher not draining, leaking water on floor, dishes coming out dirty, or not turning on? Our licensed technicians arrive today with stocked pumps and valves to fix your <strong class="text-slate-900">Dishwasher</strong> across Toronto, Mississauga, Markham, Vaughan, Oakville & Richmond Hill on the first visit!',
+        heroTitle: 'Dishwasher Not Draining, <span class="text-brandBlue">Cleaning or Leaking?</span>',
+        heroDesc: 'Don\'t let a broken dishwasher disrupt your routine. We diagnose and repair drainage problems, water leaks, cleaning issues, and other common dishwasher faults, with upfront estimates and convenient appointment scheduling.',
+        ctaText: 'Book Dishwasher Repair',
         issues: [
           { text: 'Not Draining / Standing Water' },
           { text: 'Door & Base Water Leaks' },
@@ -2648,13 +2688,13 @@
           { text: 'Fee Waived w/ Repair', highlight: true }
         ],
         formBadge: 'SAME-DAY DISHWASHER DISPATCH',
-        formTitle: 'Request Dishwasher Repair Today (Fee Waived w/ Repair)',
+        formTitle: 'Book Dishwasher Repair Today (Fee Waived w/ Repair)',
         formSubtitle: 'Tell us what\'s broken. A local technician will call in <strong class="text-slate-900">&lt;15 mins</strong> with upfront pricing & arrival time.',
         servicesTitle: 'DISHWASHER & ALL MAJOR APPLIANCES WE REPAIR',
         servicesSubtitle: 'Specialized same-day repair for dishwashers, plus fast service for all household appliances.',
-        midCtaTitle: 'Need Your Dishwasher Repaired Today?',
+        midCtaTitle: 'Book Dishwasher Repair Today',
         midCtaDesc: 'Experienced GTA dishwasher technicians on standby with genuine replacement parts.',
-        bottomCtaTitle: 'NEED YOUR DISHWASHER REPAIRED TODAY?',
+        bottomCtaTitle: 'BOOK YOUR DISHWASHER REPAIR TODAY',
         bottomCtaDesc: 'Stop washing dishes by hand! Call our GTA dishwasher dispatch center now for fast, same-day service.',
         whatsappMsg: 'Hi, I need same-day dishwasher repair service in the GTA'
       },
@@ -2664,11 +2704,12 @@
         noun: 'stove or oven',
         selectValue: 'Oven & Stove',
         title: 'Same-Day Stove & Oven Repair Across the Greater Toronto Area (GTA) | Gas & Electric',
-        metaDesc: 'Oven not heating or burners not igniting? Fast same-day stove, range, and oven repair across the Greater Toronto Area (GTA). Service call fee waived with repair. Call 905-717-8905!',
+        metaDesc: 'Oven not heating or stove burner not working? Get professional stove and oven repair across the Greater Toronto Area (GTA). Clear estimates before repairs. Call 905-717-8905!',
         topAnnouncement: 'Same-Day Stove & Oven Repair Dispatch Active Across the GTA',
         heroBadge: 'SAME-DAY STOVE & OVEN REPAIR • GREATER TORONTO AREA (GTA)',
-        heroTitle: 'Same-Day <span class="text-brandBlue">Stove & Oven Repair</span> Across the Greater Toronto Area',
-        heroDesc: 'Oven not heating up, burners not igniting, uneven baking, or temperature control issues? Our licensed technicians arrive today with stocked igniters, elements, and thermostats to fix your <strong class="text-slate-900">Oven, Range or Stove</strong> across Toronto, Mississauga, Markham, Vaughan, Oakville & Richmond Hill on the first visit!',
+        heroTitle: 'Oven Not Heating or <span class="text-brandBlue">Stove Burner Not Working?</span>',
+        heroDesc: 'Get professional stove and oven repair for heating problems, faulty controls, and malfunctioning burners. We service major appliance brands and provide clear estimates before proceeding with repairs.',
+        ctaText: 'Request Stove & Oven Service',
         issues: [
           { text: 'Oven Not Heating / Baking' },
           { text: 'Burners Not Igniting / Clicking' },
@@ -2677,13 +2718,13 @@
           { text: 'Fee Waived w/ Repair', highlight: true }
         ],
         formBadge: 'SAME-DAY STOVE & OVEN DISPATCH',
-        formTitle: 'Request Stove & Oven Repair Today (Fee Waived w/ Repair)',
+        formTitle: 'Request Stove & Oven Service Today (Fee Waived w/ Repair)',
         formSubtitle: 'Tell us what\'s broken. A local technician will call in <strong class="text-slate-900">&lt;15 mins</strong> with upfront pricing & arrival time.',
         servicesTitle: 'STOVE, OVEN & ALL MAJOR APPLIANCES WE REPAIR',
         servicesSubtitle: 'Specialized same-day repair for stoves, ovens, and ranges, plus fast service for all household appliances.',
-        midCtaTitle: 'Need Your Stove or Oven Repaired Today?',
+        midCtaTitle: 'Request Stove & Oven Service Today',
         midCtaDesc: 'Experienced GTA oven & stove technicians on standby with genuine replacement parts.',
-        bottomCtaTitle: 'NEED YOUR OVEN OR STOVE REPAIRED TODAY?',
+        bottomCtaTitle: 'REQUEST STOVE & OVEN SERVICE TODAY',
         bottomCtaDesc: 'Don\'t let a broken oven delay your meals. Call our GTA cooking appliance dispatch center now for same-day service!',
         whatsappMsg: 'Hi, I need same-day stove or oven repair service in the GTA'
       },
@@ -2696,8 +2737,8 @@
         metaDesc: 'Expert microwave repair across the Greater Toronto Area (GTA). We repair heating, magnetrons, turntables, and electrical issues. Call 905-717-8905!',
         topAnnouncement: 'Same-Day Microwave Repair Dispatch Active Across the GTA',
         heroBadge: 'SAME-DAY MICROWAVE REPAIR • GREATER TORONTO AREA (GTA)',
-        heroTitle: 'Same-Day <span class="text-brandBlue">Microwave Repair</span> Across the Greater Toronto Area',
-        heroDesc: 'Microwave not heating, turntable not spinning, sparking inside, or touchpad unresponsive? Our licensed technicians arrive today with stocked magnetrons, fuses, and door switches to fix your <strong class="text-slate-900">Microwave</strong> across Toronto, Mississauga, Markham, Vaughan, Oakville & Richmond Hill on the first visit!',
+        heroTitle: 'Microwave Stopped Heating? <span class="text-brandBlue">Fast Local Repair Techs</span>',
+        heroDesc: 'From broken buttons to heating failures, get safe and fast microwave repair from your local experts. No hidden charges, just reliable service.',
         issues: [
           { text: 'Microwave Not Heating Food' },
           { text: 'Turntable Plate Not Spinning' },
@@ -2903,6 +2944,7 @@
       let newBottomCtaTitle = '';
       let newBottomCtaDesc = '';
       let newWhatsappMsg = '';
+      let newCtaButtonText = '';
 
       if (s && c) {
         // --- CASE 1: COMBINED SERVICE + CITY PERSONALIZATION ---
@@ -2910,20 +2952,34 @@
         newMetaDesc = `Need fast ${s.noun} repair in ${c.name}? Local certified technicians fix cooling, leaks, mechanical problems, and error codes today. Upfront quotes & diagnostic fee waived with repair.`;
         newTopAnnouncement = `Same-Day ${s.name} Repair Dispatch Active ${c.topBarSuffix}`;
         newHeroBadge = `SAME-DAY ${s.name.toUpperCase()} REPAIR • ${c.heroBadgeSuffix}`;
-        newHeroTitle = `Same-Day <span class="text-brandBlue">${s.name} Repair</span> in ${c.name}`;
+        if (s.key === 'fridge') {
+          newHeroTitle = `Refrigerator Not Cooling, Leaking or Ice Maker Broken? <span class="text-brandBlue">Get Same-Day Repair in ${c.name}</span>`;
+        } else if (s.key === 'washer') {
+          newHeroTitle = `Washer Leaking, Not Draining or Won't Spin? <span class="text-brandBlue">Get Same-Day Repair in ${c.name}</span>`;
+        } else if (s.key === 'dryer') {
+          newHeroTitle = `Dryer Not Heating or Taking Too Long to Dry? <span class="text-brandBlue">Get Fast Same-Day Repair in ${c.name}</span>`;
+        } else if (s.key === 'dishwasher') {
+          newHeroTitle = `Dishwasher Not Draining, Cleaning or Leaking? <span class="text-brandBlue">Same-Day Fix in ${c.name}</span>`;
+        } else if (s.key === 'stove') {
+          newHeroTitle = `Oven Not Heating or Stove Burner Not Working? <span class="text-brandBlue">Same-Day Stove & Oven Repair in ${c.name}</span>`;
+        } else if (s.key === 'microwave') {
+          newHeroTitle = `Microwave Stopped Heating? <span class="text-brandBlue">Fast Local Repair Techs in ${c.name}</span>`;
+        } else {
+          newHeroTitle = `Same-Day <span class="text-brandBlue">${s.name} Repair</span> in ${c.name}`;
+        }
 
         if (s.key === 'fridge') {
-          newHeroDesc = `Fridge not cooling, leaking water, ice maker broken, or making strange noises? Our licensed <strong class="text-slate-900">${c.name} appliance technicians</strong> arrive today with fully stocked parts to fix your <strong class="text-slate-900">Refrigerator or Freezer</strong> on the first visit!`;
+          newHeroDesc = `Get fast, professional refrigerator repair from experienced local technicians in ${c.name}. We service Samsung, LG, Whirlpool, Bosch, and other major brands, with clear repair estimates before work begins.`;
         } else if (s.key === 'washer') {
-          newHeroDesc = `Washer won't spin, draining issues, leaking water, or stopping mid-cycle? Our licensed <strong class="text-slate-900">${c.name} technicians</strong> arrive today with stocked parts to fix your <strong class="text-slate-900">Front-Load or Top-Load Washer</strong> on the first visit!`;
+          newHeroDesc = `Get fast, professional washing machine repair from experienced local technicians in ${c.name}. We service Samsung, LG, Whirlpool, Maytag, and other major brands, with clear repair estimates before work begins.`;
         } else if (s.key === 'dryer') {
-          newHeroDesc = `Dryer not heating, drum not spinning, squeaking noises, or taking multiple cycles? Our licensed <strong class="text-slate-900">${c.name} technicians</strong> arrive today with stocked heating elements, fuses and belts to fix your <strong class="text-slate-900">Dryer</strong> on the first visit!`;
+          newHeroDesc = `From heating problems and unusual noises to dryers that won't start, our experienced technicians in ${c.name} diagnose and repair major dryer brands. Same-day appointments may be available in your area.`;
         } else if (s.key === 'dishwasher') {
-          newHeroDesc = `Dishwasher not draining, leaking water on floor, dishes dirty, or not turning on? Our licensed <strong class="text-slate-900">${c.name} technicians</strong> arrive today with stocked pumps and valves to fix your <strong class="text-slate-900">Dishwasher</strong> on the first visit!`;
+          newHeroDesc = `Don't let a broken dishwasher disrupt your routine in ${c.name}. We diagnose and repair drainage problems, water leaks, cleaning issues, and other common dishwasher faults, with upfront estimates and convenient appointment scheduling.`;
         } else if (s.key === 'stove') {
-          newHeroDesc = `Oven not heating up, burners not igniting, uneven baking, or temperature control issues? Our licensed <strong class="text-slate-900">${c.name} technicians</strong> arrive today with stocked igniters, elements, and thermostats to fix your <strong class="text-slate-900">Oven or Stove</strong> on the first visit!`;
+          newHeroDesc = `Get professional stove and oven repair across ${c.name} for heating problems, faulty controls, and malfunctioning burners. We service major appliance brands and provide clear estimates before proceeding with repairs.`;
         } else if (s.key === 'microwave') {
-          newHeroDesc = `Microwave not heating, turntable not spinning, sparking inside, or touchpad unresponsive? Our licensed <strong class="text-slate-900">${c.name} technicians</strong> arrive today with stocked magnetrons, fuses, and door switches to fix your <strong class="text-slate-900">Microwave</strong> on the first visit!`;
+          newHeroDesc = `From broken buttons to heating failures, get safe and fast microwave repair from your local ${c.name} experts. No hidden charges, just reliable service.`;
         } else if (s.key === 'coffee') {
           newHeroDesc = `Low extraction pressure, water leaks, lukewarm coffee, or grinder error codes? Our certified <strong class="text-slate-900">${c.name} coffee technicians</strong> arrive today with stocked 15-19 bar pumps, solenoids, and food-grade seals to fix your <strong class="text-slate-900">Commercial Office Brewer or Luxury Built-In Espresso Machine</strong> on the first visit!`;
         } else {
@@ -2940,6 +2996,7 @@
         newBottomCtaTitle = `NEED YOUR ${s.name.toUpperCase()} REPAIRED IN ${c.name.toUpperCase()} TODAY?`;
         newBottomCtaDesc = `Don't wait! Call our ${c.name} dispatch center now for guaranteed same-day ${s.noun} diagnostics & repairs.`;
         newWhatsappMsg = `Hi, I need same-day ${s.noun} repair in ${c.name}`;
+        newCtaButtonText = s.ctaText || 'Check Availability & Book Dispatch';
 
       } else if (s && !c) {
         // --- CASE 2: SERVICE ONLY PERSONALIZATION ---
@@ -2959,6 +3016,7 @@
         newBottomCtaTitle = s.bottomCtaTitle;
         newBottomCtaDesc = s.bottomCtaDesc;
         newWhatsappMsg = s.whatsappMsg;
+        newCtaButtonText = s.ctaText || 'Check Availability & Book Dispatch';
 
       } else if (!s && c) {
         // --- CASE 3: CITY ONLY PERSONALIZATION ---
@@ -3055,6 +3113,19 @@
       const formSubtitle = document.getElementById('form-subtitle');
       if (formSubtitle && newFormSubtitle) {
         formSubtitle.innerHTML = newFormSubtitle;
+      }
+
+      // 5B. Dynamic CTA Button Updates
+      const submitBtn = document.querySelector('.gtm-ppc-btn-submit');
+      if (submitBtn && newCtaButtonText) {
+        submitBtn.innerHTML = `<span>${newCtaButtonText.toUpperCase()} →</span>`;
+      }
+
+      const heroActionCta = document.getElementById('hero-action-cta');
+      const heroActionCtaText = document.getElementById('hero-action-cta-text');
+      if (heroActionCta && heroActionCtaText && s && s.ctaText) {
+        heroActionCtaText.textContent = s.ctaText;
+        heroActionCta.classList.remove('hidden');
       }
 
       // Pre-select Appliance Dropdown if service exists
@@ -3202,12 +3273,8 @@
       .then(res => res.json())
       .then(data => {
         if (data.status === 'success') {
-          window.dataLayer = window.dataLayer || [];
-          window.dataLayer.push({
-            'event': 'ppc_lead_form_submitted',
-            'lead_appliance': appliance,
-            'lead_city': city
-          });
+          // Fire GTM & Google Ads Conversion tracking triggers
+          trackGtmFormSuccess(appliance, city);
 
           document.getElementById('display-user-phone').innerText = phone || 'your number';
           document.getElementById('ppc-lead-form').classList.add('hidden');

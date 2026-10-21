@@ -67,10 +67,13 @@ $services_data = [
         'name' => 'Refrigerator',
         'title' => 'Refrigerator',
         'badge' => 'SAME-DAY REFRIGERATOR REPAIR',
-        'h1' => 'Same-Day Refrigerator Repair',
+        'h1_prefix' => "Refrigerator Not Cooling, Leaking or Ice Maker Broken?",
+        'h1_action' => "Get Same-Day Repair",
+        'h1' => "Refrigerator Not Cooling, Leaking or Ice Maker Broken?",
+        'cta' => "Book Your Refrigerator Repair Today",
         'appliance_val' => 'Refrigerator / Freezer',
         'hero_img' => '../img/refrigerator-repair-service.webp',
-        'desc' => "Is your refrigerator leaking, failing to cool, or making loud compressor noises? Our certified local appliance repair specialists in {$city_name} are dispatched daily with fully stocked vans to protect your groceries and restore peak cooling performance.",
+        'desc' => "Get fast, professional refrigerator repair from experienced local technicians. We service Samsung, LG, Whirlpool, Bosch, and other major brands, with clear repair estimates before work begins.",
         'pills' => [
             'Fridge Not Cooling / Warm',
             'Water Leaking on Floor',
@@ -145,10 +148,13 @@ $services_data = [
         'name' => 'Washing Machine',
         'title' => 'Washing Machine',
         'badge' => 'SAME-DAY WASHER REPAIR',
-        'h1' => 'Same-Day Washing Machine Repair',
+        'h1_prefix' => "Washer Leaking, Not Draining or Won't Spin?",
+        'h1_action' => "Get Same-Day Repair",
+        'h1' => "Washer Leaking, Not Draining or Won't Spin?",
+        'cta' => "Book Your Washer Repair Today",
         'appliance_val' => 'Washing Machine',
         'hero_img' => '../img/washing-machine-repair-service.webp',
-        'desc' => "Is your washing machine refusing to drain, failing to spin, vibrating violently, or leaking across the laundry floor? Our certified local technicians in {$city_name} arrive same-day with genuine factory parts to get your laundry running smoothly again.",
+        'desc' => "Get fast, professional washing machine repair from experienced local technicians. We service Samsung, LG, Whirlpool, Maytag, and other major brands, with clear repair estimates before work begins.",
         'pills' => [
             'Washer Not Draining / Standing Water',
             "Drum Won't Spin or Agitate",
@@ -223,10 +229,13 @@ $services_data = [
         'name' => 'Dryer',
         'title' => 'Clothes Dryer',
         'badge' => 'SAME-DAY DRYER REPAIR',
-        'h1' => 'Same-Day Dryer Repair',
+        'h1_prefix' => "Dryer Not Heating or Taking Too Long to Dry?",
+        'h1_action' => "Get Fast Same-Day Repair",
+        'h1' => "Dryer Not Heating or Taking Too Long to Dry?",
+        'cta' => "Schedule Dryer Repair",
         'appliance_val' => 'Dryer',
         'hero_img' => '../img/clothes-dryer-repair-service.webp',
-        'desc' => "Is your dryer tumbling without heat, screeching loudly, or taking multiple cycles to dry clothes? Our certified technicians in {$city_name} arrive same-day with heating elements, thermal fuses, and roller assemblies.",
+        'desc' => "From heating problems and unusual noises to dryers that won't start, our experienced technicians diagnose and repair major dryer brands. Same-day appointments may be available in your area.",
         'pills' => [
             'Dryer Not Heating Up / Cold Air',
             "Drum Won't Spin or Turn",
@@ -301,10 +310,13 @@ $services_data = [
         'name' => 'Dishwasher',
         'title' => 'Dishwasher',
         'badge' => 'SAME-DAY DISHWASHER REPAIR',
-        'h1' => 'Same-Day Dishwasher Repair',
+        'h1_prefix' => "Dishwasher Not Draining, Cleaning or Leaking?",
+        'h1_action' => "Same-Day Fix",
+        'h1' => "Dishwasher Not Draining, Cleaning or Leaking?",
+        'cta' => "Book Dishwasher Repair",
         'appliance_val' => 'Dishwasher',
         'hero_img' => '../img/open-dishwasher-repair.webp',
-        'desc' => "Is your dishwasher leaving gritty food residue, refusing to drain water, or leaking onto your kitchen floors? Our certified technicians in {$city_name} diagnose and repair wash pumps, inlet valves, and float switches on the same day.",
+        'desc' => "Don't let a broken dishwasher disrupt your routine. We diagnose and repair drainage problems, water leaks, cleaning issues, and other common dishwasher faults, with upfront estimates and convenient appointment scheduling.",
         'pills' => [
             'Dishwasher Not Draining / Standing Water',
             'Dishes Coming Out Dirty / Gritty',
@@ -379,10 +391,13 @@ $services_data = [
         'name' => 'Oven',
         'title' => 'Oven & Range',
         'badge' => 'SAME-DAY OVEN REPAIR',
-        'h1' => 'Same-Day Oven Repair',
+        'h1_prefix' => "Oven Not Heating or Stove Burner Not Working?",
+        'h1_action' => "Same-Day Stove & Oven Repair",
+        'h1' => "Oven Not Heating or Stove Burner Not Working?",
+        'cta' => "Request Stove & Oven Service",
         'appliance_val' => 'Oven / Range / Stove',
         'hero_img' => '../img/oven-dryer-repair-service.webp',
-        'desc' => "Is your oven failing to reach set temperatures, burning food on one side, or showing digital error codes? Our certified cooking appliance specialists in {$city_name} arrive promptly with bake elements, igniters, and temperature sensors to restore your kitchen.",
+        'desc' => "Get professional stove and oven repair for heating problems, faulty controls, and malfunctioning burners. We service major appliance brands and provide clear estimates before proceeding with repairs.",
         'pills' => [
             'Oven Not Heating Up',
             'Uneven Baking / Burning Food',
@@ -457,10 +472,13 @@ $services_data = [
         'name' => 'Stove & Cooktop',
         'title' => 'Stove & Cooktop',
         'badge' => 'SAME-DAY STOVE REPAIR',
-        'h1' => 'Same-Day Stove & Cooktop Repair',
+        'h1_prefix' => "Oven Not Heating or Stove Burner Not Working?",
+        'h1_action' => "Same-Day Stove & Oven Repair",
+        'h1' => "Oven Not Heating or Stove Burner Not Working?",
+        'cta' => "Request Stove & Oven Service",
         'appliance_val' => 'Oven / Range / Stove',
         'hero_img' => '../img/induction-cooktop-repair-service.webp',
-        'desc' => "Is your electric cooktop element dead, induction surface flashing error codes, or gas burner continuously clicking? Our certified technicians in {$city_name} repair glass tops, spark modules, and infinite control switches on the very same day.",
+        'desc' => "Get professional stove and oven repair for heating problems, faulty controls, and malfunctioning burners. We service major appliance brands and provide clear estimates before proceeding with repairs.",
         'pills' => [
             'Electric Burner Not Heating',
             "Gas Burner Won't Spark",
@@ -528,6 +546,86 @@ $services_data = [
             [
                 'q' => "What warranty do you offer on cooktop repairs?",
                 'a' => "All our cooktop repairs are backed by our comprehensive written parts and labour warranty."
+            ]
+        ]
+    ],
+    'microwave' => [
+        'name' => 'Microwave',
+        'title' => 'Microwave',
+        'badge' => 'SAME-DAY MICROWAVE REPAIR',
+        'h1_prefix' => "Microwave Stopped Heating?",
+        'h1_action' => "Fast Local Repair Techs",
+        'h1' => "Microwave Stopped Heating? Fast Local Repair Techs",
+        'appliance_val' => 'Microwave',
+        'hero_img' => '../img/microwave-repair.webp',
+        'desc' => "From broken buttons to heating failures, get safe and fast microwave repair from your local experts. No hidden charges, just reliable service.",
+        'pills' => [
+            'Microwave Not Heating Food',
+            'Turntable Plate Not Spinning',
+            'Sparking / Arcing Inside',
+            'Touchpad & Buttons Unresponsive',
+            'Door Switch / Latch Stuck',
+            'Fee Waived w/ Repair'
+        ],
+        'faults' => [
+            [
+                'title' => 'Microwave Not Heating / Cold Food',
+                'desc' => 'Failed high-voltage magnetron, blown high-voltage diode, or defective capacitor preventing microwave radiation emission.',
+                'badge' => 'MAGNETRON FAULT'
+            ],
+            [
+                'title' => 'Sparking or Arcing Inside Cavity',
+                'desc' => 'Burned wave guide cover, damaged cavity paint or rack support causing electrical arcing risks.',
+                'badge' => 'WAVEGUIDE ARCING'
+            ],
+            [
+                'title' => 'Glass Turntable Plate Not Turning',
+                'desc' => 'Stripped turntable drive coupler, broken roller support ring, or failed synchronous drive motor.',
+                'badge' => 'TURNTABLE MOTOR'
+            ],
+            [
+                'title' => 'Unresponsive Touchpad or Buttons',
+                'desc' => 'Defective membrane switch keypad, main control board logic failure, or ribbon cable disconnect.',
+                'badge' => 'TOUCHPAD FAULT'
+            ],
+            [
+                'title' => 'Trips Breaker When Door Closes / Opens',
+                'desc' => 'Short-circuited primary or secondary door interlock microswitch, misaligned door latch hooks.',
+                'badge' => 'DOOR SWITCH SHORT'
+            ],
+            [
+                'title' => 'Loud Humming or Buzzing Noise',
+                'desc' => 'Failing high-voltage transformer or shorted cooling fan motor creating heavy electrical hum.',
+                'badge' => 'TRANSFORMER NOISE'
+            ]
+        ],
+        'gallery' => [
+            ['title' => 'OVER-THE-RANGE MICROWAVE', 'img' => '../img/microwave-repair.webp', 'sub' => "{$hoods[0]} • Magnetron replaced"],
+            ['title' => 'BUILT-IN DRAWER MICROWAVE', 'img' => '../img/microwave-repair.webp', 'sub' => "{$hoods[1]} • Touchpad restored"],
+            ['title' => 'COUNTERTOP MICROWAVE', 'img' => '../img/microwave-repair.webp', 'sub' => "{$hoods[4]} • Door switch repaired"],
+            ['title' => 'COMBINATION MICROWAVE OVEN', 'img' => '../img/microwave-repair.webp', 'sub' => "{$hoods[3]} • High-voltage diode fixed"],
+            ['title' => 'COMMERCIAL MICROWAVE', 'img' => '../img/microwave-repair.webp', 'sub' => "{$hoods[2]} • Turntable motor replaced"]
+        ],
+        'faqs' => [
+            [
+                'q' => "How fast can you repair a microwave in {$city_name}?",
+                'a' => "We offer same-day microwave repair across {$city_name}. When you book before 2:00 PM, a certified technician arrives within 2 to 4 hours with common replacement parts."
+            ],
+            [
+                'q' => "How does the diagnostic fee work for microwave repair?",
+                'a' => "Our diagnostic service call fee is completely waived when you proceed with the authorized repair. You get a transparent, upfront written quote before work begins."
+            ],
+            [
+                'q' => "Do you repair built-in and over-the-range (OTR) microwaves?",
+                'a' => "Yes, our technicians specialize in built-in drawer microwaves and over-the-range units from Panasonic, LG, Samsung, Whirlpool, KitchenAid, GE, and Bosch."
+            ],
+            [
+                'q' => "Is it safe to run a sparking microwave?",
+                'a' => "No. Unplug the microwave immediately. Sparking can be caused by food splatter on the waveguide cover or exposed metal, which can damage the magnetron or cause fire hazards. Our technician will safely test and repair it today."
+            ],
+            [
+                'q' => "What warranty do you offer on microwave repairs?",
+                'a' => "All microwave repairs are backed by our comprehensive written parts and labour warranty."
             ]
         ]
     ]
@@ -901,12 +999,37 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
 
             <h1 id="hero-title"
               class="text-3xl sm:text-4xl lg:text-5xl font-heading font-black text-brandDarkBlue tracking-tight leading-tight">
-              Same-Day <span class="text-brandBlue"><?php echo htmlspecialchars($srv['name']); ?> Repair</span> in <?php echo htmlspecialchars($city_name); ?>
+              <?php if (!empty($_GET['city']) && !empty($srv['h1_prefix'])): ?>
+                <?php echo htmlspecialchars($srv['h1_prefix']); ?> <span class="text-brandBlue"><?php echo htmlspecialchars($srv['h1_action']); ?> in <?php echo htmlspecialchars($city_name); ?></span>
+              <?php elseif (!empty($srv['h1'])): ?>
+                <?php echo htmlspecialchars($srv['h1']); ?>
+              <?php else: ?>
+                Same-Day <span class="text-brandBlue"><?php echo htmlspecialchars($srv['name']); ?> Repair</span><?php if (!empty($_GET['city'])) echo ' in ' . htmlspecialchars($city_name); ?>
+              <?php endif; ?>
             </h1>
 
             <p id="hero-desc" class="text-slate-700 text-sm sm:text-base md:text-lg leading-relaxed">
               <?php echo htmlspecialchars($srv['desc']); ?>
             </p>
+
+            <!-- Direct Sub-Heading Call CTA & Booking Button -->
+            <div class="flex flex-wrap items-center gap-3 pt-1 pb-1">
+              <a href="tel:<?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?>" onclick="trackGtmCall('hero')"
+                class="gtm-ppc-call gtm-ppc-call-hero inline-flex items-center justify-center gap-2 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl text-sm sm:text-base shadow-lg hover:shadow-xl transition-all uppercase tracking-wide transform active:scale-98">
+                <svg class="w-5 h-5 flex-shrink-0 text-white fill-current" viewBox="0 0 20 20">
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                </svg>
+                <span>Call Now For Same-Day Repair</span>
+              </a>
+              <?php if (!empty($srv['cta'])): ?>
+              <a href="#ppc-quote-form"
+                class="inline-flex items-center justify-center gap-2 bg-brandBlue hover:bg-brandDarkBlue text-white font-extrabold px-5 sm:px-6 py-3.5 sm:py-4 rounded-xl text-xs sm:text-sm shadow-md hover:shadow-lg transition-all uppercase tracking-wide transform active:scale-98">
+                <span><?php echo htmlspecialchars($srv['cta']); ?></span>
+                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+              </a>
+              <?php endif; ?>
+              <span class="text-xs text-slate-600 font-bold">Or fill out quick form for immediate dispatch</span>
+            </div>
 
             <!-- Common Issues Solved Pills (Dynamic for 100% Instant Relevance) -->
             <div id="hero-issues-container" class="pt-1 pb-1">
@@ -1034,19 +1157,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
 
             </div>
 
-            <!-- Urgent Call CTA Row -->
-            <div class="flex flex-wrap items-center gap-4 pt-2">
-              <a href="tel:9057178905" onclick="trackGtmCall('hero')"
-                class="gtm-ppc-call gtm-ppc-call-hero bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-7 py-3.5 rounded-xl text-base transition-all shadow-lg flex items-center gap-2 uppercase tracking-wide">
-                <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path
-                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
-                  </path>
-                </svg>
-                CALL 905-717-8905 NOW
-              </a>
-              <span class="text-xs text-slate-600 font-bold">Or fill out quick form for immediate dispatch</span>
-            </div>
+
 
           </div>
 
@@ -1060,7 +1171,11 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
               </div>
 
               <h2 id="form-title" class="text-2xl font-heading font-black text-brandDarkBlue mb-1">
-                Request <?php echo htmlspecialchars($srv['name']); ?> Repair in <?php echo htmlspecialchars($city_name); ?> (Fee Waived w/ Repair)
+                <?php if (!empty($srv['cta'])): ?>
+                  <?php echo htmlspecialchars($srv['cta']); ?> (Fee Waived w/ Repair)
+                <?php else: ?>
+                  Request <?php echo htmlspecialchars($srv['name']); ?> Repair in <?php echo htmlspecialchars($city_name); ?> (Fee Waived w/ Repair)
+                <?php endif; ?>
               </h2>
               <p id="form-subtitle" class="text-slate-600 text-xs mb-4 font-medium">
                 Tell us what's broken. A local technician will call in <strong class="text-slate-900">&lt;15 mins</strong> with upfront pricing &amp; arrival time.
@@ -1117,7 +1232,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
 
                 <button type="submit"
                   class="gtm-ppc-btn-submit w-full bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold py-3.5 px-6 rounded-xl text-xs sm:text-sm shadow-lg transition-all flex items-center justify-center gap-2 uppercase tracking-wider cursor-pointer mt-2 active:scale-98">
-                  <span>CHECK AVAILABILITY &amp; BOOK DISPATCH →</span>
+                  <span><?php echo htmlspecialchars(strtoupper($srv['cta'] ?? 'CHECK AVAILABILITY & BOOK DISPATCH')); ?> →</span>
                 </button>
 
                 <p class="text-[11px] text-center text-slate-500 font-medium mt-2 flex items-center justify-center gap-1.5">
