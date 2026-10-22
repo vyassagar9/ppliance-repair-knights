@@ -41,7 +41,7 @@ $currentAppliance = isset($defaultAppliance) ? $defaultAppliance : '';
       <div>
         <label for="quote-city" class="block text-xs font-bold text-slate-700 uppercase mb-1">Your City / Area <span class="text-slate-400 font-normal lowercase">(optional)</span></label>
         <select id="quote-city" name="city" class="w-full px-3 py-2.5 rounded-lg border border-slate-300 text-slate-800 text-sm focus:ring-2 focus:ring-brandBlue outline-none transition-all bg-white">
-          <option value="Toronto" selected>Toronto & GTA</option>
+          <option value="Toronto" selected>Toronto</option>
           <option value="Mississauga">Mississauga</option>
           <option value="Brampton">Brampton</option>
           <option value="Hamilton">Hamilton</option>

@@ -181,7 +181,7 @@ include 'head.php';
 
             <h1
               class="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-brandDarkBlue tracking-tight leading-[1.15]">
-              EXPERT APPLIANCE REPAIR SERVICES IN <span class="text-brandBlue">GREATER TORONTO AREA</span>
+              SAME DAY APPLIANCE REPAIR SERVICES IN <span class="text-brandBlue">GREATER TORONTO AREA</span>
             </h1>
 
             <p class="text-slate-600 text-base md:text-lg max-w-xl font-normal leading-relaxed">
@@ -1124,7 +1124,7 @@ include 'head.php';
             </div>
 
             <div class="relative z-10 flex items-center justify-between pt-4 border-t border-white/10">
-              <span class="text-xs text-brandOrange font-bold">● Active Technicians Nearby</span>
+              <span class="text-xs text-brandOrange font-bold">● Prompt Dispatch Available</span>
               <a href="tel:9057178905"
                 class="gtm-web-call text-xs font-bold text-white hover:text-brandOrange transition-colors">Call:
                 905-717-8905</a>

@@ -72,15 +72,15 @@ $services_data = [
         'h1' => "Refrigerator Not Cooling, Leaking or Ice Maker Broken?",
         'cta' => "Book Your Refrigerator Repair Today",
         'appliance_val' => 'Refrigerator / Freezer',
-        'hero_img' => '../img/refrigerator-repair-service.webp',
-        'desc' => "Get fast, professional refrigerator repair from experienced local technicians. We service Samsung, LG, Whirlpool, Bosch, and other major brands, with clear repair estimates before work begins.",
+        'hero_img' => '../img/appliance-repair-technician-toronto.webp',
+        'desc' => "Don't let your food spoil — get fast, same-day refrigerator repair from licensed local technicians. We service Samsung, LG, Whirlpool, Bosch, and all major brands, with clear upfront written quotes before work begins.",
         'pills' => [
             'Fridge Not Cooling / Warm',
             'Water Leaking on Floor',
             'Ice Maker Jammed / Broken',
             'Defrost / Heavy Frost Buildup',
             'Noisy Humming Compressor',
-            'Fee Waived w/ Repair'
+            'Door Gasket / Seal Leaks'
         ],
         'faults' => [
             [
@@ -115,11 +115,11 @@ $services_data = [
             ]
         ],
         'gallery' => [
-            ['title' => 'FRENCH DOOR FRIDGE', 'img' => '../img/refrigerator-repair-service.webp', 'sub' => "{$hoods[1]} • Cooling restored"],
+            ['title' => 'FRENCH DOOR FRIDGE', 'img' => '../img/appliance-repair-technician-toronto.webp', 'sub' => "{$hoods[1]} • Cooling restored"],
             ['title' => 'SIDE-BY-SIDE FRIDGE', 'img' => '../img/appliance-repair-technician-toronto.webp', 'sub' => "{$hoods[0]} • Ice maker fixed"],
             ['title' => 'BUILT-IN LUXURY FRIDGE', 'img' => '../img/appliance-repair-expert-technician.webp', 'sub' => "{$hoods[4]} • Inverter board serviced"],
-            ['title' => 'BOTTOM-FREEZER FRIDGE', 'img' => '../img/refrigerator-repair-service.webp', 'sub' => "{$hoods[3]} • Defrost drain cleared"],
-            ['title' => 'COMPACT BEVERAGE FRIDGE', 'img' => '../img/appliance-repair-technician-toronto.webp', 'sub' => "{$hoods[2]} • Fan motor replaced"]
+            ['title' => 'BOTTOM-FREEZER FRIDGE', 'img' => '../img/appliance-repair-technician-toronto.webp', 'sub' => "{$hoods[3]} • Defrost drain cleared"],
+            ['title' => 'COMPACT BEVERAGE FRIDGE', 'img' => '../img/appliance-repair-expert-technician.webp', 'sub' => "{$hoods[2]} • Fan motor replaced"]
         ],
         'faqs' => [
             [
@@ -160,8 +160,7 @@ $services_data = [
             "Drum Won't Spin or Agitate",
             'Water Leaking Underneath',
             'Violent Banging & Shaking',
-            'Door Lock / Lid Jammed',
-            'Fee Waived w/ Repair'
+            'Door Lock / Lid Jammed'
         ],
         'faults' => [
             [
@@ -196,11 +195,11 @@ $services_data = [
             ]
         ],
         'gallery' => [
-            ['title' => 'FRONT-LOAD WASHER', 'img' => '../img/washing-machine-repair-service.webp', 'sub' => "{$hoods[0]} • Drum bearings & seal"],
+            ['title' => 'FRONT-LOAD WASHER', 'img' => '../img/washing-machine-repair-technician-toronto.webp', 'sub' => "{$hoods[0]} • Drum bearings & seal"],
             ['title' => 'TOP-LOAD WASHER', 'img' => '../img/washing-machine-repair-technician.webp', 'sub' => "{$hoods[1]} • Drain pump replaced"],
-            ['title' => 'STACKED LAUNDRY UNIT', 'img' => '../img/washing-machine-repair-service.webp', 'sub' => "{$hoods[4]} • Suspension rods calibrated"],
+            ['title' => 'STACKED LAUNDRY UNIT', 'img' => '../img/clothes-dryer-repair-technician-toronto.webp', 'sub' => "{$hoods[4]} • Suspension rods calibrated"],
             ['title' => 'SMART HE WASHER', 'img' => '../img/washing-machine-repair-technician.webp', 'sub' => "{$hoods[3]} • Control board restored"],
-            ['title' => 'HIGH-EFFICIENCY WASHER', 'img' => '../img/washing-machine-repair-service.webp', 'sub' => "{$hoods[2]} • Inlet valve fixed"]
+            ['title' => 'HIGH-EFFICIENCY WASHER', 'img' => '../img/washing-machine-repair-technician-toronto.webp', 'sub' => "{$hoods[2]} • Inlet valve fixed"]
         ],
         'faqs' => [
             [
@@ -241,8 +240,7 @@ $services_data = [
             "Drum Won't Spin or Turn",
             'High-Pitched Squealing Noise',
             'Takes Multiple Cycles to Dry',
-            'Overheating & Burning Smell',
-            'Fee Waived w/ Repair'
+            'Overheating & Burning Smell'
         ],
         'faults' => [
             [
@@ -277,11 +275,11 @@ $services_data = [
             ]
         ],
         'gallery' => [
-            ['title' => 'ELECTRIC DRYER', 'img' => '../img/clothes-dryer-repair-service.webp', 'sub' => "{$hoods[0]} • Heating element replaced"],
-            ['title' => 'GAS CLOTHES DRYER', 'img' => '../img/dryer-repair-inspection.webp', 'sub' => "{$hoods[1]} • Gas valve coils restored"],
-            ['title' => 'FRONT-CONTROL DRYER', 'img' => '../img/clothes-dryer-repair-service.webp', 'sub' => "{$hoods[4]} • Rollers & belt installed"],
-            ['title' => 'SMART STEAM DRYER', 'img' => '../img/dryer-repair-inspection.webp', 'sub' => "{$hoods[3]} • Thermal cutoff fixed"],
-            ['title' => 'COMPACT DRYER', 'img' => '../img/clothes-dryer-repair-service.webp', 'sub' => "{$hoods[2]} • Blower motor serviced"]
+            ['title' => 'ELECTRIC DRYER', 'img' => '../img/clothes-dryer-repair-technician-toronto.webp', 'sub' => "{$hoods[0]} • Heating element replaced"],
+            ['title' => 'GAS CLOTHES DRYER', 'img' => '../img/clothes-dryer-repair-service.webp', 'sub' => "{$hoods[1]} • Gas valve coils restored"],
+            ['title' => 'FRONT-CONTROL DRYER', 'img' => '../img/clothes-dryer-repair-technician-toronto.webp', 'sub' => "{$hoods[4]} • Rollers & belt installed"],
+            ['title' => 'SMART STEAM DRYER', 'img' => '../img/clothes-dryer-repair-service.webp', 'sub' => "{$hoods[3]} • Thermal cutoff fixed"],
+            ['title' => 'COMPACT DRYER', 'img' => '../img/clothes-dryer-repair-technician-toronto.webp', 'sub' => "{$hoods[2]} • Blower motor serviced"]
         ],
         'faqs' => [
             [
@@ -322,8 +320,7 @@ $services_data = [
             'Dishes Coming Out Dirty / Gritty',
             'Water Leaking from Underneath',
             'Not Filling with Hot Water',
-            "Door Latch Won't Catch",
-            'Fee Waived w/ Repair'
+            "Door Latch Won't Catch"
         ],
         'faults' => [
             [
@@ -358,11 +355,11 @@ $services_data = [
             ]
         ],
         'gallery' => [
-            ['title' => 'BUILT-IN DISHWASHER', 'img' => '../img/open-dishwasher-repair.webp', 'sub' => "{$hoods[0]} • Drain pump replaced"],
+            ['title' => 'BUILT-IN DISHWASHER', 'img' => '../img/dishwasher-repair-technician-toronto.webp', 'sub' => "{$hoods[0]} • Drain pump replaced"],
             ['title' => 'PANEL-READY DISHWASHER', 'img' => '../img/open-dishwasher-repair.webp', 'sub' => "{$hoods[4]} • Wash motor replaced"],
-            ['title' => 'FRONT-CONTROL DISHWASHER', 'img' => '../img/open-dishwasher-repair.webp', 'sub' => "{$hoods[1]} • Door gasket restored"],
+            ['title' => 'FRONT-CONTROL DISHWASHER', 'img' => '../img/dishwasher-repair-technician-toronto.webp', 'sub' => "{$hoods[1]} • Door gasket restored"],
             ['title' => 'SMART QUIET DISHWASHER', 'img' => '../img/open-dishwasher-repair.webp', 'sub' => "{$hoods[3]} • Inlet valve replaced"],
-            ['title' => 'UNDER-COUNTER DISHWASHER', 'img' => '../img/open-dishwasher-repair.webp', 'sub' => "{$hoods[2]} • Float switch serviced"]
+            ['title' => 'UNDER-COUNTER DISHWASHER', 'img' => '../img/dishwasher-repair-technician-toronto.webp', 'sub' => "{$hoods[2]} • Float switch serviced"]
         ],
         'faqs' => [
             [
@@ -403,8 +400,7 @@ $services_data = [
             'Uneven Baking / Burning Food',
             'Bake / Broil Element Burned Out',
             "Gas Igniter Won't Light",
-            'Oven Door Lock / Hinge Jammed',
-            'Fee Waived w/ Repair'
+            'Oven Door Lock / Hinge Jammed'
         ],
         'faults' => [
             [
@@ -484,8 +480,7 @@ $services_data = [
             "Gas Burner Won't Spark",
             'Continuous Igniter Clicking',
             'Touch Controls Unresponsive',
-            'Hot Surface Indicator Stuck On',
-            'Fee Waived w/ Repair'
+            'Hot Surface Indicator Stuck On'
         ],
         'faults' => [
             [
@@ -564,8 +559,7 @@ $services_data = [
             'Turntable Plate Not Spinning',
             'Sparking / Arcing Inside',
             'Touchpad & Buttons Unresponsive',
-            'Door Switch / Latch Stuck',
-            'Fee Waived w/ Repair'
+            'Door Switch / Latch Stuck'
         ],
         'faults' => [
             [
@@ -813,6 +807,23 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
       -ms-overflow-style: none;
       scrollbar-width: none;
     }
+
+    /* Micro-Trust Line Spacing & Padding */
+    .hero-micro-trust {
+      margin-top: 18px !important;
+      margin-bottom: 16px !important;
+      padding: 6px 0 !important;
+      row-gap: 8px !important;
+      line-height: 1.4 !important;
+    }
+    @media (min-width: 640px) {
+      .hero-micro-trust {
+        margin-top: 12px !important;
+        margin-bottom: 0 !important;
+        padding: 0 !important;
+        row-gap: 0 !important;
+      }
+    }
   </style>
 
   <!-- Google PPC JSON-LD LocalBusiness & FAQ Schema -->
@@ -868,14 +879,6 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
       {
         "@type": "FAQPage",
         "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How quickly can a technician arrive at my home?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We offer same-day service across the Greater Toronto Area (GTA)! When you call or submit an enquiry before 2:00 PM, our technician can be at your home within 2 to 4 hours."
-            }
-          },
           {
             "@type": "Question",
             "name": "What is your pricing model and service call fee?",
@@ -983,64 +986,65 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
 
     <!-- HERO SECTION 1 (HIGH CONVERSION PPC HERO + LEAD CAPTURE FORM) -->
     <section
-      class="bg-gradient-to-b from-slate-50 via-white to-slate-100 py-8 lg:py-14 border-b border-brandBorder relative overflow-hidden">
+      class="bg-gradient-to-b from-slate-50 via-white to-slate-100 py-4 sm:py-10 lg:py-12 border-b border-brandBorder relative overflow-hidden">
       <div class="max-w-7xl mx-auto px-4">
 
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
 
           <!-- Hero Left Column: Aggressive PPC Value Props (7 cols) -->
-          <div class="lg:col-span-7 space-y-5">
+          <div class="lg:col-span-7 space-y-3 sm:space-y-5">
 
-            <div id="hero-badge"
-              class="inline-flex items-center gap-2 bg-brandOrange/10 text-brandOrange font-extrabold text-xs uppercase tracking-widest px-3.5 py-1.5 rounded-md border border-brandOrange/30">
-              <span class="w-2 h-2 rounded-full bg-brandOrange animate-pulse"></span>
-              <span>SAME-DAY <?php echo htmlspecialchars(strtoupper($srv['name'])); ?> REPAIR • <?php echo htmlspecialchars(strtoupper($city_name)); ?> SPECIALISTS</span>
+            <!-- Top Pill Badges Row -->
+            <div class="flex items-center gap-1.5 sm:gap-2 flex-wrap">
+              <div id="hero-badge"
+                class="inline-flex items-center gap-1.5 bg-brandOrange/10 text-brandOrange font-extrabold text-[10px] sm:text-xs uppercase tracking-wider px-2.5 py-1 rounded-md border border-brandOrange/30">
+                <span class="w-1.5 h-1.5 rounded-full bg-brandOrange animate-pulse"></span>
+                <span>SAME-DAY <?php echo htmlspecialchars(strtoupper($srv['name'])); ?> REPAIR • NEAR YOU</span>
+              </div>
+              <div class="inline-flex items-center gap-1 bg-emerald-50 text-emerald-800 font-extrabold text-[10px] sm:text-xs px-2 py-1 rounded-md border border-emerald-300 shadow-2xs">
+                <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                <span class="sm:hidden">FEE WAIVED W/ REPAIR</span>
+                <span class="hidden sm:inline">DIAGNOSTIC FEE WAIVED W/ REPAIR</span>
+              </div>
+              <!-- Google 5-Star Rating Badge -->
+              <div class="inline-flex items-center gap-1.5 bg-white text-slate-900 font-extrabold text-[10px] sm:text-xs px-2 py-1 rounded-md border border-slate-200 shadow-2xs">
+                <svg class="w-3.5 h-3.5 flex-shrink-0" viewBox="0 0 24 24">
+                  <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                  <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                  <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                  <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                </svg>
+                <div class="flex text-amber-400 text-[10px] sm:text-xs tracking-tight">★★★★★</div>
+                <span class="font-black text-slate-800">5.0 Google Rating</span>
+              </div>
             </div>
 
             <h1 id="hero-title"
-              class="text-3xl sm:text-4xl lg:text-5xl font-heading font-black text-brandDarkBlue tracking-tight leading-tight">
+              class="text-xl sm:text-3xl lg:text-4xl font-heading font-black text-brandDarkBlue tracking-tight leading-tight sm:leading-snug">
               <?php if (!empty($_GET['city']) && !empty($srv['h1_prefix'])): ?>
-                <?php echo htmlspecialchars($srv['h1_prefix']); ?> <span class="text-brandBlue"><?php echo htmlspecialchars($srv['h1_action']); ?> in <?php echo htmlspecialchars($city_name); ?></span>
+                <?php echo htmlspecialchars($srv['h1_prefix']); ?> <span class="text-brandBlue"><?php echo htmlspecialchars($srv['h1_action']); ?> Near You</span>
               <?php elseif (!empty($srv['h1'])): ?>
                 <?php echo htmlspecialchars($srv['h1']); ?>
               <?php else: ?>
-                Same-Day <span class="text-brandBlue"><?php echo htmlspecialchars($srv['name']); ?> Repair</span><?php if (!empty($_GET['city'])) echo ' in ' . htmlspecialchars($city_name); ?>
+                Same-Day <span class="text-brandBlue"><?php echo htmlspecialchars($srv['name']); ?> Repair</span> Near You
               <?php endif; ?>
             </h1>
 
-            <p id="hero-desc" class="text-slate-700 text-sm sm:text-base md:text-lg leading-relaxed">
+            <p id="hero-desc" class="text-slate-700 text-xs sm:text-sm md:text-base leading-snug sm:leading-relaxed">
               <?php echo htmlspecialchars($srv['desc']); ?>
             </p>
 
-            <!-- Direct Sub-Heading Call CTA & Booking Button -->
-            <div class="flex flex-wrap items-center gap-3 pt-1 pb-1">
-              <a href="tel:<?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?>" onclick="trackGtmCall('hero')"
-                class="gtm-ppc-call gtm-ppc-call-hero inline-flex items-center justify-center gap-2 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl text-sm sm:text-base shadow-lg hover:shadow-xl transition-all uppercase tracking-wide transform active:scale-98">
-                <svg class="w-5 h-5 flex-shrink-0 text-white fill-current" viewBox="0 0 20 20">
-                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-                </svg>
-                <span>Call Now For Same-Day Repair</span>
-              </a>
-              <?php if (!empty($srv['cta'])): ?>
-              <a href="#ppc-quote-form"
-                class="inline-flex items-center justify-center gap-2 bg-brandBlue hover:bg-brandDarkBlue text-white font-extrabold px-5 sm:px-6 py-3.5 sm:py-4 rounded-xl text-xs sm:text-sm shadow-md hover:shadow-lg transition-all uppercase tracking-wide transform active:scale-98">
-                <span><?php echo htmlspecialchars($srv['cta']); ?></span>
-                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
-              </a>
-              <?php endif; ?>
-              <span class="text-xs text-slate-600 font-bold">Or fill out quick form for immediate dispatch</span>
-            </div>
-
             <!-- Common Issues Solved Pills (Dynamic for 100% Instant Relevance) -->
-            <div id="hero-issues-container" class="pt-1 pb-1">
-              <span class="text-xs font-black uppercase tracking-wider text-brandDarkBlue block mb-2">Common <?php echo htmlspecialchars($srv['name']); ?> Problems We Fix Today:</span>
-              <div id="hero-issues-list" class="flex flex-wrap gap-2">
-                <div class="inline-flex items-center gap-1.5 bg-emerald-600 text-white border border-emerald-700 px-2.5 py-1 rounded-lg text-xs font-black shadow-xs">
-                  <svg class="w-3.5 h-3.5 text-emerald-200 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
-                  <span>Service Call Fee Waived w/ Repair</span>
-                </div>
-                <?php foreach (array_slice($srv['pills'], 0, 5) as $pill): ?>
-                <div class="inline-flex items-center gap-1.5 bg-white border border-brandOrange/30 text-brandDarkBlue px-2.5 py-1 rounded-lg text-xs font-bold shadow-2xs">
+            <div id="hero-issues-container" class="py-1 sm:py-3 my-0.5 sm:my-1">
+              <span class="text-[11px] sm:text-[13px] font-black uppercase tracking-wider text-brandDarkBlue block mb-1.5 sm:mb-2.5">Common <?php echo htmlspecialchars($srv['name']); ?> Problems We Fix Today:</span>
+              <div id="hero-issues-list" class="grid grid-cols-2 sm:flex sm:flex-wrap gap-1.5 sm:gap-2.5">
+                <?php 
+                  $pill_slice = array_slice($srv['pills'], 0, 5); 
+                  $total_pills = count($pill_slice);
+                ?>
+                <?php foreach ($pill_slice as $idx => $pill): ?>
+                <?php $col_span = ($idx === $total_pills - 1 && $total_pills % 2 !== 0) ? 'col-span-2 sm:col-span-1 justify-center sm:justify-start' : ''; ?>
+                <div class="<?php echo $col_span; ?> flex items-center gap-1.5 bg-white border border-brandOrange/30 text-brandDarkBlue px-2 py-1.5 sm:px-3.5 sm:py-2 rounded-lg sm:rounded-xl text-[11px] sm:text-[13px] font-bold shadow-2xs hover:border-brandOrange hover:bg-orange-50/40 transition-all">
                   <svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
                   <span><?php echo htmlspecialchars($pill); ?></span>
                 </div>
@@ -1048,137 +1052,51 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
               </div>
             </div>
 
-            <!-- Key PPC Value Cards (3 Core Benefits) -->
-            <div id="hero-ppc-benefits" class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
-
-              <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs flex items-center gap-3">
-                <div
-                  class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 font-bold">
-                  <svg class="w-5 h-5 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+            <!-- Direct Sub-Heading Call CTA & Booking Button -->
+            <div class="pt-0.5 sm:pt-1">
+              <div class="flex items-center gap-2 sm:gap-3">
+                <a href="tel:<?php echo defined('BUSINESS_PHONE') ? BUSINESS_PHONE : '905-717-8905'; ?>" onclick="trackGtmCall('hero')"
+                  class="gtm-ppc-call gtm-ppc-call-hero flex-1 inline-flex items-center justify-center gap-1.5 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-2.5 sm:px-6 sm:py-3 rounded-xl text-xs sm:text-sm shadow-md hover:shadow-lg transition-all uppercase tracking-wide transform active:scale-98">
+                  <svg style="width: 16px; height: 16px;" class="w-4 h-4 flex-shrink-0 text-white fill-current" viewBox="0 0 20 20">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
                   </svg>
-                </div>
-                <div>
-                  <h3 class="text-xs font-bold text-slate-800 leading-tight">Fee Waived w/ Repair</h3>
-                  <span class="text-[11px] text-slate-600 font-medium">Diagnostic Service Call</span>
-                </div>
+                  <span>Call (905) 717-8905</span>
+                </a>
+                <?php if (!empty($srv['cta'])): ?>
+                <a href="#ppc-quote-form"
+                  class="inline-flex items-center justify-center gap-1 bg-brandBlue hover:bg-brandDarkBlue text-white font-extrabold px-3.5 py-2.5 sm:px-5 sm:py-3 rounded-xl text-xs sm:text-sm shadow-sm hover:shadow-md transition-all uppercase tracking-wide transform active:scale-98">
+                  <span>Book Online</span>
+                  <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                </a>
+                <?php endif; ?>
               </div>
-
-              <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs flex items-center gap-3">
-                <div
-                  class="w-10 h-10 rounded-lg bg-brandBlue/10 text-brandBlue flex items-center justify-center flex-shrink-0 font-bold">
-                  <svg class="w-5 h-5 text-brandBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="text-xs font-bold text-slate-800 leading-tight">Upfront Written Quote</h3>
-                  <span class="text-[11px] text-slate-600 font-medium">No Hidden Charges</span>
-                </div>
-              </div>
-
-              <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs flex items-center gap-3">
-                <div
-                  class="w-10 h-10 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0 font-bold">
-                  <svg class="w-5 h-5 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="text-xs font-bold text-slate-800 leading-tight">Same-Day Arrival</h3>
-                  <span class="text-[11px] text-slate-600 font-medium">Across <?php echo htmlspecialchars($city_name); ?></span>
-                </div>
-              </div>
-
+              <p class="hero-micro-trust text-[11px] sm:text-xs text-slate-600 font-semibold flex items-center gap-2 sm:gap-2.5 flex-wrap">
+                <span class="inline-flex items-center gap-1 bg-slate-100/90 border border-slate-200/60 px-2 py-1 rounded-md text-slate-700"><span>🛡️</span><span>Upfront Quote</span></span>
+                <span class="inline-flex items-center gap-1 bg-slate-100/90 border border-slate-200/60 px-2 py-1 rounded-md text-slate-700"><span class="text-emerald-600 font-bold">✓</span><span>Fee Waived w/ Repair</span></span>
+                <span class="inline-flex items-center gap-1 bg-slate-100/90 border border-slate-200/60 px-2 py-1 rounded-md text-slate-700"><span>📞</span><span>Direct Tech Line</span></span>
+              </p>
             </div>
-
-            <!-- 3 Trust Badge Cards (Factory Trained, Google Trust Reviews, Written Warranty) -->
-            <div class="grid grid-cols-3 gap-2 sm:gap-3 pt-1">
-
-              <div
-                class="bg-white p-2.5 sm:p-3 rounded-xl border border-slate-200 shadow-xs flex flex-col items-center text-center">
-                <div
-                  class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-brandBlue/10 text-brandBlue flex items-center justify-center flex-shrink-0 mb-1.5 sm:mb-2">
-                  <svg class="w-4 h-4 sm:w-5 sm:h-5 text-brandBlue" fill="none" stroke="currentColor"
-                    viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 001.946.806 3.42 3.42 0 014.438 0 3.42 3.42 0 00.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
-                    </path>
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="text-xs sm:text-[13px] font-bold text-brandDarkBlue leading-tight">Factory Trained</h3>
-                  <span
-                    class="text-[10px] sm:text-[11px] text-slate-600 font-medium block leading-tight mt-0.5">Fridge Specialists</span>
-                </div>
-              </div>
-
-              <!-- Google Trust Reviews Badge (No external link) -->
-              <div
-                class="bg-white p-2.5 sm:p-3 rounded-xl border border-slate-200 shadow-xs flex flex-col items-center text-center">
-                <div
-                  class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-slate-50 border border-slate-200 flex items-center justify-center flex-shrink-0 mb-1.5 sm:mb-2 p-1.5 sm:p-2">
-                  <svg class="w-4 h-4 sm:w-5 sm:h-5" viewBox="0 0 24 24">
-                    <path fill="#4285F4"
-                      d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.65v3.03h3.88c2.27-2.09 3.665-5.17 3.665-9.12z" />
-                    <path fill="#34A853"
-                      d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.03c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.13C3.26 21.37 7.34 24 12 24z" />
-                    <path fill="#FBBC05"
-                      d="M5.28 14.29c-.25-.72-.38-1.49-.38-2.29s.13-1.57.38-2.29V6.58H1.25C.45 8.18 0 9.98 0 12s.45 3.82 1.25 5.42l4.03-3.13z" />
-                    <path fill="#EA4335"
-                      d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.34 0 3.26 2.63 1.25 6.58l4.03 3.13c.95-2.83 3.6-4.96 6.72-4.96z" />
-                  </svg>
-                </div>
-                <div>
-                  <h3
-                    class="text-xs sm:text-[13px] font-bold text-brandDarkBlue leading-tight flex items-center justify-center gap-1">
-                    <span>Google Reviews</span>
-                  </h3>
-                  <span class="inline-flex items-center text-[10px] sm:text-[11px] text-amber-600 font-extrabold leading-tight mt-0.5"><svg class="w-3 h-3 text-amber-500 fill-current inline mr-1 flex-shrink-0" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>5.0 Verified Rating</span>
-                </div>
-              </div>
-
-              <div
-                class="bg-white p-2.5 sm:p-3 rounded-xl border border-slate-200 shadow-xs flex flex-col items-center text-center">
-                <div
-                  class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 mb-1.5 sm:mb-2">
-                  <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-700" fill="none" stroke="currentColor"
-                    viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
-                    </path>
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="text-xs sm:text-[13px] font-bold text-brandDarkBlue leading-tight">Written Warranty</h3>
-                  <span class="text-[10px] sm:text-[11px] text-slate-600 font-medium block leading-tight mt-0.5">Parts &amp; Labour</span>
-                </div>
-              </div>
-
-            </div>
-
-
 
           </div>
 
           <!-- Hero Right Column: PPC HIGH-CONVERTING LEAD CAPTURE FORM (5 cols) -->
           <div id="ppc-quote-form" class="lg:col-span-5">
-            <div class="bg-white rounded-3xl p-6 sm:p-7 shadow-2xl border-2 border-brandBlue/20 relative">
+            <div class="bg-white rounded-3xl p-6 sm:p-7 shadow-xl border-2 border-brandBlue/20 relative">
 
               <div id="form-badge"
-                class="bg-brandBlue text-white text-xs font-black uppercase tracking-widest py-1.5 px-3 rounded-full inline-block mb-3">
+                class="bg-brandBlue text-white text-[10px] sm:text-xs font-black uppercase tracking-wider py-1.5 px-3 rounded-full inline-block mb-2.5">
                 SAME-DAY <?php echo htmlspecialchars(strtoupper($city_name)); ?> <?php echo htmlspecialchars(strtoupper($srv['name'])); ?> DISPATCH
               </div>
 
-              <h2 id="form-title" class="text-2xl font-heading font-black text-brandDarkBlue mb-1">
+              <h2 id="form-title" class="text-xl sm:text-2xl font-heading font-black text-brandDarkBlue mb-1">
                 <?php if (!empty($srv['cta'])): ?>
-                  <?php echo htmlspecialchars($srv['cta']); ?> (Fee Waived w/ Repair)
+                  <?php echo htmlspecialchars($srv['cta']); ?>
                 <?php else: ?>
-                  Request <?php echo htmlspecialchars($srv['name']); ?> Repair in <?php echo htmlspecialchars($city_name); ?> (Fee Waived w/ Repair)
+                  Request <?php echo htmlspecialchars($srv['name']); ?> Repair in <?php echo htmlspecialchars($city_name); ?>
                 <?php endif; ?>
               </h2>
-              <p id="form-subtitle" class="text-slate-600 text-xs mb-4 font-medium">
-                Tell us what's broken. A local technician will call in <strong class="text-slate-900">&lt;15 mins</strong> with upfront pricing &amp; arrival time.
+              <p id="form-subtitle" class="text-slate-600 text-xs sm:text-sm mb-4 font-medium">
+                Tell us what's broken. A local technician will call in <strong class="text-slate-900">&lt;15 mins</strong> with upfront pricing & arrival time.
               </p>
 
               <form id="ppc-lead-form" class="gtm-ppc-form-submit space-y-3"
@@ -1186,24 +1104,24 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
 
                 <div>
                   <input type="text" id="ppc-name" required placeholder="Full Name *" aria-label="Full Name"
-                    class="w-full px-4 py-3 sm:py-3.5 rounded-xl border border-slate-300 text-slate-800 text-sm focus:ring-2 focus:ring-brandOrange focus:border-brandOrange outline-none transition-all placeholder:text-slate-400 font-medium">
+                    class="w-full px-4 py-3 rounded-xl border border-slate-300 text-slate-800 text-sm focus:ring-2 focus:ring-brandOrange focus:border-brandOrange outline-none transition-all placeholder:text-slate-400 font-medium">
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div>
                     <input type="tel" id="ppc-phone" required placeholder="Phone Number *" aria-label="Phone Number"
-                      class="w-full px-4 py-3 sm:py-3.5 rounded-xl border border-slate-300 text-slate-800 text-sm focus:ring-2 focus:ring-brandOrange focus:border-brandOrange outline-none transition-all placeholder:text-slate-400 font-medium">
+                      class="w-full px-4 py-3 rounded-xl border border-slate-300 text-slate-800 text-sm focus:ring-2 focus:ring-brandOrange focus:border-brandOrange outline-none transition-all placeholder:text-slate-400 font-medium">
                   </div>
                   <div>
                     <input type="email" id="ppc-email" placeholder="Email Address (Optional)" aria-label="Email Address"
-                      class="w-full px-4 py-3 sm:py-3.5 rounded-xl border border-slate-300 text-slate-800 text-sm focus:ring-2 focus:ring-brandOrange focus:border-brandOrange outline-none transition-all placeholder:text-slate-400 font-medium">
+                      class="w-full px-3.5 py-2.5 sm:py-2.5 rounded-xl border border-slate-300 text-slate-800 text-xs sm:text-sm focus:ring-2 focus:ring-brandOrange focus:border-brandOrange outline-none transition-all placeholder:text-slate-400 font-medium">
                   </div>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                   <div>
                     <select id="ppc-city" required aria-label="Select City or Area"
-                      class="w-full px-4 py-3 sm:py-3.5 rounded-xl border border-slate-300 text-slate-800 text-sm focus:ring-2 focus:ring-brandOrange focus:border-brandOrange outline-none transition-all bg-white font-medium cursor-pointer">
+                      class="w-full px-3.5 py-2.5 sm:py-2.5 rounded-xl border border-slate-300 text-slate-800 text-xs sm:text-sm focus:ring-2 focus:ring-brandOrange focus:border-brandOrange outline-none transition-all bg-white font-medium cursor-pointer">
                       <option value="Toronto" selected>Toronto (All Areas)</option>
                       <option value="North York">North York</option>
                       <option value="Downtown Toronto">Downtown Toronto</option>
@@ -1219,7 +1137,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
                   </div>
                   <div>
                     <select id="ppc-appliance" required aria-label="Select Refrigerator Type or Issue"
-                      class="w-full px-4 py-3 sm:py-3.5 rounded-xl border border-slate-300 text-slate-800 text-sm focus:ring-2 focus:ring-brandOrange focus:border-brandOrange outline-none transition-all bg-white font-medium cursor-pointer">
+                      class="w-full px-3.5 py-2.5 sm:py-2.5 rounded-xl border border-slate-300 text-slate-800 text-xs sm:text-sm focus:ring-2 focus:ring-brandOrange focus:border-brandOrange outline-none transition-all bg-white font-medium cursor-pointer">
                       <option value="Refrigerator" selected>Refrigerator / Freezer</option>
                       <option value="French Door Refrigerator">French Door Refrigerator</option>
                       <option value="Side-by-Side Refrigerator">Side-by-Side Refrigerator</option>
@@ -1231,7 +1149,7 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
                 </div>
 
                 <button type="submit"
-                  class="gtm-ppc-btn-submit w-full bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold py-3.5 px-6 rounded-xl text-xs sm:text-sm shadow-lg transition-all flex items-center justify-center gap-2 uppercase tracking-wider cursor-pointer mt-2 active:scale-98">
+                  class="gtm-ppc-btn-submit w-full bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold py-3 px-5 rounded-xl text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-2 uppercase tracking-wider cursor-pointer mt-1 active:scale-98">
                   <span><?php echo htmlspecialchars(strtoupper($srv['cta'] ?? 'CHECK AVAILABILITY & BOOK DISPATCH')); ?> →</span>
                 </button>
 
@@ -1269,6 +1187,55 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
 
         </div>
 
+      </div>
+    </section>
+
+    <!-- 4-BOX VALUE STRIP (MATCHING REFERENCE DESIGN) -->
+    <section class="bg-white py-5 sm:py-6 border-b border-brandBorder">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-5">
+
+          <!-- Box 1: Same-Day Repair Service -->
+          <div class="bg-white rounded-2xl p-3.5 sm:p-4 border border-slate-200/90 shadow-2xs hover:shadow-md transition-all flex items-center gap-3 sm:gap-3.5">
+            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-orange-50 text-brandOrange flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <span class="font-heading font-black text-brandDarkBlue text-xs sm:text-sm tracking-tight leading-snug">Same-Day Repair Service</span>
+          </div>
+
+          <!-- Box 2: Highly Skilled Technicians -->
+          <div class="bg-white rounded-2xl p-3.5 sm:p-4 border border-slate-200/90 shadow-2xs hover:shadow-md transition-all flex items-center gap-3 sm:gap-3.5">
+            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-orange-50 text-brandOrange flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+              </svg>
+            </div>
+            <span class="font-heading font-black text-brandDarkBlue text-xs sm:text-sm tracking-tight leading-snug">Highly Skilled Technicians</span>
+          </div>
+
+          <!-- Box 3: All Major Brands -->
+          <div class="bg-white rounded-2xl p-3.5 sm:p-4 border border-slate-200/90 shadow-2xs hover:shadow-md transition-all flex items-center gap-3 sm:gap-3.5">
+            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-orange-50 text-brandOrange flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <span class="font-heading font-black text-brandDarkBlue text-xs sm:text-sm tracking-tight leading-snug">All Major Brands</span>
+          </div>
+
+          <!-- Box 4: Affordable Rates -->
+          <div class="bg-white rounded-2xl p-3.5 sm:p-4 border border-slate-200/90 shadow-2xs hover:shadow-md transition-all flex items-center gap-3 sm:gap-3.5">
+            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-orange-50 text-brandOrange flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <span class="font-heading font-black text-brandDarkBlue text-xs sm:text-sm tracking-tight leading-snug">Affordable Rates</span>
+          </div>
+
+        </div>
       </div>
     </section>
 
@@ -1553,12 +1520,12 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
         <!-- 5-Column Gallery Cards (Exact Reference Match) -->
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
 
-          <!-- Card 1: French Door Refrigerator -->
+          <!-- Card 1: Refrigerator Repair -->
           <div
             class="group bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_-5px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_25px_-5px_rgba(0,0,0,0.1)] border border-slate-100 transition-all duration-300 hover:-translate-y-1 flex flex-col">
             <div class="w-full h-44 sm:h-52 relative overflow-hidden bg-slate-100 shrink-0">
-              <img src="../img/refrigerator-repair-service.webp" alt="French Door Refrigerator Repair"
-                title="French Door Refrigerator Repair Toronto" width="300" height="300" loading="lazy" decoding="async"
+              <img src="../img/appliance-repair-technician-toronto.webp" alt="Refrigerator Repair Technician"
+                title="Refrigerator Repair Technician <?php echo htmlspecialchars($city_name); ?>" width="300" height="300" loading="lazy" decoding="async"
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
             </div>
             <div class="relative bg-white px-2 sm:px-3 pb-5 sm:pb-6 flex flex-col items-center text-center flex-grow">
@@ -1571,20 +1538,20 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
               </div>
               <h3
                 class="font-heading font-black text-brandDarkBlue text-[11px] sm:text-[13px] uppercase tracking-wide leading-tight">
-                FRENCH DOOR FRIDGE
+                REFRIGERATOR REPAIR
               </h3>
               <p class="text-[10px] sm:text-xs text-slate-600 font-medium mt-1 leading-tight">
-                North York • Cooling restored
+                Cooling issue resolved
               </p>
             </div>
           </div>
 
-          <!-- Card 2: Side-by-Side Refrigerator -->
+          <!-- Card 2: Dishwasher Repair -->
           <div
             class="group bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_-5px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_25px_-5px_rgba(0,0,0,0.1)] border border-slate-100 transition-all duration-300 hover:-translate-y-1 flex flex-col">
             <div class="w-full h-44 sm:h-52 relative overflow-hidden bg-slate-100 shrink-0">
-              <img src="../img/appliance-repair-technician-toronto.webp" alt="Side-by-Side Fridge Repair"
-                title="Side-by-Side Fridge Repair Toronto" width="300" height="300" loading="lazy" decoding="async"
+              <img src="../img/dishwasher-repair-technician-toronto.webp" alt="Dishwasher Repair Inspection"
+                title="Dishwasher Repair Inspection <?php echo htmlspecialchars($city_name); ?>" width="300" height="300" loading="lazy" decoding="async"
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
             </div>
             <div class="relative bg-white px-2 sm:px-3 pb-5 sm:pb-6 flex flex-col items-center text-center flex-grow">
@@ -1592,25 +1559,25 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
                 class="w-12 h-12 sm:w-14 sm:h-14 shrink-0 bg-white rounded-full flex items-center justify-center shadow-md -mt-6 sm:-mt-7 mb-2 sm:mb-3 relative z-10">
                 <div
                   class="w-9 h-9 sm:w-11 sm:h-11 rounded-full border border-brandOrange flex items-center justify-center bg-white">
-                  <svg class="w-4 h-4 sm:w-5 sm:h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M7 3h10a2 2 0 012 2v14a2 2 0 01-2 2H7a2 2 0 01-2-2V5a2 2 0 012-2zM12 3v18"></path></svg>
+                  <svg class="w-4 h-4 sm:w-5 sm:h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM8 7h.01M12 7h.01M16 7h.01M6 10h12"></path></svg>
                 </div>
               </div>
               <h3
                 class="font-heading font-black text-brandDarkBlue text-[11px] sm:text-[13px] uppercase tracking-wide leading-tight">
-                SIDE-BY-SIDE FRIDGE
+                DISHWASHER REPAIR
               </h3>
               <p class="text-[10px] sm:text-xs text-slate-600 font-medium mt-1 leading-tight">
-                Downtown Toronto • Leak fixed
+                Drainage problem fixed
               </p>
             </div>
           </div>
 
-          <!-- Card 3: Built-In Refrigerator -->
+          <!-- Card 3: Oven Repair -->
           <div
             class="group bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_-5px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_25px_-5px_rgba(0,0,0,0.1)] border border-slate-100 transition-all duration-300 hover:-translate-y-1 flex flex-col">
             <div class="w-full h-44 sm:h-52 relative overflow-hidden bg-slate-100 shrink-0">
-              <img src="../img/appliance-repair-service-call.webp" alt="Built-In Refrigerator Repair"
-                title="Built-In Refrigerator Repair Toronto" width="300" height="300" loading="lazy" decoding="async"
+              <img src="../img/oven-dryer-repair-service.webp" alt="Oven Repair Service Call"
+                title="Oven Repair Service Call <?php echo htmlspecialchars($city_name); ?>" width="300" height="300" loading="lazy" decoding="async"
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
             </div>
             <div class="relative bg-white px-2 sm:px-3 pb-5 sm:pb-6 flex flex-col items-center text-center flex-grow">
@@ -1618,25 +1585,25 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
                 class="w-12 h-12 sm:w-14 sm:h-14 shrink-0 bg-white rounded-full flex items-center justify-center shadow-md -mt-6 sm:-mt-7 mb-2 sm:mb-3 relative z-10">
                 <div
                   class="w-9 h-9 sm:w-11 sm:h-11 rounded-full border border-brandOrange flex items-center justify-center bg-white">
-                  <svg class="w-4 h-4 sm:w-5 sm:h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                  <svg class="w-4 h-4 sm:w-5 sm:h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 5a2 2 0 012-2h12a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2zM7 7h1M11 7h1M15 7h1M6 10h12M8 14h8v4H8v-4z"></path></svg>
                 </div>
               </div>
               <h3
                 class="font-heading font-black text-brandDarkBlue text-[11px] sm:text-[13px] uppercase tracking-wide leading-tight">
-                BUILT-IN &amp; SUB-ZERO
+                OVEN REPAIR
               </h3>
               <p class="text-[10px] sm:text-xs text-slate-600 font-medium mt-1 leading-tight">
-                Yorkville • Coils &amp; relay serviced
+                Heating issue resolved
               </p>
             </div>
           </div>
 
-          <!-- Card 4: Bottom-Freezer Refrigerator -->
+          <!-- Card 4: Dryer Repair -->
           <div
             class="group bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_-5px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_25px_-5px_rgba(0,0,0,0.1)] border border-slate-100 transition-all duration-300 hover:-translate-y-1 flex flex-col">
             <div class="w-full h-44 sm:h-52 relative overflow-hidden bg-slate-100 shrink-0">
-              <img src="../img/oven-dryer-repair-service.webp" alt="Bottom-Freezer Refrigerator Repair"
-                title="Bottom-Freezer Refrigerator Repair Toronto" width="300" height="300" loading="lazy" decoding="async"
+              <img src="../img/clothes-dryer-repair-technician-toronto.webp" alt="Dryer Repair Diagnostic"
+                title="Dryer Repair Diagnostic <?php echo htmlspecialchars($city_name); ?>" width="300" height="300" loading="lazy" decoding="async"
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
             </div>
             <div class="relative bg-white px-2 sm:px-3 pb-5 sm:pb-6 flex flex-col items-center text-center flex-grow">
@@ -1644,25 +1611,25 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
                 class="w-12 h-12 sm:w-14 sm:h-14 shrink-0 bg-white rounded-full flex items-center justify-center shadow-md -mt-6 sm:-mt-7 mb-2 sm:mb-3 relative z-10">
                 <div
                   class="w-9 h-9 sm:w-11 sm:h-11 rounded-full border border-brandOrange flex items-center justify-center bg-white">
-                  <svg class="w-4 h-4 sm:w-5 sm:h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M7 3h10a2 2 0 012 2v14a2 2 0 01-2 2H7a2 2 0 01-2-2V5a2 2 0 012-2zM5 14h14"></path></svg>
+                  <svg class="w-4 h-4 sm:w-5 sm:h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2zM8 7h.01M16 7h.01M12 18a5 5 0 100-10 5 5 0 000 10z"></path></svg>
                 </div>
               </div>
               <h3
                 class="font-heading font-black text-brandDarkBlue text-[11px] sm:text-[13px] uppercase tracking-wide leading-tight">
-                BOTTOM-FREEZER FRIDGE
+                DRYER REPAIR
               </h3>
               <p class="text-[10px] sm:text-xs text-slate-600 font-medium mt-1 leading-tight">
-                Etobicoke • Defrost system fixed
+                Not heating – fixed
               </p>
             </div>
           </div>
 
-          <!-- Card 5: Ice Maker & Dispenser Service -->
+          <!-- Card 5: Washer Repair -->
           <div
             class="group bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_-5px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_25px_-5px_rgba(0,0,0,0.1)] border border-slate-100 transition-all duration-300 hover:-translate-y-1 flex flex-col">
             <div class="w-full h-44 sm:h-52 relative overflow-hidden bg-slate-100 shrink-0">
-              <img src="../img/dryer-repair-inspection.webp" alt="Ice Maker and Water Dispenser Repair"
-                title="Ice Maker and Water Dispenser Repair Toronto" width="300" height="300" loading="lazy" decoding="async"
+              <img src="../img/washing-machine-repair-technician-toronto.webp" alt="Washer Repair Technician"
+                title="Washer Repair Technician <?php echo htmlspecialchars($city_name); ?>" width="300" height="300" loading="lazy" decoding="async"
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
             </div>
             <div class="relative bg-white px-2 sm:px-3 pb-5 sm:pb-6 flex flex-col items-center text-center flex-grow">
@@ -1670,15 +1637,15 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
                 class="w-12 h-12 sm:w-14 sm:h-14 shrink-0 bg-white rounded-full flex items-center justify-center shadow-md -mt-6 sm:-mt-7 mb-2 sm:mb-3 relative z-10">
                 <div
                   class="w-9 h-9 sm:w-11 sm:h-11 rounded-full border border-brandOrange flex items-center justify-center bg-white">
-                  <svg class="w-4 h-4 sm:w-5 sm:h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                  <svg class="w-4 h-4 sm:w-5 sm:h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 </div>
               </div>
               <h3
                 class="font-heading font-black text-brandDarkBlue text-[11px] sm:text-[13px] uppercase tracking-wide leading-tight">
-                ICE MAKER &amp; DISPENSER
+                WASHER REPAIR
               </h3>
               <p class="text-[10px] sm:text-xs text-slate-600 font-medium mt-1 leading-tight">
-                Scarborough • Dual valve replaced
+                Pump replaced, spin cycle fixed
               </p>
             </div>
           </div>
@@ -1708,13 +1675,13 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
         <div class="w-20 h-1 bg-brandOrange mx-auto mb-12 rounded-full"></div>
 
         <!-- 3 Core Pillars: Time, Quality, Price -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
 
           <!-- Pillar 1: TIME -->
           <div
-            class="bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
-            <div>
-              <div class="w-14 h-14 rounded-2xl bg-amber-500/10 text-amber-700 flex items-center justify-center mb-5">
+            class="bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm hover-lift flex flex-col justify-between items-center text-center">
+            <div class="w-full">
+              <div class="w-14 h-14 rounded-2xl bg-amber-500/10 text-amber-700 flex items-center justify-center mx-auto mb-5">
                 <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -1722,23 +1689,18 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
               </div>
               <span class="text-brandOrange text-xs font-black uppercase tracking-widest block mb-1">1. FAST RESPONSE
                 (TIME)</span>
-              <h3 class="font-heading font-bold text-brandDarkBlue text-xl mb-3">Same-Day Rapid Dispatch</h3>
-              <p class="text-slate-700 text-xs sm:text-sm leading-relaxed">
-                Broken appliances require swift action. Our local mobile vans are strategically deployed across
-                <?php echo htmlspecialchars($city_name); ?> to arrive fast with fully stocked parts, completing 85%+ of repairs on the very first
-                visit.
-              </p>
+              <h3 class="font-heading font-bold text-brandDarkBlue text-xl">Same-Day Rapid Dispatch</h3>
             </div>
-            <div class="mt-6 pt-4 border-t border-slate-200 flex items-center gap-2 text-xs font-bold text-slate-800">
+            <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-center gap-2 text-xs font-bold text-slate-800 w-full">
               <svg class="w-4 h-4 text-emerald-600 inline-block mr-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg> 15-Minute Response Time
             </div>
           </div>
 
           <!-- Pillar 2: QUALITY -->
           <div
-            class="bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
-            <div>
-              <div class="w-14 h-14 rounded-2xl bg-brandBlue/10 text-brandBlue flex items-center justify-center mb-5">
+            class="bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm hover-lift flex flex-col justify-between items-center text-center">
+            <div class="w-full">
+              <div class="w-14 h-14 rounded-2xl bg-brandBlue/10 text-brandBlue flex items-center justify-center mx-auto mb-5">
                 <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 001.946.806 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
@@ -1747,26 +1709,19 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
               </div>
               <span class="text-brandOrange text-xs font-black uppercase tracking-widest block mb-1">2. TOP STANDARDS
                 (QUALITY)</span>
-              <h3 class="font-heading font-bold text-brandDarkBlue text-xl mb-3">Licensed & Reliable Technicians</h3>
-              <p class="text-slate-700 text-xs sm:text-sm leading-relaxed">
-                Our repair specialists are licensed, insured, and highly experienced across all major household brands
-                (Bosch, GE
-                Appliances, KitchenAid, Frigidaire, Maytag, Sub-Zero, Miele and Samsung). We install brand-new,
-                high-grade
-                replacement parts with a written warranty.
-              </p>
+              <h3 class="font-heading font-bold text-brandDarkBlue text-xl">Licensed & Reliable Technicians</h3>
             </div>
-            <div class="mt-6 pt-4 border-t border-slate-200 flex items-center gap-2 text-xs font-bold text-slate-800">
+            <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-center gap-2 text-xs font-bold text-slate-800 w-full">
               <svg class="w-4 h-4 text-emerald-600 inline-block mr-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg> Factory-Trained & Licensed
             </div>
           </div>
 
           <!-- Pillar 3: PRICE -->
           <div
-            class="bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
-            <div>
+            class="bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm hover-lift flex flex-col justify-between items-center text-center">
+            <div class="w-full">
               <div
-                class="w-14 h-14 rounded-2xl bg-emerald-500/10 text-emerald-700 flex items-center justify-center mb-5">
+                class="w-14 h-14 rounded-2xl bg-emerald-500/10 text-emerald-700 flex items-center justify-center mx-auto mb-5">
                 <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
@@ -1775,15 +1730,9 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
               </div>
               <span class="text-brandOrange text-xs font-black uppercase tracking-widest block mb-1">3. REASONABLE RATES
                 (PRICE)</span>
-              <h3 class="font-heading font-bold text-brandDarkBlue text-xl mb-3">Upfront Flat-Rate Pricing</h3>
-              <p class="text-slate-700 text-xs sm:text-sm leading-relaxed">
-                Zero hidden charges or surprise invoices. We provide clear, transparent diagnostic quotes before
-                starting any work. Plus, your diagnostic service call fee is <strong
-                  class="text-slate-900">completely waived</strong> when you proceed
-                with the repair!
-              </p>
+              <h3 class="font-heading font-bold text-brandDarkBlue text-xl">Upfront Flat-Rate Pricing</h3>
             </div>
-            <div class="mt-6 pt-4 border-t border-slate-200 flex items-center gap-2 text-xs font-bold text-slate-800">
+            <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-center gap-2 text-xs font-bold text-slate-800 w-full">
               <svg class="w-4 h-4 text-emerald-600 inline-block mr-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg> Service Call Fee Waived w/ Repair
             </div>
           </div>
@@ -2715,43 +2664,41 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
             </div>
           </div>
 
-          <!-- Dispatch Graphic Card -->
+          <!-- Contact to Book Repair Card -->
           <div
             class="lg:col-span-5 bg-brandDarkBlue rounded-3xl p-6 sm:p-8 text-white relative overflow-hidden min-h-[320px] flex flex-col justify-between shadow-xl">
             <div>
-              <span
-                class="inline-flex items-center gap-1.5 bg-brandOrange text-white text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-md mb-3">
-                <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                </svg>
-                <span>50km Coverage Radius</span>
-              </span>
-              <h3 class="text-2xl font-heading font-black mb-2 text-white">Same-Day Tech Dispatch</h3>
+              <div class="mb-4 inline-flex items-center bg-white px-3.5 py-2 rounded-2xl shadow-sm">
+                <picture>
+                  <source srcset="../img/logo.webp" type="image/webp">
+                  <img src="../img/logo-opt.png" alt="Appliance Repair Knights Logo" width="160" height="40"
+                    class="h-9 sm:h-10 w-auto object-contain" loading="lazy">
+                </picture>
+              </div>
+              <h3 class="text-2xl font-heading font-black mb-2 text-white">Contact to Book Repair Today</h3>
               <p class="text-xs text-slate-200 leading-relaxed">
-                Local mobile service vans are stationed strategically throughout Toronto, Peel, Halton, Waterloo and
-                Durham regions for rapid arrival.
+                Connect directly with our local appliance team to confirm schedule availability and get your appliance inspected promptly.
               </p>
             </div>
 
-            <div class="space-y-2 my-4">
-              <div class="flex justify-between items-center text-xs bg-white/10 p-2.5 rounded-xl backdrop-blur-xs">
-                <span class="text-slate-100 font-medium">Central GTA Dispatch</span>
-                <span class="text-emerald-400 font-bold">● Active Technicians</span>
+            <div class="space-y-2.5 my-4">
+              <div class="flex items-center gap-2.5 text-xs bg-white/10 p-2.5 rounded-xl backdrop-blur-xs">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-slate-100 font-medium">Diagnostic Fee Waived with Repair</span>
               </div>
-              <div class="flex justify-between items-center text-xs bg-white/10 p-2.5 rounded-xl backdrop-blur-xs">
-                <span class="text-slate-100 font-medium">Hamilton & West Ontario</span>
-                <span class="text-emerald-400 font-bold">● Active Technicians</span>
+              <div class="flex items-center gap-2.5 text-xs bg-white/10 p-2.5 rounded-xl backdrop-blur-xs">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-slate-100 font-medium">Comprehensive Written Parts &amp; Labour Warranty</span>
               </div>
-              <div class="flex justify-between items-center text-xs bg-white/10 p-2.5 rounded-xl backdrop-blur-xs">
-                <span class="text-slate-100 font-medium">Kitchener-Waterloo Hub</span>
-                <span class="text-emerald-400 font-bold">● Active Technicians</span>
+              <div class="flex items-center gap-2.5 text-xs bg-white/10 p-2.5 rounded-xl backdrop-blur-xs">
+                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-slate-100 font-medium">Transparent Upfront Written Quotes</span>
               </div>
             </div>
 
             <a href="tel:9057178905" onclick="trackGtmCall('service_area')"
-              class="gtm-ppc-call gtm-ppc-call-servicearea bg-white text-brandDarkBlue hover:bg-brandOrange hover:text-white font-extrabold py-3 px-5 rounded-xl text-xs uppercase tracking-wider text-center transition-all shadow-md">
-              CALL DISPATCH 905-717-8905
+              class="gtm-ppc-call gtm-ppc-call-servicearea bg-brandOrange hover:bg-orange-600 text-white font-extrabold py-3.5 px-5 rounded-xl text-xs uppercase tracking-wider text-center transition-all shadow-md">
+              CALL TO BOOK: 905-717-8905
             </a>
           </div>
 
@@ -2784,20 +2731,6 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/{$page_
         </div>
 
         <div class="space-y-4">
-
-          <!-- FAQ 1 -->
-          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs">
-            <button onclick="toggleFAQ('faq-1')"
-              class="w-full p-5 text-left font-heading font-bold text-brandDarkBlue text-sm sm:text-base flex justify-between items-center focus:outline-none">
-              <span>How quickly can a technician arrive to fix my refrigerator in Toronto?</span>
-              <span id="icon-faq-1" class="text-brandOrange font-black text-xl">+</span>
-            </button>
-            <div id="faq-1"
-              class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-700 leading-relaxed border-t border-slate-100 pt-3">
-              We offer same-day <?php echo htmlspecialchars($srv['noun']); ?> repair across <?php echo htmlspecialchars($city_name); ?>! When you call or submit an enquiry before 2:00 PM,
-              our certified technician can arrive at your home within 2 to 4 hours during regular service hours (8:00 AM – 8:00 PM).
-            </div>
-          </div>
 
           <!-- FAQ 2 -->
           <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs">

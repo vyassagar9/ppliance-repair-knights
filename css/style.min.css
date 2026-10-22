@@ -36,3 +36,23 @@ html{scroll-behavior:smooth;font-family:'Inter',sans-serif}h1,h2,h3,h4,h5,h6,.fo
 .article-body a:not(.gtm-web-call):not([class*="bg-"]):not([class*="btn"]) { color: #0F4C81 !important; font-weight: 600 !important; text-decoration: underline !important; text-decoration-thickness: 1.5px !important; text-underline-offset: 3px !important; text-decoration-color: rgba(15, 76, 129, 0.45) !important; transition: all 0.2s ease-in-out !important; }
 .article-body a:not(.gtm-web-call):not([class*="bg-"]):not([class*="btn"]):hover { color: #FF6B00 !important; text-decoration-color: #FF6B00 !important; }
 .article-body a.gtm-web-call, .article-body a[class*="bg-"], .article-body a[class*="btn"] { text-decoration: none !important; }
+
+/* Micro-Trust Line Under Hero CTAs */
+.hero-micro-trust {
+  margin-top: 18px !important;
+  margin-bottom: 16px !important;
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+  row-gap: 8px !important;
+  line-height: 1.4 !important;
+}
+@media (min-width: 640px) {
+  .hero-micro-trust {
+    margin-top: 12px !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    row-gap: 0 !important;
+  }
+}
+
