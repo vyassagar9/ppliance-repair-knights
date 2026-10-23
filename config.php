@@ -20,7 +20,7 @@ if (!defined('BUSINESS_NAME')) {
 
     // Official Google Business Profile (GMB) Real Verified Reviews
     define('GMB_RATING_VALUE', '5.0');
-    define('GMB_REVIEW_COUNT', '12');
+    define('GMB_REVIEW_COUNT', '15');
 
     // Dynamic Environment-Aware Base URL (Works across localhost subdirectories and production root)
     $script_dir = dirname($_SERVER['SCRIPT_NAME'] ?? '');

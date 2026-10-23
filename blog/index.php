@@ -31,7 +31,7 @@ $og_type = 'website';
 $disable_global_schema = true;
 
 $gmb_rating = defined('GMB_RATING_VALUE') ? GMB_RATING_VALUE : '5.0';
-$gmb_reviews = defined('GMB_REVIEW_COUNT') ? GMB_REVIEW_COUNT : '12';
+$gmb_reviews = defined('GMB_REVIEW_COUNT') ? GMB_REVIEW_COUNT : '15';
 
 // Structured CollectionPage & Blog Schema
 $custom_head_schema = '<script type="application/ld+json">' . "\n" . json_encode([

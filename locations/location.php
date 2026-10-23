@@ -294,7 +294,7 @@ $disable_global_schema = true;
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "<?php echo defined('GMB_RATING_VALUE') ? GMB_RATING_VALUE : '5.0'; ?>",
-          "reviewCount": "<?php echo defined('GMB_REVIEW_COUNT') ? GMB_REVIEW_COUNT : '12'; ?>",
+          "reviewCount": "<?php echo defined('GMB_REVIEW_COUNT') ? GMB_REVIEW_COUNT : '15'; ?>",
           "bestRating": "5",
           "worstRating": "1"
         },

@@ -5,6 +5,7 @@ $page_title = 'About Appliance Repair Knights | Trusted Local Technicians';
 $page_description = 'Learn about Appliance Repair Knights. Over 10+ years serving GTA with certified technicians, upfront pricing, and repair with warranty.';
 $page_keywords = 'about appliance repair knights, appliance repair technicians GTA';
 $canonical_url = 'https://www.appliancerepairknights.com/about';
+$og_image = 'https://www.appliancerepairknights.com/img/appliance-repair-knight-at-work.webp';
 
 $gmb_rating = GMB_RATING_VALUE;
 $gmb_reviews = GMB_REVIEW_COUNT;
@@ -21,7 +22,7 @@ $custom_head_schema = <<<HTML
         "name": "Appliance Repair Knights Ltd.",
         "url": "https://www.appliancerepairknights.com/",
         "logo": "https://www.appliancerepairknights.com/img/logo.webp",
-        "image": "https://www.appliancerepairknights.com/img/appliance-repair-banner.webp",
+        "image": "https://www.appliancerepairknights.com/img/appliance-repair-knight-at-work.webp",
         "telephone": "905-717-8905",
         "email": "info@appliancerepairknights.com",
         "priceRange": "$$",
@@ -141,8 +142,8 @@ include 'header.php';
           </a>
         </div>
       </div>
-      <div class="h-64 md:h-96 bg-slate-200 rounded-xl overflow-hidden flex items-center justify-center border border-bordercolor">
-        <img src="img/appliance-repair-knights-team.webp" alt="Appliance Repair Knights Professional Tech Team Toronto" title="Appliance Repair Knights Certified Technicians" width="1088" height="920" loading="lazy" decoding="async" class="object-cover w-full h-full" onerror="this.onerror=null; this.parentNode.innerHTML='<div class=\'text-slate-400 flex flex-col items-center\'><svg class=\'w-16 h-16 mb-2\' fill=\'none\' stroke=\'currentColor\' viewBox=\'0 0 24 24\' xmlns=\'http://www.w3.org/2000/svg\'><path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'1.5\' d=\'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z\'></path></svg><span class=\'text-xs font-bold uppercase tracking-wider\'>Appliance Knights Team Photo</span></div>';">
+      <div class="h-64 md:h-96 bg-slate-200 rounded-xl overflow-hidden flex items-center justify-center border border-bordercolor shadow-md">
+        <img src="<?php echo $base_url; ?>img/appliance-repair-knight-at-work.webp" alt="Appliance Repair Knight technician repairing oven appliance in Toronto and GTA" title="Appliance Repair Knight at Work - Expert Certified Technician" width="1536" height="1024" loading="lazy" decoding="async" class="object-cover w-full h-full" onerror="this.onerror=null; this.parentNode.innerHTML='<div class=\'text-slate-400 flex flex-col items-center\'><svg class=\'w-16 h-16 mb-2\' fill=\'none\' stroke=\'currentColor\' viewBox=\'0 0 24 24\' xmlns=\'http://www.w3.org/2000/svg\'><path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'1.5\' d=\'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z\'></path></svg><span class=\'text-xs font-bold uppercase tracking-wider\'>Appliance Repair Knight at Work</span></div>';">
       </div>
     </section>
 

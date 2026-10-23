@@ -25,7 +25,7 @@ $og_type = 'website';
 $disable_global_schema = true;
 
 $gmb_rating = defined('GMB_RATING_VALUE') ? GMB_RATING_VALUE : '5.0';
-$gmb_reviews = defined('GMB_REVIEW_COUNT') ? GMB_REVIEW_COUNT : '12';
+$gmb_reviews = defined('GMB_REVIEW_COUNT') ? GMB_REVIEW_COUNT : '15';
 
 // 3. Group Locations by Macro Zones & Dedicated Regional Municipalities (High-Authority Localized SEO)
 $macro_zones = [

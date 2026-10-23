@@ -58,7 +58,7 @@ $hoods = $city_neighborhoods[$city_slug] ?? [
 // Verified Google Business Profile data (single source of truth: config.php + reviews-data.php)
 require_once __DIR__ . '/../config.php';
 $gmb_rating  = defined('GMB_RATING_VALUE') ? GMB_RATING_VALUE : '5.0';
-$gmb_reviews = defined('GMB_REVIEW_COUNT') ? GMB_REVIEW_COUNT : '12';
+$gmb_reviews = defined('GMB_REVIEW_COUNT') ? GMB_REVIEW_COUNT : '15';
 $all_reviews = @include __DIR__ . '/../reviews-data.php';
 $ppc_reviews = is_array($all_reviews) ? array_slice($all_reviews, 0, 3) : [];
 
