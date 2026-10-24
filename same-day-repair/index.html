@@ -301,7 +301,7 @@
 
         <!-- Phone Call Button CTA -->
         <a href="tel:9057178905" onclick="trackGtmCall('header')"
-          class="gtm-ppc-call gtm-ppc-call-header bg-brandDarkBlue hover:bg-brandNavy text-white font-black px-3.5 py-2.5 sm:px-6 sm:py-3 rounded-xl text-xs sm:text-base transition-all flex items-center gap-2 shadow-md">
+          class="gtm-ppc-call gtm-ppc-call-header bg-brandOrange hover:bg-brandOrangeHover text-white font-black px-3.5 py-2.5 sm:px-6 sm:py-3 rounded-xl text-xs sm:text-base transition-all flex items-center gap-2 shadow-md">
           <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
             <path
               d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
@@ -323,7 +323,7 @@
 
         <!-- Fast Service Booking CTA -->
         <a href="#ppc-quote-form"
-          class="gtm-ppc-lead-header hidden sm:flex bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3.5 py-2 sm:px-5 sm:py-2.5 rounded-xl text-xs sm:text-sm transition-all shadow-lg uppercase tracking-wider items-center gap-1.5 pulse-ring">
+          class="gtm-ppc-lead-header hidden sm:flex bg-brandDarkBlue hover:bg-brandNavy text-white font-extrabold px-3.5 py-2 sm:px-5 sm:py-2.5 rounded-xl text-xs sm:text-sm transition-all shadow-md uppercase tracking-wider items-center gap-1.5">
           <span>CHECK AVAILABILITY</span>
         </a>
 
@@ -335,13 +335,17 @@
   <main>
 <!-- HERO SECTION 1 (HIGH CONVERSION PPC HERO + LEAD CAPTURE FORM) -->
     <section
-      class="bg-gradient-to-b from-slate-50 via-white to-slate-100 py-8 sm:py-10 lg:py-12 border-b border-brandBorder relative overflow-hidden">
-      <div class="max-w-7xl mx-auto px-4">
+      class="bg-gradient-to-b from-slate-50 via-white to-slate-100 py-8 sm:py-10 lg:py-14 border-b border-brandBorder relative overflow-hidden">
+      <!-- Background Ambient Glow & Subtle Pattern -->
+      <div class="absolute -top-24 -left-24 w-96 h-96 bg-brandOrange/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute top-1/2 -right-24 w-96 h-96 bg-brandBlue/5 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 relative z-10">
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
 
           <!-- Hero Left Column: Aggressive PPC Value Props (7 cols) -->
-          <div class="lg:col-span-7 space-y-3 sm:space-y-5">
+          <div class="lg:col-span-7 space-y-4 sm:space-y-6">
 
             <!-- Top Pill Badges Row -->
             <div class="flex items-center gap-1.5 sm:gap-2 flex-wrap">
@@ -356,7 +360,7 @@
                 <span class="hidden sm:inline">DIAGNOSTIC FEE WAIVED W/ REPAIR</span>
               </div>
               <!-- Google 5-Star Rating Badge -->
-              <div class="inline-flex items-center gap-1.5 bg-white text-slate-900 font-extrabold text-[10px] sm:text-xs px-2 py-1 rounded-md border border-slate-200 shadow-2xs">
+              <div class="inline-flex items-center gap-1.5 bg-white text-slate-900 font-extrabold text-[10px] sm:text-xs px-2.5 py-1 rounded-md border border-slate-200 shadow-2xs">
                 <svg class="w-3.5 h-3.5 flex-shrink-0" viewBox="0 0 24 24">
                   <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
                   <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
@@ -369,9 +373,14 @@
             </div>
 
             <h1 id="hero-title"
-              class="text-xl sm:text-3xl lg:text-4xl font-heading font-black text-brandDarkBlue tracking-tight leading-tight sm:leading-snug">
+              class="text-2xl sm:text-3xl lg:text-4xl xl:text-[42px] font-heading font-black text-brandDarkBlue tracking-tight leading-tight sm:leading-snug">
               Same-Day Appliance Repair <span class="text-brandBlue">Near You</span>
             </h1>
+
+            <!-- Hero Sub-Heading -->
+            <p id="hero-subtitle" class="text-brandOrange font-bold text-sm sm:text-base md:text-lg tracking-wide uppercase">
+              Fast Diagnostic & Same-Day Repair by Certified Local Technicians
+            </p>
 
             <p id="hero-desc" class="text-slate-700 text-xs sm:text-sm md:text-base leading-snug sm:leading-relaxed">
               Don't wait while food spoils or laundry piles up — broken appliance? Our licensed technicians arrive today near you, fully equipped to fix your <strong
@@ -379,45 +388,93 @@
             </p>
 
             <!-- Dynamic Common Issues Solved Pills (Rendered when ?service= is present) -->
-            <div id="hero-issues-container" class="hidden py-1 sm:py-3 my-0.5 sm:my-1">
+            <div id="hero-issues-container" class="hidden py-1 sm:py-2 my-0.5 sm:my-1">
               <span class="text-[11px] sm:text-[13px] font-black uppercase tracking-wider text-brandDarkBlue block mb-1.5 sm:mb-2.5">Common Problems We Fix Today:</span>
               <div id="hero-issues-list" class="grid grid-cols-2 sm:flex sm:flex-wrap gap-1.5 sm:gap-2.5">
                 <!-- Injected via JavaScript -->
               </div>
             </div>
 
-            <!-- Direct Sub-Heading Call CTA & Booking CTA Button -->
-            <div class="pt-0.5 sm:pt-1">
+            <!-- PPC Benefits Feature Cards (Shown by default on generic/location landing) -->
+            <div id="hero-ppc-benefits" class="grid grid-cols-3 gap-2 sm:gap-3 pt-1">
+              <!-- Benefit 1 -->
+              <div class="bg-white/90 backdrop-blur-xs border border-slate-200/90 rounded-xl p-2.5 sm:p-3 shadow-2xs hover:shadow-xs transition-all flex items-start gap-2">
+                <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-orange-50 text-brandOrange flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <div>
+                  <span class="block text-slate-900 font-extrabold text-[11px] sm:text-xs leading-tight">Same-Day Dispatch</span>
+                  <span class="block text-slate-500 font-medium text-[10px] sm:text-[11px] leading-tight mt-0.5">Techs on Standby</span>
+                </div>
+              </div>
+              <!-- Benefit 2 -->
+              <div class="bg-white/90 backdrop-blur-xs border border-slate-200/90 rounded-xl p-2.5 sm:p-3 shadow-2xs hover:shadow-xs transition-all flex items-start gap-2">
+                <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-blue-50 text-brandBlue flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-brandBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                </div>
+                <div>
+                  <span class="block text-slate-900 font-extrabold text-[11px] sm:text-xs leading-tight">Licensed & Insured</span>
+                  <span class="block text-slate-500 font-medium text-[10px] sm:text-[11px] leading-tight mt-0.5">Certified Pros</span>
+                </div>
+              </div>
+              <!-- Benefit 3 -->
+              <div class="bg-white/90 backdrop-blur-xs border border-slate-200/90 rounded-xl p-2.5 sm:p-3 shadow-2xs hover:shadow-xs transition-all flex items-start gap-2">
+                <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <div>
+                  <span class="block text-slate-900 font-extrabold text-[11px] sm:text-xs leading-tight">Written Warranty</span>
+                  <span class="block text-slate-500 font-medium text-[10px] sm:text-[11px] leading-tight mt-0.5">Parts & Labour</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Live Tech Dispatch Indicator & Fee Waiver Banner -->
+            <div class="space-y-2 pt-1">
+              <div class="flex items-center gap-2 text-[11px] sm:text-xs font-bold text-slate-700 bg-emerald-50/90 border border-emerald-200/80 px-3 py-1.5 rounded-lg w-fit shadow-2xs">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>Local Technicians On Standby Today • Fast Response</span>
+              </div>
+
+              <!-- Direct Sub-Heading Call CTA & Booking CTA Button -->
               <div class="flex items-center gap-2 sm:gap-3">
                 <a href="tel:9057178905" onclick="trackGtmCall('hero')"
-                  class="gtm-ppc-call gtm-ppc-call-hero flex-1 inline-flex items-center justify-center gap-1.5 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-2.5 sm:px-6 sm:py-3 rounded-xl text-xs sm:text-sm shadow-md hover:shadow-lg transition-all uppercase tracking-wide transform active:scale-98">
-                  <svg style="width: 16px; height: 16px;" class="w-4 h-4 flex-shrink-0 text-white fill-current" viewBox="0 0 20 20">
+                  class="gtm-ppc-call gtm-ppc-call-hero flex-1 inline-flex items-center justify-center gap-2 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-3 sm:px-6 sm:py-3.5 rounded-xl text-xs sm:text-sm shadow-md hover:shadow-lg transition-all uppercase tracking-wide transform active:scale-98">
+                  <svg style="width: 17px; height: 17px;" class="w-4 h-4 flex-shrink-0 text-white fill-current animate-bounce" viewBox="0 0 20 20">
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
                   </svg>
-                  <span>Call (905) 717-8905</span>
+                  <span>Speak to a Technician: (905) 717-8905</span>
                 </a>
                 <a href="#ppc-quote-form" id="hero-action-cta"
-                  class="hidden inline-flex items-center justify-center gap-1 bg-brandBlue hover:bg-brandDarkBlue text-white font-extrabold px-3.5 py-2.5 sm:px-5 sm:py-3 rounded-xl text-xs sm:text-sm shadow-sm hover:shadow-md transition-all uppercase tracking-wide transform active:scale-98">
+                  class="hidden inline-flex items-center justify-center gap-1.5 bg-brandBlue hover:bg-brandDarkBlue text-white font-extrabold px-4 py-3 sm:px-5 sm:py-3.5 rounded-xl text-xs sm:text-sm shadow-sm hover:shadow-md transition-all uppercase tracking-wide transform active:scale-98">
                   <span id="hero-action-cta-text">Book Online</span>
                   <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
                 </a>
               </div>
-              <p class="hero-micro-trust text-[11px] sm:text-xs text-slate-600 font-semibold flex items-center gap-2 sm:gap-2.5 flex-wrap">
-                <span class="inline-flex items-center gap-1 bg-slate-100/90 border border-slate-200/60 px-2 py-1 rounded-md text-slate-700"><span>🛡️</span><span>Upfront Quote</span></span>
-                <span class="inline-flex items-center gap-1 bg-slate-100/90 border border-slate-200/60 px-2 py-1 rounded-md text-slate-700"><span class="text-emerald-600 font-bold">✓</span><span>Fee Waived w/ Repair</span></span>
-                <span class="inline-flex items-center gap-1 bg-slate-100/90 border border-slate-200/60 px-2 py-1 rounded-md text-slate-700"><span>📞</span><span>Direct Tech Line</span></span>
-              </p>
+
+              <!-- High-Trust Micro Badges Row -->
+              <div class="hero-micro-trust mt-2 text-[11px] sm:text-xs text-slate-600 font-semibold flex items-center gap-2 sm:gap-2.5 flex-wrap">
+                <span class="inline-flex items-center gap-1 bg-white border border-slate-200 shadow-2xs px-2.5 py-1 rounded-md text-slate-700"><span>🛡️</span><span>Upfront Written Quote</span></span>
+                <span class="inline-flex items-center gap-1 bg-emerald-50 border border-emerald-300 shadow-2xs px-2.5 py-1 rounded-md text-emerald-800 font-bold"><span class="text-emerald-600 font-black">✓</span><span>Diagnostic Fee Waived w/ Repair</span></span>
+                <span class="inline-flex items-center gap-1 bg-white border border-slate-200 shadow-2xs px-2.5 py-1 rounded-md text-slate-700"><span>📞</span><span>Direct Tech Line</span></span>
+              </div>
             </div>
 
           </div>
 
           <!-- Hero Right Column: PPC HIGH-CONVERTING LEAD CAPTURE FORM (5 cols) -->
           <div id="ppc-quote-form" class="lg:col-span-5">
-            <div class="bg-white rounded-3xl p-6 sm:p-7 shadow-xl border-2 border-brandBlue/20 relative">
+            <div class="bg-white rounded-3xl p-6 sm:p-7 shadow-2xl border-2 border-brandBlue/20 relative transition-all">
 
-              <div id="form-badge"
-                class="bg-brandBlue text-white text-[10px] sm:text-xs font-black uppercase tracking-wider py-1.5 px-3 rounded-full inline-block mb-2.5">
-                SAME-DAY ONLINE DISPATCH
+              <div class="flex items-center justify-between gap-2 mb-2.5">
+                <div id="form-badge"
+                  class="bg-brandBlue text-white text-[10px] sm:text-xs font-black uppercase tracking-wider py-1.5 px-3 rounded-full inline-block">
+                  SAME-DAY ONLINE DISPATCH
+                </div>
+                <div class="inline-flex items-center gap-1.5 text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                  <span>Active Now</span>
+                </div>
               </div>
 
               <h2 id="form-title" class="text-xl sm:text-2xl font-heading font-black text-brandDarkBlue mb-1">
@@ -2802,6 +2859,7 @@
       let newTopAnnouncement = '';
       let newHeroBadge = '';
       let newHeroTitle = '';
+      let newHeroSubtitle = '';
       let newHeroDesc = '';
       let newFormBadge = '';
       let newFormTitle = '';
@@ -2821,6 +2879,7 @@
         newMetaDesc = `Need fast ${s.noun} repair in ${c.name}? Local certified technicians fix cooling, leaks, mechanical problems, and error codes today. Upfront quotes & diagnostic fee waived with repair.`;
         newTopAnnouncement = `Same-Day ${s.name} Repair Dispatch Active ${c.topBarSuffix}`;
         newHeroBadge = `SAME-DAY ${s.name.toUpperCase()} REPAIR • ${c.heroBadgeSuffix}`;
+        newHeroSubtitle = `Fast Diagnostic & Same-Day ${s.name} Repair Near You`;
         if (s.key === 'fridge') {
           newHeroTitle = `Refrigerator Not Cooling, Leaking or Ice Maker Broken? <span class="text-brandBlue">Get Same-Day Repair in ${c.name}</span>`;
         } else if (s.key === 'washer') {
@@ -2874,6 +2933,7 @@
         newTopAnnouncement = s.topAnnouncement;
         newHeroBadge = s.heroBadge;
         newHeroTitle = s.heroTitle;
+        newHeroSubtitle = `Fast Diagnostic & Same-Day ${s.name} Repair Near You`;
         newHeroDesc = s.heroDesc;
         newFormBadge = s.formBadge;
         newFormTitle = s.formTitle;
@@ -2894,6 +2954,7 @@
         newTopAnnouncement = `Same-Day Appliance Repair Dispatch Active ${c.topBarSuffix}`;
         newHeroBadge = `SAME-DAY APPLIANCE REPAIR • ${c.heroBadgeSuffix}`;
         newHeroTitle = `Same-Day <span class="text-brandBlue">Appliance Repair</span> in ${c.name}`;
+        newHeroSubtitle = `Fast Diagnostic & Same-Day Repair in ${c.name}`;
         newHeroDesc = `Refrigerator, washer, dryer, dishwasher, or stove broken in ${c.name}? Our licensed local technicians arrive same-day with stocked service vehicles to deliver fast, transparent, guaranteed repairs on the first visit!`;
         newFormBadge = `SAME-DAY ${c.name.toUpperCase()} DISPATCH`;
         newFormTitle = `Request Fast Repair in ${c.name}`;
@@ -2926,7 +2987,7 @@
         topAnnounce.textContent = newTopAnnouncement;
       }
 
-      // 3. Hero Section (Badge, H1, Description)
+      // 3. Hero Section (Badge, H1, Subtitle, Description)
       const heroBadge = document.getElementById('hero-badge');
       if (heroBadge && newHeroBadge) {
         heroBadge.innerHTML = `<span class="w-2 h-2 rounded-full bg-brandOrange animate-pulse"></span><span>${newHeroBadge}</span>`;
@@ -2935,6 +2996,11 @@
       const heroTitle = document.getElementById('hero-title');
       if (heroTitle && newHeroTitle) {
         heroTitle.innerHTML = newHeroTitle;
+      }
+
+      const heroSubtitle = document.getElementById('hero-subtitle');
+      if (heroSubtitle && newHeroSubtitle) {
+        heroSubtitle.innerHTML = newHeroSubtitle;
       }
 
       const heroDesc = document.getElementById('hero-desc');
@@ -2953,10 +3019,11 @@
           const isLastOdd = (idx === s.issues.length - 1 && s.issues.length % 2 !== 0);
           const colSpan = isLastOdd ? 'col-span-2 sm:col-span-1 justify-center sm:justify-start' : '';
           return `
-            <div class="${colSpan} flex items-center gap-1.5 bg-white border border-brandOrange/30 text-brandDarkBlue px-2 py-1.5 sm:px-3.5 sm:py-2 rounded-lg sm:rounded-xl text-[11px] sm:text-[13px] font-bold shadow-2xs hover:border-brandOrange hover:bg-orange-50/40 transition-all">
+            <a href="tel:9057178905" onclick="trackGtmCall('issue_pill')"
+              class="${colSpan} flex items-center gap-1.5 bg-white border border-brandOrange/30 text-brandDarkBlue px-2 py-1.5 sm:px-3.5 sm:py-2 rounded-lg sm:rounded-xl text-[11px] sm:text-[13px] font-bold shadow-2xs hover:border-brandOrange hover:bg-orange-50/50 hover:shadow-xs transition-all cursor-pointer">
               <svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
               <span>${iss.text}</span>
-            </div>
+            </a>
           `;
         }).join('');
         issuesContainer.classList.remove('hidden');

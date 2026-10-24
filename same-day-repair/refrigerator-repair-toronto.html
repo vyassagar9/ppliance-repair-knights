@@ -316,7 +316,7 @@
 
         <!-- Phone Call Button CTA -->
         <a href="tel:9057178905" onclick="trackGtmCall('header')"
-          class="gtm-ppc-call gtm-ppc-call-header bg-brandDarkBlue hover:bg-brandNavy text-white font-black px-3.5 py-2.5 sm:px-6 sm:py-3 rounded-xl text-xs sm:text-base transition-all flex items-center gap-2 shadow-md">
+          class="gtm-ppc-call gtm-ppc-call-header bg-brandOrange hover:bg-brandOrangeHover text-white font-black px-3.5 py-2.5 sm:px-6 sm:py-3 rounded-xl text-xs sm:text-base transition-all flex items-center gap-2 shadow-md">
           <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
             <path
               d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
@@ -338,7 +338,7 @@
 
         <!-- Fast Service Booking CTA -->
         <a href="#ppc-quote-form"
-          class="gtm-ppc-lead-header hidden sm:flex bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3.5 py-2 sm:px-5 sm:py-2.5 rounded-xl text-xs sm:text-sm transition-all shadow-lg uppercase tracking-wider items-center gap-1.5 pulse-ring">
+          class="gtm-ppc-lead-header hidden sm:flex bg-brandDarkBlue hover:bg-brandNavy text-white font-extrabold px-3.5 py-2 sm:px-5 sm:py-2.5 rounded-xl text-xs sm:text-sm transition-all shadow-md uppercase tracking-wider items-center gap-1.5">
           <span>CHECK AVAILABILITY</span>
         </a>
 
@@ -420,27 +420,35 @@
               </div>
             </div>
 
-            <!-- Direct Sub-Heading Call CTA & Booking Button -->
-            <div class="pt-0.5 sm:pt-1">
+            <!-- Live Tech Dispatch Indicator & Fee Waiver Banner -->
+            <div class="space-y-2 pt-1">
+              <div class="flex items-center gap-2 text-[11px] sm:text-xs font-bold text-slate-700 bg-emerald-50/90 border border-emerald-200/80 px-3 py-1.5 rounded-lg w-fit shadow-2xs">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>Local Technicians On Standby Today • Fast Response</span>
+              </div>
+
+              <!-- Direct Sub-Heading Call CTA & Booking Button -->
               <div class="flex items-center gap-2 sm:gap-3">
                 <a href="tel:9057178905" onclick="trackGtmCall('hero')"
-                  class="gtm-ppc-call gtm-ppc-call-hero flex-1 inline-flex items-center justify-center gap-1.5 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-2.5 sm:px-6 sm:py-3 rounded-xl text-xs sm:text-sm shadow-md hover:shadow-lg transition-all uppercase tracking-wide transform active:scale-98">
-                  <svg style="width: 16px; height: 16px;" class="w-4 h-4 flex-shrink-0 text-white fill-current" viewBox="0 0 20 20">
+                  class="gtm-ppc-call gtm-ppc-call-hero flex-1 inline-flex items-center justify-center gap-2 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-3 sm:px-6 sm:py-3.5 rounded-xl text-xs sm:text-sm shadow-md hover:shadow-lg transition-all uppercase tracking-wide transform active:scale-98">
+                  <svg style="width: 17px; height: 17px;" class="w-4 h-4 flex-shrink-0 text-white fill-current animate-bounce" viewBox="0 0 20 20">
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
                   </svg>
-                  <span>Call (905) 717-8905</span>
+                  <span>Speak to a Technician: (905) 717-8905</span>
                 </a>
                 <a href="#ppc-quote-form"
-                  class="inline-flex items-center justify-center gap-1 bg-brandBlue hover:bg-brandDarkBlue text-white font-extrabold px-3.5 py-2.5 sm:px-5 sm:py-3 rounded-xl text-xs sm:text-sm shadow-sm hover:shadow-md transition-all uppercase tracking-wide transform active:scale-98">
+                  class="inline-flex items-center justify-center gap-1.5 bg-brandBlue hover:bg-brandDarkBlue text-white font-extrabold px-4 py-3 sm:px-5 sm:py-3.5 rounded-xl text-xs sm:text-sm shadow-sm hover:shadow-md transition-all uppercase tracking-wide transform active:scale-98">
                   <span>Book Online</span>
                   <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
                 </a>
               </div>
-              <p class="hero-micro-trust text-[11px] sm:text-xs text-slate-600 font-semibold flex items-center gap-2 sm:gap-2.5 flex-wrap">
-                <span class="inline-flex items-center gap-1 bg-slate-100/90 border border-slate-200/60 px-2 py-1 rounded-md text-slate-700"><span>🛡️</span><span>Upfront Quote</span></span>
-                <span class="inline-flex items-center gap-1 bg-slate-100/90 border border-slate-200/60 px-2 py-1 rounded-md text-slate-700"><span class="text-emerald-600 font-bold">✓</span><span>Fee Waived w/ Repair</span></span>
-                <span class="inline-flex items-center gap-1 bg-slate-100/90 border border-slate-200/60 px-2 py-1 rounded-md text-slate-700"><span>📞</span><span>Direct Tech Line</span></span>
-              </p>
+
+              <!-- High-Trust Micro Badges Row -->
+              <div class="hero-micro-trust mt-2 text-[11px] sm:text-xs text-slate-600 font-semibold flex items-center gap-2 sm:gap-2.5 flex-wrap">
+                <span class="inline-flex items-center gap-1 bg-white border border-slate-200 shadow-2xs px-2.5 py-1 rounded-md text-slate-700"><span>🛡️</span><span>Upfront Written Quote</span></span>
+                <span class="inline-flex items-center gap-1 bg-emerald-50 border border-emerald-300 shadow-2xs px-2.5 py-1 rounded-md text-emerald-800 font-bold"><span class="text-emerald-600 font-black">✓</span><span>Diagnostic Fee Waived w/ Repair</span></span>
+                <span class="inline-flex items-center gap-1 bg-white border border-slate-200 shadow-2xs px-2.5 py-1 rounded-md text-slate-700"><span>📞</span><span>Direct Tech Line</span></span>
+              </div>
             </div>
 
           </div>
