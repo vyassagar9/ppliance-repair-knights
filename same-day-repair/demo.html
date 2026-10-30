@@ -36,9 +36,9 @@
   <!-- End Google Tag Manager -->
 
   <!-- Primary Meta Tags for Google Ads PPC -->
-  <title>Same-Day Refrigerator Repair in Toronto | Local Certified Technicians</title>
-  <meta name="title" content="Same-Day Refrigerator Repair in Toronto | Local Certified Technicians">
-  <meta name="description" content="Need fast Refrigerator repair in Toronto? Licensed technicians fix all issues today. Diagnostic fee waived with repair. Genuine quality parts &amp; written warranty.">
+  <title>Same-Day Appliance Repair in Toronto &amp; GTA | Local Certified Technicians</title>
+  <meta name="title" content="Same-Day Appliance Repair in Toronto &amp; GTA | Local Certified Technicians">
+  <meta name="description" content="Need fast appliance repair in Toronto &amp; GTA? Certified technicians repair all 6 major appliances today: fridges, washers, dryers, dishwashers, stoves &amp; microwaves. Diagnostic fee waived with repair.">
   <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
   <meta name="googlebot" content="noindex, nofollow">
 
@@ -50,6 +50,32 @@
   <!-- Tailwind & Global Stylesheet -->
   <link rel="stylesheet" href="../css/tailwind.min.css">
   <link rel="stylesheet" href="../css/style.min.css">
+
+  <!-- Zero-Flicker Specific Service Script & GCLID/UTM Capture -->
+  <script>
+    (function () {
+      try {
+        var sp = new URLSearchParams(window.location.search);
+        var sVal = sp.get('service');
+        if (sVal && !['appliance', 'all', 'repair'].includes(sVal.toLowerCase().trim())) {
+          document.documentElement.classList.add('hide-six-services');
+        }
+        var g = sp.get('gclid');
+        if (g) sessionStorage.setItem('ppc_gclid', g);
+        var s = sp.get('utm_source');
+        if (s) sessionStorage.setItem('ppc_utm_source', s);
+        var m = sp.get('utm_medium');
+        if (m) sessionStorage.setItem('ppc_utm_medium', m);
+        var c = sp.get('utm_campaign');
+        if (c) sessionStorage.setItem('ppc_utm_campaign', c);
+      } catch (e) {}
+    })();
+  </script>
+  <style>
+    html.hide-six-services #all-six-services {
+      display: none !important;
+    }
+  </style>
 
   <style>
     @font-face {
@@ -209,6 +235,7 @@
     .hero-showcase-frame {
       background-color: #f8fafc;
       border: 1px solid #e2e8f0;
+      border-radius: 1rem;
       padding: 10px;
       position: relative;
       width: 100%;
@@ -223,6 +250,10 @@
       .hero-showcase-frame {
         padding: 10px;
         max-width: 310px;
+      }
+      #hero-service-img {
+        max-height: 200px;
+        object-fit: cover;
       }
     }
     .hero-showcase-inner {
@@ -480,40 +511,51 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <!-- TOP DISPATCH ANNOUNCEMENT BAR -->
-  <aside class="bg-brandDarkBlue text-white text-xs py-2 px-4 border-b border-brandBlue/30">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <div class="flex items-center gap-2">
-        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span class="font-medium text-slate-200">Same-Day Refrigerator Repair Near You • Prompt Dispatch</span>
-      </div>
-      <div class="flex items-center gap-4 text-xs font-extrabold text-brandOrange">
-        <span class="hidden sm:inline text-slate-300">Available Daily: 8:00 AM – 8:00 PM</span>
-        <a href="tel:9057178905" onclick="trackGtmCall('topbar')" class="gtm-ppc-call gtm-ppc-call-topbar hover:underline text-white font-bold">Call: 905-717-8905</a>
+  <!-- TOP DISPATCH ANNOUNCEMENT BAR (FULL WIDTH ROTATING MICRO-CTA SLIDER) -->
+  <aside class="bg-brandDarkBlue text-white text-[11px] sm:text-xs py-1.5 px-3 sm:px-4 border-b border-brandBlue/30 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto flex items-center justify-center h-5">
+      <div class="flex items-center justify-center gap-2 overflow-hidden w-full text-center">
+        <span class="w-2 h-2 rounded-full bg-brandOrange animate-pulse shrink-0"></span>
+        <div id="topbar-slider" class="relative h-5 overflow-hidden flex-1 max-w-2xl">
+          <div id="topbar-slides" class="transition-transform duration-500 ease-in-out flex flex-col">
+            <span class="h-5 flex items-center justify-center text-slate-200 font-bold tracking-tight whitespace-nowrap text-[10.5px] sm:text-xs">
+              Same-Day Repair Dispatch &bull; Certified Technicians Near You
+            </span>
+            <span class="h-5 flex items-center justify-center text-slate-200 font-bold tracking-tight whitespace-nowrap text-[10.5px] sm:text-xs">
+              Diagnostic Fee Waived When You Proceed With Repair
+            </span>
+            <span class="h-5 flex items-center justify-center text-slate-200 font-bold tracking-tight whitespace-nowrap text-[10.5px] sm:text-xs">
+              Comprehensive Written Warranty &bull; Genuine Quality Parts
+            </span>
+            <span class="h-5 flex items-center justify-center text-slate-200 font-bold tracking-tight whitespace-nowrap text-[10.5px] sm:text-xs">
+              Available Daily 8:00 AM – 8:00 PM &bull; Upfront Written Quotes
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   </aside>
 
   <!-- CLEAN MINIMAL HEADER (MATCHING CLIENT REFERENCE) -->
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-brandBorder shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center">
+    <div class="max-w-7xl mx-auto px-3 sm:px-4 h-16 sm:h-20 flex justify-between items-center">
       <!-- Brand Logo -->
-      <a href="https://www.appliancerepairknights.com/same-day-repair/refrigerator-toronto" class="flex items-center gap-2 focus:outline-none flex-shrink-0" aria-label="Appliance Repair Knights">
+      <a href="demo.html" class="flex items-center gap-2 focus:outline-none flex-shrink-0" aria-label="Appliance Repair Knights">
         <picture>
           <source srcset="../img/logo.webp" type="image/webp">
           <img src="../img/logo-opt.png" alt="Appliance Repair Knights Logo" width="220" height="64" class="h-12 sm:h-14 w-auto object-contain" fetchpriority="high">
         </picture>
       </a>
 
-      <!-- Top Right Header CTA (On Mobile: Call button only, Book Online hidden) -->
+      <!-- Top Right Header CTA (Clean Minimalist Pill) -->
       <div class="flex items-center gap-2 sm:gap-3">
-        <a href="tel:9057178905" onclick="trackGtmCall('header_call')" class="gtm-ppc-call gtm-ppc-call-header bg-brandOrange hover:bg-brandOrangeHover text-white font-bold px-3.5 py-2 sm:px-5 sm:py-2.5 rounded-xl text-xs sm:text-sm transition-all flex items-center gap-1.5 shadow-sm">
-          <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <a href="tel:9057178905" onclick="trackGtmCall('header_call')" class="gtm-ppc-call gtm-ppc-call-header bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold text-xs sm:text-sm px-4 py-2 sm:px-5 sm:py-2.5 rounded-full transition-all flex items-center gap-1.5 shadow-sm hover:shadow-md active:scale-95 whitespace-nowrap">
+          <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white shrink-0" fill="currentColor" viewBox="0 0 20 20">
             <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
           </svg>
-          <span class="hidden sm:inline">CALL:</span> <span>905-717-8905</span>
+          <span class="tracking-wide">905-717-8905</span>
         </a>
-        <a href="#ppc-quote-modal" onclick="openLeadModal(); return false;" class="hidden sm:inline-flex bg-brandBlue hover:bg-brandDarkBlue text-white font-extrabold px-3.5 py-2.5 sm:px-5 sm:py-2.5 rounded-xl text-xs sm:text-sm uppercase tracking-wider transition-all shadow-sm items-center gap-1">
+        <a href="#ppc-quote-modal" onclick="openLeadModal(); return false;" class="hidden sm:inline-flex bg-brandBlue hover:bg-brandDarkBlue text-white font-extrabold px-5 py-2.5 rounded-full text-xs sm:text-sm uppercase tracking-wider transition-all shadow-sm items-center gap-1">
           <span>Book Same-Day</span>
         </a>
       </div>
@@ -522,63 +564,83 @@
 
   <main>
     <!-- 1. HERO SECTION: CLEAN PRODUCT FOCUS (MATCHING REFERENCE DESIGN) -->
-    <section class="py-4 sm:py-12 lg:py-16 bg-white relative overflow-hidden" id="about-service">
+    <section class="pt-2 pb-6 sm:py-10 lg:py-16 bg-white relative overflow-hidden" id="about-service">
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-8 lg:gap-12 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-3 sm:gap-6 lg:gap-12 items-center">
 
-          <!-- Left: Appliance Showcase (Matching Client Inset White Border Reference) -->
+          <!-- Left: Appliance Showcase (Multi-Appliance Hero Showcase) -->
           <div class="lg:col-span-5 flex justify-center">
             <div class="hero-showcase-frame">
               <div class="hero-showcase-inner">
-                <img src="../img/refrigerator-repair-in-a-modern-kitchen.webp" alt="Same-Day Refrigerator Repair in Toronto" width="380" height="360" class="w-full h-auto max-h-[200px] sm:max-h-[240px] lg:max-h-[300px] object-cover">
-                <div class="mt-3 pt-2.5 border-t border-slate-200 w-full flex items-center justify-between text-[10px] sm:text-xs text-slate-600 font-bold tracking-wide">
-                  <span class="flex items-center gap-1"><span class="text-emerald-600 font-black">✓</span> Quality Parts</span>
-                  <span class="flex items-center gap-1"><span class="text-emerald-600 font-black">✓</span> Same-Day</span>
+                <img id="hero-service-img" src="../img/washing-machine-repair-service.webp" alt="Same-Day Appliance Repair in Toronto &amp; GTA - Certified Local Technicians" width="440" height="380" class="w-full h-auto max-h-[200px] sm:max-h-[240px] lg:max-h-[300px] object-cover rounded-lg">
+                <div class="mt-3.5 pt-3 border-t border-slate-200 w-full flex items-center justify-between text-[10px] sm:text-xs text-brandNavy font-bold tracking-tight">
+                  <span class="flex items-center gap-1"><span class="text-brandBlue font-black text-xs sm:text-sm">✓</span> Certified Techs</span>
+                  <span class="flex items-center gap-1"><span class="text-brandOrange font-black text-xs sm:text-sm">✓</span> Same-Day Diagnostic</span>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Right: Hero Typography & Direct CTAs -->
-          <div class="lg:col-span-7 space-y-4 sm:space-y-5 text-center lg:text-left">
-            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-slate-900 tracking-tight uppercase leading-tight">
-              REFRIGERATOR REPAIR
-            </h1>
+          <div class="lg:col-span-7 space-y-2.5 sm:space-y-5 lg:space-y-6 text-center lg:text-left">
+            <div>
+              <h1 id="hero-title" class="text-2xl sm:text-4xl lg:text-5xl font-heading font-bold text-brandNavy tracking-tight uppercase leading-tight sm:leading-none">
+                APPLIANCE REPAIR
+              </h1>
+              <p id="hero-subtitle" class="text-brandOrange font-extrabold text-[12.5px] sm:text-base lg:text-lg tracking-wide uppercase mt-1.5 sm:mt-2.5 lg:mt-3.5 mb-1 sm:mb-2.5 lg:mb-3">
+                SAME-DAY REPAIR NEAR YOU
+              </p>
+            </div>
 
-            <p class="text-brandOrange font-semibold text-xs sm:text-sm tracking-widest uppercase">
-              FAST DIAGNOSTIC &amp; SAME-DAY REPAIR NEAR YOU
-            </p>
-
-            <!-- Dual Action Call & Book Buttons -->
-            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-1 pb-1">
-              <a href="tel:9057178905" onclick="trackGtmCall('hero_call')" class="gtm-ppc-call gtm-ppc-call-hero bg-brandOrange hover:bg-brandOrangeHover text-white font-bold px-6 py-3 rounded-xl text-sm sm:text-base uppercase tracking-wider transition-all shadow-md hover:shadow-lg flex items-center gap-2 transform active:scale-95">
-                <svg class="w-5 h-5 flex-shrink-0 animate-bounce" fill="currentColor" viewBox="0 0 20 20">
+            <!-- Dual Action Call & Book Buttons (Equal Size on Mobile, Full-Width Power CTAs) -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-2.5 sm:gap-3.5 pt-0.5 pb-0.5 sm:pt-2 sm:pb-3 lg:pt-3 lg:pb-4 w-full">
+              <a href="tel:9057178905" onclick="trackGtmCall('hero_call')" class="gtm-ppc-call gtm-ppc-call-hero w-full sm:w-auto flex-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold py-3 px-4 sm:py-3.5 sm:px-4 lg:px-5 rounded-xl text-xs sm:text-sm lg:text-[15px] uppercase tracking-wide transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 transform active:scale-95 text-center whitespace-nowrap">
+                <svg class="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 animate-bounce" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
                 </svg>
-                <span>CALL NOW: 905-717-8905</span>
+                <span class="whitespace-nowrap">CALL NOW: 905-717-8905</span>
               </a>
 
-              <a href="#ppc-quote-modal" onclick="openLeadModal(); return false;" class="bg-brandBlue hover:bg-brandDarkBlue text-white font-extrabold px-6 py-3.5 rounded-xl text-sm sm:text-base uppercase tracking-wider transition-all shadow-md flex items-center gap-2 transform active:scale-95 cursor-pointer">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                <span>BOOK SAME-DAY SLOT</span>
+              <a href="#ppc-quote-modal" onclick="openLeadModal(); return false;" class="w-full sm:w-auto flex-1 bg-brandBlue hover:bg-brandDarkBlue text-white font-extrabold py-3 px-4 sm:py-3.5 sm:px-4 lg:px-5 rounded-xl text-xs sm:text-sm lg:text-[15px] uppercase tracking-wide transition-all shadow-md flex items-center justify-center gap-2 transform active:scale-95 cursor-pointer text-center whitespace-nowrap">
+                <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                <span class="whitespace-nowrap">BOOK SAME-DAY SLOT</span>
               </a>
             </div>
 
             <!-- Service Description Paragraph -->
-            <div class="space-y-3 pt-2 text-slate-700 text-sm sm:text-base leading-relaxed text-left">
-              <h2 class="text-xs sm:text-sm font-heading font-bold text-slate-900 uppercase tracking-wider border-b border-slate-200 pb-1 inline-block">
-                Refrigerator Not Cooling, Leaking or Ice Maker Broken?
+            <div class="space-y-3 sm:space-y-3.5 pt-2 sm:pt-3 lg:pt-4 text-slate-700 text-sm sm:text-base leading-relaxed text-left">
+              <h2 class="text-sm sm:text-base font-heading font-bold text-brandNavy tracking-tight leading-snug">
+                Same-Day Repair for All Major Household &amp; Kitchen Appliances
               </h2>
-              <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                Get fast, professional refrigerator repair from experienced local technicians. We service Samsung, LG, Whirlpool, Bosch, and other major brands, with clear repair estimates and transparent upfront written quotes before work begins. Diagnostic service call fee is completely waived when you proceed with the repair.
-              </p>
+              <div id="hero-desc" class="text-slate-700 text-xs sm:text-sm leading-relaxed">
+                <ul class="space-y-1.5 pt-1">
+                  <li class="flex items-start gap-2">
+                    <span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span>
+                    <span><strong class="text-slate-900 font-bold">All 6 Major Appliances:</strong> Fridges, washers, dryers, dishwashers, stoves &amp; microwaves.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span>
+                    <span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Samsung, LG, Whirlpool, Bosch, GE, Maytag &amp; more.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span>
+                    <span><strong class="text-slate-900 font-bold">First-Visit Resolution:</strong> Stocked mobile vans ready to resolve issues on-site.</span>
+                  </li>
+                </ul>
+              </div>
             </div>
 
-            <!-- Trust Pills -->
-            <div class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-2 text-xs font-semibold text-slate-700">
-              <span class="inline-flex items-center gap-1 bg-slate-100 border border-slate-200 px-3 py-1 rounded-md"><span>🛡️</span> Upfront Written Quote</span>
-              <span class="inline-flex items-center gap-1 bg-emerald-50 text-emerald-800 border border-emerald-300 px-3 py-1 rounded-md font-bold"><span>✓</span> Diagnostic Fee Waived w/ Repair</span>
-              <span class="inline-flex items-center gap-1 bg-slate-100 border border-slate-200 px-3 py-1 rounded-md"><span>⭐</span> 5.0 Google Rating</span>
+            <!-- Trust Pills (Centered on Mobile, Left-Aligned on Desktop) -->
+            <div class="pt-2.5 sm:pt-4 lg:pt-5 flex flex-wrap items-center justify-center lg:justify-start gap-1.5 sm:gap-2.5 text-[11px] sm:text-xs font-semibold text-slate-700">
+              <span class="inline-flex items-center gap-1.5 bg-slate-50 border border-slate-200 px-2.5 py-1 rounded-lg text-brandNavy font-medium shadow-2xs">
+                <span>🛡️</span> Upfront Written Quote
+              </span>
+              <span class="inline-flex items-center gap-1.5 bg-blue-50 text-brandBlue border border-blue-200 px-2.5 py-1 rounded-lg font-bold shadow-2xs">
+                <span class="text-brandBlue font-black">✓</span> Diagnostic Fee Waived w/ Repair
+              </span>
+              <span class="inline-flex items-center gap-1.5 bg-slate-50 border border-slate-200 px-2.5 py-1 rounded-lg text-brandNavy font-medium shadow-2xs">
+                <span class="text-brandOrange font-black">★</span> 5.0 Google Rating
+              </span>
             </div>
           </div>
 
@@ -586,54 +648,175 @@
       </div>
     </section>
 
-    <!-- 2. VALUE PROPOSITION STRIP (MATCHING REFERENCE DESIGN 4 PILLARS) -->
-    <section class="bg-brandBlue text-white py-6 border-y border-brandDarkBlue/30 shadow-inner">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6">
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 text-center lg:text-left">
+    <!-- 2. VALUE PROPOSITION STRIP (SLEEK DARK NAVY FLAT STRIP) -->
+    <section class="bg-slate-900 text-white py-3.5 sm:py-5 border-y border-slate-800 shadow-inner">
+      <div class="max-w-6xl mx-auto px-3 sm:px-6">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 items-center">
 
           <!-- Pillar 1 -->
-          <div class="flex flex-col sm:flex-row items-center gap-3">
-            <div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
-              <svg class="w-6 h-6 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <div class="flex items-center gap-2.5 sm:gap-3 text-left">
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4 sm:w-5 sm:h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
             </div>
-            <div>
-              <span class="block text-xs uppercase tracking-wider text-slate-200">Fast Response</span>
-              <span class="block font-heading font-bold text-sm sm:text-base leading-tight">Same-Day Service</span>
+            <div class="min-w-0">
+              <span class="block font-heading font-bold text-xs sm:text-sm text-white uppercase tracking-tight leading-tight">Same-Day Service</span>
+              <span class="block text-[10px] sm:text-xs text-slate-300 font-medium leading-tight mt-0.5">Prompt GTA Dispatch</span>
             </div>
           </div>
 
           <!-- Pillar 2 -->
-          <div class="flex flex-col sm:flex-row items-center gap-3">
-            <div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
-              <svg class="w-6 h-6 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <div class="flex items-center gap-2.5 sm:gap-3 text-left">
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4 sm:w-5 sm:h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
             </div>
-            <div>
-              <span class="block text-xs uppercase tracking-wider text-slate-200">Transparent</span>
-              <span class="block font-heading font-bold text-sm sm:text-base leading-tight">Affordable Rates</span>
+            <div class="min-w-0">
+              <span class="block font-heading font-bold text-xs sm:text-sm text-white uppercase tracking-tight leading-tight">Upfront Pricing</span>
+              <span class="block text-[10px] sm:text-xs text-slate-300 font-medium leading-tight mt-0.5">Fee Waived w/ Repair</span>
             </div>
           </div>
 
           <!-- Pillar 3 -->
-          <div class="flex flex-col sm:flex-row items-center gap-3">
-            <div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
-              <svg class="w-6 h-6 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <div class="flex items-center gap-2.5 sm:gap-3 text-left">
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4 sm:w-5 sm:h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
             </div>
-            <div>
-              <span class="block text-xs uppercase tracking-wider text-slate-200">Daily Dispatch</span>
-              <span class="block font-heading font-bold text-sm sm:text-base leading-tight">8:00 AM – 8:00 PM</span>
+            <div class="min-w-0">
+              <span class="block font-heading font-bold text-xs sm:text-sm text-white uppercase tracking-tight leading-tight">Certified Techs</span>
+              <span class="block text-[10px] sm:text-xs text-slate-300 font-medium leading-tight mt-0.5">Licensed &amp; Insured</span>
             </div>
           </div>
 
           <!-- Pillar 4 -->
-          <div class="flex flex-col sm:flex-row items-center gap-3">
-            <div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
-              <svg class="w-6 h-6 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+          <div class="flex items-center gap-2.5 sm:gap-3 text-left">
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4 sm:w-5 sm:h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
             </div>
-            <div>
-              <span class="block text-xs uppercase tracking-wider text-slate-200">Licensed Pros</span>
-              <span class="block font-heading font-bold text-sm sm:text-base leading-tight">Certified Techs</span>
+            <div class="min-w-0">
+              <span class="block font-heading font-bold text-xs sm:text-sm text-white uppercase tracking-tight leading-tight">Available Daily</span>
+              <span class="block text-[10px] sm:text-xs text-slate-300 font-medium leading-tight mt-0.5">8:00 AM – 8:00 PM</span>
             </div>
           </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 2B. 6 MAJOR APPLIANCES WE SERVICE & REPAIR (EXACT CLIENT REFERENCE DESIGN) -->
+    <section class="py-12 sm:py-16 bg-slate-50 border-b border-slate-200/80" id="all-six-services">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <!-- Header & Locations Subtitle Matching Reference -->
+        <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-slate-900 uppercase tracking-tight">
+            SAME-DAY, RELIABLE APPLIANCE REPAIR
+          </h2>
+          <p class="text-xs sm:text-sm font-bold text-brandBlue uppercase tracking-wide mt-2 flex items-center justify-center gap-2 flex-wrap">
+            <span>Toronto</span>
+            <span class="text-brandOrange text-[10px]">◆</span>
+            <span>Mississauga</span>
+            <span class="text-brandOrange text-[10px]">◆</span>
+            <span>Brampton</span>
+            <span class="text-brandOrange text-[10px]">◆</span>
+            <span>Vaughan</span>
+            <span class="text-brandOrange text-[10px]">◆</span>
+            <span>Markham</span>
+            <span class="text-brandOrange text-[10px]">◆</span>
+            <span>Surrounding GTA Areas</span>
+          </p>
+        </div>
+
+        <!-- 6 Appliance Cards Matching User Inset Image Reference -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3.5 sm:gap-4 lg:gap-5 items-stretch">
+          
+          <!-- 1. Refrigerator -->
+          <a href="demo.html?service=refrigerator" aria-label="Refrigerator Repair Services in Toronto & GTA" class="flex flex-col items-center group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brandOrange focus-visible:ring-offset-2 rounded-2xl transition-transform duration-200 hover:-translate-y-1">
+            <div class="w-full aspect-square bg-white rounded-2xl p-3 sm:p-3.5 border border-slate-200/90 shadow-2xs group-hover:shadow-md group-hover:border-brandOrange flex items-center justify-center transition-all duration-200">
+              <img src="../img/service-card-refrigerator.webp?v=2" alt="Stainless steel refrigerator appliance repair" width="200" height="200" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
+            </div>
+            <div class="mt-2.5 sm:mt-3 text-center leading-tight min-h-[44px] flex flex-col justify-start items-center">
+              <span class="block font-heading font-extrabold text-[12px] sm:text-[13px] lg:text-[12px] xl:text-[13px] text-slate-900 uppercase tracking-tight group-hover:text-brandOrange transition-colors">
+                REFRIGERATOR
+              </span>
+              <span class="block font-heading font-black text-[11px] text-brandBlue uppercase tracking-wider mt-1">
+                REPAIR
+              </span>
+            </div>
+          </a>
+
+          <!-- 2. Stove & Oven -->
+          <a href="demo.html?service=stove" aria-label="Stove and Oven Repair Services in Toronto & GTA" class="flex flex-col items-center group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brandOrange focus-visible:ring-offset-2 rounded-2xl transition-transform duration-200 hover:-translate-y-1">
+            <div class="w-full aspect-square bg-white rounded-2xl p-3 sm:p-3.5 border border-slate-200/90 shadow-2xs group-hover:shadow-md group-hover:border-brandOrange flex items-center justify-center transition-all duration-200">
+              <img src="../img/service-card-stove.webp?v=2" alt="Stainless steel stove and range oven appliance repair" width="200" height="200" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
+            </div>
+            <div class="mt-2.5 sm:mt-3 text-center leading-tight min-h-[44px] flex flex-col justify-start items-center">
+              <span class="block font-heading font-extrabold text-[12px] sm:text-[13px] lg:text-[12px] xl:text-[13px] text-slate-900 uppercase tracking-tight group-hover:text-brandOrange transition-colors">
+                STOVE &amp; OVEN
+              </span>
+              <span class="block font-heading font-black text-[11px] text-brandBlue uppercase tracking-wider mt-1">
+                REPAIR
+              </span>
+            </div>
+          </a>
+
+          <!-- 3. Washer -->
+          <a href="demo.html?service=washer" aria-label="Washing Machine Repair Services in Toronto & GTA" class="flex flex-col items-center group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brandOrange focus-visible:ring-offset-2 rounded-2xl transition-transform duration-200 hover:-translate-y-1">
+            <div class="w-full aspect-square bg-white rounded-2xl p-3 sm:p-3.5 border border-slate-200/90 shadow-2xs group-hover:shadow-md group-hover:border-brandOrange flex items-center justify-center transition-all duration-200">
+              <img src="../img/service-card-washer.webp?v=2" alt="Stainless steel front-load washing machine appliance repair" width="200" height="200" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
+            </div>
+            <div class="mt-2.5 sm:mt-3 text-center leading-tight min-h-[44px] flex flex-col justify-start items-center">
+              <span class="block font-heading font-extrabold text-[12px] sm:text-[13px] lg:text-[12px] xl:text-[13px] text-slate-900 uppercase tracking-tight group-hover:text-brandOrange transition-colors">
+                WASHER
+              </span>
+              <span class="block font-heading font-black text-[11px] text-brandBlue uppercase tracking-wider mt-1">
+                REPAIR
+              </span>
+            </div>
+          </a>
+
+          <!-- 4. Dryer -->
+          <a href="demo.html?service=dryer" aria-label="Clothes Dryer Repair Services in Toronto & GTA" class="flex flex-col items-center group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brandOrange focus-visible:ring-offset-2 rounded-2xl transition-transform duration-200 hover:-translate-y-1">
+            <div class="w-full aspect-square bg-white rounded-2xl p-3 sm:p-3.5 border border-slate-200/90 shadow-2xs group-hover:shadow-md group-hover:border-brandOrange flex items-center justify-center transition-all duration-200">
+              <img src="../img/service-card-dryer.webp?v=2" alt="Stainless steel front-load clothes dryer appliance repair" width="200" height="200" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
+            </div>
+            <div class="mt-2.5 sm:mt-3 text-center leading-tight min-h-[44px] flex flex-col justify-start items-center">
+              <span class="block font-heading font-extrabold text-[12px] sm:text-[13px] lg:text-[12px] xl:text-[13px] text-slate-900 uppercase tracking-tight group-hover:text-brandOrange transition-colors">
+                DRYER
+              </span>
+              <span class="block font-heading font-black text-[11px] text-brandBlue uppercase tracking-wider mt-1">
+                REPAIR
+              </span>
+            </div>
+          </a>
+
+          <!-- 5. Dishwasher -->
+          <a href="demo.html?service=dishwasher" aria-label="Dishwasher Repair Services in Toronto & GTA" class="flex flex-col items-center group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brandOrange focus-visible:ring-offset-2 rounded-2xl transition-transform duration-200 hover:-translate-y-1">
+            <div class="w-full aspect-square bg-white rounded-2xl p-3 sm:p-3.5 border border-slate-200/90 shadow-2xs group-hover:shadow-md group-hover:border-brandOrange flex items-center justify-center transition-all duration-200">
+              <img src="../img/service-card-dishwasher.webp?v=2" alt="Stainless steel built-in dishwasher appliance repair" width="200" height="200" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
+            </div>
+            <div class="mt-2.5 sm:mt-3 text-center leading-tight min-h-[44px] flex flex-col justify-start items-center">
+              <span class="block font-heading font-extrabold text-[12px] sm:text-[13px] lg:text-[12px] xl:text-[13px] text-slate-900 uppercase tracking-tight group-hover:text-brandOrange transition-colors">
+                DISHWASHER
+              </span>
+              <span class="block font-heading font-black text-[11px] text-brandBlue uppercase tracking-wider mt-1">
+                REPAIR
+              </span>
+            </div>
+          </a>
+
+          <!-- 6. Microwave -->
+          <a href="demo.html?service=microwave" aria-label="Microwave Repair Services in Toronto & GTA" class="flex flex-col items-center group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brandOrange focus-visible:ring-offset-2 rounded-2xl transition-transform duration-200 hover:-translate-y-1">
+            <div class="w-full aspect-square bg-white rounded-2xl p-3 sm:p-3.5 border border-slate-200/90 shadow-2xs group-hover:shadow-md group-hover:border-brandOrange flex items-center justify-center transition-all duration-200">
+              <img src="../img/service-card-microwave.webp?v=2" alt="Stainless steel over-the-range microwave appliance repair" width="200" height="200" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
+            </div>
+            <div class="mt-2.5 sm:mt-3 text-center leading-tight min-h-[44px] flex flex-col justify-start items-center">
+              <span class="block font-heading font-extrabold text-[12px] sm:text-[13px] lg:text-[12px] xl:text-[13px] text-slate-900 uppercase tracking-tight group-hover:text-brandOrange transition-colors">
+                MICROWAVE
+              </span>
+              <span class="block font-heading font-black text-[11px] text-brandBlue uppercase tracking-wider mt-1">
+                REPAIR
+              </span>
+            </div>
+          </a>
 
         </div>
       </div>
@@ -648,35 +831,35 @@
           <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
             <div>
               <h3 class="text-sm sm:text-base font-heading font-bold text-slate-800 uppercase tracking-wide mb-4 pb-2 border-b border-slate-100 flex items-center justify-between">
-                <span>COMMON REFRIGERATOR PROBLEMS</span>
+                <span>COMMON PROBLEMS ACROSS ALL 6 APPLIANCES</span>
                 <span class="text-xs text-brandOrange font-bold">Diagnosed Daily</span>
               </h3>
               <ul class="space-y-3.5 text-xs sm:text-sm text-slate-700 font-medium">
-                                <li class="flex items-center gap-3">
+                <li class="flex items-center gap-3">
                   <span class="w-2.5 h-2.5 rounded-full bg-brandOrange shrink-0"></span>
-                  <span>Fridge Not Cooling / Warm</span>
+                  <span>Refrigerator Not Cooling / Freezing Food</span>
                 </li>
-                                <li class="flex items-center gap-3">
+                <li class="flex items-center gap-3">
                   <span class="w-2.5 h-2.5 rounded-full bg-brandOrange shrink-0"></span>
-                  <span>Water Leaking on Floor</span>
+                  <span>Washing Machine Leaking or Not Draining</span>
                 </li>
-                                <li class="flex items-center gap-3">
+                <li class="flex items-center gap-3">
                   <span class="w-2.5 h-2.5 rounded-full bg-brandOrange shrink-0"></span>
-                  <span>Ice Maker Jammed / Broken</span>
+                  <span>Clothes Dryer Running With No Heat</span>
                 </li>
-                                <li class="flex items-center gap-3">
+                <li class="flex items-center gap-3">
                   <span class="w-2.5 h-2.5 rounded-full bg-brandOrange shrink-0"></span>
-                  <span>Defrost / Heavy Frost Buildup</span>
+                  <span>Dishwasher Leaving Food Film or Not Draining</span>
                 </li>
-                                <li class="flex items-center gap-3">
+                <li class="flex items-center gap-3">
                   <span class="w-2.5 h-2.5 rounded-full bg-brandOrange shrink-0"></span>
-                  <span>Noisy Humming Compressor</span>
+                  <span>Oven &amp; Stove Burners Failing to Ignite</span>
                 </li>
-                                <li class="flex items-center gap-3">
+                <li class="flex items-center gap-3">
                   <span class="w-2.5 h-2.5 rounded-full bg-brandOrange shrink-0"></span>
-                  <span>Door Gasket / Seal Leaks</span>
+                  <span>Microwave Sparking or Uneven Heating</span>
                 </li>
-                              </ul>
+              </ul>
             </div>
             <div class="mt-6 pt-4 border-t border-slate-100">
               <a href="tel:9057178905" onclick="trackGtmCall('problem_card_call')" class="gtm-ppc-call text-xs font-bold text-brandOrange hover:underline flex items-center gap-1">
@@ -689,35 +872,35 @@
           <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
             <div>
               <h3 class="text-sm sm:text-base font-heading font-bold text-slate-800 uppercase tracking-wide mb-4 pb-2 border-b border-slate-100 flex items-center justify-between">
-                <span>TYPES OF REFRIGERATORS WE REPAIR</span>
+                <span>ALL 6 MAJOR APPLIANCES WE REPAIR</span>
                 <span class="text-xs text-brandBlue font-bold">All Makes</span>
               </h3>
               <ul class="space-y-3.5 text-xs sm:text-sm text-slate-700 font-medium">
-                                <li class="flex items-center gap-3">
+                <li class="flex items-center gap-3">
                   <span class="w-2.5 h-2.5 rounded-full bg-brandBlue shrink-0"></span>
-                  <span>French Door Refrigerators</span>
+                  <span>Refrigerators &amp; Freezers (French Door, Side-by-Side, Built-In)</span>
                 </li>
-                                <li class="flex items-center gap-3">
+                <li class="flex items-center gap-3">
                   <span class="w-2.5 h-2.5 rounded-full bg-brandBlue shrink-0"></span>
-                  <span>Side-by-Side Refrigerators</span>
+                  <span>Washing Machines (Front-Load, Top-Load, Stackable)</span>
                 </li>
-                                <li class="flex items-center gap-3">
+                <li class="flex items-center gap-3">
                   <span class="w-2.5 h-2.5 rounded-full bg-brandBlue shrink-0"></span>
-                  <span>Bottom-Freezer Refrigerators</span>
+                  <span>Clothes Dryers (Gas &amp; Electric Vented)</span>
                 </li>
-                                <li class="flex items-center gap-3">
+                <li class="flex items-center gap-3">
                   <span class="w-2.5 h-2.5 rounded-full bg-brandBlue shrink-0"></span>
-                  <span>Top-Freezer Traditional Units</span>
+                  <span>Dishwashers (Built-In, Panel-Ready &amp; Portable)</span>
                 </li>
-                                <li class="flex items-center gap-3">
+                <li class="flex items-center gap-3">
                   <span class="w-2.5 h-2.5 rounded-full bg-brandBlue shrink-0"></span>
-                  <span>Built-In &amp; Counter-Depth Fridges</span>
+                  <span>Ovens, Stoves &amp; Ranges (Gas, Electric &amp; Induction)</span>
                 </li>
-                                <li class="flex items-center gap-3">
+                <li class="flex items-center gap-3">
                   <span class="w-2.5 h-2.5 rounded-full bg-brandBlue shrink-0"></span>
-                  <span>Wine Coolers &amp; Beverage Centers</span>
+                  <span>Microwaves (Over-the-Range &amp; Built-In Drawer)</span>
                 </li>
-                              </ul>
+              </ul>
             </div>
             <div class="mt-6 pt-4 border-t border-slate-100">
               <a href="#ppc-quote-modal" onclick="openLeadModal(); return false;" class="text-xs font-bold text-brandBlue hover:underline flex items-center gap-1">
@@ -730,13 +913,13 @@
       </div>
     </section>
 
-    <!-- 4. CHOOSE APPLIANCE REPAIR TEAM (WITH TECHNICIANS & SERVICE VAN IMAGE) -->
+    <!-- 4. CHOOSE APPLIANCE REPAIR KNIGHTS (WITH TECHNICIANS & SERVICE VAN IMAGE) -->
     <section class="py-14 sm:py-20 bg-white border-b border-brandBorder" id="why-choose-us">
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
 
         <div class="text-center mb-12">
           <h2 class="text-xl sm:text-2xl lg:text-3xl font-heading font-bold text-slate-900 uppercase tracking-tight mb-2">
-            CHOOSE APPLIANCE REPAIR TEAM
+            CHOOSE APPLIANCE REPAIR KNIGHTS
           </h2>
           <p class="text-slate-600 text-xs sm:text-sm max-w-xl mx-auto font-medium">
             Quality &amp; Reliable Services at Competitive Rates Near You
@@ -777,8 +960,8 @@
 
             <!-- Item 3: PRICE -->
             <div class="flex items-start gap-4">
-              <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 shadow-2xs">
-                <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <div class="w-12 h-12 rounded-xl bg-slate-100 text-brandNavy flex items-center justify-center shrink-0 shadow-2xs">
+                <svg class="w-6 h-6 text-brandNavy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               </div>
               <div>
                 <h3 class="text-sm font-heading font-bold text-slate-900 uppercase tracking-wide mb-1">PRICE</h3>
@@ -822,7 +1005,7 @@
               <span>Fast Direct Dispatch</span>
             </div>
             <a href="tel:9057178905" onclick="trackGtmCall('banner_call_text')" class="gtm-ppc-call ppc-cta-phone-link">
-              Call: (905) 717-8905
+              Call: 905-717-8905
             </a>
             <div class="ppc-cta-subtext">Priority arrivals across Toronto &amp; GTA • Fee waived with repair</div>
           </div>
@@ -853,13 +1036,27 @@
         <h2 class="text-xl sm:text-2xl font-heading font-bold text-slate-900 uppercase tracking-tight mb-2">
           CUSTOMER REVIEWS
         </h2>
-        <p class="text-slate-600 text-xs sm:text-sm max-w-md mx-auto mb-8 font-medium">
+        <p class="text-slate-600 text-xs sm:text-sm max-w-md mx-auto mb-4 font-medium">
           What Our Local Homeowners Say Near You
         </p>
 
+        <!-- Google Trust Badge (No review count number per business requirements) -->
+        <div class="inline-flex items-center gap-2 bg-amber-50/90 border border-amber-200/90 px-3.5 sm:px-4 py-1.5 rounded-full text-xs font-semibold text-slate-800 mb-6 shadow-2xs">
+          <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24">
+            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"/>
+            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/>
+          </svg>
+          <span class="text-brandOrange font-bold tracking-tight">★★★★★</span>
+          <span class="font-bold text-brandNavy">5.0 Google Rating</span>
+          <span class="text-slate-300">&bull;</span>
+          <span class="text-slate-600">Verified Local Customer Reviews</span>
+        </div>
+
         <!-- Centered Single Review Box with Slider Arrows -->
         <div class="relative bg-slate-50 p-6 sm:p-10 rounded-2xl border border-slate-200 shadow-sm max-w-2xl mx-auto">
-          <div class="text-amber-400 text-base sm:text-lg mb-3 tracking-wide">★★★★★</div>
+          <div class="text-brandOrange text-base sm:text-lg mb-3 tracking-wide">★★★★★</div>
           <p id="review-text" class="text-slate-700 text-xs sm:text-sm md:text-base italic leading-relaxed mb-4">
             "My washing machine broke but these guys completely saved the day. The technician arrived on time, diagnosed the issue quickly, and fixed it with zero hidden fees. Reliable same-day service!"
           </p>
@@ -887,7 +1084,7 @@
       <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
 
         <h2 class="text-xl sm:text-2xl font-heading font-bold text-slate-900 uppercase tracking-tight mb-2">
-          REFRIGERATOR BRANDS
+          ALL 6 APPLIANCE BRANDS WE REPAIR
         </h2>
         <p class="text-slate-600 text-xs sm:text-sm max-w-md mx-auto mb-8 font-medium">
           We Service All Major Brands With Genuine Quality Parts
@@ -1091,7 +1288,7 @@
                     class="h-9 sm:h-10 w-auto object-contain" loading="lazy">
                 </picture>
               </div>
-              <h3 class="text-2xl font-heading font-black mb-2 text-white">Contact to Book Repair Today</h3>
+              <h3 class="text-2xl font-heading font-bold mb-2 text-white">Contact to Book Repair Today</h3>
               <p class="text-xs text-slate-200 leading-relaxed">
                 Connect directly with our local appliance team to confirm schedule availability and get your appliance inspected promptly.
               </p>
@@ -1099,15 +1296,15 @@
 
             <div class="space-y-2.5 my-4">
               <div class="flex items-center gap-2.5 text-xs bg-white/10 p-2.5 rounded-xl backdrop-blur-xs">
-                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                <svg class="w-4 h-4 text-brandOrange flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
                 <span class="text-slate-100 font-medium">Diagnostic Fee Waived with Repair</span>
               </div>
               <div class="flex items-center gap-2.5 text-xs bg-white/10 p-2.5 rounded-xl backdrop-blur-xs">
-                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                <svg class="w-4 h-4 text-brandOrange flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
                 <span class="text-slate-100 font-medium">Comprehensive Written Parts &amp; Labour Warranty</span>
               </div>
               <div class="flex items-center gap-2.5 text-xs bg-white/10 p-2.5 rounded-xl backdrop-blur-xs">
-                <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                <svg class="w-4 h-4 text-brandOrange flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
                 <span class="text-slate-100 font-medium">Transparent Upfront Written Quotes</span>
               </div>
             </div>
@@ -1127,7 +1324,7 @@
     <section class="py-14 sm:py-20 bg-white text-center border-b border-brandBorder" id="final-cta">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 space-y-4">
         <h2 class="text-xl sm:text-2xl font-heading font-bold text-slate-900 uppercase tracking-tight">
-          BOOK YOUR REFRIGERATOR REPAIR TODAY
+          BOOK YOUR SAME-DAY APPLIANCE REPAIR TODAY
         </h2>
         <p class="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-xl mx-auto">
           Don't wait while laundry piles up or broken appliances cause disruption. Call our priority dispatch center now or request a callback to secure your same-day repair appointment near you.
@@ -1152,7 +1349,7 @@
     <div class="ppc-trust-strip py-6 px-4 sm:px-6">
       <div class="max-w-6xl mx-auto ppc-trust-strip-grid">
         <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center shrink-0 text-emerald-400">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/15 border border-blue-500/30 flex items-center justify-center shrink-0 text-blue-400">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
           </div>
           <div>
@@ -1162,7 +1359,7 @@
         </div>
 
         <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center shrink-0 text-amber-400">
+          <div class="w-10 h-10 rounded-xl bg-orange-500/15 border border-orange-500/30 flex items-center justify-center shrink-0 text-brandOrange">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
           </div>
           <div>
@@ -1211,8 +1408,8 @@
           <!-- Live Dispatch Status Card -->
           <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-3.5 space-y-2 max-w-xs shadow-inner">
             <div class="flex items-center justify-between text-[11px]">
-              <span class="inline-flex items-center gap-1.5 font-bold text-emerald-400">
-                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span class="inline-flex items-center gap-1.5 font-bold text-brandOrange">
+                <span class="w-2 h-2 rounded-full bg-brandOrange animate-pulse"></span>
                 Dispatch Active Today
               </span>
               <span class="text-slate-400">8:00 AM – 8:00 PM</span>
@@ -1242,12 +1439,12 @@
             <span class="ppc-footer-heading-bar"></span>
           </div>
           <ul class="ppc-footer-list text-xs">
-            <li><a href="#about-service" class="ppc-footer-link"><span>›</span> Washing Machine Repair</a></li>
-            <li><a href="#about-service" class="ppc-footer-link"><span>›</span> Refrigerator &amp; Freezer Repair</a></li>
-            <li><a href="#about-service" class="ppc-footer-link"><span>›</span> Clothes Dryer Repair</a></li>
-            <li><a href="#about-service" class="ppc-footer-link"><span>›</span> Dishwasher Repair &amp; Diagnostics</a></li>
-            <li><a href="#about-service" class="ppc-footer-link"><span>›</span> Oven, Range &amp; Stove Repair</a></li>
-            <li><a href="#about-service" class="ppc-footer-link"><span>›</span> Built-In Microwave Repair</a></li>
+            <li><a href="demo.html?service=washer" class="ppc-footer-link"><span>›</span> Washing Machine Repair</a></li>
+            <li><a href="demo.html?service=refrigerator" class="ppc-footer-link"><span>›</span> Refrigerator &amp; Freezer Repair</a></li>
+            <li><a href="demo.html?service=dryer" class="ppc-footer-link"><span>›</span> Clothes Dryer Repair</a></li>
+            <li><a href="demo.html?service=dishwasher" class="ppc-footer-link"><span>›</span> Dishwasher Repair &amp; Diagnostics</a></li>
+            <li><a href="demo.html?service=stove" class="ppc-footer-link"><span>›</span> Oven, Range &amp; Stove Repair</a></li>
+            <li><a href="demo.html?service=microwave" class="ppc-footer-link"><span>›</span> Built-In Microwave Repair</a></li>
           </ul>
         </div>
 
@@ -1279,14 +1476,14 @@
 
           <!-- Trust Badges -->
           <div class="flex flex-wrap gap-1.5">
-            <span class="ppc-badge-chip border-emerald-500/40 text-emerald-300 bg-emerald-950/40">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Fully Insured
+            <span class="ppc-badge-chip border-blue-500/40 text-blue-300 bg-blue-950/40">
+              <span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span> Fully Insured
             </span>
             <span class="ppc-badge-chip border-blue-500/40 text-blue-300 bg-blue-950/40">
               <span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span> Certified Techs
             </span>
-            <span class="ppc-badge-chip border-amber-500/40 text-amber-300 bg-amber-950/40">
-              <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> Genuine Parts
+            <span class="ppc-badge-chip border-orange-500/40 text-orange-300 bg-orange-950/40">
+              <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span> Genuine Parts
             </span>
           </div>
 
@@ -1324,18 +1521,20 @@
     </div>
   </footer>
 
-  <!-- STICKY MOBILE CALL & BOOKING BAR (ULTRA CONVERTING & THUMB OPTIMIZED) -->
-  <div class="fixed bottom-0 left-0 right-0 z-50 bg-slate-950/95 backdrop-blur-md px-3 py-2.5 border-t border-slate-800 flex items-center justify-between gap-2 md:hidden shadow-2xl">
-    <a href="https://wa.me/19057178905?text=Hi%2C%20I%20need%20appliance%20repair%20service%20in%20the%20GTA" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" onclick="trackGtmWhatsApp('mobile_bar')" class="bg-emerald-600 hover:bg-emerald-700 text-white p-3 rounded-xl text-xs flex items-center justify-center shrink-0 shadow-md active:scale-95 transition-transform">
-      <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" /></svg>
+  <!-- FLOATING MOBILE WHATSAPP PILL (DISCREET & REVEALED ON SCROLL) -->
+  <a id="mobile-whatsapp-btn" href="https://wa.me/19057178905?text=Hi%2C%20I%20need%20appliance%20repair%20service%20in%20the%20GTA" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" onclick="trackGtmWhatsApp('floating_btn')" class="fixed bottom-[74px] right-3.5 z-40 bg-emerald-600 hover:bg-emerald-700 text-white w-11 h-11 rounded-full shadow-lg flex items-center justify-center md:hidden transition-all duration-300 transform translate-y-12 opacity-0 pointer-events-none active:scale-95 border-2 border-white">
+    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" /></svg>
+  </a>
+
+  <!-- STICKY MOBILE CALL & BOOKING BAR (SMART ON-SCROLL REVEAL & DUAL POWER CTAs) -->
+  <div id="mobile-sticky-bar" class="fixed bottom-0 left-0 right-0 z-50 bg-slate-950/95 backdrop-blur-md px-3 py-2.5 border-t border-slate-800 flex items-center justify-between gap-2.5 md:hidden shadow-2xl transition-all duration-300 transform translate-y-full opacity-0 pointer-events-none" style="padding-bottom: max(0.625rem, env(safe-area-inset-bottom));">
+    <a href="#ppc-quote-modal" onclick="openLeadModal(); return false;" class="w-[36%] bg-brandBlue hover:bg-brandDarkBlue text-white font-extrabold py-3 px-2 rounded-xl text-xs uppercase tracking-tight shadow-md active:scale-95 transition-transform flex items-center justify-center gap-1.5 text-center">
+      <svg class="w-3.5 h-3.5 text-blue-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+      <span>BOOK ONLINE</span>
     </a>
-    <a href="#ppc-quote-modal" onclick="openLeadModal(); return false;" class="shrink-0 bg-brandBlue hover:bg-brandDarkBlue text-white border border-blue-400/40 font-extrabold py-3 px-3 rounded-xl text-[11px] text-center uppercase tracking-tight shadow-md active:scale-95 transition-transform flex items-center justify-center gap-1">
-      <svg class="w-3.5 h-3.5 text-blue-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-      <span>BOOK SLOT</span>
-    </a>
-    <a href="tel:9057178905" onclick="trackGtmCall('mobile_bar')" class="gtm-ppc-call flex-grow bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold py-3 px-3 rounded-xl text-xs sm:text-sm text-center uppercase tracking-wide shadow-md flex items-center justify-center gap-2 active:scale-95 transition-transform">
-      <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
-      <span>CALL NOW: 905-717-8905</span>
+    <a href="tel:9057178905" onclick="trackGtmCall('mobile_bar')" class="gtm-ppc-call flex-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-black py-3 px-3 rounded-xl text-xs sm:text-sm uppercase tracking-wide shadow-md flex items-center justify-center gap-2 active:scale-95 transition-transform text-center">
+      <svg class="w-4 h-4 text-white shrink-0 animate-bounce" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+      <span>CALL: 905-717-8905</span>
     </a>
   </div>
 
@@ -1403,10 +1602,10 @@
         </p>
       </form>
 
-      <div id="modal-success" class="hidden bg-emerald-50 border border-emerald-400 p-6 rounded-2xl text-center space-y-2">
-        <div class="text-2xl text-emerald-600 font-bold">✓ Request Received!</div>
-        <p class="text-xs text-emerald-900 font-medium">A technician will call your number within 15 minutes.</p>
-        <a href="tel:9057178905" onclick="trackGtmCall('modal_success_call')" class="gtm-ppc-call inline-block mt-2 bg-brandDarkBlue text-white text-xs font-bold py-2 px-4 rounded-lg">Call Dispatch: 905-717-8905</a>
+      <div id="modal-success" class="hidden bg-blue-50 border border-brandBlue/30 p-6 rounded-2xl text-center space-y-2">
+        <div class="text-2xl text-brandBlue font-bold">✓ Request Received!</div>
+        <p class="text-xs text-brandNavy font-medium">A technician will call your number within 15 minutes.</p>
+        <a href="tel:9057178905" onclick="trackGtmCall('modal_success_call')" class="gtm-ppc-call inline-block mt-2 bg-brandOrange hover:bg-brandOrangeHover text-white text-xs font-extrabold py-2 px-4 rounded-lg">Call Dispatch: 905-717-8905</a>
       </div>
     </div>
   </div>
@@ -1416,19 +1615,64 @@
     window.dataLayer = window.dataLayer || [];
     function trackGtmCall(location) {
       if (typeof loadGTM === 'function') loadGTM();
-      window.dataLayer.push({ 'event': 'click_phone_ppc', 'button_location': location, 'value': 1 });
-      window.dataLayer.push({ 'event': 'ppc_phone_click', 'click_location': location, 'value': 1 });
+      window.dataLayer.push({
+        'event': 'click_phone_ppc',
+        'button_location': location,
+        'click_location': location,
+        'value': 1
+      });
+      window.dataLayer.push({
+        'event': 'ppc_phone_click',
+        'button_location': location,
+        'click_location': location,
+        'value': 1
+      });
     }
     function trackGtmWhatsApp(location) {
       if (typeof loadGTM === 'function') loadGTM();
-      window.dataLayer.push({ 'event': 'click_whatsapp_ppc', 'button_location': location, 'value': 1 });
+      window.dataLayer.push({
+        'event': 'click_whatsapp_ppc',
+        'button_location': location,
+        'click_location': location,
+        'value': 1
+      });
+      window.dataLayer.push({
+        'event': 'ppc_whatsapp_click',
+        'button_location': location,
+        'click_location': location,
+        'value': 1
+      });
     }
     function trackGtmFormSuccess(appliance, city) {
       if (typeof loadGTM === 'function') loadGTM();
-      // Fires Google Ads Conversion Tag 19 (AW-18211585964/m_1yCPydo-AcEKz_-utD) in GTM
-      window.dataLayer.push({ 'event': 'ppc_lead_form_submitted', 'appliance': appliance, 'city': city, 'value': 1 });
-      window.dataLayer.push({ 'event': 'ppc_form_success', 'appliance': appliance, 'city': city, 'value': 1 });
-      window.dataLayer.push({ 'event': 'generate_lead', 'service': appliance, 'city': city, 'value': 1 });
+      // Fires Google Ads Conversion Tag 19 (AW-18211585964/m_1yCPydo-AcEKz_-utD) & GA4 generate_lead
+      window.dataLayer.push({
+        'event': 'ppc_lead_form_submitted',
+        'appliance': appliance,
+        'lead_appliance': appliance,
+        'service': appliance,
+        'city': city,
+        'lead_city': city,
+        'value': 1
+      });
+      window.dataLayer.push({
+        'event': 'ppc_form_success',
+        'appliance': appliance,
+        'lead_appliance': appliance,
+        'service': appliance,
+        'city': city,
+        'lead_city': city,
+        'value': 1
+      });
+      window.dataLayer.push({
+        'event': 'generate_lead',
+        'service': appliance,
+        'appliance': appliance,
+        'lead_appliance': appliance,
+        'city': city,
+        'lead_city': city,
+        'value': 1
+      });
     }
 
     // Modal Controller & Service Area Pre-selector
@@ -1474,13 +1718,36 @@
       submitBtn.disabled = true;
       submitBtn.innerText = "SENDING REQUEST...";
 
+      // Retrieve GCLID and Campaign UTMs (live URL or persisted from arrival)
+      var urlParams = new URLSearchParams(window.location.search);
+      var gclid = urlParams.get('gclid') || '';
+      if (!gclid) {
+        try { gclid = sessionStorage.getItem('ppc_gclid') || ''; } catch (e) {}
+      }
+      var utmSource = urlParams.get('utm_source') || '';
+      if (!utmSource) {
+        try { utmSource = sessionStorage.getItem('ppc_utm_source') || ''; } catch (e) {}
+      }
+      var utmMedium = urlParams.get('utm_medium') || '';
+      if (!utmMedium) {
+        try { utmMedium = sessionStorage.getItem('ppc_utm_medium') || ''; } catch (e) {}
+      }
+      var utmCampaign = urlParams.get('utm_campaign') || '';
+      if (!utmCampaign) {
+        try { utmCampaign = sessionStorage.getItem('ppc_utm_campaign') || ''; } catch (e) {}
+      }
+
       const payload = {
         name: name,
         phone: phone,
         email: email,
         city: city,
         appliance: appliance,
-        page: window.location.pathname + window.location.search
+        page: window.location.pathname + window.location.search,
+        gclid: gclid,
+        utm_source: utmSource,
+        utm_medium: utmMedium,
+        utm_campaign: utmCampaign
       };
 
       fetch('send-lead.php', {
@@ -1505,7 +1772,19 @@
       });
     }
 
-    // Review Slider Logic
+    // Topbar Micro-CTA Slider Logic (Auto-rotating every 3.5s)
+    (function initTopbarSlider() {
+      const slidesContainer = document.getElementById('topbar-slides');
+      if (!slidesContainer) return;
+      const totalSlides = slidesContainer.children.length;
+      let currentSlide = 0;
+      setInterval(() => {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        slidesContainer.style.transform = `translateY(-${currentSlide * 20}px)`;
+      }, 3500);
+    })();
+
+    // Review Slider Logic with Smooth Hands-Free Auto-Rotation
     const reviewsData = [
       {
         quote: "My washing machine broke but these guys completely saved the day. The technician arrived on time, diagnosed the issue quickly, and fixed it with zero hidden fees. Reliable same-day service!",
@@ -1529,19 +1808,110 @@
       }
     ];
     let curRevIdx = 0;
-    function updateReviewUI() {
-      document.getElementById('review-text').textContent = `"${reviewsData[curRevIdx].quote}"`;
-      document.getElementById('review-author').textContent = `— ${reviewsData[curRevIdx].author}`;
-      document.getElementById('review-counter').textContent = `${curRevIdx + 1} / ${reviewsData.length}`;
+    let reviewAutoTimer = null;
+
+    function updateReviewUI(smooth = true) {
+      const textEl = document.getElementById('review-text');
+      const authorEl = document.getElementById('review-author');
+      const counterEl = document.getElementById('review-counter');
+      if (!textEl || !authorEl) return;
+
+      if (smooth) {
+        textEl.style.opacity = '0';
+        authorEl.style.opacity = '0';
+        setTimeout(() => {
+          textEl.textContent = `"${reviewsData[curRevIdx].quote}"`;
+          authorEl.textContent = `— ${reviewsData[curRevIdx].author}`;
+          if (counterEl) counterEl.textContent = `${curRevIdx + 1} / ${reviewsData.length}`;
+          textEl.style.opacity = '1';
+          authorEl.style.opacity = '1';
+        }, 150);
+      } else {
+        textEl.textContent = `"${reviewsData[curRevIdx].quote}"`;
+        authorEl.textContent = `— ${reviewsData[curRevIdx].author}`;
+        if (counterEl) counterEl.textContent = `${curRevIdx + 1} / ${reviewsData.length}`;
+      }
     }
+
+    function resetReviewTimer() {
+      if (reviewAutoTimer) clearInterval(reviewAutoTimer);
+      reviewAutoTimer = setInterval(nextReview, 5500);
+    }
+
     function nextReview() {
       curRevIdx = (curRevIdx + 1) % reviewsData.length;
       updateReviewUI();
+      resetReviewTimer();
     }
+
     function prevReview() {
       curRevIdx = (curRevIdx - 1 + reviewsData.length) % reviewsData.length;
       updateReviewUI();
+      resetReviewTimer();
     }
+
+    (function initReviewSlider() {
+      const reviewSection = document.getElementById('reviews');
+      if (!reviewSection) return;
+
+      const textEl = document.getElementById('review-text');
+      const authorEl = document.getElementById('review-author');
+      if (textEl) textEl.style.transition = 'opacity 0.2s ease-in-out';
+      if (authorEl) authorEl.style.transition = 'opacity 0.2s ease-in-out';
+
+      resetReviewTimer();
+
+      const card = reviewSection.querySelector('.relative.bg-slate-50');
+      if (card) {
+        card.addEventListener('mouseenter', () => { if (reviewAutoTimer) clearInterval(reviewAutoTimer); });
+        card.addEventListener('mouseleave', resetReviewTimer);
+        card.addEventListener('touchstart', () => { if (reviewAutoTimer) clearInterval(reviewAutoTimer); }, { passive: true });
+        card.addEventListener('touchend', resetReviewTimer, { passive: true });
+      }
+    })();
+
+    // Smart Sticky Mobile Bar On-Scroll Reveal (Cleaner Above-The-Fold CRO)
+    (function initStickyMobileBar() {
+      const bar = document.getElementById('mobile-sticky-bar');
+      const waBtn = document.getElementById('mobile-whatsapp-btn');
+      if (!bar) return;
+      let ticking = false;
+
+      function onScroll() {
+        // Show after user scrolls past hero section (~260px)
+        const shouldShow = window.scrollY > 260;
+        if (shouldShow) {
+          bar.classList.remove('translate-y-full', 'opacity-0', 'pointer-events-none');
+          bar.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+          if (waBtn) {
+            waBtn.classList.remove('translate-y-12', 'opacity-0', 'pointer-events-none');
+            waBtn.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+          }
+        } else {
+          bar.classList.add('translate-y-full', 'opacity-0', 'pointer-events-none');
+          bar.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+          if (waBtn) {
+            waBtn.classList.add('translate-y-12', 'opacity-0', 'pointer-events-none');
+            waBtn.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+          }
+        }
+        ticking = false;
+      }
+
+      window.addEventListener('scroll', function () {
+        if (!ticking) {
+          window.requestAnimationFrame(onScroll);
+          ticking = true;
+        }
+      }, { passive: true });
+
+      // Run once on initial page load
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', onScroll);
+      } else {
+        onScroll();
+      }
+    })();
   </script>
 
   <!-- Dynamic Client-Side Personalization for Query String URLs (?service=washer&city=toronto) -->
@@ -1551,26 +1921,26 @@
         key: 'appliance',
         name: 'Appliance',
         titleName: 'APPLIANCE',
-        serviceLabel: 'SAME-DAY APPLIANCE REPAIR SERVICE NEAR YOU',
-        typesTitle: 'TYPES OF APPLIANCES WE REPAIR',
-        problemsTitle: 'COMMON HOUSEHOLD APPLIANCE ISSUES',
-        heroImg: '../img/appliance-repair-technician-toronto.webp',
-        desc: "Don't let broken household appliances disrupt your routine — get fast, same-day appliance repair from licensed local technicians across Toronto & the GTA. We service all major kitchen and laundry appliances including refrigerators, washing machines, clothes dryers, dishwashers, and ovens. Our certified local technicians arrive in fully equipped mobile service vehicles carrying genuine replacement parts for all major brands, providing transparent upfront written quotes before any repair begins.",
+        serviceLabel: 'Same-Day Repair for All 6 Major Household & Kitchen Appliances',
+        typesTitle: 'ALL 6 MAJOR APPLIANCES WE REPAIR',
+        problemsTitle: 'COMMON PROBLEMS ACROSS ALL 6 APPLIANCES',
+        heroImg: '../img/washing-machine-repair-service.webp',
+        desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All 6 Major Appliances:</strong> Fridges, washers, dryers, dishwashers, stoves &amp; microwaves.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Samsung, LG, Whirlpool, Bosch, GE, Maytag &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">First-Visit Resolution:</strong> Stocked mobile vans ready to resolve issues on-site.</span></li></ul>',
         problems: [
           'Refrigerator Not Cooling / Freezing Food',
           'Washing Machine Leaking or Not Draining',
           'Clothes Dryer Running With No Heat',
           'Dishwasher Leaving Food Film or Leaking',
-          'Oven Temperature Fluctuating / Burner Faults',
-          'Strange Noise, Humming or Error Codes'
+          'Oven & Stove Burners Failing to Ignite',
+          'Microwave Sparking or Not Heating Food'
         ],
         types: [
-          'Kitchen Refrigerators & Freezers',
-          'Front & Top Load Washing Machines',
-          'Electric & Gas Clothes Dryers',
-          'Built-In & Portable Dishwashers',
-          'Wall Ovens, Stoves & Rangetops',
-          'Over-the-Range & Built-In Microwaves'
+          'Refrigerators & Freezers (All Makes & Models)',
+          'Washing Machines (Front-Load & Top-Load)',
+          'Clothes Dryers (Gas & Electric Vented)',
+          'Dishwashers (Built-In & Portable Units)',
+          'Ovens, Stoves & Ranges (Gas, Electric & Induction)',
+          'Microwaves (Over-the-Range & Built-In Drawer)'
         ]
       },
       fridge: {
@@ -1581,7 +1951,7 @@
         typesTitle: 'TYPES OF REFRIGERATORS WE REPAIR',
         problemsTitle: 'COMMON REFRIGERATOR PROBLEMS',
         heroImg: '../img/refrigerator-repair-in-a-modern-kitchen.webp',
-        desc: "Get fast, professional refrigerator repair from experienced local technicians. We service Samsung, LG, Whirlpool, Bosch, and other major brands, with clear repair estimates and transparent upfront written quotes before work begins. Diagnostic service call fee is completely waived when you proceed with the repair.",
+        desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Refrigerator Types:</strong> French door, side-by-side, bottom freezer &amp; built-ins.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Samsung, LG, Whirlpool, Bosch, KitchenAid &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">Cooling &amp; Leak Repairs:</strong> Thermostats, compressors, fans &amp; ice makers fixed on-site.</span></li></ul>',
         ctaText: 'Book Your Refrigerator Repair Today',
         problems: [
           'Fridge Not Cooling / Warm Compartment',
@@ -1608,7 +1978,7 @@
         typesTitle: 'TYPES OF WASHING MACHINES WE REPAIR',
         problemsTitle: 'COMMON WASHING MACHINE PROBLEMS',
         heroImg: '../img/washing-machine-repair-in-progress.webp',
-        desc: "Get fast, professional washing machine repair from experienced local technicians. We service Samsung, LG, Whirlpool, Maytag, and other major brands, with clear repair estimates and transparent upfront written quotes before work begins. Diagnostic service call fee is completely waived when you proceed with the repair.",
+        desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Washer Types:</strong> Front-load, top-load, high-efficiency &amp; stacked laundry units.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Samsung, LG, Whirlpool, Maytag, Bosch &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">Drain &amp; Spin Repairs:</strong> Pumps, drive belts, door locks &amp; error codes resolved on-site.</span></li></ul>',
         ctaText: 'Book Your Washer Repair Today',
         problems: [
           'Washer Not Draining / Standing Water',
@@ -1635,7 +2005,7 @@
         typesTitle: 'TYPES OF DRYERS WE REPAIR',
         problemsTitle: 'COMMON CLOTHES DRYER PROBLEMS',
         heroImg: '../img/clothes-dryer-repair-in-a-modern-laundry.webp',
-        desc: "From heating problems and unusual noises to dryers that won't start, our experienced technicians diagnose and repair major dryer brands. Same-day appointments available daily across Toronto & the GTA with transparent upfront written quotes before any repair begins.",
+        desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Dryer Types:</strong> Vented, condenser, heat pump &amp; stacked matching units.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Whirlpool, Samsung, LG, Maytag, Bosch &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">Heating &amp; Motor Repairs:</strong> Thermal fuses, heating elements, belts &amp; rollers fixed on-site.</span></li></ul>',
         ctaText: 'Schedule Dryer Repair',
         problems: [
           'Dryer Not Heating / Blowing Cold Air',
@@ -1662,7 +2032,7 @@
         typesTitle: 'TYPES OF DISHWASHERS WE REPAIR',
         problemsTitle: 'COMMON DISHWASHER PROBLEMS',
         heroImg: '../img/dishwasher-repair-in-a-bright-kitchen.webp',
-        desc: "Don't let a broken dishwasher disrupt your routine. We diagnose and repair drainage problems, water leaks, cleaning issues, and other common dishwasher faults, with transparent upfront written quotes and convenient appointment scheduling across Toronto & the GTA.",
+        desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Dishwasher Types:</strong> Built-in 24-inch, compact 18-inch &amp; panel-ready units.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Bosch, Whirlpool, KitchenAid, Samsung, Miele &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">Drain &amp; Spray Repairs:</strong> Pumps, valves, spray arms &amp; door latch switches fixed on-site.</span></li></ul>',
         ctaText: 'Book Dishwasher Repair',
         problems: [
           'Dishwasher Not Draining / Standing Water',
@@ -1689,7 +2059,7 @@
         typesTitle: 'TYPES OF OVENS & STOVES WE REPAIR',
         problemsTitle: 'COMMON OVEN & STOVE PROBLEMS',
         heroImg: '../img/technician-repairing-a-modern-oven.webp',
-        desc: "Get professional stove and oven repair for heating problems, faulty controls, and malfunctioning burners from licensed local technicians. We service gas, electric, and induction units with transparent upfront written quotes before any repair begins.",
+        desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Cooktop &amp; Oven Types:</strong> Electric ranges, smooth cooktops, wall ovens &amp; induction units.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Samsung, LG, Whirlpool, Bosch, KitchenAid &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">Heat &amp; Sensor Repairs:</strong> Surface elements, bake elements, thermostats &amp; igniters fixed on-site.</span></li></ul>',
         ctaText: 'Book Your Oven & Stove Repair Today',
         problems: [
           'Oven Not Heating or Uneven Baking',
@@ -1716,7 +2086,7 @@
         typesTitle: 'TYPES OF MICROWAVES WE REPAIR',
         problemsTitle: 'COMMON MICROWAVE PROBLEMS',
         heroImg: '../img/microwave-repair.webp',
-        desc: "Don't struggle with cold food or sparking units — get safe, fast, same-day microwave repair from certified local technicians. We service over-the-range, built-in, and countertop microwaves from Samsung, LG, Panasonic, Whirlpool, and all major brands. Clear upfront written quotes with diagnostic fee completely waived when you proceed with repair.",
+        desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Microwave Types:</strong> Over-the-range (OTR), built-in drawers &amp; countertop units.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Panasonic, Samsung, LG, Whirlpool, GE &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">Heat &amp; Electrical Repairs:</strong> Magnetrons, door switches, capacitors &amp; turntables fixed on-site.</span></li></ul>',
         ctaText: 'Book Microwave Repair',
         problems: [
           'Microwave Not Heating Food / Cold Inside',
@@ -1760,9 +2130,19 @@
         const h1 = document.querySelector('h1');
         if (h1) h1.textContent = `${matchedService.titleName} REPAIR`;
 
-        const subTitle = document.querySelector('p.text-brandOrange');
+        const subTitle = document.querySelector('#hero-subtitle, p.text-brandOrange');
         if (subTitle) {
-          subTitle.textContent = `FAST DIAGNOSTIC & SAME-DAY REPAIR NEAR YOU`;
+          let sWord = '';
+          if (matchedService.key === 'washer') sWord = 'WASHER ';
+          else if (matchedService.key === 'fridge') sWord = 'REFRIGERATOR ';
+          else if (matchedService.key === 'dryer') sWord = 'DRYER ';
+          else if (matchedService.key === 'dishwasher') sWord = 'DISHWASHER ';
+          else if (matchedService.key === 'stove') sWord = 'STOVE & OVEN ';
+          else if (matchedService.key === 'microwave') sWord = 'MICROWAVE ';
+          else sWord = '';
+
+          const locationText = cityName ? `IN ${cityName.toUpperCase()}` : 'NEAR YOU';
+          subTitle.textContent = `SAME-DAY ${sWord}REPAIR ${locationText}`;
         }
 
         const heroImg = document.querySelector('#about-service img');
@@ -1775,8 +2155,8 @@
         const heroH2 = document.querySelector('#about-service h2');
         if (heroH2 && matchedService.serviceLabel) heroH2.textContent = matchedService.serviceLabel;
 
-        const heroDesc = document.querySelector('#about-service p.text-slate-600');
-        if (heroDesc && matchedService.desc) heroDesc.textContent = matchedService.desc;
+        const heroDesc = document.querySelector('#hero-desc, #about-service p.text-slate-600');
+        if (heroDesc && matchedService.desc) heroDesc.innerHTML = matchedService.desc;
 
         const probHeader = document.querySelector('#services-problems h3:first-child');
         if (probHeader) probHeader.innerHTML = `<span>${matchedService.problemsTitle}</span><span class="text-xs text-brandOrange font-bold">Diagnosed Daily</span>`;
@@ -1815,6 +2195,30 @@
 
         const modalAppliance = document.getElementById('modal-appliance');
         if (modalAppliance) modalAppliance.value = matchedService.name;
+
+        // Conditionally show/hide 6 services section:
+        // Only visible on general appliance page; hidden on all specific service pages (refrigerator, washer, dryer, etc.)
+        const allSixSection = document.getElementById('all-six-services');
+        if (allSixSection) {
+          if (matchedService.key !== 'appliance') {
+            allSixSection.style.display = 'none';
+          } else {
+            allSixSection.style.display = '';
+            document.documentElement.classList.remove('hide-six-services');
+            // Visual active state on matching card in 6-card row
+            document.querySelectorAll('#all-six-services a').forEach(cardLink => {
+              const href = cardLink.getAttribute('href') || '';
+              const cardBox = cardLink.querySelector('div.aspect-square');
+              if (cardBox) {
+                if (href.includes(`service=${matchedService.key}`) || (matchedService.key === 'dryer' && href.includes('service=dryer'))) {
+                  cardBox.classList.add('ring-2', 'ring-brandOrange', 'border-brandOrange', 'shadow-md');
+                } else {
+                  cardBox.classList.remove('ring-2', 'ring-brandOrange', 'border-brandOrange', 'shadow-md');
+                }
+              }
+            });
+          }
+        }
       }
 
       if (cityName) {

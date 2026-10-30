@@ -426,6 +426,132 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
     .animate-marquee:hover {
       animation-play-state: paused;
     }
+
+    /* PPC Premium Footer & Trust Architecture */
+    .ppc-footer-root {
+      background: linear-gradient(180deg, #071221 0%, #030811 100%);
+      color: #94a3b8;
+      position: relative;
+    }
+    .ppc-footer-root::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255, 107, 0, 0.6), rgba(15, 76, 129, 0.8), transparent);
+    }
+    .ppc-trust-strip {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(15, 32, 56, 0.4);
+    }
+    .ppc-trust-strip-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    @media (min-width: 768px) {
+      .ppc-trust-strip-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.25rem;
+      }
+    }
+    .ppc-footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.25rem;
+    }
+    @media (min-width: 640px) {
+      .ppc-footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+      }
+    }
+    @media (min-width: 1024px) {
+      .ppc-footer-grid {
+        grid-template-columns: 1.35fr 1fr 1fr 1.15fr;
+        gap: 2.75rem;
+      }
+    }
+    .ppc-footer-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #94a3b8;
+      font-size: 0.8125rem;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+    .ppc-footer-link:hover {
+      color: #ff6b00;
+      transform: translateX(3px);
+    }
+    .ppc-badge-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.375rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 0.35rem 0.65rem;
+      border-radius: 0.5rem;
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      color: #e2e8f0;
+      transition: all 0.2s ease;
+    }
+    .ppc-badge-chip:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 107, 0, 0.45);
+      color: #ffffff;
+    }
+    .ppc-footer-heading {
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 0.8125rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #ffffff;
+      padding-top: 0.35rem;
+      padding-bottom: 0.75rem;
+      margin-top: 0;
+      margin-bottom: 1.25rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+    }
+    .ppc-footer-heading-bar {
+      display: inline-block;
+      width: 24px;
+      height: 2.5px;
+      background-color: #ff6b00;
+      border-radius: 9999px;
+      flex-shrink: 0;
+    }
+    .ppc-footer-subheading {
+      font-size: 0.6875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #94a3b8;
+      padding-top: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+    .ppc-footer-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem;
+    }
+    .ppc-footer-col {
+      display: flex;
+      flex-direction: column;
+      gap: 0.875rem;
+    }
   </style>
 </head>
 
@@ -1508,109 +1634,195 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
   </section>
 
   <!-- GOOGLE ADS COMPLIANT & MOBILE-FIRST FOOTER -->
-  <footer class="bg-slate-900 text-slate-200 py-12 border-t border-slate-800 text-xs">
-    <div class="max-w-7xl mx-auto px-4 space-y-8">
+  <footer class="ppc-footer-root pt-0 pb-28 sm:pb-14 text-xs font-sans">
+    
+    <!-- Top Value & Guarantee Assurance Bar -->
+    <div class="ppc-trust-strip py-6 px-4 sm:px-6">
+      <div class="max-w-6xl mx-auto ppc-trust-strip-grid">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center shrink-0 text-emerald-400">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+          </div>
+          <div>
+            <div class="font-heading font-extrabold text-white text-xs">Fee Waived w/ Repair</div>
+            <div class="text-[11px] text-slate-400">Diagnostic fee credited on repair</div>
+          </div>
+        </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center shrink-0 text-amber-400">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+          </div>
+          <div>
+            <div class="font-heading font-extrabold text-white text-xs">Written Warranty</div>
+            <div class="text-[11px] text-slate-400">Parts &amp; labour fully guaranteed</div>
+          </div>
+        </div>
 
-        <!-- Col 1: Brand & Contact Info -->
-        <div class="space-y-3 md:col-span-1">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/15 border border-blue-500/30 flex items-center justify-center shrink-0 text-blue-400">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+          </div>
+          <div>
+            <div class="font-heading font-extrabold text-white text-xs">Certified Technicians</div>
+            <div class="text-[11px] text-slate-400">Coffee &amp; espresso specialists</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-orange-500/15 border border-orange-500/30 flex items-center justify-center shrink-0 text-brandOrange">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <div>
+            <div class="font-heading font-extrabold text-white text-xs">Prompt GTA Dispatch</div>
+            <div class="text-[11px] text-slate-400">Available daily across Toronto</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Footer Multi-Column Grid -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 pt-12 pb-10">
+      <div class="ppc-footer-grid pb-12 border-b border-slate-800/80">
+
+        <!-- Column 1: Brand Authority & Rapid Dispatch Hub -->
+        <div class="ppc-footer-col">
           <picture>
+            <source srcset="../img/Appliance_Repair_Knights_Logo-white.avif" type="image/avif">
             <source srcset="../img/logo.webp" type="image/webp">
-            <img src="../img/logo-opt.png" alt="Appliance Repair Knights Logo" width="180" height="44"
-              class="h-11 w-auto object-contain" loading="lazy" decoding="async">
+            <img src="../img/logo-opt.png" alt="Appliance Repair Knights Logo" width="190" height="46" class="h-10 w-auto object-contain brightness-0 invert opacity-95">
           </picture>
-          <p class="text-slate-300 text-xs leading-relaxed">
-            Appliance Repair Knights is your trusted local provider for fast, same-day coffee and espresso machine repairs across
-            the Greater Toronto Area (GTA) & Southern Ontario.
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm m-0">
+            Certified espresso and commercial coffee equipment specialists providing same-day diagnostics, genuine OEM replacement parts, and factory-standard repairs across the Greater Toronto Area.
           </p>
-          <div class="pt-1 space-y-1.5 text-xs text-slate-200 font-medium">
-            <p><strong>Dispatch:</strong> <a href="tel:9057178905" onclick="trackGtmCall('footer')"
-                class="gtm-ppc-call gtm-ppc-call-footer text-amber-400 hover:text-white font-extrabold hover:underline">905-717-8905</a>
-            </p>
-            <p><strong>Email:</strong> <a href="mailto:info@appliancerepairknights.com"
-                class="hover:text-white text-slate-200 font-medium">info@appliancerepairknights.com</a></p>
-            <p><strong>Region:</strong> Greater Toronto Area (GTA) Service Zones</p>
+
+          <!-- Live Dispatch Status Card -->
+          <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-3.5 space-y-2 max-w-xs shadow-inner">
+            <div class="flex items-center justify-between text-[11px]">
+              <span class="inline-flex items-center gap-1.5 font-bold text-emerald-400">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Dispatch Active Today
+              </span>
+              <span class="text-slate-400">8:00 AM – 8:00 PM</span>
+            </div>
+            <div class="text-[11px] text-slate-400">
+              Mobile technician vans dispatched across <?php echo htmlspecialchars($city_name); ?> &amp; GTA.
+            </div>
+          </div>
+
+          <!-- Direct Dual Conversion Buttons -->
+          <div class="pt-1 flex flex-wrap items-center gap-2.5">
+            <a href="tel:9057178905" onclick="trackGtmCall('footer')" class="inline-flex items-center gap-2 bg-brandOrange hover:bg-brandOrangeHover text-white font-black px-4 py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all shadow-md active:scale-95">
+              <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+              <span>905-717-8905</span>
+            </a>
+            <a href="#book-form" class="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white font-bold px-4 py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all border border-white/20 active:scale-95">
+              <svg class="w-3.5 h-3.5 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+              <span>Book Diagnostic</span>
+            </a>
           </div>
         </div>
 
-        <!-- Col 2: Services List -->
-        <div>
-          <h4 class="font-heading font-extrabold text-amber-400 uppercase tracking-wider text-xs mb-3">
-            REPAIR SERVICES</h4>
-          <ul class="space-y-2 text-slate-300 text-xs font-medium">
-            <li><span class="hover:text-white transition-colors cursor-pointer" onclick="document.getElementById('lead-appliance').value='Commercial Office Coffee System'; document.getElementById('book-form').scrollIntoView({behavior:'smooth'});">Commercial Office Coffee Repair</span></li>
-            <li><span class="hover:text-white transition-colors cursor-pointer" onclick="document.getElementById('lead-appliance').value='Luxury Built-In Cabinet System'; document.getElementById('book-form').scrollIntoView({behavior:'smooth'});">Residential Espresso Machine Repair</span></li>
+        <!-- Column 2: Coffee & Espresso Services -->
+        <div class="ppc-footer-col">
+          <div class="ppc-footer-heading">
+            <span>Repair Services</span>
+            <span class="ppc-footer-heading-bar"></span>
+          </div>
+          <ul class="ppc-footer-list text-xs">
+            <li><a href="#book-form" onclick="if(document.getElementById('lead-appliance')) document.getElementById('lead-appliance').value='Commercial Office Coffee System';" class="ppc-footer-link"><span>›</span> Commercial Office Coffee Systems</a></li>
+            <li><a href="#book-form" onclick="if(document.getElementById('lead-appliance')) document.getElementById('lead-appliance').value='Luxury Built-In Cabinet System';" class="ppc-footer-link"><span>›</span> Residential Espresso Machines</a></li>
+            <li><a href="#book-form" class="ppc-footer-link"><span>›</span> Built-In Cabinet Coffee Systems</a></li>
+            <li><a href="#book-form" class="ppc-footer-link"><span>›</span> Espresso Grinder &amp; Pump Service</a></li>
+            <li><a href="#book-form" class="ppc-footer-link"><span>›</span> Group Head &amp; Boiler Descaling</a></li>
+            <li><a href="#book-form" class="ppc-footer-link"><span>›</span> Premium Jura &amp; Miele Diagnostics</a></li>
           </ul>
         </div>
 
-        <!-- Col 3: Service Hours & Dispatch Area -->
-        <div>
-          <h4 class="font-heading font-extrabold text-amber-400 uppercase tracking-wider text-xs mb-3">
-            DISPATCH HOURS</h4>
-          <ul class="space-y-2 text-slate-300 text-xs font-medium">
-            <li class="flex justify-between border-b border-slate-800 pb-1">
-              <span>Monday – Sunday:</span>
-              <span class="text-white font-semibold">8:00 AM – 8:00 PM</span>
-            </li>
-            <li class="flex justify-between pt-1">
-              <span class="text-emerald-400 font-bold">Same-Day Service:</span>
-              <span class="text-emerald-400 font-bold">8:00 AM – 8:00 PM</span>
-            </li>
+        <!-- Column 3: GTA Service Zones -->
+        <div class="ppc-footer-col">
+          <div class="ppc-footer-heading">
+            <span>GTA Coverage</span>
+            <span class="ppc-footer-heading-bar"></span>
+          </div>
+          <ul class="ppc-footer-list text-xs text-slate-400">
+            <li class="flex items-center gap-1.5"><span class="text-brandOrange font-bold">✓</span> Toronto &amp; Financial District</li>
+            <li class="flex items-center gap-1.5"><span class="text-brandOrange font-bold">✓</span> North York, Scarborough &amp; Etobicoke</li>
+            <li class="flex items-center gap-1.5"><span class="text-brandOrange font-bold">✓</span> Mississauga, Brampton &amp; Peel</li>
+            <li class="flex items-center gap-1.5"><span class="text-brandOrange font-bold">✓</span> Vaughan, Woodbridge &amp; Richmond Hill</li>
+            <li class="flex items-center gap-1.5"><span class="text-brandOrange font-bold">✓</span> Markham, Thornhill &amp; York Region</li>
+            <li class="flex items-center gap-1.5"><span class="text-brandOrange font-bold">✓</span> Oakville, Burlington &amp; Halton</li>
           </ul>
+          <div class="pt-1 text-[11px] text-slate-400 leading-snug">
+            Equipped service vans for prompt on-site diagnostics.
+          </div>
         </div>
 
-        <!-- Col 4: Legal, Policy & Disclaimers -->
-        <div>
-          <h4 class="font-heading font-extrabold text-amber-400 uppercase tracking-wider text-xs mb-3">
-            LEGAL & POLICIES</h4>
-          <ul class="space-y-2 text-slate-300 text-xs font-medium mb-4">
-            <li><a href="../privacy-policy" target="_blank" class="hover:text-white transition-colors">Privacy
-                Policy</a></li>
-            <li><a href="../terms-and-conditions" target="_blank" class="hover:text-white transition-colors">Terms
-                of Service</a></li>
-            <li><a href="../privacy-policy#google-ads" target="_blank" class="hover:text-white transition-colors">Disclosure</a></li>
-          </ul>
+        <!-- Column 4: Trust, Safety & Compliance -->
+        <div class="ppc-footer-col">
+          <div class="ppc-footer-heading">
+            <span>Safety &amp; Compliance</span>
+            <span class="ppc-footer-heading-bar"></span>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="flex flex-wrap gap-1.5">
+            <span class="ppc-badge-chip border-emerald-500/40 text-emerald-300 bg-emerald-950/40">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> WSIB Insured
+            </span>
+            <span class="ppc-badge-chip border-blue-500/40 text-blue-300 bg-blue-950/40">
+              <span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span> Certified Techs
+            </span>
+            <span class="ppc-badge-chip border-amber-500/40 text-amber-300 bg-amber-950/40">
+              <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> OEM Parts
+            </span>
+          </div>
+
+          <!-- Payment Options -->
+          <div>
+            <div class="ppc-footer-subheading">Accepted Payment</div>
+            <div class="flex flex-wrap items-center gap-1.5">
+              <span class="bg-white/10 px-2 py-1 rounded text-[10px] text-white font-semibold">Interac</span>
+              <span class="bg-white/10 px-2 py-1 rounded text-[10px] text-white font-semibold">VISA</span>
+              <span class="bg-white/10 px-2 py-1 rounded text-[10px] text-white font-semibold">MasterCard</span>
+              <span class="bg-white/10 px-2 py-1 rounded text-[10px] text-white font-semibold">AMEX</span>
+              <span class="bg-white/10 px-2 py-1 rounded text-[10px] text-white font-semibold">Cash</span>
+            </div>
+          </div>
+
+          <!-- Legal Policy Quick Links -->
+          <div class="pt-2 flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-slate-400">
+            <a href="../privacy-policy" target="_blank" class="hover:text-white transition-colors underline decoration-slate-700">Privacy Policy</a>
+            <a href="../terms-and-conditions" target="_blank" class="hover:text-white transition-colors underline decoration-slate-700">Terms of Service</a>
+            <a href="../privacy-policy#google-ads" target="_blank" class="hover:text-white transition-colors underline decoration-slate-700">Disclosure</a>
+          </div>
         </div>
 
       </div>
 
-      <!-- Google Ads & Third-Party Trademark Mandatory Compliance Footer Disclosure -->
-      <div class="pt-6 border-t border-slate-800 text-[11px] text-slate-300 leading-relaxed space-y-2.5">
-        <p>
-          <strong class="text-slate-100 font-semibold">Third-Party Independent Service &amp; Trademark Disclosure:</strong> Appliance Repair Knights is an independent appliance service provider specializing in prompt, out-of-warranty coffee and espresso machine repairs across Toronto and the Greater Toronto Area. All brand names, trademarks, model designations, and logos referenced on this website (including Jura, Breville, De'Longhi, Miele, Bunn, Franke, and others) are the property of their respective trademark holders and are utilized strictly for identification and descriptive purposes to indicate parts and diagnostic repair compatibility. Appliance Repair Knights is not affiliated with, sponsored by, or endorsed by any of these original equipment manufacturers.
+      <!-- Copyright & Transparent Legal Disclaimer -->
+      <div class="pt-6 space-y-3 text-center text-slate-400">
+        <p class="text-[11px] font-medium text-slate-300">
+          &copy; <?php echo date('Y'); ?> Appliance Repair Knights Ltd. All Rights Reserved. Fully Licensed &amp; Insured Coffee Machine Service Provider in Ontario.
         </p>
-        <p class="text-slate-400">
-          Transparent, upfront written quotes are provided prior to starting any repair work. The diagnostic service call fee is completely waived when you proceed with repairs. All qualifying repairs are backed by our comprehensive written parts and labour warranty.
+        <p class="text-[10px] text-slate-400 max-w-4xl mx-auto leading-relaxed">
+          <strong class="text-slate-200">Third-Party Independent Service &amp; Trademark Disclosure:</strong> Appliance Repair Knights is an independent appliance service provider specializing in prompt, out-of-warranty coffee and espresso machine repairs across Toronto and the Greater Toronto Area. All brand names, trademarks, model designations, and logos referenced on this website (including Jura, Breville, De'Longhi, Miele, Bunn, Franke, and others) are the property of their respective trademark holders and are utilized strictly for identification and descriptive purposes to indicate parts and diagnostic repair compatibility. Appliance Repair Knights is not affiliated with, sponsored by, or endorsed by any of these original equipment manufacturers. Transparent upfront written quotes are provided prior to starting any repair work. The diagnostic service call fee is completely waived when you proceed with repairs. All qualifying repairs are backed by our comprehensive written parts and labour warranty.
         </p>
-        <div class="flex flex-col sm:flex-row justify-between items-center gap-2 pt-2 text-slate-400">
-          <p>© <?php echo date('Y'); ?> Appliance Repair Knights. All Rights Reserved.</p>
-          <div class="flex items-center gap-3">
-            <a href="../privacy-policy" target="_blank" class="hover:text-white underline transition-colors">Privacy Policy</a>
-            <span>•</span>
-            <a href="../terms-and-conditions" target="_blank" class="hover:text-white underline transition-colors">Terms of Service</a>
-          </div>
-        </div>
       </div>
-      
-      <!-- Mobile Sticky Bar Spacer -->
-      <div class="h-20 sm:hidden w-full"></div>
-
     </div>
   </footer>
 
-  <!-- MINIMALIST MOBILE STICKY CONVERSION BAR -->
-  <div class="sm:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 px-3 py-2.5 shadow-xl flex items-center gap-2">
-    <a href="tel:9057178905" onclick="trackGtmCall('sticky_bar');"
-      class="gtm-ppc-call-sticky flex-1 btn-call-orange text-white font-black text-xs py-3.5 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-md active:scale-98">
-      <svg class="w-3.5 h-3.5 text-white fill-current flex-shrink-0" viewBox="0 0 20 20">
-        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-      </svg>
-      <span class="tracking-tight uppercase">CALL 905-717-8905</span>
+  <!-- STICKY MOBILE CALL & BOOKING BAR (ULTRA CONVERTING & THUMB OPTIMIZED) -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-slate-950/95 backdrop-blur-md px-3 py-2.5 border-t border-slate-800 flex items-center justify-between gap-2 sm:hidden shadow-2xl">
+    <a href="https://wa.me/19057178905?text=Hi%2C%20I%20need%20coffee%20machine%20repair%20service%20in%20the%20GTA" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="bg-emerald-600 hover:bg-emerald-700 text-white p-3 rounded-xl text-xs flex items-center justify-center shrink-0 shadow-md active:scale-95 transition-transform">
+      <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" /></svg>
     </a>
-    <a href="#book-form"
-      class="flex-1 bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs py-3.5 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-sm active:scale-98">
-      <span>Book Diagnostic &rarr;</span>
+    <a href="#book-form" class="shrink-0 bg-white/10 hover:bg-white/20 text-white border border-white/25 font-bold py-3 px-3.5 rounded-xl text-[11px] text-center uppercase tracking-tight shadow-xs active:scale-95 transition-transform flex items-center justify-center">
+      <span>BOOK</span>
+    </a>
+    <a href="tel:9057178905" onclick="trackGtmCall('sticky_bar');" class="flex-grow bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold py-3 px-3 rounded-xl text-xs sm:text-sm text-center uppercase tracking-wide shadow-md flex items-center justify-center gap-2 active:scale-95 transition-transform">
+      <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+      <span>CALL 905-717-8905</span>
     </a>
   </div>
 

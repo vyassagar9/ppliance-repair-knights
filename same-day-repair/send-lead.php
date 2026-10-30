@@ -16,13 +16,16 @@ if (!$data) {
     $data = $_POST;
 }
 
-$name      = isset($data['name']) ? trim($data['name']) : '';
-$phone     = isset($data['phone']) ? trim($data['phone']) : '';
-$email     = isset($data['email']) ? trim($data['email']) : '';
-$city      = isset($data['city']) ? trim($data['city']) : '';
-$appliance = isset($data['appliance']) ? trim($data['appliance']) : '';
-$page      = isset($data['page']) ? trim($data['page']) : 'index.html';
-$gclid     = isset($data['gclid']) ? trim($data['gclid']) : '';
+$name         = isset($data['name']) ? trim($data['name']) : '';
+$phone        = isset($data['phone']) ? trim($data['phone']) : '';
+$email        = isset($data['email']) ? trim($data['email']) : '';
+$city         = isset($data['city']) ? trim($data['city']) : '';
+$appliance    = isset($data['appliance']) ? trim($data['appliance']) : '';
+$page         = isset($data['page']) ? trim($data['page']) : 'index.html';
+$gclid        = isset($data['gclid']) ? trim($data['gclid']) : '';
+$utm_source   = isset($data['utm_source']) ? trim($data['utm_source']) : '';
+$utm_medium   = isset($data['utm_medium']) ? trim($data['utm_medium']) : '';
+$utm_campaign = isset($data['utm_campaign']) ? trim($data['utm_campaign']) : '';
 
 if (empty($name) || empty($phone)) {
     http_response_code(400);
@@ -84,7 +87,8 @@ $body = '
     <div class="field"><span class="label">City / Region:</span><span class="val">' . htmlspecialchars($city ?: 'GTA') . '</span></div>
     <div class="field"><span class="label">Appliance:</span><span class="val">' . htmlspecialchars($appliance ?: 'N/A') . '</span></div>
     <div class="field"><span class="label">Source Page:</span><span class="val">' . htmlspecialchars($page) . '</span></div>
-    <div class="field"><span class="label">GCLID:</span><span class="val" style="word-break: break-all; font-size: 11px;">' . htmlspecialchars($gclid ?: 'None') . '</span></div>
+    <div class="field"><span class="label">GCLID:</span><span class="val" style="word-break: break-all; font-size: 11px;">' . htmlspecialchars($gclid ?: 'None') . '</span></div>' .
+    (($utm_source || $utm_campaign) ? '<div class="field"><span class="label">Campaign:</span><span class="val">' . htmlspecialchars(trim($utm_source . ' / ' . $utm_campaign, ' /')) . '</span></div>' : '') . '
     <div class="field"><span class="label">Time Received:</span><span class="val">' . date('Y-m-d H:i:s') . ' (EST)</span></div>
   </div>
 </body>
