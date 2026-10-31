@@ -538,7 +538,7 @@ include 'head.php';
             <a href="<?php echo $base_url; ?>services/dryer-repair" class="google-card group">
               <div class="google-card-stage">
                 <div class="google-img-box">
-                  <img src="img/clothes-dryer-repair-service.webp" alt="Clothes Dryer Repair Service" width="798" height="448" loading="lazy" decoding="async">
+                  <img src="img/service-card-dryer.webp" alt="Clothes Dryer Repair Service" width="798" height="448" loading="lazy" decoding="async" class="object-contain p-1">
                 </div>
               </div>
               <div class="pt-3.5 text-left">

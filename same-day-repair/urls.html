@@ -121,7 +121,23 @@
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-12 gap-3 items-end">
-          <div class="sm:col-span-4">
+          <div class="sm:col-span-3">
+            <label for="tester-brand" class="block text-[11px] font-semibold text-slate-400 uppercase mb-1">Select Brand</label>
+            <select id="tester-brand" onchange="updateTesterUrl()" class="w-full bg-slate-900 border border-slate-700 text-white rounded-lg px-3 py-2 text-xs focus:ring-2 focus:ring-brandOrange focus:outline-none">
+              <option value="" selected>-- All Brands --</option>
+              <option value="lg">LG</option>
+              <option value="samsung">Samsung</option>
+              <option value="whirlpool">Whirlpool</option>
+              <option value="bosch">Bosch</option>
+              <option value="ge">GE</option>
+              <option value="maytag">Maytag</option>
+              <option value="kitchenaid">KitchenAid</option>
+              <option value="frigidaire">Frigidaire</option>
+              <option value="miele">Miele</option>
+              <option value="subzero">Sub-Zero</option>
+            </select>
+          </div>
+          <div class="sm:col-span-3">
             <label for="tester-service" class="block text-[11px] font-semibold text-slate-400 uppercase mb-1">Select Service</label>
             <select id="tester-service" onchange="updateTesterUrl()" class="w-full bg-slate-900 border border-slate-700 text-white rounded-lg px-3 py-2 text-xs focus:ring-2 focus:ring-brandOrange focus:outline-none">
               <option value="">-- Generic (All Appliances) --</option>
@@ -134,7 +150,7 @@
               <option value="coffee">Coffee &amp; Espresso Machine</option>
             </select>
           </div>
-          <div class="sm:col-span-4">
+          <div class="sm:col-span-3">
             <label for="tester-city" class="block text-[11px] font-semibold text-slate-400 uppercase mb-1">Select City / Area</label>
             <select id="tester-city" onchange="updateTesterUrl()" class="w-full bg-slate-900 border border-slate-700 text-white rounded-lg px-3 py-2 text-xs focus:ring-2 focus:ring-brandOrange focus:outline-none">
               <option value="">-- GTA Wide --</option>
@@ -150,7 +166,7 @@
               <option value="oshawa">Oshawa</option>
             </select>
           </div>
-          <div class="sm:col-span-4 flex items-center gap-2">
+          <div class="sm:col-span-3 flex items-center gap-2">
             <a id="tester-open-btn" href="index.html?service=fridge&city=mississauga" target="_blank" class="flex-1 bg-brandOrange hover:bg-brandOrangeHover text-white text-xs font-bold py-2 px-3 rounded-lg text-center transition-all shadow-md flex items-center justify-center gap-1.5">
               <span>Open Link</span>
               <span>&rarr;</span>
@@ -161,17 +177,52 @@
           </div>
         </div>
 
-        <!-- Scrollable Full Preview URL Box (Mobile Touch-Friendly Clickable Link) -->
-        <div class="mt-3 pt-3 border-t border-slate-700/60">
-          <div class="text-[10px] uppercase font-bold text-slate-400 mb-1 flex items-center justify-between">
-            <span>Generated Live Target URL (Click to Open):</span>
-            <span class="text-emerald-400 font-normal">Tap link to open &bull; Swipeable</span>
+        <!-- Scrollable Full Preview URL Box (Both Clean and Unclean Preview) -->
+        <div class="mt-3 pt-3 border-t border-slate-700/60 space-y-2.5">
+          <!-- Clean URL Preview (Recommended) -->
+          <div>
+            <div class="text-[10px] uppercase font-bold text-emerald-400 mb-1 flex items-center justify-between">
+              <span class="flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>1. Clean URL (PPC Recommended for Google Ads):</span>
+              </span>
+              <span class="text-slate-400 font-normal">Tap link to open &bull; Swipeable</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="flex-1 font-mono text-emerald-300 text-xs bg-slate-950 p-2 rounded-lg border border-emerald-500/50 overflow-x-auto whitespace-nowrap shadow-inner">
+                <a id="tester-clean-preview-link" href="fridge-mississauga" target="_blank" class="hover:underline inline-flex items-center gap-1.5">
+                  <span id="tester-clean-preview-box">fridge-mississauga</span>
+                  <svg class="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </a>
+              </div>
+              <a id="tester-open-clean-btn" href="fridge-mississauga" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold py-2 px-3 rounded-lg text-center transition-all shadow-md flex items-center justify-center gap-1 whitespace-nowrap">
+                <span>Open Clean &rarr;</span>
+              </a>
+              <button onclick="copyTesterCleanUrl()" class="bg-emerald-950 hover:bg-emerald-900 text-emerald-300 border border-emerald-600/60 text-xs font-bold py-2 px-3 rounded-lg transition-all whitespace-nowrap">
+                Copy Clean
+              </button>
+            </div>
           </div>
-          <div class="font-mono text-emerald-400 text-xs bg-slate-950 p-2.5 rounded-lg border border-slate-700/80 overflow-x-auto whitespace-nowrap shadow-inner">
-            <a id="tester-preview-link" href="index.html?service=fridge&city=mississauga" target="_blank" class="hover:underline inline-flex items-center gap-1.5">
-              <span id="tester-preview-box">index.html?service=fridge&amp;city=mississauga</span>
-              <svg class="w-3.5 h-3.5 text-slate-500 hover:text-emerald-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-            </a>
+
+          <!-- Unclean / Query Param URL Preview -->
+          <div>
+            <div class="text-[10px] uppercase font-bold text-slate-400 mb-1 flex items-center justify-between">
+              <span>2. Unclean Query URL (Legacy Parameter Format):</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="flex-1 font-mono text-slate-300 text-xs bg-slate-950/80 p-2 rounded-lg border border-slate-700/80 overflow-x-auto whitespace-nowrap shadow-inner">
+                <a id="tester-preview-link" href="index.html?service=fridge&city=mississauga" target="_blank" class="hover:underline inline-flex items-center gap-1.5">
+                  <span id="tester-preview-box">index.html?service=fridge&amp;city=mississauga</span>
+                  <svg class="w-3.5 h-3.5 text-slate-500 hover:text-slate-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </a>
+              </div>
+              <a id="tester-open-btn" href="index.html?service=fridge&city=mississauga" target="_blank" class="bg-slate-700 hover:bg-slate-600 text-white text-xs font-semibold py-2 px-3 rounded-lg text-center transition-all shadow-md flex items-center justify-center gap-1 whitespace-nowrap">
+                <span>Open Query &rarr;</span>
+              </a>
+              <button onclick="copyTesterUrl()" id="tester-copy-btn" class="bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 text-xs font-semibold py-2 px-3 rounded-lg transition-all whitespace-nowrap">
+                Copy Query
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -316,14 +367,31 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
-              </td>
-              <td class="py-3 px-3.5 text-right whitespace-nowrap">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?service=fridge&city=toronto" target="_blank" data-rel="index.html?service=fridge&city=toronto" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="fridge-toronto">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="fridge-toronto" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">fridge-toronto</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="fridge-toronto" target="_blank" data-rel="fridge-toronto" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?service=fridge&city=toronto" target="_blank" data-rel="index.html?service=fridge&city=toronto" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -342,14 +410,31 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
-              </td>
-              <td class="py-3 px-3.5 text-right whitespace-nowrap">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?service=fridge&city=mississauga" target="_blank" data-rel="index.html?service=fridge&city=mississauga" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="fridge-mississauga">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="fridge-mississauga" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">fridge-mississauga</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="fridge-mississauga" target="_blank" data-rel="fridge-mississauga" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?service=fridge&city=mississauga" target="_blank" data-rel="index.html?service=fridge&city=mississauga" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -368,14 +453,31 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
-              </td>
-              <td class="py-3 px-3.5 text-right whitespace-nowrap">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?service=fridge&city=brampton" target="_blank" data-rel="index.html?service=fridge&city=brampton" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="fridge-brampton">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="fridge-brampton" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">fridge-brampton</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="fridge-brampton" target="_blank" data-rel="fridge-brampton" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?service=fridge&city=brampton" target="_blank" data-rel="index.html?service=fridge&city=brampton" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -395,14 +497,31 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
-              </td>
-              <td class="py-3 px-3.5 text-right whitespace-nowrap">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?service=washer&city=toronto" target="_blank" data-rel="index.html?service=washer&city=toronto" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="washer-toronto">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="washer-toronto" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">washer-toronto</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="washer-toronto" target="_blank" data-rel="washer-toronto" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?service=washer&city=toronto" target="_blank" data-rel="index.html?service=washer&city=toronto" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -421,14 +540,31 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
-              </td>
-              <td class="py-3 px-3.5 text-right whitespace-nowrap">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?service=washer&city=mississauga" target="_blank" data-rel="index.html?service=washer&city=mississauga" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="washer-mississauga">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="washer-mississauga" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">washer-mississauga</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="washer-mississauga" target="_blank" data-rel="washer-mississauga" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?service=washer&city=mississauga" target="_blank" data-rel="index.html?service=washer&city=mississauga" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -447,14 +583,31 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
-              </td>
-              <td class="py-3 px-3.5 text-right whitespace-nowrap">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?service=washer&city=brampton" target="_blank" data-rel="index.html?service=washer&city=brampton" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="washer-brampton">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="washer-brampton" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">washer-brampton</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="washer-brampton" target="_blank" data-rel="washer-brampton" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?service=washer&city=brampton" target="_blank" data-rel="index.html?service=washer&city=brampton" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -474,14 +627,31 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
-              </td>
-              <td class="py-3 px-3.5 text-right whitespace-nowrap">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?service=dryer&city=toronto" target="_blank" data-rel="index.html?service=dryer&city=toronto" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="dryer-toronto">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="dryer-toronto" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">dryer-toronto</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="dryer-toronto" target="_blank" data-rel="dryer-toronto" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?service=dryer&city=toronto" target="_blank" data-rel="index.html?service=dryer&city=toronto" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -500,14 +670,31 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
-              </td>
-              <td class="py-3 px-3.5 text-right whitespace-nowrap">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?service=dryer&city=mississauga" target="_blank" data-rel="index.html?service=dryer&city=mississauga" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="dryer-mississauga">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="dryer-mississauga" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">dryer-mississauga</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="dryer-mississauga" target="_blank" data-rel="dryer-mississauga" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?service=dryer&city=mississauga" target="_blank" data-rel="index.html?service=dryer&city=mississauga" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -526,14 +713,31 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
-              </td>
-              <td class="py-3 px-3.5 text-right whitespace-nowrap">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?service=dryer&city=brampton" target="_blank" data-rel="index.html?service=dryer&city=brampton" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="dryer-brampton">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="dryer-brampton" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">dryer-brampton</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="dryer-brampton" target="_blank" data-rel="dryer-brampton" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?service=dryer&city=brampton" target="_blank" data-rel="index.html?service=dryer&city=brampton" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -592,6 +796,15 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="fridge">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="fridge" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">fridge</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
                 <div class="bg-white border border-blue-200 rounded-lg p-2.5 space-y-1 text-[11px] shadow-2xs">
                   <div><span class="font-bold text-slate-700">Heading:</span> <span class="text-brandDarkBlue font-bold">Refrigerator Not Cooling, Leaking or Ice Maker Broken?</span></div>
                   <div><span class="font-bold text-slate-700">Subheading:</span> <span class="text-slate-600">Get fast, professional refrigerator repair from experienced local technicians. We service Samsung, LG, Whirlpool, Bosch, and other major brands, with clear repair estimates before work begins.</span></div>
@@ -599,12 +812,20 @@
                 </div>
               </td>
               <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?service=fridge" target="_blank" data-rel="index.html?service=fridge" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
-                  </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="fridge" target="_blank" data-rel="fridge" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?service=fridge" target="_blank" data-rel="index.html?service=fridge" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -621,6 +842,15 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="washer">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="washer" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">washer</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
                 <div class="bg-white border border-blue-200 rounded-lg p-2.5 space-y-1 text-[11px] shadow-2xs">
                   <div><span class="font-bold text-slate-700">Heading:</span> <span class="text-brandDarkBlue font-bold">Washer Leaking, Not Draining or Won't Spin?</span></div>
                   <div><span class="font-bold text-slate-700">Subheading:</span> <span class="text-slate-600">Get fast, professional washing machine repair from experienced local technicians. We service Samsung, LG, Whirlpool, Maytag, and other major brands, with clear repair estimates before work begins.</span></div>
@@ -628,12 +858,20 @@
                 </div>
               </td>
               <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?service=washer" target="_blank" data-rel="index.html?service=washer" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
-                  </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="washer" target="_blank" data-rel="washer" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?service=washer" target="_blank" data-rel="index.html?service=washer" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -650,6 +888,15 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="dryer">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="dryer" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">dryer</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
                 <div class="bg-white border border-blue-200 rounded-lg p-2.5 space-y-1 text-[11px] shadow-2xs">
                   <div><span class="font-bold text-slate-700">Heading:</span> <span class="text-brandDarkBlue font-bold">Dryer Not Heating or Taking Too Long to Dry?</span></div>
                   <div><span class="font-bold text-slate-700">Subheading:</span> <span class="text-slate-600">From heating problems and unusual noises to dryers that won't start, our experienced technicians diagnose and repair major dryer brands. Same-day appointments may be available in your area.</span></div>
@@ -657,12 +904,20 @@
                 </div>
               </td>
               <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?service=dryer" target="_blank" data-rel="index.html?service=dryer" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
-                  </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="dryer" target="_blank" data-rel="dryer" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?service=dryer" target="_blank" data-rel="index.html?service=dryer" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -679,6 +934,15 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="dishwasher">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="dishwasher" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">dishwasher</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
                 <div class="bg-white border border-blue-200 rounded-lg p-2.5 space-y-1 text-[11px] shadow-2xs">
                   <div><span class="font-bold text-slate-700">Heading:</span> <span class="text-brandDarkBlue font-bold">Dishwasher Not Draining, Cleaning or Leaking?</span></div>
                   <div><span class="font-bold text-slate-700">Subheading:</span> <span class="text-slate-600">Don't let a broken dishwasher disrupt your routine. We diagnose and repair drainage problems, water leaks, cleaning issues, and other common dishwasher faults, with upfront estimates and convenient appointment scheduling.</span></div>
@@ -686,12 +950,20 @@
                 </div>
               </td>
               <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?service=dishwasher" target="_blank" data-rel="index.html?service=dishwasher" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
-                  </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="dishwasher" target="_blank" data-rel="dishwasher" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?service=dishwasher" target="_blank" data-rel="index.html?service=dishwasher" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -708,6 +980,15 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="stove">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="stove" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">stove</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
                 <div class="bg-white border border-blue-200 rounded-lg p-2.5 space-y-1 text-[11px] shadow-2xs">
                   <div><span class="font-bold text-slate-700">Heading:</span> <span class="text-brandDarkBlue font-bold">Oven Not Heating or Stove Burner Not Working?</span></div>
                   <div><span class="font-bold text-slate-700">Subheading:</span> <span class="text-slate-600">Get professional stove and oven repair for heating problems, faulty controls, and malfunctioning burners. We service major appliance brands and provide clear estimates before proceeding with repairs.</span></div>
@@ -715,12 +996,20 @@
                 </div>
               </td>
               <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?service=stove" target="_blank" data-rel="index.html?service=stove" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
-                  </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="stove" target="_blank" data-rel="stove" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?service=stove" target="_blank" data-rel="index.html?service=stove" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -737,14 +1026,31 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
-              </td>
-              <td class="py-3 px-3.5 text-right whitespace-nowrap">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?service=microwave" target="_blank" data-rel="index.html?service=microwave" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="microwave">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="microwave" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">microwave</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="microwave" target="_blank" data-rel="microwave" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?service=microwave" target="_blank" data-rel="index.html?service=microwave" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -803,14 +1109,31 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
-              </td>
-              <td class="py-3 px-3.5 text-right whitespace-nowrap">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?city=toronto" target="_blank" data-rel="index.html?city=toronto" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="toronto">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="toronto" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">toronto</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="toronto" target="_blank" data-rel="toronto" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?city=toronto" target="_blank" data-rel="index.html?city=toronto" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -827,14 +1150,31 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
-              </td>
-              <td class="py-3 px-3.5 text-right whitespace-nowrap">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?city=mississauga" target="_blank" data-rel="index.html?city=mississauga" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="mississauga">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="mississauga" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">mississauga</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="mississauga" target="_blank" data-rel="mississauga" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?city=mississauga" target="_blank" data-rel="index.html?city=mississauga" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -851,14 +1191,31 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
-              </td>
-              <td class="py-3 px-3.5 text-right whitespace-nowrap">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?city=brampton" target="_blank" data-rel="index.html?city=brampton" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="brampton">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="brampton" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">brampton</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="brampton" target="_blank" data-rel="brampton" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?city=brampton" target="_blank" data-rel="index.html?city=brampton" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -875,14 +1232,31 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
-              </td>
-              <td class="py-3 px-3.5 text-right whitespace-nowrap">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?city=vaughan" target="_blank" data-rel="index.html?city=vaughan" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="vaughan">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="vaughan" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">vaughan</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="vaughan" target="_blank" data-rel="vaughan" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?city=vaughan" target="_blank" data-rel="index.html?city=vaughan" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -899,14 +1273,31 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
-              </td>
-              <td class="py-3 px-3.5 text-right whitespace-nowrap">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?city=markham" target="_blank" data-rel="index.html?city=markham" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="markham">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="markham" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">markham</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="markham" target="_blank" data-rel="markham" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?city=markham" target="_blank" data-rel="index.html?city=markham" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -923,14 +1314,31 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
-              </td>
-              <td class="py-3 px-3.5 text-right whitespace-nowrap">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?city=oakville" target="_blank" data-rel="index.html?city=oakville" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="oakville">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="oakville" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">oakville</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="oakville" target="_blank" data-rel="oakville" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?city=oakville" target="_blank" data-rel="index.html?city=oakville" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -947,14 +1355,31 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
-              </td>
-              <td class="py-3 px-3.5 text-right whitespace-nowrap">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?city=burlington" target="_blank" data-rel="index.html?city=burlington" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="burlington">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="burlington" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">burlington</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="burlington" target="_blank" data-rel="burlington" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?city=burlington" target="_blank" data-rel="index.html?city=burlington" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -971,14 +1396,31 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
-              </td>
-              <td class="py-3 px-3.5 text-right whitespace-nowrap">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?city=hamilton" target="_blank" data-rel="index.html?city=hamilton" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="hamilton">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="hamilton" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">hamilton</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="hamilton" target="_blank" data-rel="hamilton" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?city=hamilton" target="_blank" data-rel="index.html?city=hamilton" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -995,14 +1437,31 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
-              </td>
-              <td class="py-3 px-3.5 text-right whitespace-nowrap">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?city=kitchener" target="_blank" data-rel="index.html?city=kitchener" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="kitchener">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="kitchener" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">kitchener</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="kitchener" target="_blank" data-rel="kitchener" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?city=kitchener" target="_blank" data-rel="index.html?city=kitchener" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -1019,14 +1478,31 @@
                     <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
                 </div>
-              </td>
-              <td class="py-3 px-3.5 text-right whitespace-nowrap">
-                <div class="flex items-center justify-end gap-1.5">
-                  <a href="index.html?city=oshawa" target="_blank" data-rel="index.html?city=oshawa" class="open-btn inline-flex items-center gap-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3 py-1.5 rounded-lg text-xs transition-colors shadow-2xs">
-                    <span>Open Link</span>
-                    <span>&rarr;</span>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="oshawa">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="oshawa" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">oshawa</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                   </a>
-                  <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1.5 rounded-lg text-xs transition-colors border border-slate-200">Copy</button>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="oshawa" target="_blank" data-rel="oshawa" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?city=oshawa" target="_blank" data-rel="index.html?city=oshawa" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
                 </div>
               </td>
             </tr>
@@ -1036,7 +1512,393 @@
       </div>
     </section>
 
-    <!-- SECTION 4: MASTER / DEFAULT PPC LANDING PAGE -->
+        <!-- SECTION 3B: "NEAR ME" & LOCAL DISPATCH CAMPAIGNS (HIGH-INTENT SEARCHES) -->
+    <section>
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+        <div>
+          <div class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-purple-600">
+            <span class="w-2 h-2 rounded-full bg-purple-500 animate-pulse"></span>
+            <span>High-Intent "Near Me" Searches</span>
+          </div>
+          <h2 class="text-xl sm:text-2xl font-heading font-extrabold text-brandNavy flex items-center gap-2">
+            <span>📍 "Near Me" &amp; Emergency Local Search Campaigns</span>
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-0.5">
+            Dedicated URLs optimized for queries like "[repair near me]", "[near me]", and "[fridge repair near me]". Auto-renders "Near You" with emergency dispatch emphasis.
+          </p>
+        </div>
+        <div class="text-xs text-slate-500 font-medium">
+          Total: <span class="font-bold text-slate-800">8 "Near Me" Variations</span>
+        </div>
+      </div>
+
+      <!-- Mobile Scroll Hint -->
+      <div class="text-[11px] text-slate-500 sm:hidden flex items-center gap-1 mb-2 px-1">
+        <svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+        <span>Swipe horizontally on table to view URLs &amp; buttons &rarr;</span>
+      </div>
+
+      <div class="bg-white border border-slate-200 rounded-xl shadow-xs overflow-hidden table-container">
+        <table class="min-w-[620px] w-full divide-y divide-slate-200 text-left text-xs">
+          <thead class="bg-purple-50/70 text-slate-700 font-bold uppercase tracking-wider text-[11px]">
+            <tr>
+              <th scope="col" class="py-3 px-3.5 w-36">Intent Type</th>
+              <th scope="col" class="py-3 px-3.5 w-52">Target Keywords</th>
+              <th scope="col" class="py-3 px-3.5">Clickable URL (Unclean &amp; Clean)</th>
+              <th scope="col" class="py-3 px-3.5 text-right w-44">Action</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 font-medium text-slate-700">
+            <tr class="hover:bg-purple-50/30 transition-colors">
+              <td class="py-3 px-3.5 whitespace-nowrap align-top">
+                <span class="inline-flex items-center px-2 py-0.5 rounded-md text-xs font-bold border bg-purple-100 text-purple-800 border-purple-300">General Repair</span>
+              </td>
+              <td class="py-3 px-3.5 text-slate-700 font-mono text-xs whitespace-nowrap align-top leading-relaxed">
+                [repair near me]<br>[near me]
+              </td>
+              <td class="py-3 px-3.5 align-top">
+                <div class="url-wrapper font-mono text-[11px] bg-blue-50/70 p-1.5 rounded-md border border-blue-200/70 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg" data-rel="?intent=near_me">
+                  <div class="text-[9px] font-sans font-semibold text-slate-500 uppercase tracking-wider mb-0.5">Unclean (Query URL):</div>
+                  <a href="index.html?intent=near_me" target="_blank" class="url-link text-brandBlue hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="url-text">?intent=near_me</span>
+                    <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="repair-near-me">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="repair-near-me" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">repair-near-me</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="repair-near-me" target="_blank" data-rel="repair-near-me" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?intent=near_me" target="_blank" data-rel="index.html?intent=near_me" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="hover:bg-purple-50/30 transition-colors">
+              <td class="py-3 px-3.5 whitespace-nowrap align-top">
+                <span class="inline-flex items-center px-2 py-0.5 rounded-md text-xs font-bold border bg-blue-100 text-blue-800 border-blue-300">All Appliances</span>
+              </td>
+              <td class="py-3 px-3.5 text-slate-700 font-mono text-xs whitespace-nowrap align-top leading-relaxed">
+                [appliance repair near me]<br>"appliance repair near me"
+              </td>
+              <td class="py-3 px-3.5 align-top">
+                <div class="url-wrapper font-mono text-[11px] bg-blue-50/70 p-1.5 rounded-md border border-blue-200/70 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg" data-rel="?service=appliance&intent=near_me">
+                  <div class="text-[9px] font-sans font-semibold text-slate-500 uppercase tracking-wider mb-0.5">Unclean (Query URL):</div>
+                  <a href="index.html?service=appliance&intent=near_me" target="_blank" class="url-link text-brandBlue hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="url-text">?service=appliance&intent=near_me</span>
+                    <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="appliance-repair-near-me">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="appliance-repair-near-me" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">appliance-repair-near-me</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="appliance-repair-near-me" target="_blank" data-rel="appliance-repair-near-me" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?service=appliance&intent=near_me" target="_blank" data-rel="index.html?service=appliance&intent=near_me" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="hover:bg-purple-50/30 transition-colors">
+              <td class="py-3 px-3.5 whitespace-nowrap align-top">
+                <span class="inline-flex items-center px-2 py-0.5 rounded-md text-xs font-bold border bg-orange-100 text-orange-800 border-orange-300">Refrigerator</span>
+              </td>
+              <td class="py-3 px-3.5 text-slate-700 font-mono text-xs whitespace-nowrap align-top leading-relaxed">
+                [fridge repair near me]<br>[refrigerator repair near me]
+              </td>
+              <td class="py-3 px-3.5 align-top">
+                <div class="url-wrapper font-mono text-[11px] bg-blue-50/70 p-1.5 rounded-md border border-blue-200/70 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg" data-rel="?service=fridge&intent=near_me">
+                  <div class="text-[9px] font-sans font-semibold text-slate-500 uppercase tracking-wider mb-0.5">Unclean (Query URL):</div>
+                  <a href="index.html?service=fridge&intent=near_me" target="_blank" class="url-link text-brandBlue hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="url-text">?service=fridge&intent=near_me</span>
+                    <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="fridge-repair-near-me">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="fridge-repair-near-me" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">fridge-repair-near-me</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="fridge-repair-near-me" target="_blank" data-rel="fridge-repair-near-me" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?service=fridge&intent=near_me" target="_blank" data-rel="index.html?service=fridge&intent=near_me" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="hover:bg-purple-50/30 transition-colors">
+              <td class="py-3 px-3.5 whitespace-nowrap align-top">
+                <span class="inline-flex items-center px-2 py-0.5 rounded-md text-xs font-bold border bg-blue-100 text-blue-800 border-blue-300">Washer</span>
+              </td>
+              <td class="py-3 px-3.5 text-slate-700 font-mono text-xs whitespace-nowrap align-top leading-relaxed">
+                [washer repair near me]<br>[washing machine repair near me]
+              </td>
+              <td class="py-3 px-3.5 align-top">
+                <div class="url-wrapper font-mono text-[11px] bg-blue-50/70 p-1.5 rounded-md border border-blue-200/70 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg" data-rel="?service=washer&intent=near_me">
+                  <div class="text-[9px] font-sans font-semibold text-slate-500 uppercase tracking-wider mb-0.5">Unclean (Query URL):</div>
+                  <a href="index.html?service=washer&intent=near_me" target="_blank" class="url-link text-brandBlue hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="url-text">?service=washer&intent=near_me</span>
+                    <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="washer-repair-near-me">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="washer-repair-near-me" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">washer-repair-near-me</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="washer-repair-near-me" target="_blank" data-rel="washer-repair-near-me" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?service=washer&intent=near_me" target="_blank" data-rel="index.html?service=washer&intent=near_me" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="hover:bg-purple-50/30 transition-colors">
+              <td class="py-3 px-3.5 whitespace-nowrap align-top">
+                <span class="inline-flex items-center px-2 py-0.5 rounded-md text-xs font-bold border bg-amber-100 text-amber-800 border-amber-300">Dryer</span>
+              </td>
+              <td class="py-3 px-3.5 text-slate-700 font-mono text-xs whitespace-nowrap align-top leading-relaxed">
+                [dryer repair near me]<br>"dryer repair near me"
+              </td>
+              <td class="py-3 px-3.5 align-top">
+                <div class="url-wrapper font-mono text-[11px] bg-blue-50/70 p-1.5 rounded-md border border-blue-200/70 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg" data-rel="?service=dryer&intent=near_me">
+                  <div class="text-[9px] font-sans font-semibold text-slate-500 uppercase tracking-wider mb-0.5">Unclean (Query URL):</div>
+                  <a href="index.html?service=dryer&intent=near_me" target="_blank" class="url-link text-brandBlue hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="url-text">?service=dryer&intent=near_me</span>
+                    <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="dryer-repair-near-me">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="dryer-repair-near-me" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">dryer-repair-near-me</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="dryer-repair-near-me" target="_blank" data-rel="dryer-repair-near-me" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?service=dryer&intent=near_me" target="_blank" data-rel="index.html?service=dryer&intent=near_me" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="hover:bg-purple-50/30 transition-colors">
+              <td class="py-3 px-3.5 whitespace-nowrap align-top">
+                <span class="inline-flex items-center px-2 py-0.5 rounded-md text-xs font-bold border bg-teal-100 text-teal-800 border-teal-300">Dishwasher</span>
+              </td>
+              <td class="py-3 px-3.5 text-slate-700 font-mono text-xs whitespace-nowrap align-top leading-relaxed">
+                [dishwasher repair near me]<br>"dishwasher repair near me"
+              </td>
+              <td class="py-3 px-3.5 align-top">
+                <div class="url-wrapper font-mono text-[11px] bg-blue-50/70 p-1.5 rounded-md border border-blue-200/70 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg" data-rel="?service=dishwasher&intent=near_me">
+                  <div class="text-[9px] font-sans font-semibold text-slate-500 uppercase tracking-wider mb-0.5">Unclean (Query URL):</div>
+                  <a href="index.html?service=dishwasher&intent=near_me" target="_blank" class="url-link text-brandBlue hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="url-text">?service=dishwasher&intent=near_me</span>
+                    <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="dishwasher-repair-near-me">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="dishwasher-repair-near-me" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">dishwasher-repair-near-me</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="dishwasher-repair-near-me" target="_blank" data-rel="dishwasher-repair-near-me" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?service=dishwasher&intent=near_me" target="_blank" data-rel="index.html?service=dishwasher&intent=near_me" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="hover:bg-purple-50/30 transition-colors">
+              <td class="py-3 px-3.5 whitespace-nowrap align-top">
+                <span class="inline-flex items-center px-2 py-0.5 rounded-md text-xs font-bold border bg-rose-100 text-rose-800 border-rose-300">Stove & Oven</span>
+              </td>
+              <td class="py-3 px-3.5 text-slate-700 font-mono text-xs whitespace-nowrap align-top leading-relaxed">
+                [stove repair near me]<br>[oven repair near me]
+              </td>
+              <td class="py-3 px-3.5 align-top">
+                <div class="url-wrapper font-mono text-[11px] bg-blue-50/70 p-1.5 rounded-md border border-blue-200/70 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg" data-rel="?service=stove&intent=near_me">
+                  <div class="text-[9px] font-sans font-semibold text-slate-500 uppercase tracking-wider mb-0.5">Unclean (Query URL):</div>
+                  <a href="index.html?service=stove&intent=near_me" target="_blank" class="url-link text-brandBlue hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="url-text">?service=stove&intent=near_me</span>
+                    <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="stove-repair-near-me">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="stove-repair-near-me" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">stove-repair-near-me</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="stove-repair-near-me" target="_blank" data-rel="stove-repair-near-me" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?service=stove&intent=near_me" target="_blank" data-rel="index.html?service=stove&intent=near_me" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="hover:bg-purple-50/30 transition-colors">
+              <td class="py-3 px-3.5 whitespace-nowrap align-top">
+                <span class="inline-flex items-center px-2 py-0.5 rounded-md text-xs font-bold border bg-indigo-100 text-indigo-800 border-indigo-300">Microwave</span>
+              </td>
+              <td class="py-3 px-3.5 text-slate-700 font-mono text-xs whitespace-nowrap align-top leading-relaxed">
+                [microwave repair near me]
+              </td>
+              <td class="py-3 px-3.5 align-top">
+                <div class="url-wrapper font-mono text-[11px] bg-blue-50/70 p-1.5 rounded-md border border-blue-200/70 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg" data-rel="?service=microwave&intent=near_me">
+                  <div class="text-[9px] font-sans font-semibold text-slate-500 uppercase tracking-wider mb-0.5">Unclean (Query URL):</div>
+                  <a href="index.html?service=microwave&intent=near_me" target="_blank" class="url-link text-brandBlue hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="url-text">?service=microwave&intent=near_me</span>
+                    <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="microwave-repair-near-me">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="microwave-repair-near-me" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">microwave-repair-near-me</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="microwave-repair-near-me" target="_blank" data-rel="microwave-repair-near-me" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?service=microwave&intent=near_me" target="_blank" data-rel="index.html?service=microwave&intent=near_me" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+<!-- SECTION 4: MASTER / DEFAULT PPC LANDING PAGE -->
     <section>
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
         <div>
@@ -1367,13 +2229,27 @@
         btnFull.className = 'px-2.5 py-1 rounded-md font-medium text-xs bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors border border-slate-200';
       }
 
-      // Update all .url-wrapper links in tables
+      // Update all .url-wrapper links in tables (Unclean Query URLs)
       document.querySelectorAll('.url-wrapper').forEach(wrapper => {
         const rel = wrapper.getAttribute('data-rel');
         const cleanRel = rel.startsWith('?') ? ('index.html' + rel) : rel;
         const fullUrl = base + cleanRel;
         const link = wrapper.querySelector('a.url-link');
         const textSpan = wrapper.querySelector('.url-text');
+        if (link) {
+          link.href = fullUrl;
+        }
+        if (textSpan) {
+          textSpan.textContent = (mode === 'full') ? fullUrl : rel;
+        }
+      });
+
+      // Update all .url-wrapper-clean links in tables (Clean URLs)
+      document.querySelectorAll('.url-wrapper-clean').forEach(wrapper => {
+        const rel = wrapper.getAttribute('data-rel');
+        const fullUrl = base + rel;
+        const link = wrapper.querySelector('a.clean-url-link');
+        const textSpan = wrapper.querySelector('.clean-url-text');
         if (link) {
           link.href = fullUrl;
         }
@@ -1390,37 +2266,86 @@
         }
       });
 
+      // Update all Open Clean Link buttons
+      document.querySelectorAll('a.open-clean-btn').forEach(btn => {
+        const rel = btn.getAttribute('data-rel');
+        if (rel) {
+          btn.href = base + rel;
+        }
+      });
+
       // Update tester preview
       updateTesterUrl();
     }
 
     function updateTesterUrl() {
+      const b = (document.getElementById('tester-brand') || {}).value;
       const s = document.getElementById('tester-service').value;
       const c = document.getElementById('tester-city').value;
+      
+      // Query param format
       const params = new URLSearchParams();
+      if (b) params.set('brand', b);
       if (s) params.set('service', s);
       if (c) params.set('city', c);
       
       const queryStr = params.toString() ? ('?' + params.toString()) : '';
       const relUrl = 'index.html' + queryStr;
       const fullUrl = getBasePpcUrl() + relUrl;
+
+      // Clean slug format
+      let cleanParts = [];
+      if (b) cleanParts.push(b);
+      if (s) cleanParts.push(s);
+      if (c) cleanParts.push(c);
+      const cleanSlug = cleanParts.length > 0 ? cleanParts.join('-') : 'index.html';
+      const fullCleanUrl = getBasePpcUrl() + cleanSlug;
       
+      // Update clean preview
+      const openCleanBtn = document.getElementById('tester-open-clean-btn');
+      if (openCleanBtn) openCleanBtn.href = fullCleanUrl;
+      const previewCleanLink = document.getElementById('tester-clean-preview-link');
+      if (previewCleanLink) previewCleanLink.href = fullCleanUrl;
+      const previewCleanBox = document.getElementById('tester-clean-preview-box');
+      if (previewCleanBox) {
+        previewCleanBox.textContent = (currentDisplayMode === 'full') ? fullCleanUrl : cleanSlug;
+      }
+
+      // Update query preview
       const openBtn = document.getElementById('tester-open-btn');
       if (openBtn) openBtn.href = fullUrl;
-
       const previewLink = document.getElementById('tester-preview-link');
       if (previewLink) previewLink.href = fullUrl;
-
       const previewBox = document.getElementById('tester-preview-box');
       if (previewBox) {
         previewBox.textContent = (currentDisplayMode === 'full') ? fullUrl : (queryStr || 'index.html');
       }
     }
 
+    function copyTesterCleanUrl() {
+      const b = (document.getElementById('tester-brand') || {}).value;
+      const s = document.getElementById('tester-service').value;
+      const c = document.getElementById('tester-city').value;
+      let cleanParts = [];
+      if (b) cleanParts.push(b);
+      if (s) cleanParts.push(s);
+      if (c) cleanParts.push(c);
+      const cleanSlug = cleanParts.length > 0 ? cleanParts.join('-') : 'index.html';
+      const fullCleanUrl = getBasePpcUrl() + cleanSlug;
+      
+      navigator.clipboard.writeText(fullCleanUrl).then(() => {
+        showToast('Clean URL copied: ' + fullCleanUrl);
+      }).catch(() => {
+        prompt('Copy this Clean URL:', fullCleanUrl);
+      });
+    }
+
     function copyTesterUrl() {
+      const b = (document.getElementById('tester-brand') || {}).value;
       const s = document.getElementById('tester-service').value;
       const c = document.getElementById('tester-city').value;
       const params = new URLSearchParams();
+      if (b) params.set('brand', b);
       if (s) params.set('service', s);
       if (c) params.set('city', c);
       
@@ -1428,9 +2353,37 @@
       const fullUrl = getBasePpcUrl() + 'index.html' + queryStr;
       
       navigator.clipboard.writeText(fullUrl).then(() => {
-        showToast('Tester URL copied: ' + fullUrl);
+        showToast('Query URL copied: ' + fullUrl);
       }).catch(() => {
         prompt('Copy this URL:', fullUrl);
+      });
+    }
+
+    function copyCleanRowUrl(btnElement) {
+      const row = btnElement.closest('tr') || btnElement.closest('div');
+      let urlToCopy = '';
+      if (row) {
+        const wrapper = row.querySelector('.url-wrapper-clean');
+        if (wrapper) {
+          const rel = wrapper.getAttribute('data-rel');
+          urlToCopy = getBasePpcUrl() + rel;
+        }
+      }
+      if (!urlToCopy) {
+        urlToCopy = getBasePpcUrl() + 'index.html';
+      }
+
+      navigator.clipboard.writeText(urlToCopy).then(() => {
+        showToast('Clean URL copied: ' + urlToCopy);
+        const originalText = btnElement.innerText;
+        btnElement.innerText = 'Copied!';
+        btnElement.classList.add('bg-emerald-200', 'text-emerald-900', 'border-emerald-400');
+        setTimeout(() => {
+          btnElement.innerText = originalText;
+          btnElement.classList.remove('bg-emerald-200', 'text-emerald-900', 'border-emerald-400');
+        }, 1500);
+      }).catch(() => {
+        prompt('Copy this Clean URL:', urlToCopy);
       });
     }
 
@@ -1450,13 +2403,13 @@
       }
 
       navigator.clipboard.writeText(urlToCopy).then(() => {
-        showToast('Copied: ' + urlToCopy);
+        showToast('Query URL copied: ' + urlToCopy);
         const originalText = btnElement.innerText;
         btnElement.innerText = 'Copied!';
-        btnElement.classList.add('bg-emerald-100', 'text-emerald-800', 'border-emerald-300');
+        btnElement.classList.add('bg-slate-200', 'text-slate-900', 'border-slate-400');
         setTimeout(() => {
           btnElement.innerText = originalText;
-          btnElement.classList.remove('bg-emerald-100', 'text-emerald-800', 'border-emerald-300');
+          btnElement.classList.remove('bg-slate-200', 'text-slate-900', 'border-slate-400');
         }, 1500);
       }).catch(() => {
         prompt('Copy this URL:', urlToCopy);

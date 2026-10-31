@@ -51,15 +51,70 @@
   <link rel="stylesheet" href="../css/tailwind.min.css">
   <link rel="stylesheet" href="../css/style.min.css">
 
-  <!-- Zero-Flicker Specific Service Script & GCLID/UTM Capture -->
+  <!-- Zero-Flicker Specific Service Script & Smart URL Route Extractor -->
   <script>
+    function getPpcRouteParams() {
+      var sp = new URLSearchParams(window.location.search);
+      var sVal = sp.get('service') || '';
+      var cVal = sp.get('city') || '';
+      var bVal = sp.get('brand') || '';
+      var isNearMe = sp.get('near_me') === '1' || sp.get('near') === '1' || sp.get('intent') === 'near_me';
+
+      // If not fully provided in query params, inspect the clean URL pathname (e.g. fridge-brampton, repair-near-me)
+      if (!sVal || !cVal || !bVal) {
+        var rawPath = (window.location.pathname || '').replace(/\.(html?|php)$/i, '').toLowerCase();
+        var slug = rawPath.split('/').filter(Boolean).pop() || '';
+        if (slug && slug !== 'index' && slug !== 'same-day-repair' && slug !== 'demo') {
+          if (/near[-_]?me/i.test(slug)) {
+            isNearMe = true;
+          }
+          var knownBrands = ['sub-zero', 'subzero', 'kitchenaid', 'frigidaire', 'samsung', 'whirlpool', 'bosch', 'maytag', 'miele', 'kenmore', 'panasonic', 'lg', 'ge'];
+          var knownCities = ['richmond-hill', 'north-york', 'toronto', 'mississauga', 'brampton', 'vaughan', 'markham', 'oakville', 'burlington', 'etobicoke', 'scarborough', 'pickering', 'ajax', 'whitby', 'oshawa', 'milton', 'newmarket'];
+          var knownServices = ['washing-machine', 'clothes-dryer', 'refrigerator', 'fridge', 'freezer', 'washer', 'dryer', 'dishwasher', 'stove', 'oven', 'range', 'cooktop', 'microwave', 'appliance', 'repair'];
+
+          if (!bVal) {
+            for (var k = 0; k < knownBrands.length; k++) {
+              var b = knownBrands[k];
+              var reB = new RegExp('(?:^|[-_])' + b.replace('-', '[-_]?') + '(?:[-_]|$)', 'i');
+              if (reB.test(slug)) { bVal = (b === 'subzero' ? 'sub-zero' : b); break; }
+            }
+          }
+          if (!cVal) {
+            for (var j = 0; j < knownCities.length; j++) {
+              var c = knownCities[j];
+              var reC = new RegExp('(?:^|[-_])' + c.replace('-', '[-_]?') + '(?:[-_]|$)', 'i');
+              if (reC.test(slug)) { cVal = c; break; }
+            }
+          }
+          if (!sVal) {
+            for (var i = 0; i < knownServices.length; i++) {
+              var s = knownServices[i];
+              var reS = new RegExp('(?:^|[-_])' + s.replace('-', '[-_]?') + '(?:[-_]|$)', 'i');
+              if (reS.test(slug)) { sVal = (s === 'repair' ? 'appliance' : s); break; }
+            }
+          }
+
+          if (isNearMe && !sVal) {
+            sVal = 'appliance';
+          }
+        }
+      }
+      return {
+        service: sVal.toLowerCase().trim(),
+        city: cVal.toLowerCase().trim(),
+        brand: bVal.toLowerCase().trim(),
+        isNearMe: isNearMe
+      };
+    }
+
     (function () {
       try {
-        var sp = new URLSearchParams(window.location.search);
-        var sVal = sp.get('service');
-        if (sVal && !['appliance', 'all', 'repair'].includes(sVal.toLowerCase().trim())) {
+        var params = getPpcRouteParams();
+        window._ppcParams = params;
+        if (params.service && !['appliance', 'all', 'repair'].includes(params.service)) {
           document.documentElement.classList.add('hide-six-services');
         }
+        var sp = new URLSearchParams(window.location.search);
         var g = sp.get('gclid');
         if (g) sessionStorage.setItem('ppc_gclid', g);
         var s = sp.get('utm_source');
@@ -1750,7 +1805,16 @@
         utm_campaign: utmCampaign
       };
 
-      fetch('send-lead.php', {
+      const leadEndpoint = (function() {
+        const p = window.location.pathname;
+        const idx = p.indexOf('/same-day-repair');
+        if (idx !== -1) {
+          return p.substring(0, idx) + '/same-day-repair/send-lead.php';
+        }
+        return 'send-lead.php';
+      })();
+
+      fetch(leadEndpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
@@ -2108,11 +2172,35 @@
     };
 
     function applyDynamicPersonalization() {
-      const urlParams = new URLSearchParams(window.location.search);
-      const serviceParam = (urlParams.get('service') || '').toLowerCase().trim();
-      const cityParam = (urlParams.get('city') || '').toLowerCase().trim();
+      const params = (typeof getPpcRouteParams === 'function') 
+        ? getPpcRouteParams() 
+        : {
+            service: (new URLSearchParams(window.location.search).get('service') || '').toLowerCase().trim(),
+            city: (new URLSearchParams(window.location.search).get('city') || '').toLowerCase().trim(),
+            brand: (new URLSearchParams(window.location.search).get('brand') || '').toLowerCase().trim()
+          };
+      const serviceParam = params.service;
+      const cityParam = params.city;
+      const brandParam = params.brand;
 
-      if (!serviceParam && !cityParam) return;
+      if (!serviceParam && !cityParam && !brandParam) return;
+
+      const BRAND_NAMES = {
+        'lg': 'LG',
+        'samsung': 'Samsung',
+        'whirlpool': 'Whirlpool',
+        'bosch': 'Bosch',
+        'ge': 'GE',
+        'maytag': 'Maytag',
+        'kitchenaid': 'KitchenAid',
+        'frigidaire': 'Frigidaire',
+        'miele': 'Miele',
+        'subzero': 'Sub-Zero',
+        'sub-zero': 'Sub-Zero',
+        'kenmore': 'Kenmore',
+        'panasonic': 'Panasonic'
+      };
+      const brandName = BRAND_NAMES[brandParam] || (brandParam ? (brandParam.charAt(0).toUpperCase() + brandParam.slice(1)) : '');
 
       let matchedService = null;
       if (['washer', 'washing', 'washing-machine'].includes(serviceParam)) matchedService = DYNAMIC_SERVICES.washer;
@@ -2124,45 +2212,56 @@
       else if (['appliance', 'all', 'repair'].includes(serviceParam)) matchedService = DYNAMIC_SERVICES.appliance;
 
       const cityName = cityParam ? (cityParam.charAt(0).toUpperCase() + cityParam.slice(1)) : '';
+      const brandPrefix = brandName ? `${brandName} ` : '';
 
-      if (matchedService) {
-        document.title = `Same-Day ${matchedService.name} Repair in ${cityName || 'Toronto & GTA'} | Local Certified Technicians`;
+      if (matchedService || brandName || params.isNearMe) {
+        const srvName = matchedService ? matchedService.name : 'Appliance';
+        const srvTitle = matchedService ? matchedService.titleName : 'APPLIANCE';
+        if (params.isNearMe && !cityName) {
+          document.title = `Same-Day ${brandPrefix}${srvName} Repair Near You | Local Certified Technicians`;
+        } else {
+          document.title = `Same-Day ${brandPrefix}${srvName} Repair in ${cityName || 'Toronto & GTA'} | Local Certified Technicians`;
+        }
+        
         const h1 = document.querySelector('h1');
-        if (h1) h1.textContent = `${matchedService.titleName} REPAIR`;
+        if (h1) {
+          h1.textContent = brandName ? `${brandName.toUpperCase()} ${srvTitle} REPAIR` : `${srvTitle} REPAIR`;
+        }
 
         const subTitle = document.querySelector('#hero-subtitle, p.text-brandOrange');
         if (subTitle) {
           let sWord = '';
-          if (matchedService.key === 'washer') sWord = 'WASHER ';
-          else if (matchedService.key === 'fridge') sWord = 'REFRIGERATOR ';
-          else if (matchedService.key === 'dryer') sWord = 'DRYER ';
-          else if (matchedService.key === 'dishwasher') sWord = 'DISHWASHER ';
-          else if (matchedService.key === 'stove') sWord = 'STOVE & OVEN ';
-          else if (matchedService.key === 'microwave') sWord = 'MICROWAVE ';
-          else sWord = '';
-
+          if (matchedService) {
+            if (matchedService.key === 'washer') sWord = 'WASHING MACHINE ';
+            else if (matchedService.key === 'fridge') sWord = 'REFRIGERATOR ';
+            else if (matchedService.key === 'dryer') sWord = 'DRYER ';
+            else if (matchedService.key === 'dishwasher') sWord = 'DISHWASHER ';
+            else if (matchedService.key === 'stove') sWord = 'STOVE & OVEN ';
+            else if (matchedService.key === 'microwave') sWord = 'MICROWAVE ';
+          }
           const locationText = cityName ? `IN ${cityName.toUpperCase()}` : 'NEAR YOU';
-          subTitle.textContent = `SAME-DAY ${sWord}REPAIR ${locationText}`;
+          const brandUpper = brandName ? `${brandName.toUpperCase()} ` : '';
+          subTitle.textContent = `SAME-DAY ${brandUpper}${sWord}REPAIR ${locationText}`;
         }
 
         const heroImg = document.querySelector('#about-service img');
-        if (heroImg && matchedService.heroImg) {
+        if (heroImg && matchedService && matchedService.heroImg) {
           heroImg.src = matchedService.heroImg;
-          heroImg.alt = `Same-Day ${matchedService.name} Repair in ${cityName || 'Toronto & GTA'}`;
+          heroImg.alt = `Same-Day ${brandPrefix}${matchedService.name} Repair in ${cityName || 'Toronto & GTA'}`;
         }
 
         // Dynamic Hero Service Sub-Heading (H2) and Description Paragraph
         const heroH2 = document.querySelector('#about-service h2');
-        if (heroH2 && matchedService.serviceLabel) heroH2.textContent = matchedService.serviceLabel;
+        if (heroH2 && matchedService && matchedService.serviceLabel) heroH2.textContent = matchedService.serviceLabel;
 
         const heroDesc = document.querySelector('#hero-desc, #about-service p.text-slate-600');
-        if (heroDesc && matchedService.desc) heroDesc.innerHTML = matchedService.desc;
+        if (heroDesc && matchedService && matchedService.desc) heroDesc.innerHTML = matchedService.desc;
 
         const probHeader = document.querySelector('#services-problems h3:first-child');
-        if (probHeader) probHeader.innerHTML = `<span>${matchedService.problemsTitle}</span><span class="text-xs text-brandOrange font-bold">Diagnosed Daily</span>`;
+        if (probHeader && matchedService) probHeader.innerHTML = `<span>${matchedService.problemsTitle}</span><span class="text-xs text-brandOrange font-bold">Diagnosed Daily</span>`;
 
         const probList = document.querySelector('#services-problems ul:first-of-type');
-        if (probList && matchedService.problems) {
+        if (probList && matchedService && matchedService.problems) {
           probList.innerHTML = matchedService.problems.map(p => `
             <li class="flex items-center gap-3">
               <span class="w-2.5 h-2.5 rounded-full bg-brandOrange shrink-0"></span>
@@ -2172,7 +2271,7 @@
         }
 
         const typesCards = document.querySelectorAll('#services-problems > div > div > div');
-        if (typesCards.length > 1) {
+        if (typesCards.length > 1 && matchedService) {
           const typesH3 = typesCards[1].querySelector('h3');
           if (typesH3) typesH3.innerHTML = `<span>${matchedService.typesTitle}</span><span class="text-xs text-brandBlue font-bold">All Makes</span>`;
 
@@ -2188,18 +2287,32 @@
         }
 
         const brandsH2 = document.querySelector('#brands h2');
-        if (brandsH2) brandsH2.textContent = `${matchedService.titleName} BRANDS`;
+        if (brandsH2) {
+          brandsH2.textContent = brandName 
+            ? `${brandName.toUpperCase()} ${matchedService ? matchedService.titleName : 'APPLIANCE'} REPAIR SPECIALISTS`
+            : `${matchedService ? matchedService.titleName : 'APPLIANCE'} BRANDS`;
+        }
 
         const finalH2 = document.querySelector('#final-cta h2');
-        if (finalH2) finalH2.textContent = matchedService.ctaText ? matchedService.ctaText.toUpperCase() : `BOOK YOUR ${matchedService.titleName} REPAIR TODAY`;
+        if (finalH2) {
+          const brandFinal = brandName ? `${brandName.toUpperCase()} ` : '';
+          finalH2.textContent = matchedService && matchedService.ctaText 
+            ? matchedService.ctaText.toUpperCase() 
+            : `BOOK YOUR ${brandFinal}${matchedService ? matchedService.titleName : 'APPLIANCE'} REPAIR TODAY`;
+        }
 
         const modalAppliance = document.getElementById('modal-appliance');
-        if (modalAppliance) modalAppliance.value = matchedService.name;
+        if (modalAppliance && matchedService) modalAppliance.value = matchedService.name;
+
+        const modalNotes = document.getElementById('modal-notes') || document.querySelector('textarea[name="issue_description"]');
+        if (modalNotes && brandName && !modalNotes.value) {
+          modalNotes.placeholder = `Describe your ${brandName} ${matchedService ? matchedService.name : 'appliance'} issue...`;
+        }
 
         // Conditionally show/hide 6 services section:
         // Only visible on general appliance page; hidden on all specific service pages (refrigerator, washer, dryer, etc.)
         const allSixSection = document.getElementById('all-six-services');
-        if (allSixSection) {
+        if (allSixSection && matchedService) {
           if (matchedService.key !== 'appliance') {
             allSixSection.style.display = 'none';
           } else {
@@ -2221,11 +2334,17 @@
         }
       }
 
+      const topAnnounce = document.querySelector('aside .font-medium');
+      if (topAnnounce) {
+        const brandTxt = brandName ? `${brandName} ` : '';
+        const srvTxt = matchedService ? matchedService.name : 'Appliance';
+        const locTxt = cityName 
+          ? `Across ${cityName} & GTA` 
+          : (params.isNearMe ? 'Stationed Near You' : 'Across Toronto & GTA');
+        topAnnounce.textContent = `Same-Day ${brandTxt}${srvTxt} Repair ${locTxt}`;
+      }
+
       if (cityName) {
-        const topAnnounce = document.querySelector('aside .font-medium');
-        if (topAnnounce) {
-          topAnnounce.textContent = `Same-Day ${matchedService ? matchedService.name : 'Appliance'} Repair Across ${cityName} & GTA`;
-        }
 
         const modalCity = document.getElementById('modal-city');
         if (modalCity) {

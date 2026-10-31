@@ -593,7 +593,7 @@ $disable_global_schema = true;
             <!-- Item 3: Washer -->
             <a href="<?php echo $base_url; ?>services/washer-repair" class="appliance-carousel-card snap-start group bg-white rounded-xl p-3 sm:p-4 border border-slate-200/80 hover:border-brandOrange hover:shadow-md transition-all text-center flex flex-col items-center justify-between shadow-2xs">
               <div class="w-full h-20 sm:h-28 bg-slate-50/80 rounded-lg p-2 flex items-center justify-center mb-2 overflow-hidden">
-                <img src="<?php echo $base_url; ?>img/washing-machine-repair-service.webp" alt="Washer Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" width="200" height="200" loading="lazy" decoding="async" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300 pointer-events-none">
+                <img src="<?php echo $base_url; ?>img/service-card-washer.webp" alt="Washer Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" width="200" height="200" loading="lazy" decoding="async" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300 pointer-events-none">
               </div>
               <div>
                 <h3 class="font-heading font-bold text-slate-900 text-sm sm:text-base leading-tight group-hover:text-brandOrange transition-colors">Washer</h3>
@@ -604,7 +604,7 @@ $disable_global_schema = true;
             <!-- Item 4: Dryer -->
             <a href="<?php echo $base_url; ?>services/dryer-repair" class="appliance-carousel-card snap-start group bg-white rounded-xl p-3 sm:p-4 border border-slate-200/80 hover:border-brandOrange hover:shadow-md transition-all text-center flex flex-col items-center justify-between shadow-2xs">
               <div class="w-full h-20 sm:h-28 bg-slate-50/80 rounded-lg p-2 flex items-center justify-center mb-2 overflow-hidden">
-                <img src="<?php echo $base_url; ?>img/clothes-dryer-repair-service.webp" alt="Dryer Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" width="200" height="200" loading="lazy" decoding="async" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300 pointer-events-none">
+                <img src="<?php echo $base_url; ?>img/service-card-dryer.webp" alt="Dryer Repair in <?php echo htmlspecialchars($loc['city_name']); ?>" width="200" height="200" loading="lazy" decoding="async" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300 pointer-events-none">
               </div>
               <div>
                 <h3 class="font-heading font-bold text-slate-900 text-sm sm:text-base leading-tight group-hover:text-brandOrange transition-colors">Dryer</h3>
