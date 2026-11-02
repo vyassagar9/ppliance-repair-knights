@@ -1297,12 +1297,12 @@ $all_service_cities = [
 
           <!-- Right: Hero Typography & Direct CTAs -->
           <div class="lg:col-span-7 space-y-4 sm:space-y-5 text-center lg:text-left">
-            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-slate-900 tracking-tight uppercase leading-tight">
-              <?php echo htmlspecialchars(strtoupper($srv['name'])); ?> REPAIR
+            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-slate-900 tracking-tight leading-tight">
+              <?php echo htmlspecialchars($srv['name']); ?> Repair
             </h1>
 
-            <p class="text-brandOrange font-semibold text-xs sm:text-sm tracking-widest uppercase">
-              FAST DIAGNOSTIC &amp; SAME-DAY REPAIR NEAR YOU
+            <p class="text-brandOrange font-semibold text-xs sm:text-sm tracking-wide">
+              Fast Diagnostic &amp; Same-Day Repair Near You
             </p>
 
             <!-- Dual Action Call & Book Buttons -->
@@ -1322,8 +1322,8 @@ $all_service_cities = [
 
             <!-- Service Description Paragraph -->
             <div class="space-y-3 pt-2 text-slate-700 text-sm sm:text-base leading-relaxed text-left">
-              <h2 class="text-xs sm:text-sm font-heading font-bold text-slate-900 uppercase tracking-wider border-b border-slate-200 pb-1 inline-block">
-                SAME-DAY <?php echo htmlspecialchars(strtoupper($srv['name'])); ?> SERVICE NEAR YOU
+              <h2 class="text-xs sm:text-sm font-heading font-bold text-slate-900 tracking-wider border-b border-slate-200 pb-1 inline-block">
+                Same-Day <?php echo htmlspecialchars($srv['name']); ?> Service Near You
               </h2>
               <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
                 <?php echo htmlspecialchars($srv['desc']); ?> Our certified local technicians arrive in fully equipped mobile service vehicles carrying genuine factory parts for all major brands, providing transparent upfront written quotes before any repair begins.
@@ -1403,8 +1403,8 @@ $all_service_cities = [
           <!-- Left Card: Common Appliance Problems -->
           <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
             <div>
-              <h3 class="text-sm sm:text-base font-heading font-bold text-slate-800 uppercase tracking-wide mb-4 pb-2 border-b border-slate-100 flex items-center justify-between">
-                <span>COMMON <?php echo htmlspecialchars(strtoupper($srv['name'])); ?> PROBLEMS</span>
+              <h3 class="text-sm sm:text-base font-heading font-bold text-slate-800 tracking-wide mb-4 pb-2 border-b border-slate-100 flex items-center justify-between">
+                <span>Common <?php echo htmlspecialchars($srv['name']); ?> Problems</span>
                 <span class="text-xs text-brandOrange font-bold">Diagnosed Daily</span>
               </h3>
               <ul class="space-y-3.5 text-xs sm:text-sm text-slate-700 font-medium">
@@ -1426,8 +1426,8 @@ $all_service_cities = [
           <!-- Right Card: Types of Appliance We Repair -->
           <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
             <div>
-              <h3 class="text-sm sm:text-base font-heading font-bold text-slate-800 uppercase tracking-wide mb-4 pb-2 border-b border-slate-100 flex items-center justify-between">
-                <span>TYPES OF <?php echo htmlspecialchars(strtoupper($srv['name'])); ?>S WE REPAIR</span>
+              <h3 class="text-sm sm:text-base font-heading font-bold text-slate-800 tracking-wide mb-4 pb-2 border-b border-slate-100 flex items-center justify-between">
+                <span>Types of <?php echo htmlspecialchars($srv['name']); ?>s We Repair</span>
                 <span class="text-xs text-brandBlue font-bold">All Makes</span>
               </h3>
               <ul class="space-y-3.5 text-xs sm:text-sm text-slate-700 font-medium">
@@ -1455,8 +1455,8 @@ $all_service_cities = [
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
 
         <div class="text-center mb-12">
-          <h2 class="text-xl sm:text-2xl lg:text-3xl font-heading font-bold text-slate-900 uppercase tracking-tight mb-2">
-            CHOOSE APPLIANCE REPAIR KNIGHTS
+          <h2 class="text-xl sm:text-2xl lg:text-3xl font-heading font-bold text-slate-900 tracking-tight mb-2">
+            Choose Appliance Repair Knights
           </h2>
           <p class="text-slate-600 text-xs sm:text-sm max-w-xl mx-auto font-medium">
             Quality &amp; Reliable Services at Competitive Rates Near You
@@ -1469,39 +1469,39 @@ $all_service_cities = [
           <!-- Left: 3 Feature Blocks (Time, Quality, Price) -->
           <div class="lg:col-span-6 space-y-6">
 
-            <!-- Item 1: TIME -->
+            <!-- Item 1: Time -->
             <div class="flex items-start gap-4">
               <div class="w-12 h-12 rounded-xl bg-orange-50 text-brandOrange flex items-center justify-center shrink-0 shadow-2xs">
                 <svg class="w-6 h-6 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               </div>
               <div>
-                <h3 class="text-sm font-heading font-bold text-slate-900 uppercase tracking-wide mb-1">TIME</h3>
+                <h3 class="text-sm font-heading font-bold text-slate-900 tracking-wide mb-1">Time</h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
                   Same-day rapid dispatch across <?php echo htmlspecialchars($city_name); ?>. Our local technicians arrive with stocked service vehicles to diagnose and resolve appliance issues on the first visit.
                 </p>
               </div>
             </div>
 
-            <!-- Item 2: QUALITY -->
+            <!-- Item 2: Quality -->
             <div class="flex items-start gap-4">
               <div class="w-12 h-12 rounded-xl bg-blue-50 text-brandBlue flex items-center justify-center shrink-0 shadow-2xs">
                 <svg class="w-6 h-6 text-brandBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
               </div>
               <div>
-                <h3 class="text-sm font-heading font-bold text-slate-900 uppercase tracking-wide mb-1">QUALITY</h3>
+                <h3 class="text-sm font-heading font-bold text-slate-900 tracking-wide mb-1">Quality</h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
                   Licensed and factory-trained technicians using genuine OEM parts. Every repair is backed by our comprehensive written warranty on parts and labour.
                 </p>
               </div>
             </div>
 
-            <!-- Item 3: PRICE -->
+            <!-- Item 3: Price -->
             <div class="flex items-start gap-4">
               <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 shadow-2xs">
                 <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               </div>
               <div>
-                <h3 class="text-sm font-heading font-bold text-slate-900 uppercase tracking-wide mb-1">PRICE</h3>
+                <h3 class="text-sm font-heading font-bold text-slate-900 tracking-wide mb-1">Price</h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
                   Transparent, upfront written quotes before any repair begins. Our diagnostic service call fee is completely waived when you proceed with the repair.
                 </p>
@@ -1570,8 +1570,8 @@ $all_service_cities = [
     <section class="py-14 sm:py-20 bg-white border-b border-brandBorder" id="reviews">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
 
-        <h2 class="text-xl sm:text-2xl font-heading font-bold text-slate-900 uppercase tracking-tight mb-2">
-          CUSTOMER REVIEWS
+        <h2 class="text-xl sm:text-2xl font-heading font-bold text-slate-900 tracking-tight mb-2">
+          Customer Reviews
         </h2>
         <p class="text-slate-600 text-xs sm:text-sm max-w-md mx-auto mb-8 font-medium">
           What Our Local Homeowners Say Near You
@@ -1584,7 +1584,7 @@ $all_service_cities = [
             "My washing machine broke but these guys completely saved the day. The technician arrived on time, diagnosed the issue quickly, and fixed it with zero hidden fees. Reliable same-day service!"
           </p>
           <div class="text-xs font-heading font-bold text-brandDarkBlue" id="review-author">
-            — Shehraj Singh, Brampton
+            — Shehraj Singh
           </div>
 
           <!-- Subtle Prev / Next Navigation -->
@@ -1606,8 +1606,8 @@ $all_service_cities = [
     <section class="py-12 sm:py-16 bg-slate-50 border-b border-brandBorder" id="brands">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
 
-        <h2 class="text-xl sm:text-2xl font-heading font-bold text-slate-900 uppercase tracking-tight mb-2">
-          <?php echo htmlspecialchars(strtoupper($srv['name'])); ?> BRANDS
+        <h2 class="text-xl sm:text-2xl font-heading font-bold text-slate-900 tracking-tight mb-2">
+          <?php echo htmlspecialchars($srv['name']); ?> Brands We Repair
         </h2>
         <p class="text-slate-600 text-xs sm:text-sm max-w-md mx-auto mb-8 font-medium">
           We Service All Major Brands With Genuine OEM Parts
@@ -1631,8 +1631,8 @@ $all_service_cities = [
     <section class="py-12 sm:py-16 bg-slate-50 border-b border-brandBorder" id="service-areas">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
 
-        <h2 class="text-xl sm:text-2xl font-heading font-bold text-slate-900 uppercase tracking-tight mb-2">
-          SERVICE AREAS
+        <h2 class="text-xl sm:text-2xl font-heading font-bold text-slate-900 tracking-tight mb-2">
+          Service Areas
         </h2>
         <p class="text-slate-600 text-xs sm:text-sm max-w-md mx-auto mb-8 font-medium">
           Fast Dispatch • Licensed Local Technicians On Standby Near You
@@ -1654,8 +1654,8 @@ $all_service_cities = [
     <!-- 10. BOOK YOUR REPAIR TODAY (FINAL PRE-FOOTER CTA MATCHING REFERENCE) -->
     <section class="py-14 sm:py-20 bg-white text-center border-b border-brandBorder" id="final-cta">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 space-y-4">
-        <h2 class="text-xl sm:text-2xl font-heading font-bold text-slate-900 uppercase tracking-tight">
-          BOOK YOUR <?php echo htmlspecialchars(strtoupper($srv['name'])); ?> REPAIR TODAY
+        <h2 class="text-xl sm:text-2xl font-heading font-bold text-slate-900 tracking-tight">
+          Book Your <?php echo htmlspecialchars($srv['name']); ?> Repair Today
         </h2>
         <p class="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-xl mx-auto">
           Don't wait while laundry piles up or broken appliances cause disruption. Call our priority dispatch center now or request a callback to secure your same-day repair appointment near you.
@@ -2003,23 +2003,23 @@ $all_service_cities = [
     const reviewsData = [
       {
         quote: "My washing machine broke but these guys completely saved the day. The technician arrived on time, diagnosed the issue quickly, and fixed it with zero hidden fees. Reliable same-day service!",
-        author: "Shehraj Singh, Brampton"
+        author: "Shehraj Singh"
       },
       {
         quote: "Sunny was prompt, professional, and diagnosed our appliance problem accurately. Had the replacement part on the truck and finished the repair in under an hour. Highly recommend!",
-        author: "Nafisa Ali, Mississauga"
+        author: "Nafisa Ali"
       },
       {
         quote: "Outstanding same-day service! Called at 9 AM and by 12:30 PM the technician was at our home with the exact factory OEM part. Upfront pricing and very polite.",
-        author: "Emily Smith, Toronto"
+        author: "Emily Smith"
       },
       {
         quote: "Very impressed with the transparent written quote. The diagnostic fee was completely waived once they fixed the machine. Will definitely call them again.",
-        author: "Dan Silverman, Vaughan"
+        author: "Dan Silverman"
       },
       {
         quote: "Exceptional appliance repair service. Clear communication from the dispatch team and our appliance was running like brand new on the very same visit.",
-        author: "Sahibpreet Kaur, Oakville"
+        author: "Sahibpreet Kaur"
       }
     ];
     let curRevIdx = 0;

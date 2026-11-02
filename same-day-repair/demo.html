@@ -99,6 +99,11 @@
           }
         }
       }
+
+      if (isNearMe && !sVal) {
+        sVal = 'appliance';
+      }
+
       return {
         service: sVal.toLowerCase().trim(),
         city: cVal.toLowerCase().trim(),
@@ -639,11 +644,11 @@
           <!-- Right: Hero Typography & Direct CTAs -->
           <div class="lg:col-span-7 space-y-2.5 sm:space-y-5 lg:space-y-6 text-center lg:text-left">
             <div>
-              <h1 id="hero-title" class="text-2xl sm:text-4xl lg:text-5xl font-heading font-bold text-brandNavy tracking-tight uppercase leading-tight sm:leading-none">
-                APPLIANCE REPAIR
+              <h1 id="hero-title" class="text-2xl sm:text-4xl lg:text-5xl font-heading font-bold text-brandNavy tracking-tight leading-tight sm:leading-none">
+                Appliance Repair
               </h1>
-              <p id="hero-subtitle" class="text-brandOrange font-extrabold text-[12.5px] sm:text-base lg:text-lg tracking-wide uppercase mt-1.5 sm:mt-2.5 lg:mt-3.5 mb-1 sm:mb-2.5 lg:mb-3">
-                SAME-DAY REPAIR NEAR YOU
+              <p id="hero-subtitle" class="text-brandOrange font-extrabold text-[12.5px] sm:text-base lg:text-lg tracking-wide mt-1.5 sm:mt-2.5 lg:mt-3.5 mb-1 sm:mb-2.5 lg:mb-3">
+                Same-Day Repair Near You
               </p>
             </div>
 
@@ -679,7 +684,7 @@
                   </li>
                   <li class="flex items-start gap-2">
                     <span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span>
-                    <span><strong class="text-slate-900 font-bold">First-Visit Resolution:</strong> Stocked mobile vans ready to resolve issues on-site.</span>
+                    <span><strong class="text-slate-900 font-bold">First-Visit Resolution:</strong> Fully equipped technicians ready to resolve issues on-site.</span>
                   </li>
                 </ul>
               </div>
@@ -700,6 +705,12 @@
           </div>
 
         </div>
+
+        <!-- NEAR ME ACTIVE TECHNICIANS HERO STRIPE (GATED ONLY TO NEAR-ME PPC URLS) -->
+        <div id="near-me-hero-stripe" class="hidden pt-4 sm:pt-6 pb-1 text-center text-xs sm:text-[13px] text-slate-700 font-medium tracking-tight" style="display: none;">
+          <span class="font-bold text-slate-900">📍 Active Technicians Today In:</span>
+          <span> Toronto &bull; Mississauga &bull; Brampton &bull; Etobicoke &bull; Scarborough &bull; Vaughan &bull; Hamilton</span>
+        </div>
       </div>
     </section>
 
@@ -714,7 +725,7 @@
               <svg class="w-4 h-4 sm:w-5 sm:h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
             </div>
             <div class="min-w-0">
-              <span class="block font-heading font-bold text-xs sm:text-sm text-white uppercase tracking-tight leading-tight">Same-Day Service</span>
+              <span class="block font-heading font-bold text-xs sm:text-sm text-white tracking-tight leading-tight">Same-Day Service</span>
               <span class="block text-[10px] sm:text-xs text-slate-300 font-medium leading-tight mt-0.5">Prompt GTA Dispatch</span>
             </div>
           </div>
@@ -725,7 +736,7 @@
               <svg class="w-4 h-4 sm:w-5 sm:h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
             </div>
             <div class="min-w-0">
-              <span class="block font-heading font-bold text-xs sm:text-sm text-white uppercase tracking-tight leading-tight">Upfront Pricing</span>
+              <span class="block font-heading font-bold text-xs sm:text-sm text-white tracking-tight leading-tight">Upfront Pricing</span>
               <span class="block text-[10px] sm:text-xs text-slate-300 font-medium leading-tight mt-0.5">Fee Waived w/ Repair</span>
             </div>
           </div>
@@ -736,7 +747,7 @@
               <svg class="w-4 h-4 sm:w-5 sm:h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
             </div>
             <div class="min-w-0">
-              <span class="block font-heading font-bold text-xs sm:text-sm text-white uppercase tracking-tight leading-tight">Certified Techs</span>
+              <span class="block font-heading font-bold text-xs sm:text-sm text-white tracking-tight leading-tight">Certified Techs</span>
               <span class="block text-[10px] sm:text-xs text-slate-300 font-medium leading-tight mt-0.5">Licensed &amp; Insured</span>
             </div>
           </div>
@@ -747,7 +758,7 @@
               <svg class="w-4 h-4 sm:w-5 sm:h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
             </div>
             <div class="min-w-0">
-              <span class="block font-heading font-bold text-xs sm:text-sm text-white uppercase tracking-tight leading-tight">Available Daily</span>
+              <span class="block font-heading font-bold text-xs sm:text-sm text-white tracking-tight leading-tight">Available Daily</span>
               <span class="block text-[10px] sm:text-xs text-slate-300 font-medium leading-tight mt-0.5">8:00 AM – 8:00 PM</span>
             </div>
           </div>
@@ -762,10 +773,10 @@
         
         <!-- Header & Locations Subtitle Matching Reference -->
         <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-slate-900 uppercase tracking-tight">
-            SAME-DAY, RELIABLE APPLIANCE REPAIR
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-slate-900 tracking-tight">
+            Same-Day, Reliable Appliance Repair
           </h2>
-          <p class="text-xs sm:text-sm font-bold text-brandBlue uppercase tracking-wide mt-2 flex items-center justify-center gap-2 flex-wrap">
+          <p class="text-xs sm:text-sm font-bold text-brandBlue tracking-wide mt-2 flex items-center justify-center gap-2 flex-wrap">
             <span>Toronto</span>
             <span class="text-brandOrange text-[10px]">◆</span>
             <span>Mississauga</span>
@@ -789,11 +800,11 @@
               <img src="../img/service-card-refrigerator.webp?v=2" alt="Stainless steel refrigerator appliance repair" width="200" height="200" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
             </div>
             <div class="mt-2.5 sm:mt-3 text-center leading-tight min-h-[44px] flex flex-col justify-start items-center">
-              <span class="block font-heading font-extrabold text-[12px] sm:text-[13px] lg:text-[12px] xl:text-[13px] text-slate-900 uppercase tracking-tight group-hover:text-brandOrange transition-colors">
-                REFRIGERATOR
+              <span class="block font-heading font-extrabold text-[12px] sm:text-[13px] lg:text-[12px] xl:text-[13px] text-slate-900 tracking-tight group-hover:text-brandOrange transition-colors">
+                Refrigerator
               </span>
-              <span class="block font-heading font-black text-[11px] text-brandBlue uppercase tracking-wider mt-1">
-                REPAIR
+              <span class="block font-heading font-black text-[11px] text-brandBlue tracking-wider mt-1">
+                Repair
               </span>
             </div>
           </a>
@@ -804,11 +815,11 @@
               <img src="../img/service-card-stove.webp?v=2" alt="Stainless steel stove and range oven appliance repair" width="200" height="200" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
             </div>
             <div class="mt-2.5 sm:mt-3 text-center leading-tight min-h-[44px] flex flex-col justify-start items-center">
-              <span class="block font-heading font-extrabold text-[12px] sm:text-[13px] lg:text-[12px] xl:text-[13px] text-slate-900 uppercase tracking-tight group-hover:text-brandOrange transition-colors">
-                STOVE &amp; OVEN
+              <span class="block font-heading font-extrabold text-[12px] sm:text-[13px] lg:text-[12px] xl:text-[13px] text-slate-900 tracking-tight group-hover:text-brandOrange transition-colors">
+                Stove &amp; Oven
               </span>
-              <span class="block font-heading font-black text-[11px] text-brandBlue uppercase tracking-wider mt-1">
-                REPAIR
+              <span class="block font-heading font-black text-[11px] text-brandBlue tracking-wider mt-1">
+                Repair
               </span>
             </div>
           </a>
@@ -819,11 +830,11 @@
               <img src="../img/service-card-washer.webp?v=2" alt="Stainless steel front-load washing machine appliance repair" width="200" height="200" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
             </div>
             <div class="mt-2.5 sm:mt-3 text-center leading-tight min-h-[44px] flex flex-col justify-start items-center">
-              <span class="block font-heading font-extrabold text-[12px] sm:text-[13px] lg:text-[12px] xl:text-[13px] text-slate-900 uppercase tracking-tight group-hover:text-brandOrange transition-colors">
-                WASHER
+              <span class="block font-heading font-extrabold text-[12px] sm:text-[13px] lg:text-[12px] xl:text-[13px] text-slate-900 tracking-tight group-hover:text-brandOrange transition-colors">
+                Washer
               </span>
-              <span class="block font-heading font-black text-[11px] text-brandBlue uppercase tracking-wider mt-1">
-                REPAIR
+              <span class="block font-heading font-black text-[11px] text-brandBlue tracking-wider mt-1">
+                Repair
               </span>
             </div>
           </a>
@@ -834,11 +845,11 @@
               <img src="../img/service-card-dryer.webp?v=2" alt="Stainless steel front-load clothes dryer appliance repair" width="200" height="200" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
             </div>
             <div class="mt-2.5 sm:mt-3 text-center leading-tight min-h-[44px] flex flex-col justify-start items-center">
-              <span class="block font-heading font-extrabold text-[12px] sm:text-[13px] lg:text-[12px] xl:text-[13px] text-slate-900 uppercase tracking-tight group-hover:text-brandOrange transition-colors">
-                DRYER
+              <span class="block font-heading font-extrabold text-[12px] sm:text-[13px] lg:text-[12px] xl:text-[13px] text-slate-900 tracking-tight group-hover:text-brandOrange transition-colors">
+                Dryer
               </span>
-              <span class="block font-heading font-black text-[11px] text-brandBlue uppercase tracking-wider mt-1">
-                REPAIR
+              <span class="block font-heading font-black text-[11px] text-brandBlue tracking-wider mt-1">
+                Repair
               </span>
             </div>
           </a>
@@ -849,11 +860,11 @@
               <img src="../img/service-card-dishwasher.webp?v=2" alt="Stainless steel built-in dishwasher appliance repair" width="200" height="200" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
             </div>
             <div class="mt-2.5 sm:mt-3 text-center leading-tight min-h-[44px] flex flex-col justify-start items-center">
-              <span class="block font-heading font-extrabold text-[12px] sm:text-[13px] lg:text-[12px] xl:text-[13px] text-slate-900 uppercase tracking-tight group-hover:text-brandOrange transition-colors">
-                DISHWASHER
+              <span class="block font-heading font-extrabold text-[12px] sm:text-[13px] lg:text-[12px] xl:text-[13px] text-slate-900 tracking-tight group-hover:text-brandOrange transition-colors">
+                Dishwasher
               </span>
-              <span class="block font-heading font-black text-[11px] text-brandBlue uppercase tracking-wider mt-1">
-                REPAIR
+              <span class="block font-heading font-black text-[11px] text-brandBlue tracking-wider mt-1">
+                Repair
               </span>
             </div>
           </a>
@@ -864,11 +875,11 @@
               <img src="../img/service-card-microwave.webp?v=2" alt="Stainless steel over-the-range microwave appliance repair" width="200" height="200" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
             </div>
             <div class="mt-2.5 sm:mt-3 text-center leading-tight min-h-[44px] flex flex-col justify-start items-center">
-              <span class="block font-heading font-extrabold text-[12px] sm:text-[13px] lg:text-[12px] xl:text-[13px] text-slate-900 uppercase tracking-tight group-hover:text-brandOrange transition-colors">
-                MICROWAVE
+              <span class="block font-heading font-extrabold text-[12px] sm:text-[13px] lg:text-[12px] xl:text-[13px] text-slate-900 tracking-tight group-hover:text-brandOrange transition-colors">
+                Microwave
               </span>
-              <span class="block font-heading font-black text-[11px] text-brandBlue uppercase tracking-wider mt-1">
-                REPAIR
+              <span class="block font-heading font-black text-[11px] text-brandBlue tracking-wider mt-1">
+                Repair
               </span>
             </div>
           </a>
@@ -885,8 +896,8 @@
           <!-- Left Card: Common Appliance Problems -->
           <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
             <div>
-              <h3 class="text-sm sm:text-base font-heading font-bold text-slate-800 uppercase tracking-wide mb-4 pb-2 border-b border-slate-100 flex items-center justify-between">
-                <span>COMMON PROBLEMS ACROSS ALL 6 APPLIANCES</span>
+              <h3 class="text-sm sm:text-base font-heading font-bold text-slate-800 tracking-wide mb-4 pb-2 border-b border-slate-100 flex items-center justify-between">
+                <span>Common Problems Across All 6 Appliances</span>
                 <span class="text-xs text-brandOrange font-bold">Diagnosed Daily</span>
               </h3>
               <ul class="space-y-3.5 text-xs sm:text-sm text-slate-700 font-medium">
@@ -926,8 +937,8 @@
           <!-- Right Card: Types of Appliance We Repair -->
           <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
             <div>
-              <h3 class="text-sm sm:text-base font-heading font-bold text-slate-800 uppercase tracking-wide mb-4 pb-2 border-b border-slate-100 flex items-center justify-between">
-                <span>ALL 6 MAJOR APPLIANCES WE REPAIR</span>
+              <h3 class="text-sm sm:text-base font-heading font-bold text-slate-800 tracking-wide mb-4 pb-2 border-b border-slate-100 flex items-center justify-between">
+                <span>All 6 Major Appliances We Repair</span>
                 <span class="text-xs text-brandBlue font-bold">All Makes</span>
               </h3>
               <ul class="space-y-3.5 text-xs sm:text-sm text-slate-700 font-medium">
@@ -973,8 +984,8 @@
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
 
         <div class="text-center mb-12">
-          <h2 class="text-xl sm:text-2xl lg:text-3xl font-heading font-bold text-slate-900 uppercase tracking-tight mb-2">
-            CHOOSE APPLIANCE REPAIR KNIGHTS
+          <h2 class="text-xl sm:text-2xl lg:text-3xl font-heading font-bold text-slate-900 tracking-tight mb-2">
+            Choose Appliance Repair Knights
           </h2>
           <p class="text-slate-600 text-xs sm:text-sm max-w-xl mx-auto font-medium">
             Quality &amp; Reliable Services at Competitive Rates Near You
@@ -993,7 +1004,7 @@
                 <svg class="w-6 h-6 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               </div>
               <div>
-                <h3 class="text-sm font-heading font-bold text-slate-900 uppercase tracking-wide mb-1">TIME</h3>
+                <h3 class="text-sm font-heading font-bold text-slate-900 tracking-wide mb-1">Time</h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
                   Same-day rapid dispatch across Toronto. Our local technicians arrive with stocked service vehicles to diagnose and resolve appliance issues on the first visit.
                 </p>
@@ -1006,7 +1017,7 @@
                 <svg class="w-6 h-6 text-brandBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
               </div>
               <div>
-                <h3 class="text-sm font-heading font-bold text-slate-900 uppercase tracking-wide mb-1">QUALITY</h3>
+                <h3 class="text-sm font-heading font-bold text-slate-900 tracking-wide mb-1">Quality</h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
                   Licensed and certified local technicians using genuine quality parts. Every repair is backed by our comprehensive written warranty on parts and labour.
                 </p>
@@ -1019,7 +1030,7 @@
                 <svg class="w-6 h-6 text-brandNavy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               </div>
               <div>
-                <h3 class="text-sm font-heading font-bold text-slate-900 uppercase tracking-wide mb-1">PRICE</h3>
+                <h3 class="text-sm font-heading font-bold text-slate-900 tracking-wide mb-1">Price</h3>
                 <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
                   Transparent, upfront written quotes before any repair begins. Our diagnostic service call fee is completely waived when you proceed with the repair.
                 </p>
@@ -1088,8 +1099,8 @@
     <section class="py-14 sm:py-20 bg-white border-b border-brandBorder" id="reviews">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
 
-        <h2 class="text-xl sm:text-2xl font-heading font-bold text-slate-900 uppercase tracking-tight mb-2">
-          CUSTOMER REVIEWS
+        <h2 class="text-xl sm:text-2xl font-heading font-bold text-slate-900 tracking-tight mb-2">
+          Customer Reviews
         </h2>
         <p class="text-slate-600 text-xs sm:text-sm max-w-md mx-auto mb-4 font-medium">
           What Our Local Homeowners Say Near You
@@ -1116,7 +1127,7 @@
             "My washing machine broke but these guys completely saved the day. The technician arrived on time, diagnosed the issue quickly, and fixed it with zero hidden fees. Reliable same-day service!"
           </p>
           <div class="text-xs font-heading font-bold text-brandDarkBlue" id="review-author">
-            — Shehraj Singh, Brampton
+            — Shehraj Singh
           </div>
 
           <!-- Subtle Prev / Next Navigation -->
@@ -1138,8 +1149,8 @@
     <section class="py-12 sm:py-16 bg-slate-50 border-b border-brandBorder" id="brands">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
 
-        <h2 class="text-xl sm:text-2xl font-heading font-bold text-slate-900 uppercase tracking-tight mb-2">
-          ALL 6 APPLIANCE BRANDS WE REPAIR
+        <h2 class="text-xl sm:text-2xl font-heading font-bold text-slate-900 tracking-tight mb-2">
+          All 6 Appliance Brands We Repair
         </h2>
         <p class="text-slate-600 text-xs sm:text-sm max-w-md mx-auto mb-8 font-medium">
           We Service All Major Brands With Genuine Quality Parts
@@ -1278,8 +1289,8 @@
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
 
         <div class="text-center mb-12">
-          <h2 class="text-xl sm:text-2xl font-heading font-bold text-slate-900 uppercase tracking-tight mb-2">
-            SERVICE AREA &amp; COVERAGE RADIUS
+          <h2 class="text-xl sm:text-2xl font-heading font-bold text-slate-900 tracking-tight mb-2">
+            Service Area &amp; Coverage Radius
           </h2>
           <p class="text-slate-600 text-xs sm:text-sm max-w-xl mx-auto font-medium">
             Local service technicians stationed across Southern Ontario for fast on-site dispatch.
@@ -1320,8 +1331,7 @@
             </div>
 
             <div class="mt-6 pt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
-              <span class="text-xs text-slate-600 font-medium">Don't see your city? We cover all surrounding GTA towns
-                within a 50km radius!</span>
+              <span class="text-xs text-slate-600 font-medium">Don't see your city? Call us to check availability in your area.</span>
               <a href="tel:9057178905" onclick="trackGtmCall('service_area_check_city')"
                 class="gtm-ppc-call inline-flex items-center gap-1.5 bg-brandOrange hover:bg-brandOrangeHover text-white font-bold px-3.5 py-1.5 rounded-lg text-xs tracking-wide transition-all shadow-xs shrink-0 active:scale-95">
                 <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
@@ -1378,8 +1388,8 @@
     <!-- 10. BOOK YOUR REPAIR TODAY (FINAL PRE-FOOTER CTA MATCHING REFERENCE) -->
     <section class="py-14 sm:py-20 bg-white text-center border-b border-brandBorder" id="final-cta">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 space-y-4">
-        <h2 class="text-xl sm:text-2xl font-heading font-bold text-slate-900 uppercase tracking-tight">
-          BOOK YOUR SAME-DAY APPLIANCE REPAIR TODAY
+        <h2 class="text-xl sm:text-2xl font-heading font-bold text-slate-900 tracking-tight">
+          Book Your Same-Day Appliance Repair Today
         </h2>
         <p class="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-xl mx-auto">
           Don't wait while laundry piles up or broken appliances cause disruption. Call our priority dispatch center now or request a callback to secure your same-day repair appointment near you.
@@ -1470,7 +1480,7 @@
               <span class="text-slate-400">8:00 AM – 8:00 PM</span>
             </div>
             <div class="text-[11px] text-slate-400">
-              Same-day service vans ready for immediate Toronto &amp; GTA dispatch.
+              Certified technicians ready for prompt local dispatch.
             </div>
           </div>
 
@@ -1843,23 +1853,23 @@
     const reviewsData = [
       {
         quote: "My washing machine broke but these guys completely saved the day. The technician arrived on time, diagnosed the issue quickly, and fixed it with zero hidden fees. Reliable same-day service!",
-        author: "Shehraj Singh, Brampton"
+        author: "Shehraj Singh"
       },
       {
         quote: "Sunny was prompt, professional, and diagnosed our appliance problem accurately. Had the replacement part on the truck and finished the repair in under an hour. Highly recommend!",
-        author: "Nafisa Ali, Mississauga"
+        author: "Nafisa Ali"
       },
       {
         quote: "Outstanding same-day service! Called at 9 AM and by 12:30 PM the technician was at our home with the exact replacement part. Upfront pricing and very polite.",
-        author: "Emily Smith, Toronto"
+        author: "Emily Smith"
       },
       {
         quote: "Very impressed with the transparent written quote. The diagnostic fee was completely waived once they fixed the machine. Will definitely call them again.",
-        author: "Dan Silverman, Vaughan"
+        author: "Dan Silverman"
       },
       {
         quote: "Exceptional appliance repair service. Clear communication from the dispatch team and our appliance was running like brand new on the very same visit.",
-        author: "Sahibpreet Kaur, Oakville"
+        author: "Sahibpreet Kaur"
       }
     ];
     let curRevIdx = 0;
@@ -1975,12 +1985,12 @@
       appliance: {
         key: 'appliance',
         name: 'Appliance',
-        titleName: 'APPLIANCE',
+        titleName: 'Appliance',
         serviceLabel: 'Same-Day Repair for All 6 Major Household & Kitchen Appliances',
-        typesTitle: 'ALL 6 MAJOR APPLIANCES WE REPAIR',
-        problemsTitle: 'COMMON PROBLEMS ACROSS ALL 6 APPLIANCES',
+        typesTitle: 'All 6 Major Appliances We Repair',
+        problemsTitle: 'Common Problems Across All 6 Appliances',
         heroImg: '../img/washing-machine-repair-service.webp',
-        desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All 6 Major Appliances:</strong> Fridges, washers, dryers, dishwashers, stoves &amp; microwaves.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Samsung, LG, Whirlpool, Bosch, GE, Maytag &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">First-Visit Resolution:</strong> Stocked mobile vans ready to resolve issues on-site.</span></li></ul>',
+        desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All 6 Major Appliances:</strong> Fridges, washers, dryers, dishwashers, stoves &amp; microwaves.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Samsung, LG, Whirlpool, Bosch, GE, Maytag &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">First-Visit Resolution:</strong> Fully equipped technicians ready to resolve issues on-site.</span></li></ul>',
         problems: [
           'Refrigerator Not Cooling / Freezing Food',
           'Washing Machine Leaking or Not Draining',
@@ -2001,10 +2011,10 @@
       fridge: {
         key: 'fridge',
         name: 'Refrigerator',
-        titleName: 'REFRIGERATOR',
+        titleName: 'Refrigerator',
         serviceLabel: 'Refrigerator Not Cooling, Leaking or Ice Maker Broken?',
-        typesTitle: 'TYPES OF REFRIGERATORS WE REPAIR',
-        problemsTitle: 'COMMON REFRIGERATOR PROBLEMS',
+        typesTitle: 'Types of Refrigerators We Repair',
+        problemsTitle: 'Common Refrigerator Problems',
         heroImg: '../img/refrigerator-repair-in-a-modern-kitchen.webp',
         desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Refrigerator Types:</strong> French door, side-by-side, bottom freezer &amp; built-ins.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Samsung, LG, Whirlpool, Bosch, KitchenAid &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">Cooling &amp; Leak Repairs:</strong> Thermostats, compressors, fans &amp; ice makers fixed on-site.</span></li></ul>',
         ctaText: 'Book Your Refrigerator Repair Today',
@@ -2028,10 +2038,10 @@
       washer: {
         key: 'washer',
         name: 'Washing Machine',
-        titleName: 'WASHING MACHINE',
+        titleName: 'Washing Machine',
         serviceLabel: 'Washer Leaking, Not Draining or Won\'t Spin?',
-        typesTitle: 'TYPES OF WASHING MACHINES WE REPAIR',
-        problemsTitle: 'COMMON WASHING MACHINE PROBLEMS',
+        typesTitle: 'Types of Washing Machines We Repair',
+        problemsTitle: 'Common Washing Machine Problems',
         heroImg: '../img/washing-machine-repair-in-progress.webp',
         desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Washer Types:</strong> Front-load, top-load, high-efficiency &amp; stacked laundry units.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Samsung, LG, Whirlpool, Maytag, Bosch &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">Drain &amp; Spin Repairs:</strong> Pumps, drive belts, door locks &amp; error codes resolved on-site.</span></li></ul>',
         ctaText: 'Book Your Washer Repair Today',
@@ -2055,10 +2065,10 @@
       dryer: {
         key: 'dryer',
         name: 'Clothes Dryer',
-        titleName: 'CLOTHES DRYER',
+        titleName: 'Dryer',
         serviceLabel: 'Dryer Not Heating or Taking Too Long to Dry?',
-        typesTitle: 'TYPES OF DRYERS WE REPAIR',
-        problemsTitle: 'COMMON CLOTHES DRYER PROBLEMS',
+        typesTitle: 'Types of Dryers We Repair',
+        problemsTitle: 'Common Clothes Dryer Problems',
         heroImg: '../img/clothes-dryer-repair-in-a-modern-laundry.webp',
         desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Dryer Types:</strong> Vented, condenser, heat pump &amp; stacked matching units.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Whirlpool, Samsung, LG, Maytag, Bosch &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">Heating &amp; Motor Repairs:</strong> Thermal fuses, heating elements, belts &amp; rollers fixed on-site.</span></li></ul>',
         ctaText: 'Schedule Dryer Repair',
@@ -2082,10 +2092,10 @@
       dishwasher: {
         key: 'dishwasher',
         name: 'Dishwasher',
-        titleName: 'DISHWASHER',
+        titleName: 'Dishwasher',
         serviceLabel: 'Dishwasher Not Draining, Cleaning or Leaking?',
-        typesTitle: 'TYPES OF DISHWASHERS WE REPAIR',
-        problemsTitle: 'COMMON DISHWASHER PROBLEMS',
+        typesTitle: 'Types of Dishwashers We Repair',
+        problemsTitle: 'Common Dishwasher Problems',
         heroImg: '../img/dishwasher-repair-in-a-bright-kitchen.webp',
         desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Dishwasher Types:</strong> Built-in 24-inch, compact 18-inch &amp; panel-ready units.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Bosch, Whirlpool, KitchenAid, Samsung, Miele &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">Drain &amp; Spray Repairs:</strong> Pumps, valves, spray arms &amp; door latch switches fixed on-site.</span></li></ul>',
         ctaText: 'Book Dishwasher Repair',
@@ -2109,10 +2119,10 @@
       stove: {
         key: 'stove',
         name: 'Oven & Stove',
-        titleName: 'OVEN & STOVE',
+        titleName: 'Oven & Stove',
         serviceLabel: 'Oven Not Heating or Stove Burner Not Working?',
-        typesTitle: 'TYPES OF OVENS & STOVES WE REPAIR',
-        problemsTitle: 'COMMON OVEN & STOVE PROBLEMS',
+        typesTitle: 'Types of Ovens & Stoves We Repair',
+        problemsTitle: 'Common Oven & Stove Problems',
         heroImg: '../img/technician-repairing-a-modern-oven.webp',
         desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Cooktop &amp; Oven Types:</strong> Electric ranges, smooth cooktops, wall ovens &amp; induction units.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Samsung, LG, Whirlpool, Bosch, KitchenAid &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">Heat &amp; Sensor Repairs:</strong> Surface elements, bake elements, thermostats &amp; igniters fixed on-site.</span></li></ul>',
         ctaText: 'Book Your Oven & Stove Repair Today',
@@ -2136,10 +2146,10 @@
       microwave: {
         key: 'microwave',
         name: 'Microwave',
-        titleName: 'MICROWAVE',
+        titleName: 'Microwave',
         serviceLabel: 'Microwave Not Heating Food or Sparking Inside?',
-        typesTitle: 'TYPES OF MICROWAVES WE REPAIR',
-        problemsTitle: 'COMMON MICROWAVE PROBLEMS',
+        typesTitle: 'Types of Microwaves We Repair',
+        problemsTitle: 'Common Microwave Problems',
         heroImg: '../img/microwave-repair.webp',
         desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Microwave Types:</strong> Over-the-range (OTR), built-in drawers &amp; countertop units.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Panasonic, Samsung, LG, Whirlpool, GE &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">Heat &amp; Electrical Repairs:</strong> Magnetrons, door switches, capacitors &amp; turntables fixed on-site.</span></li></ul>',
         ctaText: 'Book Microwave Repair',
@@ -2202,7 +2212,11 @@
       else if (['microwave'].includes(serviceParam)) matchedService = DYNAMIC_SERVICES.microwave;
       else if (['appliance', 'all', 'repair'].includes(serviceParam)) matchedService = DYNAMIC_SERVICES.appliance;
 
-      const cityName = cityParam ? (cityParam.charAt(0).toUpperCase() + cityParam.slice(1)) : '';
+      const CITY_NAMES = {
+        'richmond-hill': 'Richmond Hill',
+        'north-york': 'North York'
+      };
+      const cityName = CITY_NAMES[cityParam] || (cityParam ? cityParam.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') : '');
       const brandPrefix = brandName ? `${brandName} ` : '';
 
       if (matchedService || brandName || params.isNearMe) {
@@ -2216,23 +2230,24 @@
         
         const h1 = document.querySelector('h1');
         if (h1) {
-          h1.textContent = brandName ? `${brandName.toUpperCase()} ${srvTitle} REPAIR` : `${srvTitle} REPAIR`;
+          if (params.isNearMe && !cityName) {
+            h1.textContent = brandName ? `Same-Day ${brandName} ${srvTitle} Repair Near You` : `Same-Day ${srvTitle} Repair Near You`;
+          } else if (cityName) {
+            h1.textContent = brandName ? `Same-Day ${brandName} ${srvTitle} Repair in ${cityName}` : `Same-Day ${srvTitle} Repair in ${cityName}`;
+          } else {
+            h1.textContent = brandName ? `Same-Day ${brandName} ${srvTitle} Repair` : `Same-Day ${srvTitle} Repair`;
+          }
         }
 
         const subTitle = document.querySelector('#hero-subtitle, p.text-brandOrange');
         if (subTitle) {
-          let sWord = '';
-          if (matchedService) {
-            if (matchedService.key === 'washer') sWord = 'WASHING MACHINE ';
-            else if (matchedService.key === 'fridge') sWord = 'REFRIGERATOR ';
-            else if (matchedService.key === 'dryer') sWord = 'DRYER ';
-            else if (matchedService.key === 'dishwasher') sWord = 'DISHWASHER ';
-            else if (matchedService.key === 'stove') sWord = 'STOVE & OVEN ';
-            else if (matchedService.key === 'microwave') sWord = 'MICROWAVE ';
+          if (params.isNearMe && !cityName) {
+            subTitle.textContent = 'Fast Local Dispatch • Licensed Technicians at Your Doorstep Today';
+          } else if (cityName) {
+            subTitle.textContent = `Certified Technicians in ${cityName} • Same-Day Dispatch • Fee Waived w/ Repair`;
+          } else {
+            subTitle.textContent = 'Certified Local Technicians • Prompt Dispatch • Fee Waived w/ Repair';
           }
-          const locationText = cityName ? `IN ${cityName.toUpperCase()}` : 'NEAR YOU';
-          const brandUpper = brandName ? `${brandName.toUpperCase()} ` : '';
-          subTitle.textContent = `SAME-DAY ${brandUpper}${sWord}REPAIR ${locationText}`;
         }
 
         const heroImg = document.querySelector('#about-service img');
@@ -2280,16 +2295,29 @@
         const brandsH2 = document.querySelector('#brands h2');
         if (brandsH2) {
           brandsH2.textContent = brandName 
-            ? `${brandName.toUpperCase()} ${matchedService ? matchedService.titleName : 'APPLIANCE'} REPAIR SPECIALISTS`
-            : `${matchedService ? matchedService.titleName : 'APPLIANCE'} BRANDS`;
+            ? `${brandName} ${matchedService ? matchedService.titleName : 'Appliance'} Repair Specialists`
+            : `${matchedService ? matchedService.titleName : 'Appliance'} Brands We Repair`;
         }
 
         const finalH2 = document.querySelector('#final-cta h2');
         if (finalH2) {
-          const brandFinal = brandName ? `${brandName.toUpperCase()} ` : '';
-          finalH2.textContent = matchedService && matchedService.ctaText 
-            ? matchedService.ctaText.toUpperCase() 
-            : `BOOK YOUR ${brandFinal}${matchedService ? matchedService.titleName : 'APPLIANCE'} REPAIR TODAY`;
+          const brandFinal = brandName ? `${brandName} ` : '';
+          if (params.isNearMe && !cityName) {
+            finalH2.textContent = `Book Your Same-Day ${brandFinal}${matchedService ? matchedService.titleName : 'Appliance'} Repair Near You Today`;
+          } else if (cityName) {
+            finalH2.textContent = `Book Your Same-Day ${brandFinal}${matchedService ? matchedService.titleName : 'Appliance'} Repair in ${cityName} Today`;
+          } else {
+            finalH2.textContent = `Book Your Same-Day ${brandFinal}${matchedService ? matchedService.titleName : 'Appliance'} Repair Today`;
+          }
+        }
+
+        // Unhide Hero Active Technicians Stripe for Service-Only pages
+        if (!cityName && !params.isNearMe && matchedService) {
+          const heroStripe = document.getElementById('near-me-hero-stripe');
+          if (heroStripe) {
+            heroStripe.classList.remove('hidden');
+            heroStripe.style.display = 'block';
+          }
         }
 
         const modalAppliance = document.getElementById('modal-appliance');
@@ -2331,7 +2359,7 @@
         const srvTxt = matchedService ? matchedService.name : 'Appliance';
         const locTxt = cityName 
           ? `Across ${cityName} & GTA` 
-          : (params.isNearMe ? 'Stationed Near You' : 'Across Toronto & GTA');
+          : (params.isNearMe ? '– Fast Local Dispatch Near You' : 'Across Toronto & GTA');
         topAnnounce.textContent = `Same-Day ${brandTxt}${srvTxt} Repair ${locTxt}`;
       }
 
@@ -2354,6 +2382,140 @@
             opt.selected = true;
             modalCity.appendChild(opt);
           }
+        }
+
+        // Dynamic Hero Bottom Stripe for City URLs
+        const heroStripe = document.getElementById('near-me-hero-stripe');
+        if (heroStripe) {
+          heroStripe.innerHTML = `<span class="font-bold text-slate-900">📍 Active Mobile Technicians Today:</span><span> Dispatched Across ${cityName} &amp; Surrounding Neighborhoods</span>`;
+          heroStripe.classList.remove('hidden');
+          heroStripe.style.display = 'block';
+        }
+
+        // Hero Section sub-heading for general repair in city
+        if (!matchedService || matchedService.key === 'appliance') {
+          const heroH2 = document.querySelector('#about-service h2');
+          if (heroH2) heroH2.textContent = `Same-Day Repair for All Major Household Appliances in ${cityName}`;
+        }
+
+        // Mid-page direct dispatch call banner subtext
+        const ctaSubtext = document.querySelector('.ppc-cta-subtext');
+        if (ctaSubtext) {
+          ctaSubtext.textContent = `Priority local arrivals across ${cityName} • Diagnostic fee waived with repair`;
+        }
+
+        // Section 4: Why Choose Us
+        const whyChooseSub = document.querySelector('#why-choose-us p.text-slate-600');
+        if (whyChooseSub) {
+          whyChooseSub.textContent = `Why ${cityName} Homeowners Trust Appliance Repair Knights`;
+        }
+        const timeItemDesc = document.querySelector('#why-choose-us .space-y-6 > div:first-child p');
+        if (timeItemDesc) {
+          timeItemDesc.textContent = `Same-day rapid dispatch directly across ${cityName}. Our local technicians arrive with stocked service vehicles to resolve appliance issues on the first visit.`;
+        }
+
+        // Section 6: Customer Reviews (General local trust without faking individual review cards)
+        const reviewsH2 = document.querySelector('#reviews h2');
+        if (reviewsH2) {
+          reviewsH2.textContent = `What Local Homeowners Say in ${cityName} & GTA`;
+        }
+        const reviewsSub = document.querySelector('#reviews p.text-slate-600');
+        if (reviewsSub) {
+          reviewsSub.textContent = `Verified 5-Star Reviews from Local Residents`;
+        }
+
+        // Section 5: Service Area & Coverage
+        const areasH2 = document.querySelector('#service-areas h2');
+        if (areasH2) {
+          areasH2.textContent = `Our ${cityName} Coverage & Dispatch Zones`;
+        }
+        const areasSub = document.querySelector('#service-areas p.text-slate-600');
+        if (areasSub) {
+          areasSub.textContent = `Prompt on-site service across ${cityName} and surrounding communities.`;
+        }
+        const contactH3 = document.querySelector('#service-areas .lg\\:col-span-5 h3');
+        if (contactH3) {
+          contactH3.textContent = `Contact Your Local ${cityName} Dispatch Team Today`;
+        }
+        const contactSub = document.querySelector('#service-areas .lg\\:col-span-5 p.text-xs');
+        if (contactSub) {
+          contactSub.textContent = `Connect directly with our local appliance team stationed in ${cityName} to confirm same-day schedule availability.`;
+        }
+
+        // Section 10: Final Pre-Footer CTA description
+        const finalDesc = document.querySelector('#final-cta p.text-slate-600');
+        if (finalDesc) {
+          finalDesc.textContent = `Don't wait while broken appliances disrupt your home. Call our ${cityName} priority dispatch team now or request a callback to secure your same-day repair appointment.`;
+        }
+      }
+
+      // -----------------------------------------------------------------------
+      // PPC "Near Me" Headings & Dispatch Validation (Applied ONLY on Near-Me URLs)
+      // -----------------------------------------------------------------------
+      if (params.isNearMe && !cityName) {
+        // Dynamic Hero Bottom Stripe: Active Technicians Today In (Near Me Only)
+        const heroStripe = document.getElementById('near-me-hero-stripe');
+        if (heroStripe) {
+          heroStripe.classList.remove('hidden');
+          heroStripe.style.display = 'block';
+        }
+
+        // Hero Section: Sub-heading for general repair near me
+        if (!matchedService || matchedService.key === 'appliance') {
+          const heroH2 = document.querySelector('#about-service h2');
+          if (heroH2) heroH2.textContent = 'Same-Day Repair for All Major Household Appliances Near You';
+          const sixH2 = document.querySelector('#all-six-services h2');
+          if (sixH2) sixH2.textContent = 'Same-Day Appliance Services Available Near You';
+        }
+
+        // Mid-page direct dispatch call banner subtext
+        const ctaSubtext = document.querySelector('.ppc-cta-subtext');
+        if (ctaSubtext) {
+          ctaSubtext.textContent = 'Priority local arrivals near you • Diagnostic fee waived with repair';
+        }
+
+        // Section 4: Why Choose Us (Heading subtext & Time feature item)
+        const whyChooseSub = document.querySelector('#why-choose-us p.text-slate-600');
+        if (whyChooseSub) {
+          whyChooseSub.textContent = 'Certified Local Technicians Stationed Near You • Rapid Same-Day Dispatch';
+        }
+        const timeItemDesc = document.querySelector('#why-choose-us .space-y-6 > div:first-child p');
+        if (timeItemDesc) {
+          timeItemDesc.textContent = 'Same-day rapid dispatch directly to your area. Our certified local technicians arrive with fully stocked service vehicles to diagnose and resolve appliance issues on the first visit.';
+        }
+
+        // Section 6: Customer Reviews (Hyper-local trust & social proof)
+        const reviewsH2 = document.querySelector('#reviews h2');
+        if (reviewsH2) {
+          reviewsH2.textContent = 'What Your Neighbors Say About Us Near You';
+        }
+        const reviewsSub = document.querySelector('#reviews p.text-slate-600');
+        if (reviewsSub) {
+          reviewsSub.textContent = 'Verified 5-Star Local Reviews • Real Customers Near You';
+        }
+
+        // Section 5: Service Area & Coverage
+        const areasH2 = document.querySelector('#service-areas h2');
+        if (areasH2) {
+          areasH2.textContent = 'Serving Your Local Neighborhood & Surrounding Areas';
+        }
+        const areasSub = document.querySelector('#service-areas p.text-slate-600');
+        if (areasSub) {
+          areasSub.textContent = 'Certified local technicians stationed near you for fast, same-day emergency dispatch.';
+        }
+        const contactH3 = document.querySelector('#service-areas .lg\\:col-span-5 h3');
+        if (contactH3) {
+          contactH3.textContent = 'Contact Your Local Appliance Dispatch Today';
+        }
+        const contactSub = document.querySelector('#service-areas .lg\\:col-span-5 p.text-xs');
+        if (contactSub) {
+          contactSub.textContent = 'Connect directly with our local appliance team stationed near you to confirm immediate schedule availability.';
+        }
+
+        // Section 10: Final Pre-Footer CTA description
+        const finalDesc = document.querySelector('#final-cta p.text-slate-600');
+        if (finalDesc) {
+          finalDesc.textContent = "Don't wait while broken appliances disrupt your home. Call our priority local dispatch team now or request a callback to secure your same-day repair appointment near you.";
         }
       }
     }
