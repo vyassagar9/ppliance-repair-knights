@@ -13,3 +13,8 @@ Thumbs.db
 # IDE / Editor files
 .vscode/
 .idea/
+
+# Temporary / backup files
+*.bak
+*.backup
+leads.log

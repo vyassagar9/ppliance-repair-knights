@@ -1815,7 +1815,16 @@
         utm_campaign: utmCampaign
       };
 
-      fetch('send-lead.php', {
+      const leadEndpoint = (function() {
+        const p = window.location.pathname;
+        const idx = p.indexOf('/same-day-repair');
+        if (idx !== -1) {
+          return p.substring(0, idx) + '/same-day-repair/send-lead.php';
+        }
+        return 'send-lead.php';
+      })();
+
+      fetch(leadEndpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)

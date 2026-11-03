@@ -27,6 +27,10 @@ $utm_source   = isset($data['utm_source']) ? trim($data['utm_source']) : '';
 $utm_medium   = isset($data['utm_medium']) ? trim($data['utm_medium']) : '';
 $utm_campaign = isset($data['utm_campaign']) ? trim($data['utm_campaign']) : '';
 
+// Explicitly tag PPC source for Google Sheets & reporting
+$data['lead_source']     = 'Google Ads (PPC)';
+$data['traffic_channel'] = 'PPC';
+
 if (empty($name) || empty($phone)) {
     http_response_code(400);
     echo json_encode(["status" => "error", "message" => "Name and Phone are required."]);
@@ -55,7 +59,7 @@ if (!empty($googleScriptUrl)) {
 // 2. Send Email via Hostinger PHP mail()
 $to       = "appliancerepairknights@gmail.com";
 $cc       = "vyassagar9@gmail.com";
-$subject  = "⚡ NEW LEAD: " . ($appliance ?: 'Appliance') . " Repair - " . $name . " (" . ($city ?: 'GTA') . ")";
+$subject  = "🎯 [PPC ADS LEAD] " . ($appliance ?: 'Appliance') . " Repair - " . $name . " (" . ($city ?: 'GTA') . ")";
 
 $headers  = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
@@ -71,16 +75,19 @@ $body = '
   <style>
     body { font-family: Arial, sans-serif; background-color: #f8fafc; margin: 0; padding: 20px; }
     .card { background-color: #ffffff; max-width: 600px; margin: 0 auto; border-radius: 12px; padding: 24px; border: 1px solid #e2e8f0; }
-    .header { color: #0F4C81; border-bottom: 2px solid #FF6B00; padding-bottom: 12px; margin-bottom: 20px; }
+    .header { color: #DC2626; border-bottom: 2px solid #DC2626; padding-bottom: 12px; margin-bottom: 20px; }
+    .badge { display: inline-block; background-color: #FEE2E2; color: #991B1B; font-size: 12px; font-weight: bold; padding: 4px 8px; border-radius: 6px; margin-bottom: 12px; }
     .field { padding: 10px 0; border-bottom: 1px solid #f1f5f9; display: flex; }
     .label { font-weight: bold; width: 140px; color: #475569; }
     .val { color: #0f172a; font-weight: 600; }
-    .highlight { color: #FF6B00; font-size: 16px; font-weight: bold; }
+    .highlight { color: #DC2626; font-size: 16px; font-weight: bold; }
   </style>
 </head>
 <body>
   <div class="card">
-    <h2 class="header">⚡ New Lead Dispatch Request</h2>
+    <span class="badge">PAID CAMPAIGN (GOOGLE ADS)</span>
+    <h2 class="header">🎯 PPC Landing Page Lead</h2>
+    <div class="field"><span class="label">Lead Source:</span><span class="val" style="color: #DC2626; font-weight: bold;">Google Ads (PPC Landing Page)</span></div>
     <div class="field"><span class="label">Full Name:</span><span class="val">' . htmlspecialchars($name) . '</span></div>
     <div class="field"><span class="label">Phone:</span><span class="val highlight"><a href="tel:' . preg_replace('/[^0-9+]/', '', $phone) . '">' . htmlspecialchars($phone) . '</a></span></div>
     <div class="field"><span class="label">Email:</span><span class="val">' . htmlspecialchars($email ?: 'N/A') . '</span></div>

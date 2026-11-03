@@ -78,14 +78,16 @@ $page = !empty($data['page']) ? trim($data['page']) : 'site-form';
 $form_type = !empty($data['form_type']) ? trim($data['form_type']) : 'quote';
 
 // Standardize data array before forwarding
-$data['name']      = $name;
-$data['phone']     = $phone;
-$data['email']     = $email;
-$data['city']      = $city;
-$data['appliance'] = $appliance;
-$data['message']   = $message;
-$data['page']      = $page;
-$data['form_type'] = $form_type;
+$data['name']            = $name;
+$data['phone']           = $phone;
+$data['email']           = $email;
+$data['city']            = $city;
+$data['appliance']       = $appliance;
+$data['message']         = $message;
+$data['page']            = $page;
+$data['form_type']       = $form_type;
+$data['lead_source']     = 'Organic Website';
+$data['traffic_channel'] = 'Organic/Direct';
 
 if (empty($name) || empty($phone)) {
     http_response_code(400);
@@ -115,7 +117,7 @@ if (!empty($googleScriptUrl)) {
 // 2. Send Email via Hostinger PHP mail()
 $to       = "appliancerepairknights@gmail.com";
 $cc       = "vyassagar9@gmail.com";
-$subject  = "⚡ NEW LEAD: " . ($appliance ?: 'Appliance') . " Repair - " . $name . " (" . ($city ?: 'GTA') . ")";
+$subject  = "🌐 [WEBSITE LEAD] " . ($appliance ?: 'Appliance') . " Repair - " . $name . " (" . ($city ?: 'GTA') . ")";
 
 $headers  = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
@@ -137,15 +139,18 @@ $body = '
     body { font-family: Arial, sans-serif; background-color: #f8fafc; margin: 0; padding: 20px; }
     .card { background-color: #ffffff; max-width: 600px; margin: 0 auto; border-radius: 12px; padding: 24px; border: 1px solid #e2e8f0; }
     .header { color: #0F4C81; border-bottom: 2px solid #FF6B00; padding-bottom: 12px; margin-bottom: 20px; }
+    .badge { display: inline-block; background-color: #DCFCE7; color: #166534; font-size: 12px; font-weight: bold; padding: 4px 8px; border-radius: 6px; margin-bottom: 12px; }
     .field { padding: 10px 0; border-bottom: 1px solid #f1f5f9; display: flex; }
     .label { font-weight: bold; width: 140px; color: #475569; }
     .val { color: #0f172a; font-weight: 600; }
-    .highlight { color: #FF6B00; font-size: 16px; font-weight: bold; }
+    .highlight { color: #0F4C81; font-size: 16px; font-weight: bold; }
   </style>
 </head>
 <body>
   <div class="card">
-    <h2 class="header">⚡ New Lead Request (' . htmlspecialchars(strtoupper($form_type)) . ')</h2>
+    <span class="badge">ORGANIC WEBSITE LEAD</span>
+    <h2 class="header">🌐 Website Inquiry (' . htmlspecialchars(strtoupper($form_type)) . ')</h2>
+    <div class="field"><span class="label">Lead Source:</span><span class="val" style="color: #16a34a; font-weight: bold;">Main Website (Organic)</span></div>
     <div class="field"><span class="label">Form Type:</span><span class="val">' . htmlspecialchars(strtoupper($form_type)) . '</span></div>
     <div class="field"><span class="label">Full Name:</span><span class="val">' . htmlspecialchars($name) . '</span></div>
     <div class="field"><span class="label">Phone:</span><span class="val highlight"><a href="tel:' . preg_replace('/[^0-9+]/', '', $phone) . '">' . htmlspecialchars($phone) . '</a></span></div>
