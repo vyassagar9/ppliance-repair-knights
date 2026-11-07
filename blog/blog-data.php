@@ -232,7 +232,7 @@ return [
       Refrigerator Problems That Are Usually Worth Repairing
     </h2>
     <p>
-      Not every refrigerator problem is a sign that the appliance is reaching the end of its life. Much like routine <a href="../services/washer-repair">washing machine drainage troubleshooting</a> or <a href="../services/dryer-repair">dryer heating repairs</a>, many refrigeration faults are isolated to a single serviceable part.
+      Not every refrigerator problem is a sign that the appliance is reaching the end of its life. Much like routine <a href="../services/washer-repair">washing machine drainage troubleshooting</a> or <a href="../services/dryer-repair">dryer heating repairs</a>, many refrigeration faults are isolated to a single serviceable part. If you are evaluating other aging household machines alongside your fridge, consult our guide on <a href="../blog/repair-or-replace-7-10-year-old-appliance" class="text-brandBlue font-semibold hover:underline">whether to repair or replace a 7–10 year old appliance in Toronto</a>.
     </p>
     <p>
       Several common issues are often worth repairing, particularly when the refrigerator itself is otherwise in good condition:
@@ -718,7 +718,7 @@ HTML
       Appliance Repair Knights serves customers across its listed service areas in Toronto and the GTA, as well as surrounding communities. If basic troubleshooting has not resolved the problem, you can <a href="https://www.appliancerepairknights.com/schedule" class="text-brandBlue font-semibold hover:underline">schedule an appliance repair appointment</a> or explore the available <a href="https://www.appliancerepairknights.com/locations" class="text-brandBlue font-semibold hover:underline">service areas</a>.
     </p>
     <p>
-      Not every appliance problem has an obvious cause. Professional diagnosis can help determine what needs attention and whether repair is appropriate.
+      Not every appliance problem has an obvious cause. Professional diagnosis can help determine what needs attention and whether repair is appropriate. For homeowners deciding whether an aging machine is still worth the investment, our practical guide on <a href="../blog/repair-or-replace-7-10-year-old-appliance" class="text-brandBlue font-semibold hover:underline">repairing vs replacing a 7–10 year old appliance in Toronto & GTA</a> explains the 50% rule and real replacement expenses.
     </p>
   </section>
 
@@ -1043,7 +1043,7 @@ HTML
       For example, clearing a blocked filter or removing a foreign object can be a very different job from replacing a failed drain pump. The exact cost should be clear after the problem has been diagnosed.
     </p>
     <p>
-      Before approving a repair, it is reasonable to ask what caused the problem, whether a replacement part is needed, what labour is included, and whether the repair comes with any applicable warranty.
+      Before approving a repair, it is reasonable to ask what caused the problem, whether a replacement part is needed, what labour is included, and whether the repair comes with any applicable warranty. If your machine is older and you are weighing the math of fixing it versus buying new, read our guide on <a href="../blog/repair-or-replace-7-10-year-old-appliance" class="text-brandBlue font-semibold hover:underline">when to repair vs replace a 7–10 year old appliance</a>.
     </p>
     <div class="bg-amber-50/80 border border-amber-200/90 rounded-2xl p-5 sm:p-6 my-4">
       <p class="text-slate-800 font-medium text-sm sm:text-base leading-relaxed">
@@ -1066,6 +1066,378 @@ HTML
     <p>
       If the issue needs professional attention, you can get <a href="../services/washer-repair" class="text-brandBlue font-semibold hover:underline">washer repair in Toronto</a> from Appliance Repair Knights.
     </p>
+  </section>
+
+</div>
+HTML
+  ],
+  'repair-or-replace-7-10-year-old-appliance' => [
+    'slug' => 'repair-or-replace-7-10-year-old-appliance',
+    'title' => 'Repair or Replace? The Real Math on a 7–10 Year Old Appliance in Toronto & GTA',
+    'meta_title' => 'Repair or Replace? The Real Math on a 7–10 Year Old Appliance | Toronto & GTA',
+    'meta_description' => 'Unsure whether to fix your 7–10 year old fridge, washer, or dryer? Learn the 50% rule, real replacement costs, and how an upfront diagnostic saves thousands.',
+    'primary_keyword' => 'repair or replace older appliance toronto',
+    'related_keywords' => 'repair or replace 7 10 year old appliance, is it worth repairing older washer, fridge repair vs replace math, appliance 50 percent rule Ontario, appliance diagnostic fee waived GTA',
+    'category' => 'Appliance Repair Tips',
+    'category_slug' => 'tips',
+    'service_link' => 'services',
+    'date_published' => '2026-11-07',
+    'date_modified' => '2026-11-07',
+    'author' => 'Appliance Repair Knights Certified Technicians',
+    'author_role' => 'Licensed Diagnostic & Field Team',
+    'read_time' => '8 min read',
+    'featured_image' => 'img/appliance-repair-knight-at-work.webp',
+    'featured_image_alt' => 'Licensed appliance repair technician evaluating an older residential appliance in a Greater Toronto Area home',
+    'featured_image_title' => 'Repair or Replace? The Real Math on an Older Household Appliance',
+    'summary' => "When a major household appliance begins acting up after seven to ten years of faithful service, homeowners face an immediate financial dilemma: spend money fixing an older machine, or shell out thousands on a brand-new replacement? In this guide, our certified GTA technicians explain the practical 50% rule, the overlooked expenses of buying new, which components are almost always worth repairing, and how an upfront diagnostic assessment removes all guesswork.",
+    'quick_answer' => "If the repair costs less than 50% of a comparable new unit, repair it. Past 10 years with repeated repairs, lean towards replacing. Targeted component repairs—like pumps, thermal cutoffs, belts, and sensors—often restore years of dependable service. With Appliance Repair Knights, your diagnostic service call fee is completely waived when you proceed with the repair.",
+    'faqs' => [
+      [
+        'q' => 'How does the 50% appliance rule work?',
+        'a' => 'The 50% rule is an industry benchmark recommended by appliance professionals: if the estimated repair cost is less than half the purchase price of a comparable new replacement, and the appliance has been generally well-maintained, repairing is the more cost-effective choice. However, if an older unit requires an extensive overhaul approaching or exceeding 50% of replacement value, buying new may be more practical.'
+      ],
+      [
+        'q' => 'Are 7–10 year old appliances worth repairing?',
+        'a' => 'Yes, in the vast majority of cases. Many 7–10 year old appliances were engineered with proven, heavy-duty mechanical drivetrains and durable internal components. When a single wear-and-tear part (such as a drain pump, valve, or heating element) fails, replacing that specific component restores the entire machine to reliable working condition for a fraction of the cost of a new purchase.'
+      ],
+      [
+        'q' => 'What hidden costs come with replacing an appliance instead of repairing it?',
+        'a' => 'Buying new involves far more than the retail price on the sales tag. Homeowners frequently encounter delivery charges, removal and environmental haul-away fees for the old unit, specialized installation fees (such as gas line hookups or dishwasher plumbing connections), and potential carpentry modifications if new dimensions do not match existing cabinetry.'
+      ],
+      [
+        'q' => 'Do you waive the diagnostic service call fee if I decide to proceed with the repair?',
+        'a' => 'Yes. At Appliance Repair Knights, our diagnostic service call fee is completely waived when you proceed with the repair. Our licensed technician thoroughly inspects the machine, identifies the root failure, and provides a transparent written quote. If you proceed, you only pay for the repair itself—with zero hidden diagnostic charges.'
+      ],
+      [
+        'q' => 'Which appliance component repairs are almost always worth fixing?',
+        'a' => 'Problems involving isolated, accessible wear components—such as washing machine drain pumps, dryer thermal fuses and heating elements, dishwasher inlet valves and door seals, or refrigerator evaporator fan motors and start relays—are highly economical to repair and restore full performance without touching the core structure.'
+      ]
+    ],
+    'content_html' => <<<HTML
+<div class="space-y-10 text-slate-700 leading-relaxed text-base sm:text-lg">
+
+  <!-- Introduction -->
+  <div class="space-y-4 text-slate-700 leading-relaxed text-base sm:text-lg">
+    <p class="text-lg sm:text-xl text-slate-800 font-normal leading-relaxed">
+      It is a familiar scenario in households across Toronto and the Greater Toronto Area: your seven-, eight-, or ten-year-old washing machine suddenly leaves a tub full of water, your refrigerator begins struggling to keep the produce drawer cold, or your clothes dryer tumbles without producing any heat.
+    </p>
+
+    <p>
+      Your immediate instinct is often anxiety: <em>"Is this machine finally done? Should I just bite the bullet and buy a brand-new one this weekend, or will a repair cost half as much as a new unit anyway?"</em>
+    </p>
+
+    <p>
+      Homeowners frequently assume that once an appliance crosses the seven-year mark, every operational hiccup is a sign of impending retirement. But in the experience of licensed field technicians, that assumption frequently leads families to spend thousands of dollars prematurely.
+    </p>
+
+    <p>
+      In this guide, we break down the real mathematics behind the <strong>Repair vs. Replace dilemma</strong>, how to apply the industry-standard 50% rule, the costly hidden expenses of replacing that retail stores never mention, and why getting an honest on-site diagnostic assessment is the single best move before making a final decision.
+    </p>
+  </div>
+
+  <!-- H2 1: The 7–10 Year Appliance Crossroads: Why Homeowners Panic -->
+  <section id="the-appliance-crossroads" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      The 7–10 Year Appliance Crossroads: Why Homeowners Panic
+    </h2>
+    <p>
+      When an appliance is two or three years old, deciding to repair it is a no-brainer. But once an appliance reaches seven to ten years of age, homeowners enter what technicians call the <strong>uncertainty zone</strong>.
+    </p>
+    <p>
+      The natural hesitation comes from two competing fears:
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+      <div class="bg-slate-50 border border-slate-200/90 rounded-2xl p-5">
+        <div class="font-heading font-bold text-slate-900 text-base mb-2 flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-brandOrange"></span>
+          Fear #1: "Throwing Good Money After Bad"
+        </div>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          The fear that paying for a repair today will only buy a few weeks of life before another component breaks down, leaving you out of pocket twice.
+        </p>
+      </div>
+      <div class="bg-slate-50 border border-slate-200/90 rounded-2xl p-5">
+        <div class="font-heading font-bold text-slate-900 text-base mb-2 flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-brandBlue"></span>
+          Fear #2: "Wasting Thousands on an Unnecessary New Unit"
+        </div>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          The fear of rushing out to buy a new replacement when the existing unit only needed a straightforward, affordable part to run for another five years.
+        </p>
+      </div>
+    </div>
+    <p>
+      Major home appliance manufacturers and industry guidelines—such as benchmarks referenced by the <a href="https://www.aham.org/" target="_blank" rel="noopener noreferrer" class="text-brandBlue font-semibold hover:underline">Association of Home Appliance Manufacturers</a>—generally estimate that core household appliances (like refrigerators, clothes dryers, and cooking ranges) have typical design lifespans between 10 and 15 years when properly maintained. Reaching the seven-year mark does not mean the appliance has exhausted its mechanical utility—it simply means routine wear-and-tear components may need professional attention.
+    </p>
+  </section>
+
+  <!-- H2 2: The 50% Rule: A Practical Decision Framework -->
+  <section id="the-50-percent-rule" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      The 50% Rule: A Practical Decision Framework
+    </h2>
+    <p>
+      To remove emotion and panic from the decision, appliance professionals rely on a time-tested formula known as the <strong>50% Rule</strong>:
+    </p>
+    
+    <div class="bg-blue-50/70 border border-brandBlue/30 rounded-2xl p-6 my-6 text-slate-800">
+      <h3 class="font-heading font-bold text-brandDarkBlue text-lg mb-2">
+        The 50% Rule Formula:
+      </h3>
+      <p class="text-base sm:text-lg leading-relaxed mb-2 font-bold text-slate-900">
+        If the repair costs less than 50% of a comparable new unit, repair it. Past 10 years with repeated repairs, lean towards replacing.
+      </p>
+      <p class="text-sm text-slate-600 leading-relaxed">
+        This keeps the decision straightforward: a single targeted component repair is almost always worth the investment. However, if an aging unit is well past the 10-year mark and experiencing repeated, compounding mechanical failures, replacement becomes the more sensible long-term path.
+      </p>
+    </div>
+
+    <p>
+      Here is how standard residential appliance lifespans break down under typical Ontario household usage:
+    </p>
+
+    <div class="overflow-x-auto my-6">
+      <table class="w-full text-left border-collapse text-sm sm:text-base border border-slate-200">
+        <thead>
+          <tr class="bg-slate-100 text-slate-900 font-heading font-bold border-b border-slate-200">
+            <th class="p-3.5">Appliance Type</th>
+            <th class="p-3.5">Average Lifespan</th>
+            <th class="p-3.5">At 7–10 Years Old</th>
+            <th class="p-3.5">Recommended Action</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-200">
+          <tr class="hover:bg-slate-50">
+            <td class="p-3.5 font-semibold text-slate-900">Refrigerators</td>
+            <td class="p-3.5">11 – 15 years</td>
+            <td class="p-3.5">Within operating lifespan</td>
+            <td class="p-3.5 text-emerald-700 font-bold">Repair if non-sealed system</td>
+          </tr>
+          <tr class="hover:bg-slate-50">
+            <td class="p-3.5 font-semibold text-slate-900">Washing Machines</td>
+            <td class="p-3.5">10 – 13 years</td>
+            <td class="p-3.5">Within serviceable lifespan</td>
+            <td class="p-3.5 text-emerald-700 font-bold">Repair pump, valve, or belt</td>
+          </tr>
+          <tr class="hover:bg-slate-50">
+            <td class="p-3.5 font-semibold text-slate-900">Clothes Dryers</td>
+            <td class="p-3.5">12 – 16 years</td>
+            <td class="p-3.5">Strong mechanical life remaining</td>
+            <td class="p-3.5 text-emerald-700 font-bold">Almost always repair element or fuse</td>
+          </tr>
+          <tr class="hover:bg-slate-50">
+            <td class="p-3.5 font-semibold text-slate-900">Dishwashers</td>
+            <td class="p-3.5">9 – 12 years</td>
+            <td class="p-3.5">Serviceable life stage</td>
+            <td class="p-3.5 text-slate-700 font-bold">Repair seal, pump, or valve</td>
+          </tr>
+          <tr class="hover:bg-slate-50">
+            <td class="p-3.5 font-semibold text-slate-900">Ovens &amp; Stoves</td>
+            <td class="p-3.5">13 – 18 years</td>
+            <td class="p-3.5">Prime operating lifespan</td>
+            <td class="p-3.5 text-emerald-700 font-bold">Almost always repair bake element or igniter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      Notice that across most appliance types, a 7- to 10-year-old machine is nowhere near the end of its operational life (with dishwashers being the primary exception as they approach their 9- to 12-year window). For refrigerators, clothes dryers, washers, and cooking ranges, many units are still operating well within their reliable service years.
+    </p>
+  </section>
+
+  <!-- H2 3: Hidden Costs of Replacing That Nobody Warns You About -->
+  <section id="hidden-replacement-costs" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      Hidden Costs of Replacing That Nobody Warns You About
+    </h2>
+    <p>
+      When comparing the cost of a repair to a replacement, homeowners usually compare the technician's repair quote directly to the sticker price of a new appliance on a website. But in reality, the sticker price is only the beginning.
+    </p>
+    <p>
+      Replacing an appliance comes with an entire checklist of secondary expenses:
+    </p>
+    <ul class="space-y-3.5 pl-2">
+      <li class="flex items-start gap-3">
+        <span class="w-2.5 h-2.5 rounded-full bg-brandOrange shrink-0 mt-2"></span>
+        <span><strong>Delivery &amp; Freight Fees:</strong> Major home appliance delivery in the GTA typically adds significant extra charges, especially for stair deliveries or multi-story condos.</span>
+      </li>
+      <li class="flex items-start gap-3">
+        <span class="w-2.5 h-2.5 rounded-full bg-brandOrange shrink-0 mt-2"></span>
+        <span><strong>Old Unit Removal &amp; Disposal:</strong> Disconnecting, hauling away, and properly recycling a heavy appliance requires eco-disposal fees. In many Ontario municipalities, including programs referenced by <a href="https://www.toronto.ca/services-payments/recycling-organics-garbage/" target="_blank" rel="noopener noreferrer" class="text-brandBlue font-semibold hover:underline">City of Toronto Waste Management</a>, disposing of heavy appliances requires special handling fees, and cooling units containing refrigerants require certified CFC recovery before collection.</span>
+      </li>
+      <li class="flex items-start gap-3">
+        <span class="w-2.5 h-2.5 rounded-full bg-brandOrange shrink-0 mt-2"></span>
+        <span><strong>Professional Installation:</strong> Modern dishwashers, built-in cooktops, and gas ranges cannot simply be plugged in; they require certified plumbing and electrical hookups with new braided lines, fill hoses, and gas certification.</span>
+      </li>
+      <li class="flex items-start gap-3">
+        <span class="w-2.5 h-2.5 rounded-full bg-brandOrange shrink-0 mt-2"></span>
+        <span><strong>Dimensional Misfits &amp; Cabinetry Work:</strong> Appliance dimensions have changed over the last decade. A new French-door refrigerator or built-in microwave may be half an inch wider or deeper, requiring adjustments to countertops, trim moulding, or cabinetry doors.</span>
+      </li>
+      <li class="flex items-start gap-3">
+        <span class="w-2.5 h-2.5 rounded-full bg-brandOrange shrink-0 mt-2"></span>
+        <span><strong>The "Matching Set" Trap:</strong> If your washing machine breaks, buying a new washer that does not match your existing dryer often tempts homeowners to replace both units at double the expense, even though the dryer is working flawlessly.</span>
+      </li>
+    </ul>
+    <p>
+      When you add up delivery, uninstallation, disposal, installation kits, and tax, the actual cost of replacing an appliance can be hundreds of dollars higher than the initial retail price.
+    </p>
+  </section>
+
+  <!-- H2 4: Which Component Repairs Are Almost Always Worth Fixing? -->
+  <section id="components-worth-fixing" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      Which Component Repairs Are Almost Always Worth Fixing?
+    </h2>
+    <p>
+      Household appliances are modular systems. When a machine stops operating, it is rarely because the entire unit has broken down all at once. In most service calls, the failure is isolated to a single, replaceable wear-and-tear part.
+    </p>
+    <p>
+      Here are common component failures on 7–10 year old appliances that are almost always worth repairing:
+    </p>
+
+    <div class="space-y-4 my-6">
+      <!-- Fridge item -->
+      <div class="border border-slate-200 rounded-xl p-5 bg-white shadow-2xs">
+        <h3 class="font-heading font-bold text-slate-900 text-base mb-1.5 flex items-center justify-between">
+          <span>Refrigerators: Start Relays, Defrost Sensors &amp; Fan Motors</span>
+          <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">High Value Repair</span>
+        </h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          If your fridge compartment is warm but the compressor is still clicking, the culprit is frequently a simple compressor start relay, a defrost timer, or an evaporator fan motor. Replacing these parts costs a small fraction of a new refrigerator and restores precise cooling. Read our in-depth <a href="../blog/refrigerator-repair-cost-toronto" class="text-brandBlue font-semibold hover:underline">Toronto refrigerator repair cost guide</a> or book our <a href="../services/fridge-repair" class="text-brandBlue font-semibold hover:underline">refrigerator repair service</a>.
+        </p>
+      </div>
+
+      <!-- Washer item -->
+      <div class="border border-slate-200 rounded-xl p-5 bg-white shadow-2xs">
+        <h3 class="font-heading font-bold text-slate-900 text-base mb-1.5 flex items-center justify-between">
+          <span>Washing Machines: Drain Pumps, Water Inlet Valves &amp; Belts</span>
+          <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">High Value Repair</span>
+        </h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          A washer that refuses to drain, fill, or spin is usually dealing with a jammed drain pump impeller, a worn drive belt, or a faulty lid lock mechanism. These are straightforward mechanical swaps that can give your washer several more years of dependable service. Check our <a href="../blog/washing-machine-not-draining-toronto" class="text-brandBlue font-semibold hover:underline">washing machine not draining guide</a> and our dedicated <a href="../services/washer-repair" class="text-brandBlue font-semibold hover:underline">washer repair service in Toronto</a>.
+        </p>
+      </div>
+
+      <!-- Dryer item -->
+      <div class="border border-slate-200 rounded-xl p-5 bg-white shadow-2xs">
+        <h3 class="font-heading font-bold text-slate-900 text-base mb-1.5 flex items-center justify-between">
+          <span>Clothes Dryers: Thermal Cutoffs, Heating Elements &amp; Rollers</span>
+          <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">High Value Repair</span>
+        </h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Dryers are among the most mechanically straightforward appliances in your home. When an electric dryer spins without heat, the root cause is almost always a blown thermal safety fuse or an opened heating element coil. Replacing the element and clearing the exhaust vent restores factory heating performance. Learn more about our <a href="../services/dryer-repair" class="text-brandBlue font-semibold hover:underline">clothes dryer repair services</a>.
+        </p>
+      </div>
+
+      <!-- Dishwasher item -->
+      <div class="border border-slate-200 rounded-xl p-5 bg-white shadow-2xs">
+        <h3 class="font-heading font-bold text-slate-900 text-base mb-1.5 flex items-center justify-between">
+          <span>Dishwashers: Circulation Pumps, Spray Arms &amp; Door Gaskets</span>
+          <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">High Value Repair</span>
+        </h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Minor leaks or gritty dishes are often caused by cracked door gaskets, mineral-clogged wash arms, or a stuck check valve. Replacing these accessible wear parts costs far less than a new built-in unit. Explore our <a href="../services/dishwasher-repair" class="text-brandBlue font-semibold hover:underline">dishwasher repair service</a>.
+        </p>
+      </div>
+
+      <!-- Cooking item -->
+      <div class="border border-slate-200 rounded-xl p-5 bg-white shadow-2xs">
+        <h3 class="font-heading font-bold text-slate-900 text-base mb-1.5 flex items-center justify-between">
+          <span>Ovens &amp; Stoves: Bake Elements, Surface Burners &amp; Igniters</span>
+          <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">High Value Repair</span>
+        </h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          An electric bake element that burns out or a gas igniter that weakens over time is an inexpensive, fast fix. Range chassis are built of thick steel and can easily last 15 to 20 years with occasional element or sensor replacements. Learn about our <a href="../services/stove-repair" class="text-brandBlue font-semibold hover:underline">oven and stove repair solutions</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- H2 5: When Replacement Is Truly the Smarter Move -->
+  <section id="when-replacement-makes-sense" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      When Replacement Is Truly the Smarter Move
+    </h2>
+    <p>
+      An honest repair technician will never recommend an expensive repair when replacing the appliance is clearly the more sensible financial decision. Part of being a reputable service company is telling homeowners when it is time to say goodbye.
+    </p>
+    <p>
+      Here are the specific failure scenarios where replacing a 7–10 year old appliance is generally recommended:
+    </p>
+    <ul class="space-y-3 pl-2">
+      <li class="flex items-start gap-3">
+        <span class="w-2.5 h-2.5 rounded-full bg-slate-400 shrink-0 mt-2"></span>
+        <span><strong>Sealed Refrigeration System Leaks or Seized Compressor on an Aging Fridge:</strong> Repairing a sealed freon leak or replacing a commercial-grade compressor requires certified refrigeration recovery, brazing, vacuuming, and recharging. On a 10+ year old refrigerator, this level of investment frequently exceeds the 50% threshold.</span>
+      </li>
+      <li class="flex items-start gap-3">
+        <span class="w-2.5 h-2.5 rounded-full bg-slate-400 shrink-0 mt-2"></span>
+        <span><strong>Severe Tub Bearing Failure with Structural Rust:</strong> When a washing machine's rear drum bearings fail completely, the repair involves dismantling the entire outer tub. If the steel chassis or tub support spider arm has suffered extensive galvanic corrosion, repairing it is rarely economical.</span>
+      </li>
+      <li class="flex items-start gap-3">
+        <span class="w-2.5 h-2.5 rounded-full bg-slate-400 shrink-0 mt-2"></span>
+        <span><strong>Obsolete Electronic Control Modules:</strong> If an older specialty appliance model has discontinued its main control board and manufacturer-approved replacements are no longer obtainable, replacement is often the practical option.</span>
+      </li>
+    </ul>
+    <p>
+      Energy efficiency guidelines, such as those published by <a href="https://natural-resources.canada.ca/energy-efficiency/energy-star-canada/18953" target="_blank" rel="noopener noreferrer" class="text-brandBlue font-semibold hover:underline">ENERGY STAR® Canada</a>, note that when an appliance reaches 12 to 15 years of age, modern high-efficiency units can also offer utility savings that help offset replacement costs over time.
+    </p>
+  </section>
+
+  <!-- H2 6: The Diagnostic Advantage: Know the Exact Math Before You Decide -->
+  <section id="diagnostic-advantage" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      The Diagnostic Advantage: Know the Exact Math Before You Decide
+    </h2>
+    <p>
+      The biggest mistake homeowners make is guessing. They look at a leaking washer or a warm fridge, imagine the worst-case scenario, and spend thousands on a new appliance before they even know what was wrong.
+    </p>
+    <p>
+      The smart, low-risk approach is simple: <strong>get an exact diagnosis first.</strong>
+    </p>
+
+    <div class="bg-amber-50/90 border border-amber-200/90 rounded-2xl p-6 my-6 text-slate-800 shadow-2xs">
+      <div class="inline-flex items-center gap-2 bg-brandOrange text-white text-xs font-black uppercase px-2.5 py-1 rounded-sm tracking-wider mb-2.5">
+        Service Call Fee Waived with Repair
+      </div>
+      <h3 class="font-heading font-bold text-slate-900 text-lg sm:text-xl mb-2">
+        Know the Exact Cost Before You Decide
+      </h3>
+      <p class="text-base sm:text-lg leading-relaxed mb-3 font-semibold text-slate-900">
+        Get an on-site diagnostic with your repair, and the diagnostic service call fee is completely waived when you go ahead.
+      </p>
+      <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+        Our certified technician conducts a thorough electrical and mechanical assessment of your appliance. We identify the root failure, show you the worn component, and provide a transparent, upfront written quote. When you approve the repair, the diagnostic service call fee is completely waived—you only pay for the repair itself. If the appliance is genuinely beyond economical repair, you receive honest, unbiased advice with zero pressure.
+      </p>
+    </div>
+
+    <p>
+      Every repair performed by Appliance Repair Knights is backed by our <strong>comprehensive written warranty on parts and labour</strong> using genuine, manufacturer-approved quality replacement parts.
+    </p>
+  </section>
+
+  <!-- H2 7: Book an Honest On-Site Repair Assessment in Toronto & the GTA -->
+  <section id="book-assessment-gta" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
+      Book an Honest On-Site Repair Assessment in Toronto &amp; the GTA
+    </h2>
+    <p>
+      Before you spend your hard-earned savings replacing an appliance that still has years of dependable life left, let a certified local technician give you the facts.
+    </p>
+    <p>
+      Appliance Repair Knights provides prompt residential dispatch across Toronto, Mississauga, Brampton, Vaughan, Markham, Richmond Hill, Oakville, Burlington, and surrounding GTA communities. Check our <a href="../locations" class="text-brandBlue font-semibold hover:underline">GTA service areas directory</a> to confirm immediate coverage in your neighborhood.
+    </p>
+    <div class="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
+      <a href="tel:9057178905" class="inline-flex items-center justify-center gap-2 bg-brandOrange hover:bg-orange-600 text-white font-black text-sm uppercase tracking-wider py-3.5 px-6 rounded-none shadow-md transition-all active:scale-95">
+        <svg class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+        </svg>
+        <span>Call for Assessment: 905-717-8905</span>
+      </a>
+      <a href="../contact" class="inline-flex items-center justify-center gap-1.5 bg-brandBlue hover:bg-brandDarkBlue text-white font-bold text-sm uppercase tracking-wider py-3.5 px-6 rounded-none shadow-sm transition-all">
+        <span>Book Online</span>
+      </a>
+    </div>
   </section>
 
 </div>

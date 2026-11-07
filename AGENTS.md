@@ -15,7 +15,7 @@ Across the **entire project** (including all blogs, service pages, location page
 - **DO NOT** mention specific numbers for warranty days, months, or years (e.g., avoid "90-day warranty", "30 days", "1-year", etc.).
 - **INSTEAD USE:**
   - *"Comprehensive written warranty on parts and labour."*
-  - *"Fully guaranteed repairs with genuine OEM parts."*
+  - *"Fully guaranteed repairs with genuine quality parts."*
   - *"Backed by our solid parts and labour protection."*
 
 ### 3. No Hardcoded Operational Day Counts
@@ -26,4 +26,11 @@ Across the **entire project** (including all blogs, service pages, location page
 
 ### 4. No PPC / Paid Landing Page Folders in SEO or LLM Files
 - **DO NOT** link or include PPC campaign folders (such as `/same-day-repair/`) in `llms.txt`, XML sitemaps, internal organic breadcrumbs, or AI indexing files. Keep paid traffic landing pages completely separate from organic SEO and LLM discoverability.
+
+### 5. No "OEM" Claims (Google Ads Policy Flag Prevention)
+- **DO NOT** write "OEM" or "OEM Parts" anywhere (triggers Google Ads third-party technical/repair service policy flags and trademark disapprovals).
+- **INSTEAD USE:**
+  - *"Genuine quality parts"*
+  - *"Manufacturer-approved quality replacement parts"*
+  - *"Factory-grade parts"*
 

@@ -376,7 +376,7 @@ require_once __DIR__ . '/../head.php';
           <?php 
           $cat_service_map = [
             'Appliance Repair Tips' => ['name' => 'Appliance Repair', 'url' => 'schedule', 'desc' => 'Need professional appliance diagnostics in Toronto or the GTA? Book fast same-day service with licensed field technicians.'],
-            'Refrigerator' => ['name' => 'Refrigerator Repair', 'url' => 'services/fridge-repair', 'desc' => 'Need fast refrigerator or freezer repair? Our licensed GTA technicians carry OEM compressors, thermostats, and coils.'],
+            'Refrigerator' => ['name' => 'Refrigerator Repair', 'url' => 'services/fridge-repair', 'desc' => 'Need fast refrigerator or freezer repair? Our licensed GTA technicians carry genuine quality replacement parts, thermostats, and coils.'],
             'Washing Machine' => ['name' => 'Washing Machine Repair', 'url' => 'services/washer-repair', 'desc' => 'Washing machine leaking or not draining? Certified technicians ready with drain pumps, belts, and bearings across Toronto.'],
             'Dryer' => ['name' => 'Dryer Repair & Venting', 'url' => 'services/dryer-repair', 'desc' => 'Dryer not heating or taking multiple cycles? We repair heating elements, thermal fuses, and clean blocked vents.'],
             'Dishwasher' => ['name' => 'Dishwasher Repair', 'url' => 'services/dishwasher-repair', 'desc' => 'Dishwasher leaving cloudy dishes or not draining? Professional circulation pump and spray arm restoration in Toronto.'],
@@ -547,7 +547,7 @@ require_once __DIR__ . '/../head.php';
                 Need Your Appliance Fixed Today?
               </h4>
               <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
-                Certified GTA technicians equipped with mobile OEM factory parts ready to inspect your unit.
+                Certified GTA technicians equipped with mobile factory-grade quality parts ready to inspect your unit.
               </p>
             </div>
 
