@@ -60,6 +60,9 @@ All service locations feature licensed, locally dispatched field technicians equ
 
 ## Supported Appliance Brands
 
+- [Brands Directory](https://www.appliancerepairknights.com/brands): Comprehensive directory of certified appliance manufacturers serviced across Toronto & GTA.
+- [Samsung Appliance Repair Guide](https://www.appliancerepairknights.com/brands/samsung-appliance-repair): Dedicated diagnostics and same-day repairs for Samsung French-door refrigerators, ice makers, VRT washers (5E/UB error codes), dryers, and ranges across Toronto & GTA.
+
 Appliance Repair Knights technicians carry diagnostic tools and manufacturer-approved quality replacement parts for all major North American, European, and Asian appliance manufacturers:
 - **Mainstream Household Brands:** Whirlpool, Samsung, LG, GE (General Electric), Frigidaire, Maytag, KitchenAid, Kenmore, Amana, Electrolux, Haier, Inglis, Hotpoint.
 - **European & Premium Lines:** Bosch, Sub-Zero, Wolf, Miele, Thermador, Viking, JennAir, Fisher & Paykel, Dacor, Blomberg, Asko.

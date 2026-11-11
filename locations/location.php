@@ -846,7 +846,7 @@ $disable_global_schema = true;
                     </div>
                     <div class="p-4 bg-white flex items-center justify-between gap-2 border-t border-slate-100">
                       <div class="min-w-0">
-                        <p class="text-xs font-bold text-brandDarkBlue truncate">OEM Parts &amp; Quick Diagnosis</p>
+                        <p class="text-xs font-bold text-brandDarkBlue truncate">Genuine Quality Parts &amp; Quick Diagnosis</p>
                         <p class="text-[11px] text-slate-500 truncate">Compressor, start relay, inverter &amp; defrost</p>
                       </div>
                       <a href="tel:9057178905" class="gtm-web-call inline-flex items-center gap-1 text-xs font-extrabold text-brandOrange hover:text-orange-600 transition-colors flex-shrink-0">
@@ -1366,13 +1366,13 @@ $disable_global_schema = true;
                     <div class="flex items-center gap-1.5">
                       <span class="text-xs font-black uppercase tracking-wider text-emerald-600">QUALITY</span>
                       <span class="text-slate-300">•</span>
-                      <h3 class="font-heading font-extrabold text-slate-900 text-[15px] sm:text-base">Factory OEM Precision</h3>
+                      <h3 class="font-heading font-extrabold text-slate-900 text-[15px] sm:text-base">Factory-Grade Parts Precision</h3>
                     </div>
-                    <span class="text-[11px] sm:text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200/70 px-2.5 py-0.5 rounded-full uppercase tracking-wide">OEM Parts</span>
+                    <span class="text-[11px] sm:text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200/70 px-2.5 py-0.5 rounded-full uppercase tracking-wide">Genuine Parts</span>
                   </div>
                   
                   <p class="text-[14px] sm:text-[15px] text-slate-700 leading-relaxed">
-                    Our technicians are certified across all major brands. We install factory OEM components and back our work with a solid written warranty on parts and labour.
+                    Our technicians are certified across all major brands. We install factory-grade replacement components and back our work with a solid written warranty on parts and labour.
                   </p>
                 </div>
               </div>
@@ -1460,7 +1460,7 @@ $disable_global_schema = true;
             Appliance Brands We Repair in <span class="text-brandBlue"><?php echo htmlspecialchars($loc['city_name']); ?></span>
           </h2>
           <p class="text-[14px] sm:text-base text-slate-700 mt-2 max-w-xl mx-auto leading-relaxed">
-            Certified service and genuine OEM replacement parts across major household names, high-end European built-ins, and universal manufacturers.
+            Certified service and genuine quality replacement parts across major household names, high-end European built-ins, and universal manufacturers.
           </p>
         </div>
 
@@ -1521,7 +1521,7 @@ $disable_global_schema = true;
             </div>
           </div>
 
-          <!-- Tier 3: Universal OEM Coverage -->
+          <!-- Tier 3: Universal Factory-Grade Coverage -->
           <div class="bg-slate-50/70 border border-slate-200/90 rounded-xl sm:rounded-2xl p-4 sm:p-5 hover:border-emerald-500/40 transition-all flex flex-col justify-between shadow-2xs">
             <div>
               <div class="flex items-center gap-2.5 sm:gap-3 mb-3">
@@ -1531,7 +1531,7 @@ $disable_global_schema = true;
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-bold text-slate-900 text-sm sm:text-base font-heading">Universal OEM Network</h3>
+                  <h3 class="font-bold text-slate-900 text-sm sm:text-base font-heading">Universal Factory-Grade Parts Network</h3>
                   <p class="text-slate-600 text-xs leading-tight mt-0.5">Direct Ontario Parts Supply</p>
                 </div>
               </div>
@@ -1681,7 +1681,7 @@ $disable_global_schema = true;
           Ready to Get Your Appliance Working in <span class="text-brandOrange"><?php echo htmlspecialchars($loc['city_name']); ?></span>?
         </h2>
         <p class="text-slate-200 max-w-xl mx-auto text-[14px] sm:text-base leading-relaxed">
-          Book online in under 60 seconds or call our local dispatch hotline now. Diagnostic service call fee is completely waived when you proceed with your repair.
+          Looking for trusted appliance repair near you in <?php echo htmlspecialchars($loc['city_name']); ?>? Book online in under 60 seconds or call our local dispatch hotline now. Diagnostic service call fee is completely waived when you proceed with your repair.
         </p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
           <a href="tel:9057178905" class="gtm-web-call w-full sm:w-auto bg-brandOrange hover:bg-orange-600 text-white font-extrabold text-sm sm:text-base px-7 py-3.5 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2">

@@ -16,8 +16,8 @@ $all_locations = require __DIR__ . '/location-data.php';
 // 2. Page Metadata
 $base_url = defined('BASE_URL') ? BASE_URL : '../';
 $current_page = 'locations';
-$page_title = 'Appliance Repair Service Areas in Toronto & GTA | Appliance Repair Knights';
-$page_description = 'Find appliance repair service areas across Toronto, the GTA and surrounding Southern Ontario communities. Appliance Repair Knights services refrigerators, washers, dryers, dishwashers, ovens and stoves.';
+$page_title = 'Appliance Repair Locations in the GTA | Repair Knights';
+$page_description = 'Looking for reliable same-day appliance repair near you? We serve 20 communities across the Greater Toronto Area & Southern Ontario. Call 905-717-8905!';
 $page_keywords = 'appliance repair service areas, GTA appliance repair locations, Toronto appliance repair service areas, local appliance repair technicians, refrigerator repair, washer repair, dryer repair, dishwasher repair, oven repair';
 $canonical_url = 'https://www.appliancerepairknights.com/locations';
 $og_image = 'https://www.appliancerepairknights.com/img/appliance-repair-banner.webp';
@@ -105,7 +105,7 @@ $hub_faqs = [
   ],
   [
     'q' => 'How quickly can a technician arrive at my home in outer regions like Caledon or Milton?',
-    'a' => 'We provide mobile service coverage across Peel, Halton, York, Durham, and Waterloo. When you contact us, our technician arranges a prompt same-day appointment based on schedule availability, equipped with common OEM replacement parts.'
+    'a' => 'We provide mobile service coverage across Peel, Halton, York, Durham, and Waterloo. When you contact us, our technician arranges a prompt same-day appointment based on schedule availability, equipped with common factory-grade replacement parts.'
   ],
   [
     'q' => 'What appliances do your certified technicians repair in each location?',
@@ -261,8 +261,7 @@ require_once __DIR__ . '/../head.php';
       </h1>
 
       <p class="text-slate-300 text-base md:text-lg max-w-3xl mx-auto mt-4 leading-relaxed">
-        Fast, dependable same-day diagnostics for refrigerators, washers, dryers, dishwashers, and stoves. Select your
-        municipality below to view local service coverage, and learn how our <strong
+        Looking for reliable appliance repair near you? We provide fast, dependable same-day diagnostics for refrigerators, washers, dryers, dishwashers, and stoves across 20 Southern Ontario communities. Select your municipality below to view local service coverage, and learn how our <strong
           class="text-white font-semibold">service call fee is waived with repair</strong>.
       </p>
 

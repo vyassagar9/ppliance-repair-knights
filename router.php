@@ -45,6 +45,12 @@ if (file_exists(__DIR__ . $path . '.php')) {
     return true;
 }
 
+// 2B. Directory with index.php (e.g. /services, /locations, /brands, /blog)
+if (is_dir(__DIR__ . $path) && file_exists(__DIR__ . $path . '/index.php')) {
+    require __DIR__ . $path . '/index.php';
+    return true;
+}
+
 // 3. Match location routes (/locations/{slug})
 if (preg_match('#^/locations/([a-z0-9-]+)$#i', $path, $matches)) {
     $slug = $matches[1];

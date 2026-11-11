@@ -35,12 +35,32 @@
 
 ---
 
-## 4. Next Month SEO & On-Page Roadmap (Pending Updates)
-* **Homepage (`index.php`) On-Page Keyword Refinement**:
-  * **Target Query**: Integrate `"appliance repair near you"` / `"appliance repair near me"` naturally into:
-    1. **Hero Subtitle**: Update intro hook to: *"Looking for reliable appliance repair near you? We serve homeowners across the Greater Toronto Area with fast, certified, same-day repairs."*
-    2. **FAQ Section**: Add natural voice-search & audit-compliant question: *"How quickly can an appliance repair technician near me arrive?"* (Answer highlighting prompt GTA same-day dispatch).
-  * **Timing**: Scheduled for next month's SEO sprint to allow Google to index current schema, UI, and speed updates without index churn.
+## 4. SEO & On-Page Keyword Refinements (COMPLETED)
+* **Homepage (`index.php`) On-Page Keyword Integration**:
+  * **Target Query**: Integrated `"appliance repair near you"` / `"appliance repair near me"` naturally into:
+    1. **Hero Subtitle**: Updated intro hook: *"Looking for reliable appliance repair near you? We serve homeowners across the Greater Toronto Area & Southern Ontario with fast, certified, same-day repairs backed by warranty."*
+    2. **FAQ Section & Schema**: Updated voice-search FAQ: *"How quickly can an appliance repair technician near me arrive?"* (with prompt GTA dispatch answer in both HTML accordion and FAQPage JSON-LD schema).
+  * **Locations Hub (`locations/index.php`) & Template (`locations/location.php`)**:
+    * Integrated natural "near you" intent into the master locations hub subtitle and location page closing CTAs.
+* **GSC Real-Time Query Optimizations (November 2026)**:
+  * **Hamilton (`hamilton-appliance-repair`)**: Upgraded from 1 thin FAQ to 7 comprehensive FAQs, trimmed meta title under 60 chars (`Appliance Repair Hamilton | Fridge, Washer & Dishwasher Fix`), trimmed description under 155 chars, full "near me" conversational triggers (hero intro hook, FAQ #1 voice-search schema, and keywords), and intro targeting top GSC impression drivers: `appliance repair hamilton` (206 imp), `dishwasher repair hamilton` (165 imp), `refrigerator repair hamilton` (139 imp), `fridge repair hamilton` (124 imp), and `washing machine repair hamilton` (123 imp).
+  * **Vaughan (`vaughan-appliance-repair`)**: Targeted high-probability Page 2 queries: `dishwasher repair vaughan` (134 imp, Pos 18.7) and `washing machine repair vaughan` (126 imp, Pos 20.8) with dedicated dishwasher and washing machine FAQs, 59-char meta title, 151-char meta description, and H1 refined to "Licensed Appliance Repair Services in Vaughan" to eliminate "Same-Day" triple-stuffing.
+  * **Markham (`markham-appliance-repair`)**: Targeted `dishwasher repair markham` (146 imp) and `fridge repair markham` (130 imp) with dedicated dishwasher repair FAQ, 58-char meta title, and description including "fridges" under 150 chars.
+  * **Burlington (`burlington-appliance-repair`)**: Targeted `appliance repair burlington` (149 imp, Pos 25.4) with dedicated laundry and kitchen drainage FAQ, 60-char meta title, and 142-char description.
+  * **Locations Hub (`locations/index.php`)**: Meta title streamlined to "Appliance Repair Locations in the GTA | Repair Knights" (54 chars, removing "Toronto & GTA" redundancy).
+  * **Policy Compliance**: Cleaned all legacy "OEM" phrasing across `locations/location.php` and `locations/location-data.php` to "genuine quality parts" / "factory-grade parts".
+
+* **Brands Architecture & Dedicated Hubs (COMPLETED - November 2026)**:
+  * **Master Brands Directory**: [`brands/index.php`](file:///Applications/MAMP/htdocs/canada/brands/index.php) (`/brands`) showcasing 4-card trust feature pills (Same-Day Repair Service, Highly Skilled Technicians, All Major Brands, Affordable Rates) and Tier 1 Everyday, Tier 2 Luxury European, and Tier 3 Universal brands.
+  * **Flagship Brand Guide**: [`brands/samsung-appliance-repair.php`](file:///Applications/MAMP/htdocs/canada/brands/samsung-appliance-repair.php) (`/brands/samsung-appliance-repair`).
+    - Carousel cards updated to clean service titles without brand repetition (Refrigerator Repair, Washing Machine Repair, Dryer Repair, Dishwasher Repair, Range Repair, Microwave Repair) and equipped with high-converting isolated product images (`img/service-card-*.webp`) matching the PPC landing pages.
+    - Section heading standardized to: "Samsung Appliance Repair in the Greater Toronto Area (GTA)".
+    - Near-Me & Proximity SEO Optimized: Natural voice-search query triggers ("near you" in hero subtitle and meta description, "How quickly can a Samsung appliance repair technician near me arrive?" in accordion + FAQPage schema, LocalBusiness GPS geo-coordinates, areaServed array, and 20-city regional internal mesh).
+    - Focuses on Samsung Twin Cooling Plus refrigerators (ice maker freeze-ups, 14E code, deli drawer leaks), VRT Plus washers (5E/nd drainage, UB/UE spin balance), dryers (tE/hE heating element coils), dishwashers (LC, 4C), and ranges.
+    - Features a dedicated Samsung Error Code Quick Reference Guide (RightFix benchmark style, zero DIY trap).
+    - Regional service area linking grid with clean city anchor names (no repetitive keyword stuffing).
+    - Fully compliant with `AGENTS.md` (0 OEM claims, 0 price numbers, waived diagnostic fee with repair, written warranty).
+  * **Internal Linking Mesh**: Connected via Homepage marquee (`index.php`), Sitewide Header Navigation Dropdown (`header.php`), Sitewide Footer (`footer.php`), `sitemap.xml`, `sitemap.php`, and `llms.txt`.
 
 ---
 

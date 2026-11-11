@@ -2,9 +2,8 @@
 require_once __DIR__ . '/config.php';
 
 $base_url = defined('BASE_URL') ? BASE_URL : './';
-$page_title = '#1 Appliance Repair Service in GTA & Surrounding Areas | Same-Day Service';
-$page_description = 'Fast, same-day appliance repair across GTA, Kitchener-Waterloo & Hamilton. Certified technicians, transparent pricing & warranty. Call 905-717-8905!';
-$page_keywords = 'appliance repair near me, appliance repair GTA, same day appliance repair';
+$page_title = 'Same-Day Appliance Repair in GTA | Appliance Repair Knights';
+$page_description = 'Fast, same-day appliance repair across the GTA, Kitchener-Waterloo & Hamilton. Certified technicians, upfront pricing & warranty. Book your repair today!';
 $canonical_url = 'https://www.appliancerepairknights.com/';
 
 // Unified Homepage Schema (@graph: Single LocalBusiness + Service + FAQPage)
@@ -104,10 +103,10 @@ $custom_head_schema = '
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "How quickly can a technician arrive at my home?",
+            "name": "How quickly can an appliance repair technician near me arrive?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "We offer prompt same-day service across Toronto and the GTA based on daily schedule availability! When you call or submit an enquiry, our technician coordinates arrival directly to get your appliance running again without delay."
+              "text": "Our mobile technicians are stationed throughout Toronto and the GTA for prompt same-day service based on daily schedule availability. When you need appliance repair near you, our priority dispatch coordinates directly with you to arrange a fast, on-time service visit with fully equipped mobile units."
             }
           },
           {
@@ -123,7 +122,7 @@ $custom_head_schema = '
             "name": "What warranty do you offer on repairs?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "All repairs performed by Appliance Repair Knights come with a written warranty covering both replacement OEM parts and technician labor."
+              "text": "All repairs performed by Appliance Repair Knights come with a written warranty covering both genuine quality replacement parts and technician labor."
             }
           },
           {
@@ -131,7 +130,7 @@ $custom_head_schema = '
             "name": "Do you carry replacement parts in your service vehicles?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes! Our service vans are fully stocked with common OEM replacement parts for Bosch, GE Appliances, KitchenAid, Frigidaire, Maytag, Sub-Zero, Miele and Samsung appliances to complete 85%+ of repairs on the spot."
+              "text": "Yes! Our service vans are fully stocked with common factory-grade quality replacement parts for Bosch, GE Appliances, KitchenAid, Frigidaire, Maytag, Sub-Zero, Miele and Samsung appliances to complete most repairs on the spot."
             }
           }
         ]
@@ -181,12 +180,11 @@ include 'head.php';
 
             <h1
               class="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-brandDarkBlue tracking-tight leading-[1.15]">
-              SAME DAY APPLIANCE REPAIR SERVICES IN <span class="text-brandBlue">GREATER TORONTO AREA</span>
+              Same-Day Appliance Repair Services in the <span class="text-brandBlue">Greater Toronto Area</span>
             </h1>
 
             <p class="text-slate-600 text-base md:text-lg max-w-xl font-normal leading-relaxed">
-              Serving homeowners across the Greater Toronto Area & Southern Ontario with fast, trusted local repairs
-              backed by warranty.
+              Looking for reliable appliance repair near you? We serve homeowners across the Greater Toronto Area &amp; Southern Ontario with fast, certified, same-day repairs backed by warranty.
             </p>
 
             <!-- Minimalist Trust Highlights Bar with Highlighted Repair with Warranty Badge -->
@@ -315,8 +313,8 @@ include 'head.php';
         <!-- Section Header (Centered with Brand Orange Accent) -->
         <div class="max-w-3xl mx-auto text-center mb-10">
           <span class="text-brandOrange font-extrabold text-xs uppercase tracking-widest block mb-1">SAME-DAY LOCAL DISPATCH</span>
-          <h2 class="text-2xl sm:text-4xl font-heading font-black text-brandDarkBlue uppercase tracking-tight mb-2">
-            WE REPAIR ALL MAJOR APPLIANCES
+          <h2 class="text-2xl sm:text-4xl font-heading font-black text-brandDarkBlue tracking-tight mb-2">
+            We Repair All Major Appliances
           </h2>
           <p class="text-slate-600 text-xs sm:text-base max-w-2xl mx-auto mb-4 font-medium">
             Fast, reliable diagnostic &amp; repair services across Toronto &amp; the GTA. Diagnostic fee waived with repair.
@@ -695,8 +693,8 @@ include 'head.php';
 
         <span class="text-brandOrange font-extrabold text-xs uppercase tracking-widest block mb-1">UNMATCHED
           QUALITY</span>
-        <h2 class="text-2xl sm:text-4xl font-heading font-black text-brandDarkBlue uppercase tracking-tight mb-2">
-          FAST, FAIR, AND FINISHED PROPERLY
+        <h2 class="text-2xl sm:text-4xl font-heading font-black text-brandDarkBlue tracking-tight mb-2">
+          Fast, Fair, and Finished Properly
         </h2>
         <p class="text-slate-600 text-xs sm:text-base max-w-2xl mx-auto mb-4 font-medium">
           We built our local service dispatch to resolve appliance breakdowns on the same day. No hold times, no vague
@@ -929,8 +927,8 @@ include 'head.php';
       <div class="max-w-7xl mx-auto px-4 text-center mb-8">
         <span class="text-brandOrange font-extrabold text-xs uppercase tracking-widest block mb-1">FACTORY-TRAINED
           TECHNICIANS</span>
-        <h2 class="text-2xl sm:text-3xl font-heading font-black text-brandDarkBlue uppercase tracking-tight mb-2">
-          MAJOR APPLIANCE BRANDS WE SERVICE
+        <h2 class="text-2xl sm:text-3xl font-heading font-black text-brandDarkBlue tracking-tight mb-2">
+          Major Appliance Brands We Service
         </h2>
         <p class="text-slate-600 text-xs sm:text-sm max-w-xl mx-auto font-medium">
           Licensed diagnostic & repair services for all top household appliance makes and models across the GTA and surrounding areas.
@@ -951,7 +949,7 @@ include 'head.php';
         <!-- Marquee Row 1 (Moves Left) -->
         <div class="brand-track-left space-x-4 py-1">
           <div class="flex space-x-3 sm:space-x-4 shrink-0 items-center">
-            <span class="brand-pill brand-samsung"><span class="brand-dot"></span>SAMSUNG</span>
+            <a href="brands/samsung-appliance-repair" class="brand-pill brand-samsung" title="Samsung Appliance Repair Toronto &amp; GTA"><span class="brand-dot"></span>SAMSUNG</a>
             <span class="brand-pill brand-lg"><span class="brand-dot"></span>LG</span>
             <span class="brand-pill brand-whirlpool"><span class="brand-dot"></span>WHIRLPOOL</span>
             <span class="brand-pill brand-bosch"><span class="brand-dot"></span>BOSCH</span>
@@ -962,7 +960,7 @@ include 'head.php';
           </div>
           <!-- Duplicate Row 1 -->
           <div class="flex space-x-3 sm:space-x-4 shrink-0 items-center">
-            <span class="brand-pill brand-samsung"><span class="brand-dot"></span>SAMSUNG</span>
+            <a href="brands/samsung-appliance-repair" class="brand-pill brand-samsung" title="Samsung Appliance Repair Toronto &amp; GTA"><span class="brand-dot"></span>SAMSUNG</a>
             <span class="brand-pill brand-lg"><span class="brand-dot"></span>LG</span>
             <span class="brand-pill brand-whirlpool"><span class="brand-dot"></span>WHIRLPOOL</span>
             <span class="brand-pill brand-bosch"><span class="brand-dot"></span>BOSCH</span>
@@ -1011,8 +1009,8 @@ include 'head.php';
       <div class="max-w-7xl mx-auto px-4">
 
         <div class="text-center mb-10">
-          <h2 class="text-2xl sm:text-3xl font-heading font-black text-brandDarkBlue uppercase tracking-tight mb-2">
-            WE SERVICE THESE AREAS
+          <h2 class="text-2xl sm:text-3xl font-heading font-black text-brandDarkBlue tracking-tight mb-2">
+            We Service These Areas
           </h2>
           <div class="w-20 h-1 bg-brandOrange mx-auto rounded-full"></div>
         </div>
@@ -1143,8 +1141,8 @@ include 'head.php';
         <div class="text-center mb-10">
           <span class="text-brandOrange font-extrabold text-xs uppercase tracking-widest block mb-1">GOT
             QUESTIONS?</span>
-          <h2 class="text-2xl sm:text-4xl font-heading font-black text-brandDarkBlue uppercase tracking-tight mb-2">
-            FREQUENTLY ASKED QUESTIONS
+          <h2 class="text-2xl sm:text-4xl font-heading font-black text-brandDarkBlue tracking-tight mb-2">
+            Frequently Asked Questions
           </h2>
           <p class="text-slate-600 text-xs sm:text-base max-w-2xl mx-auto mb-4 font-medium">
             Clear answers to common questions about our Toronto & GTA appliance repair services.
@@ -1158,15 +1156,12 @@ include 'head.php';
           <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-xs">
             <button onclick="toggleFAQ('faq-1')"
               class="w-full p-5 text-left font-heading font-bold text-brandDarkBlue text-sm sm:text-base flex justify-between items-center focus:outline-none cursor-pointer">
-              <span>How quickly can a technician arrive at my home?</span>
+              <span>How quickly can an appliance repair technician near me arrive?</span>
               <span id="icon-faq-1" class="text-brandOrange font-black text-xl">+</span>
             </button>
             <div id="faq-1"
               class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200/70 pt-3">
-              We offer prompt same-day service across Toronto and the GTA based on daily schedule availability! When you
-              call or submit an enquiry,
-              our technician coordinates directly with you to arrange a prompt visit and get your appliance back up and
-              running.
+              Our mobile technicians are stationed throughout Toronto and the GTA for prompt same-day service based on daily schedule availability. When you search for appliance repair near you and contact our priority dispatch team, a local technician coordinates directly with you to arrange a fast, on-time service visit with fully equipped mobile units.
             </div>
           </div>
 
@@ -1194,7 +1189,7 @@ include 'head.php';
             <div id="faq-3"
               class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200/70 pt-3">
               All completed repairs performed by Appliance Repair Knights include a written parts and labor warranty
-              covering installed replacement OEM parts and technician labor.
+              covering installed genuine quality replacement parts and technician labor.
             </div>
           </div>
 
@@ -1207,8 +1202,8 @@ include 'head.php';
             </button>
             <div id="faq-4"
               class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200/70 pt-3">
-              Yes! Our service vans are fully stocked with common OEM replacement parts for Bosch, GE Appliances,
-              KitchenAid, Frigidaire, Maytag, Sub-Zero, Miele and Samsung appliances to complete 85%+ of repairs on
+              Yes! Our service vans are fully stocked with common factory-grade replacement parts for Bosch, GE Appliances,
+              KitchenAid, Frigidaire, Maytag, Sub-Zero, Miele and Samsung appliances to complete most repairs on
               the spot.
             </div>
           </div>

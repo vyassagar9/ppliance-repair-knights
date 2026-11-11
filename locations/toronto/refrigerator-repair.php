@@ -159,7 +159,7 @@ $custom_head_schema = <<<HTML
             "name": "Can you repair Samsung cooling faults or LG linear compressor issues?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Our certified technicians carry specialized diagnostic equipment and genuine factory OEM replacement components for Samsung twin-cooling systems, LG linear compressor assemblies, Whirlpool defrost cycles, and luxury built-in units like Sub-Zero and Bosch."
+              "text": "Yes. Our certified technicians carry specialized diagnostic equipment and genuine factory-grade replacement components for Samsung twin-cooling systems, LG linear compressor assemblies, Whirlpool defrost cycles, and luxury built-in units like Sub-Zero and Bosch."
             }
           },
           {
@@ -220,7 +220,7 @@ require_once __DIR__ . '/../../head.php';
             </h1>
 
             <p class="text-sm sm:text-base text-slate-300 max-w-2xl leading-relaxed mx-auto lg:mx-0">
-              Is your refrigerator warming up, leaking water, or making clicking sounds? Our certified technicians carry genuine OEM components on mobile service vans to diagnose and repair cooling failures across Toronto in a single visit.
+              Is your refrigerator warming up, leaking water, or making clicking sounds? Our certified technicians carry genuine quality replacement components on mobile service vans to diagnose and repair cooling failures across Toronto in a single visit.
             </p>
 
             <!-- Common Refrigerator Symptoms & Immediate Fixes Grid -->
@@ -413,7 +413,7 @@ require_once __DIR__ . '/../../head.php';
               <div class="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-xs p-3 rounded-xl border border-slate-200/80 text-xs text-slate-700 flex items-center justify-between">
                 <span class="font-bold text-primary">Certified Diagnostic Team</span>
                 <span class="text-emerald-700 font-semibold flex items-center gap-1">
-                  <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Truck-Stocked OEM Parts
+                  <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Truck-Stocked Quality Parts
                 </span>
               </div>
             </div>
@@ -615,7 +615,7 @@ require_once __DIR__ . '/../../head.php';
             Refrigerator Brands We Service Across Toronto
           </h2>
           <p class="text-slate-600 text-sm sm:text-base mt-2">
-            Our mobile service vehicles carry genuine OEM factory components for all major appliance lines:
+            Our mobile service vehicles carry genuine factory-grade components for all major appliance lines:
           </p>
         </div>
 
@@ -760,7 +760,7 @@ require_once __DIR__ . '/../../head.php';
               <span id="icon-loc-srv-faq-3" class="text-brandOrange font-black text-xl flex-shrink-0 ml-4">+</span>
             </button>
             <div id="loc-srv-faq-3" class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-              Yes. Our certified technicians carry specialized diagnostic equipment and genuine factory OEM replacement components for Samsung twin-cooling systems, LG linear compressor assemblies, Whirlpool defrost cycles, and luxury built-in units like Sub-Zero and Bosch.
+              Yes. Our certified technicians carry specialized diagnostic equipment and genuine factory-grade replacement components for Samsung twin-cooling systems, LG linear compressor assemblies, Whirlpool defrost cycles, and luxury built-in units like Sub-Zero and Bosch.
             </div>
           </div>
 

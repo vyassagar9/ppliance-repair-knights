@@ -2,9 +2,9 @@
 require_once __DIR__ . '/config.php';
 // Dynamic Head Variables with Fallbacks
 $base_url = isset($base_url) ? $base_url : '';
-$page_title = isset($page_title) ? $page_title : 'Same-Day Appliance Repair Toronto & GTA | Appliance Repair Knights';
-$page_description = isset($page_description) ? $page_description : 'Licensed & insured same-day appliance repair across Toronto, GTA, Hamilton, Kitchener-Waterloo & Oshawa. Same-day refrigerator, washer, dryer, stove, dishwasher repair. Service call fee waived with repair! Call 905-717-8905.';
-$page_keywords = isset($page_keywords) ? $page_keywords : 'appliance repair Toronto, same day appliance repair GTA, fridge repair Hamilton, washer repair Mississauga, dryer repair Brampton, dishwasher repair Oshawa, stove repair Kitchener, Appliance Repair Knights';
+$page_title = isset($page_title) ? $page_title : 'Same-Day Appliance Repair in GTA | Appliance Repair Knights';
+$page_description = isset($page_description) ? $page_description : 'Fast, same-day appliance repair across the GTA, Kitchener-Waterloo & Hamilton. Certified technicians, upfront pricing & warranty. Book your repair today!';
+$page_keywords = isset($page_keywords) ? $page_keywords : '';
 $canonical_url = isset($canonical_url) ? $canonical_url : 'https://www.appliancerepairknights.com/';
 $og_image = isset($og_image) ? $og_image : 'https://www.appliancerepairknights.com/img/appliance-repair-banner.webp';
 $og_type = isset($og_type) ? $og_type : 'website';
@@ -53,7 +53,9 @@ $robots_meta = isset($robots_meta) ? $robots_meta : 'index, follow, max-image-pr
   <title><?php echo htmlspecialchars($page_title); ?></title>
   <meta name="title" content="<?php echo htmlspecialchars($page_title); ?>">
   <meta name="description" content="<?php echo htmlspecialchars($page_description); ?>">
+  <?php if (!empty($page_keywords)): ?>
   <meta name="keywords" content="<?php echo htmlspecialchars($page_keywords); ?>">
+  <?php endif; ?>
   <meta name="robots" content="<?php echo htmlspecialchars($robots_meta); ?>">
   <meta name="language" content="English">
   <meta name="author" content="Appliance Repair Knights">

@@ -12,6 +12,7 @@ module.exports = {
     "./disclaimer.php",
     "./send-lead.php",
     "./services/*.php",
+    "./brands/*.php",
     "./forms/*.php",
     "./locations/*.php",
     "./same-day-repair/*.php",

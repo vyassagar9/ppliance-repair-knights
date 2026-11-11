@@ -73,6 +73,7 @@ $base_url = isset($base_url) ? $base_url : '';
           <ul class="space-y-2 text-slate-400">
             <li><a href="<?php echo $base_url ? $base_url : './'; ?>" class="hover:text-white transition-colors">Home</a></li>
             <li><a href="<?php echo $base_url; ?>about" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="<?php echo $base_url; ?>brands" class="hover:text-white transition-colors font-medium text-slate-300">Brands We Service</a></li>
             <li><a href="<?php echo $base_url ? $base_url : './'; ?>#service-areas" class="hover:text-white transition-colors">Service Areas</a></li>
             <li><a href="<?php echo $base_url; ?>schedule" class="hover:text-white transition-colors">Book Online</a></li>
             <li><a href="<?php echo $base_url; ?>blog" class="hover:text-white transition-colors">Blog &amp; Guides</a></li>
@@ -92,6 +93,7 @@ $base_url = isset($base_url) ? $base_url : '';
             <li><a href="<?php echo $base_url; ?>services/dryer-repair" class="hover:text-white transition-colors">Dryer Repair</a></li>
             <li><a href="<?php echo $base_url; ?>services/stove-repair" class="hover:text-white transition-colors">Oven &amp; Stove Repair</a></li>
             <li><a href="<?php echo $base_url; ?>services/microwave-repair" class="hover:text-white transition-colors">Microwave Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>brands/samsung-appliance-repair" class="hover:text-white transition-colors font-medium text-slate-300">Samsung Repair</a></li>
           </ul>
         </div>
 

@@ -31,7 +31,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </a>
 
     <!-- Desktop Nav Menu -->
-    <nav class="hidden lg:flex items-center gap-6 font-semibold text-slate-700 text-sm">
+    <nav class="hidden lg:flex items-center gap-4 xl:gap-6 font-semibold text-slate-700 text-sm">
       <a href="<?php echo $base_url ? $base_url : './'; ?>" class="<?php echo ($current_page == 'home') ? 'text-brandBlue font-bold' : ''; ?> hover:text-brandOrange transition-colors">Home</a>
 
       <!-- Services Dropdown -->
@@ -96,6 +96,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a href="<?php echo $base_url; ?>locations/pickering-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Pickering Appliance Repair</a>
             <a href="<?php echo $base_url; ?>locations/oshawa-appliance-repair" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">Oshawa Appliance Repair</a>
           </div>
+        </div>
+      </div>
+
+      <!-- Brands Dropdown -->
+      <div class="relative group">
+        <a href="<?php echo $base_url; ?>brands" class="flex items-center gap-1.5 <?php echo ($current_page == 'brands') ? 'text-brandBlue font-bold' : ''; ?> hover:text-brandOrange py-2 transition-colors focus:outline-none font-semibold" aria-haspopup="true" aria-expanded="false">
+          <span>Brands</span>
+          <svg class="w-4 h-4 text-slate-400 group-hover:text-brandOrange transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </a>
+        <div class="absolute top-full left-0 w-64 bg-white border border-brandBorder shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+          <a href="<?php echo $base_url; ?>brands" class="block px-4 py-2 text-xs font-bold uppercase tracking-wider text-brandOrange bg-slate-50 border-b border-slate-100">All Appliance Brands &rarr;</a>
+          <a href="<?php echo $base_url; ?>brands/samsung-appliance-repair" class="block px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">
+            <span class="font-bold text-slate-900 block">Samsung Repair</span>
+            <span class="text-xs text-slate-500 font-normal">Fridges, Washers, Dryers &amp; Ranges</span>
+          </a>
         </div>
       </div>
 
@@ -176,6 +193,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="<?php echo $base_url; ?>locations/pickering-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Pickering</a>
         <a href="<?php echo $base_url; ?>locations/oshawa-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Oshawa</a>
       </div>
+    </div>
+
+    <!-- Mobile Brands Section -->
+    <div class="pl-2 space-y-1.5 border-l-2 border-emerald-500/40 my-2">
+      <span class="text-xs uppercase text-slate-400 font-bold tracking-wider">Brands</span>
+      <a href="<?php echo $base_url; ?>brands" class="block text-sm font-bold text-brandOrange">All Major Brands &rarr;</a>
+      <a href="<?php echo $base_url; ?>brands/samsung-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Samsung Appliance Repair</a>
     </div>
 
     <a href="<?php echo $base_url; ?>blog" class="block font-medium text-slate-700 hover:text-brandOrange">Blog &amp; Guides</a>

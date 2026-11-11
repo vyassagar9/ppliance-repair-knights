@@ -40,7 +40,7 @@ return [
             ],
             [
                 'q' => 'Which appliance brands do you repair in Mississauga?',
-                'a' => 'We repair all popular household brands in Mississauga, including Whirlpool, Samsung, LG, GE, and KitchenAid, along with premium units like Bosch and Sub-Zero. Our service vehicles carry genuine OEM parts for faster same-day fixes.'
+                'a' => 'We repair all popular household brands in Mississauga, including Whirlpool, Samsung, LG, GE, and KitchenAid, along with premium units like Bosch and Sub-Zero. Our service vehicles carry genuine quality replacement parts for faster same-day fixes.'
             ],
             [
                 'q' => 'Do you offer a warranty on appliance repairs in Mississauga?',
@@ -64,7 +64,7 @@ return [
         'cta_text' => 'Call Brampton Tech',
         'badge_text' => 'SAME-DAY BRAMPTON SERVICE',
         'card_desc' => 'From a noisy washer to a refrigerator that is not cooling, our technicians handle common appliance problems in Brampton homes.',
-        'intro_text' => 'Is your refrigerator warming up or washer leaking in Brampton? Appliance Repair Knights provides prompt, reliable appliance repair services throughout Brampton and Peel Region. Equipped with OEM parts, our certified technicians arrive ready to solve your appliance issues in a single visit.',
+        'intro_text' => 'Is your refrigerator warming up or washer leaking in Brampton? Appliance Repair Knights provides prompt, reliable appliance repair services throughout Brampton and Peel Region. Equipped with genuine factory-grade parts, our certified technicians arrive ready to solve your appliance issues in a single visit.',
         'postal_codes' => ['L6P', 'L6R', 'L6S', 'L6T', 'L6U', 'L6V', 'L6W', 'L6X', 'L6Y', 'L6Z', 'L7A'],
         'neighborhoods' => ['Bramalea', 'Heart Lake', 'Mount Pleasant', 'Brampton West', 'Fletcher’s Meadow', 'Springdale', 'Downtown Brampton', 'Snelgrove', 'Gore Meadows'],
         'geo' => ['latitude' => 43.7315, 'longitude' => -79.7624],
@@ -87,7 +87,7 @@ return [
             ],
             [
                 'q' => 'Which appliance brands do you repair in Brampton?',
-                'a' => "We service all major appliance brands in Brampton, including Samsung, GE, Whirlpool, LG, and Maytag, along with premium brands like Bosch and Miele. Our technicians carry genuine OEM parts on every service vehicle to support quick, same-visit repairs. If your appliance is an older model or a brand not covered here, reach out with your model number and we'll confirm parts availability."
+                'a' => "We service all major appliance brands in Brampton, including Samsung, GE, Whirlpool, LG, and Maytag, along with premium brands like Bosch and Miele. Our technicians carry genuine quality replacement parts on every service vehicle to support quick, same-visit repairs. If your appliance is an older model or a brand not covered here, reach out with your model number and we'll confirm parts availability."
             ],
             [
                 'q' => 'Do you offer a warranty on appliance repairs in Brampton?',
@@ -101,17 +101,17 @@ return [
     ],
     'vaughan-appliance-repair' => [
         'slug' => 'vaughan-appliance-repair',
-        'date_modified' => '2026-09-21',
+        'date_modified' => '2026-11-11',
         'city_name' => 'Vaughan',
         'region' => 'York Region',
-        'meta_title' => 'Same Day Appliance Repair Vaughan | Licensed Technicians',
-        'meta_description' => 'Professional appliance repair in Vaughan. Certified technicians for fridge, oven, dryer & dishwasher repairs. Call 905-717-8905 now!',
-        'keywords' => 'appliance repair vaughan, vaughan washer repair, Woodbridge appliance repair',
-        'h1_title' => 'Same-Day Appliance Repair Services in Vaughan',
+        'meta_title' => 'Appliance Repair Vaughan | Same-Day Dishwasher & Washer Fix',
+        'meta_description' => 'Top-rated appliance repair in Vaughan, Woodbridge & Maple. Same-day repair for dishwashers, washing machines, refrigerators & stoves. Written warranty!',
+        'keywords' => 'dishwasher repair vaughan, washing machine repair vaughan, appliance repair vaughan, fridge repair woodbridge, maple appliance repair',
+        'h1_title' => 'Licensed Appliance Repair Services in Vaughan',
         'cta_text' => 'Schedule Repair in Vaughan',
         'badge_text' => 'SAME-DAY VAUGHAN SERVICE',
         'card_desc' => 'Serving Vaughan homes with reliable repairs for everyday appliance problems, including laundry and kitchen equipment.',
-        'intro_text' => 'Looking for top-rated appliance repair in Vaughan, Woodbridge, or Maple? Appliance Repair Knights brings expert technicians directly to your doorstep. We specialize in built-in refrigerators, high-end dishwashers, front-load washers, and modern ranges.',
+        'intro_text' => 'Looking for top-rated appliance repair in Vaughan, Woodbridge, Thornhill, or Maple? Appliance Repair Knights brings certified local technicians directly to your doorstep. We specialize in prompt repairs for dishwashers, front-load and top-load washers, built-in refrigerators, and modern ranges.',
         'postal_codes' => ['L4H', 'L4K', 'L4L', 'L6A'],
         'neighborhoods' => ['Woodbridge', 'Maple', 'Thornhill', 'Kleinburg', 'Vaughan Metropolitan Centre', 'Vellore Village', 'Patterson'],
         'geo' => ['latitude' => 43.8361, 'longitude' => -79.4982],
@@ -119,6 +119,14 @@ return [
             [
                 'q' => 'Do you provide same-day appliance repair in Vaughan?',
                 'a' => "Yes — same-day appliance repair in Vaughan is available, subject to daily appointment availability and the details of your repair. Use our booking form or call 905-717-8905 to discuss your appliance issue and confirm an available appointment with our team."
+            ],
+            [
+                'q' => "Can you repair a dishwasher that won't drain or clean dishes properly in Vaughan?",
+                'a' => 'Yes. Dishwasher repairs in Vaughan and Woodbridge are among our most frequent service requests. Whether your dishwasher has standing water at the bottom, a broken drain pump, a clogged spray arm, or a faulty water inlet valve causing leaks, our technicians arrive equipped with factory-grade parts to restore full cleaning performance on the same visit.'
+            ],
+            [
+                'q' => "Can you fix a washing machine that won't spin or balance properly in Vaughan?",
+                'a' => 'Yes. Washing machine repair in Vaughan is a core specialty. From spin cycle failures and unbalance error codes to excessive vibration, failing drain pumps, worn drive belts, and lid lock errors, our licensed technicians accurately test motor modules and mechanical assemblies to complete the fix promptly.'
             ],
             [
                 'q' => 'Which neighborhoods in Vaughan do you service?',
@@ -134,7 +142,7 @@ return [
             ],
             [
                 'q' => 'Which appliance brands do you repair in Vaughan?',
-                'a' => 'We repair all popular household brands in Vaughan, including Samsung, LG, Whirlpool, and Maytag, as well as premium and built-in systems like Bosch, Miele, and Sub-Zero. Our technicians carry genuine OEM replacement parts to support efficient, same-visit repairs. If your appliance is an older model or a brand not listed here, contact our team with your model number to confirm parts availability.'
+                'a' => 'We repair all popular household brands in Vaughan, including Samsung, LG, Whirlpool, and Maytag, as well as premium and built-in systems like Bosch, Miele, and Sub-Zero. Our technicians carry genuine quality replacement parts to support efficient, same-visit repairs. If your appliance is an older model or a brand not listed here, contact our team with your model number to confirm parts availability.'
             ],
             [
                 'q' => 'Do you offer a warranty on appliance repairs in Vaughan?',
@@ -142,23 +150,23 @@ return [
             ],
             [
                 'q' => 'Can you repair luxury built-in appliances and induction cooktops in Vaughan?',
-                'a' => 'Yes. Our Vaughan technicians are experienced with premium built-in units and induction cooktops, including Sub-Zero, Miele, Thermador, and Bosch. Whether dealing with dual-compressor cooling faults, induction touch-control issues, or specialized electronic boards, we use authentic OEM parts to restore factory performance.'
+                'a' => 'Yes. Our Vaughan technicians are experienced with premium built-in units and induction cooktops, including Sub-Zero, Miele, Thermador, and Bosch. Whether dealing with dual-compressor cooling faults, induction touch-control issues, or specialized electronic boards, we use authentic factory-grade parts to restore factory performance.'
             ]
         ]
     ],
     'markham-appliance-repair' => [
         'slug' => 'markham-appliance-repair',
-        'date_modified' => '2026-09-21',
+        'date_modified' => '2026-11-11',
         'city_name' => 'Markham',
         'region' => 'York Region',
-        'meta_title' => 'Appliance Repair Markham | Fast Daily Service & Warranty',
-        'meta_description' => 'Dependable appliance repair in Markham, ON. All home appliances serviced with original spare parts and warranty. Call 905-717-8905.',
-        'keywords' => 'appliance repair markham, markham appliance technician, Unionville fridge repair',
+        'meta_title' => 'Appliance Repair Markham | Same-Day Dishwasher & Fridge Fix',
+        'meta_description' => 'Appliance repair in Markham, Unionville & Cornell. Same-day service for dishwashers, fridges, washers & dryers. Diagnostic fee waived with repair!',
+        'keywords' => 'dishwasher repair markham, fridge repair markham, appliance repair markham, markham appliance technician, Unionville fridge repair',
         'h1_title' => 'Dependable Appliance Repair Services in Markham',
         'cta_text' => 'Book Markham Tech',
         'badge_text' => 'SAME-DAY MARKHAM SERVICE',
         'card_desc' => 'Convenient appliance service in Markham for refrigerators, washers, dryers, dishwashers and other household appliances.',
-        'intro_text' => 'Appliance Repair Knights is your local choice for fast, honest appliance repair in Markham. Whether you reside in Unionville, Cornell, or Markham Village, our licensed repair specialists arrive promptly with transparent pricing.',
+        'intro_text' => 'Appliance Repair Knights is your local choice for fast, honest appliance repair in Markham. Whether you reside in Unionville, Cornell, or Markham Village, our licensed repair specialists arrive promptly to fix leaking dishwashers, warm refrigerators, and laundry equipment with transparent pricing.',
         'postal_codes' => ['L3P', 'L3R', 'L3S', 'L3T', 'L6B', 'L6C', 'L6E', 'L6G'],
         'neighborhoods' => ['Unionville', 'Markham Village', 'Cornell', 'Milliken', 'Thornlea', 'Cachet', 'Wismer', 'Greensborough'],
         'geo' => ['latitude' => 43.8561, 'longitude' => -79.3370],
@@ -166,6 +174,10 @@ return [
             [
                 'q' => 'Do you provide same-day appliance repair in Markham?',
                 'a' => "Yes — same-day appliance repair in Markham is available, subject to appointment availability and the details of your repair. Use our booking form or call 905-717-8905 to discuss your appliance issue and confirm an available appointment with our team."
+            ],
+            [
+                'q' => "Can you fix a leaking or non-draining dishwasher in Markham?",
+                'a' => "Yes. Dishwasher drainage clogs, failed drain pumps, leaking door seals, and spray arm blockages are repairs we regularly perform in Markham and Unionville. Our technicians carry factory-grade replacement parts to diagnose and restore proper washing performance on the same visit."
             ],
             [
                 'q' => 'Which neighborhoods in Markham do you service?',
@@ -181,7 +193,7 @@ return [
             ],
             [
                 'q' => 'Which appliance brands do you repair in Markham?',
-                'a' => 'We repair popular appliance brands in Markham, including Samsung, LG, Whirlpool, and GE, as well as premium units like Bosch and Miele. Our technicians use genuine OEM replacement parts to support efficient, dependable repairs. If your appliance is an older model or a brand not listed here, contact our team with your model number to confirm parts availability.'
+                'a' => 'We repair popular appliance brands in Markham, including Samsung, LG, Whirlpool, and GE, as well as premium units like Bosch and Miele. Our technicians use genuine quality replacement parts to support efficient, dependable repairs. If your appliance is an older model or a brand not listed here, contact our team with your model number to confirm parts availability.'
             ],
             [
                 'q' => 'Do you offer a warranty on appliance repairs in Markham?',
@@ -228,7 +240,7 @@ return [
             ],
             [
                 'q' => 'Which appliance brands do you repair in Oakville?',
-                'a' => 'We repair popular appliance brands in Oakville, including Samsung, LG, Whirlpool, and GE, as well as premium units like Bosch and Sub-Zero. Our technicians carry genuine OEM replacement parts to support efficient, reliable repairs. If your appliance is an older model or a brand not listed here, contact our team with your model number to confirm parts availability.'
+                'a' => 'We repair popular appliance brands in Oakville, including Samsung, LG, Whirlpool, and GE, as well as premium units like Bosch and Sub-Zero. Our technicians carry genuine quality replacement parts to support efficient, reliable repairs. If your appliance is an older model or a brand not listed here, contact our team with your model number to confirm parts availability.'
             ],
             [
                 'q' => 'Do you offer a warranty on appliance repairs in Oakville?',
@@ -275,7 +287,7 @@ return [
             ],
             [
                 'q' => 'Which appliance brands do you service in Scarborough?',
-                'a' => "We repair all major appliance brands in Scarborough, including Whirlpool, Samsung, LG, GE, Frigidaire, Maytag, and KitchenAid, as well as European and premium lines such as Bosch and Sub-Zero. Our service vans carry genuine OEM parts for faster same-visit resolution."
+                'a' => "We repair all major appliance brands in Scarborough, including Whirlpool, Samsung, LG, GE, Frigidaire, Maytag, and KitchenAid, as well as European and premium lines such as Bosch and Sub-Zero. Our service vans carry genuine quality replacement parts for faster same-visit resolution."
             ],
             [
                 'q' => 'Do you provide a warranty on appliance repairs in Scarborough?',
@@ -318,7 +330,7 @@ return [
             ],
             [
                 'q' => 'What brands of appliances do you repair in Richmond Hill?',
-                'a' => "We service all leading household manufacturers, including Samsung, LG, Whirlpool, KitchenAid, GE, and Maytag, alongside luxury European appliances like Bosch, Miele, and Sub-Zero. Our service vehicles carry genuine factory-certified OEM replacement parts."
+                'a' => "We service all leading household manufacturers, including Samsung, LG, Whirlpool, KitchenAid, GE, and Maytag, alongside luxury European appliances like Bosch, Miele, and Sub-Zero. Our service vehicles carry genuine factory-certified replacement parts."
             ],
             [
                 'q' => 'Is there a warranty on repairs completed in Richmond Hill?',
@@ -328,12 +340,12 @@ return [
     ],
     'burlington-appliance-repair' => [
         'slug' => 'burlington-appliance-repair',
-        'date_modified' => '2026-09-22',
+        'date_modified' => '2026-11-11',
         'city_name' => 'Burlington',
         'region' => 'Halton Region',
-        'meta_title' => 'Appliance Repair Burlington | Fast Response & Warranty',
-        'meta_description' => 'Quality appliance repair in Burlington. Certified local technicians ready to fix your broken appliances today. Call 905-717-8905.',
-        'keywords' => 'appliance repair burlington, burlington stove repair, Alton Village appliance repair',
+        'meta_title' => 'Appliance Repair Burlington | Fridge, Washer, Dishwasher Fix',
+        'meta_description' => 'Appliance repair in Burlington, Alton Village & Aldershot. Certified technicians for fridges, washers, dishwashers & dryers. Written warranty!',
+        'keywords' => 'appliance repair burlington, burlington dishwasher repair, burlington fridge repair, Alton Village appliance repair, aldershot appliance service',
         'h1_title' => 'Quality Appliance Repair Services in Burlington',
         'cta_text' => 'Call Burlington Tech',
         'badge_text' => 'SAME-DAY BURLINGTON SERVICE',
@@ -346,6 +358,10 @@ return [
             [
                 'q' => 'Do you provide same-day appliance repair in Burlington?',
                 'a' => "Yes — same-day appliance repair in Burlington is available based on daily technician routing and appointment availability. When an essential appliance breaks down, book online or call 905-717-8905 to schedule prompt local service."
+            ],
+            [
+                'q' => "Can you fix a dishwasher or washing machine that won't drain in Burlington?",
+                'a' => "Yes. Drain pump clogs, jammed impellers, and faulty check valves are repairs we regularly handle across Burlington, Alton Village, and Millcroft. Our technicians carry genuine quality replacement parts to diagnose and resolve laundry and kitchen drainage issues on-site."
             ],
             [
                 'q' => 'Which neighborhoods in Burlington do you service?',
@@ -361,7 +377,7 @@ return [
             ],
             [
                 'q' => 'Which appliance brands do you repair in Burlington?',
-                'a' => "We service all prominent brands in Burlington, including Whirlpool, LG, Samsung, Maytag, GE, Frigidaire, KitchenAid, and Kenmore, as well as premium models like Bosch and Sub-Zero. We install genuine OEM parts to maintain manufacturer standards."
+                'a' => "We service all prominent brands in Burlington, including Whirlpool, LG, Samsung, Maytag, GE, Frigidaire, KitchenAid, and Kenmore, as well as premium models like Bosch and Sub-Zero. We install genuine quality parts to maintain manufacturer standards."
             ],
             [
                 'q' => 'Do you offer a warranty on appliance repairs in Burlington?',
@@ -371,24 +387,48 @@ return [
     ],
     'hamilton-appliance-repair' => [
         'slug' => 'hamilton-appliance-repair',
-        'date_modified' => '2026-09-17',
+        'date_modified' => '2026-11-11',
         'city_name' => 'Hamilton',
         'region' => 'Greater Hamilton Area',
-        'meta_title' => 'Top Appliance Repair Hamilton | Fast & Affordable Service',
-        'meta_description' => 'Expert appliance repair across Hamilton & surrounding areas. Affordable pricing, certified technicians, and written parts & labor warranty.',
-        'keywords' => 'appliance repair hamilton, hamilton appliance technician, Ancaster appliance repair',
+        'meta_title' => 'Appliance Repair Hamilton | Fridge, Washer & Dishwasher Fix',
+        'meta_description' => 'Trusted appliance repair in Hamilton, Ancaster, Stoney Creek & Dundas. Same-day service for dishwashers, washers, fridges & stoves. Written warranty!',
+        'keywords' => 'appliance repair near me hamilton, appliance repair hamilton, dishwasher repair hamilton, refrigerator repair hamilton, fridge repair hamilton, washing machine repair hamilton, ancaster appliance repair, stoney creek appliance service',
         'h1_title' => 'Reliable Appliance Repair Services in Hamilton',
         'cta_text' => 'Book Hamilton Service',
         'badge_text' => 'SAME-DAY HAMILTON SERVICE',
         'card_desc' => 'Reliable appliance service for Hamilton homes, helping with breakdowns affecting essential kitchen and laundry appliances.',
-        'intro_text' => 'Dependable, prompt appliance repair in Hamilton, Ancaster, Stoney Creek, and Dundas. Appliance Repair Knights delivers fast response times and written warranty coverage on all completed repairs.',
+        'intro_text' => 'Looking for dependable appliance repair near you in Hamilton? Appliance Repair Knights delivers prompt same-day diagnostics across Hamilton, Ancaster, Stoney Creek, and Dundas. From leaking dishwashers and non-draining washers to refrigerators failing to cool, our certified technicians provide upfront written quotes and solid written warranty protection on all repairs.',
         'postal_codes' => ['L8E', 'L8G', 'L8H', 'L8K', 'L8L', 'L8M', 'L8N', 'L8P', 'L8R', 'L8S', 'L8T', 'L8V', 'L8W', 'L9A', 'L9B', 'L9C', 'L9H', 'L9K'],
         'neighborhoods' => ['Downtown Hamilton', 'Ancaster', 'Stoney Creek', 'Dundas', 'Mountain', 'Westdale', 'Hamilton East'],
         'geo' => ['latitude' => 43.2557, 'longitude' => -79.8711],
         'faqs' => [
             [
-                'q' => 'Do you service Ancaster and Stoney Creek in Hamilton?',
-                'a' => 'Yes, our Hamilton technician dispatch covers all of Hamilton Mountain, Ancaster, Dundas, and Stoney Creek.'
+                'q' => 'How quickly can an appliance repair technician near me arrive in Hamilton?',
+                'a' => 'We provide prompt same-day appliance repair across Hamilton, Ancaster, Stoney Creek, and Dundas based on daily technician routing. With mobile service vans dispatched near you daily, our licensed technicians arrive equipped with factory-grade parts to complete priority breakdowns like warm refrigerators or overflowing washers in a single visit.'
+            ],
+            [
+                'q' => "Can you repair a dishwasher that won't drain or is leaking in Hamilton?",
+                'a' => 'Yes. Dishwasher repairs are among our most frequent service calls across Hamilton Mountain, Downtown, and Ancaster. Whether your dishwasher has water pooling at the bottom, a broken drain pump, a clogged filter, or a faulty door gasket causing leaks, our licensed technicians carry factory-grade replacement parts to diagnose and repair the issue on-site.'
+            ],
+            [
+                'q' => 'What are the most common refrigerator and fridge issues you fix in Hamilton?',
+                'a' => 'In Hamilton, we regularly resolve refrigerator cooling failures, continuous frost buildup on evaporator coils, loud fan motor noises, faulty inverter compressors, and broken ice makers or water dispensers. We service French-door, side-by-side, bottom-freezer, and built-in units from Samsung, LG, Whirlpool, Bosch, and all major brands.'
+            ],
+            [
+                'q' => "Can you fix a washing machine that won't spin or is making loud noises in Hamilton?",
+                'a' => 'Yes. If your washer is displaying balance error codes, vibrating violently during the spin cycle, or refusing to drain water, our Hamilton technicians can help. We test drain pumps, lid locks, drive belts, shock absorbers, and electronic motor control boards to complete repairs in a single visit.'
+            ],
+            [
+                'q' => 'How much does appliance repair cost in Hamilton?',
+                'a' => 'For Hamilton residents, our diagnostic service call fee is completely waived when you proceed with the repair. If you choose not to proceed after diagnosis, only the standard service call fee applies. You will always receive a transparent, upfront written quote detailing all parts and labour before work begins, with zero hidden charges.'
+            ],
+            [
+                'q' => 'Which appliance brands do you service in Hamilton?',
+                'a' => 'We repair all leading household and luxury brands in Hamilton, including Whirlpool, Samsung, LG, Maytag, GE, Frigidaire, KitchenAid, and Kenmore, as well as European models such as Bosch and Miele. Our mobile service vans carry genuine quality replacement parts for efficient repairs.'
+            ],
+            [
+                'q' => 'Do you offer a written warranty on Hamilton appliance repairs?',
+                'a' => 'Yes. Every completed repair in Hamilton, Ancaster, Stoney Creek, and Dundas includes a solid written warranty covering both replacement parts and technician labour, giving homeowners total peace of mind.'
             ]
         ]
     ],
@@ -546,7 +586,7 @@ return [
             ],
             [
                 'q' => 'Which appliance brands do you repair in Caledon?',
-                'a' => 'We repair popular appliance brands in Caledon, including Samsung, LG, Whirlpool, and Maytag, as well as premium brands like Bosch and Sub-Zero. Our technicians use genuine OEM replacement parts to support efficient, long-lasting repairs. If your appliance is an older model or a brand not listed here, contact our team with your model number to confirm parts availability.'
+                'a' => 'We repair popular appliance brands in Caledon, including Samsung, LG, Whirlpool, and Maytag, as well as premium brands like Bosch and Sub-Zero. Our technicians use genuine quality replacement parts to support efficient, long-lasting repairs. If your appliance is an older model or a brand not listed here, contact our team with your model number to confirm parts availability.'
             ],
             [
                 'q' => 'Do you offer a warranty on appliance repairs in Caledon?',
@@ -616,7 +656,7 @@ return [
             ],
             [
                 'q' => 'Which appliance brands do you repair in Toronto?',
-                'a' => 'We service all leading residential appliance brands across Toronto, including Samsung, LG, Whirlpool, and GE, as well as premium models like Bosch, Miele, and Sub-Zero. Our service vehicles carry common OEM replacement parts for faster, one-visit repairs. If you have an older or less common brand, call us with your model number to confirm parts availability.'
+                'a' => 'We service all leading residential appliance brands across Toronto, including Samsung, LG, Whirlpool, and GE, as well as premium models like Bosch, Miele, and Sub-Zero. Our service vehicles carry common factory-grade replacement parts for faster, one-visit repairs. If you have an older or less common brand, call us with your model number to confirm parts availability.'
             ],
             [
                 'q' => 'Do you offer a warranty on appliance repairs in Toronto?',
@@ -640,7 +680,7 @@ return [
         'cta_text' => 'Book Milton Service',
         'badge_text' => 'SAME-DAY MILTON SERVICE',
         'card_desc' => 'Appliance repair throughout Milton for common kitchen and laundry appliance issues, with convenient local service.',
-        'intro_text' => 'Need dependable appliance repair in Milton? Appliance Repair Knights delivers prompt, expert repairs across all Milton neighborhoods including Dempsey, Clarke, Coates, Beaty, and Harrison. Our licensed technicians arrive equipped with OEM parts to fix your appliances quickly.',
+        'intro_text' => 'Need dependable appliance repair in Milton? Appliance Repair Knights delivers prompt, expert repairs across all Milton neighborhoods including Dempsey, Clarke, Coates, Beaty, and Harrison. Our licensed technicians arrive equipped with genuine quality parts to fix your appliances quickly.',
         'postal_codes' => ['L9E', 'L9T'],
         'neighborhoods' => ['Dempsey', 'Clarke', 'Coates', 'Beaty', 'Harrison', 'Scott', 'Willmott', 'Timberlea', 'Old Milton'],
         'geo' => ['latitude' => 43.5183, 'longitude' => -79.8774],

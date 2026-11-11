@@ -66,6 +66,18 @@ $pages = [
         'changefreq' => 'weekly',
         'priority' => '0.85'
     ],
+    [
+        'loc' => $domain . '/brands',
+        'file' => $rootDir . '/brands/index.php',
+        'changefreq' => 'weekly',
+        'priority' => '0.85'
+    ],
+    [
+        'loc' => $domain . '/brands/samsung-appliance-repair',
+        'file' => $rootDir . '/brands/samsung-appliance-repair.php',
+        'changefreq' => 'weekly',
+        'priority' => '0.90'
+    ],
 
     // 2. Service Pages (Standard 7-Service Sequence)
     [
