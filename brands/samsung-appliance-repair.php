@@ -191,27 +191,6 @@ $custom_head_schema = <<<HTML
       border-color: #FF6B00 !important;
       box-shadow: 0 4px 12px rgba(255, 107, 0, 0.22) !important;
     }
-    #problem-tabs {
-      display: flex !important;
-      gap: 0.5rem !important;
-    }
-    @media (max-width: 639px) {
-      #problem-tabs {
-        overflow-x: auto !important;
-        flex-wrap: nowrap !important;
-        -webkit-overflow-scrolling: touch;
-        padding-top: 0.25rem;
-        padding-bottom: 0.5rem;
-      }
-    }
-    @media (min-width: 640px) {
-      #problem-tabs {
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        overflow-x: visible !important;
-        gap: 0.625rem !important;
-      }
-    }
     .no-scrollbar::-webkit-scrollbar {
       display: none;
     }
@@ -532,372 +511,7 @@ include __DIR__ . '/../head.php';
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 4. DIAGNOSTIC INTELLIGENCE (Interactive Switcher Pills & Symptoms)        -->
-    <!-- ========================================================================= -->
-    <section class="py-10 md:py-14 bg-white border-t border-slate-200/80">
-      <div class="max-w-7xl mx-auto px-4">
-        
-        <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
-          <span class="text-xs font-black uppercase text-brandOrange tracking-widest">Diagnostic Intelligence</span>
-          <h2 class="text-2xl sm:text-3xl md:text-4xl font-heading font-extrabold text-brandDarkBlue mt-1">
-            Common Samsung Faults We Fix Across the <span class="text-brandBlue">Greater Toronto Area</span>
-          </h2>
-          <p class="text-[14px] sm:text-base text-slate-700 mt-2 max-w-xl mx-auto leading-relaxed">
-            Select your Samsung appliance type below to see common symptoms our certified technicians diagnose and resolve on-site daily.
-          </p>
-
-          <!-- Interactive Appliance Switcher Pills -->
-          <div class="pt-5 sm:pt-6 w-full max-w-5xl mx-auto">
-            <div class="flex no-scrollbar py-1 -mx-4 px-4 sm:mx-0 sm:px-0" id="problem-tabs">
-              <button onclick="switchProblemTab('fridge')" id="tab-btn-fridge" class="flex-shrink-0 w-auto px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl text-[13px] sm:text-sm font-bold border border-slate-300 bg-white text-slate-700 hover:border-brandOrange hover:text-brandOrange transition-all test-pill-active cursor-pointer whitespace-nowrap text-center shadow-2xs inline-flex items-center justify-center gap-1.5">
-                <svg class="w-4 h-4 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="5" y1="10" x2="19" y2="10"></line><line x1="9" y1="6" x2="9" y2="7"></line><line x1="9" y1="13" x2="9" y2="16"></line></svg>
-                <span>Samsung Refrigerator</span>
-              </button>
-              <button onclick="switchProblemTab('washer')" id="tab-btn-washer" class="flex-shrink-0 w-auto px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl text-[13px] sm:text-sm font-bold border border-slate-300 bg-white text-slate-700 hover:border-brandOrange hover:text-brandOrange transition-all cursor-pointer whitespace-nowrap text-center shadow-2xs inline-flex items-center justify-center gap-1.5">
-                <svg class="w-4 h-4 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"></rect><circle cx="12" cy="13" r="5"></circle><circle cx="8" cy="6" r="1" fill="currentColor"></circle><circle cx="11" cy="6" r="1" fill="currentColor"></circle></svg>
-                <span>Samsung Washer</span>
-              </button>
-              <button onclick="switchProblemTab('dryer')" id="tab-btn-dryer" class="flex-shrink-0 w-auto px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl text-[13px] sm:text-sm font-bold border border-slate-300 bg-white text-slate-700 hover:border-brandOrange hover:text-brandOrange transition-all cursor-pointer whitespace-nowrap text-center shadow-2xs inline-flex items-center justify-center gap-1.5">
-                <svg class="w-4 h-4 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"></rect><circle cx="12" cy="13" r="5"></circle><path d="M12 10.5c1 .5 1.5 1.5.5 2.5s-1.5 1.5-.5 2.5"></path></svg>
-                <span>Samsung Dryer</span>
-              </button>
-              <button onclick="switchProblemTab('dishwasher')" id="tab-btn-dishwasher" class="flex-shrink-0 w-auto px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl text-[13px] sm:text-sm font-bold border border-slate-300 bg-white text-slate-700 hover:border-brandOrange hover:text-brandOrange transition-all cursor-pointer whitespace-nowrap text-center shadow-2xs inline-flex items-center justify-center gap-1.5">
-                <svg class="w-4 h-4 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"></rect><line x1="4" y1="8" x2="20" y2="8"></line><line x1="8" y1="5.5" x2="11" y2="5.5"></line></svg>
-                <span>Samsung Dishwasher</span>
-              </button>
-              <button onclick="switchProblemTab('oven')" id="tab-btn-oven" class="flex-shrink-0 w-auto px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl text-[13px] sm:text-sm font-bold border border-slate-300 bg-white text-slate-700 hover:border-brandOrange hover:text-brandOrange transition-all cursor-pointer whitespace-nowrap text-center shadow-2xs inline-flex items-center justify-center gap-1.5">
-                <svg class="w-4 h-4 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"></rect><circle cx="8" cy="6" r="1" fill="currentColor"></circle><circle cx="16" cy="6" r="1" fill="currentColor"></circle><rect x="7" y="11" width="10" height="7" rx="1"></rect></svg>
-                <span>Samsung Range &amp; Stove</span>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Problem Tab Content Container -->
-        <div class="max-w-6xl mx-auto">
-          
-          <!-- TAB 1: SAMSUNG FRIDGE -->
-          <div id="problem-panel-fridge" class="space-y-4">
-            <div class="bg-slate-50/80 -mx-4 sm:mx-0 rounded-none sm:rounded-3xl px-4 py-5 sm:p-7 border-y sm:border border-slate-200/90 shadow-xs">
-              <div class="mb-4 sm:mb-6 pb-3 sm:pb-4 border-b border-slate-200/80">
-                <h3 class="text-lg sm:text-xl font-heading font-extrabold text-brandDarkBlue flex items-center gap-2">
-                  Common Samsung Refrigerator Issues We Diagnose &amp; Repair
-                </h3>
-              </div>
-
-              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 items-start">
-                <div class="w-full lg:col-span-7 space-y-3">
-                  <details class="group bg-white rounded-xl border border-slate-200/90 shadow-2xs overflow-hidden" open>
-                    <summary class="flex items-center justify-between p-4 font-bold text-[15px] sm:text-base text-brandDarkBlue cursor-pointer hover:text-brandOrange select-none">
-                      <span class="flex items-center gap-2">⚠️ Ice Maker Freezing Up or Jammed Auger (Error 14E)</span>
-                      <span class="text-brandOrange font-bold group-open:rotate-180 transition-transform flex-shrink-0 ml-2">▼</span>
-                    </summary>
-                    <div class="px-4 pb-4 pt-1 sm:pt-0 text-[14px] sm:text-[15px] text-slate-700 leading-relaxed border-t border-slate-100">
-                      Frost accumulation around the ice room perimeter locks the auger motor. Our technicians thaw the frost block, test thermistor continuity, reseal the ice compartment, and update drain tubing to stop moisture recurrence.
-                    </div>
-                  </details>
-
-                  <details class="group bg-white rounded-xl border border-slate-200/90 shadow-2xs overflow-hidden">
-                    <summary class="flex items-center justify-between p-4 font-bold text-[15px] sm:text-base text-brandDarkBlue cursor-pointer hover:text-brandOrange select-none">
-                      <span class="flex items-center gap-2">⚠️ Water Pooling Beneath the Crisper or Deli Drawers</span>
-                      <span class="text-brandOrange font-bold group-open:rotate-180 transition-transform flex-shrink-0 ml-2">▼</span>
-                    </summary>
-                    <div class="px-4 pb-4 pt-1 sm:pt-0 text-[14px] sm:text-[15px] text-slate-700 leading-relaxed border-t border-slate-100">
-                      In Samsung Twin Cooling models, the evaporator defrost drain port freezes closed, forcing meltwater to sheet under lower drawers. We install upgraded drain clips and clear blocked drain tubes on-site.
-                    </div>
-                  </details>
-
-                  <details class="group bg-white rounded-xl border border-slate-200/90 shadow-2xs overflow-hidden">
-                    <summary class="flex items-center justify-between p-4 font-bold text-[15px] sm:text-base text-brandDarkBlue cursor-pointer hover:text-brandOrange select-none">
-                      <span class="flex items-center gap-2">⚠️ Loud Buzzing or Grinding Evaporator Fan Noise</span>
-                      <span class="text-brandOrange font-bold group-open:rotate-180 transition-transform flex-shrink-0 ml-2">▼</span>
-                    </summary>
-                    <div class="px-4 pb-4 pt-1 sm:pt-0 text-[14px] sm:text-[15px] text-slate-700 leading-relaxed border-t border-slate-100">
-                      When defrost cycles malfunction, heavy frost accumulates until the fan blades strike the ice buildup. We inspect the defrost heater coil, bimetal sensor, and fan motor assembly for full restoration.
-                    </div>
-                  </details>
-                </div>
-
-                <div class="hidden lg:flex lg:col-span-5 flex-col gap-3">
-                  <div class="rounded-2xl overflow-hidden border border-slate-200/90 shadow-xs bg-white flex flex-col">
-                    <div class="h-52 sm:h-60 lg:h-64 overflow-hidden bg-slate-100 relative group">
-                      <img src="<?php echo $base_url; ?>img/refrigerator-repair-service.webp" alt="Samsung Refrigerator Repair Toronto" width="798" height="448" loading="lazy" decoding="async" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4 bg-white flex items-center justify-between gap-2 border-t border-slate-100">
-                      <div class="min-w-0">
-                        <p class="text-xs font-bold text-brandDarkBlue truncate">Genuine Quality Parts &amp; Quick Diagnosis</p>
-                        <p class="text-[11px] text-slate-500 truncate">Ice room, defrost heaters, fan motors &amp; sensors</p>
-                      </div>
-                      <a href="tel:9057178905" class="gtm-web-call inline-flex items-center gap-1 text-xs font-extrabold text-brandOrange hover:text-orange-600 transition-colors flex-shrink-0">
-                        <span>Call Now</span>
-                        <span aria-hidden="true">&rarr;</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- TAB 2: SAMSUNG WASHER -->
-          <div id="problem-panel-washer" class="hidden space-y-4">
-            <div class="bg-slate-50/80 -mx-4 sm:mx-0 rounded-none sm:rounded-3xl px-4 py-5 sm:p-7 border-y sm:border border-slate-200/90 shadow-xs">
-              <div class="mb-4 sm:mb-6 pb-3 sm:pb-4 border-b border-slate-200/80">
-                <h3 class="text-lg sm:text-xl font-heading font-extrabold text-brandDarkBlue flex items-center gap-2">
-                  Common Samsung Washing Machine Faults
-                </h3>
-              </div>
-
-              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 items-start">
-                <div class="w-full lg:col-span-7 space-y-3">
-                  <details class="group bg-white rounded-xl border border-slate-200/90 shadow-2xs overflow-hidden" open>
-                    <summary class="flex items-center justify-between p-4 font-bold text-[15px] sm:text-base text-brandDarkBlue cursor-pointer hover:text-brandOrange select-none">
-                      <span class="flex items-center gap-2">⚠️ Drain Failure &amp; Error Code 5E / nd</span>
-                      <span class="text-brandOrange font-bold group-open:rotate-180 transition-transform flex-shrink-0 ml-2">▼</span>
-                    </summary>
-                    <div class="px-4 pb-4 pt-1 sm:pt-0 text-[14px] sm:text-[15px] text-slate-700 leading-relaxed border-t border-slate-100">
-                      The washer stops mid-cycle with a tub full of dirty water. A coin or sock may jam the coin filter, or the drain pump motor windings have burned out. Our technicians clear debris and install factory-grade replacement pumps.
-                    </div>
-                  </details>
-
-                  <details class="group bg-white rounded-xl border border-slate-200/90 shadow-2xs overflow-hidden">
-                    <summary class="flex items-center justify-between p-4 font-bold text-[15px] sm:text-base text-brandDarkBlue cursor-pointer hover:text-brandOrange select-none">
-                      <span class="flex items-center gap-2">⚠️ Unbalance Error Code UB / UE During Spin</span>
-                      <span class="text-brandOrange font-bold group-open:rotate-180 transition-transform flex-shrink-0 ml-2">▼</span>
-                    </summary>
-                    <div class="px-4 pb-4 pt-1 sm:pt-0 text-[14px] sm:text-[15px] text-slate-700 leading-relaxed border-t border-slate-100">
-                      The drum bangs violently and resets its spin cycle continuously. This points to weakened suspension support rods or a faulty Hall effect sensor. We replace worn suspension dampers to re-establish dynamic drum balance.
-                    </div>
-                  </details>
-
-                  <details class="group bg-white rounded-xl border border-slate-200/90 shadow-2xs overflow-hidden">
-                    <summary class="flex items-center justify-between p-4 font-bold text-[15px] sm:text-base text-brandDarkBlue cursor-pointer hover:text-brandOrange select-none">
-                      <span class="flex items-center gap-2">⚠️ Door Lock Failure (Error dE / dC / dL)</span>
-                      <span class="text-brandOrange font-bold group-open:rotate-180 transition-transform flex-shrink-0 ml-2">▼</span>
-                    </summary>
-                    <div class="px-4 pb-4 pt-1 sm:pt-0 text-[14px] sm:text-[15px] text-slate-700 leading-relaxed border-t border-slate-100">
-                      The front door will not latch or unlock after a completed cycle. We inspect the door solenoid, interlock microswitch, and control module harness for prompt replacement.
-                    </div>
-                  </details>
-                </div>
-
-                <div class="hidden lg:flex lg:col-span-5 flex-col gap-3">
-                  <div class="rounded-2xl overflow-hidden border border-slate-200/90 shadow-xs bg-white flex flex-col">
-                    <div class="h-52 sm:h-60 lg:h-64 overflow-hidden bg-slate-100 relative group">
-                      <img src="<?php echo $base_url; ?>img/service-card-washer.webp" alt="Samsung Washer Diagnostics" width="798" height="448" loading="lazy" decoding="async" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4 bg-white flex items-center justify-between gap-2 border-t border-slate-100">
-                      <div class="min-w-0">
-                        <p class="text-xs font-bold text-brandDarkBlue truncate">Drain Pumps &amp; Suspension Rods</p>
-                        <p class="text-[11px] text-slate-500 truncate">VRT Plus balance, door locks &amp; valves</p>
-                      </div>
-                      <a href="tel:9057178905" class="gtm-web-call inline-flex items-center gap-1 text-xs font-extrabold text-brandOrange hover:text-orange-600 transition-colors flex-shrink-0">
-                        <span>Call Now</span>
-                        <span aria-hidden="true">&rarr;</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- TAB 3: SAMSUNG DRYER -->
-          <div id="problem-panel-dryer" class="hidden space-y-4">
-            <div class="bg-slate-50/80 -mx-4 sm:mx-0 rounded-none sm:rounded-3xl px-4 py-5 sm:p-7 border-y sm:border border-slate-200/90 shadow-xs">
-              <div class="mb-4 sm:mb-6 pb-3 sm:pb-4 border-b border-slate-200/80">
-                <h3 class="text-lg sm:text-xl font-heading font-extrabold text-brandDarkBlue flex items-center gap-2">
-                  Common Samsung Clothes Dryer Problems
-                </h3>
-              </div>
-
-              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 items-start">
-                <div class="w-full lg:col-span-7 space-y-3">
-                  <details class="group bg-white rounded-xl border border-slate-200/90 shadow-2xs overflow-hidden" open>
-                    <summary class="flex items-center justify-between p-4 font-bold text-[15px] sm:text-base text-brandDarkBlue cursor-pointer hover:text-brandOrange select-none">
-                      <span class="flex items-center gap-2">⚠️ Dryer Tumbles Normally but Blows Cold Air</span>
-                      <span class="text-brandOrange font-bold group-open:rotate-180 transition-transform flex-shrink-0 ml-2">▼</span>
-                    </summary>
-                    <div class="px-4 pb-4 pt-1 sm:pt-0 text-[14px] sm:text-[15px] text-slate-700 leading-relaxed border-t border-slate-100">
-                      The most common fault in Samsung dryers is a burned-out heating element coil or a blown thermal fuse caused by restricted airflow. We replace the element assembly and thermal cutoff switches.
-                    </div>
-                  </details>
-
-                  <details class="group bg-white rounded-xl border border-slate-200/90 shadow-2xs overflow-hidden">
-                    <summary class="flex items-center justify-between p-4 font-bold text-[15px] sm:text-base text-brandDarkBlue cursor-pointer hover:text-brandOrange select-none">
-                      <span class="flex items-center gap-2">⚠️ Temperature Sensor Faults (Error tE / hE)</span>
-                      <span class="text-brandOrange font-bold group-open:rotate-180 transition-transform flex-shrink-0 ml-2">▼</span>
-                    </summary>
-                    <div class="px-4 pb-4 pt-1 sm:pt-0 text-[14px] sm:text-[15px] text-slate-700 leading-relaxed border-t border-slate-100">
-                      Thermistor sensor reading out of calibration stops the cycle after a few minutes. We test resistance curves and install factory-grade thermistors.
-                    </div>
-                  </details>
-
-                  <details class="group bg-white rounded-xl border border-slate-200/90 shadow-2xs overflow-hidden">
-                    <summary class="flex items-center justify-between p-4 font-bold text-[15px] sm:text-base text-brandDarkBlue cursor-pointer hover:text-brandOrange select-none">
-                      <span class="flex items-center gap-2">⚠️ High-Pitched Squeaking or Rumbling Sound</span>
-                      <span class="text-brandOrange font-bold group-open:rotate-180 transition-transform flex-shrink-0 ml-2">▼</span>
-                    </summary>
-                    <div class="px-4 pb-4 pt-1 sm:pt-0 text-[14px] sm:text-[15px] text-slate-700 leading-relaxed border-t border-slate-100">
-                      Worn drum support rollers, a seizing idler pulley bearing, or damaged drive belt cause loud friction noises. We lubricate and install replacement roller kits.
-                    </div>
-                  </details>
-                </div>
-
-                <div class="hidden lg:flex lg:col-span-5 flex-col gap-3">
-                  <div class="rounded-2xl overflow-hidden border border-slate-200/90 shadow-xs bg-white flex flex-col">
-                    <div class="h-52 sm:h-60 lg:h-64 overflow-hidden bg-slate-100 relative group">
-                      <img src="<?php echo $base_url; ?>img/service-card-dryer.webp" alt="Samsung Dryer Heating Elements" width="798" height="448" loading="lazy" decoding="async" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4 bg-white flex items-center justify-between gap-2 border-t border-slate-100">
-                      <div class="min-w-0">
-                        <p class="text-xs font-bold text-brandDarkBlue truncate">Heating Element &amp; Thermal Cutoffs</p>
-                        <p class="text-[11px] text-slate-500 truncate">Rollers, pulleys, drive belts &amp; sensors</p>
-                      </div>
-                      <a href="tel:9057178905" class="gtm-web-call inline-flex items-center gap-1 text-xs font-extrabold text-brandOrange hover:text-orange-600 transition-colors flex-shrink-0">
-                        <span>Call Now</span>
-                        <span aria-hidden="true">&rarr;</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- TAB 4: SAMSUNG DISHWASHER -->
-          <div id="problem-panel-dishwasher" class="hidden space-y-4">
-            <div class="bg-slate-50/80 -mx-4 sm:mx-0 rounded-none sm:rounded-3xl px-4 py-5 sm:p-7 border-y sm:border border-slate-200/90 shadow-xs">
-              <div class="mb-4 sm:mb-6 pb-3 sm:pb-4 border-b border-slate-200/80">
-                <h3 class="text-lg sm:text-xl font-heading font-extrabold text-brandDarkBlue flex items-center gap-2">
-                  Common Samsung Dishwasher Failures
-                </h3>
-              </div>
-
-              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 items-start">
-                <div class="w-full lg:col-span-7 space-y-3">
-                  <details class="group bg-white rounded-xl border border-slate-200/90 shadow-2xs overflow-hidden" open>
-                    <summary class="flex items-center justify-between p-4 font-bold text-[15px] sm:text-base text-brandDarkBlue cursor-pointer hover:text-brandOrange select-none">
-                      <span class="flex items-center gap-2">⚠️ Leak Sensor Triggered (Error LC / LE)</span>
-                      <span class="text-brandOrange font-bold group-open:rotate-180 transition-transform flex-shrink-0 ml-2">▼</span>
-                    </summary>
-                    <div class="px-4 pb-4 pt-1 sm:pt-0 text-[14px] sm:text-[15px] text-slate-700 leading-relaxed border-t border-slate-100">
-                      The drain pump runs continuously even with the door open. Moisture in the bottom pan activates the optical float sensor. We pinpoint the drip source, replace damaged seals, and dry the sensor basin.
-                    </div>
-                  </details>
-
-                  <details class="group bg-white rounded-xl border border-slate-200/90 shadow-2xs overflow-hidden">
-                    <summary class="flex items-center justify-between p-4 font-bold text-[15px] sm:text-base text-brandDarkBlue cursor-pointer hover:text-brandOrange select-none">
-                      <span class="flex items-center gap-2">⚠️ Water Supply Error (Error 4C / 4E)</span>
-                      <span class="text-brandOrange font-bold group-open:rotate-180 transition-transform flex-shrink-0 ml-2">▼</span>
-                    </summary>
-                    <div class="px-4 pb-4 pt-1 sm:pt-0 text-[14px] sm:text-[15px] text-slate-700 leading-relaxed border-t border-slate-100">
-                      The unit hums and beeps without taking in adequate water. We clear intake sediment filters, test water pressure solenoids, and replace defective water inlet valves.
-                    </div>
-                  </details>
-
-                  <details class="group bg-white rounded-xl border border-slate-200/90 shadow-2xs overflow-hidden">
-                    <summary class="flex items-center justify-between p-4 font-bold text-[15px] sm:text-base text-brandDarkBlue cursor-pointer hover:text-brandOrange select-none">
-                      <span class="flex items-center gap-2">⚠️ Circulation Wash Pump Failure (Error 3C)</span>
-                      <span class="text-brandOrange font-bold group-open:rotate-180 transition-transform flex-shrink-0 ml-2">▼</span>
-                    </summary>
-                    <div class="px-4 pb-4 pt-1 sm:pt-0 text-[14px] sm:text-[15px] text-slate-700 leading-relaxed border-t border-slate-100">
-                      Dishes come out coated in food residue because the wash motor fails to propel water through the spray arms or WaterWall track. We install factory-grade wash pumps.
-                    </div>
-                  </details>
-                </div>
-
-                <div class="hidden lg:flex lg:col-span-5 flex-col gap-3">
-                  <div class="rounded-2xl overflow-hidden border border-slate-200/90 shadow-xs bg-white flex flex-col">
-                    <div class="h-52 sm:h-60 lg:h-64 overflow-hidden bg-slate-100 relative group">
-                      <img src="<?php echo $base_url; ?>img/open-dishwasher-repair.webp" alt="Samsung Dishwasher Diagnostics" width="798" height="448" loading="lazy" decoding="async" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4 bg-white flex items-center justify-between gap-2 border-t border-slate-100">
-                      <div class="min-w-0">
-                        <p class="text-xs font-bold text-brandDarkBlue truncate">Pumps, Valves &amp; Leak Sensors</p>
-                        <p class="text-[11px] text-slate-500 truncate">StormWash &amp; WaterWall service</p>
-                      </div>
-                      <a href="tel:9057178905" class="gtm-web-call inline-flex items-center gap-1 text-xs font-extrabold text-brandOrange hover:text-orange-600 transition-colors flex-shrink-0">
-                        <span>Call Now</span>
-                        <span aria-hidden="true">&rarr;</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- TAB 5: SAMSUNG OVEN & STOVE -->
-          <div id="problem-panel-oven" class="hidden space-y-4">
-            <div class="bg-slate-50/80 -mx-4 sm:mx-0 rounded-none sm:rounded-3xl px-4 py-5 sm:p-7 border-y sm:border border-slate-200/90 shadow-xs">
-              <div class="mb-4 sm:mb-6 pb-3 sm:pb-4 border-b border-slate-200/80">
-                <h3 class="text-lg sm:text-xl font-heading font-extrabold text-brandDarkBlue flex items-center gap-2">
-                  Common Samsung Range, Stove &amp; Oven Faults
-                </h3>
-              </div>
-
-              <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 items-start">
-                <div class="w-full lg:col-span-7 space-y-3">
-                  <details class="group bg-white rounded-xl border border-slate-200/90 shadow-2xs overflow-hidden" open>
-                    <summary class="flex items-center justify-between p-4 font-bold text-[15px] sm:text-base text-brandDarkBlue cursor-pointer hover:text-brandOrange select-none">
-                      <span class="flex items-center gap-2">⚠️ Touch Panel Beeping &amp; Error Code SE / 5E</span>
-                      <span class="text-brandOrange font-bold group-open:rotate-180 transition-transform flex-shrink-0 ml-2">▼</span>
-                    </summary>
-                    <div class="px-4 pb-4 pt-1 sm:pt-0 text-[14px] sm:text-[15px] text-slate-700 leading-relaxed border-t border-slate-100">
-                      A shorted touch key on the glass console or membrane switch locks the control board. We inspect ribbon connections and install replacement control panel assemblies.
-                    </div>
-                  </details>
-
-                  <details class="group bg-white rounded-xl border border-slate-200/90 shadow-2xs overflow-hidden">
-                    <summary class="flex items-center justify-between p-4 font-bold text-[15px] sm:text-base text-brandDarkBlue cursor-pointer hover:text-brandOrange select-none">
-                      <span class="flex items-center gap-2">⚠️ Oven Does Not Heat to Set Temperature (Error E08)</span>
-                      <span class="text-brandOrange font-bold group-open:rotate-180 transition-transform flex-shrink-0 ml-2">▼</span>
-                    </summary>
-                    <div class="px-4 pb-4 pt-1 sm:pt-0 text-[14px] sm:text-[15px] text-slate-700 leading-relaxed border-t border-slate-100">
-                      Defective hidden bake element, failed temperature sensor probe (RTD), or burned relay on the electronic clock board. In gas ranges, we test igniter amperage.
-                    </div>
-                  </details>
-
-                  <details class="group bg-white rounded-xl border border-slate-200/90 shadow-2xs overflow-hidden">
-                    <summary class="flex items-center justify-between p-4 font-bold text-[15px] sm:text-base text-brandDarkBlue cursor-pointer hover:text-brandOrange select-none">
-                      <span class="flex items-center gap-2">⚠️ Glass Cooktop Surface Element Stays on High</span>
-                      <span class="text-brandOrange font-bold group-open:rotate-180 transition-transform flex-shrink-0 ml-2">▼</span>
-                    </summary>
-                    <div class="px-4 pb-4 pt-1 sm:pt-0 text-[14px] sm:text-[15px] text-slate-700 leading-relaxed border-t border-slate-100">
-                      Welded internal contact inside the infinite heat control switch behind the knob. We carry factory-grade replacement switches for prompt resolution.
-                    </div>
-                  </details>
-                </div>
-
-                <div class="hidden lg:flex lg:col-span-5 flex-col gap-3">
-                  <div class="rounded-2xl overflow-hidden border border-slate-200/90 shadow-xs bg-white flex flex-col">
-                    <div class="h-52 sm:h-60 lg:h-64 overflow-hidden bg-slate-100 relative group">
-                      <img src="<?php echo $base_url; ?>img/oven-stove-repair-service.webp" alt="Samsung Range Diagnostics" width="798" height="448" loading="lazy" decoding="async" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4 bg-white flex items-center justify-between gap-2 border-t border-slate-100">
-                      <div class="min-w-0">
-                        <p class="text-xs font-bold text-brandDarkBlue truncate">Elements, Igniters &amp; Touchboards</p>
-                        <p class="text-[11px] text-slate-500 truncate">Flex Duo &amp; induction repair</p>
-                      </div>
-                      <a href="tel:9057178905" class="gtm-web-call inline-flex items-center gap-1 text-xs font-extrabold text-brandOrange hover:text-orange-600 transition-colors flex-shrink-0">
-                        <span>Call Now</span>
-                        <span aria-hidden="true">&rarr;</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ========================================================================= -->
-    <!-- 5. ERROR CODE QUICK REFERENCE MATRIX (Clean, No DIY Solutions)             -->
+    <!-- 4. ERROR CODE QUICK REFERENCE MATRIX (Clean, No DIY Solutions)             -->
     <!-- ========================================================================= -->
     <section class="py-10 md:py-14 bg-white border-t border-slate-200/80">
       <div class="max-w-4xl mx-auto px-4 sm:px-6">
@@ -992,7 +606,7 @@ include __DIR__ . '/../head.php';
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 6. SERVICE AREAS INTERNAL LINKING GRID (Massive SEO Mesh)                 -->
+    <!-- 5. SERVICE AREAS INTERNAL LINKING GRID (Massive SEO Mesh)                 -->
     <!-- ========================================================================= -->
     <section class="py-10 md:py-14 bg-white border-t border-slate-200/80">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
@@ -1027,12 +641,12 @@ include __DIR__ . '/../head.php';
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 7. REVIEWS WIDGET                                                         -->
+    <!-- 6. REVIEWS WIDGET                                                         -->
     <!-- ========================================================================= -->
     <?php include __DIR__ . '/../reviews-widget.php'; ?>
 
     <!-- ========================================================================= -->
-    <!-- 8. FAQS SECTION (Schema FAQPage ready with Interactive Toggle)            -->
+    <!-- 7. FAQS SECTION (Schema FAQPage ready with Interactive Toggle)            -->
     <!-- ========================================================================= -->
     <section class="py-10 md:py-14 bg-white border-t border-slate-200/80">
       <div class="max-w-4xl mx-auto px-4">
@@ -1146,7 +760,7 @@ include __DIR__ . '/../head.php';
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 9. SECTION 10: BOTTOM HIGH-CONVERTING CTA BANNER                          -->
+    <!-- 8. BOTTOM HIGH-CONVERTING CTA BANNER                                      -->
     <!-- ========================================================================= -->
     <section class="py-12 md:py-16 bg-gradient-to-br from-brandDarkBlue via-slate-900 to-brandDarkBlue text-white border-t border-slate-200/80">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center space-y-4 sm:space-y-5">
@@ -1196,34 +810,6 @@ include __DIR__ . '/../head.php';
         el.classList.remove('block');
         if (icon) icon.textContent = '+';
       }
-    }
-
-    // Problem Tab Switcher
-    function switchProblemTab(tabKey) {
-      const panels = ['fridge', 'washer', 'dryer', 'dishwasher', 'oven'];
-      panels.forEach(function(p) {
-        const panelEl = document.getElementById('problem-panel-' + p);
-        const btnEl = document.getElementById('tab-btn-' + p);
-        if (panelEl) {
-          if (p === tabKey) {
-            panelEl.classList.remove('hidden');
-            panelEl.classList.add('block');
-          } else {
-            panelEl.classList.add('hidden');
-            panelEl.classList.remove('block');
-          }
-        }
-        if (btnEl) {
-          if (p === tabKey) {
-            btnEl.classList.add('test-pill-active');
-            try {
-              btnEl.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-            } catch(e) {}
-          } else {
-            btnEl.classList.remove('test-pill-active');
-          }
-        }
-      });
     }
 
     // Appliance Carousel Scroll & Progress Bar Sync

@@ -1354,37 +1354,7 @@ HTML
     </div>
   </section>
 
-  <!-- H2 5: When Replacement Is Truly the Smarter Move -->
-  <section id="when-replacement-makes-sense" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
-    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
-      When Replacement Is Truly the Smarter Move
-    </h2>
-    <p>
-      An honest repair technician will never recommend an expensive repair when replacing the appliance is clearly the more sensible financial decision. Part of being a reputable service company is telling homeowners when it is time to say goodbye.
-    </p>
-    <p>
-      Here are the specific failure scenarios where replacing a 7–10 year old appliance is generally recommended:
-    </p>
-    <ul class="space-y-3 pl-2">
-      <li class="flex items-start gap-3">
-        <span class="w-2.5 h-2.5 rounded-full bg-slate-400 shrink-0 mt-2"></span>
-        <span><strong>Sealed Refrigeration System Leaks or Seized Compressor on an Aging Fridge:</strong> Repairing a sealed freon leak or replacing a commercial-grade compressor requires certified refrigeration recovery, brazing, vacuuming, and recharging. On a 10+ year old refrigerator, this level of investment frequently exceeds the 50% threshold.</span>
-      </li>
-      <li class="flex items-start gap-3">
-        <span class="w-2.5 h-2.5 rounded-full bg-slate-400 shrink-0 mt-2"></span>
-        <span><strong>Severe Tub Bearing Failure with Structural Rust:</strong> When a washing machine's rear drum bearings fail completely, the repair involves dismantling the entire outer tub. If the steel chassis or tub support spider arm has suffered extensive galvanic corrosion, repairing it is rarely economical.</span>
-      </li>
-      <li class="flex items-start gap-3">
-        <span class="w-2.5 h-2.5 rounded-full bg-slate-400 shrink-0 mt-2"></span>
-        <span><strong>Obsolete Electronic Control Modules:</strong> If an older specialty appliance model has discontinued its main control board and manufacturer-approved replacements are no longer obtainable, replacement is often the practical option.</span>
-      </li>
-    </ul>
-    <p>
-      Energy efficiency guidelines, such as those published by <a href="https://natural-resources.canada.ca/energy-efficiency/energy-star-canada/18953" target="_blank" rel="noopener noreferrer" class="text-brandBlue font-semibold hover:underline">ENERGY STAR® Canada</a>, note that when an appliance reaches 12 to 15 years of age, modern high-efficiency units can also offer utility savings that help offset replacement costs over time.
-    </p>
-  </section>
-
-  <!-- H2 6: The Diagnostic Advantage: Know the Exact Math Before You Decide -->
+  <!-- H2 5: The Diagnostic Advantage: Know the Exact Math Before You Decide -->
   <section id="diagnostic-advantage" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
     <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
       The Diagnostic Advantage: Know the Exact Math Before You Decide
@@ -1416,7 +1386,7 @@ HTML
     </p>
   </section>
 
-  <!-- H2 7: Book an Honest On-Site Repair Assessment in Toronto & the GTA -->
+  <!-- H2 6: Book an Honest On-Site Repair Assessment in Toronto & the GTA -->
   <section id="book-assessment-gta" class="space-y-5 mt-12 pt-8 border-t border-slate-200 scroll-mt-24">
     <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 tracking-tight">
       Book an Honest On-Site Repair Assessment in Toronto &amp; the GTA
