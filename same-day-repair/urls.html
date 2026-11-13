@@ -145,7 +145,8 @@
               <option value="washer">Washing Machine / Washer</option>
               <option value="dryer">Clothes Dryer</option>
               <option value="dishwasher">Dishwasher</option>
-              <option value="stove">Stove &amp; Oven</option>
+              <option value="stove">Stove &amp; Cooktop</option>
+              <option value="oven">Oven</option>
               <option value="microwave">Microwave</option>
               <option value="coffee">Coffee &amp; Espresso Machine</option>
             </select>
@@ -762,7 +763,7 @@
           </p>
         </div>
         <div class="text-xs text-slate-500 font-medium">
-          Total: <span class="font-bold text-slate-800">6 Services</span>
+          Total: <span class="font-bold text-slate-800">7 Services</span>
         </div>
       </div>
 
@@ -970,7 +971,7 @@
 
             <tr class="hover:bg-slate-50/80 transition-colors bg-blue-50/15">
               <td class="py-3 px-3.5 whitespace-nowrap align-top">
-                <span class="inline-flex items-center px-2 py-0.5 rounded-md text-xs font-bold badge-service">Stove &amp; Oven</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded-md text-xs font-bold badge-service">Stove &amp; Cooktop</span>
               </td>
               <td class="py-3 px-3.5 text-slate-600 whitespace-nowrap font-medium align-top">Greater Toronto Area (GTA)</td>
               <td class="py-3 px-3.5 align-top space-y-2">
@@ -990,9 +991,9 @@
                   </a>
                 </div>
                 <div class="bg-white border border-blue-200 rounded-lg p-2.5 space-y-1 text-[11px] shadow-2xs">
-                  <div><span class="font-bold text-slate-700">Heading:</span> <span class="text-brandDarkBlue font-bold">Oven Not Heating or Stove Burner Not Working?</span></div>
-                  <div><span class="font-bold text-slate-700">Subheading:</span> <span class="text-slate-600">Get professional stove and oven repair for heating problems, faulty controls, and malfunctioning burners. We service major appliance brands and provide clear estimates before proceeding with repairs.</span></div>
-                  <div class="flex items-center gap-1.5 pt-0.5"><span class="font-bold text-slate-700">CTA:</span> <span class="bg-brandOrange text-white font-extrabold px-2 py-0.5 rounded text-[10px] shadow-2xs">Request Stove &amp; Oven Service</span></div>
+                  <div><span class="font-bold text-slate-700">Heading:</span> <span class="text-brandDarkBlue font-bold">Stove Burner Not Working or Cooktop Not Heating?</span></div>
+                  <div><span class="font-bold text-slate-700">Subheading:</span> <span class="text-slate-600">Get professional stove, range, and cooktop repair for heating problems, faulty controls, and malfunctioning burners. Certified local technicians ready to resolve issues on-site.</span></div>
+                  <div class="flex items-center gap-1.5 pt-0.5"><span class="font-bold text-slate-700">CTA:</span> <span class="bg-brandOrange text-white font-extrabold px-2 py-0.5 rounded text-[10px] shadow-2xs">Request Stove Service</span></div>
                 </div>
               </td>
               <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
@@ -1006,6 +1007,52 @@
                   </div>
                   <div class="flex items-center gap-1">
                     <a href="index.html?service=stove" target="_blank" data-rel="index.html?service=stove" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="hover:bg-slate-50/80 transition-colors bg-amber-50/15">
+              <td class="py-3 px-3.5 whitespace-nowrap align-top">
+                <span class="inline-flex items-center px-2 py-0.5 rounded-md text-xs font-bold bg-amber-100 text-amber-800 border border-amber-300">Oven</span>
+              </td>
+              <td class="py-3 px-3.5 text-slate-600 whitespace-nowrap font-medium align-top">Greater Toronto Area (GTA)</td>
+              <td class="py-3 px-3.5 align-top space-y-2">
+                <div class="url-wrapper font-mono text-[11px] bg-blue-50/70 p-1.5 rounded-md border border-blue-200/70 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg" data-rel="?service=oven">
+                  <a href="index.html?service=oven" target="_blank" class="url-link text-brandBlue hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="url-text">?service=oven</span>
+                    <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="oven">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="oven" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">oven</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
+                <div class="bg-white border border-blue-200 rounded-lg p-2.5 space-y-1 text-[11px] shadow-2xs">
+                  <div><span class="font-bold text-slate-700">Heading:</span> <span class="text-brandDarkBlue font-bold">Oven Not Heating, Baking Unevenly, or Error Codes?</span></div>
+                  <div><span class="font-bold text-slate-700">Subheading:</span> <span class="text-slate-600">Get expert oven repair for heating elements, temperature sensors, and electronic control issues. Transparent upfront written quotes before any repair begins.</span></div>
+                  <div class="flex items-center gap-1.5 pt-0.5"><span class="font-bold text-slate-700">CTA:</span> <span class="bg-brandOrange text-white font-extrabold px-2 py-0.5 rounded text-[10px] shadow-2xs">Request Oven Service</span></div>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="oven" target="_blank" data-rel="oven" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?service=oven" target="_blank" data-rel="index.html?service=oven" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
                       <span>Open Query</span>
                     </a>
                     <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
@@ -1528,7 +1575,7 @@
           </p>
         </div>
         <div class="text-xs text-slate-500 font-medium">
-          Total: <span class="font-bold text-slate-800">8 "Near Me" Variations</span>
+          Total: <span class="font-bold text-slate-800">9 "Near Me" Variations</span>
         </div>
       </div>
 
@@ -1809,10 +1856,10 @@
             </tr>
             <tr class="hover:bg-purple-50/30 transition-colors">
               <td class="py-3 px-3.5 whitespace-nowrap align-top">
-                <span class="inline-flex items-center px-2 py-0.5 rounded-md text-xs font-bold border bg-rose-100 text-rose-800 border-rose-300">Stove & Oven</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded-md text-xs font-bold border bg-rose-100 text-rose-800 border-rose-300">Stove</span>
               </td>
               <td class="py-3 px-3.5 text-slate-700 font-mono text-xs whitespace-nowrap align-top leading-relaxed">
-                [stove repair near me]<br>[oven repair near me]
+                [stove repair near me]
               </td>
               <td class="py-3 px-3.5 align-top">
                 <div class="url-wrapper font-mono text-[11px] bg-blue-50/70 p-1.5 rounded-md border border-blue-200/70 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg" data-rel="?service=stove&intent=near_me">
@@ -1843,6 +1890,49 @@
                   </div>
                   <div class="flex items-center gap-1">
                     <a href="index.html?service=stove&intent=near_me" target="_blank" data-rel="index.html?service=stove&intent=near_me" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
+                      <span>Open Query</span>
+                    </a>
+                    <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="hover:bg-purple-50/30 transition-colors">
+              <td class="py-3 px-3.5 whitespace-nowrap align-top">
+                <span class="inline-flex items-center px-2 py-0.5 rounded-md text-xs font-bold border bg-amber-100 text-amber-800 border-amber-300">Oven</span>
+              </td>
+              <td class="py-3 px-3.5 text-slate-700 font-mono text-xs whitespace-nowrap align-top leading-relaxed">
+                [oven repair near me]
+              </td>
+              <td class="py-3 px-3.5 align-top">
+                <div class="url-wrapper font-mono text-[11px] bg-blue-50/70 p-1.5 rounded-md border border-blue-200/70 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg" data-rel="?service=oven&intent=near_me">
+                  <div class="text-[9px] font-sans font-semibold text-slate-500 uppercase tracking-wider mb-0.5">Unclean (Query URL):</div>
+                  <a href="index.html?service=oven&intent=near_me" target="_blank" class="url-link text-brandBlue hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="url-text">?service=oven&intent=near_me</span>
+                    <svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
+                <div class="url-wrapper-clean font-mono text-[11px] bg-emerald-50/80 p-1.5 rounded-md border border-emerald-300/80 whitespace-nowrap overflow-x-auto max-w-sm sm:max-w-md lg:max-w-lg mt-1.5 shadow-2xs" data-rel="oven-repair-near-me">
+                  <div class="text-[9px] font-sans font-bold text-emerald-700 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span> Clean URL (PPC Recommended):
+                  </div>
+                  <a href="oven-repair-near-me" target="_blank" class="clean-url-link text-emerald-800 hover:text-brandOrange hover:underline font-bold inline-flex items-center gap-1.5">
+                    <span class="clean-url-text">oven-repair-near-me</span>
+                    <svg class="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
+              </td>
+              <td class="py-3 px-3.5 text-right whitespace-nowrap align-top">
+                <div class="flex flex-col items-end gap-1.5">
+                  <div class="flex items-center gap-1">
+                    <a href="oven-repair-near-me" target="_blank" data-rel="oven-repair-near-me" class="open-clean-btn inline-flex items-center gap-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-2.5 py-1 rounded-lg text-xs transition-colors shadow-2xs">
+                      <span>Open Clean</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <button onclick="copyCleanRowUrl(this)" class="inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded-lg text-xs transition-colors border border-emerald-300">Copy Clean</button>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <a href="index.html?service=oven&intent=near_me" target="_blank" data-rel="index.html?service=oven&intent=near_me" class="open-btn inline-flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-medium px-2 py-0.5 rounded text-[10px] transition-colors border border-slate-200">
                       <span>Open Query</span>
                     </a>
                     <button onclick="copyRowUrl(this)" class="inline-flex items-center gap-1 bg-slate-50 hover:bg-slate-100 text-slate-500 font-medium px-1.5 py-0.5 rounded text-[10px] transition-colors border border-slate-200">Copy Query</button>
@@ -2184,7 +2274,7 @@
       <ul class="list-disc list-inside space-y-1.5 text-slate-600 leading-relaxed">
         <li><strong>Direct Clickable Links:</strong> Table me URL aur <span class="font-bold text-brandOrange">Open Link &rarr;</span> button dono live page ko new tab me open karte hain.</li>
         <li><strong>Copy Feature:</strong> "Copy" button par tap karne par automatic live host ke sath full URL clipboard me copy ho jata hai.</li>
-        <li><strong>Supported Services:</strong> <code class="bg-white px-1 py-0.5 rounded border border-slate-200 font-mono">fridge</code>, <code class="bg-white px-1 py-0.5 rounded border border-slate-200 font-mono">washer</code>, <code class="bg-white px-1 py-0.5 rounded border border-slate-200 font-mono">dryer</code>, <code class="bg-white px-1 py-0.5 rounded border border-slate-200 font-mono">dishwasher</code>, <code class="bg-white px-1 py-0.5 rounded border border-slate-200 font-mono">stove</code>, <code class="bg-white px-1 py-0.5 rounded border border-slate-200 font-mono">microwave</code></li>
+        <li><strong>Supported Services:</strong> <code class="bg-white px-1 py-0.5 rounded border border-slate-200 font-mono">fridge</code>, <code class="bg-white px-1 py-0.5 rounded border border-slate-200 font-mono">washer</code>, <code class="bg-white px-1 py-0.5 rounded border border-slate-200 font-mono">dryer</code>, <code class="bg-white px-1 py-0.5 rounded border border-slate-200 font-mono">dishwasher</code>, <code class="bg-white px-1 py-0.5 rounded border border-slate-200 font-mono">stove</code>, <code class="bg-white px-1 py-0.5 rounded border border-slate-200 font-mono">oven</code>, <code class="bg-white px-1 py-0.5 rounded border border-slate-200 font-mono">microwave</code></li>
         <li><strong>Supported Cities:</strong> <code class="bg-white px-1 py-0.5 rounded border border-slate-200 font-mono">toronto</code>, <code class="bg-white px-1 py-0.5 rounded border border-slate-200 font-mono">mississauga</code>, <code class="bg-white px-1 py-0.5 rounded border border-slate-200 font-mono">brampton</code>, <code class="bg-white px-1 py-0.5 rounded border border-slate-200 font-mono">vaughan</code>, <code class="bg-white px-1 py-0.5 rounded border border-slate-200 font-mono">markham</code>, <code class="bg-white px-1 py-0.5 rounded border border-slate-200 font-mono">oakville</code>, <code class="bg-white px-1 py-0.5 rounded border border-slate-200 font-mono">burlington</code>, <code class="bg-white px-1 py-0.5 rounded border border-slate-200 font-mono">hamilton</code>, <code class="bg-white px-1 py-0.5 rounded border border-slate-200 font-mono">kitchener</code>, <code class="bg-white px-1 py-0.5 rounded border border-slate-200 font-mono">oshawa</code>.</li>
         <li><strong>SEO Isolation:</strong> All PPC pages include <code class="bg-white px-1 py-0.5 rounded border border-slate-200 font-mono">robots: noindex, nofollow</code>.</li>
       </ul>

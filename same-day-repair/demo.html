@@ -2371,31 +2371,58 @@
           'Commercial Style Dishwashers'
         ]
       },
-      stove: {
-        key: 'stove',
-        name: 'Oven & Stove',
-        titleName: 'Oven & Stove',
-        serviceLabel: 'Oven Not Heating or Stove Burner Not Working?',
-        typesTitle: 'Types of Ovens & Stoves We Repair',
-        problemsTitle: 'Common Oven & Stove Problems',
+      oven: {
+        key: 'oven',
+        name: 'Oven',
+        titleName: 'Oven',
+        serviceLabel: 'Oven Not Heating, Baking Unevenly, or Error Codes?',
+        typesTitle: 'Types of Ovens We Repair',
+        problemsTitle: 'Common Oven Problems',
         heroImg: '../img/technician-repairing-a-modern-oven.webp',
-        desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Cooktop &amp; Oven Types:</strong> Electric ranges, smooth cooktops, wall ovens &amp; induction units.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Samsung, LG, Whirlpool, Bosch, KitchenAid &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">Heat &amp; Sensor Repairs:</strong> Surface elements, bake elements, thermostats &amp; igniters fixed on-site.</span></li></ul>',
-        ctaText: 'Book Your Oven & Stove Repair Today',
+        desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Oven Types:</strong> Wall ovens, electric ranges, slide-in &amp; double oven units.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Samsung, LG, Whirlpool, Bosch, KitchenAid &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">Heat &amp; Sensor Repairs:</strong> Bake elements, broil elements, thermostats &amp; igniters fixed on-site.</span></li></ul>',
+        ctaText: 'Book Your Oven Repair Today',
         problems: [
           'Oven Not Heating or Uneven Baking',
-          'Gas Burners Clicking Continuously',
-          'Electric Burner Element Not Turning On',
+          'Bake or Broil Element Not Working',
           'Oven Temperature Sensor Out of Calibration',
           'Oven Door Lock Stuck on Self-Clean',
-          'Touchpad Control Board Error Codes'
+          'Touchpad Control Board Error Codes',
+          'Gas Oven Igniter Not Lighting'
+        ],
+        types: [
+          'Electric Single & Double Wall Ovens',
+          'Slide-In & Freestanding Ranges',
+          'Convection & Smart Ovens',
+          'Gas Range & Wall Ovens',
+          'Built-In Warming Drawers',
+          'Commercial Style Cooking Ovens'
+        ]
+      },
+      stove: {
+        key: 'stove',
+        name: 'Stove',
+        titleName: 'Stove',
+        serviceLabel: 'Stove Burner Not Working or Cooktop Not Heating?',
+        typesTitle: 'Types of Stoves & Cooktops We Repair',
+        problemsTitle: 'Common Stove & Cooktop Problems',
+        heroImg: '../img/service-card-stove.webp',
+        desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Cooktop &amp; Stove Types:</strong> Smooth glass cooktops, electric ranges &amp; induction units.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Samsung, LG, Whirlpool, Bosch, KitchenAid &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">Surface Element Repairs:</strong> Burner coils, infinite switches, glass tops &amp; spark modules fixed on-site.</span></li></ul>',
+        ctaText: 'Book Your Stove Repair Today',
+        problems: [
+          'Electric Burner Element Not Turning On',
+          'Gas Burners Clicking Continuously',
+          'Smooth Glass Cooktop Element Not Heating',
+          'Induction Cooktop Not Detecting Cookware',
+          'Surface Burner Infinite Switch Broken',
+          'Touchpad Control Error Codes'
         ],
         types: [
           'Smooth Ceramic Glass Cooktops',
           'Gas Sealed-Burner Rangetops',
-          'Electric Single & Double Wall Ovens',
-          'Slide-In & Freestanding Ranges',
           'Magnetic Induction Cooktops',
-          'Commercial Style Cooking Ranges'
+          'Electric Radiant & Coil Stoves',
+          'Slide-In & Freestanding Stoves',
+          'Commercial Style Cooking Tops'
         ]
       },
       microwave: {
@@ -2463,7 +2490,8 @@
       else if (['fridge', 'refrigerator', 'freezer'].includes(serviceParam)) matchedService = DYNAMIC_SERVICES.fridge;
       else if (['dryer', 'clothes-dryer'].includes(serviceParam)) matchedService = DYNAMIC_SERVICES.dryer;
       else if (['dishwasher', 'dish-washer'].includes(serviceParam)) matchedService = DYNAMIC_SERVICES.dishwasher;
-      else if (['stove', 'oven', 'range', 'cooktop'].includes(serviceParam)) matchedService = DYNAMIC_SERVICES.stove;
+      else if (serviceParam === 'oven') matchedService = DYNAMIC_SERVICES.oven;
+      else if (['stove', 'range', 'cooktop'].includes(serviceParam)) matchedService = DYNAMIC_SERVICES.stove;
       else if (['microwave'].includes(serviceParam)) matchedService = DYNAMIC_SERVICES.microwave;
       else if (['appliance', 'all', 'repair'].includes(serviceParam)) matchedService = DYNAMIC_SERVICES.appliance;
 
