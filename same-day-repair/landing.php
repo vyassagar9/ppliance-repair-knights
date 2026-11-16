@@ -1247,7 +1247,7 @@ $all_service_cities = [
       </div>
       <div class="flex items-center gap-4 text-xs font-extrabold text-brandOrange">
         <span class="hidden sm:inline text-slate-300">Available Daily: 8:00 AM – 8:00 PM</span>
-        <a href="tel:9057178905" onclick="trackGtmCall('topbar')" class="gtm-ppc-call gtm-ppc-call-topbar hover:underline text-white font-bold">Call: 905-717-8905</a>
+        <a href="tel:+19057178905" onclick="trackGtmCall('topbar')" class="gtm-ppc-call gtm-ppc-call-topbar hover:underline text-white font-bold">Call: 905-717-8905</a>
       </div>
     </div>
   </aside>
@@ -1265,7 +1265,7 @@ $all_service_cities = [
 
       <!-- Top Right Header CTA (On Mobile: Call button only, Book Online hidden) -->
       <div class="flex items-center gap-2 sm:gap-3">
-        <a href="tel:9057178905" onclick="trackGtmCall('header_call')" class="gtm-ppc-call gtm-ppc-call-header bg-brandOrange hover:bg-brandOrangeHover text-white font-bold px-3.5 py-2 sm:px-5 sm:py-2.5 rounded-xl text-xs sm:text-sm transition-all flex items-center gap-1.5 shadow-sm">
+        <a href="tel:+19057178905" onclick="trackGtmCall('header_call')" class="gtm-ppc-call gtm-ppc-call-header bg-brandOrange hover:bg-brandOrangeHover text-white font-bold px-3.5 py-2 sm:px-5 sm:py-2.5 rounded-xl text-xs sm:text-sm transition-all flex items-center gap-1.5 shadow-sm">
           <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
             <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
           </svg>
@@ -1307,7 +1307,7 @@ $all_service_cities = [
 
             <!-- Dual Action Call & Book Buttons -->
             <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-1 pb-1">
-              <a href="tel:9057178905" onclick="trackGtmCall('hero_call')" class="gtm-ppc-call gtm-ppc-call-hero bg-brandOrange hover:bg-brandOrangeHover text-white font-bold px-6 py-3 rounded-xl text-sm sm:text-base uppercase tracking-wider transition-all shadow-md hover:shadow-lg flex items-center gap-2 transform active:scale-95">
+              <a href="tel:+19057178905" onclick="trackGtmCall('hero_call')" class="gtm-ppc-call gtm-ppc-call-hero bg-brandOrange hover:bg-brandOrangeHover text-white font-bold px-6 py-3 rounded-xl text-sm sm:text-base uppercase tracking-wider transition-all shadow-md hover:shadow-lg flex items-center gap-2 transform active:scale-95">
                 <svg class="w-5 h-5 flex-shrink-0 animate-bounce" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
                 </svg>
@@ -1417,7 +1417,7 @@ $all_service_cities = [
               </ul>
             </div>
             <div class="mt-6 pt-4 border-t border-slate-100">
-              <a href="tel:9057178905" onclick="trackGtmCall('problem_card_call')" class="text-xs font-bold text-brandOrange hover:underline flex items-center gap-1">
+              <a href="tel:+19057178905" onclick="trackGtmCall('problem_card_call')" class="text-xs font-bold text-brandOrange hover:underline flex items-center gap-1">
                 <span>Diagnose your symptom today →</span>
               </a>
             </div>
@@ -1541,7 +1541,7 @@ $all_service_cities = [
               <span class="ppc-cta-pulse-dot"></span>
               <span>Fast Direct Dispatch</span>
             </div>
-            <a href="tel:9057178905" onclick="trackGtmCall('banner_call_text')" class="ppc-cta-phone-link">
+            <a href="tel:+19057178905" onclick="trackGtmCall('banner_call_text')" class="ppc-cta-phone-link">
               Call: (905) 717-8905
             </a>
             <div class="ppc-cta-subtext">Priority arrivals across <?php echo htmlspecialchars($city_name); ?> &amp; GTA • Fee waived with repair</div>
@@ -1550,7 +1550,7 @@ $all_service_cities = [
 
         <!-- Right Action Buttons -->
         <div class="ppc-cta-actions">
-          <a href="tel:9057178905" onclick="trackGtmCall('banner_call')" class="gtm-ppc-call ppc-cta-btn-call">
+          <a href="tel:+19057178905" onclick="trackGtmCall('banner_call')" class="gtm-ppc-call ppc-cta-btn-call">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
               <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
             </svg>
@@ -1661,7 +1661,7 @@ $all_service_cities = [
           Don't wait while laundry piles up or broken appliances cause disruption. Call our priority dispatch center now or request a callback to secure your same-day repair appointment near you.
         </p>
         <div class="pt-2 flex flex-wrap items-center justify-center gap-3">
-          <a href="tel:9057178905" onclick="trackGtmCall('bottom_cta_call')" class="gtm-ppc-call bg-brandOrange hover:bg-brandOrangeHover text-white font-bold px-7 py-3 rounded-xl text-xs sm:text-sm uppercase tracking-wider transition-all shadow-md flex items-center gap-2">
+          <a href="tel:+19057178905" onclick="trackGtmCall('bottom_cta_call')" class="gtm-ppc-call bg-brandOrange hover:bg-brandOrangeHover text-white font-bold px-7 py-3 rounded-xl text-xs sm:text-sm uppercase tracking-wider transition-all shadow-md flex items-center gap-2">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
             <span>CALL 905-717-8905</span>
           </a>
@@ -1752,7 +1752,7 @@ $all_service_cities = [
 
           <!-- Direct Dual Conversion Buttons -->
           <div class="pt-1 flex flex-wrap items-center gap-2.5">
-            <a href="tel:9057178905" onclick="trackGtmCall('footer_call')" class="inline-flex items-center gap-2 bg-brandOrange hover:bg-brandOrangeHover text-white font-black px-4 py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all shadow-md active:scale-95">
+            <a href="tel:+19057178905" onclick="trackGtmCall('footer_call')" class="inline-flex items-center gap-2 bg-brandOrange hover:bg-brandOrangeHover text-white font-black px-4 py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all shadow-md active:scale-95">
               <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
               <span>905-717-8905</span>
             </a>
@@ -1860,7 +1860,7 @@ $all_service_cities = [
     <a href="#ppc-quote-modal" onclick="openLeadModal(); return false;" class="shrink-0 bg-white/10 hover:bg-white/20 text-white border border-white/25 font-bold py-3 px-3.5 rounded-xl text-[11px] text-center uppercase tracking-tight shadow-xs active:scale-95 transition-transform flex items-center justify-center">
       <span>BOOK</span>
     </a>
-    <a href="tel:9057178905" onclick="trackGtmCall('mobile_bar')" class="flex-grow bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold py-3 px-3 rounded-xl text-xs sm:text-sm text-center uppercase tracking-wide shadow-md flex items-center justify-center gap-2 active:scale-95 transition-transform">
+    <a href="tel:+19057178905" onclick="trackGtmCall('mobile_bar')" class="flex-grow bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold py-3 px-3 rounded-xl text-xs sm:text-sm text-center uppercase tracking-wide shadow-md flex items-center justify-center gap-2 active:scale-95 transition-transform">
       <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
       <span>CALL 905-717-8905</span>
     </a>
@@ -1928,7 +1928,7 @@ $all_service_cities = [
       <div id="modal-success" class="hidden bg-emerald-50 border border-emerald-400 p-6 rounded-2xl text-center space-y-2">
         <div class="text-2xl text-emerald-600 font-bold">✓ Request Received!</div>
         <p class="text-xs text-emerald-900 font-medium">A technician will call your number within 15 minutes.</p>
-        <a href="tel:9057178905" class="inline-block mt-2 bg-brandDarkBlue text-white text-xs font-bold py-2 px-4 rounded-lg">Call Dispatch: 905-717-8905</a>
+        <a href="tel:+19057178905" class="inline-block mt-2 bg-brandDarkBlue text-white text-xs font-bold py-2 px-4 rounded-lg">Call Dispatch: 905-717-8905</a>
       </div>
     </div>
   </div>

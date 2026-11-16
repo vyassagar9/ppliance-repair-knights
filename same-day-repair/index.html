@@ -1672,7 +1672,7 @@
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
-            <input type="tel" id="modal-phone" required placeholder="Phone Number *" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brandOrange outline-none font-medium">
+            <input type="tel" id="modal-phone" required placeholder="Phone Number *" inputmode="tel" autocomplete="tel" maxlength="14" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brandOrange outline-none font-medium">
           </div>
           <div>
             <input type="email" id="modal-email" placeholder="Email Address (Optional)" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brandOrange outline-none font-medium">
@@ -1821,6 +1821,26 @@
     function closeLeadModal() {
       document.getElementById('ppc-quote-modal').classList.add('hidden');
     }
+
+    // Auto-Format Phone Input (e.g. (905) 717-8905)
+    (function initPhoneMask() {
+      const phoneInput = document.getElementById('modal-phone');
+      if (!phoneInput) return;
+      phoneInput.setAttribute('maxlength', '14');
+      phoneInput.setAttribute('inputmode', 'tel');
+      phoneInput.addEventListener('input', function (e) {
+        let digits = e.target.value.replace(/\D/g, '');
+        if (digits.length > 10 && digits.startsWith('1')) digits = digits.slice(1);
+        digits = digits.slice(0, 10);
+        if (digits.length <= 3) {
+          e.target.value = digits;
+        } else if (digits.length <= 6) {
+          e.target.value = '(' + digits.slice(0, 3) + ') ' + digits.slice(3);
+        } else {
+          e.target.value = '(' + digits.slice(0, 3) + ') ' + digits.slice(3, 6) + '-' + digits.slice(6);
+        }
+      });
+    })();
 
     // Lead Form Submit
     function submitLeadModal() {
