@@ -57,7 +57,7 @@ $services = [
         'badge_color' => 'bg-emerald-50 text-emerald-700 border-emerald-200',
         'image'       => 'img/washing-machine-studio.webp',
         'image_alt'   => 'Professional Washing Machine Repair in Toronto and GTA',
-        'summary'     => 'Prompt repairs for front-load and top-load washers failing to drain, spin, or lock. Mobile technicians equipped with common OEM pumps, belts, and valves.',
+        'summary'     => 'Prompt repairs for front-load and top-load washers failing to drain, spin, or lock. Mobile technicians equipped with common genuine quality pumps, belts, and valves.',
         'types'       => ['Front-Load Washers', 'Top-Load Agitators', 'High-Efficiency Impellers', 'Stackable Laundry Sets'],
         'issues'      => [
             'Washer will not drain standing water at cycle completion',
@@ -186,7 +186,7 @@ $hub_faqs = [
     ],
     [
         'q' => 'Are your appliance repairs backed by a warranty?',
-        'a' => 'Yes. Every repair performed by Appliance Repair Knights is backed by our comprehensive written warranty on parts and labour. We install genuine OEM replacement components directly specified by your appliance manufacturer.'
+        'a' => 'Yes. Every repair performed by Appliance Repair Knights is backed by our comprehensive written warranty on parts and labour. We install genuine quality replacement components directly specified by your appliance manufacturer.'
     ],
     [
         'q' => 'How quickly can a technician arrive at my home?',
@@ -522,7 +522,7 @@ require_once __DIR__ . '/../head.php';
           Factory-Trained On All Major &amp; Luxury Manufacturers
         </h2>
         <p class="text-secondary text-sm mt-2">
-          From North American staples to high-end European appliances, our technicians carry the specialized diagnostic computers and OEM parts to service your unit correctly.
+          From North American staples to high-end European appliances, our technicians carry specialized diagnostic computers and genuine quality parts to service your unit correctly.
         </p>
       </div>
 
@@ -530,10 +530,10 @@ require_once __DIR__ . '/../head.php';
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
         <?php
         $brands = [
-            ['name' => 'Samsung', 'color' => '#1428A0'],
-            ['name' => 'LG', 'color' => '#A50034'],
+            ['name' => 'Samsung', 'color' => '#1428A0', 'url' => 'brands/samsung-appliance-repair'],
+            ['name' => 'LG', 'color' => '#A50034', 'url' => 'brands/lg-appliance-repair'],
             ['name' => 'Whirlpool', 'color' => '#00529B'],
-            ['name' => 'Bosch', 'color' => '#EA1A24'],
+            ['name' => 'Bosch', 'color' => '#EA1A24', 'url' => 'brands/bosch-appliance-repair'],
             ['name' => 'GE Appliances', 'color' => '#005EA6'],
             ['name' => 'Maytag', 'color' => '#003366'],
             ['name' => 'KitchenAid', 'color' => '#9B1B30'],
@@ -549,12 +549,26 @@ require_once __DIR__ . '/../head.php';
             ['name' => 'Thermador', 'color' => '#1C3F94'],
             ['name' => 'Jura', 'color' => '#990000']
         ];
-        foreach ($brands as $b): ?>
-          <div class="bg-slate-50 border border-slate-200 rounded-xl p-3.5 text-center flex flex-col items-center justify-center hover:border-slate-400 hover:shadow-sm transition-all group">
-            <span class="w-3 h-3 rounded-full mb-1.5" style="background-color: <?php echo $b['color']; ?>;"></span>
-            <span class="text-xs font-bold text-slate-800 group-hover:text-primary transition-colors"><?php echo $b['name']; ?></span>
-          </div>
-        <?php endforeach; ?>
+        foreach ($brands as $b): 
+          if (!empty($b['url'])): ?>
+            <a href="<?php echo $base_url . $b['url']; ?>" class="bg-slate-50 border border-slate-200 rounded-xl p-3.5 text-center flex flex-col items-center justify-center hover:border-brandOrange hover:bg-white hover:shadow-md transition-all group">
+              <span class="w-3 h-3 rounded-full mb-1.5" style="background-color: <?php echo $b['color']; ?>;"></span>
+              <span class="text-xs font-bold text-slate-900 group-hover:text-brandOrange transition-colors"><?php echo $b['name']; ?></span>
+              <span class="text-[10px] font-extrabold text-brandOrange mt-0.5">Dedicated Guide &rarr;</span>
+            </a>
+          <?php else: ?>
+            <div class="bg-slate-50 border border-slate-200 rounded-xl p-3.5 text-center flex flex-col items-center justify-center hover:border-slate-300 transition-all">
+              <span class="w-3 h-3 rounded-full mb-1.5" style="background-color: <?php echo $b['color']; ?>;"></span>
+              <span class="text-xs font-bold text-slate-800"><?php echo $b['name']; ?></span>
+            </div>
+          <?php endif; 
+        endforeach; ?>
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="<?php echo $base_url; ?>brands" class="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 hover:bg-brandDarkBlue text-white font-bold text-xs uppercase tracking-wider rounded-xl transition-all shadow-sm">
+          <span>Explore All 40+ Appliance Brands</span> &rarr;
+        </a>
       </div>
     </div>
   </section>

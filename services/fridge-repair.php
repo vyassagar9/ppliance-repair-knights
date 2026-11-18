@@ -347,7 +347,7 @@ include __DIR__ . '/../head.php';
                     <span class="block text-[11px] text-slate-400 font-normal mt-0.5">Airflow blocked or frost buildup</span>
                   </td>
                   <td class="p-4 text-slate-600">Faulty evaporator fan motor or defective defrost thermostat</td>
-                  <td class="p-4 text-slate-600">Sensor load testing, coil thaw & OEM fan motor replacement</td>
+                  <td class="p-4 text-slate-600">Sensor load testing, coil thaw & genuine quality fan motor replacement</td>
                   <td class="p-4 text-center">
                     <span class="inline-block px-2.5 py-1 rounded-full text-[10px] font-bold bg-emerald-50 text-emerald-800 border border-emerald-200">
                       Prompt Same-Day
@@ -373,7 +373,7 @@ include __DIR__ . '/../head.php';
                     <span class="block text-[11px] text-slate-400 font-normal mt-0.5">Compressor attempts start then clicks off</span>
                   </td>
                   <td class="p-4 text-slate-600">Burned PTC start relay, run capacitor, or compressor overload</td>
-                  <td class="p-4 text-slate-600">Electrical ohm testing & OEM starter relay/capacitor replacement</td>
+                  <td class="p-4 text-slate-600">Electrical ohm testing & genuine quality starter relay/capacitor replacement</td>
                   <td class="p-4 text-center">
                     <span class="inline-block px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-50 text-amber-800 border border-amber-200">
                       Priority Dispatch
@@ -389,7 +389,7 @@ include __DIR__ . '/../head.php';
                   <td class="p-4 text-slate-600">Water pressure testing, dual solenoid replacement & cycle reset</td>
                   <td class="p-4 text-center">
                     <span class="inline-block px-2.5 py-1 rounded-full text-[10px] font-bold bg-emerald-50 text-emerald-800 border border-emerald-200">
-                      In-Stock OEM Parts
+                      In-Stock Genuine Parts
                     </span>
                   </td>
                 </tr>
@@ -413,7 +413,7 @@ include __DIR__ . '/../head.php';
           <div class="p-4 bg-slate-50 rounded-xl border border-bordercolor flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-slate-600">
             <span class="flex items-center gap-2">
               <span class="text-accent font-bold">🛡️ Written Warranty:</span>
-              All completed refrigerator repairs include original OEM parts & technician labor warranty.
+              All completed refrigerator repairs include genuine quality parts & technician labour warranty.
             </span>
             <a href="tel:9057178905" class="font-bold text-accent hover:underline flex items-center gap-1 flex-shrink-0">
               Book Diagnosis Window &rarr;
@@ -470,15 +470,16 @@ include __DIR__ . '/../head.php';
         <!-- Brands Widget -->
         <div class="bg-white border border-bordercolor rounded-xl p-6 shadow-sm space-y-4">
           <h4 class="font-heading font-bold text-primary text-base border-b border-slate-100 pb-2">Brands We Repair</h4>
-          <p class="text-xs text-slate-500 leading-relaxed">Authorized service for:</p>
-          <div class="grid grid-cols-3 gap-3 text-center text-[10px] font-bold text-slate-400">
-            <span class="p-2 border border-slate-100 rounded">Sub-Zero</span>
-            <span class="p-2 border border-slate-100 rounded">LG</span>
-            <span class="p-2 border border-slate-100 rounded">Samsung</span>
-            <span class="p-2 border border-slate-100 rounded">Whirlpool</span>
-            <span class="p-2 border border-slate-100 rounded">Bosch</span>
-            <span class="p-2 border border-slate-100 rounded">KitchenAid</span>
+          <p class="text-xs text-slate-500 leading-relaxed">Expert service &amp; genuine quality parts for:</p>
+          <div class="grid grid-cols-3 gap-2.5 text-center text-[11px] font-bold">
+            <a href="<?php echo $base_url; ?>brands/samsung-appliance-repair" class="brand-link-pill brand-link-samsung" title="Samsung Refrigerator Repair">Samsung</a>
+            <a href="<?php echo $base_url; ?>brands/lg-appliance-repair" class="brand-link-pill brand-link-lg" title="LG Refrigerator Repair">LG</a>
+            <a href="<?php echo $base_url; ?>brands/bosch-appliance-repair" class="brand-link-pill brand-link-bosch" title="Bosch Refrigerator Repair">Bosch</a>
+            <span class="p-2 border border-slate-100 rounded text-slate-500 bg-slate-50/50 flex items-center justify-center">Sub-Zero</span>
+            <span class="p-2 border border-slate-100 rounded text-slate-500 bg-slate-50/50 flex items-center justify-center">Whirlpool</span>
+            <span class="p-2 border border-slate-100 rounded text-slate-500 bg-slate-50/50 flex items-center justify-center">KitchenAid</span>
           </div>
+          <a href="<?php echo $base_url; ?>brands" class="text-[11px] font-bold text-brandOrange hover:underline block text-center pt-2 border-t border-slate-100">All Appliance Brands &rarr;</a>
         </div>
       </aside>
     </section>

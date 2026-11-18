@@ -3,7 +3,7 @@ require_once __DIR__ . '/../config.php';
 $base_url = '../';
 $current_page = 'coffee-machine';
 $page_title = 'Coffee Machine Repair, Servicing & Maintenance | Toronto & GTA';
-$page_description = 'On-site coffee machine repair, servicing & preventative maintenance across Toronto & GTA. Residential built-in & commercial office espresso systems. Fast dispatch, OEM parts.';
+$page_description = 'On-site coffee machine repair, servicing & preventative maintenance across Toronto & GTA. Residential built-in & commercial office espresso systems. Fast dispatch, genuine quality parts.';
 $page_keywords = 'coffee machine repair toronto, office coffee machine repair gta, espresso machine repair, commercial coffee maker maintenance, built-in coffee system service, gaggia repair, mastrena repair, bunn repair, breville repair, delonghi repair, bravilor bonamat repair, saeco professional repair, nespresso repair, vki coffee repair, keurig repair';
 $canonical_url = 'https://www.appliancerepairknights.com/services/coffee-machine-repair';
 $og_image = 'https://www.appliancerepairknights.com/img/coffee-machine-repair-service.webp';
@@ -162,7 +162,7 @@ $custom_head_schema = <<<HTML
         "name": "Why is my coffee machine leaking water from underneath?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Water leaks typically originate from brittle silicone pressure tubing, worn brew group gaskets, a cracked flow meter casing, calcified boiler fittings, or a stuck solenoid relief valve. Our mobile technicians carry common OEM replacement seals and hoses to detect and resolve leaks on-site."
+          "text": "Water leaks typically originate from brittle silicone pressure tubing, worn brew group gaskets, a cracked flow meter casing, calcified boiler fittings, or a stuck solenoid relief valve. Our mobile technicians carry common genuine replacement seals and hoses to detect and resolve leaks on-site."
         }
       },
       {
@@ -178,7 +178,7 @@ $custom_head_schema = <<<HTML
         "name": "How does your diagnostic fee and warranty work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We believe in complete pricing transparency. Our technician conducts a full on-site diagnostic and provides an upfront written quote before any work begins. The diagnostic service call fee is completely waived when you proceed with the repair. All repairs are backed by our comprehensive written warranty on parts and labour using genuine OEM parts."
+          "text": "We believe in complete pricing transparency. Our technician conducts a full on-site diagnostic and provides an upfront written quote before any work begins. The diagnostic service call fee is completely waived when you proceed with the repair. All repairs are backed by our comprehensive written warranty on parts and labour using genuine quality parts."
         }
       }
     ]
@@ -297,7 +297,7 @@ include __DIR__ . '/../head.php';
           <div class="p-2 bg-slate-100 rounded-lg text-accent">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
           </div>
-          <span class="text-sm font-bold text-primary">Genuine OEM Parts</span>
+          <span class="text-sm font-bold text-primary">Genuine Quality Parts</span>
         </div>
       </div>
     </section>
@@ -435,7 +435,7 @@ include __DIR__ . '/../head.php';
                   </li>
                   <li class="flex items-center gap-2.5">
                     <svg class="w-4 h-4 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    <span><strong>Clean In-Home Care:</strong> Protective mats &amp; genuine OEM parts</span>
+                    <span><strong>Clean In-Home Care:</strong> Protective mats &amp; genuine quality parts</span>
                   </li>
                 </ul>
               </div>
@@ -556,7 +556,7 @@ include __DIR__ . '/../head.php';
       <div class="max-w-7xl mx-auto px-4 space-y-10">
         
         <div class="text-center max-w-3xl mx-auto space-y-3">
-          <span class="text-accent text-xs font-bold uppercase tracking-wider block">OEM Parts &amp; Factory Calibrated Diagnostics</span>
+          <span class="text-accent text-xs font-bold uppercase tracking-wider block">Genuine Quality Parts &amp; Factory Calibrated Diagnostics</span>
           <h2 class="text-2xl sm:text-3xl font-heading font-bold text-primary">
             Brands Available for Service and Repair
           </h2>
@@ -567,6 +567,11 @@ include __DIR__ . '/../head.php';
 
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-y-3.5 gap-x-6 text-sm sm:text-base">
           
+          <a href="<?php echo $base_url; ?>brands/bosch-appliance-repair" class="flex items-center gap-2 font-bold text-slate-900 hover:text-brandOrange transition-colors group">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange flex-shrink-0"></span>
+            <span class="underline decoration-dotted group-hover:decoration-solid">Bosch</span>
+          </a>
+
           <div class="flex items-center gap-2 font-medium text-slate-800 hover:text-brandOrange transition-colors">
             <span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span>
             <span>Ascaso</span>
@@ -690,7 +695,7 @@ include __DIR__ . '/../head.php';
         </div>
 
         <p class="text-xs text-slate-500 text-center pt-4 border-t border-slate-100">
-          Don't see your coffee machine make or model listed? We service all residential, office &amp; commercial brands. Call <a href="tel:9057178905" class="text-accent font-bold hover:underline">905-717-8905</a> to verify parts availability.
+          Don't see your coffee machine make or model listed? We service all residential, office &amp; commercial brands. Call <a href="tel:9057178905" class="text-accent font-bold hover:underline">905-717-8905</a> or explore our <a href="<?php echo $base_url; ?>brands" class="text-accent font-bold hover:underline">full appliance brands directory</a>.
         </p>
       </div>
     </section>
@@ -750,7 +755,7 @@ include __DIR__ . '/../head.php';
               </span>
             </summary>
             <div class="pt-3 text-sm text-slate-600 leading-relaxed border-t border-slate-100 mt-3">
-              Water leaks commonly originate from degraded brew group gaskets, cracked silicone pressure tubing, a calcified boiler seal, loose quick-connect fittings, or a faulty solenoid release valve. Our mobile technicians carry common OEM replacement seals and hoses to detect and resolve leaks on-site.
+              Water leaks commonly originate from degraded brew group gaskets, cracked silicone pressure tubing, a calcified boiler seal, loose quick-connect fittings, or a faulty solenoid release valve. Our mobile technicians carry common genuine replacement seals and hoses to detect and resolve leaks on-site.
             </div>
           </details>
 
@@ -774,7 +779,7 @@ include __DIR__ . '/../head.php';
               </span>
             </summary>
             <div class="pt-3 text-sm text-slate-600 leading-relaxed border-t border-slate-100 mt-3">
-              We provide transparent upfront written quotes before any repair or maintenance begins. Our diagnostic service call fee is completely waived when you proceed with the repair. Furthermore, all completed repairs are backed by our comprehensive written warranty on parts and labour using genuine OEM replacement parts.
+              We provide transparent upfront written quotes before any repair or maintenance begins. Our diagnostic service call fee is completely waived when you proceed with the repair. Furthermore, all completed repairs are backed by our comprehensive written warranty on parts and labour using genuine quality replacement parts.
             </div>
           </details>
 

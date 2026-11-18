@@ -362,15 +362,16 @@ include __DIR__ . '/../head.php';
         <!-- Brands Widget -->
         <div class="bg-white border border-bordercolor rounded-xl p-6 shadow-sm space-y-4">
           <h4 class="font-heading font-bold text-primary text-base border-b border-slate-100 pb-2">Brands We Repair</h4>
-          <p class="text-xs text-slate-500 leading-relaxed">Authorized service for:</p>
-          <div class="grid grid-cols-3 gap-3 text-center text-[10px] font-bold text-slate-400">
-            <span class="p-2 border border-slate-100 rounded">JennAir</span>
-            <span class="p-2 border border-slate-100 rounded">LG</span>
-            <span class="p-2 border border-slate-100 rounded">Samsung</span>
-            <span class="p-2 border border-slate-100 rounded">Whirlpool</span>
-            <span class="p-2 border border-slate-100 rounded">Bosch</span>
-            <span class="p-2 border border-slate-100 rounded">KitchenAid</span>
+          <p class="text-xs text-slate-500 leading-relaxed">Expert service &amp; genuine quality parts for:</p>
+          <div class="grid grid-cols-3 gap-2.5 text-center text-[11px] font-bold">
+            <a href="<?php echo $base_url; ?>brands/samsung-appliance-repair" class="brand-link-pill brand-link-samsung" title="Samsung Stove &amp; Oven Repair">Samsung</a>
+            <a href="<?php echo $base_url; ?>brands/lg-appliance-repair" class="brand-link-pill brand-link-lg" title="LG Stove &amp; Oven Repair">LG</a>
+            <a href="<?php echo $base_url; ?>brands/bosch-appliance-repair" class="brand-link-pill brand-link-bosch" title="Bosch Stove &amp; Oven Repair">Bosch</a>
+            <span class="p-2 border border-slate-100 rounded text-slate-500 bg-slate-50/50 flex items-center justify-center">JennAir</span>
+            <span class="p-2 border border-slate-100 rounded text-slate-500 bg-slate-50/50 flex items-center justify-center">Whirlpool</span>
+            <span class="p-2 border border-slate-100 rounded text-slate-500 bg-slate-50/50 flex items-center justify-center">KitchenAid</span>
           </div>
+          <a href="<?php echo $base_url; ?>brands" class="text-[11px] font-bold text-brandOrange hover:underline block text-center pt-2 border-t border-slate-100">All Appliance Brands &rarr;</a>
         </div>
       </aside>
     </section>

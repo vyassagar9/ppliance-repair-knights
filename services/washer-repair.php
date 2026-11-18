@@ -153,7 +153,7 @@ $custom_head_schema = <<<HTML
         "name": "Do you offer a warranty on washer parts and labour?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, all completed washing machine repairs include written warranty coverage on installed OEM replacement parts and technician labour."
+          "text": "Yes, all completed washing machine repairs include written warranty coverage on installed genuine replacement parts and technician labour."
         }
       }
     ]
@@ -253,7 +253,7 @@ include __DIR__ . '/../head.php';
         <div class="space-y-4">
           <h2 class="text-2xl font-heading font-bold text-primary">Washing Machine Repair & Troubleshooting</h2>
           <p class="text-slate-600 leading-relaxed text-sm md:text-base">
-            Washing machines undergo massive physical forces during spin cycles. Over time, shock absorbers degrade, pumps clog with lint/debris, or electronic door locks fail. Our experienced technicians carry OEM pumps, belts, gaskets, and sensors to complete repairs in a single visit.
+            Washing machines undergo massive physical forces during spin cycles. Over time, shock absorbers degrade, pumps clog with lint/debris, or electronic door locks fail. Our experienced technicians carry genuine quality replacement pumps, belts, gaskets, and sensors to complete repairs in a single visit.
           </p>
         </div>
 
@@ -362,15 +362,16 @@ include __DIR__ . '/../head.php';
         <!-- Brands Widget -->
         <div class="bg-white border border-bordercolor rounded-xl p-6 shadow-sm space-y-4">
           <h4 class="font-heading font-bold text-primary text-base border-b border-slate-100 pb-2">Brands We Repair</h4>
-          <p class="text-xs text-slate-500 leading-relaxed">Authorized service for:</p>
-          <div class="grid grid-cols-3 gap-3 text-center text-[10px] font-bold text-slate-400">
-            <span class="p-2 border border-slate-100 rounded">Maytag</span>
-            <span class="p-2 border border-slate-100 rounded">LG</span>
-            <span class="p-2 border border-slate-100 rounded">Samsung</span>
-            <span class="p-2 border border-slate-100 rounded">Whirlpool</span>
-            <span class="p-2 border border-slate-100 rounded">Kenmore</span>
-            <span class="p-2 border border-slate-100 rounded">Miele</span>
+          <p class="text-xs text-slate-500 leading-relaxed">Expert service &amp; genuine quality parts for:</p>
+          <div class="grid grid-cols-3 gap-2.5 text-center text-[11px] font-bold">
+            <a href="<?php echo $base_url; ?>brands/samsung-appliance-repair" class="brand-link-pill brand-link-samsung" title="Samsung Washing Machine Repair">Samsung</a>
+            <a href="<?php echo $base_url; ?>brands/lg-appliance-repair" class="brand-link-pill brand-link-lg" title="LG Washing Machine Repair">LG</a>
+            <a href="<?php echo $base_url; ?>brands/bosch-appliance-repair" class="brand-link-pill brand-link-bosch" title="Bosch Washing Machine Repair">Bosch</a>
+            <span class="p-2 border border-slate-100 rounded text-slate-500 bg-slate-50/50 flex items-center justify-center">Maytag</span>
+            <span class="p-2 border border-slate-100 rounded text-slate-500 bg-slate-50/50 flex items-center justify-center">Whirlpool</span>
+            <span class="p-2 border border-slate-100 rounded text-slate-500 bg-slate-50/50 flex items-center justify-center">Kenmore</span>
           </div>
+          <a href="<?php echo $base_url; ?>brands" class="text-[11px] font-bold text-brandOrange hover:underline block text-center pt-2 border-t border-slate-100">All Appliance Brands &rarr;</a>
         </div>
       </aside>
     </section>
@@ -446,7 +447,7 @@ include __DIR__ . '/../head.php';
               <svg class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
             <div class="hidden px-6 pb-5 text-xs md:text-sm text-slate-600 leading-relaxed">
-              Yes, all completed washing machine repairs include written warranty coverage on installed OEM replacement parts and technician labour.
+              Yes, all completed washing machine repairs include written warranty coverage on installed genuine replacement parts and technician labour.
             </div>
           </div>
         </div>

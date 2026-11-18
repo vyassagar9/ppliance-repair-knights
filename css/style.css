@@ -107,3 +107,51 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .gtm-web-lead-header * {
   pointer-events: none;
 }
+
+/* 8. Service Page Brands We Repair Badges */
+.brand-link-pill {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0.5rem !important;
+  font-size: 0.6875rem !important;
+  font-weight: 800 !important;
+  border-radius: 0.375rem !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease-in-out !important;
+}
+.brand-link-samsung {
+  color: #034ea2 !important;
+  background-color: #f0f5fc !important;
+  border-color: #bfdbfe !important;
+}
+.brand-link-samsung:hover {
+  background-color: #034ea2 !important;
+  color: #ffffff !important;
+  border-color: #034ea2 !important;
+  box-shadow: 0 4px 10px rgba(3, 78, 162, 0.25) !important;
+}
+.brand-link-lg {
+  color: #a50034 !important;
+  background-color: #fdf0f4 !important;
+  border-color: #fecdd3 !important;
+}
+.brand-link-lg:hover {
+  background-color: #a50034 !important;
+  color: #ffffff !important;
+  border-color: #a50034 !important;
+  box-shadow: 0 4px 10px rgba(165, 0, 52, 0.25) !important;
+}
+.brand-link-bosch {
+  color: #0f172a !important;
+  background-color: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+}
+.brand-link-bosch:hover {
+  background-color: #0f172a !important;
+  color: #ffffff !important;
+  border-color: #0f172a !important;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.25) !important;
+}
