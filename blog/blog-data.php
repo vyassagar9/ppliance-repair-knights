@@ -1395,7 +1395,7 @@ HTML
       Before you spend your hard-earned savings replacing an appliance that still has years of dependable life left, let a certified local technician give you the facts.
     </p>
     <p>
-      Appliance Repair Knights provides prompt residential dispatch across Toronto, Mississauga, Brampton, Vaughan, Markham, Richmond Hill, Oakville, Burlington, and surrounding GTA communities. Check our <a href="../locations" class="text-brandBlue font-semibold hover:underline">GTA service areas directory</a> to confirm immediate coverage in your neighborhood.
+      Appliance Repair Knights provides prompt residential dispatch across Toronto, Mississauga, Brampton, Vaughan, Markham, Richmond Hill, Oakville, Burlington, and surrounding GTA communities. Check our <a href="../locations" class="text-brandBlue font-semibold hover:underline">GTA service areas directory</a> to confirm immediate coverage in your neighbourhood.
     </p>
     <div class="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
       <a href="tel:9057178905" class="inline-flex items-center justify-center gap-2 bg-brandOrange hover:bg-orange-600 text-white font-black text-sm uppercase tracking-wider py-3.5 px-6 rounded-none shadow-md transition-all active:scale-95">
@@ -1412,5 +1412,179 @@ HTML
 
 </div>
 HTML
-  ]
+  ],
+    'dryer-burning-smell-causes' => [
+    'slug' => 'dryer-burning-smell-causes',
+    'title' => 'Dryer Burning Smell? Stop Using It & Call a Repair Pro',
+    'meta_title' => 'Dryer Burning Smell? Stop Using It & Call a Repair Pro',
+    'meta_description' => 'Noticing a burning smell from your clothes dryer? Learn the 4 common causes—from lint buildup to worn drive belts—and why calling a local pro is your safest move.',
+    'primary_keyword' => 'dryer burning smell',
+    'related_keywords' => 'clothes dryer smells like burning, dryer burning smell toronto, dryer repair near me, burning rubber smell dryer GTA',
+    'category' => 'Dryer Repair',
+    'category_slug' => 'dryer',
+    'service_link' => 'services/dryer-repair',
+    'date_published' => '2026-11-18',
+    'date_modified' => '2026-11-18',
+    'author' => 'Appliance Repair Knights Certified Technicians',
+    'author_role' => 'Licensed Diagnostic & Field Team',
+    'read_time' => '4 min read',
+    'featured_image' => 'img/clothes-dryer-repair-service.webp',
+    'summary' => "Noticing a burning odour from your clothes dryer can be unsettling. Rather than letting the cycle finish, turning off the machine is the best first step. Here is a clear, calm look at the 4 common causes of a dryer burning smell and why calling a local appliance repair technician is the simplest way to get it running safely again.",
+    'quick_answer' => "A burning smell from your clothes dryer is usually caused by fine lint accumulation near the heater housing, a slipping rubber drive belt against a seized pulley, worn motor bearings, or heating element wear. Turn off the dryer for now. A certified technician can safely inspect internal components and resolve the issue on-site.",
+    'faqs' => [
+      [
+        'q' => 'Can I still run my dryer on "Air Fluff" or "Low Heat"?',
+        'a' => 'We recommend keeping the dryer turned off until an inspection is complete. Even on no-heat cycles, the drive motor, belt, and blower fan still operate under full mechanical load. If the burning smell stems from friction, running the dryer can damage surrounding parts.'
+      ],
+      [
+        'q' => 'Why does my dryer smell specifically like burnt rubber?',
+        'a' => 'A burnt rubber smell almost always points to drive belt friction. When the idler pulley wears out or the drum rollers stick, the rubber belt slips against the rapidly spinning motor shaft, creating heat and that distinctive rubber odour.'
+      ],
+      [
+        'q' => 'How does the diagnostic fee work for dryer repairs?',
+        'a' => 'Our diagnostic service call fee covers complete on-site inspection, component testing, and airflow checks. When you approve and proceed with the recommended repair, this service call fee is completely waived.'
+      ],
+      [
+        'q' => 'How quickly can a technician inspect my dryer in Toronto and the GTA?',
+        'a' => 'We provide prompt same-day service across Toronto, Mississauga, Brampton, Vaughan, Markham, Oakville, Burlington, and surrounding GTA communities. Our mobile vans carry common replacement belts, fuses, and heating elements for fast on-site repair.'
+      ]
+    ],
+    'content_html' => <<<HTML
+<div class="space-y-8 text-slate-700 leading-relaxed text-base sm:text-lg">
+
+  <!-- Introduction -->
+  <div class="space-y-4">
+    <p class="text-lg sm:text-xl text-slate-800 font-normal leading-relaxed">
+      Noticing a burning odour from your clothes dryer can be unsettling. You might wonder if it is just trapped lint, dust after a vacation, or something more serious inside the cabinet.
+    </p>
+
+    <p>
+      While you should not panic, continuing to run the cycle is never a good idea. Modern dryers generate intense heat and mechanical friction, so an unusual burning smell is your machine's way of asking for attention. Here is a straightforward look at what causes that burning smell, what you should do right away, and why booking a professional diagnostic visit is your best next step.
+    </p>
+  </div>
+
+  <!-- What to Do Right Away Box -->
+  <div class="bg-blue-50/70 border border-blue-200/80 rounded-2xl p-5 sm:p-6 space-y-3">
+    <h3 class="text-lg font-heading font-bold text-slate-900 flex items-center gap-2">
+      <span class="w-2.5 h-2.5 rounded-full bg-brandBlue"></span>
+      <span>What to Do Right Away</span>
+    </h3>
+    <ul class="space-y-2 text-sm sm:text-base text-slate-700">
+      <li class="flex items-start gap-2">
+        <span class="text-brandOrange font-bold font-mono">1.</span>
+        <span><strong>Turn off the cycle:</strong> Stop the dryer immediately using the power or cancel button.</span>
+      </li>
+      <li class="flex items-start gap-2">
+        <span class="text-brandOrange font-bold font-mono">2.</span>
+        <span><strong>Disconnect power:</strong> Unplug the dryer cord from the wall outlet or switch off its breaker.</span>
+      </li>
+      <li class="flex items-start gap-2">
+        <span class="text-brandOrange font-bold font-mono">3.</span>
+        <span><strong>Let it cool:</strong> Keep the dryer door closed for a few minutes so internal components cool down naturally.</span>
+      </li>
+      <li class="flex items-start gap-2">
+        <span class="text-brandOrange font-bold font-mono">4.</span>
+        <span><strong>Keep it off:</strong> Leave the dryer off until a certified appliance technician inspects it.</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Section 1: The 4 Common Causes -->
+  <div class="space-y-5">
+    <h2 class="text-2xl sm:text-3xl font-heading font-extrabold text-slate-900 tracking-tight">
+      The 4 Common Causes of a Dryer Burning Smell
+    </h2>
+
+    <div class="space-y-4">
+      <div>
+        <h3 class="text-lg sm:text-xl font-heading font-bold text-slate-900">
+          1. Lint Buildup Near the Heating Assembly
+        </h3>
+        <p class="mt-1 text-sm sm:text-base">
+          Even if you clean your lint filter after every load, fine lint fibers gradually bypass the screen trap. Over months of use, these fibers collect inside the lower cabinet, along the exhaust duct, and near the heating assembly. When these fibers heat up during a cycle, they produce a noticeable scorching smell.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-lg sm:text-xl font-heading font-bold text-slate-900">
+          2. Slipping Rubber Drive Belt
+        </h3>
+        <p class="mt-1 text-sm sm:text-base">
+          If your dryer smells distinctly like burning rubber, the drive belt is the usual culprit. This rubber belt wraps around the drum and is turned by the motor pulley. If the idler pulley seizes or drum support rollers wear down, the motor shaft continues spinning against a stationary belt, creating intense friction and burning the rubber.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-lg sm:text-xl font-heading font-bold text-slate-900">
+          3. Worn Motor Bearings
+        </h3>
+        <p class="mt-1 text-sm sm:text-base">
+          Your dryer's drive motor turns the heavy drum and blower wheel for hundreds of cycles every year. As motor bearings age and lose factory lubrication, internal resistance increases. The motor works harder and runs hotter than intended, releasing an electrical burning odour.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-lg sm:text-xl font-heading font-bold text-slate-900">
+          4. Heating Element Wear
+        </h3>
+        <p class="mt-1 text-sm sm:text-base">
+          In electric clothes dryers, heating coils expand and contract during every drying cycle. Over years of regular use, the coiled element weakens, develops hot spots, or sags against the metal casing, generating an acrid metallic burning scent.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2: Why Calling a Pro Makes Sense -->
+  <div class="space-y-4">
+    <h2 class="text-2xl sm:text-3xl font-heading font-extrabold text-slate-900 tracking-tight">
+      Why Calling a Repair Pro Is Your Best Move
+    </h2>
+
+    <p class="text-sm sm:text-base">
+      Modern clothes dryers operate on 240-volt circuits and rely on integrated thermal sensors to regulate high internal temperatures safely. Diagnosing the exact cause of a burning smell requires opening the internal cabinet and testing electrical components with professional diagnostic meters.
+    </p>
+
+    <p class="text-sm sm:text-base">
+      Rather than guessing which component is causing the odour, calling a certified local technician is the simplest and safest solution. A trained technician inspects the internal cabinet, clears inaccessible lint accumulation, tests thermal cutoffs, and replaces worn drive belts or heating elements using genuine quality parts—backed by our solid written warranty on parts and labour.
+    </p>
+
+    <p class="text-sm sm:text-base">
+      Our diagnostic service call fee is completely waived when you proceed with your repair, and we provide transparent, upfront written quotes before any work begins.
+    </p>
+  </div>
+
+  <!-- High-Converting Callout Box -->
+  <div class="bg-gradient-to-r from-orange-50 via-amber-50/60 to-orange-50 border border-brandOrange/30 rounded-2xl p-6 sm:p-7 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-4 shadow-2xs">
+    <div>
+      <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase tracking-wider bg-brandOrange text-white mb-2">
+        Same-Day GTA Dispatch
+      </span>
+      <h3 class="text-xl sm:text-2xl font-heading font-extrabold text-slate-900 leading-tight">
+        Dryer Smelling Like Burning?
+      </h3>
+      <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-lg">
+        Stop using it for now and let our certified technicians diagnose and resolve the issue on-site. Diagnostic fee is waived when you repair.
+      </p>
+    </div>
+
+    <div class="flex flex-col sm:flex-row items-center gap-2.5 w-full sm:w-auto shrink-0">
+      <a href="tel:9057178905" 
+         class="gtm-web-call w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brandOrange hover:bg-orange-600 text-white font-extrabold px-6 py-3.5 rounded-xl text-sm shadow-md shadow-brandOrange/20 transition-all uppercase tracking-wide cursor-pointer whitespace-nowrap">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+        </svg>
+        <span>Call (905) 717-8905</span>
+      </a>
+
+      <a href="../schedule" 
+         class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-brandDarkBlue border border-slate-300 font-bold px-5 py-3.5 rounded-xl text-sm shadow-2xs transition-all whitespace-nowrap">
+        <span>Book Online &rarr;</span>
+      </a>
+    </div>
+  </div>
+
+</div>
+HTML
+  ],
+
 ];

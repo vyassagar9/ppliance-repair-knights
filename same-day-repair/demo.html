@@ -93,10 +93,11 @@
   <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
 
-  <!-- Self-Hosted High Performance Fonts Preload -->
-  <link rel="preload" href="../fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../css/fonts.min.css">
+  <!-- Google Fonts: Plus Jakarta Sans (Weights: 500, 800 | Single Family | font-display: swap) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap">
 
   <!-- Tailwind & Global Stylesheet -->
   <link rel="stylesheet" href="../css/tailwind.min.css">
@@ -189,32 +190,144 @@
   </style>
 
   <style>
-    @font-face {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 100 900;
-      font-display: swap;
-      src: url('../fonts/inter-latin.woff2') format('woff2');
+    /* Plus Jakarta Sans - Single Family Rule with Fallback */
+    :root {
+      --font-family-primary: 'Plus Jakarta Sans', system-ui, -apple-system, Roboto, sans-serif;
     }
 
-    @font-face {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 100 900;
-      font-display: swap;
-      src: url('../fonts/montserrat-latin.woff2') format('woff2');
-    }
-
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    html,
+    body,
+    input,
+    button,
+    select,
+    textarea,
+    .font-sans {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, Roboto, sans-serif !important;
+      font-weight: 500;
     }
 
     h1,
     h2,
     h3,
     h4,
+    h5,
+    h6,
     .font-heading {
-      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, Roboto, sans-serif !important;
+      font-weight: 800;
+    }
+
+    /* Mobile Typography Specification */
+    @media (max-width: 639px) {
+      /* H1: 32px, weight 800, line-height 1.1 */
+      #hero-title,
+      h1 {
+        font-size: 32px !important;
+        font-weight: 800 !important;
+        line-height: 1.1 !important;
+      }
+
+      /* Subtext: 15px, weight 500 */
+      #hero-subtitle,
+      #hero-subtitle > span:first-child,
+      .hero-subtext {
+        font-size: 15px !important;
+        font-weight: 500 !important;
+      }
+
+      /* Body: 16px, weight 500 */
+      body,
+      p {
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      /* Hero & Section CTA buttons: 17px, weight 800 */
+      .gtm-ppc-call-hero,
+      .hero-cta-btn,
+      .ppc-cta-btn-call,
+      #about-service .gtm-ppc-call,
+      #about-service a[href="#ppc-quote-modal"] {
+        font-size: 17px !important;
+        font-weight: 800 !important;
+      }
+
+      /* Active Technicians Stripe: Strictly 1 Line on Mobile */
+      #near-me-hero-stripe {
+        white-space: nowrap !important;
+        flex-wrap: nowrap !important;
+        overflow: hidden !important;
+        font-size: 12px !important;
+      }
+      #near-me-hero-stripe span {
+        white-space: nowrap !important;
+      }
+
+      /* Compact Mobile Sticky Bottom Bar (Zero Line Break & Exact Equal Height) */
+      #mobile-sticky-bar {
+        display: flex !important;
+        align-items: stretch !important;
+        flex-direction: row !important;
+      }
+      #mobile-sticky-bar a {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        white-space: nowrap !important;
+        height: 44px !important;
+        font-weight: 800 !important;
+      }
+      #mobile-sticky-bar a[href="#ppc-quote-modal"] {
+        font-size: 11.5px !important;
+        padding-left: 0.65rem !important;
+        padding-right: 0.65rem !important;
+        flex: 0 0 auto !important;
+        white-space: nowrap !important;
+      }
+      #mobile-sticky-bar a[href^="tel:"] {
+        font-size: 12.5px !important;
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+        flex: 1 1 auto !important;
+        white-space: nowrap !important;
+      }
+
+      /* Header mini-call button */
+      .gtm-ppc-call-header {
+        font-size: 13px !important;
+        font-weight: 800 !important;
+      }
+
+      /* Small text: 13px minimum */
+      .text-xs,
+      .text-\[10px\],
+      .text-\[11px\],
+      .text-\[12px\],
+      [class*="text-[10px]"],
+      [class*="text-[11px]"],
+      [class*="text-[12px]"],
+      small {
+        font-size: 13px !important;
+      }
+    }
+
+    /* Prevent awkward word breaking in Problems & Types section */
+    #services-problems,
+    #services-problems * {
+      word-break: normal !important;
+      overflow-wrap: normal !important;
+      hyphens: none !important;
+    }
+    #services-problems .bento-item-text {
+      word-break: normal !important;
+      overflow-wrap: normal !important;
+      hyphens: none !important;
+    }
+    #tab-btn-problems,
+    #tab-btn-types,
+    #tab-label-problems,
+    #tab-label-types {
+      white-space: nowrap !important;
     }
 
     .hover-lift {
@@ -318,7 +431,7 @@
     }
 
     .ppc-footer-heading {
-      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, Roboto, sans-serif;
       font-size: 0.8125rem;
       font-weight: 800;
       text-transform: uppercase;
@@ -370,56 +483,102 @@
 
     /* Hero Appliance Showcase */
     .hero-showcase-frame {
-      background-color: #f8fafc;
-      border: 1px solid #e2e8f0;
+      background-color: transparent;
+      border: none;
       border-radius: 0px;
-      padding: 10px;
+      padding: 0px;
       position: relative;
       width: 100%;
       max-width: 100%;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 18px -2px rgba(15, 23, 42, 0.05);
+      box-shadow: none;
+    }
+
+    .hero-showcase-inner {
+      width: 100%;
+      display: block;
+      position: relative;
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      padding: 6px;
+    }
+
+    #hero-service-img {
+      width: 100%;
+      height: auto;
+      max-height: 220px;
+      object-fit: cover;
+      display: block;
+      border-radius: 0px;
     }
 
     @media (max-width: 640px) {
-      .hero-showcase-frame {
-        padding: 8px;
-        max-width: 100%;
-        border-radius: 0px;
+      .hero-showcase-inner {
+        padding: 6px;
       }
 
       #hero-service-img {
         width: 100%;
-        max-height: 250px;
+        max-height: 220px;
         object-fit: cover;
         border-radius: 0px;
+        display: block;
+      }
+    }
+
+    @media (min-width: 641px) and (max-width: 1023px) {
+      .hero-showcase-inner {
+        padding: 8px;
+      }
+
+      #hero-service-img {
+        width: 100%;
+        max-height: 270px;
+        object-fit: cover;
+        display: block;
       }
     }
 
     @media (min-width: 1024px) {
+      #about-service {
+        padding-top: 0.75rem;
+        min-height: calc(100vh - 96px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      #about-service > div.max-w-7xl {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1 1 auto;
+      }
+
+      #hero-grid {
+        align-items: flex-start;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+
       .hero-showcase-frame {
         width: 100%;
         max-width: 100%;
+      }
+
+      .hero-showcase-inner {
+        padding: 8px;
       }
 
       #hero-service-img {
         width: 100%;
         height: auto;
-        max-height: 440px;
+        max-height: 350px;
         object-fit: cover;
+        display: block;
       }
-    }
-
-    .hero-showcase-inner {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: relative;
     }
 
     /* Hero Grid Spacing (Comfortable breathing space between hero image and H1 typography) */
@@ -652,8 +811,8 @@
     }
 
     .ppc-cta-phone-link {
-      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
-      font-weight: 900;
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, Roboto, sans-serif;
+      font-weight: 800;
       font-size: 1.5rem;
       line-height: 1.15;
       color: #ffffff;
@@ -701,7 +860,7 @@
     .ppc-cta-btn-call {
       background: linear-gradient(135deg, #ff6b00 0%, #ff8533 100%);
       color: #ffffff !important;
-      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, Roboto, sans-serif;
       font-weight: 800;
       font-size: 0.8125rem;
       text-transform: uppercase;
@@ -739,8 +898,8 @@
       background: rgba(255, 255, 255, 0.08);
       border: 1px solid rgba(255, 255, 255, 0.22);
       color: #ffffff !important;
-      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
-      font-weight: 700;
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, Roboto, sans-serif;
+      font-weight: 800;
       font-size: 0.8125rem;
       text-transform: uppercase;
       letter-spacing: 0.04em;
@@ -941,41 +1100,22 @@
 
   <main>
     <!-- 1. HERO SECTION: CLEAN PRODUCT FOCUS (MATCHING REFERENCE DESIGN) -->
-    <section class="pt-2 sm:pt-4 pb-4 sm:pb-6 bg-white relative overflow-hidden" id="about-service">
+    <section class="pt-2 sm:pt-4 lg:pt-3 pb-6 sm:pb-8 bg-white border-b border-slate-200/80 relative overflow-hidden" id="about-service">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div id="hero-grid" class="grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-10 xl:gap-12 items-center">
+        <div id="hero-grid" class="grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-10 xl:gap-12 items-center lg:items-start">
 
-          <!-- Left: Appliance Showcase (Multi-Appliance Hero Showcase) -->
-          <div class="lg:col-span-6 w-full flex flex-col items-center lg:items-start justify-center">
-            <div class="hero-showcase-frame w-full">
-              <div class="hero-showcase-inner w-full">
-                <img id="hero-service-img" src="../img/washing-machine-repair-service.webp"
-                  alt="Same-Day Appliance Repair in Toronto &amp; GTA - Certified Local Technicians" width="600"
-                  height="400" loading="eager" fetchpriority="high"
-                  class="w-full h-auto max-h-[210px] sm:max-h-[270px] lg:max-h-[360px] object-cover rounded-none">
-              </div>
-            </div>
-            <!-- Active Technicians Stripe (Integrated directly under image) -->
-            <div id="near-me-hero-stripe"
-              class="w-full mt-2 py-1.5 px-3 bg-slate-50 border border-slate-200/90 text-center lg:text-left text-[11px] sm:text-xs text-slate-700 font-medium tracking-tight rounded-none flex items-center justify-center lg:justify-start gap-1.5 shadow-2xs">
-              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0"></span>
-              <span class="font-bold text-slate-900">📍 Active Technicians Today:</span>
-              <span class="truncate">Dispatched Across Toronto &amp; GTA</span>
-            </div>
-          </div>
-
-          <!-- Right: Hero Typography & Direct CTAs -->
+          <!-- Left: Hero Typography & Direct CTAs -->
           <div id="hero-typography-col"
-            class="lg:col-span-6 space-y-3 sm:space-y-4 text-center lg:text-left flex flex-col justify-center">
+            class="order-1 lg:order-1 lg:col-span-6 space-y-3 sm:space-y-4 text-left flex flex-col justify-start items-start">
             <div>
               <h1 id="hero-title"
-                class="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-slate-900 tracking-tight leading-tight sm:leading-[1.15]">
+                class="text-[32px] sm:text-4xl lg:text-5xl font-heading font-extrabold text-slate-900 tracking-tight leading-[1.1] sm:leading-[1.15] text-left">
                 Same-Day <span class="text-brandBlue">Appliance Repair</span> Near You
               </h1>
               <p id="hero-subtitle"
-                class="text-slate-600 font-medium text-[13px] sm:text-[14.5px] lg:text-base leading-snug mt-1.5 sm:mt-2 mb-2 sm:mb-2.5">
+                class="text-slate-600 font-medium text-[15px] sm:text-[15px] lg:text-base leading-snug mt-1.5 sm:mt-2 mb-2 sm:mb-2.5 text-left">
                 <span>Certified Local Techs &bull; Prompt GTA Dispatch</span><br>
-                <span class="text-brandOrange font-extrabold text-[13.5px] sm:text-base whitespace-nowrap inline-block mt-0.5">
+                <span class="text-brandOrange font-extrabold text-[15px] sm:text-base whitespace-nowrap inline-block mt-0.5">
                   ★ Diagnostic Fee Waived w/ Repair
                 </span>
               </p>
@@ -983,52 +1123,183 @@
 
             <!-- Dual Action Call & Book Buttons (Clear Hierarchy: Solid Call + Outline Book) -->
             <div
-              class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-2 sm:gap-3 pt-0.5 w-full">
+              class="flex flex-col sm:flex-row items-stretch sm:items-center justify-start gap-2 sm:gap-3 pt-0.5 w-full">
               <!-- Primary CTA: Solid Orange Call Button -->
               <a href="tel:+19057178905" onclick="trackGtmCall('hero_call')"
-                class="gtm-ppc-call gtm-ppc-call-hero w-full sm:w-auto flex-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-black py-3 sm:py-3.5 px-4 sm:px-5 xl:px-6 rounded-none text-xs sm:text-sm xl:text-base uppercase tracking-wider transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 transform active:scale-95 text-center whitespace-nowrap">
+                class="gtm-ppc-call gtm-ppc-call-hero w-full sm:w-auto flex-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold py-3 sm:py-3.5 px-4 sm:px-5 xl:px-6 rounded-none text-[17px] sm:text-sm xl:text-base uppercase tracking-wider transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 transform active:scale-95 text-center whitespace-nowrap">
                 <svg class="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 animate-bounce" fill="currentColor" viewBox="0 0 20 20">
                   <path
                     d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
                   </path>
                 </svg>
-                <span class="whitespace-nowrap font-black">CALL NOW: 905-717-8905</span>
+                <span class="whitespace-nowrap font-extrabold">CALL NOW: 905-717-8905</span>
               </a>
 
               <!-- Secondary CTA: Outline / Lighter Book Button -->
               <a href="#ppc-quote-modal" onclick="openLeadModal(); return false;"
-                class="w-full sm:w-auto flex-1 bg-white hover:bg-blue-50/70 text-brandBlue border-2 border-brandBlue font-bold py-2.5 sm:py-3 px-4 sm:px-5 xl:px-6 rounded-none text-xs sm:text-sm xl:text-base uppercase tracking-wider transition-all shadow-2xs flex items-center justify-center gap-2 transform active:scale-95 cursor-pointer text-center whitespace-nowrap">
+                class="w-full sm:w-auto flex-1 bg-white hover:bg-blue-50/70 text-brandBlue border-2 border-brandBlue font-extrabold py-2.5 sm:py-3 px-4 sm:px-5 xl:px-6 rounded-none text-[17px] sm:text-sm xl:text-base uppercase tracking-wider transition-all shadow-2xs flex items-center justify-center gap-2 transform active:scale-95 cursor-pointer text-center whitespace-nowrap">
                 <svg class="w-4 h-4 flex-shrink-0 text-brandBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                 </svg>
-                <span class="whitespace-nowrap font-bold">Book Online &rarr;</span>
+                <span class="whitespace-nowrap font-extrabold">Book Online &rarr;</span>
               </a>
             </div>
 
-            <!-- 3 Clean Trust Badges (Right Under CTAs) -->
-            <div class="pt-0.5 flex items-center justify-center lg:justify-start gap-2.5 sm:gap-3 flex-wrap text-xs sm:text-[13px] font-semibold text-slate-800">
-              <div class="inline-flex items-center gap-1.5 bg-slate-50 border border-slate-200/90 px-3 py-1.5 rounded-none shadow-2xs">
-                <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24">
-                  <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
-                  <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-                  <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"/>
-                  <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/>
-                </svg>
-                <span class="text-amber-500 font-bold">★ 5.0</span>
-                <span class="text-slate-900 font-bold whitespace-nowrap">Google Rating</span>
+            <!-- Exact Screenshot Benchmark: Trust Stack Under Buttons -->
+            <div id="hero-sub-cta-trust" class="pt-1.5 space-y-2 text-left w-full">
+              <!-- Micro helper -->
+              <div class="text-[12.5px] sm:text-xs text-slate-500 font-medium text-left">
+                Tap to call &bull; Talk to a technician now
               </div>
-              <div class="inline-flex items-center gap-1.5 bg-slate-50 border border-slate-200/90 px-3 py-1.5 rounded-none shadow-2xs">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span class="text-slate-900 font-bold whitespace-nowrap">Licensed &amp; Insured</span>
+
+              <!-- 3 Checkmarks Row (Matching Screenshot) -->
+              <div class="flex items-center justify-start gap-3 sm:gap-4 text-xs sm:text-[13px] font-extrabold flex-wrap">
+                <span class="inline-flex items-center gap-1">
+                  <span class="text-emerald-600 font-black text-sm">&#10003;</span>
+                  <span class="text-[#0a1e3b]">Upfront quote</span>
+                </span>
+                <span class="inline-flex items-center gap-1">
+                  <span class="text-emerald-600 font-black text-sm">&#10003;</span>
+                  <span class="text-[#0a1e3b]">Fee waived w/ repair</span>
+                </span>
+                <span class="inline-flex items-center gap-1">
+                  <span class="text-emerald-600 font-black text-sm">&#10003;</span>
+                  <span class="text-[#0a1e3b]">Same-day</span>
+                </span>
               </div>
-              <div class="inline-flex items-center gap-1.5 bg-slate-50 border border-slate-200/90 px-3 py-1.5 rounded-none shadow-2xs">
-                <span class="text-brandOrange font-bold">⚡</span>
-                <span class="text-slate-900 font-bold whitespace-nowrap">Same-Day Dispatch</span>
+
+              <!-- 5 Stars & Google Reviews -->
+              <div class="flex items-center justify-start gap-1.5 text-xs sm:text-[13px] font-semibold text-slate-700">
+                <span class="text-amber-500 text-sm tracking-tight font-black">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                <span class="font-extrabold text-slate-900">5.0</span>
+                <span class="text-slate-400">&bull;</span>
+                <span class="text-slate-600 font-medium">Google reviews</span>
               </div>
+            </div>
+
+            <!-- Problem & Brand Checklist (Desktop Only) -->
+            <div id="hero-coverage-card" class="hidden lg:block pt-3 border-t border-slate-100 text-left w-full">
+              <h2 id="hero-coverage-question" class="text-base sm:text-lg lg:text-xl font-heading font-extrabold text-[#0a1e3b] tracking-tight mb-2 sm:mb-2.5 leading-snug">
+                Fridge not cooling, leaking or making noise?
+              </h2>
+              <ul id="hero-coverage-list" class="space-y-1.5 sm:space-y-2 text-[13px] sm:text-sm text-slate-700 leading-normal">
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#0a1e3b] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span id="hero-coverage-types"><strong class="font-bold text-slate-900">All fridge types:</strong> <span class="text-slate-600">French door, side-by-side, bottom-freezer</span></span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#0a1e3b] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span id="hero-coverage-brands"><strong class="font-bold text-slate-900">All major brands:</strong> <span class="text-slate-600">Samsung, LG, Whirlpool, GE and more</span></span>
+                </li>
+              </ul>
             </div>
           </div>
 
+          <!-- Right: Appliance Showcase (Multi-Appliance Hero Showcase) -->
+          <div class="order-2 lg:order-2 lg:col-span-6 w-full flex flex-col items-center lg:items-end justify-start">
+            <div class="hero-showcase-frame w-full">
+              <div class="hero-showcase-inner w-full bg-slate-50/80 border border-slate-200/90 p-1.5 sm:p-2">
+                <img id="hero-service-img" src="../img/washing-machine-repair-service.webp"
+                  alt="Same-Day Appliance Repair in Toronto &amp; GTA - Certified Local Technicians" width="600"
+                  height="400" loading="eager" fetchpriority="high"
+                  class="w-full h-auto max-h-[220px] sm:max-h-[270px] lg:max-h-[350px] object-cover rounded-none block">
+              </div>
+            </div>
+            <!-- Active Technicians Stripe (Integrated directly under image) -->
+            <div id="near-me-hero-stripe"
+              class="w-full mt-2 py-1.5 px-2.5 sm:px-3 bg-slate-50 border border-slate-200/90 text-left text-xs text-slate-700 font-medium tracking-tight rounded-none flex items-center justify-start gap-1.5 shadow-2xs whitespace-nowrap overflow-hidden flex-nowrap">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse shrink-0"></span>
+              <span class="font-extrabold text-slate-900 shrink-0">Techs Active Today:</span>
+              <span class="truncate text-slate-600">Toronto &amp; GTA</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 4-BOX VALUE STRIP (INTEGRATED TRUST PILLARS BAR - DESKTOP ONLY) -->
+        <div class="hidden lg:block mt-6 sm:mt-7 pt-3.5 sm:pt-4 border-t border-slate-200/80">
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3.5 md:gap-4">
+
+            <!-- Pillar 1: Same-Day Repair Service -->
+            <div
+              class="group flex items-center gap-2.5 sm:gap-3 py-2.5 sm:py-3 px-3 sm:px-3.5 rounded-xl sm:rounded-2xl bg-white border border-slate-200/90 shadow-2xs hover:border-brandOrange/40 hover:shadow-md transition-all h-full">
+              <div
+                class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-orange-50 border border-orange-100/80 text-brandOrange flex-shrink-0 flex items-center justify-center group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div class="min-w-0 text-left">
+                <span
+                  class="block text-xs sm:text-sm font-extrabold text-brandDarkBlue leading-tight group-hover:text-brandBlue transition-colors">Same-Day
+                  Repair Service</span>
+              </div>
+            </div>
+
+            <!-- Pillar 2: Highly Skilled Technicians -->
+            <div
+              class="group flex items-center gap-2.5 sm:gap-3 py-2.5 sm:py-3 px-3 sm:px-3.5 rounded-xl sm:rounded-2xl bg-white border border-slate-200/90 shadow-2xs hover:border-brandOrange/40 hover:shadow-md transition-all h-full">
+              <div
+                class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-orange-50 border border-orange-100/80 text-brandOrange flex-shrink-0 flex items-center justify-center group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
+                  </path>
+                </svg>
+              </div>
+              <div class="min-w-0 text-left">
+                <span
+                  class="block text-xs sm:text-sm font-extrabold text-brandDarkBlue leading-tight group-hover:text-brandBlue transition-colors">Highly
+                  Skilled Technicians</span>
+              </div>
+            </div>
+
+            <!-- Pillar 3: All Major Brands -->
+            <div
+              class="group flex items-center gap-2.5 sm:gap-3 py-2.5 sm:py-3 px-3 sm:px-3.5 rounded-xl sm:rounded-2xl bg-white border border-slate-200/90 shadow-2xs hover:border-brandOrange/40 hover:shadow-md transition-all h-full">
+              <div
+                class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-orange-50 border border-orange-100/80 text-brandOrange flex-shrink-0 flex items-center justify-center group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138z">
+                  </path>
+                </svg>
+              </div>
+              <div class="min-w-0 text-left">
+                <span
+                  class="block text-xs sm:text-sm font-extrabold text-brandDarkBlue leading-tight group-hover:text-brandBlue transition-colors">All
+                  Major Brands</span>
+              </div>
+            </div>
+
+            <!-- Pillar 4: Affordable Rates -->
+            <div
+              class="group flex items-center gap-2.5 sm:gap-3 py-2.5 sm:py-3 px-3 sm:px-3.5 rounded-xl sm:rounded-2xl bg-white border border-slate-200/90 shadow-2xs hover:border-brandOrange/40 hover:shadow-md transition-all h-full">
+              <div
+                class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-orange-50 border border-orange-100/80 text-brandOrange flex-shrink-0 flex items-center justify-center group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div class="min-w-0 text-left">
+                <span
+                  class="block text-xs sm:text-sm font-extrabold text-brandDarkBlue leading-tight group-hover:text-brandBlue transition-colors">Affordable
+                  Rates</span>
+              </div>
+            </div>
+
+          </div>
         </div>
 
       </div>
@@ -1204,14 +1475,14 @@
           <div
             class="flex items-center justify-center p-1 bg-slate-100 border border-slate-200/90 rounded-none max-w-sm mx-auto shadow-sm">
             <button type="button" id="tab-btn-problems" onclick="switchProblemTab('problems')"
-              class="flex-1 py-2 px-2.5 text-xs font-bold uppercase tracking-wide transition-all duration-200 text-center rounded-none bg-white text-slate-900 shadow-xs border border-slate-200/90 flex items-center justify-center gap-1.5 cursor-pointer">
+              class="flex-1 py-2 px-2 sm:px-2.5 text-xs font-bold uppercase tracking-wide transition-all duration-200 text-center rounded-none bg-white text-slate-900 shadow-xs border border-slate-200/90 flex items-center justify-center gap-1.5 cursor-pointer whitespace-nowrap">
               <span class="w-2 h-2 rounded-full bg-brandOrange shrink-0"></span>
-              <span id="tab-label-problems">Common Issues</span>
+              <span id="tab-label-problems" class="whitespace-nowrap">Fridge Issues</span>
             </button>
             <button type="button" id="tab-btn-types" onclick="switchProblemTab('types')"
-              class="flex-1 py-2 px-2.5 text-xs font-bold uppercase tracking-wide transition-all duration-200 text-center rounded-none text-slate-500 hover:text-slate-900 flex items-center justify-center gap-1.5 cursor-pointer">
+              class="flex-1 py-2 px-2 sm:px-2.5 text-xs font-bold uppercase tracking-wide transition-all duration-200 text-center rounded-none text-slate-500 hover:text-slate-900 flex items-center justify-center gap-1.5 cursor-pointer whitespace-nowrap">
               <span class="w-2 h-2 rounded-full bg-brandBlue shrink-0"></span>
-              <span id="tab-label-types">Appliance Types</span>
+              <span id="tab-label-types" class="whitespace-nowrap">Fridge Types</span>
             </button>
           </div>
           <div class="text-center text-[11px] text-slate-400 font-medium mt-1.5">
@@ -1445,24 +1716,23 @@
       </div>
     </section>
 
-    <!-- 5. WASHER / APPLIANCE BRANDS (CLEAN MULTI-COLUMN LIST MATCHING REFERENCE) -->
-    <section class="py-12 sm:py-16 bg-white border-b border-brandBorder" id="brands">
+    <!-- 5. WASHER / APPLIANCE BRANDS (CLEAN COMPACT LIST + CALL TO CONFIRM CTA) -->
+    <section class="py-8 sm:py-12 bg-white border-b border-brandBorder" id="brands">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
 
-        <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
+        <div class="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
           <h2
-            class="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-slate-900 tracking-tight leading-tight mb-2.5 sm:mb-3">
+            class="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-slate-900 tracking-tight leading-tight mb-2 sm:mb-2.5">
             Major Appliance Brands Serviced with <span class="text-brandBlue">Genuine Quality Parts</span>
           </h2>
           <p class="text-xs sm:text-sm text-slate-600 font-medium leading-relaxed max-w-xl mx-auto">
-            Samsung, LG, Whirlpool, Bosch, GE, Maytag &amp; 30+ Leading Manufacturers Serviced with
-            Manufacturer-Approved Parts
+            Samsung, LG, Whirlpool, Bosch, GE, Maytag &amp; Leading Household Manufacturers Serviced with Manufacturer-Approved Parts
           </p>
         </div>
 
-        <!-- Multi-column clean grid (6 columns desktop, 3 columns tablet, 2 columns mobile) -->
+        <!-- Clean Compact Grid: Top 12 Major Brands (6 cols desktop, 3 cols tablet, 2 cols mobile) -->
         <div id="brands-list-grid"
-          class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-y-3.5 gap-x-4 sm:gap-x-5 text-xs sm:text-sm text-slate-700 font-semibold text-left max-w-5xl mx-auto">
+          class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-y-3 gap-x-4 sm:gap-x-5 text-xs sm:text-sm text-slate-700 font-semibold text-left max-w-5xl mx-auto">
           <div class="flex items-center gap-2">
             <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
             <span>Samsung</span>
@@ -1511,89 +1781,20 @@
             <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
             <span>Sub-Zero</span>
           </div>
-          <div class="flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
-            <span>Thermador</span>
-          </div>
-          <div class="flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
-            <span>Viking</span>
-          </div>
-          <div class="flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
-            <span>Amana</span>
-          </div>
-          <div class="flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
-            <span>Hotpoint</span>
-          </div>
-          <div class="flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
-            <span>JennAir</span>
-          </div>
-          <div class="flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
-            <span>Speed Queen</span>
-          </div>
-          <div class="brand-extra-item hidden sm:flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
-            <span>Fisher &amp; Paykel</span>
-          </div>
-          <div class="brand-extra-item hidden sm:flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
-            <span>Haier</span>
-          </div>
-          <div class="brand-extra-item hidden sm:flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
-            <span>Danby</span>
-          </div>
-          <div class="brand-extra-item hidden sm:flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
-            <span>Insignia</span>
-          </div>
-          <div class="brand-extra-item hidden sm:flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
-            <span>Blomberg</span>
-          </div>
-          <div class="brand-extra-item hidden sm:flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
-            <span>Hisense</span>
-          </div>
-          <div class="brand-extra-item hidden sm:flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
-            <span>Asko</span>
-          </div>
-          <div class="brand-extra-item hidden sm:flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
-            <span>Bertazzoni</span>
-          </div>
-          <div class="brand-extra-item hidden sm:flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
-            <span>Dacor</span>
-          </div>
-          <div class="brand-extra-item hidden sm:flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
-            <span>Fulgor Milano</span>
-          </div>
-          <div class="brand-extra-item hidden sm:flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
-            <span>Liebherr</span>
-          </div>
-          <div class="brand-extra-item hidden sm:flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
-            <span>Sharp</span>
-          </div>
         </div>
 
-        <!-- Mobile Toggle Button (Collapses Brand List on Mobile) -->
-        <div class="mt-6 flex justify-center sm:hidden">
-          <button type="button" id="toggle-brands-btn" onclick="toggleBrandsList()"
-            class="inline-flex items-center gap-2 bg-white hover:bg-slate-100 text-slate-700 hover:text-slate-900 border border-slate-300 font-bold text-xs uppercase tracking-wider py-2.5 px-5 shadow-xs transition-all active:scale-95 cursor-pointer">
-            <span id="toggle-brands-text">View All Brands (30+)</span>
-            <svg id="toggle-brands-icon" class="w-3.5 h-3.5 text-slate-500 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+        <!-- Brand Not Listed CTA -->
+        <div class="mt-6 sm:mt-8 pt-4 sm:pt-5 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 text-center">
+          <span class="text-sm sm:text-base font-extrabold text-slate-800 tracking-tight">
+            Brand not listed?
+          </span>
+          <a href="tel:+19057178905" onclick="trackGtmCall('brands_not_listed_cta')"
+            class="gtm-ppc-call inline-flex items-center justify-center gap-1.5 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold text-xs sm:text-sm py-2 px-4 rounded-none uppercase tracking-wider transition-all shadow-xs active:scale-95 whitespace-nowrap">
+            <svg class="w-3.5 h-3.5 text-white shrink-0 animate-bounce" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
             </svg>
-          </button>
+            <span>Call to confirm: 905-717-8905</span>
+          </a>
         </div>
 
       </div>
@@ -1847,24 +2048,23 @@
               <span class="inline-flex items-center gap-1.5 bg-white border border-slate-200 px-3 py-1.5 rounded-full shadow-2xs"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Barrie</span>
             </div>
 
-            <div class="mt-6 pt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
-              <span class="text-xs text-slate-600 font-medium">Don't see your city? Call us to check availability in
-                your area.</span>
+            <div class="mt-6 pt-4 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+              <span class="text-xs sm:text-sm text-slate-800 font-extrabold tracking-tight">Not sure we cover you?</span>
               <a href="tel:+19057178905" onclick="trackGtmCall('service_area_check_city')"
-                class="gtm-ppc-call inline-flex items-center gap-1.5 bg-brandOrange hover:bg-brandOrangeHover text-white font-bold px-3.5 py-1.5 rounded-none text-xs tracking-wide transition-all shadow-xs shrink-0 active:scale-95">
-                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
+                class="gtm-ppc-call inline-flex items-center gap-1.5 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-3.5 py-2 rounded-none text-xs sm:text-sm tracking-wider transition-all shadow-xs shrink-0 active:scale-95 whitespace-nowrap uppercase">
+                <svg class="w-3.5 h-3.5 fill-current animate-bounce" viewBox="0 0 20 20">
                   <path
                     d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
                   </path>
                 </svg>
-                <span>Call Dispatch: 905-717-8905</span>
+                <span>Call to confirm: 905-717-8905</span>
               </a>
             </div>
           </div>
 
-          <!-- Contact to Book Repair Card -->
+          <!-- Contact to Book Repair Card (Hidden on Mobile, Visible on Desktop) -->
           <div
-            class="lg:col-span-5 bg-brandDarkBlue rounded-none p-6 sm:p-8 text-white relative overflow-hidden min-h-[320px] flex flex-col justify-between shadow-xl">
+            class="hidden lg:flex lg:col-span-5 bg-brandDarkBlue rounded-none p-6 sm:p-8 text-white relative overflow-hidden min-h-[320px] flex-col justify-between shadow-xl">
             <div>
               <div class="mb-4 inline-flex items-center bg-white px-3.5 py-2 rounded-none shadow-sm">
                 <picture>
@@ -2290,24 +2490,24 @@
 
   <!-- STICKY MOBILE CALL & BOOKING BAR (SMART ON-SCROLL REVEAL & DUAL POWER CTAs) -->
   <div id="mobile-sticky-bar"
-    class="fixed bottom-0 left-0 right-0 z-50 bg-slate-950/95 backdrop-blur-md px-3 py-2.5 border-t border-slate-800 flex items-center justify-between gap-2.5 md:hidden shadow-2xl transition-all duration-300 transform translate-y-full opacity-0 pointer-events-none"
-    style="padding-bottom: max(0.625rem, env(safe-area-inset-bottom));">
+    class="fixed bottom-0 left-0 right-0 z-50 bg-slate-950/95 backdrop-blur-md px-2.5 py-2 border-t border-slate-800 flex items-stretch justify-between gap-2 md:hidden shadow-2xl transition-all duration-300 transform translate-y-full opacity-0 pointer-events-none"
+    style="padding-bottom: max(0.5rem, env(safe-area-inset-bottom));">
     <a href="#ppc-quote-modal" onclick="openLeadModal(); return false;"
-      class="w-[32%] bg-slate-900/90 hover:bg-slate-800 border border-slate-700/80 text-white font-bold py-3 px-2 rounded-none text-xs uppercase tracking-tight shadow-sm active:scale-95 transition-transform flex items-center justify-center gap-1.5 text-center">
+      class="shrink-0 bg-slate-900 hover:bg-slate-800 border border-slate-700/80 text-white font-extrabold px-3 py-2.5 rounded-none text-xs uppercase tracking-tight shadow-sm active:scale-95 transition-transform inline-flex items-center justify-center gap-1.5 text-center whitespace-nowrap h-11">
       <svg class="w-3.5 h-3.5 text-slate-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
           d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
       </svg>
-      <span>BOOK ONLINE</span>
+      <span class="whitespace-nowrap font-extrabold">BOOK ONLINE</span>
     </a>
     <a href="tel:+19057178905" onclick="trackGtmCall('mobile_bar')"
-      class="gtm-ppc-call flex-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-black py-3 px-3 rounded-none text-[13px] sm:text-sm uppercase tracking-wide shadow-md flex items-center justify-center gap-2 active:scale-95 transition-transform text-center">
+      class="gtm-ppc-call flex-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold px-2.5 py-2.5 rounded-none text-[12.5px] sm:text-sm uppercase tracking-wide shadow-md inline-flex items-center justify-center gap-1.5 active:scale-95 transition-transform text-center whitespace-nowrap h-11">
       <svg class="w-4 h-4 text-white shrink-0 animate-bounce" fill="currentColor" viewBox="0 0 20 20">
         <path
           d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
         </path>
       </svg>
-      <span>CALL NOW: 905-717-8905</span>
+      <span class="whitespace-nowrap font-extrabold">CALL NOW: 905-717-8905</span>
     </a>
   </div>
 
@@ -2786,12 +2986,12 @@
         key: 'fridge',
         name: 'Refrigerator',
         titleName: 'Refrigerator',
-        serviceLabel: 'Refrigerator Not Cooling, Leaking or Ice Maker Broken?',
-        typesTitle: 'Types of Refrigerators We Repair',
-        problemsTitle: 'Common Refrigerator Problems',
+        serviceLabel: 'Fridge Not Cooling, Leaking or Ice Maker Broken?',
+        typesTitle: 'Types of Fridges We Repair',
+        problemsTitle: 'Fridge Issues',
         heroImg: '../img/refrigerator-repair-in-a-modern-kitchen.webp',
-        desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Refrigerator Types:</strong> French door, side-by-side, bottom freezer &amp; built-ins.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Samsung, LG, Whirlpool, Bosch, KitchenAid &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">Cooling &amp; Leak Repairs:</strong> Thermostats, compressors, fans &amp; ice makers fixed on-site.</span></li></ul>',
-        ctaText: 'Book Your Refrigerator Repair Today',
+        desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Fridge Types:</strong> French door, side-by-side, bottom freezer &amp; built-ins.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Samsung, LG, Whirlpool, Bosch, KitchenAid &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">Cooling &amp; Leak Repairs:</strong> Thermostats, compressors, fans &amp; ice makers fixed on-site.</span></li></ul>',
+        ctaText: 'Book Your Fridge Repair Today',
         problems: [
           'Fridge Not Cooling / Warm Compartment',
           'Water Leaking on Floor / Defrost Block',
@@ -2801,9 +3001,9 @@
           'Door Gasket / Magnetic Seal Leaks'
         ],
         types: [
-          'French Door Refrigerators',
-          'Side-by-Side Refrigerators',
-          'Bottom-Freezer Refrigerators',
+          'French Door Fridges',
+          'Side-by-Side Fridges',
+          'Bottom-Freezer Fridges',
           'Top-Freezer Traditional Units',
           'Built-In & Counter-Depth Fridges',
           'Wine Coolers & Beverage Centers'
@@ -3059,6 +3259,47 @@
           heroImg.alt = `Same-Day ${brandPrefix}${matchedService.name} Repair in ${cityName || 'Toronto & GTA'}`;
         }
 
+        // Update Hero Problem & Coverage Checklist
+        const covQ = document.getElementById('hero-coverage-question');
+        const covTypes = document.getElementById('hero-coverage-types');
+        const covBrands = document.getElementById('hero-coverage-brands');
+        if (covQ && covTypes && covBrands) {
+          const bp = brandName ? `${brandName}, ` : '';
+          if (matchedService) {
+            if (matchedService.key === 'washer') {
+              covQ.textContent = 'Washer leaking, not draining or won’t spin?';
+              covTypes.innerHTML = '<strong class="font-bold text-slate-900">All washer types:</strong> <span class="text-slate-600">Front-load, top-load, stackable units</span>';
+              covBrands.innerHTML = `<strong class="font-bold text-slate-900">All major brands:</strong> <span class="text-slate-600">${bp}Samsung, LG, Whirlpool, Bosch and more</span>`;
+            } else if (matchedService.key === 'dryer') {
+              covQ.textContent = 'Dryer not heating, squeaking or won’t start?';
+              covTypes.innerHTML = '<strong class="font-bold text-slate-900">All dryer types:</strong> <span class="text-slate-600">Gas, electric, vented &amp; ventless</span>';
+              covBrands.innerHTML = `<strong class="font-bold text-slate-900">All major brands:</strong> <span class="text-slate-600">${bp}Whirlpool, Maytag, Samsung, LG and more</span>`;
+            } else if (matchedService.key === 'dishwasher') {
+              covQ.textContent = 'Dishwasher leaking, not cleaning or not draining?';
+              covTypes.innerHTML = '<strong class="font-bold text-slate-900">All dishwasher types:</strong> <span class="text-slate-600">Built-in, panel-ready, portable</span>';
+              covBrands.innerHTML = `<strong class="font-bold text-slate-900">All major brands:</strong> <span class="text-slate-600">${bp}Bosch, KitchenAid, Whirlpool, Miele and more</span>`;
+            } else if (matchedService.key === 'stove' || matchedService.key === 'oven') {
+              covQ.textContent = 'Oven not heating or stove burner failing to ignite?';
+              covTypes.innerHTML = '<strong class="font-bold text-slate-900">All cooking types:</strong> <span class="text-slate-600">Gas, electric, induction ranges &amp; wall ovens</span>';
+              covBrands.innerHTML = `<strong class="font-bold text-slate-900">All major brands:</strong> <span class="text-slate-600">${bp}GE, Frigidaire, KitchenAid, Samsung and more</span>`;
+            } else if (matchedService.key === 'microwave') {
+              covQ.textContent = 'Microwave not heating food or sparking inside?';
+              covTypes.innerHTML = '<strong class="font-bold text-slate-900">All microwave types:</strong> <span class="text-slate-600">Over-the-range, built-in drawer, countertop</span>';
+              covBrands.innerHTML = `<strong class="font-bold text-slate-900">All major brands:</strong> <span class="text-slate-600">${bp}Panasonic, Samsung, LG, Whirlpool and more</span>`;
+            } else if (matchedService.key === 'fridge') {
+              covQ.textContent = 'Fridge not cooling, leaking or making noise?';
+              covTypes.innerHTML = '<strong class="font-bold text-slate-900">All fridge types:</strong> <span class="text-slate-600">French door, side-by-side, bottom-freezer</span>';
+              covBrands.innerHTML = `<strong class="font-bold text-slate-900">All major brands:</strong> <span class="text-slate-600">${bp}Samsung, LG, Whirlpool, GE and more</span>`;
+            } else {
+              covQ.textContent = 'Appliance leaking, not working or making noise?';
+              covTypes.innerHTML = '<strong class="font-bold text-slate-900">All 6 major appliances:</strong> <span class="text-slate-600">Fridges, washers, dryers, dishwashers &amp; ovens</span>';
+              covBrands.innerHTML = `<strong class="font-bold text-slate-900">All major brands:</strong> <span class="text-slate-600">${bp}Samsung, LG, Whirlpool, Bosch and more</span>`;
+            }
+          } else if (brandName) {
+            covBrands.innerHTML = `<strong class="font-bold text-slate-900">Certified for:</strong> <span class="text-slate-600">${brandName} &amp; all major appliance brands</span>`;
+          }
+        }
+
 
         const probHeader = document.getElementById('problem-card-h3') || document.querySelector('#services-problems h3');
         if (probHeader && matchedService) {
@@ -3139,11 +3380,12 @@
         const typesCardStatus = document.getElementById('types-card-status');
         const typesCardBtn = document.getElementById('card-types-cta-btn');
         if (matchedService) {
-          if (tabLblProb) tabLblProb.textContent = `${matchedService.name} Issues`;
-          if (tabLblTypes) tabLblTypes.textContent = `${matchedService.name} Types`;
-          if (probCardStatus) probCardStatus.textContent = `Experiencing ${matchedService.name === 'Appliance' ? 'one of these' : matchedService.name.toLowerCase()} issues?`;
+          const shortName = (matchedService.key === 'fridge') ? 'Fridge' : (matchedService.key === 'washer' ? 'Washer' : (matchedService.key === 'dryer' ? 'Dryer' : matchedService.name));
+          if (tabLblProb) tabLblProb.textContent = `${shortName} Issues`;
+          if (tabLblTypes) tabLblTypes.textContent = `${shortName} Types`;
+          if (probCardStatus) probCardStatus.textContent = `Experiencing ${matchedService.name === 'Appliance' ? 'one of these' : shortName.toLowerCase()} issues?`;
           if (probCardBtn) probCardBtn.textContent = `Call 905-717-8905`;
-          if (typesCardStatus) typesCardStatus.textContent = `Need ${matchedService.name === 'Appliance' ? 'appliance' : matchedService.name.toLowerCase()} repair or service?`;
+          if (typesCardStatus) typesCardStatus.textContent = `Need ${matchedService.name === 'Appliance' ? 'appliance' : shortName.toLowerCase()} repair or service?`;
           if (typesCardBtn) typesCardBtn.innerHTML = `Schedule Repair &rarr;`;
         }
 
@@ -3241,7 +3483,7 @@
         // Dynamic Hero Bottom Stripe for City URLs
         const heroStripe = document.getElementById('near-me-hero-stripe');
         if (heroStripe) {
-          heroStripe.innerHTML = `<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0"></span><span class="font-bold text-slate-900">📍 Active Technicians Today:</span><span class="truncate">Dispatched Across ${cityName} &amp; Surrounding Neighborhoods</span>`;
+          heroStripe.innerHTML = `<span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse shrink-0"></span><span class="font-extrabold text-slate-900 shrink-0">Techs Active Today:</span><span class="truncate text-slate-600">${cityName} &amp; GTA</span>`;
           heroStripe.classList.remove('hidden');
           heroStripe.style.display = 'flex';
         }

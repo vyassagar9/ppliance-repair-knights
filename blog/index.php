@@ -14,7 +14,14 @@ $selected_cat = isset($_GET['category']) ? strtolower(trim($_GET['category'])) :
 
 $filtered_posts = [];
 foreach ($all_posts as $slug => $p) {
-    if ($selected_cat === 'all' || (isset($p['category_slug']) && $p['category_slug'] === $selected_cat)) {
+    $p_cat = $p['category_slug'] ?? '';
+    if ($selected_cat === 'all') {
+        $filtered_posts[$slug] = $p;
+    } elseif ($selected_cat === 'washer' || $selected_cat === 'dryer') {
+        if ($p_cat === 'washer' || $p_cat === 'dryer') {
+            $filtered_posts[$slug] = $p;
+        }
+    } elseif ($p_cat === $selected_cat) {
         $filtered_posts[$slug] = $p;
     }
 }
@@ -136,7 +143,7 @@ require_once __DIR__ . '/../head.php';
         <a href="?category=fridge" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all <?php echo ($selected_cat === 'fridge') ? 'bg-accent text-white shadow-lg' : 'bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-slate-700'; ?>">
           Refrigerator
         </a>
-        <a href="?category=washer" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all <?php echo ($selected_cat === 'washer') ? 'bg-accent text-white shadow-lg' : 'bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-slate-700'; ?>">
+        <a href="?category=washer" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all <?php echo ($selected_cat === 'washer' || $selected_cat === 'dryer') ? 'bg-accent text-white shadow-lg' : 'bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-slate-700'; ?>">
           Washer &amp; Dryer
         </a>
         <a href="?category=dishwasher" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all <?php echo ($selected_cat === 'dishwasher') ? 'bg-accent text-white shadow-lg' : 'bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-slate-700'; ?>">

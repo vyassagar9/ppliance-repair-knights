@@ -218,7 +218,10 @@ include __DIR__ . '/../head.php';
                   <span class="font-bold text-slate-900 text-sm">Samsung</span>
                   <a href="<?php echo $base_url; ?>brands/samsung-appliance-repair" class="text-xs font-bold text-brandOrange hover:underline">Dedicated Guide &rarr;</a>
                 </div>
-                <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm font-semibold text-slate-800">LG Electronics</div>
+                <div class="p-2.5 rounded-lg bg-orange-50 border border-orange-200 flex items-center justify-between">
+                  <span class="font-bold text-slate-900 text-sm">LG Electronics</span>
+                  <a href="<?php echo $base_url; ?>brands/lg-appliance-repair" class="text-xs font-bold text-brandOrange hover:underline">Dedicated Guide &rarr;</a>
+                </div>
                 <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm font-semibold text-slate-800">Whirlpool</div>
                 <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm font-semibold text-slate-800">GE Appliances</div>
                 <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm font-semibold text-slate-800">Maytag</div>
@@ -252,7 +255,10 @@ include __DIR__ . '/../head.php';
               </div>
               <!-- Top 5 Initially Visible -->
               <div class="space-y-2 pt-2">
-                <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm font-semibold text-slate-800">Bosch</div>
+                <div class="p-2.5 rounded-lg bg-orange-50 border border-orange-200 flex items-center justify-between">
+                  <span class="font-bold text-slate-900 text-sm">Bosch</span>
+                  <a href="<?php echo $base_url; ?>brands/bosch-appliance-repair" class="text-xs font-bold text-brandOrange hover:underline">Dedicated Guide &rarr;</a>
+                </div>
                 <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm font-semibold text-slate-800">Miele</div>
                 <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm font-semibold text-slate-800">Sub-Zero</div>
                 <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm font-semibold text-slate-800">Wolf</div>

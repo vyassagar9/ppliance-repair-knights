@@ -113,6 +113,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="font-bold text-slate-900 block">Samsung Repair</span>
             <span class="text-xs text-slate-500 font-normal">Fridges, Washers, Dryers &amp; Ranges</span>
           </a>
+          <a href="<?php echo $base_url; ?>brands/lg-appliance-repair" class="block px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">
+            <span class="font-bold text-slate-900 block">LG Repair</span>
+            <span class="text-xs text-slate-500 font-normal">DirectDrive Washers, ThinQ Fridges &amp; Dryers</span>
+          </a>
+          <a href="<?php echo $base_url; ?>brands/bosch-appliance-repair" class="block px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">
+            <span class="font-bold text-slate-900 block">Bosch Repair</span>
+            <span class="text-xs text-slate-500 font-normal">800/500 Series Dishwashers, Ovens &amp; Cooktops</span>
+          </a>
         </div>
       </div>
 
@@ -200,6 +208,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="text-xs uppercase text-slate-400 font-bold tracking-wider">Brands</span>
       <a href="<?php echo $base_url; ?>brands" class="block text-sm font-bold text-brandOrange">All Major Brands &rarr;</a>
       <a href="<?php echo $base_url; ?>brands/samsung-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Samsung Appliance Repair</a>
+      <a href="<?php echo $base_url; ?>brands/lg-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">LG Appliance Repair</a>
+      <a href="<?php echo $base_url; ?>brands/bosch-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Bosch Appliance Repair</a>
     </div>
 
     <a href="<?php echo $base_url; ?>blog" class="block font-medium text-slate-700 hover:text-brandOrange">Blog &amp; Guides</a>

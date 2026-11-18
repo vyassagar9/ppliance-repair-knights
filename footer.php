@@ -94,6 +94,8 @@ $base_url = isset($base_url) ? $base_url : '';
             <li><a href="<?php echo $base_url; ?>services/stove-repair" class="hover:text-white transition-colors">Oven &amp; Stove Repair</a></li>
             <li><a href="<?php echo $base_url; ?>services/microwave-repair" class="hover:text-white transition-colors">Microwave Repair</a></li>
             <li><a href="<?php echo $base_url; ?>brands/samsung-appliance-repair" class="hover:text-white transition-colors font-medium text-slate-300">Samsung Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>brands/lg-appliance-repair" class="hover:text-white transition-colors font-medium text-slate-300">LG Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>brands/bosch-appliance-repair" class="hover:text-white transition-colors font-medium text-slate-300">Bosch Repair</a></li>
           </ul>
         </div>
 

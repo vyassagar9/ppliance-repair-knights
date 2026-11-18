@@ -950,9 +950,9 @@ include 'head.php';
         <div class="brand-track-left space-x-4 py-1">
           <div class="flex space-x-3 sm:space-x-4 shrink-0 items-center">
             <a href="brands/samsung-appliance-repair" class="brand-pill brand-samsung" title="Samsung Appliance Repair Toronto &amp; GTA"><span class="brand-dot"></span>SAMSUNG</a>
-            <span class="brand-pill brand-lg"><span class="brand-dot"></span>LG</span>
+            <a href="brands/lg-appliance-repair" class="brand-pill brand-lg" title="LG Appliance Repair Toronto &amp; GTA"><span class="brand-dot"></span>LG</a>
             <span class="brand-pill brand-whirlpool"><span class="brand-dot"></span>WHIRLPOOL</span>
-            <span class="brand-pill brand-bosch"><span class="brand-dot"></span>BOSCH</span>
+            <a href="brands/bosch-appliance-repair" class="brand-pill brand-bosch" title="Bosch Appliance Repair Toronto &amp; GTA"><span class="brand-dot"></span>BOSCH</a>
             <span class="brand-pill brand-ge"><span class="brand-dot"></span>GE APPLIANCES</span>
             <span class="brand-pill brand-maytag"><span class="brand-dot"></span>MAYTAG</span>
             <span class="brand-pill brand-kitchenaid"><span class="brand-dot"></span>KITCHENAID</span>
@@ -961,9 +961,9 @@ include 'head.php';
           <!-- Duplicate Row 1 -->
           <div class="flex space-x-3 sm:space-x-4 shrink-0 items-center">
             <a href="brands/samsung-appliance-repair" class="brand-pill brand-samsung" title="Samsung Appliance Repair Toronto &amp; GTA"><span class="brand-dot"></span>SAMSUNG</a>
-            <span class="brand-pill brand-lg"><span class="brand-dot"></span>LG</span>
+            <a href="brands/lg-appliance-repair" class="brand-pill brand-lg" title="LG Appliance Repair Toronto &amp; GTA"><span class="brand-dot"></span>LG</a>
             <span class="brand-pill brand-whirlpool"><span class="brand-dot"></span>WHIRLPOOL</span>
-            <span class="brand-pill brand-bosch"><span class="brand-dot"></span>BOSCH</span>
+            <a href="brands/bosch-appliance-repair" class="brand-pill brand-bosch" title="Bosch Appliance Repair Toronto &amp; GTA"><span class="brand-dot"></span>BOSCH</a>
             <span class="brand-pill brand-ge"><span class="brand-dot"></span>GE APPLIANCES</span>
             <span class="brand-pill brand-maytag"><span class="brand-dot"></span>MAYTAG</span>
             <span class="brand-pill brand-kitchenaid"><span class="brand-dot"></span>KITCHENAID</span>

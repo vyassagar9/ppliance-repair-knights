@@ -78,6 +78,18 @@ $pages = [
         'changefreq' => 'weekly',
         'priority' => '0.90'
     ],
+    [
+        'loc' => $domain . '/brands/lg-appliance-repair',
+        'file' => $rootDir . '/brands/lg-appliance-repair.php',
+        'changefreq' => 'weekly',
+        'priority' => '0.90'
+    ],
+    [
+        'loc' => $domain . '/brands/bosch-appliance-repair',
+        'file' => $rootDir . '/brands/bosch-appliance-repair.php',
+        'changefreq' => 'weekly',
+        'priority' => '0.90'
+    ],
 
     // 2. Service Pages (Standard 7-Service Sequence)
     [

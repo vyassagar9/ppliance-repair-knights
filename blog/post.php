@@ -193,9 +193,9 @@ require_once __DIR__ . '/../head.php';
 
           <!-- Minimalist Editorial Header -->
           <header class="space-y-4">
-            <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-brandBlue bg-brandBlue/10 px-3 py-1 rounded-full">
+            <a href="<?php echo $base_url; ?>blog?category=<?php echo ($post['category_slug'] === 'dryer' ? 'washer' : urlencode($post['category_slug'] ?? 'all')); ?>" class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-brandBlue bg-brandBlue/10 hover:bg-brandBlue/20 transition-colors px-3 py-1 rounded-full">
               <?php echo htmlspecialchars($post['category']); ?>
-            </span>
+            </a>
 
             <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-[2.6rem] font-heading font-extrabold text-slate-900 tracking-tight leading-[1.2]">
               <?php echo htmlspecialchars($post['title']); ?>
@@ -379,6 +379,7 @@ require_once __DIR__ . '/../head.php';
             'Refrigerator' => ['name' => 'Refrigerator Repair', 'url' => 'services/fridge-repair', 'desc' => 'Need fast refrigerator or freezer repair? Our licensed GTA technicians carry genuine quality replacement parts, thermostats, and coils.'],
             'Washing Machine' => ['name' => 'Washing Machine Repair', 'url' => 'services/washer-repair', 'desc' => 'Washing machine leaking or not draining? Certified technicians ready with drain pumps, belts, and bearings across Toronto.'],
             'Dryer' => ['name' => 'Dryer Repair & Venting', 'url' => 'services/dryer-repair', 'desc' => 'Dryer not heating or taking multiple cycles? We repair heating elements, thermal fuses, and clean blocked vents.'],
+            'Dryer Repair' => ['name' => 'Dryer Repair & Venting', 'url' => 'services/dryer-repair', 'desc' => 'Dryer not heating or taking multiple cycles? We repair heating elements, thermal fuses, and clean blocked vents.'],
             'Dishwasher' => ['name' => 'Dishwasher Repair', 'url' => 'services/dishwasher-repair', 'desc' => 'Dishwasher leaving cloudy dishes or not draining? Professional circulation pump and spray arm restoration in Toronto.'],
           ];
           $target_srv = isset($cat_service_map[$post['category']]) ? $cat_service_map[$post['category']] : $cat_service_map['Appliance Repair Tips'];
