@@ -72,6 +72,19 @@
         </span>
       </div>
 
+      <!-- Target File Selector Dropdown -->
+      <div class="flex items-center gap-2 bg-slate-900/90 border border-amber-500/60 rounded-lg px-2.5 py-1.5 shadow-sm">
+        <label for="target-file-select" class="text-xs font-bold text-amber-400 flex items-center gap-1.5 whitespace-nowrap">
+          <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          Target File:
+        </label>
+        <select id="target-file-select" onchange="setTargetFile(this.value)" class="bg-slate-800 text-amber-300 font-bold text-xs border border-amber-500/60 rounded px-2 py-1 focus:ring-2 focus:ring-amber-400 outline-none cursor-pointer">
+          <option value="demo.html" selected>demo.html (New Redesign)</option>
+          <option value="index.html">index.html (Current Live)</option>
+          <option value="demo1.html">demo1.html (Alternate)</option>
+        </select>
+      </div>
+
       <!-- Quick Actions -->
       <div class="flex items-center gap-2">
         <a href="coffee-machine-toronto" target="_blank" class="bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold px-3 py-1.5 rounded-lg transition-all shadow-sm flex items-center gap-1.5">
@@ -86,8 +99,8 @@
           <span>★ Washer Toronto</span>
           <span>&rarr;</span>
         </a>
-        <a href="index.html" target="_blank" class="bg-brandOrange hover:bg-brandOrangeHover text-white text-xs font-bold px-3 py-1.5 rounded-lg transition-all shadow-sm flex items-center gap-1.5">
-          <span>Master Page</span>
+        <a id="master-page-link" href="demo.html" target="_blank" class="bg-brandOrange hover:bg-brandOrangeHover text-white text-xs font-bold px-3 py-1.5 rounded-lg transition-all shadow-sm flex items-center gap-1.5">
+          <span id="master-page-text">demo.html</span>
           <span>&rarr;</span>
         </a>
       </div>
@@ -232,9 +245,14 @@
 
   <!-- Global URL Format Control Bar -->
   <div class="bg-white border-b border-slate-200 py-2.5 px-4 sm:px-6 lg:px-8 shadow-2xs">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
-      <div class="flex items-center gap-2">
-        <span class="font-bold text-slate-700">URL Display Format:</span>
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+      <div class="flex items-center gap-2 flex-wrap">
+        <span class="font-bold text-slate-700">Target File:</span>
+        <span id="active-target-badge" class="px-2.5 py-0.5 rounded-md font-extrabold text-xs bg-amber-100 text-amber-800 border border-amber-300">
+          demo.html
+        </span>
+        <span class="text-slate-300">|</span>
+        <span class="font-bold text-slate-700">Display Format:</span>
         <button id="btn-show-full" onclick="setUrlDisplayMode('full')" class="px-2.5 py-1 rounded-md font-bold text-xs bg-brandBlue text-white shadow-xs transition-colors">
           Full Live URL (with Host)
         </button>
@@ -2297,12 +2315,45 @@
 
   <script>
     let currentDisplayMode = 'full'; // 'full' or 'relative'
+    let currentTargetFile = localStorage.getItem('ppc_target_file') || 'demo.html';
 
     function getBasePpcUrl() {
       const origin = window.location.origin;
       const pathname = window.location.pathname;
       const baseDir = pathname.substring(0, pathname.lastIndexOf('/') + 1);
       return origin + baseDir;
+    }
+
+    function setTargetFile(fileName) {
+      if (!fileName) return;
+      currentTargetFile = fileName;
+      localStorage.setItem('ppc_target_file', fileName);
+
+      // Sync header dropdown
+      const select = document.getElementById('target-file-select');
+      if (select && select.value !== fileName) {
+        select.value = fileName;
+      }
+
+      // Sync active badge in control bar
+      const badge = document.getElementById('active-target-badge');
+      if (badge) {
+        badge.textContent = fileName;
+      }
+
+      // Sync header Master Page link
+      const masterLink = document.getElementById('master-page-link');
+      const masterText = document.getElementById('master-page-text');
+      if (masterLink) {
+        masterLink.href = fileName;
+      }
+      if (masterText) {
+        masterText.textContent = fileName;
+      }
+
+      // Refresh all table links and tester preview
+      setUrlDisplayMode(currentDisplayMode);
+      showToast('Switched target file to: ' + fileName);
     }
 
     function setUrlDisplayMode(mode) {
@@ -2321,8 +2372,17 @@
 
       // Update all .url-wrapper links in tables (Unclean Query URLs)
       document.querySelectorAll('.url-wrapper').forEach(wrapper => {
-        const rel = wrapper.getAttribute('data-rel');
-        const cleanRel = rel.startsWith('?') ? ('index.html' + rel) : rel;
+        const rel = wrapper.getAttribute('data-rel') || '';
+        let queryPart = '';
+        if (rel.startsWith('?')) {
+          queryPart = rel;
+        } else if (rel.includes('?')) {
+          queryPart = '?' + rel.split('?')[1];
+        } else if (rel !== 'index.html' && rel !== 'demo.html' && rel !== 'demo1.html') {
+          queryPart = '?' + rel;
+        }
+
+        const cleanRel = currentTargetFile + queryPart;
         const fullUrl = base + cleanRel;
         const link = wrapper.querySelector('a.url-link');
         const textSpan = wrapper.querySelector('.url-text');
@@ -2330,7 +2390,7 @@
           link.href = fullUrl;
         }
         if (textSpan) {
-          textSpan.textContent = (mode === 'full') ? fullUrl : rel;
+          textSpan.textContent = (mode === 'full') ? fullUrl : cleanRel;
         }
       });
 
@@ -2350,10 +2410,14 @@
 
       // Update all Open Link buttons
       document.querySelectorAll('a.open-btn').forEach(btn => {
-        const rel = btn.getAttribute('data-rel');
-        if (rel) {
-          btn.href = base + rel;
+        const rel = btn.getAttribute('data-rel') || '';
+        let queryPart = '';
+        if (rel.startsWith('?')) {
+          queryPart = rel;
+        } else if (rel.includes('?')) {
+          queryPart = '?' + rel.split('?')[1];
         }
+        btn.href = base + currentTargetFile + queryPart;
       });
 
       // Update all Open Clean Link buttons
@@ -2380,7 +2444,7 @@
       if (c) params.set('city', c);
       
       const queryStr = params.toString() ? ('?' + params.toString()) : '';
-      const relUrl = 'index.html' + queryStr;
+      const relUrl = currentTargetFile + queryStr;
       const fullUrl = getBasePpcUrl() + relUrl;
 
       // Clean slug format
@@ -2388,7 +2452,7 @@
       if (b) cleanParts.push(b);
       if (s) cleanParts.push(s);
       if (c) cleanParts.push(c);
-      const cleanSlug = cleanParts.length > 0 ? cleanParts.join('-') : 'index.html';
+      const cleanSlug = cleanParts.length > 0 ? cleanParts.join('-') : currentTargetFile;
       const fullCleanUrl = getBasePpcUrl() + cleanSlug;
       
       // Update clean preview
@@ -2408,7 +2472,7 @@
       if (previewLink) previewLink.href = fullUrl;
       const previewBox = document.getElementById('tester-preview-box');
       if (previewBox) {
-        previewBox.textContent = (currentDisplayMode === 'full') ? fullUrl : (queryStr || 'index.html');
+        previewBox.textContent = (currentDisplayMode === 'full') ? fullUrl : relUrl;
       }
     }
 
@@ -2420,7 +2484,7 @@
       if (b) cleanParts.push(b);
       if (s) cleanParts.push(s);
       if (c) cleanParts.push(c);
-      const cleanSlug = cleanParts.length > 0 ? cleanParts.join('-') : 'index.html';
+      const cleanSlug = cleanParts.length > 0 ? cleanParts.join('-') : currentTargetFile;
       const fullCleanUrl = getBasePpcUrl() + cleanSlug;
       
       navigator.clipboard.writeText(fullCleanUrl).then(() => {
@@ -2440,7 +2504,7 @@
       if (c) params.set('city', c);
       
       const queryStr = params.toString() ? ('?' + params.toString()) : '';
-      const fullUrl = getBasePpcUrl() + 'index.html' + queryStr;
+      const fullUrl = getBasePpcUrl() + currentTargetFile + queryStr;
       
       navigator.clipboard.writeText(fullUrl).then(() => {
         showToast('Query URL copied: ' + fullUrl);
@@ -2460,7 +2524,7 @@
         }
       }
       if (!urlToCopy) {
-        urlToCopy = getBasePpcUrl() + 'index.html';
+        urlToCopy = getBasePpcUrl() + currentTargetFile;
       }
 
       navigator.clipboard.writeText(urlToCopy).then(() => {
@@ -2483,13 +2547,18 @@
       if (row) {
         const wrapper = row.querySelector('.url-wrapper');
         if (wrapper) {
-          const rel = wrapper.getAttribute('data-rel');
-          const cleanRel = rel.startsWith('?') ? ('index.html' + rel) : rel;
-          urlToCopy = getBasePpcUrl() + cleanRel;
+          const rel = wrapper.getAttribute('data-rel') || '';
+          let queryPart = '';
+          if (rel.startsWith('?')) {
+            queryPart = rel;
+          } else if (rel.includes('?')) {
+            queryPart = '?' + rel.split('?')[1];
+          }
+          urlToCopy = getBasePpcUrl() + currentTargetFile + queryPart;
         }
       }
       if (!urlToCopy) {
-        urlToCopy = getBasePpcUrl() + 'index.html';
+        urlToCopy = getBasePpcUrl() + currentTargetFile;
       }
 
       navigator.clipboard.writeText(urlToCopy).then(() => {
@@ -2521,11 +2590,13 @@
 
     // Initialize on page load
     document.addEventListener('DOMContentLoaded', () => {
+      const savedFile = localStorage.getItem('ppc_target_file') || 'demo.html';
+      setTargetFile(savedFile);
+
       const hostLabel = document.getElementById('current-host-label');
       if (hostLabel) {
         hostLabel.textContent = 'Host: ' + getBasePpcUrl();
       }
-      setUrlDisplayMode('full');
     });
   </script>
 </body>
