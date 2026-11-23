@@ -6,7 +6,7 @@
 
   <url>
     <loc>https://www.appliancerepairknights.com/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
@@ -30,61 +30,103 @@
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/locations</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/services</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/blog</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.appliancerepairknights.com/brands</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.appliancerepairknights.com/brands/samsung-appliance-repair</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.appliancerepairknights.com/brands/lg-appliance-repair</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.appliancerepairknights.com/brands/bosch-appliance-repair</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.appliancerepairknights.com/brands/whirlpool-appliance-repair</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.appliancerepairknights.com/brands/ge-appliance-repair</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.appliancerepairknights.com/brands/kitchenaid-appliance-repair</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
     <loc>https://www.appliancerepairknights.com/services/fridge-repair</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/services/washer-repair</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/services/coffee-machine-repair</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/services/dishwasher-repair</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/services/dryer-repair</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/services/stove-repair</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/services/microwave-repair</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
@@ -108,13 +150,13 @@
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/locations/vaughan-appliance-repair</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/locations/markham-appliance-repair</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
@@ -138,13 +180,13 @@
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/locations/burlington-appliance-repair</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/locations/hamilton-appliance-repair</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
@@ -210,31 +252,31 @@
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/locations/toronto/refrigerator-repair</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/blog/refrigerator-repair-cost-toronto</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/blog/appliance-repair-tips</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/blog/washing-machine-not-draining-toronto</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/blog/repair-or-replace-7-10-year-old-appliance</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -243,30 +285,6 @@
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.appliancerepairknights.com/brands</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.appliancerepairknights.com/brands/samsung-appliance-repair</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://www.appliancerepairknights.com/brands/lg-appliance-repair</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://www.appliancerepairknights.com/brands/bosch-appliance-repair</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.appliancerepairknights.com/privacy-policy</loc>

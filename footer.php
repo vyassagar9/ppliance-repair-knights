@@ -96,6 +96,9 @@ $base_url = isset($base_url) ? $base_url : '';
             <li><a href="<?php echo $base_url; ?>brands/samsung-appliance-repair" class="hover:text-white transition-colors font-medium text-slate-300">Samsung Repair</a></li>
             <li><a href="<?php echo $base_url; ?>brands/lg-appliance-repair" class="hover:text-white transition-colors font-medium text-slate-300">LG Repair</a></li>
             <li><a href="<?php echo $base_url; ?>brands/bosch-appliance-repair" class="hover:text-white transition-colors font-medium text-slate-300">Bosch Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>brands/whirlpool-appliance-repair" class="hover:text-white transition-colors font-medium text-slate-300">Whirlpool Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>brands/ge-appliance-repair" class="hover:text-white transition-colors font-medium text-slate-300">GE Appliance Repair</a></li>
+            <li><a href="<?php echo $base_url; ?>brands/kitchenaid-appliance-repair" class="hover:text-white transition-colors font-medium text-slate-300">KitchenAid Repair</a></li>
           </ul>
         </div>
 

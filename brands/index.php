@@ -222,15 +222,24 @@ include __DIR__ . '/../head.php';
                   <span class="font-bold text-slate-900 text-sm">LG Electronics</span>
                   <a href="<?php echo $base_url; ?>brands/lg-appliance-repair" class="text-xs font-bold text-brandOrange hover:underline">Dedicated Guide &rarr;</a>
                 </div>
-                <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm font-semibold text-slate-800">Whirlpool</div>
-                <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm font-semibold text-slate-800">GE Appliances</div>
+                <div class="p-2.5 rounded-lg bg-orange-50 border border-orange-200 flex items-center justify-between">
+                  <span class="font-bold text-slate-900 text-sm">Whirlpool</span>
+                  <a href="<?php echo $base_url; ?>brands/whirlpool-appliance-repair" class="text-xs font-bold text-brandOrange hover:underline">Dedicated Guide &rarr;</a>
+                </div>
+                <div class="p-2.5 rounded-lg bg-orange-50 border border-orange-200 flex items-center justify-between">
+                  <span class="font-bold text-slate-900 text-sm">GE Appliances</span>
+                  <a href="<?php echo $base_url; ?>brands/ge-appliance-repair" class="text-xs font-bold text-brandOrange hover:underline">Dedicated Guide &rarr;</a>
+                </div>
                 <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm font-semibold text-slate-800">Maytag</div>
               </div>
               
               <!-- Hidden More Brands (Revealed on Click) -->
               <div id="tier-more-1" class="hidden space-y-2 pt-2">
+                <div class="p-2.5 rounded-lg bg-orange-50 border border-orange-200 flex items-center justify-between">
+                  <span class="font-bold text-slate-900 text-sm">KitchenAid</span>
+                  <a href="<?php echo $base_url; ?>brands/kitchenaid-appliance-repair" class="text-xs font-bold text-brandOrange hover:underline">Dedicated Guide &rarr;</a>
+                </div>
                 <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm font-semibold text-slate-800">Frigidaire</div>
-                <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm font-semibold text-slate-800">KitchenAid</div>
                 <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm font-semibold text-slate-800">Kenmore</div>
                 <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm font-semibold text-slate-800">Electrolux</div>
                 <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm font-semibold text-slate-800">Amana</div>
@@ -364,5 +373,3 @@ include __DIR__ . '/../head.php';
   </script>
 
 <?php include __DIR__ . '/../footer.php'; ?>
-</body>
-</html>

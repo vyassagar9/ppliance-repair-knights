@@ -121,6 +121,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="font-bold text-slate-900 block">Bosch Repair</span>
             <span class="text-xs text-slate-500 font-normal">800/500 Series Dishwashers, Ovens &amp; Cooktops</span>
           </a>
+          <a href="<?php echo $base_url; ?>brands/whirlpool-appliance-repair" class="block px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">
+            <span class="font-bold text-slate-900 block">Whirlpool Repair</span>
+            <span class="text-xs text-slate-500 font-normal">Cabrio &amp; Duet Washers, Fridges &amp; Dryers</span>
+          </a>
+          <a href="<?php echo $base_url; ?>brands/ge-appliance-repair" class="block px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">
+            <span class="font-bold text-slate-900 block">GE &amp; Profile Repair</span>
+            <span class="text-xs text-slate-500 font-normal">Profile, Cafe, TwinChill Fridges &amp; Washers</span>
+          </a>
+          <a href="<?php echo $base_url; ?>brands/kitchenaid-appliance-repair" class="block px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 hover:text-brandOrange font-medium">
+            <span class="font-bold text-slate-900 block">KitchenAid Repair</span>
+            <span class="text-xs text-slate-500 font-normal">ProWash Dishwashers, Preserva Fridges &amp; Ovens</span>
+          </a>
         </div>
       </div>
 
@@ -210,6 +222,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="<?php echo $base_url; ?>brands/samsung-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Samsung Appliance Repair</a>
       <a href="<?php echo $base_url; ?>brands/lg-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">LG Appliance Repair</a>
       <a href="<?php echo $base_url; ?>brands/bosch-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Bosch Appliance Repair</a>
+      <a href="<?php echo $base_url; ?>brands/whirlpool-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">Whirlpool Appliance Repair</a>
+      <a href="<?php echo $base_url; ?>brands/ge-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">GE Appliance Repair</a>
+      <a href="<?php echo $base_url; ?>brands/kitchenaid-appliance-repair" class="block text-sm text-slate-700 hover:text-brandOrange">KitchenAid Appliance Repair</a>
     </div>
 
     <a href="<?php echo $base_url; ?>blog" class="block font-medium text-slate-700 hover:text-brandOrange">Blog &amp; Guides</a>

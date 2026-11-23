@@ -792,8 +792,6 @@ include __DIR__ . '/../head.php';
 
   </main>
 
-<?php include __DIR__ . '/../footer.php'; ?>
-
   <!-- Interactive Scripts (1:1 with Location Pages) -->
   <script>
     // FAQ Toggle
@@ -927,5 +925,4 @@ include __DIR__ . '/../head.php';
     })();
   </script>
 
-</body>
-</html>
+<?php include __DIR__ . '/../footer.php'; ?>

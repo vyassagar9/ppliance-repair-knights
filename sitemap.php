@@ -90,6 +90,24 @@ $pages = [
         'changefreq' => 'weekly',
         'priority' => '0.90'
     ],
+    [
+        'loc' => $domain . '/brands/whirlpool-appliance-repair',
+        'file' => $rootDir . '/brands/whirlpool-appliance-repair.php',
+        'changefreq' => 'weekly',
+        'priority' => '0.90'
+    ],
+    [
+        'loc' => $domain . '/brands/ge-appliance-repair',
+        'file' => $rootDir . '/brands/ge-appliance-repair.php',
+        'changefreq' => 'weekly',
+        'priority' => '0.90'
+    ],
+    [
+        'loc' => $domain . '/brands/kitchenaid-appliance-repair',
+        'file' => $rootDir . '/brands/kitchenaid-appliance-repair.php',
+        'changefreq' => 'weekly',
+        'priority' => '0.90'
+    ],
 
     // 2. Service Pages (Standard 7-Service Sequence)
     [

@@ -375,7 +375,7 @@
       background: linear-gradient(135deg, #071221 0%, #0d1e35 50%, #071221 100%);
       border-top: 1px solid rgba(255, 107, 0, 0.4);
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      box-shadow: none;
       position: relative;
       overflow: hidden;
       padding: 1.5rem 1rem;
@@ -743,7 +743,7 @@
                 <img id="hero-service-img" src="../img/washing-machine-repair-service.webp" alt="Same-Day Appliance Repair in Toronto &amp; GTA - Certified Local Technicians" width="440" height="380" class="w-full h-auto max-h-[200px] sm:max-h-[240px] lg:max-h-[300px] object-cover rounded-lg">
                 <div class="mt-3.5 pt-3 border-t border-slate-200 w-full flex items-center justify-between text-[10px] sm:text-xs text-brandNavy font-bold tracking-tight">
                   <span class="flex items-center gap-1"><span class="text-brandBlue font-black text-xs sm:text-sm">✓</span> Certified Techs</span>
-                  <span class="flex items-center gap-1"><span class="text-brandOrange font-black text-xs sm:text-sm">✓</span> Same-Day Diagnostic</span>
+                  <span class="flex items-center gap-1"><span class="text-brandOrange font-black text-xs sm:text-sm">✓</span> Same-Day Dispatch</span>
                 </div>
               </div>
             </div>
@@ -1724,34 +1724,46 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function trackGtmCall(location) {
-      if (typeof loadGTM === 'function') loadGTM();
-      window.dataLayer.push({
-        'event': 'click_phone_ppc',
-        'button_location': location,
-        'click_location': location,
-        'value': 1
-      });
-      window.dataLayer.push({
-        'event': 'ppc_phone_click',
-        'button_location': location,
-        'click_location': location,
-        'value': 1
-      });
+      try {
+        if (typeof loadGTM === 'function') loadGTM();
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          'event': 'click_phone_ppc',
+          'button_location': location,
+          'click_location': location,
+          'value': 1
+        });
+        window.dataLayer.push({
+          'event': 'ppc_phone_click',
+          'button_location': location,
+          'click_location': location,
+          'value': 1
+        });
+      } catch (err) {
+        console.warn('Call tracking error:', err);
+      }
+      return true;
     }
     function trackGtmWhatsApp(location) {
-      if (typeof loadGTM === 'function') loadGTM();
-      window.dataLayer.push({
-        'event': 'click_whatsapp_ppc',
-        'button_location': location,
-        'click_location': location,
-        'value': 1
-      });
-      window.dataLayer.push({
-        'event': 'ppc_whatsapp_click',
-        'button_location': location,
-        'click_location': location,
-        'value': 1
-      });
+      try {
+        if (typeof loadGTM === 'function') loadGTM();
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          'event': 'click_whatsapp_ppc',
+          'button_location': location,
+          'click_location': location,
+          'value': 1
+        });
+        window.dataLayer.push({
+          'event': 'ppc_whatsapp_click',
+          'button_location': location,
+          'click_location': location,
+          'value': 1
+        });
+      } catch (err) {
+        console.warn('WhatsApp tracking error:', err);
+      }
+      return true;
     }
     function trackGtmFormSuccess(appliance, city) {
       if (typeof loadGTM === 'function') loadGTM();
