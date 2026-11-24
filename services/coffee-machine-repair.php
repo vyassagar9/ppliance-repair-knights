@@ -2,8 +2,8 @@
 require_once __DIR__ . '/../config.php';
 $base_url = '../';
 $current_page = 'coffee-machine';
-$page_title = 'Coffee Machine Repair, Servicing & Maintenance | Toronto & GTA';
-$page_description = 'On-site coffee machine repair, servicing & preventative maintenance across Toronto & GTA. Residential built-in & commercial office espresso systems. Fast dispatch, genuine quality parts.';
+$page_title = 'Coffee Machine Repair & Service | Toronto & GTA';
+$page_description = 'On-site coffee machine repair & servicing across Toronto & GTA. Built-in residential & commercial espresso systems. Fast dispatch, genuine quality parts.';
 $page_keywords = 'coffee machine repair toronto, office coffee machine repair gta, espresso machine repair, commercial coffee maker maintenance, built-in coffee system service, gaggia repair, mastrena repair, bunn repair, breville repair, delonghi repair, bravilor bonamat repair, saeco professional repair, nespresso repair, vki coffee repair, keurig repair';
 $canonical_url = 'https://www.appliancerepairknights.com/services/coffee-machine-repair';
 $og_image = 'https://www.appliancerepairknights.com/img/coffee-machine-repair-service.webp';

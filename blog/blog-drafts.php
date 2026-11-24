@@ -459,7 +459,7 @@ HTML
         'read_time' => '7 min read',
         'featured_image' => 'img/clothes-dryer-repair-service.webp',
         'summary' => "When your clothes dryer tumbles normally but stays ice cold, your laundry routine grinds to a halt. Our GTA appliance experts break down the most common heating failures, safety fuse hazards, and why a clogged dryer duct is often the silent culprit.",
-        'quick_answer' => "The primary reason an electric dryer spins without heat is a broken heating element coil or a blown thermal fuse. The thermal fuse is a critical safety mechanism designed to trip permanently if excessive heat builds up due to lint-clogged exhaust ductwork. Replacing the element and clearing the vent restores full drying performance quickly. Appliance Repair Knights stocks OEM parts on all mobile units across Toronto.",
+        'quick_answer' => "The primary reason an electric dryer spins without heat is a broken heating element coil or a blown thermal fuse. The thermal fuse is a critical safety mechanism designed to trip permanently if excessive heat builds up due to lint-clogged exhaust ductwork. Replacing the element and clearing the vent restores full drying performance quickly. Appliance Repair Knights stocks genuine quality parts on all mobile units across Toronto.",
         'faqs' => [
             [
                 'q' => 'Why did my dryer heating element burn out?',
@@ -519,7 +519,7 @@ HTML
       Dryer Heating Repair Costs in Toronto &amp; GTA
     </h2>
     <p>
-      Most electric dryer heating element and thermal fuse replacements in the Greater Toronto Area cost between <strong>$150 and $260</strong> with OEM certified parts. Replacing the component saves up to $1,000 compared to buying a brand-new dryer!
+      Most electric dryer heating element and thermal fuse replacements in the Greater Toronto Area cost varies by model and fault severity — your technician provides a written upfront quote before any work begins.
     </p>
   </section>
 

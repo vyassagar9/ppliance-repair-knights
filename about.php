@@ -179,7 +179,7 @@ include 'header.php';
             </div>
             <h3 class="font-heading font-bold text-lg text-primary">Quality Craftsmanship</h3>
             <p class="text-xs text-slate-500 leading-relaxed">
-              All repairs utilize OEM parts and are backed by our written parts and labor warranty.
+              All repairs utilize genuine quality parts and are backed by our comprehensive written parts and labour warranty.
             </p>
           </div>
 

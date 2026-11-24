@@ -4,8 +4,8 @@ $all_locations = require __DIR__ . '/../locations/location-data.php';
 
 $base_url = '../';
 $current_page = 'brands';
-$page_title = 'Bosch Appliance Repair Toronto & GTA | Same-Day Certified Service';
-$page_description = 'Looking for Bosch appliance repair near you? Certified same-day diagnostics across Toronto & GTA for Bosch dishwashers, fridges, washers & ovens. Call 905-717-8905!';
+$page_title = 'Bosch Appliance Repair Toronto & GTA | Same-Day Service';
+$page_description = 'Certified same-day Bosch appliance repair across Toronto & GTA. Expert diagnostics for Bosch dishwashers, fridges, washers & ovens. Call 905-717-8905.';
 $page_keywords = 'bosch dishwasher repair, bosh appliance repair, bosch appliance repair toronto, bosch appliance repair near me, bosch fridge repair, bosch error code e15';
 $canonical_url = 'https://www.appliancerepairknights.com/brands/bosch-appliance-repair';
 

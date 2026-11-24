@@ -4,8 +4,8 @@ $all_locations = require __DIR__ . '/../locations/location-data.php';
 
 $base_url = '../';
 $current_page = 'brands';
-$page_title = 'KitchenAid Appliance Repair Toronto & GTA | Same-Day Certified Service';
-$page_description = 'Looking for reliable KitchenAid appliance repair near you? Certified same-day diagnostics across Toronto & GTA for KitchenAid dishwashers, fridges, ovens & cooktops. Call 905-717-8905!';
+$page_title = 'KitchenAid Appliance Repair Toronto | Same-Day Service';
+$page_description = 'Certified same-day KitchenAid appliance repair across Toronto & GTA. Expert diagnostics for KitchenAid dishwashers, fridges & ovens. Call 905-717-8905.';
 $page_keywords = 'kitchenaid appliance repair, kitchenaid dishwasher repair toronto, kitchenaid fridge repair, kitchenaid oven repair near me, kitchenaid error code e1 f9';
 $canonical_url = 'https://www.appliancerepairknights.com/brands/kitchenaid-appliance-repair';
 

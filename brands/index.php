@@ -2,8 +2,8 @@
 require_once __DIR__ . '/../config.php';
 $base_url = '../';
 $current_page = 'brands';
-$page_title = 'Appliance Brands We Repair in Toronto & GTA | Appliance Repair Knights';
-$page_description = 'Certified appliance repair services for all major brands across Toronto & the GTA: Samsung, LG, Whirlpool, Bosch, GE, KitchenAid, Maytag & more. Call 905-717-8905!';
+$page_title = 'Appliance Brands We Repair Toronto & GTA | Knights';
+$page_description = 'Certified appliance repair for all major brands across Toronto & GTA: Samsung, LG, Whirlpool, Bosch, GE, KitchenAid & more. Call 905-717-8905 today!';
 $page_keywords = 'appliance repair brands, samsung appliance repair, lg appliance repair, whirlpool repair, bosch repair, appliance brands toronto';
 $canonical_url = 'https://www.appliancerepairknights.com/brands';
 

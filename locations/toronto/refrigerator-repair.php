@@ -10,7 +10,7 @@ require_once __DIR__ . '/../../config.php';
 $base_url = '../../';
 $current_page = 'locations';
 
-$page_title = 'Refrigerator Repair Toronto | Certified Local Same-Day Technicians';
+$page_title = 'Refrigerator Repair Toronto | Same-Day Certified Technicians';
 $page_description = 'Professional refrigerator repair in Toronto & GTA. Fast diagnostics for cooling issues, compressor faults, defrost leaks, and ice makers. Written warranty. Call 905-717-8905.';
 $page_keywords = 'refrigerator repair toronto, fridge repair toronto, fridge not cooling toronto, refrigerator repair north york, downtown toronto fridge repair, same day fridge repair toronto, sub zero fridge repair toronto, samsung fridge repair toronto, lg fridge repair toronto';
 $canonical_url = 'https://www.appliancerepairknights.com/locations/toronto/refrigerator-repair';

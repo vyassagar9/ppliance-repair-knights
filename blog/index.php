@@ -29,7 +29,7 @@ foreach ($all_posts as $slug => $p) {
 // Meta configuration
 $base_url = '../';
 $current_page = 'blog';
-$page_title = 'Appliance Repair Guides, Tips & Cost Insights | Appliance Repair Knights';
+$page_title = 'Appliance Repair Guides & Tips | Appliance Repair Knights';
 $page_description = 'Expert appliance repair guides, troubleshooting checklists, and transparent repair vs replace advice from certified technicians across Toronto & the GTA.';
 $page_keywords = 'appliance repair blog, fridge repair cost Toronto, washing machine troubleshooting GTA, appliance repair advice Ontario';
 $canonical_url = 'https://www.appliancerepairknights.com/blog';

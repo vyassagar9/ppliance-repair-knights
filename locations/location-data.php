@@ -7,7 +7,7 @@
 return [
     'mississauga-appliance-repair' => [
         'slug' => 'mississauga-appliance-repair',
-        'date_modified' => '2026-09-21',
+        'date_modified' => '2026-11-24',
         'city_name' => 'Mississauga',
         'region' => 'Peel Region',
         'meta_title' => 'Appliance Repair Mississauga | Certified Local Technicians',
@@ -44,7 +44,7 @@ return [
             ],
             [
                 'q' => 'Do you offer a warranty on appliance repairs in Mississauga?',
-                'a' => 'Yes. Every appliance repair completed in Mississauga includes a written warranty on both parts and labor, ensuring your repair is dependable and fully protected.'
+                'a' => 'Yes. Every appliance repair completed in Mississauga includes a written warranty on both parts and labour, ensuring your repair is dependable and fully protected.'
             ],
             [
                 'q' => "Can you fix a washing machine that won't spin or drain in Mississauga?",
@@ -54,7 +54,7 @@ return [
     ],
     'brampton-appliance-repair' => [
         'slug' => 'brampton-appliance-repair',
-        'date_modified' => '2026-09-21',
+        'date_modified' => '2026-11-24',
         'city_name' => 'Brampton',
         'region' => 'Peel Region',
         'meta_title' => 'Expert Appliance Repair Brampton | Prompt Local Technicians',
@@ -91,7 +91,7 @@ return [
             ],
             [
                 'q' => 'Do you offer a warranty on appliance repairs in Brampton?',
-                'a' => 'Yes. Repairs completed in Brampton come with a written warranty on parts and labor. Ask our technician about the specific warranty terms for your repair when the work is completed.'
+                'a' => 'Yes. Repairs completed in Brampton come with a written warranty on parts and labour. Ask our technician about the specific warranty terms for your repair when the work is completed.'
             ],
             [
                 'q' => "Can you fix a dryer that runs but doesn't heat up in Brampton?",
@@ -101,7 +101,7 @@ return [
     ],
     'vaughan-appliance-repair' => [
         'slug' => 'vaughan-appliance-repair',
-        'date_modified' => '2026-11-11',
+        'date_modified' => '2026-11-24',
         'city_name' => 'Vaughan',
         'region' => 'York Region',
         'meta_title' => 'Appliance Repair Vaughan | Same-Day Dishwasher & Washer Fix',
@@ -146,7 +146,7 @@ return [
             ],
             [
                 'q' => 'Do you offer a warranty on appliance repairs in Vaughan?',
-                'a' => 'Yes. Every repair completed in Vaughan comes with a written warranty covering both parts and labor. Ask our technician about the specific warranty terms for your repair when the work is completed.'
+                'a' => 'Yes. Every repair completed in Vaughan comes with a written warranty covering both parts and labour. Ask our technician about the specific warranty terms for your repair when the work is completed.'
             ],
             [
                 'q' => 'Can you repair luxury built-in appliances and induction cooktops in Vaughan?',
@@ -156,7 +156,7 @@ return [
     ],
     'markham-appliance-repair' => [
         'slug' => 'markham-appliance-repair',
-        'date_modified' => '2026-11-11',
+        'date_modified' => '2026-11-24',
         'city_name' => 'Markham',
         'region' => 'York Region',
         'meta_title' => 'Appliance Repair Markham | Same-Day Dishwasher & Fridge Fix',
@@ -197,7 +197,7 @@ return [
             ],
             [
                 'q' => 'Do you offer a warranty on appliance repairs in Markham?',
-                'a' => 'Yes. Repairs completed in Markham come with a written warranty on parts and labor. Ask our technician about the specific warranty terms for your repair when the work is completed.'
+                'a' => 'Yes. Repairs completed in Markham come with a written warranty on parts and labour. Ask our technician about the specific warranty terms for your repair when the work is completed.'
             ],
             [
                 'q' => "Can you fix an oven or stove that isn't heating properly in Markham?",
@@ -207,7 +207,7 @@ return [
     ],
     'oakville-appliance-repair' => [
         'slug' => 'oakville-appliance-repair',
-        'date_modified' => '2026-09-21',
+        'date_modified' => '2026-11-24',
         'city_name' => 'Oakville',
         'region' => 'Halton Region',
         'meta_title' => 'Appliance Repair Oakville | Fast Local Service & Repairs',
@@ -244,7 +244,7 @@ return [
             ],
             [
                 'q' => 'Do you offer a warranty on appliance repairs in Oakville?',
-                'a' => 'Yes. Repairs completed in Oakville come with a written warranty on parts and labor. Ask our technician about the specific warranty terms for your repair when the work is completed.'
+                'a' => 'Yes. Repairs completed in Oakville come with a written warranty on parts and labour. Ask our technician about the specific warranty terms for your repair when the work is completed.'
             ],
             [
                 'q' => "Can you fix a refrigerator ice maker or water dispenser that isn't working in Oakville?",
@@ -254,10 +254,10 @@ return [
     ],
     'scarborough-appliance-repair' => [
         'slug' => 'scarborough-appliance-repair',
-        'date_modified' => '2026-09-22',
+        'date_modified' => '2026-11-24',
         'city_name' => 'Scarborough',
         'region' => 'City of Toronto',
-        'meta_title' => 'Same-Day Appliance Repair Scarborough | Prompt Dispatch & Warranty',
+        'meta_title' => 'Appliance Repair Scarborough | Same-Day Service & Warranty',
         'meta_description' => 'Fast appliance repair service in Scarborough. Certified local repair technicians for all major home appliances. Call 905-717-8905 today!',
         'keywords' => 'appliance repair scarborough, scarborough appliance fix, Agincourt fridge repair',
         'h1_title' => 'Fast Appliance Repair Services in Scarborough',
@@ -297,7 +297,7 @@ return [
     ],
     'richmond-hill-appliance-repair' => [
         'slug' => 'richmond-hill-appliance-repair',
-        'date_modified' => '2026-09-22',
+        'date_modified' => '2026-11-24',
         'city_name' => 'Richmond Hill',
         'region' => 'York Region',
         'meta_title' => 'Appliance Repair Richmond Hill | Expert Local Repairmen',
@@ -340,7 +340,7 @@ return [
     ],
     'burlington-appliance-repair' => [
         'slug' => 'burlington-appliance-repair',
-        'date_modified' => '2026-11-11',
+        'date_modified' => '2026-11-24',
         'city_name' => 'Burlington',
         'region' => 'Halton Region',
         'meta_title' => 'Appliance Repair Burlington | Fridge, Washer, Dishwasher Fix',
@@ -387,7 +387,7 @@ return [
     ],
     'hamilton-appliance-repair' => [
         'slug' => 'hamilton-appliance-repair',
-        'date_modified' => '2026-11-11',
+        'date_modified' => '2026-11-24',
         'city_name' => 'Hamilton',
         'region' => 'Greater Hamilton Area',
         'meta_title' => 'Appliance Repair Hamilton | Fridge, Washer & Dishwasher Fix',
@@ -434,7 +434,7 @@ return [
     ],
     'kitchener-appliance-repair' => [
         'slug' => 'kitchener-appliance-repair',
-        'date_modified' => '2026-09-17',
+        'date_modified' => '2026-11-24',
         'city_name' => 'Kitchener',
         'region' => 'Waterloo Region',
         'meta_title' => 'Appliance Repair Kitchener | Kitchener-Waterloo Region',
@@ -457,7 +457,7 @@ return [
     ],
     'waterloo-appliance-repair' => [
         'slug' => 'waterloo-appliance-repair',
-        'date_modified' => '2026-09-17',
+        'date_modified' => '2026-11-24',
         'city_name' => 'Waterloo',
         'region' => 'Waterloo Region',
         'meta_title' => 'Same-Day Appliance Repair Waterloo | Trusted Local Pros',
@@ -480,7 +480,7 @@ return [
     ],
     'cambridge-appliance-repair' => [
         'slug' => 'cambridge-appliance-repair',
-        'date_modified' => '2026-09-17',
+        'date_modified' => '2026-11-24',
         'city_name' => 'Cambridge',
         'region' => 'Waterloo Region',
         'meta_title' => 'Appliance Repair Cambridge | Fast Same-Day Repairs',
@@ -503,7 +503,7 @@ return [
     ],
     'guelph-appliance-repair' => [
         'slug' => 'guelph-appliance-repair',
-        'date_modified' => '2026-09-17',
+        'date_modified' => '2026-11-24',
         'city_name' => 'Guelph',
         'region' => 'Wellington County',
         'meta_title' => 'Appliance Repair Guelph | Certified Local Technicians',
@@ -526,7 +526,7 @@ return [
     ],
     'pickering-appliance-repair' => [
         'slug' => 'pickering-appliance-repair',
-        'date_modified' => '2026-09-17',
+        'date_modified' => '2026-11-24',
         'city_name' => 'Pickering',
         'region' => 'Durham Region',
         'meta_title' => 'Appliance Repair Pickering | Durham Region Specialists',
@@ -553,7 +553,7 @@ return [
     ],
     'caledon-appliance-repair' => [
         'slug' => 'caledon-appliance-repair',
-        'date_modified' => '2026-09-21',
+        'date_modified' => '2026-11-24',
         'city_name' => 'Caledon',
         'region' => 'Peel Region',
         'meta_title' => 'Appliance Repair Caledon | Same-Day Service & Warranty',
@@ -590,7 +590,7 @@ return [
             ],
             [
                 'q' => 'Do you offer a warranty on appliance repairs in Caledon?',
-                'a' => 'Yes. Repairs completed in Caledon come with a written warranty on parts and labor. Ask our technician about the specific warranty terms for your repair when the work is completed.'
+                'a' => 'Yes. Repairs completed in Caledon come with a written warranty on parts and labour. Ask our technician about the specific warranty terms for your repair when the work is completed.'
             ],
             [
                 'q' => "Can you fix a dishwasher that won't drain or is leaking in Caledon?",
@@ -600,7 +600,7 @@ return [
     ],
     'oshawa-appliance-repair' => [
         'slug' => 'oshawa-appliance-repair',
-        'date_modified' => '2026-09-17',
+        'date_modified' => '2026-11-24',
         'city_name' => 'Oshawa',
         'region' => 'Durham Region',
         'meta_title' => 'Appliance Repair Oshawa | Fast & Affordable Repairs',
@@ -616,14 +616,22 @@ return [
         'geo' => ['latitude' => 43.8971, 'longitude' => -78.8658],
         'faqs' => [
             [
+                'q' => 'Do you provide same-day washing machine repair in Oshawa?',
+                'a' => 'Yes. If your washer will not spin, refuses to drain, or displays digital error codes in Oshawa, our licensed technicians carry genuine quality parts to diagnose and repair it promptly.'
+            ],
+            [
                 'q' => 'Do you service both kitchen and laundry appliances in Oshawa?',
-                'a' => 'Yes, we repair refrigerators, freezers, dishwashers, ranges, ovens, washing machines, and clothes dryers in Oshawa.'
+                'a' => 'Yes, we repair refrigerators, freezers, dishwashers, ranges, ovens, washing machines, and clothes dryers across Oshawa and Durham Region.'
+            ],
+            [
+                'q' => 'Is there a warranty on appliance repairs in Oshawa?',
+                'a' => 'Yes. Every completed repair in Oshawa is backed by our comprehensive written parts and labour warranty.'
             ]
         ]
     ],
     'toronto-appliance-repair' => [
         'slug' => 'toronto-appliance-repair',
-        'date_modified' => '2026-09-28',
+        'date_modified' => '2026-11-24',
         'city_name' => 'Toronto',
         'region' => 'City of Toronto',
         'meta_title' => 'Appliance Repair Toronto | Certified Local Technicians',
@@ -633,7 +641,7 @@ return [
         'cta_text' => 'Book Toronto Service',
         'badge_text' => 'SAME-DAY TORONTO & GTA SERVICE',
         'card_desc' => 'Get professional appliance service across Toronto for refrigerators, washers, dryers, ovens and other major appliances.',
-        'intro_text' => 'Toronto’s trusted appliance repair specialists. Serving Downtown Toronto, Etobicoke, North York, East York, and Scarborough with prompt repair options, transparent upfront written quotes, and written parts and labor warranties.',
+        'intro_text' => 'Toronto’s trusted appliance repair specialists. Serving Downtown Toronto, Etobicoke, North York, East York, and Scarborough with prompt repair options, transparent upfront written quotes, and written parts and labour warranties.',
         'postal_codes' => ['M5V', 'M5A', 'M5R', 'M5S', 'M5J', 'M5B', 'M4P', 'M4Y', 'M4E', 'M4K', 'M4C', 'M4N', 'M6P', 'M6R', 'M6S', 'M6J', 'M2N', 'M8X'],
         'neighborhoods' => ['Downtown Toronto', 'Etobicoke', 'North York', 'East York', 'Scarborough', 'High Park', 'Yonge & Eglinton', 'The Beaches', 'Leslieville', 'Liberty Village'],
         'geo' => ['latitude' => 43.6532, 'longitude' => -79.3832],
@@ -660,7 +668,7 @@ return [
             ],
             [
                 'q' => 'Do you offer a warranty on appliance repairs in Toronto?',
-                'a' => 'Yes. Every repair completed in Toronto comes with a written warranty on both parts and labor, ensuring your repair is dependable and fully protected.'
+                'a' => 'Yes. Every repair completed in Toronto comes with a written warranty on both parts and labour, ensuring your repair is dependable and fully protected.'
             ],
             [
                 'q' => "Can you fix a refrigerator that isn't cooling in Toronto?",
@@ -670,7 +678,7 @@ return [
     ],
     'milton-appliance-repair' => [
         'slug' => 'milton-appliance-repair',
-        'date_modified' => '2026-09-17',
+        'date_modified' => '2026-11-24',
         'city_name' => 'Milton',
         'region' => 'Halton Region',
         'meta_title' => 'Appliance Repair Milton | Fast & Reliable Local Technicians',
@@ -686,18 +694,26 @@ return [
         'geo' => ['latitude' => 43.5183, 'longitude' => -79.8774],
         'faqs' => [
             [
+                'q' => 'Can you repair a washing machine that is not draining or spinning in Milton?',
+                'a' => 'Yes. Washing machine repairs are common service calls across Milton, Dempsey, Clarke, and Harrison. Our certified technicians test drain pumps, balance sensors, lid switches, and electronic control boards to fix non-draining or violently vibrating washers in a single visit.'
+            ],
+            [
                 'q' => 'How quickly can a technician arrive in Milton?',
-                'a' => 'We offer same-day appliance repair across Milton and Halton Region when booked before 2:00 PM.'
+                'a' => 'We offer prompt same-day appliance repair across Milton and Halton Region with flexible daily dispatch.'
             ],
             [
                 'q' => 'What appliance brands do you repair in Milton?',
                 'a' => 'We service all major brands including Samsung, LG, Whirlpool, Bosch, GE, KitchenAid, Frigidaire, and Maytag.'
+            ],
+            [
+                'q' => 'Do you offer a written warranty on Milton appliance repairs?',
+                'a' => 'Yes. Every repair performed in Milton is backed by our comprehensive written parts and labour warranty.'
             ]
         ]
     ],
     'barrie-appliance-repair' => [
         'slug' => 'barrie-appliance-repair',
-        'date_modified' => '2026-09-17',
+        'date_modified' => '2026-11-24',
         'city_name' => 'Barrie',
         'region' => 'Simcoe County',
         'meta_title' => 'Appliance Repair Barrie | Same-Day Service & Warranty',
@@ -713,18 +729,26 @@ return [
         'geo' => ['latitude' => 44.3894, 'longitude' => -79.6903],
         'faqs' => [
             [
+                'q' => 'What should I do if my fridge is not cooling in Barrie?',
+                'a' => 'If your fridge is not cooling in Barrie, check that condenser coils are clear of dust and airflow vents are unblocked. When the compressor runs continuously, the evaporator fan stops, or ice forms on the back panel, call Appliance Repair Knights. Our certified Barrie technicians offer prompt same-day diagnostics with the diagnostic fee waived when you proceed with the repair.'
+            ],
+            [
                 'q' => 'Do you provide same-day refrigerator repair in Barrie?',
                 'a' => 'Yes, we prioritize same-day refrigerator and freezer repairs throughout Barrie to prevent food spoilage.'
             ],
             [
-                'q' => 'Are parts and labor covered under warranty in Barrie?',
-                'a' => 'Every appliance repair completed in Barrie comes with our written parts and labor warranty.'
+                'q' => 'Can you repair a washing machine that will not drain or spin in Barrie?',
+                'a' => 'Yes. Our licensed Barrie technicians diagnose and fix washing machine drain pump clogs, faulty lid switches, seized drive belts, and error codes across all major brands.'
+            ],
+            [
+                'q' => 'Are parts and labour covered under warranty in Barrie?',
+                'a' => 'Every appliance repair completed in Barrie comes with our comprehensive written parts and labour warranty.'
             ]
         ]
     ],
     'ajax-appliance-repair' => [
         'slug' => 'ajax-appliance-repair',
-        'date_modified' => '2026-09-17',
+        'date_modified' => '2026-11-24',
         'city_name' => 'Ajax',
         'region' => 'Durham Region',
         'meta_title' => 'Appliance Repair Ajax | Same-Day Service & Local Technicians',

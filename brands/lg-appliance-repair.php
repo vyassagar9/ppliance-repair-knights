@@ -4,8 +4,8 @@ $all_locations = require __DIR__ . '/../locations/location-data.php';
 
 $base_url = '../';
 $current_page = 'brands';
-$page_title = 'LG Appliance Repair Toronto & GTA | Same-Day Certified Service';
-$page_description = 'Looking for LG appliance repair near you? Certified same-day diagnostics across Toronto & GTA for LG fridges, washers, dryers & dishwashers. Call 905-717-8905!';
+$page_title = 'LG Appliance Repair Toronto & GTA | Same-Day Service';
+$page_description = 'Certified same-day LG appliance repair across Toronto & GTA. Expert diagnostics for LG fridges, washers, dryers & dishwashers. Call 905-717-8905 today.';
 $page_keywords = 'lg appliance repair, lg wash machine repair near me, lg fridge repair, lg appliance repair toronto, lg washer repair, lg appliance repair burlington, lg dryer repair';
 $canonical_url = 'https://www.appliancerepairknights.com/brands/lg-appliance-repair';
 

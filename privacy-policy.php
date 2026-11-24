@@ -2,7 +2,7 @@
 require_once __DIR__ . '/config.php';
 $base_url = defined('BASE_URL') ? BASE_URL : './';
 $page_title = 'Privacy Policy & Service Warranty | Appliance Repair Knights';
-$page_description = 'Read our privacy policy and service warranty terms. Written warranty on parts and labor for appliance repair jobs across GTA.';
+$page_description = 'Read our privacy policy and service warranty terms. Written warranty on parts and labour for appliance repair jobs across GTA.';
 $page_keywords = 'appliance repair knights warranty, privacy policy';
 $canonical_url = 'https://www.appliancerepairknights.com/privacy-policy';
 include 'head.php';
@@ -60,7 +60,7 @@ include 'header.php';
 
         <h2 class="text-lg font-heading font-bold text-brandDarkBlue">3. Data Security & Service Warranty</h2>
         <p>
-          Appliance Repair Knights implements industry-standard technical and organizational security measures to protect your personal data against unauthorized access. We do not sell or rent your personal contact information to third-party marketing companies. All completed appliance repair jobs include written warranty coverage covering replacement parts and labor.
+          Appliance Repair Knights implements industry-standard technical and organizational security measures to protect your personal data against unauthorized access. We do not sell or rent your personal contact information to third-party marketing companies. All completed appliance repair jobs include written warranty coverage covering replacement parts and labour.
         </p>
 
         <h2 class="text-lg font-heading font-bold text-brandDarkBlue">4. Contact Us</h2>

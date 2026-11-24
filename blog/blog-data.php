@@ -8,8 +8,8 @@ return [
   'refrigerator-repair-cost-toronto' => [
     'slug' => 'refrigerator-repair-cost-toronto',
     'title' => 'Is It Worth Repairing a Refrigerator? Toronto Repair Costs & When to Replace',
-    'meta_title' => 'Is It Worth Repairing a Refrigerator? Toronto Repair Costs & When to Replace',
-    'meta_description' => 'Wondering if your fridge is worth fixing? Learn how to evaluate refrigerator repair costs in Toronto, the 50% rule, common part repairs, and our waived service call fee policy.',
+    'meta_title' => 'Is It Worth Repairing a Refrigerator?',
+    'meta_description' => 'Wondering if your fridge is worth fixing? Learn how to evaluate refrigerator repair costs in Toronto, the 50% rule, and our waived service call fee policy.',
     'primary_keyword' => 'refrigerator repair cost toronto',
     'related_keywords' => 'fridge repair vs replace, average refrigerator repair cost Ontario, fridge compressor repair cost, when to replace a refrigerator, refrigerator repair Toronto, fridge repair GTA',
     'category' => 'Refrigerator Repair',
@@ -444,7 +444,7 @@ HTML
   'appliance-repair-tips' => [
     'slug' => 'appliance-repair-tips',
     'title' => 'Appliance Repair Tips: Common Problems & What to Check',
-    'meta_title' => 'Appliance Repair Tips: Common Problems & What to Check',
+    'meta_title' => 'Appliance Repair Tips & Safe Checks',
     'meta_description' => 'Practical appliance repair tips for common problems in Canada, Toronto and the GTA, plus safe checks and signs you need professional help.',
     'primary_keyword' => 'appliance repair tips',
     'related_keywords' => 'dryer repair tips, washer repair tips, refrigerator repair tips, dishwasher repair tips, stove repair tips, microwave repair tips Toronto GTA',
@@ -729,7 +729,7 @@ HTML
   'washing-machine-not-draining-toronto' => [
     'slug' => 'washing-machine-not-draining-toronto',
     'title' => 'Washing Machine Not Draining in Toronto? Common Causes, Fixes & Repair Costs',
-    'meta_title' => 'Washing Machine Not Draining in Toronto? Causes & Costs',
+    'meta_title' => 'Washer Not Draining? Toronto Guide',
     'meta_description' => 'Washing machine not draining in Toronto? Learn common causes, simple checks, drain pump problems, and what can affect washer repair costs.',
     'primary_keyword' => 'washing machine not draining toronto',
     'related_keywords' => 'washer not draining water, washing machine standing water, washer drain pump Toronto, washing machine repair Toronto, washer won\'t spin standing water',
@@ -1074,7 +1074,7 @@ HTML
   'repair-or-replace-7-10-year-old-appliance' => [
     'slug' => 'repair-or-replace-7-10-year-old-appliance',
     'title' => 'Repair or Replace? The Real Math on a 7–10 Year Old Appliance in Toronto & GTA',
-    'meta_title' => 'Repair or Replace? The Real Math on a 7–10 Year Old Appliance | Toronto & GTA',
+    'meta_title' => 'Repair or Replace 7-10 Yr Appliance?',
     'meta_description' => 'Unsure whether to fix your 7–10 year old fridge, washer, or dryer? Learn the 50% rule, real replacement costs, and how an upfront diagnostic saves thousands.',
     'primary_keyword' => 'repair or replace older appliance toronto',
     'related_keywords' => 'repair or replace 7 10 year old appliance, is it worth repairing older washer, fridge repair vs replace math, appliance 50 percent rule Ontario, appliance diagnostic fee waived GTA',
@@ -1416,7 +1416,7 @@ HTML
     'dryer-burning-smell-causes' => [
     'slug' => 'dryer-burning-smell-causes',
     'title' => 'Dryer Burning Smell? Stop Using It & Call a Repair Pro',
-    'meta_title' => 'Dryer Burning Smell? Stop Using It & Call a Repair Pro',
+    'meta_title' => 'Dryer Burning Smell? Causes & Safety',
     'meta_description' => 'Noticing a burning smell from your clothes dryer? Learn the 4 common causes—from lint buildup to worn drive belts—and why calling a local pro is your safest move.',
     'primary_keyword' => 'dryer burning smell',
     'related_keywords' => 'clothes dryer smells like burning, dryer burning smell toronto, dryer repair near me, burning rubber smell dryer GTA',

@@ -122,7 +122,7 @@ $custom_head_schema = '
             "name": "What warranty do you offer on repairs?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "All repairs performed by Appliance Repair Knights come with a written warranty covering both genuine quality replacement parts and technician labor."
+              "text": "All repairs performed by Appliance Repair Knights come with a written warranty covering both genuine quality replacement parts and technician labour."
             }
           },
           {
@@ -214,7 +214,7 @@ include 'head.php';
                 <span>Repair With Warranty</span>
                 <span
                   class="text-[10px] bg-emerald-600 text-white font-extrabold px-1.5 py-0.5 rounded-md uppercase tracking-wider">Parts
-                  & Labor</span>
+                  & Labour</span>
               </div>
             </div>
 
@@ -1188,8 +1188,8 @@ include 'head.php';
             </button>
             <div id="faq-3"
               class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200/70 pt-3">
-              All completed repairs performed by Appliance Repair Knights include a written parts and labor warranty
-              covering installed genuine quality replacement parts and technician labor.
+              All completed repairs performed by Appliance Repair Knights include a written parts and labour warranty
+              covering installed genuine quality replacement parts and technician labour.
             </div>
           </div>
 

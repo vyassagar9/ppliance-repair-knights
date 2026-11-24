@@ -12,8 +12,8 @@ require_once __DIR__ . '/../config.php';
 
 $base_url = '../';
 $current_page = 'services';
-$page_title = 'All Appliance Repair Services in Toronto & GTA | Appliance Repair Knights';
-$page_description = 'Certified same-day appliance repair services across Toronto & the GTA. Expert diagnostics for refrigerators, washers, coffee machines, dishwashers, dryers, stoves & microwaves with written warranty.';
+$page_title = 'Appliance Repair Services Toronto & GTA | Knights';
+$page_description = 'Certified same-day appliance repair across Toronto & GTA. Fast diagnostics for refrigerators, washers, dishwashers, dryers & stoves. Call 905-717-8905.';
 $page_keywords = 'appliance repair services toronto, GTA appliance repair, refrigerator repair, washer repair, coffee machine repair, dishwasher repair, dryer repair, stove repair, microwave repair';
 $canonical_url = 'https://www.appliancerepairknights.com/services';
 $og_image = 'https://www.appliancerepairknights.com/img/appliance-repair-banner.webp';

@@ -41,7 +41,7 @@ include 'head.php';
 
         <h2 class="text-lg font-heading font-bold text-brandDarkBlue">2. Warranty Coverage</h2>
         <p>
-          Appliance Repair Knights provides a written warranty on installed replacement parts and labor as indicated on your completed service invoice. Warranty claims cover defect issues associated with the specific parts replaced during the original service.
+          Appliance Repair Knights provides a written warranty on installed replacement parts and labour as indicated on your completed service invoice. Warranty claims cover defect issues associated with the specific parts replaced during the original service.
         </p>
 
         <h2 class="text-lg font-heading font-bold text-brandDarkBlue">3. Customer Responsibilities & Access</h2>

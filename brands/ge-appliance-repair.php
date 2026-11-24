@@ -4,8 +4,8 @@ $all_locations = require __DIR__ . '/../locations/location-data.php';
 
 $base_url = '../';
 $current_page = 'brands';
-$page_title = 'GE Appliance Repair Toronto & GTA | Same-Day Certified Service';
-$page_description = 'Looking for reliable GE appliance repair near you? Certified same-day diagnostics across Toronto & GTA for GE Profile, Cafe & Monogram fridges, washers, dryers & ranges. Call 905-717-8905!';
+$page_title = 'GE Appliance Repair Toronto & GTA | Same-Day Service';
+$page_description = 'Certified same-day GE appliance repair across Toronto & GTA. Expert diagnostics for GE Profile, Cafe & Monogram fridges, washers & ovens. Call 905-717-8905.';
 $page_keywords = 'ge appliance repair, ge profile repair, ge fridge repair toronto, ge washer repair, ge dryer repair, ge cafe repair near me, ge error code 88';
 $canonical_url = 'https://www.appliancerepairknights.com/brands/ge-appliance-repair';
 

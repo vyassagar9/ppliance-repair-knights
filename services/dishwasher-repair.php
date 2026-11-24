@@ -199,7 +199,7 @@ include __DIR__ . '/../head.php';
             </div>
             <div class="flex items-center gap-2.5 text-slate-200">
               <svg class="w-4 h-4 text-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              <span>Repair with written warranty on labor & parts</span>
+              <span>Repair with written warranty on labour & parts</span>
             </div>
           </div>
           <div class="flex pt-4">
@@ -353,6 +353,10 @@ include __DIR__ . '/../head.php';
             <a href="../locations/vaughan-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span> Vaughan</a>
             <a href="../locations/hamilton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span> Hamilton</a>
             <a href="../locations/oakville-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span> Oakville</a>
+            <a href="../locations/burlington-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span> Burlington</a>
+            <a href="../locations/barrie-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span> Barrie</a>
+            <a href="../locations/milton-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span> Milton</a>
+            <a href="../locations/oshawa-appliance-repair" class="flex items-center gap-1.5 hover:text-brandOrange transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0"></span> Oshawa</a>
           </div>
           <a href="../locations" class="block bg-primary text-white font-bold py-2.5 rounded-lg text-center text-xs hover:bg-brandDarkBlue transition-colors cursor-pointer">
             View All 20+ Service Cities &rarr;

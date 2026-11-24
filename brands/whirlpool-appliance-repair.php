@@ -4,8 +4,8 @@ $all_locations = require __DIR__ . '/../locations/location-data.php';
 
 $base_url = '../';
 $current_page = 'brands';
-$page_title = 'Whirlpool Appliance Repair Toronto & GTA | Same-Day Certified Service';
-$page_description = 'Looking for reliable Whirlpool appliance repair near you? Certified same-day diagnostics across Toronto & GTA for Whirlpool washers, fridges, dryers, dishwashers & ovens. Call 905-717-8905!';
+$page_title = 'Whirlpool Appliance Repair Toronto | Same-Day Service';
+$page_description = 'Certified same-day Whirlpool appliance repair across Toronto & GTA. Expert diagnostics for Whirlpool washers, fridges & dishwashers. Call 905-717-8905.';
 $page_keywords = 'whirlpool appliance repair, whirlpool washer repair, whirlpool dryer repair, whirlpool fridge repair, whirlpool dishwasher repair toronto, whirlpool repair near me, whirlpool error code f21';
 $canonical_url = 'https://www.appliancerepairknights.com/brands/whirlpool-appliance-repair';
 

@@ -22,6 +22,7 @@ Disallow: /reviews-widget.php
 Disallow: /locations/location-data.php
 Disallow: /locations/location.php
 Disallow: /blog/blog-data.php
+Disallow: /blog/blog-drafts.php
 Disallow: /blog/post.php
 Disallow: /locations/test-location.php
 Disallow: /*.bak$

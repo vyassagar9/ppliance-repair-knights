@@ -199,7 +199,7 @@ include __DIR__ . '/../head.php';
             </div>
             <div class="flex items-center gap-2.5 text-slate-200">
               <svg class="w-4 h-4 text-accent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              <span>Repair with written warranty on labor & parts</span>
+              <span>Repair with written warranty on labour & parts</span>
             </div>
           </div>
           <div class="flex pt-4">
