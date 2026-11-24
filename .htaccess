@@ -65,40 +65,52 @@ ErrorDocument 404 /404.html
   RewriteCond %{REQUEST_URI} ^(.*?)/(burlington|kitchener|brampton|waterloo|cambridge|hamilton|caledon|caledeon|caldeon|pickering|vaughan|richmond-hill|mississauga|toronto|guelph|markham|oakville|scarborough|oshawa|milton|barrie|ajax)(?:-appliance)?-repair([0-9\-_]*)/?$ [NC]
   RewriteRule ^ %1/locations/%2-appliance-repair [R=301,L]
 
+  # Strip nested /service-page/ from legacy relative links (e.g. /service-page/services/stove-repair -> /services/stove-repair)
+  RewriteCond %{REQUEST_URI} ^(.*?)/service-page/services/(.+)$ [NC]
+  RewriteRule ^ %1/services/%2 [R=301,L]
+
+  RewriteCond %{REQUEST_URI} ^(.*?)/service-page/services/?$ [NC]
+  RewriteRule ^ %1/services [R=301,L]
+
+  RewriteCond %{REQUEST_URI} ^(.*?)/service-page/locations/(.+)$ [NC]
+  RewriteRule ^ %1/locations/%2 [R=301,L]
+
+  RewriteCond %{REQUEST_URI} ^(.*?)/service-page/locations/?$ [NC]
+  RewriteRule ^ %1/locations [R=301,L]
+
   # Service Pages & Legacy Wix Service Slugs
   # 1. Microwave
-  RewriteCond %{REQUEST_URI} !/services/ [NC]
-  RewriteCond %{REQUEST_URI} ^(.*?)/(?:service-page/.*?(?:microwave)|microwave-repair(?:-service)?)/?$ [NC]
+  RewriteCond %{REQUEST_URI} !^/(?:canada/)?services/ [NC]
+  RewriteCond %{REQUEST_URI} ^(.*?)/(?:service-page/.*?(?:microwave).*?|microwave-repair(?:-service)?)/?$ [NC]
   RewriteRule ^ %1/services/microwave-repair [R=301,L]
 
   # 2. Dryer
-  RewriteCond %{REQUEST_URI} !/services/ [NC]
-  RewriteCond %{REQUEST_URI} ^(.*?)/(?:service-page/.*?(?:dryer)|dryer-repair(?:-service)?)/?$ [NC]
+  RewriteCond %{REQUEST_URI} !^/(?:canada/)?services/ [NC]
+  RewriteCond %{REQUEST_URI} ^(.*?)/(?:service-page/.*?(?:dryer).*?|dryer-repair(?:-service)?)/?$ [NC]
   RewriteRule ^ %1/services/dryer-repair [R=301,L]
 
   # 3. Washer
-  RewriteCond %{REQUEST_URI} !/services/ [NC]
-  RewriteCond %{REQUEST_URI} ^(.*?)/(?:service-page/.*?(?:washing|washer)|washing-machine-(?:diagnostic-)?repair|washer-repair(?:-service)?)/?$ [NC]
+  RewriteCond %{REQUEST_URI} !^/(?:canada/)?services/ [NC]
+  RewriteCond %{REQUEST_URI} ^(.*?)/(?:service-page/.*?(?:washing|washer).*?|washing-machine-(?:diagnostic-)?repair|washer-repair(?:-service)?)/?$ [NC]
   RewriteRule ^ %1/services/washer-repair [R=301,L]
 
   # 4. Stove, Range, Oven, Cooktop (e.g. /service-page/stove-range-repair, /induction-cooktop-repair-service)
-  RewriteCond %{REQUEST_URI} !/services/ [NC]
-  RewriteCond %{REQUEST_URI} ^(.*?)/(?:service-page/.*?(?:stove|range|oven|cooktop)|stove-range-repair(?:-service)?|oven-repair(?:-service)?|induction-cooktop-repair(?:-service)?)/?$ [NC]
+  RewriteCond %{REQUEST_URI} !^/(?:canada/)?services/ [NC]
+  RewriteCond %{REQUEST_URI} ^(.*?)/(?:service-page/.*?(?:stove|range|oven|cooktop).*?|stove-range-repair(?:-service)?|oven-repair(?:-service)?|induction-cooktop-repair(?:-service)?)/?$ [NC]
   RewriteRule ^ %1/services/stove-repair [R=301,L]
 
   # 5. Refrigerator / Fridge (e.g. /refrigerator-repair-service)
-  RewriteCond %{REQUEST_URI} !/services/ [NC]
+  RewriteCond %{REQUEST_URI} !^/(?:canada/)?services/ [NC]
   RewriteCond %{REQUEST_URI} !/locations/ [NC]
-  RewriteCond %{REQUEST_URI} ^(.*?)/(?:service-page/.*?(?:refrigerator|fridge)|refrigerator-repair(?:-service)?|fridge-repair(?:-service)?)/?$ [NC]
+  RewriteCond %{REQUEST_URI} ^(.*?)/(?:service-page/.*?(?:refrigerator|fridge).*?|refrigerator-repair(?:-service)?|fridge-repair(?:-service)?)/?$ [NC]
   RewriteRule ^ %1/services/fridge-repair [R=301,L]
 
   # 6. Dishwasher
-  RewriteCond %{REQUEST_URI} !/services/ [NC]
-  RewriteCond %{REQUEST_URI} ^(.*?)/(?:service-page/.*?(?:dish)|dishwasher-repair(?:-service)?)/?$ [NC]
+  RewriteCond %{REQUEST_URI} !^/(?:canada/)?services/ [NC]
+  RewriteCond %{REQUEST_URI} ^(.*?)/(?:service-page/.*?(?:dish).*?|dishwasher-repair(?:-service)?)/?$ [NC]
   RewriteRule ^ %1/services/dishwasher-repair [R=301,L]
 
   # 7. Generic /service-page fallback
-  RewriteCond %{REQUEST_URI} !/services/ [NC]
   RewriteCond %{REQUEST_URI} ^(.*?)/service-page(?:/.*)?/?$ [NC]
   RewriteRule ^ %1/services [R=301,L]
 
