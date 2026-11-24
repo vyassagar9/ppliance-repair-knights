@@ -1468,6 +1468,14 @@ $disable_global_schema = true;
         $everyday_brands = ['Samsung', 'LG', 'Whirlpool', 'GE Appliances', 'Maytag', 'Frigidaire', 'KitchenAid', 'Kenmore', 'Electrolux', 'Amana'];
         $luxury_brands = ['Bosch', 'Miele', 'Sub-Zero', 'Wolf', 'Thermador', 'JennAir', 'Gaggenau', 'Asko', 'Bertazzoni', 'Viking', 'Dacor'];
         $universal_brands = ['Blomberg', 'Fisher &amp; Paykel', 'Danby', 'Haier', 'Inglis', 'Hotpoint', 'Speed Queen', 'Panasonic', 'Siemens', 'Liebherr', 'U-Line'];
+        $brand_routes = [
+            'Samsung' => 'brands/samsung-appliance-repair',
+            'LG' => 'brands/lg-appliance-repair',
+            'Whirlpool' => 'brands/whirlpool-appliance-repair',
+            'GE Appliances' => 'brands/ge-appliance-repair',
+            'KitchenAid' => 'brands/kitchenaid-appliance-repair',
+            'Bosch' => 'brands/bosch-appliance-repair',
+        ];
         ?>
 
         <!-- 3-Tier Authority Grid -->
@@ -1489,9 +1497,15 @@ $disable_global_schema = true;
               </div>
               <div class="flex flex-wrap gap-2 pt-0.5">
                 <?php foreach ($everyday_brands as $b): ?>
-                  <span class="px-2.5 py-1.5 rounded-lg bg-white border border-slate-200/80 text-slate-800 hover:text-brandBlue hover:border-brandBlue/40 text-xs sm:text-[13px] font-semibold transition-all shadow-2xs cursor-default">
-                    <?php echo $b; ?>
-                  </span>
+                  <?php if (isset($brand_routes[$b])): ?>
+                    <a href="<?php echo $base_url . $brand_routes[$b]; ?>" class="px-2.5 py-1.5 rounded-lg bg-white border border-slate-200/80 text-slate-800 hover:text-brandBlue hover:border-brandBlue/50 text-xs sm:text-[13px] font-semibold transition-all shadow-2xs hover:shadow-xs inline-block">
+                      <?php echo $b; ?>
+                    </a>
+                  <?php else: ?>
+                    <span class="px-2.5 py-1.5 rounded-lg bg-white border border-slate-200/80 text-slate-800 text-xs sm:text-[13px] font-semibold transition-all shadow-2xs cursor-default inline-block">
+                      <?php echo $b; ?>
+                    </span>
+                  <?php endif; ?>
                 <?php endforeach; ?>
               </div>
             </div>
@@ -1513,9 +1527,15 @@ $disable_global_schema = true;
               </div>
               <div class="flex flex-wrap gap-2 pt-0.5">
                 <?php foreach ($luxury_brands as $b): ?>
-                  <span class="px-2.5 py-1.5 rounded-lg bg-white border border-slate-200/80 text-slate-800 hover:text-brandOrange hover:border-brandOrange/40 text-xs sm:text-[13px] font-semibold transition-all shadow-2xs cursor-default">
-                    <?php echo $b; ?>
-                  </span>
+                  <?php if (isset($brand_routes[$b])): ?>
+                    <a href="<?php echo $base_url . $brand_routes[$b]; ?>" class="px-2.5 py-1.5 rounded-lg bg-white border border-slate-200/80 text-slate-800 hover:text-brandOrange hover:border-brandOrange/50 text-xs sm:text-[13px] font-semibold transition-all shadow-2xs hover:shadow-xs inline-block">
+                      <?php echo $b; ?>
+                    </a>
+                  <?php else: ?>
+                    <span class="px-2.5 py-1.5 rounded-lg bg-white border border-slate-200/80 text-slate-800 text-xs sm:text-[13px] font-semibold transition-all shadow-2xs cursor-default inline-block">
+                      <?php echo $b; ?>
+                    </span>
+                  <?php endif; ?>
                 <?php endforeach; ?>
               </div>
             </div>
