@@ -10,7 +10,7 @@
  * Key Features:
  * - NO Direct Physical Street Address (100% Service Area / Mobile Dispatch Model)
  * - Strict adherence to AGENTS.md rules (No specific prices, no warranty days, no day counts)
- * - 4 Facility Trust Pillars (Licensed & Insured, Upfront Pricing, Same-Day Dispatch, OEM Parts & Warranty)
+ * - 4 Facility Trust Pillars (Licensed & Insured, Upfront Pricing, Same-Day Dispatch, genuine quality Parts & Warranty)
  * - Visual Appliance Grid with Deep-Dive Common Problem Diagnostic Accordions
  * - 3 Pillars: TIME, QUALITY, PRICE
  * - Multi-Column 30+ Brand Matrix
@@ -781,7 +781,7 @@ $disable_global_schema = true;
                     </div>
                     <div class="p-4 bg-white flex items-center justify-between gap-2 border-t border-slate-100">
                       <div class="min-w-0">
-                        <p class="text-xs font-bold text-brandDarkBlue truncate">OEM Parts &amp; Quick Diagnosis</p>
+                        <p class="text-xs font-bold text-brandDarkBlue truncate">genuine quality Parts &amp; Quick Diagnosis</p>
                         <p class="text-[11px] text-slate-500 truncate">Compressor, start relay, inverter &amp; defrost</p>
                       </div>
                       <a href="tel:9057178905" class="gtm-web-call inline-flex items-center gap-1 text-xs font-extrabold text-brandOrange hover:text-orange-600 transition-colors flex-shrink-0">
@@ -1301,13 +1301,13 @@ $disable_global_schema = true;
                     <div class="flex items-center gap-1.5">
                       <span class="text-xs font-black uppercase tracking-wider text-emerald-600">QUALITY</span>
                       <span class="text-slate-300">•</span>
-                      <h3 class="font-heading font-extrabold text-slate-900 text-[15px] sm:text-base">Factory OEM Precision</h3>
+                      <h3 class="font-heading font-extrabold text-slate-900 text-[15px] sm:text-base">Factory-Grade Quality Precision</h3>
                     </div>
-                    <span class="text-[11px] sm:text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200/70 px-2.5 py-0.5 rounded-full uppercase tracking-wide">OEM Parts</span>
+                    <span class="text-[11px] sm:text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200/70 px-2.5 py-0.5 rounded-full uppercase tracking-wide">genuine quality Parts</span>
                   </div>
                   
                   <p class="text-[14px] sm:text-[15px] text-slate-700 leading-relaxed">
-                    Our technicians are certified across all major brands. We install factory OEM components and back our work with a solid written warranty on parts and labour.
+                    Our technicians are certified across all major brands. We install factory genuine quality components and back our work with a solid written warranty on parts and labour.
                   </p>
                 </div>
               </div>
@@ -1395,7 +1395,7 @@ $disable_global_schema = true;
             Appliance Brands We Repair in <span class="text-brandBlue"><?php echo htmlspecialchars($loc['city_name']); ?></span>
           </h2>
           <p class="text-[14px] sm:text-base text-slate-700 mt-2 max-w-xl mx-auto leading-relaxed">
-            Certified service and genuine OEM replacement parts across major household names, high-end European built-ins, and universal manufacturers.
+            Certified service and genuine quality replacement parts across major household names, high-end European built-ins, and universal manufacturers.
           </p>
         </div>
 
@@ -1403,6 +1403,14 @@ $disable_global_schema = true;
         $everyday_brands = ['Samsung', 'LG', 'Whirlpool', 'GE Appliances', 'Maytag', 'Frigidaire', 'KitchenAid', 'Kenmore', 'Electrolux', 'Amana'];
         $luxury_brands = ['Bosch', 'Miele', 'Sub-Zero', 'Wolf', 'Thermador', 'JennAir', 'Gaggenau', 'Asko', 'Bertazzoni', 'Viking', 'Dacor'];
         $universal_brands = ['Blomberg', 'Fisher &amp; Paykel', 'Danby', 'Haier', 'Inglis', 'Hotpoint', 'Speed Queen', 'Panasonic', 'Siemens', 'Liebherr', 'U-Line'];
+        $brand_routes = [
+            'Samsung' => 'brands/samsung-appliance-repair',
+            'LG' => 'brands/lg-appliance-repair',
+            'Whirlpool' => 'brands/whirlpool-appliance-repair',
+            'GE Appliances' => 'brands/ge-appliance-repair',
+            'KitchenAid' => 'brands/kitchenaid-appliance-repair',
+            'Bosch' => 'brands/bosch-appliance-repair',
+        ];
         ?>
 
         <!-- 3-Tier Authority Grid -->
@@ -1424,9 +1432,15 @@ $disable_global_schema = true;
               </div>
               <div class="flex flex-wrap gap-2 pt-0.5">
                 <?php foreach ($everyday_brands as $b): ?>
-                  <span class="px-2.5 py-1.5 rounded-lg bg-white border border-slate-200/80 text-slate-800 hover:text-brandBlue hover:border-brandBlue/40 text-xs sm:text-[13px] font-semibold transition-all shadow-2xs cursor-default">
-                    <?php echo $b; ?>
-                  </span>
+                  <?php if (isset($brand_routes[$b])): ?>
+                    <a href="<?php echo $base_url . $brand_routes[$b]; ?>" class="px-2.5 py-1.5 rounded-lg bg-white border border-slate-200/80 text-slate-800 hover:text-brandBlue hover:border-brandBlue/50 text-xs sm:text-[13px] font-semibold transition-all shadow-2xs hover:shadow-xs inline-block">
+                      <?php echo $b; ?>
+                    </a>
+                  <?php else: ?>
+                    <span class="px-2.5 py-1.5 rounded-lg bg-white border border-slate-200/80 text-slate-800 text-xs sm:text-[13px] font-semibold transition-all shadow-2xs cursor-default inline-block">
+                      <?php echo $b; ?>
+                    </span>
+                  <?php endif; ?>
                 <?php endforeach; ?>
               </div>
             </div>
@@ -1448,15 +1462,21 @@ $disable_global_schema = true;
               </div>
               <div class="flex flex-wrap gap-2 pt-0.5">
                 <?php foreach ($luxury_brands as $b): ?>
-                  <span class="px-2.5 py-1.5 rounded-lg bg-white border border-slate-200/80 text-slate-800 hover:text-brandOrange hover:border-brandOrange/40 text-xs sm:text-[13px] font-semibold transition-all shadow-2xs cursor-default">
-                    <?php echo $b; ?>
-                  </span>
+                  <?php if (isset($brand_routes[$b])): ?>
+                    <a href="<?php echo $base_url . $brand_routes[$b]; ?>" class="px-2.5 py-1.5 rounded-lg bg-white border border-slate-200/80 text-slate-800 hover:text-brandOrange hover:border-brandOrange/50 text-xs sm:text-[13px] font-semibold transition-all shadow-2xs hover:shadow-xs inline-block">
+                      <?php echo $b; ?>
+                    </a>
+                  <?php else: ?>
+                    <span class="px-2.5 py-1.5 rounded-lg bg-white border border-slate-200/80 text-slate-800 text-xs sm:text-[13px] font-semibold transition-all shadow-2xs cursor-default inline-block">
+                      <?php echo $b; ?>
+                    </span>
+                  <?php endif; ?>
                 <?php endforeach; ?>
               </div>
             </div>
           </div>
 
-          <!-- Tier 3: Universal OEM Coverage -->
+          <!-- Tier 3: Universal genuine quality Coverage -->
           <div class="bg-slate-50/70 border border-slate-200/90 rounded-xl sm:rounded-2xl p-4 sm:p-5 hover:border-emerald-500/40 transition-all flex flex-col justify-between shadow-2xs">
             <div>
               <div class="flex items-center gap-2.5 sm:gap-3 mb-3">
@@ -1466,7 +1486,7 @@ $disable_global_schema = true;
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-bold text-slate-900 text-sm sm:text-base font-heading">Universal OEM Network</h3>
+                  <h3 class="font-bold text-slate-900 text-sm sm:text-base font-heading">Direct Manufacturer-Approved Network</h3>
                   <p class="text-slate-600 text-xs leading-tight mt-0.5">Direct Ontario Parts Supply</p>
                 </div>
               </div>

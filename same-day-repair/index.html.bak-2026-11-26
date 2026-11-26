@@ -1,0 +1,2644 @@
+<!DOCTYPE html>
+<html lang="en-CA" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Preconnect & DNS-Prefetch for High-Priority External Assets -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+  <!-- Google Tag Manager -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-M7B6FLPR');
+    function loadGTM() {}
+
+    // Fail-safe Early Call & WhatsApp Click Tracking (Declared in <head> so it's always ready)
+    function trackGtmCall(location) {
+      try {
+        if (typeof loadGTM === 'function') loadGTM();
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          'event': 'click_phone_ppc',
+          'button_location': location,
+          'click_location': location,
+          'value': 1
+        });
+        window.dataLayer.push({
+          'event': 'ppc_phone_click',
+          'button_location': location,
+          'click_location': location,
+          'value': 1
+        });
+      } catch (err) {
+        console.warn('Call tracking error:', err);
+      }
+      return true;
+    }
+
+    function trackGtmWhatsApp(location) {
+      try {
+        if (typeof loadGTM === 'function') loadGTM();
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          'event': 'click_whatsapp_ppc',
+          'button_location': location,
+          'click_location': location,
+          'value': 1
+        });
+        window.dataLayer.push({
+          'event': 'ppc_whatsapp_click',
+          'button_location': location,
+          'click_location': location,
+          'value': 1
+        });
+      } catch (err) {
+        console.warn('WhatsApp tracking error:', err);
+      }
+      return true;
+    }
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Primary Meta Tags for Google Ads PPC -->
+  <title>Same-Day Appliance Repair in Toronto &amp; GTA | Local Certified Technicians</title>
+  <meta name="title" content="Same-Day Appliance Repair in Toronto &amp; GTA | Local Certified Technicians">
+  <meta name="description" content="Need fast appliance repair in Toronto &amp; GTA? Certified technicians repair all 6 major appliances today: fridges, washers, dryers, dishwashers, stoves &amp; microwaves. Diagnostic fee waived with repair.">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="googlebot" content="noindex, nofollow">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+
+  <!-- Tailwind & Global Stylesheet -->
+  <link rel="stylesheet" href="../css/tailwind.min.css">
+  <link rel="stylesheet" href="../css/style.min.css">
+
+  <!-- Zero-Flicker Specific Service Script & Smart URL Route Extractor -->
+  <script>
+    function getPpcRouteParams() {
+      var sp = new URLSearchParams(window.location.search);
+      var sVal = sp.get('service') || '';
+      var cVal = sp.get('city') || '';
+      var bVal = sp.get('brand') || '';
+      var isNearMe = sp.get('near_me') === '1' || sp.get('near') === '1' || sp.get('intent') === 'near_me';
+
+      // If not fully provided in query params, inspect the clean URL pathname (e.g. fridge-brampton, repair-near-me)
+      if (!sVal || !cVal || !bVal) {
+        var rawPath = (window.location.pathname || '').replace(/\.(html?|php)$/i, '').toLowerCase();
+        var slug = rawPath.split('/').filter(Boolean).pop() || '';
+        if (slug && slug !== 'index' && slug !== 'same-day-repair' && slug !== 'demo') {
+          if (/near[-_]?me/i.test(slug)) {
+            isNearMe = true;
+          }
+          var knownBrands = ['sub-zero', 'subzero', 'kitchenaid', 'frigidaire', 'samsung', 'whirlpool', 'bosch', 'maytag', 'miele', 'kenmore', 'panasonic', 'lg', 'ge'];
+          var knownCities = ['richmond-hill', 'north-york', 'toronto', 'mississauga', 'brampton', 'vaughan', 'markham', 'oakville', 'burlington', 'etobicoke', 'scarborough', 'pickering', 'ajax', 'whitby', 'oshawa', 'milton', 'newmarket', 'hamilton', 'caledon', 'kitchener', 'waterloo', 'cambridge', 'guelph', 'barrie'];
+          var knownServices = ['washing-machine', 'clothes-dryer', 'refrigerator', 'fridge', 'freezer', 'washer', 'dryer', 'dishwasher', 'stove', 'oven', 'range', 'cooktop', 'microwave', 'appliance', 'repair'];
+
+          if (!bVal) {
+            for (var k = 0; k < knownBrands.length; k++) {
+              var b = knownBrands[k];
+              var reB = new RegExp('(?:^|[-_])' + b.replace('-', '[-_]?') + '(?:[-_]|$)', 'i');
+              if (reB.test(slug)) { bVal = (b === 'subzero' ? 'sub-zero' : b); break; }
+            }
+          }
+          if (!cVal) {
+            for (var j = 0; j < knownCities.length; j++) {
+              var c = knownCities[j];
+              var reC = new RegExp('(?:^|[-_])' + c.replace('-', '[-_]?') + '(?:[-_]|$)', 'i');
+              if (reC.test(slug)) { cVal = c; break; }
+            }
+          }
+          if (!sVal) {
+            for (var i = 0; i < knownServices.length; i++) {
+              var s = knownServices[i];
+              var reS = new RegExp('(?:^|[-_])' + s.replace('-', '[-_]?') + '(?:[-_]|$)', 'i');
+              if (reS.test(slug)) { sVal = (s === 'repair' ? 'appliance' : s); break; }
+            }
+          }
+
+          if (isNearMe && !sVal) {
+            sVal = 'appliance';
+          }
+        }
+      }
+
+      if (isNearMe && !sVal) {
+        sVal = 'appliance';
+      }
+
+      return {
+        service: sVal.toLowerCase().trim(),
+        city: cVal.toLowerCase().trim(),
+        brand: bVal.toLowerCase().trim(),
+        isNearMe: isNearMe
+      };
+    }
+
+    (function () {
+      try {
+        var params = getPpcRouteParams();
+        window._ppcParams = params;
+        if (params.service && !['appliance', 'all', 'repair'].includes(params.service)) {
+          document.documentElement.classList.add('hide-six-services');
+        }
+        var sp = new URLSearchParams(window.location.search);
+        var g = sp.get('gclid');
+        if (g) sessionStorage.setItem('ppc_gclid', g);
+        var s = sp.get('utm_source');
+        if (s) sessionStorage.setItem('ppc_utm_source', s);
+        var m = sp.get('utm_medium');
+        if (m) sessionStorage.setItem('ppc_utm_medium', m);
+        var c = sp.get('utm_campaign');
+        if (c) sessionStorage.setItem('ppc_utm_campaign', c);
+      } catch (e) {}
+    })();
+  </script>
+  <style>
+    html.hide-six-services #all-six-services {
+      display: none !important;
+    }
+  </style>
+
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+      src: url('../fonts/inter-latin.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+      src: url('../fonts/montserrat-latin.woff2') format('woff2');
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    /* Ensure GTM Click - Just Links trigger captures the exact anchor element & tel: URL */
+    a[href^="tel:"] * {
+      pointer-events: none;
+    }
+    .hover-lift {
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .hover-lift:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px -5px rgba(10, 46, 82, .12);
+    }
+    /* PPC Premium Footer & Trust Architecture */
+    .ppc-footer-root {
+      background: linear-gradient(180deg, #071221 0%, #030811 100%);
+      color: #94a3b8;
+      position: relative;
+    }
+    .ppc-footer-root::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255, 107, 0, 0.6), rgba(15, 76, 129, 0.8), transparent);
+    }
+    .ppc-trust-strip {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(15, 32, 56, 0.4);
+    }
+    .ppc-trust-strip-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    @media (min-width: 768px) {
+      .ppc-trust-strip-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.25rem;
+      }
+    }
+    .ppc-footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.25rem;
+    }
+    @media (min-width: 640px) {
+      .ppc-footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+      }
+    }
+    @media (min-width: 1024px) {
+      .ppc-footer-grid {
+        grid-template-columns: 1.35fr 1fr 1fr 1.15fr;
+        gap: 2.75rem;
+      }
+    }
+    .ppc-footer-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #94a3b8;
+      font-size: 0.8125rem;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+    .ppc-footer-link:hover {
+      color: #ff6b00;
+      transform: translateX(3px);
+    }
+    .ppc-badge-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.375rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 0.35rem 0.65rem;
+      border-radius: 0.5rem;
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      color: #e2e8f0;
+      transition: all 0.2s ease;
+    }
+    .ppc-badge-chip:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 107, 0, 0.45);
+      color: #ffffff;
+    }
+    .ppc-footer-heading {
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 0.8125rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #ffffff;
+      padding-top: 0.35rem;
+      padding-bottom: 0.75rem;
+      margin-top: 0;
+      margin-bottom: 1.25rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+    }
+    .ppc-footer-heading-bar {
+      display: inline-block;
+      width: 24px;
+      height: 2.5px;
+      background-color: #ff6b00;
+      border-radius: 9999px;
+      flex-shrink: 0;
+    }
+    .ppc-footer-subheading {
+      font-size: 0.6875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #94a3b8;
+      padding-top: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+    .ppc-footer-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem;
+    }
+    .ppc-footer-col {
+      display: flex;
+      flex-direction: column;
+      gap: 0.875rem;
+    }
+
+    /* Hero Appliance Showcase */
+    .hero-showcase-frame {
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 1rem;
+      padding: 10px;
+      position: relative;
+      width: 100%;
+      max-width: 440px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 18px -2px rgba(15, 23, 42, 0.05);
+    }
+    @media (max-width: 640px) {
+      .hero-showcase-frame {
+        padding: 10px;
+        max-width: 310px;
+      }
+      #hero-service-img {
+        max-height: 200px;
+        object-fit: cover;
+      }
+    }
+    .hero-showcase-inner {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    /* 6-Column Brands Grid for Desktop */
+    @media (min-width: 1024px) {
+      #brands-list-grid {
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+      }
+    }
+
+    /* PPC High-Converting Middle CTA Strip */
+    .ppc-cta-strip {
+      background: linear-gradient(135deg, #071221 0%, #0d1e35 50%, #071221 100%);
+      border-top: 1px solid rgba(255, 107, 0, 0.4);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: none;
+      position: relative;
+      overflow: hidden;
+      padding: 1.5rem 1rem;
+    }
+    .ppc-cta-strip::before {
+      content: '';
+      position: absolute;
+      top: -60px;
+      right: -60px;
+      width: 240px;
+      height: 240px;
+      background: radial-gradient(circle, rgba(255, 107, 0, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .ppc-cta-strip-inner {
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: 0 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.25rem;
+      position: relative;
+      z-index: 2;
+    }
+    @media (min-width: 900px) {
+      .ppc-cta-strip-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        gap: 2rem;
+      }
+    }
+    .ppc-cta-left {
+      display: flex;
+      align-items: center;
+      gap: 1.125rem;
+      text-align: left;
+    }
+    @media (max-width: 639px) {
+      .ppc-cta-left {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+    }
+    .ppc-cta-icon-box {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #ff6b00 0%, #e85d00 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      flex-shrink: 0;
+      box-shadow: 0 6px 20px rgba(255, 107, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .ppc-cta-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      color: #34d399;
+      font-size: 0.6875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.2rem 0.65rem;
+      border-radius: 9999px;
+      margin-bottom: 0.35rem;
+    }
+    .ppc-cta-pulse-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 9999px;
+      background-color: #34d399;
+      animation: ppcPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    @keyframes ppcPulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+    .ppc-cta-phone-link {
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 900;
+      font-size: 1.5rem;
+      line-height: 1.15;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+      white-space: nowrap !important;
+      display: block;
+      transition: color 0.2s ease;
+    }
+    @media (min-width: 640px) {
+      .ppc-cta-phone-link {
+        font-size: 1.75rem;
+      }
+    }
+    .ppc-cta-phone-link:hover {
+      color: #ff8533;
+    }
+    .ppc-cta-subtext {
+      color: #94a3b8;
+      font-size: 0.75rem;
+      margin-top: 0.25rem;
+      font-weight: 500;
+      white-space: normal;
+    }
+    .ppc-cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      width: 100%;
+    }
+    @media (min-width: 900px) {
+      .ppc-cta-actions {
+        width: auto;
+        justify-content: flex-end;
+      }
+    }
+    .ppc-cta-btn-call {
+      background: linear-gradient(135deg, #ff6b00 0%, #ff8533 100%);
+      color: #ffffff !important;
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 800;
+      font-size: 0.8125rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 0.85rem 1.6rem;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      white-space: nowrap !important;
+      box-shadow: 0 8px 24px rgba(255, 107, 0, 0.45);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      flex: 1 1 auto;
+      justify-content: center;
+    }
+    @media (min-width: 640px) {
+      .ppc-cta-btn-call {
+        flex: 0 0 auto;
+      }
+    }
+    .ppc-cta-btn-call:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(255, 107, 0, 0.6);
+      color: #ffffff;
+    }
+    .ppc-cta-btn-call:active {
+      transform: scale(0.98);
+    }
+    .ppc-cta-btn-book {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      color: #ffffff !important;
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 700;
+      font-size: 0.8125rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 0.85rem 1.5rem;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      white-space: nowrap !important;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      flex: 1 1 auto;
+      justify-content: center;
+    }
+    @media (min-width: 640px) {
+      .ppc-cta-btn-book {
+        flex: 0 0 auto;
+      }
+    }
+    .ppc-cta-btn-book:hover {
+      background: rgba(255, 255, 255, 0.16);
+      border-color: rgba(255, 255, 255, 0.45);
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+    .ppc-cta-btn-book:active {
+      transform: scale(0.98);
+    }
+  </style>
+
+  <!-- Google PPC JSON-LD LocalBusiness & FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.appliancerepairknights.com/#organization",
+        "name": "Appliance Repair Knights Ltd.",
+        "url": "https://www.appliancerepairknights.com/",
+        "logo": "https://www.appliancerepairknights.com/img/logo.webp",
+        "image": "https://www.appliancerepairknights.com/img/appliance-repair-banner.webp",
+        "telephone": "905-717-8905",
+        "email": "info@appliancerepairknights.com",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "100 King St W",
+          "addressLocality": "Toronto",
+          "addressRegion": "ON",
+          "postalCode": "M5X 1A9",
+          "addressCountry": "CA"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "reviewCount": "15"
+        },
+        "areaServed": ["Toronto", "Mississauga", "Brampton", "Vaughan", "Markham", "Oakville", "Burlington", "Hamilton"]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-white text-slate-800 font-sans antialiased selection:bg-brandOrange selection:text-white">
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7B6FLPR"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- TOP DISPATCH ANNOUNCEMENT BAR (FULL WIDTH ROTATING MICRO-CTA SLIDER) -->
+  <aside class="bg-brandDarkBlue text-white text-[11px] sm:text-xs py-1.5 px-3 sm:px-4 border-b border-brandBlue/30 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto flex items-center justify-center h-5">
+      <div class="flex items-center justify-center gap-2 overflow-hidden w-full text-center">
+        <span class="w-2 h-2 rounded-full bg-brandOrange animate-pulse shrink-0"></span>
+        <div id="topbar-slider" class="relative h-5 overflow-hidden flex-1 max-w-2xl">
+          <div id="topbar-slides" class="transition-transform duration-500 ease-in-out flex flex-col">
+            <span class="h-5 flex items-center justify-center text-slate-200 font-bold tracking-tight whitespace-nowrap text-[10.5px] sm:text-xs">
+              Same-Day Repair Dispatch &bull; Certified Technicians Near You
+            </span>
+            <span class="h-5 flex items-center justify-center text-slate-200 font-bold tracking-tight whitespace-nowrap text-[10.5px] sm:text-xs">
+              Diagnostic Fee Waived When You Proceed With Repair
+            </span>
+            <span class="h-5 flex items-center justify-center text-slate-200 font-bold tracking-tight whitespace-nowrap text-[10.5px] sm:text-xs">
+              Comprehensive Written Warranty &bull; Genuine Quality Parts
+            </span>
+            <span class="h-5 flex items-center justify-center text-slate-200 font-bold tracking-tight whitespace-nowrap text-[10.5px] sm:text-xs">
+              Available Daily 8:00 AM – 8:00 PM &bull; Upfront Written Quotes
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- CLEAN MINIMAL HEADER (MATCHING CLIENT REFERENCE) -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-brandBorder shadow-sm">
+    <div class="max-w-7xl mx-auto px-3 sm:px-4 h-16 sm:h-20 flex justify-between items-center">
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-2 focus:outline-none flex-shrink-0" aria-label="Appliance Repair Knights">
+        <picture>
+          <source srcset="../img/logo.webp" type="image/webp">
+          <img src="../img/logo-opt.png" alt="Appliance Repair Knights Logo" width="220" height="64" class="h-12 sm:h-14 w-auto object-contain" fetchpriority="high">
+        </picture>
+      </a>
+
+      <!-- Top Right Header CTA (Clean Minimalist Pill) -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="tel:+19057178905" onclick="trackGtmCall('header_call')" class="gtm-ppc-call gtm-ppc-call-header bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold text-xs sm:text-sm px-4 py-2 sm:px-5 sm:py-2.5 rounded-full transition-all flex items-center gap-1.5 shadow-sm hover:shadow-md active:scale-95 whitespace-nowrap">
+          <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+          </svg>
+          <span class="tracking-wide">905-717-8905</span>
+        </a>
+        <a href="#ppc-quote-modal" onclick="openLeadModal(); return false;" class="hidden sm:inline-flex bg-brandBlue hover:bg-brandDarkBlue text-white font-extrabold px-5 py-2.5 rounded-full text-xs sm:text-sm uppercase tracking-wider transition-all shadow-sm items-center gap-1">
+          <span>Book Same-Day</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION: CLEAN PRODUCT FOCUS (MATCHING REFERENCE DESIGN) -->
+    <section class="pt-2 pb-6 sm:py-10 lg:py-16 bg-white relative overflow-hidden" id="about-service">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 lg:gap-12 items-center">
+
+          <!-- Left: Hero Typography & Direct CTAs (Desktop Left, Mobile 1st) -->
+          <div class="order-1 lg:col-span-7 space-y-2.5 sm:space-y-5 lg:space-y-6 text-center lg:text-left">
+            <div>
+              <h1 id="hero-title" class="text-2xl sm:text-4xl lg:text-5xl font-heading font-bold text-brandNavy tracking-tight leading-tight sm:leading-none">
+                Appliance Repair
+              </h1>
+              <p id="hero-subtitle" class="text-brandOrange font-extrabold text-[12.5px] sm:text-base lg:text-lg tracking-wide mt-1.5 sm:mt-2.5 lg:mt-3.5 mb-1 sm:mb-2.5 lg:mb-3">
+                Same-Day Repair Near You
+              </p>
+            </div>
+
+            <!-- Dual Action Call & Book Buttons (Equal Size on Mobile, Full-Width Power CTAs) -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-2.5 sm:gap-3.5 pt-0.5 pb-0.5 sm:pt-2 sm:pb-3 lg:pt-3 lg:pb-4 w-full">
+              <a href="tel:+19057178905" onclick="trackGtmCall('hero_call')" class="gtm-ppc-call gtm-ppc-call-hero w-full sm:w-auto flex-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold py-3 px-4 sm:py-3.5 sm:px-4 lg:px-5 rounded-xl text-xs sm:text-sm lg:text-[15px] uppercase tracking-wide transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 transform active:scale-95 text-center whitespace-nowrap">
+                <svg class="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 animate-bounce" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                </svg>
+                <span class="whitespace-nowrap">CALL NOW: 905-717-8905</span>
+              </a>
+
+              <a href="#ppc-quote-modal" onclick="openLeadModal(); return false;" class="w-full sm:w-auto flex-1 bg-brandBlue hover:bg-brandDarkBlue text-white font-extrabold py-3 px-4 sm:py-3.5 sm:px-4 lg:px-5 rounded-xl text-xs sm:text-sm lg:text-[15px] uppercase tracking-wide transition-all shadow-md flex items-center justify-center gap-2 transform active:scale-95 cursor-pointer text-center whitespace-nowrap">
+                <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                <span class="whitespace-nowrap">BOOK SAME-DAY SLOT</span>
+              </a>
+            </div>
+
+            <!-- Service Description Paragraph -->
+            <div class="space-y-3 sm:space-y-3.5 pt-2 sm:pt-3 lg:pt-4 text-slate-700 text-sm sm:text-base leading-relaxed text-left">
+              <h2 class="text-sm sm:text-base font-heading font-bold text-brandNavy tracking-tight leading-snug">
+                Same-Day Repair for All Major Household &amp; Kitchen Appliances
+              </h2>
+              <div id="hero-desc" class="text-slate-700 text-xs sm:text-sm leading-relaxed">
+                <ul class="space-y-1.5 pt-1">
+                  <li class="flex items-start gap-2">
+                    <span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span>
+                    <span><strong class="text-slate-900 font-bold">All 6 Major Appliances:</strong> Fridges, washers, dryers, dishwashers, stoves &amp; microwaves.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span>
+                    <span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Samsung, LG, Whirlpool, Bosch, GE, Maytag &amp; more.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span>
+                    <span><strong class="text-slate-900 font-bold">First-Visit Resolution:</strong> Fully equipped technicians ready to resolve issues on-site.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Trust Pills (Centered on Mobile, Left-Aligned on Desktop) -->
+            <div class="pt-2.5 sm:pt-4 lg:pt-5 flex flex-wrap items-center justify-center lg:justify-start gap-1.5 sm:gap-2.5 text-[11px] sm:text-xs font-semibold text-slate-700">
+              <span class="inline-flex items-center gap-1.5 bg-slate-50 border border-slate-200 px-2.5 py-1 rounded-lg text-brandNavy font-medium shadow-2xs">
+                <span>🛡️</span> Upfront Written Quote
+              </span>
+              <span class="inline-flex items-center gap-1.5 bg-blue-50 text-brandBlue border border-blue-200 px-2.5 py-1 rounded-lg font-bold shadow-2xs">
+                <span class="text-brandBlue font-black">✓</span> Diagnostic Fee Waived w/ Repair
+              </span>
+              <span class="inline-flex items-center gap-1.5 bg-slate-50 border border-slate-200 px-2.5 py-1 rounded-lg text-brandNavy font-medium shadow-2xs">
+                <span class="text-brandOrange font-black">★</span> 5.0 Google Rating
+              </span>
+            </div>
+          </div>
+
+          <!-- Right: Appliance Showcase (Desktop Right, Mobile 2nd) -->
+          <div class="order-2 lg:col-span-5 flex justify-center">
+            <div class="hero-showcase-frame">
+              <div class="hero-showcase-inner">
+                <img id="hero-service-img" src="../img/washing-machine-repair-service.webp" alt="Same-Day Appliance Repair in Toronto &amp; GTA - Certified Local Technicians" width="440" height="380" class="w-full h-auto max-h-[200px] sm:max-h-[240px] lg:max-h-[300px] object-cover rounded-lg">
+                <div class="mt-3.5 pt-3 border-t border-slate-200 w-full flex items-center justify-between text-[10px] sm:text-xs text-brandNavy font-bold tracking-tight">
+                  <span class="flex items-center gap-1"><span class="text-brandBlue font-black text-xs sm:text-sm">✓</span> Certified Techs</span>
+                  <span class="flex items-center gap-1"><span class="text-brandOrange font-black text-xs sm:text-sm">✓</span> Same-Day Dispatch</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- NEAR ME ACTIVE TECHNICIANS HERO STRIPE (GATED ONLY TO NEAR-ME PPC URLS) -->
+        <div id="near-me-hero-stripe" class="hidden pt-4 sm:pt-6 pb-1 text-center text-xs sm:text-[13px] text-slate-700 font-medium tracking-tight" style="display: none;">
+          <span class="font-bold text-slate-900">📍 Active Technicians Today In:</span>
+          <span> Toronto &bull; Mississauga &bull; Brampton &bull; Etobicoke &bull; Scarborough &bull; Vaughan &bull; Hamilton</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. VALUE PROPOSITION STRIP (SLEEK DARK NAVY FLAT STRIP) -->
+    <section class="bg-slate-900 text-white py-3.5 sm:py-5 border-y border-slate-800 shadow-inner">
+      <div class="max-w-6xl mx-auto px-3 sm:px-6">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 items-center">
+
+          <!-- Pillar 1 -->
+          <div class="flex items-center gap-2.5 sm:gap-3 text-left">
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4 sm:w-5 sm:h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
+            <div class="min-w-0">
+              <span class="block font-heading font-bold text-xs sm:text-sm text-white tracking-tight leading-tight">Same-Day Service</span>
+              <span class="block text-[10px] sm:text-xs text-slate-300 font-medium leading-tight mt-0.5">Prompt GTA Dispatch</span>
+            </div>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="flex items-center gap-2.5 sm:gap-3 text-left">
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4 sm:w-5 sm:h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+            </div>
+            <div class="min-w-0">
+              <span class="block font-heading font-bold text-xs sm:text-sm text-white tracking-tight leading-tight">Upfront Pricing</span>
+              <span class="block text-[10px] sm:text-xs text-slate-300 font-medium leading-tight mt-0.5">Fee Waived w/ Repair</span>
+            </div>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="flex items-center gap-2.5 sm:gap-3 text-left">
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4 sm:w-5 sm:h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+            </div>
+            <div class="min-w-0">
+              <span class="block font-heading font-bold text-xs sm:text-sm text-white tracking-tight leading-tight">Certified Techs</span>
+              <span class="block text-[10px] sm:text-xs text-slate-300 font-medium leading-tight mt-0.5">Licensed &amp; Insured</span>
+            </div>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="flex items-center gap-2.5 sm:gap-3 text-left">
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4 sm:w-5 sm:h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <div class="min-w-0">
+              <span class="block font-heading font-bold text-xs sm:text-sm text-white tracking-tight leading-tight">Available Daily</span>
+              <span class="block text-[10px] sm:text-xs text-slate-300 font-medium leading-tight mt-0.5">8:00 AM – 8:00 PM</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 2B. 6 MAJOR APPLIANCES WE SERVICE & REPAIR (EXACT CLIENT REFERENCE DESIGN) -->
+    <section class="py-12 sm:py-16 bg-slate-50 border-b border-slate-200/80" id="all-six-services">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <!-- Header & Locations Subtitle Matching Reference -->
+        <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-slate-900 tracking-tight">
+            Same-Day, Reliable Appliance Repair
+          </h2>
+          <p class="text-xs sm:text-sm font-bold text-brandBlue tracking-wide mt-2 flex items-center justify-center gap-2 flex-wrap">
+            <span>Toronto</span>
+            <span class="text-brandOrange text-[10px]">◆</span>
+            <span>Mississauga</span>
+            <span class="text-brandOrange text-[10px]">◆</span>
+            <span>Brampton</span>
+            <span class="text-brandOrange text-[10px]">◆</span>
+            <span>Vaughan</span>
+            <span class="text-brandOrange text-[10px]">◆</span>
+            <span>Markham</span>
+            <span class="text-brandOrange text-[10px]">◆</span>
+            <span>Surrounding GTA Areas</span>
+          </p>
+        </div>
+
+        <!-- 6 Appliance Cards Matching User Inset Image Reference -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3.5 sm:gap-4 lg:gap-5 items-stretch">
+          
+          <!-- 1. Refrigerator -->
+          <a href="index.html?service=refrigerator" aria-label="Refrigerator Repair Services in Toronto & GTA" class="flex flex-col items-center group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brandOrange focus-visible:ring-offset-2 rounded-2xl transition-transform duration-200 hover:-translate-y-1">
+            <div class="w-full aspect-square bg-white rounded-2xl p-3 sm:p-3.5 border border-slate-200/90 shadow-2xs group-hover:shadow-md group-hover:border-brandOrange flex items-center justify-center transition-all duration-200">
+              <img src="../img/service-card-refrigerator.webp?v=2" alt="Stainless steel refrigerator appliance repair" width="200" height="200" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
+            </div>
+            <div class="mt-2.5 sm:mt-3 text-center leading-tight min-h-[44px] flex flex-col justify-start items-center">
+              <span class="block font-heading font-extrabold text-[12px] sm:text-[13px] lg:text-[12px] xl:text-[13px] text-slate-900 tracking-tight group-hover:text-brandOrange transition-colors">
+                Refrigerator
+              </span>
+              <span class="block font-heading font-black text-[11px] text-brandBlue tracking-wider mt-1">
+                Repair
+              </span>
+            </div>
+          </a>
+
+          <!-- 2. Stove & Oven -->
+          <a href="index.html?service=stove" aria-label="Stove and Oven Repair Services in Toronto & GTA" class="flex flex-col items-center group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brandOrange focus-visible:ring-offset-2 rounded-2xl transition-transform duration-200 hover:-translate-y-1">
+            <div class="w-full aspect-square bg-white rounded-2xl p-3 sm:p-3.5 border border-slate-200/90 shadow-2xs group-hover:shadow-md group-hover:border-brandOrange flex items-center justify-center transition-all duration-200">
+              <img src="../img/service-card-stove.webp?v=2" alt="Stainless steel stove and range oven appliance repair" width="200" height="200" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
+            </div>
+            <div class="mt-2.5 sm:mt-3 text-center leading-tight min-h-[44px] flex flex-col justify-start items-center">
+              <span class="block font-heading font-extrabold text-[12px] sm:text-[13px] lg:text-[12px] xl:text-[13px] text-slate-900 tracking-tight group-hover:text-brandOrange transition-colors">
+                Stove &amp; Oven
+              </span>
+              <span class="block font-heading font-black text-[11px] text-brandBlue tracking-wider mt-1">
+                Repair
+              </span>
+            </div>
+          </a>
+
+          <!-- 3. Washer -->
+          <a href="index.html?service=washer" aria-label="Washing Machine Repair Services in Toronto & GTA" class="flex flex-col items-center group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brandOrange focus-visible:ring-offset-2 rounded-2xl transition-transform duration-200 hover:-translate-y-1">
+            <div class="w-full aspect-square bg-white rounded-2xl p-3 sm:p-3.5 border border-slate-200/90 shadow-2xs group-hover:shadow-md group-hover:border-brandOrange flex items-center justify-center transition-all duration-200">
+              <img src="../img/service-card-washer.webp?v=2" alt="Stainless steel front-load washing machine appliance repair" width="200" height="200" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
+            </div>
+            <div class="mt-2.5 sm:mt-3 text-center leading-tight min-h-[44px] flex flex-col justify-start items-center">
+              <span class="block font-heading font-extrabold text-[12px] sm:text-[13px] lg:text-[12px] xl:text-[13px] text-slate-900 tracking-tight group-hover:text-brandOrange transition-colors">
+                Washer
+              </span>
+              <span class="block font-heading font-black text-[11px] text-brandBlue tracking-wider mt-1">
+                Repair
+              </span>
+            </div>
+          </a>
+
+          <!-- 4. Dryer -->
+          <a href="index.html?service=dryer" aria-label="Clothes Dryer Repair Services in Toronto & GTA" class="flex flex-col items-center group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brandOrange focus-visible:ring-offset-2 rounded-2xl transition-transform duration-200 hover:-translate-y-1">
+            <div class="w-full aspect-square bg-white rounded-2xl p-3 sm:p-3.5 border border-slate-200/90 shadow-2xs group-hover:shadow-md group-hover:border-brandOrange flex items-center justify-center transition-all duration-200">
+              <img src="../img/service-card-dryer.webp?v=2" alt="Stainless steel front-load clothes dryer appliance repair" width="200" height="200" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
+            </div>
+            <div class="mt-2.5 sm:mt-3 text-center leading-tight min-h-[44px] flex flex-col justify-start items-center">
+              <span class="block font-heading font-extrabold text-[12px] sm:text-[13px] lg:text-[12px] xl:text-[13px] text-slate-900 tracking-tight group-hover:text-brandOrange transition-colors">
+                Dryer
+              </span>
+              <span class="block font-heading font-black text-[11px] text-brandBlue tracking-wider mt-1">
+                Repair
+              </span>
+            </div>
+          </a>
+
+          <!-- 5. Dishwasher -->
+          <a href="index.html?service=dishwasher" aria-label="Dishwasher Repair Services in Toronto & GTA" class="flex flex-col items-center group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brandOrange focus-visible:ring-offset-2 rounded-2xl transition-transform duration-200 hover:-translate-y-1">
+            <div class="w-full aspect-square bg-white rounded-2xl p-3 sm:p-3.5 border border-slate-200/90 shadow-2xs group-hover:shadow-md group-hover:border-brandOrange flex items-center justify-center transition-all duration-200">
+              <img src="../img/service-card-dishwasher.webp?v=2" alt="Stainless steel built-in dishwasher appliance repair" width="200" height="200" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
+            </div>
+            <div class="mt-2.5 sm:mt-3 text-center leading-tight min-h-[44px] flex flex-col justify-start items-center">
+              <span class="block font-heading font-extrabold text-[12px] sm:text-[13px] lg:text-[12px] xl:text-[13px] text-slate-900 tracking-tight group-hover:text-brandOrange transition-colors">
+                Dishwasher
+              </span>
+              <span class="block font-heading font-black text-[11px] text-brandBlue tracking-wider mt-1">
+                Repair
+              </span>
+            </div>
+          </a>
+
+          <!-- 6. Microwave -->
+          <a href="index.html?service=microwave" aria-label="Microwave Repair Services in Toronto & GTA" class="flex flex-col items-center group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brandOrange focus-visible:ring-offset-2 rounded-2xl transition-transform duration-200 hover:-translate-y-1">
+            <div class="w-full aspect-square bg-white rounded-2xl p-3 sm:p-3.5 border border-slate-200/90 shadow-2xs group-hover:shadow-md group-hover:border-brandOrange flex items-center justify-center transition-all duration-200">
+              <img src="../img/service-card-microwave.webp?v=2" alt="Stainless steel over-the-range microwave appliance repair" width="200" height="200" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
+            </div>
+            <div class="mt-2.5 sm:mt-3 text-center leading-tight min-h-[44px] flex flex-col justify-start items-center">
+              <span class="block font-heading font-extrabold text-[12px] sm:text-[13px] lg:text-[12px] xl:text-[13px] text-slate-900 tracking-tight group-hover:text-brandOrange transition-colors">
+                Microwave
+              </span>
+              <span class="block font-heading font-black text-[11px] text-brandBlue tracking-wider mt-1">
+                Repair
+              </span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. TWO SIDE-BY-SIDE CARDS: COMMON PROBLEMS & APPLIANCE TYPES (EXACT CLIENT DESIGN) -->
+    <section class="py-12 sm:py-16 bg-slate-50 border-b border-brandBorder" id="services-problems">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+
+          <!-- Left Card: Common Appliance Problems -->
+          <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <h3 class="text-sm sm:text-base font-heading font-bold text-slate-800 tracking-wide mb-4 pb-2 border-b border-slate-100 flex items-center justify-between">
+                <span>Common Problems Across All 6 Appliances</span>
+                <span class="text-xs text-brandOrange font-bold">Diagnosed Daily</span>
+              </h3>
+              <ul class="space-y-3.5 text-xs sm:text-sm text-slate-700 font-medium">
+                <li class="flex items-center gap-3">
+                  <span class="w-2.5 h-2.5 rounded-full bg-brandOrange shrink-0"></span>
+                  <span>Refrigerator Not Cooling / Freezing Food</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="w-2.5 h-2.5 rounded-full bg-brandOrange shrink-0"></span>
+                  <span>Washing Machine Leaking or Not Draining</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="w-2.5 h-2.5 rounded-full bg-brandOrange shrink-0"></span>
+                  <span>Clothes Dryer Running With No Heat</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="w-2.5 h-2.5 rounded-full bg-brandOrange shrink-0"></span>
+                  <span>Dishwasher Leaving Food Film or Not Draining</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="w-2.5 h-2.5 rounded-full bg-brandOrange shrink-0"></span>
+                  <span>Oven &amp; Stove Burners Failing to Ignite</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="w-2.5 h-2.5 rounded-full bg-brandOrange shrink-0"></span>
+                  <span>Microwave Sparking or Uneven Heating</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100">
+              <a href="tel:+19057178905" onclick="trackGtmCall('problem_card_call')" class="gtm-ppc-call text-xs font-bold text-brandOrange hover:underline flex items-center gap-1">
+                <span>Diagnose your symptom today →</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Card: Types of Appliance We Repair -->
+          <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <h3 class="text-sm sm:text-base font-heading font-bold text-slate-800 tracking-wide mb-4 pb-2 border-b border-slate-100 flex items-center justify-between">
+                <span>All 6 Major Appliances We Repair</span>
+                <span class="text-xs text-brandBlue font-bold">All Makes</span>
+              </h3>
+              <ul class="space-y-3.5 text-xs sm:text-sm text-slate-700 font-medium">
+                <li class="flex items-center gap-3">
+                  <span class="w-2.5 h-2.5 rounded-full bg-brandBlue shrink-0"></span>
+                  <span>Refrigerators &amp; Freezers (French Door, Side-by-Side, Built-In)</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="w-2.5 h-2.5 rounded-full bg-brandBlue shrink-0"></span>
+                  <span>Washing Machines (Front-Load, Top-Load, Stackable)</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="w-2.5 h-2.5 rounded-full bg-brandBlue shrink-0"></span>
+                  <span>Clothes Dryers (Gas &amp; Electric Vented)</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="w-2.5 h-2.5 rounded-full bg-brandBlue shrink-0"></span>
+                  <span>Dishwashers (Built-In, Panel-Ready &amp; Portable)</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="w-2.5 h-2.5 rounded-full bg-brandBlue shrink-0"></span>
+                  <span>Ovens, Stoves &amp; Ranges (Gas, Electric &amp; Induction)</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="w-2.5 h-2.5 rounded-full bg-brandBlue shrink-0"></span>
+                  <span>Microwaves (Over-the-Range &amp; Built-In Drawer)</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100">
+              <a href="#ppc-quote-modal" onclick="openLeadModal(); return false;" class="text-xs font-bold text-brandBlue hover:underline flex items-center gap-1">
+                <span>Schedule maintenance or repair →</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. CHOOSE APPLIANCE REPAIR KNIGHTS (WITH TECHNICIANS & SERVICE VAN IMAGE) -->
+    <section class="py-14 sm:py-20 bg-white border-b border-brandBorder" id="why-choose-us">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+        <div class="text-center mb-12">
+          <h2 class="text-xl sm:text-2xl lg:text-3xl font-heading font-bold text-slate-900 tracking-tight mb-2">
+            Choose Appliance Repair Knights
+          </h2>
+          <p class="text-slate-600 text-xs sm:text-sm max-w-xl mx-auto font-medium">
+            Quality &amp; Reliable Services at Competitive Rates Near You
+          </p>
+          <div class="w-16 h-1 bg-brandOrange mx-auto mt-3 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+
+          <!-- Left: 3 Feature Blocks (Time, Quality, Price) -->
+          <div class="lg:col-span-6 space-y-6">
+
+            <!-- Item 1: Time -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-orange-50 text-brandOrange flex items-center justify-center shrink-0 shadow-2xs">
+                <svg class="w-6 h-6 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              </div>
+              <div>
+                <h3 class="text-sm font-heading font-bold text-slate-900 tracking-wide mb-1">Time</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+                  Same-day rapid dispatch across Toronto. Our local technicians arrive with stocked service vehicles to diagnose and resolve appliance issues on the first visit.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 2: Quality -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-blue-50 text-brandBlue flex items-center justify-center shrink-0 shadow-2xs">
+                <svg class="w-6 h-6 text-brandBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+              </div>
+              <div>
+                <h3 class="text-sm font-heading font-bold text-slate-900 tracking-wide mb-1">Quality</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+                  Licensed and certified local technicians using genuine quality parts. Every repair is backed by our comprehensive written warranty on parts and labour.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 3: Price -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-slate-100 text-brandNavy flex items-center justify-center shrink-0 shadow-2xs">
+                <svg class="w-6 h-6 text-brandNavy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              </div>
+              <div>
+                <h3 class="text-sm font-heading font-bold text-slate-900 tracking-wide mb-1">Price</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+                  Transparent, upfront written quotes before any repair begins. Our diagnostic service call fee is completely waived when you proceed with the repair.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right: Team & Service Van Asset matching reference -->
+          <div class="lg:col-span-6 flex justify-center">
+            <div class="relative w-full max-w-lg">
+              <picture>
+                <source srcset="../img/appliance-repair-knight-with-branded-van.webp" type="image/webp">
+                <img src="../img/appliance-repair-knight-with-branded-van.webp" alt="Appliance Repair Knight with Branded Service Van" width="540" height="360" class="w-full h-auto object-contain drop-shadow-xl rounded-2xl">
+              </picture>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. CALL STRIP (UNDER WHY CHOOSE US - POLISHED HIGH-CONVERTING CTA BAR) -->
+    <section class="ppc-cta-strip">
+      <div class="ppc-cta-strip-inner">
+        
+        <!-- Left Dispatch Info with Clean Pill & Status -->
+        <div class="ppc-cta-left">
+          <div class="ppc-cta-icon-box">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="ppc-cta-badge">
+              <span class="ppc-cta-pulse-dot"></span>
+              <span>Fast Direct Dispatch</span>
+            </div>
+            <a href="tel:+19057178905" onclick="trackGtmCall('banner_call_text')" class="gtm-ppc-call ppc-cta-phone-link">
+              Call: 905-717-8905
+            </a>
+            <div class="ppc-cta-subtext">Priority arrivals across Toronto &amp; GTA • Fee waived with repair</div>
+          </div>
+        </div>
+
+        <!-- Right Action Buttons -->
+        <div class="ppc-cta-actions">
+          <a href="tel:+19057178905" onclick="trackGtmCall('banner_call')" class="gtm-ppc-call ppc-cta-btn-call">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+            </svg>
+            <span>CALL NOW: 905-717-8905</span>
+          </a>
+          <a href="#ppc-quote-modal" onclick="openLeadModal(); return false;" class="ppc-cta-btn-book">
+            <svg class="w-4 h-4 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+            <span>BOOK SAME-DAY SLOT</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. SINGLE CARD CUSTOMER REVIEWS (CLEAN CAROUSEL STYLE MATCHING REFERENCE) -->
+    <section class="py-14 sm:py-20 bg-white border-b border-brandBorder" id="reviews">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+
+        <h2 class="text-xl sm:text-2xl font-heading font-bold text-slate-900 tracking-tight mb-2">
+          Customer Reviews
+        </h2>
+        <p class="text-slate-600 text-xs sm:text-sm max-w-md mx-auto mb-4 font-medium">
+          What Our Local Homeowners Say Near You
+        </p>
+
+        <!-- Google Trust Badge (No review count number per business requirements) -->
+        <div class="inline-flex items-center gap-2 bg-amber-50/90 border border-amber-200/90 px-3.5 sm:px-4 py-1.5 rounded-full text-xs font-semibold text-slate-800 mb-6 shadow-2xs">
+          <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24">
+            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"/>
+            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/>
+          </svg>
+          <span class="text-brandOrange font-bold tracking-tight">★★★★★</span>
+          <span class="font-bold text-brandNavy">5.0 Google Rating</span>
+          <span class="text-slate-300">&bull;</span>
+          <span class="text-slate-600">Verified Local Customer Reviews</span>
+        </div>
+
+        <!-- Centered Single Review Box with Slider Arrows -->
+        <div class="relative bg-slate-50 p-6 sm:p-10 rounded-2xl border border-slate-200 shadow-sm max-w-2xl mx-auto">
+          <div class="text-brandOrange text-base sm:text-lg mb-3 tracking-wide">★★★★★</div>
+          <p id="review-text" class="text-slate-700 text-xs sm:text-sm md:text-base italic leading-relaxed mb-4">
+            "My washing machine broke but these guys completely saved the day. The technician arrived on time, diagnosed the issue quickly, and fixed it with zero hidden fees. Reliable same-day service!"
+          </p>
+          <div class="text-xs font-heading font-bold text-brandDarkBlue" id="review-author">
+            — Shehraj Singh
+          </div>
+
+          <!-- Subtle Prev / Next Navigation -->
+          <div class="flex items-center justify-center gap-4 mt-6">
+            <button onclick="prevReview()" class="w-8 h-8 rounded-full border border-slate-300 text-slate-600 hover:text-brandOrange hover:border-brandOrange flex items-center justify-center text-sm font-bold transition-colors">
+              ‹
+            </button>
+            <span class="text-[11px] text-slate-400 font-semibold" id="review-counter">1 / 5</span>
+            <button onclick="nextReview()" class="w-8 h-8 rounded-full border border-slate-300 text-slate-600 hover:text-brandOrange hover:border-brandOrange flex items-center justify-center text-sm font-bold transition-colors">
+              ›
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. WASHER / APPLIANCE BRANDS (CLEAN MULTI-COLUMN LIST MATCHING REFERENCE) -->
+    <section class="py-12 sm:py-16 bg-slate-50 border-b border-brandBorder" id="brands">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+
+        <h2 class="text-xl sm:text-2xl font-heading font-bold text-slate-900 tracking-tight mb-2">
+          All 6 Appliance Brands We Repair
+        </h2>
+        <p class="text-slate-600 text-xs sm:text-sm max-w-md mx-auto mb-8 font-medium">
+          We Service All Major Brands With Genuine Quality Parts
+        </p>
+
+        <!-- Multi-column clean grid (6 columns desktop, 3 columns tablet, 2 columns mobile) -->
+        <div id="brands-list-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-y-3.5 gap-x-4 sm:gap-x-5 text-xs sm:text-sm text-slate-700 font-semibold text-left max-w-5xl mx-auto">
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Samsung</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>LG</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Whirlpool</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Bosch</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>GE Appliances</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>KitchenAid</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Maytag</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Frigidaire</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Kenmore</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Electrolux</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Miele</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Sub-Zero</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Thermador</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Viking</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Amana</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Hotpoint</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>JennAir</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Speed Queen</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Fisher &amp; Paykel</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Haier</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Danby</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Insignia</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Blomberg</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Hisense</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Asko</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Bertazzoni</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Dacor</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Fulgor Milano</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Liebherr</span>
+          </div>
+                    <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-brandOrange shrink-0"></span>
+            <span>Sharp</span>
+          </div>
+                  </div>
+
+      </div>
+    </section>
+
+
+    <!-- SECTION 5: SERVICE AREA - GEOGRAPHIC COVERAGE & RADIUS -->
+    <section class="py-14 sm:py-20 bg-white border-b border-brandBorder" id="service-areas">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+        <div class="text-center mb-12">
+          <h2 class="text-xl sm:text-2xl font-heading font-bold text-slate-900 tracking-tight mb-2">
+            Service Area &amp; Coverage Radius
+          </h2>
+          <p class="text-slate-600 text-xs sm:text-sm max-w-xl mx-auto font-medium">
+            Local service technicians stationed across Southern Ontario for fast on-site dispatch.
+          </p>
+          <div class="w-16 h-1 bg-brandOrange mx-auto mt-3 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+
+          <!-- Cities List Grid -->
+          <div class="lg:col-span-7 bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
+            <h3 class="font-heading font-bold text-brandDarkBlue text-base mb-4 flex items-center gap-2">
+              <svg class="w-5 h-5 text-brandOrange" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              Southern Ontario Cities &amp; Regions We Serve:
+            </h3>
+
+            <div
+              class="grid grid-cols-2 sm:grid-cols-3 gap-y-3 gap-x-4 text-xs sm:text-sm text-slate-800 font-semibold">
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Toronto</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Mississauga</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Brampton</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Milton</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Oakville</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Burlington</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Hamilton</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Kitchener</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Waterloo</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Cambridge</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Guelph</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Oshawa</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Ajax</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Pickering</div>
+              <div class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-brandOrange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> Barrie</div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
+              <span class="text-xs text-slate-600 font-medium">Don't see your city? Call us to check availability in your area.</span>
+              <a href="tel:+19057178905" onclick="trackGtmCall('service_area_check_city')"
+                class="gtm-ppc-call inline-flex items-center gap-1.5 bg-brandOrange hover:bg-brandOrangeHover text-white font-bold px-3.5 py-1.5 rounded-lg text-xs tracking-wide transition-all shadow-xs shrink-0 active:scale-95">
+                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                </svg>
+                <span>Call Dispatch: 905-717-8905</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact to Book Repair Card -->
+          <div
+            class="lg:col-span-5 bg-brandDarkBlue rounded-3xl p-6 sm:p-8 text-white relative overflow-hidden min-h-[320px] flex flex-col justify-between shadow-xl">
+            <div>
+              <div class="mb-4 inline-flex items-center bg-white px-3.5 py-2 rounded-2xl shadow-sm">
+                <picture>
+                  <source srcset="../img/logo.webp" type="image/webp">
+                  <img src="../img/logo-opt.png" alt="Appliance Repair Knights Logo" width="160" height="40"
+                    class="h-9 sm:h-10 w-auto object-contain" loading="lazy">
+                </picture>
+              </div>
+              <h3 class="text-2xl font-heading font-bold mb-2 text-white">Contact to Book Repair Today</h3>
+              <p class="text-xs text-slate-200 leading-relaxed">
+                Connect directly with our local appliance team to confirm schedule availability and get your appliance inspected promptly.
+              </p>
+            </div>
+
+            <div class="space-y-2.5 my-4">
+              <div class="flex items-center gap-2.5 text-xs bg-white/10 p-2.5 rounded-xl backdrop-blur-xs">
+                <svg class="w-4 h-4 text-brandOrange flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-slate-100 font-medium">Diagnostic Fee Waived with Repair</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-xs bg-white/10 p-2.5 rounded-xl backdrop-blur-xs">
+                <svg class="w-4 h-4 text-brandOrange flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-slate-100 font-medium">Comprehensive Written Parts &amp; Labour Warranty</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-xs bg-white/10 p-2.5 rounded-xl backdrop-blur-xs">
+                <svg class="w-4 h-4 text-brandOrange flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-slate-100 font-medium">Transparent Upfront Written Quotes</span>
+              </div>
+            </div>
+
+            <a href="tel:+19057178905" onclick="trackGtmCall('service_area')"
+              class="gtm-ppc-call gtm-ppc-call-servicearea bg-brandOrange hover:bg-orange-600 text-white font-extrabold py-3.5 px-5 rounded-xl text-xs uppercase tracking-wider text-center transition-all shadow-md">
+              CALL TO BOOK: 905-717-8905
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 10. BOOK YOUR REPAIR TODAY (FINAL PRE-FOOTER CTA MATCHING REFERENCE) -->
+    <section class="py-14 sm:py-20 bg-white text-center border-b border-brandBorder" id="final-cta">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 space-y-4">
+        <h2 class="text-xl sm:text-2xl font-heading font-bold text-slate-900 tracking-tight">
+          Book Your Same-Day Appliance Repair Today
+        </h2>
+        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-xl mx-auto">
+          Don't wait while laundry piles up or broken appliances cause disruption. Call our priority dispatch center now or request a callback to secure your same-day repair appointment near you.
+        </p>
+        <div class="pt-2 flex flex-wrap items-center justify-center gap-3">
+          <a href="tel:+19057178905" onclick="trackGtmCall('bottom_cta_call')" class="gtm-ppc-call bg-brandOrange hover:bg-brandOrangeHover text-white font-bold px-7 py-3 rounded-xl text-xs sm:text-sm uppercase tracking-wider transition-all shadow-md flex items-center gap-2">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+            <span>CALL NOW: 905-717-8905</span>
+          </a>
+          <a href="#ppc-quote-modal" onclick="openLeadModal(); return false;" class="bg-brandBlue hover:bg-brandDarkBlue text-white font-extrabold px-6 py-3.5 rounded-xl text-xs sm:text-sm uppercase tracking-wider transition-all shadow-sm">
+            <span>BOOK SAME-DAY SLOT</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 11. HIGH-CONVERTING TRUST FOOTER & DISPATCH DIRECTORY -->
+  <footer class="ppc-footer-root pt-0 pb-28 sm:pb-14 text-xs font-sans">
+    
+    <!-- Top Value & Guarantee Assurance Bar -->
+    <div class="ppc-trust-strip py-6 px-4 sm:px-6">
+      <div class="max-w-6xl mx-auto ppc-trust-strip-grid">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/15 border border-blue-500/30 flex items-center justify-center shrink-0 text-blue-400">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+          </div>
+          <div>
+            <div class="font-heading font-extrabold text-white text-xs">Fee Waived w/ Repair</div>
+            <div class="text-[11px] text-slate-400">Diagnostic fee credited on repair</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-orange-500/15 border border-orange-500/30 flex items-center justify-center shrink-0 text-brandOrange">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+          </div>
+          <div>
+            <div class="font-heading font-extrabold text-white text-xs">Written Warranty</div>
+            <div class="text-[11px] text-slate-400">Parts &amp; labour fully guaranteed</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/15 border border-blue-500/30 flex items-center justify-center shrink-0 text-blue-400">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+          </div>
+          <div>
+            <div class="font-heading font-extrabold text-white text-xs">Certified Technicians</div>
+            <div class="text-[11px] text-slate-400">Experienced &amp; fully insured</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-orange-500/15 border border-orange-500/30 flex items-center justify-center shrink-0 text-brandOrange">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <div>
+            <div class="font-heading font-extrabold text-white text-xs">Prompt GTA Dispatch</div>
+            <div class="text-[11px] text-slate-400">Available daily across Toronto</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Footer Multi-Column Grid -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 pt-12 pb-10">
+      <div class="ppc-footer-grid pb-12 border-b border-slate-800/80">
+
+        <!-- Column 1: Brand Authority & Rapid Dispatch Hub -->
+        <div class="ppc-footer-col">
+          <picture>
+            <source srcset="../img/Appliance_Repair_Knights_Logo-white.avif" type="image/avif">
+            <source srcset="../img/logo.webp" type="image/webp">
+            <img src="../img/logo-opt.png" alt="Appliance Repair Knights Logo" width="190" height="46" class="h-10 w-auto object-contain brightness-0 invert opacity-95">
+          </picture>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm m-0">
+            Certified residential appliance repair specialists providing same-day diagnostics, genuine quality replacement parts, and professional-grade repairs across the Greater Toronto Area.
+          </p>
+
+          <!-- Live Dispatch Status Card -->
+          <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-3.5 space-y-2 max-w-xs shadow-inner">
+            <div class="flex items-center justify-between text-[11px]">
+              <span class="inline-flex items-center gap-1.5 font-bold text-brandOrange">
+                <span class="w-2 h-2 rounded-full bg-brandOrange animate-pulse"></span>
+                Dispatch Active Today
+              </span>
+              <span class="text-slate-400">8:00 AM – 8:00 PM</span>
+            </div>
+            <div class="text-[11px] text-slate-400">
+              Certified technicians ready for prompt local dispatch.
+            </div>
+          </div>
+
+          <!-- Direct Dual Conversion Buttons -->
+          <div class="pt-1 flex flex-wrap items-center gap-2.5">
+            <a href="tel:+19057178905" onclick="trackGtmCall('footer_call')" class="gtm-ppc-call inline-flex items-center gap-2 bg-brandOrange hover:bg-brandOrangeHover text-white font-black px-4 py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all shadow-md active:scale-95">
+              <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+              <span>905-717-8905</span>
+            </a>
+            <a href="#ppc-quote-modal" onclick="openLeadModal(); return false;" class="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white font-bold px-4 py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all border border-white/20 active:scale-95">
+              <svg class="w-3.5 h-3.5 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+              <span>Book Callback</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Residential Services -->
+        <div class="ppc-footer-col">
+          <div class="ppc-footer-heading">
+            <span>Our Services</span>
+            <span class="ppc-footer-heading-bar"></span>
+          </div>
+          <ul class="ppc-footer-list text-xs">
+            <li><a href="index.html?service=washer" class="ppc-footer-link"><span>›</span> Washing Machine Repair</a></li>
+            <li><a href="index.html?service=refrigerator" class="ppc-footer-link"><span>›</span> Refrigerator &amp; Freezer Repair</a></li>
+            <li><a href="index.html?service=dryer" class="ppc-footer-link"><span>›</span> Clothes Dryer Repair</a></li>
+            <li><a href="index.html?service=dishwasher" class="ppc-footer-link"><span>›</span> Dishwasher Repair &amp; Diagnostics</a></li>
+            <li><a href="index.html?service=stove" class="ppc-footer-link"><span>›</span> Oven, Range &amp; Stove Repair</a></li>
+            <li><a href="index.html?service=microwave" class="ppc-footer-link"><span>›</span> Built-In Microwave Repair</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: GTA Service Zones -->
+        <div class="ppc-footer-col">
+          <div class="ppc-footer-heading">
+            <span>GTA Coverage</span>
+            <span class="ppc-footer-heading-bar"></span>
+          </div>
+          <ul class="ppc-footer-list text-xs text-slate-400">
+            <li class="flex items-center gap-1.5"><span class="text-brandOrange font-bold">✓</span> Toronto &amp; Downtown Core</li>
+            <li class="flex items-center gap-1.5"><span class="text-brandOrange font-bold">✓</span> North York, Scarborough &amp; Etobicoke</li>
+            <li class="flex items-center gap-1.5"><span class="text-brandOrange font-bold">✓</span> Mississauga, Brampton &amp; Peel</li>
+            <li class="flex items-center gap-1.5"><span class="text-brandOrange font-bold">✓</span> Vaughan, Woodbridge &amp; Richmond Hill</li>
+            <li class="flex items-center gap-1.5"><span class="text-brandOrange font-bold">✓</span> Markham, Thornhill &amp; York Region</li>
+            <li class="flex items-center gap-1.5"><span class="text-brandOrange font-bold">✓</span> Oakville, Burlington &amp; Halton</li>
+          </ul>
+          <div class="pt-1 text-[11px] text-slate-400 leading-snug">
+            Mobile technicians stationed locally for fast residential arrivals.
+          </div>
+        </div>
+
+        <!-- Column 4: Trust, Safety & Compliance -->
+        <div class="ppc-footer-col">
+          <div class="ppc-footer-heading">
+            <span>Safety &amp; Compliance</span>
+            <span class="ppc-footer-heading-bar"></span>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="flex flex-wrap gap-1.5">
+            <span class="ppc-badge-chip border-blue-500/40 text-blue-300 bg-blue-950/40">
+              <span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span> Fully Insured
+            </span>
+            <span class="ppc-badge-chip border-blue-500/40 text-blue-300 bg-blue-950/40">
+              <span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span> Certified Techs
+            </span>
+            <span class="ppc-badge-chip border-orange-500/40 text-orange-300 bg-orange-950/40">
+              <span class="w-1.5 h-1.5 rounded-full bg-brandOrange"></span> Genuine Parts
+            </span>
+          </div>
+
+          <!-- Payment Options -->
+          <div>
+            <div class="ppc-footer-subheading">Accepted Payment</div>
+            <div class="flex flex-wrap items-center gap-1.5">
+              <span class="bg-white/10 px-2 py-1 rounded text-[10px] text-white font-semibold">Interac</span>
+              <span class="bg-white/10 px-2 py-1 rounded text-[10px] text-white font-semibold">VISA</span>
+              <span class="bg-white/10 px-2 py-1 rounded text-[10px] text-white font-semibold">MasterCard</span>
+              <span class="bg-white/10 px-2 py-1 rounded text-[10px] text-white font-semibold">AMEX</span>
+              <span class="bg-white/10 px-2 py-1 rounded text-[10px] text-white font-semibold">Cash</span>
+            </div>
+          </div>
+
+          <!-- Legal Policy Quick Links -->
+          <div class="pt-2 flex flex-wrap gap-x-4 gap-y-1.5 text-[11px] text-slate-400">
+            <a href="../privacy-policy" target="_blank" class="hover:text-white transition-colors underline decoration-slate-700">Privacy Policy</a>
+            <a href="../terms-and-conditions" target="_blank" class="hover:text-white transition-colors underline decoration-slate-700">Terms of Service</a>
+            <a href="../disclaimer" target="_blank" class="hover:text-white transition-colors underline decoration-slate-700">Google Ads Disclaimer</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Transparent Legal Disclaimer -->
+      <div class="pt-6 space-y-3 text-center text-slate-400">
+        <p class="text-[11px] font-medium text-slate-300">
+          &copy; 2026 Appliance Repair Knights Ltd. All Rights Reserved. Fully Licensed &amp; Insured Residential Service Provider in Ontario.
+        </p>
+        <p class="text-[10px] text-slate-400 max-w-4xl mx-auto leading-relaxed">
+          <strong>Notice:</strong> Appliance Repair Knights is an independent residential appliance repair company. All brand names, trademarks, model designations, and logos (including Samsung, LG, Whirlpool, Bosch, GE, KitchenAid, Maytag, Frigidaire, Sub-Zero, and others) are property of their respective owners and are displayed purely to describe service and parts compatibility. Transparent upfront written quotes are provided before any repair begins.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING MOBILE WHATSAPP PILL (DISCREET & REVEALED ON SCROLL) -->
+  <a id="mobile-whatsapp-btn" href="https://wa.me/19057178905?text=Hi%2C%20I%20need%20appliance%20repair%20service%20in%20the%20GTA" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" onclick="trackGtmWhatsApp('floating_btn')" class="fixed bottom-[74px] right-3.5 z-40 bg-emerald-600 hover:bg-emerald-700 text-white w-11 h-11 rounded-full shadow-lg flex items-center justify-center md:hidden transition-all duration-300 transform translate-y-12 opacity-0 pointer-events-none active:scale-95 border-2 border-white">
+    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" /></svg>
+  </a>
+
+  <!-- STICKY MOBILE CALL & BOOKING BAR (SMART ON-SCROLL REVEAL & DUAL POWER CTAs) -->
+  <div id="mobile-sticky-bar" class="fixed bottom-0 left-0 right-0 z-50 bg-slate-950/95 backdrop-blur-md px-3 py-2.5 border-t border-slate-800 flex items-center justify-between gap-2.5 md:hidden shadow-2xl transition-all duration-300 transform translate-y-full opacity-0 pointer-events-none" style="padding-bottom: max(0.625rem, env(safe-area-inset-bottom));">
+    <a href="#ppc-quote-modal" onclick="openLeadModal(); return false;" class="w-[36%] bg-brandBlue hover:bg-brandDarkBlue text-white font-extrabold py-3 px-2 rounded-xl text-xs uppercase tracking-tight shadow-md active:scale-95 transition-transform flex items-center justify-center gap-1.5 text-center">
+      <svg class="w-3.5 h-3.5 text-blue-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+      <span>BOOK ONLINE</span>
+    </a>
+    <a href="tel:+19057178905" onclick="trackGtmCall('mobile_bar')" class="gtm-ppc-call flex-1 bg-brandOrange hover:bg-brandOrangeHover text-white font-black py-3 px-3 rounded-xl text-xs sm:text-sm uppercase tracking-wide shadow-md flex items-center justify-center gap-2 active:scale-95 transition-transform text-center">
+      <svg class="w-4 h-4 text-white shrink-0 animate-bounce" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+      <span>CALL: 905-717-8905</span>
+    </a>
+  </div>
+
+  <!-- POPUP LEAD CAPTURE MODAL (HIGH-CONVERTING & INSTANT) -->
+  <div id="ppc-quote-modal" class="fixed inset-0 z-50 bg-slate-900/70 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-200">
+      <button onclick="closeLeadModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-2xl font-bold w-8 h-8 rounded-full flex items-center justify-center bg-slate-100">&times;</button>
+      
+      <div class="mb-4">
+        <span class="bg-brandBlue text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-full tracking-wider">Priority Dispatch</span>
+        <h3 class="text-lg sm:text-xl font-heading font-bold text-slate-900 mt-2">Request Service Callback</h3>
+        <p class="text-xs text-slate-600 mt-1">A certified local technician will call you in &lt;15 mins with arrival schedule and upfront quote.</p>
+      </div>
+
+      <form id="ppc-modal-form" onsubmit="event.preventDefault(); submitLeadModal();" class="space-y-3">
+        <div>
+          <input type="text" id="modal-name" required placeholder="Full Name *" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brandOrange outline-none font-medium">
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <input type="tel" id="modal-phone" required placeholder="Phone Number *" inputmode="tel" autocomplete="tel" maxlength="14" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brandOrange outline-none font-medium">
+          </div>
+          <div>
+            <input type="email" id="modal-email" placeholder="Email Address (Optional)" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brandOrange outline-none font-medium">
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <select id="modal-city" required class="w-full px-3.5 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brandOrange outline-none bg-white font-medium cursor-pointer">
+              <option value="Toronto" selected>Toronto</option>
+              <option value="Mississauga">Mississauga</option>
+              <option value="Brampton">Brampton</option>
+              <option value="Vaughan">Vaughan</option>
+              <option value="Markham">Markham</option>
+              <option value="Richmond Hill">Richmond Hill</option>
+              <option value="Oakville">Oakville</option>
+              <option value="Burlington">Burlington</option>
+              <option value="Hamilton">Hamilton</option>
+              <option value="Milton">Milton</option>
+              <option value="Oshawa">Oshawa</option>
+              <option value="Barrie">Barrie</option>
+            </select>
+          </div>
+          <div>
+            <select id="modal-appliance" required class="w-full px-3.5 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brandOrange outline-none bg-white font-medium cursor-pointer">
+              <option value="Refrigerator" selected>Refrigerator</option>
+              <option value="Washing Machine">Washing Machine</option>
+              <option value="Clothes Dryer">Clothes Dryer</option>
+              <option value="Dishwasher">Dishwasher</option>
+              <option value="Oven & Stove">Oven / Stove</option>
+              <option value="Microwave">Microwave</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" id="modal-submit-btn" class="w-full bg-brandOrange hover:bg-brandOrangeHover text-white font-extrabold py-3.5 px-5 rounded-xl text-xs sm:text-sm shadow-md transition-all uppercase tracking-wider cursor-pointer mt-2">
+          <span>CHECK AVAILABILITY &amp; BOOK →</span>
+        </button>
+
+        <p class="text-[11px] text-center text-slate-500 font-medium pt-1">
+          ✓ Fee waived w/ repair • Upfront written quote • Quality parts
+        </p>
+        <p class="text-[10px] text-center text-slate-400 font-normal">
+          We protect your privacy. By submitting, you agree to our <a href="../privacy-policy" target="_blank" class="underline hover:text-slate-600">Privacy Policy</a>.
+        </p>
+      </form>
+
+      <div id="modal-success" class="hidden bg-blue-50 border border-brandBlue/30 p-6 rounded-2xl text-center space-y-2">
+        <div class="text-2xl text-brandBlue font-bold">✓ Request Received!</div>
+        <p class="text-xs text-brandNavy font-medium">A technician will call your number within 15 minutes.</p>
+        <a href="tel:+19057178905" onclick="trackGtmCall('modal_success_call')" class="gtm-ppc-call inline-block mt-2 bg-brandOrange hover:bg-brandOrangeHover text-white text-xs font-extrabold py-2 px-4 rounded-lg">Call Dispatch: 905-717-8905</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS FOR REVIEWS, MODAL & LEAD HANDLING -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function trackGtmCall(location) {
+      try {
+        if (typeof loadGTM === 'function') loadGTM();
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          'event': 'click_phone_ppc',
+          'button_location': location,
+          'click_location': location,
+          'value': 1
+        });
+        window.dataLayer.push({
+          'event': 'ppc_phone_click',
+          'button_location': location,
+          'click_location': location,
+          'value': 1
+        });
+      } catch (err) {
+        console.warn('Call tracking error:', err);
+      }
+      return true;
+    }
+    function trackGtmWhatsApp(location) {
+      try {
+        if (typeof loadGTM === 'function') loadGTM();
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          'event': 'click_whatsapp_ppc',
+          'button_location': location,
+          'click_location': location,
+          'value': 1
+        });
+        window.dataLayer.push({
+          'event': 'ppc_whatsapp_click',
+          'button_location': location,
+          'click_location': location,
+          'value': 1
+        });
+      } catch (err) {
+        console.warn('WhatsApp tracking error:', err);
+      }
+      return true;
+    }
+    function trackGtmFormSuccess(appliance, city) {
+      if (typeof loadGTM === 'function') loadGTM();
+      // Fires Google Ads Conversion Tag 19 (AW-18211585964/m_1yCPydo-AcEKz_-utD) & GA4 generate_lead
+      window.dataLayer.push({
+        'event': 'ppc_lead_form_submitted',
+        'appliance': appliance,
+        'lead_appliance': appliance,
+        'service': appliance,
+        'city': city,
+        'lead_city': city,
+        'value': 1
+      });
+      window.dataLayer.push({
+        'event': 'ppc_form_success',
+        'appliance': appliance,
+        'lead_appliance': appliance,
+        'service': appliance,
+        'city': city,
+        'lead_city': city,
+        'value': 1
+      });
+      window.dataLayer.push({
+        'event': 'generate_lead',
+        'service': appliance,
+        'appliance': appliance,
+        'lead_appliance': appliance,
+        'city': city,
+        'lead_city': city,
+        'value': 1
+      });
+    }
+
+    // Modal Controller & Service Area Pre-selector
+    function selectServiceAreaCity(cityName) {
+      const modalCity = document.getElementById('modal-city');
+      if (modalCity) {
+        let found = false;
+        for (let opt of modalCity.options) {
+          if (opt.value.toLowerCase() === cityName.toLowerCase()) {
+            opt.selected = true;
+            found = true;
+            break;
+          }
+        }
+        if (!found) {
+          const opt = document.createElement('option');
+          opt.value = cityName;
+          opt.textContent = cityName;
+          opt.selected = true;
+          modalCity.appendChild(opt);
+        }
+      }
+      openLeadModal();
+    }
+
+    function openLeadModal() {
+      document.getElementById('ppc-quote-modal').classList.remove('hidden');
+    }
+    function closeLeadModal() {
+      document.getElementById('ppc-quote-modal').classList.add('hidden');
+    }
+
+    // Auto-Format Phone Input (e.g. (905) 717-8905)
+    (function initPhoneMask() {
+      const phoneInput = document.getElementById('modal-phone');
+      if (!phoneInput) return;
+      phoneInput.setAttribute('maxlength', '14');
+      phoneInput.setAttribute('inputmode', 'tel');
+      phoneInput.addEventListener('input', function (e) {
+        let digits = e.target.value.replace(/\D/g, '');
+        if (digits.length > 10 && digits.startsWith('1')) digits = digits.slice(1);
+        digits = digits.slice(0, 10);
+        if (digits.length <= 3) {
+          e.target.value = digits;
+        } else if (digits.length <= 6) {
+          e.target.value = '(' + digits.slice(0, 3) + ') ' + digits.slice(3);
+        } else {
+          e.target.value = '(' + digits.slice(0, 3) + ') ' + digits.slice(3, 6) + '-' + digits.slice(6);
+        }
+      });
+    })();
+
+    // Lead Form Submit
+    function submitLeadModal() {
+      const name = document.getElementById('modal-name').value.trim();
+      const phone = document.getElementById('modal-phone').value.trim();
+      const email = document.getElementById('modal-email').value.trim();
+      const city = document.getElementById('modal-city').value;
+      const appliance = document.getElementById('modal-appliance').value;
+      const submitBtn = document.getElementById('modal-submit-btn');
+
+      if (!name || !phone) return;
+      submitBtn.disabled = true;
+      submitBtn.innerText = "SENDING REQUEST...";
+
+      // Retrieve GCLID and Campaign UTMs (live URL or persisted from arrival)
+      var urlParams = new URLSearchParams(window.location.search);
+      var gclid = urlParams.get('gclid') || '';
+      if (!gclid) {
+        try { gclid = sessionStorage.getItem('ppc_gclid') || ''; } catch (e) {}
+      }
+      var utmSource = urlParams.get('utm_source') || '';
+      if (!utmSource) {
+        try { utmSource = sessionStorage.getItem('ppc_utm_source') || ''; } catch (e) {}
+      }
+      var utmMedium = urlParams.get('utm_medium') || '';
+      if (!utmMedium) {
+        try { utmMedium = sessionStorage.getItem('ppc_utm_medium') || ''; } catch (e) {}
+      }
+      var utmCampaign = urlParams.get('utm_campaign') || '';
+      if (!utmCampaign) {
+        try { utmCampaign = sessionStorage.getItem('ppc_utm_campaign') || ''; } catch (e) {}
+      }
+
+      const payload = {
+        name: name,
+        phone: phone,
+        email: email,
+        city: city,
+        appliance: appliance,
+        page: window.location.pathname + window.location.search,
+        gclid: gclid,
+        utm_source: utmSource,
+        utm_medium: utmMedium,
+        utm_campaign: utmCampaign
+      };
+
+      const leadEndpoint = (function() {
+        const p = window.location.pathname;
+        const idx = p.indexOf('/same-day-repair');
+        if (idx !== -1) {
+          return p.substring(0, idx) + '/same-day-repair/send-lead.php';
+        }
+        return 'send-lead.php';
+      })();
+
+      fetch(leadEndpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.status === 'success') {
+          trackGtmFormSuccess(appliance, city);
+          document.getElementById('ppc-modal-form').classList.add('hidden');
+          document.getElementById('modal-success').classList.remove('hidden');
+        } else {
+          throw new Error('Server error');
+        }
+      })
+      .catch(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerText = "CHECK AVAILABILITY & BOOK →";
+        alert('Could not submit online. Please call us directly at 905-717-8905 for immediate service.');
+      });
+    }
+
+    // Topbar Micro-CTA Slider Logic (Auto-rotating every 3.5s)
+    (function initTopbarSlider() {
+      const slidesContainer = document.getElementById('topbar-slides');
+      if (!slidesContainer) return;
+      const totalSlides = slidesContainer.children.length;
+      let currentSlide = 0;
+      setInterval(() => {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        slidesContainer.style.transform = `translateY(-${currentSlide * 20}px)`;
+      }, 3500);
+    })();
+
+    // Review Slider Logic with Smooth Hands-Free Auto-Rotation
+    const reviewsData = [
+      {
+        quote: "My washing machine broke but these guys completely saved the day. The technician arrived on time, diagnosed the issue quickly, and fixed it with zero hidden fees. Reliable same-day service!",
+        author: "Shehraj Singh"
+      },
+      {
+        quote: "Sunny was prompt, professional, and diagnosed our appliance problem accurately. Had the replacement part on the truck and finished the repair in under an hour. Highly recommend!",
+        author: "Nafisa Ali"
+      },
+      {
+        quote: "Outstanding same-day service! Called at 9 AM and by 12:30 PM the technician was at our home with the exact replacement part. Upfront pricing and very polite.",
+        author: "Emily Smith"
+      },
+      {
+        quote: "Very impressed with the transparent written quote. The diagnostic fee was completely waived once they fixed the machine. Will definitely call them again.",
+        author: "Dan Silverman"
+      },
+      {
+        quote: "Exceptional appliance repair service. Clear communication from the dispatch team and our appliance was running like brand new on the very same visit.",
+        author: "Sahibpreet Kaur"
+      }
+    ];
+    let curRevIdx = 0;
+    let reviewAutoTimer = null;
+
+    function updateReviewUI(smooth = true) {
+      const textEl = document.getElementById('review-text');
+      const authorEl = document.getElementById('review-author');
+      const counterEl = document.getElementById('review-counter');
+      if (!textEl || !authorEl) return;
+
+      if (smooth) {
+        textEl.style.opacity = '0';
+        authorEl.style.opacity = '0';
+        setTimeout(() => {
+          textEl.textContent = `"${reviewsData[curRevIdx].quote}"`;
+          authorEl.textContent = `— ${reviewsData[curRevIdx].author}`;
+          if (counterEl) counterEl.textContent = `${curRevIdx + 1} / ${reviewsData.length}`;
+          textEl.style.opacity = '1';
+          authorEl.style.opacity = '1';
+        }, 150);
+      } else {
+        textEl.textContent = `"${reviewsData[curRevIdx].quote}"`;
+        authorEl.textContent = `— ${reviewsData[curRevIdx].author}`;
+        if (counterEl) counterEl.textContent = `${curRevIdx + 1} / ${reviewsData.length}`;
+      }
+    }
+
+    function resetReviewTimer() {
+      if (reviewAutoTimer) clearInterval(reviewAutoTimer);
+      reviewAutoTimer = setInterval(nextReview, 5500);
+    }
+
+    function nextReview() {
+      curRevIdx = (curRevIdx + 1) % reviewsData.length;
+      updateReviewUI();
+      resetReviewTimer();
+    }
+
+    function prevReview() {
+      curRevIdx = (curRevIdx - 1 + reviewsData.length) % reviewsData.length;
+      updateReviewUI();
+      resetReviewTimer();
+    }
+
+    (function initReviewSlider() {
+      const reviewSection = document.getElementById('reviews');
+      if (!reviewSection) return;
+
+      const textEl = document.getElementById('review-text');
+      const authorEl = document.getElementById('review-author');
+      if (textEl) textEl.style.transition = 'opacity 0.2s ease-in-out';
+      if (authorEl) authorEl.style.transition = 'opacity 0.2s ease-in-out';
+
+      resetReviewTimer();
+
+      const card = reviewSection.querySelector('.relative.bg-slate-50');
+      if (card) {
+        card.addEventListener('mouseenter', () => { if (reviewAutoTimer) clearInterval(reviewAutoTimer); });
+        card.addEventListener('mouseleave', resetReviewTimer);
+        card.addEventListener('touchstart', () => { if (reviewAutoTimer) clearInterval(reviewAutoTimer); }, { passive: true });
+        card.addEventListener('touchend', resetReviewTimer, { passive: true });
+      }
+    })();
+
+    // Smart Sticky Mobile Bar On-Scroll Reveal (Cleaner Above-The-Fold CRO)
+    (function initStickyMobileBar() {
+      const bar = document.getElementById('mobile-sticky-bar');
+      const waBtn = document.getElementById('mobile-whatsapp-btn');
+      if (!bar) return;
+      let ticking = false;
+
+      function onScroll() {
+        // Show after user scrolls past hero section (~260px)
+        const shouldShow = window.scrollY > 260;
+        if (shouldShow) {
+          bar.classList.remove('translate-y-full', 'opacity-0', 'pointer-events-none');
+          bar.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+          if (waBtn) {
+            waBtn.classList.remove('translate-y-12', 'opacity-0', 'pointer-events-none');
+            waBtn.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+          }
+        } else {
+          bar.classList.add('translate-y-full', 'opacity-0', 'pointer-events-none');
+          bar.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+          if (waBtn) {
+            waBtn.classList.add('translate-y-12', 'opacity-0', 'pointer-events-none');
+            waBtn.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+          }
+        }
+        ticking = false;
+      }
+
+      window.addEventListener('scroll', function () {
+        if (!ticking) {
+          window.requestAnimationFrame(onScroll);
+          ticking = true;
+        }
+      }, { passive: true });
+
+      // Run once on initial page load
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', onScroll);
+      } else {
+        onScroll();
+      }
+    })();
+  </script>
+
+  <!-- Dynamic Client-Side Personalization for Query String URLs (?service=washer&city=toronto) -->
+  <script>
+    const DYNAMIC_SERVICES = {
+      appliance: {
+        key: 'appliance',
+        name: 'Appliance',
+        titleName: 'Appliance',
+        serviceLabel: 'Same-Day Repair for All 6 Major Household & Kitchen Appliances',
+        typesTitle: 'All 6 Major Appliances We Repair',
+        problemsTitle: 'Common Problems Across All 6 Appliances',
+        heroImg: '../img/washing-machine-repair-service.webp',
+        desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All 6 Major Appliances:</strong> Fridges, washers, dryers, dishwashers, stoves &amp; microwaves.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Samsung, LG, Whirlpool, Bosch, GE, Maytag &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">First-Visit Resolution:</strong> Fully equipped technicians ready to resolve issues on-site.</span></li></ul>',
+        problems: [
+          'Refrigerator Not Cooling / Freezing Food',
+          'Washing Machine Leaking or Not Draining',
+          'Clothes Dryer Running With No Heat',
+          'Dishwasher Leaving Food Film or Leaking',
+          'Oven & Stove Burners Failing to Ignite',
+          'Microwave Sparking or Not Heating Food'
+        ],
+        types: [
+          'Refrigerators & Freezers (All Makes & Models)',
+          'Washing Machines (Front-Load & Top-Load)',
+          'Clothes Dryers (Gas & Electric Vented)',
+          'Dishwashers (Built-In & Portable Units)',
+          'Ovens, Stoves & Ranges (Gas, Electric & Induction)',
+          'Microwaves (Over-the-Range & Built-In Drawer)'
+        ]
+      },
+      fridge: {
+        key: 'fridge',
+        name: 'Refrigerator',
+        titleName: 'Refrigerator',
+        serviceLabel: 'Refrigerator Not Cooling, Leaking or Ice Maker Broken?',
+        typesTitle: 'Types of Refrigerators We Repair',
+        problemsTitle: 'Common Refrigerator Problems',
+        heroImg: '../img/refrigerator-repair-in-a-modern-kitchen.webp',
+        desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Refrigerator Types:</strong> French door, side-by-side, bottom freezer &amp; built-ins.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Samsung, LG, Whirlpool, Bosch, KitchenAid &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">Cooling &amp; Leak Repairs:</strong> Thermostats, compressors, fans &amp; ice makers fixed on-site.</span></li></ul>',
+        ctaText: 'Book Your Refrigerator Repair Today',
+        problems: [
+          'Fridge Not Cooling / Warm Compartment',
+          'Water Leaking on Floor / Defrost Block',
+          'Ice Maker Jammed or Not Working',
+          'Excessive Freezer Frost & Ice Buildup',
+          'Loud Humming, Clicking or Compressor Noise',
+          'Door Gasket / Magnetic Seal Leaks'
+        ],
+        types: [
+          'French Door Refrigerators',
+          'Side-by-Side Refrigerators',
+          'Bottom-Freezer Refrigerators',
+          'Top-Freezer Traditional Units',
+          'Built-In & Counter-Depth Fridges',
+          'Wine Coolers & Beverage Centers'
+        ]
+      },
+      washer: {
+        key: 'washer',
+        name: 'Washing Machine',
+        titleName: 'Washing Machine',
+        serviceLabel: 'Washer Leaking, Not Draining or Won\'t Spin?',
+        typesTitle: 'Types of Washing Machines We Repair',
+        problemsTitle: 'Common Washing Machine Problems',
+        heroImg: '../img/washing-machine-repair-in-progress.webp',
+        desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Washer Types:</strong> Front-load, top-load, high-efficiency &amp; stacked laundry units.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Samsung, LG, Whirlpool, Maytag, Bosch &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">Drain &amp; Spin Repairs:</strong> Pumps, drive belts, door locks &amp; error codes resolved on-site.</span></li></ul>',
+        ctaText: 'Book Your Washer Repair Today',
+        problems: [
+          'Washer Not Draining / Standing Water',
+          'Drum Won\'t Spin or Agitate',
+          'Violent Shaking & Excessive Vibrations',
+          'Water Leaking From Door or Bottom',
+          'Lid Lock / Door Latch Stuck Closed',
+          'Error Codes & Mid-Cycle Shutoffs'
+        ],
+        types: [
+          'Front-Loading Washing Machines',
+          'Top-Loading Agitator Washers',
+          'High-Efficiency (HE) Washers',
+          'Stackable Washer-Dryer Units',
+          'Compact & European Style Washers',
+          'Smart Wi-Fi Connected Washers'
+        ]
+      },
+      dryer: {
+        key: 'dryer',
+        name: 'Clothes Dryer',
+        titleName: 'Dryer',
+        serviceLabel: 'Dryer Not Heating or Taking Too Long to Dry?',
+        typesTitle: 'Types of Dryers We Repair',
+        problemsTitle: 'Common Clothes Dryer Problems',
+        heroImg: '../img/clothes-dryer-repair-in-a-modern-laundry.webp',
+        desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Dryer Types:</strong> Vented, condenser, heat pump &amp; stacked matching units.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Whirlpool, Samsung, LG, Maytag, Bosch &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">Heating &amp; Motor Repairs:</strong> Thermal fuses, heating elements, belts &amp; rollers fixed on-site.</span></li></ul>',
+        ctaText: 'Schedule Dryer Repair',
+        problems: [
+          'Dryer Not Heating / Blowing Cold Air',
+          'Drum Not Turning or Squeaking Loudly',
+          'Takes 2-3 Cycles to Dry Clothes',
+          'Dryer Overheating / Burning Smell',
+          'Will Not Start / Push-To-Start Fault',
+          'Lint Filter & Vent Airflow Restrictions'
+        ],
+        types: [
+          'Electric Vented Dryers',
+          'Natural Gas & Propane Dryers',
+          'Heat Pump & Condenser Dryers',
+          'Front-Loading Match Dryers',
+          'Stacked Laundry Centers',
+          'Commercial Heavy-Duty Dryers'
+        ]
+      },
+      dishwasher: {
+        key: 'dishwasher',
+        name: 'Dishwasher',
+        titleName: 'Dishwasher',
+        serviceLabel: 'Dishwasher Not Draining, Cleaning or Leaking?',
+        typesTitle: 'Types of Dishwashers We Repair',
+        problemsTitle: 'Common Dishwasher Problems',
+        heroImg: '../img/dishwasher-repair-in-a-bright-kitchen.webp',
+        desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Dishwasher Types:</strong> Built-in 24-inch, compact 18-inch &amp; panel-ready units.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Bosch, Whirlpool, KitchenAid, Samsung, Miele &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">Drain &amp; Spray Repairs:</strong> Pumps, valves, spray arms &amp; door latch switches fixed on-site.</span></li></ul>',
+        ctaText: 'Book Dishwasher Repair',
+        problems: [
+          'Dishwasher Not Draining / Standing Water',
+          'Water Leaking From Door Gasket / Base',
+          'Dishes Coming Out Dirty / Gritty Film',
+          'Buttons Unresponsive / Won\'t Start',
+          'No Water Filling / Low Water Pressure',
+          'Loud Humming or Grinding Motor Noise'
+        ],
+        types: [
+          'Built-In Under-Counter Dishwashers',
+          'Integrated Panel-Ready Units',
+          'Double Drawer Dishwashers',
+          'Portable Freestanding Dishwashers',
+          'Stainless Steel Tall-Tub Units',
+          'Commercial Style Dishwashers'
+        ]
+      },
+      oven: {
+        key: 'oven',
+        name: 'Oven',
+        titleName: 'Oven',
+        serviceLabel: 'Oven Not Heating, Baking Unevenly, or Error Codes?',
+        typesTitle: 'Types of Ovens We Repair',
+        problemsTitle: 'Common Oven Problems',
+        heroImg: '../img/technician-repairing-a-modern-oven.webp',
+        desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Oven Types:</strong> Wall ovens, electric ranges, slide-in &amp; double oven units.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Samsung, LG, Whirlpool, Bosch, KitchenAid &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">Heat &amp; Sensor Repairs:</strong> Surface elements, bake elements, thermostats &amp; igniters fixed on-site.</span></li></ul>',
+        ctaText: 'Book Your Oven Repair Today',
+        problems: [
+          'Oven Not Heating or Uneven Baking',
+          'Bake or Broil Element Not Working',
+          'Oven Temperature Sensor Out of Calibration',
+          'Oven Door Lock Stuck on Self-Clean',
+          'Touchpad Control Board Error Codes',
+          'Gas Oven Igniter Not Lighting'
+        ],
+        types: [
+          'Electric Single & Double Wall Ovens',
+          'Slide-In & Freestanding Ranges',
+          'Convection & Smart Ovens',
+          'Gas Range & Wall Ovens',
+          'Built-In Warming Drawers',
+          'Commercial Style Cooking Ovens'
+        ]
+      },
+      stove: {
+        key: 'stove',
+        name: 'Stove',
+        titleName: 'Stove',
+        serviceLabel: 'Stove Burner Not Working or Cooktop Not Heating?',
+        typesTitle: 'Types of Stoves & Cooktops We Repair',
+        problemsTitle: 'Common Stove & Cooktop Problems',
+        heroImg: '../img/service-card-stove.webp',
+        desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Cooktop &amp; Stove Types:</strong> Smooth glass cooktops, electric ranges &amp; induction units.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Samsung, LG, Whirlpool, Bosch, KitchenAid &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">Surface Element Repairs:</strong> Burner coils, infinite switches, glass tops &amp; spark modules fixed on-site.</span></li></ul>',
+        ctaText: 'Book Your Stove Repair Today',
+        problems: [
+          'Electric Burner Element Not Turning On',
+          'Gas Burners Clicking Continuously',
+          'Smooth Glass Cooktop Element Not Heating',
+          'Induction Cooktop Not Detecting Cookware',
+          'Surface Burner Infinite Switch Broken',
+          'Touchpad Control Error Codes'
+        ],
+        types: [
+          'Smooth Ceramic Glass Cooktops',
+          'Gas Sealed-Burner Rangetops',
+          'Magnetic Induction Cooktops',
+          'Electric Radiant & Coil Stoves',
+          'Slide-In & Freestanding Stoves',
+          'Commercial Style Cooking Tops'
+        ]
+      },
+      microwave: {
+        key: 'microwave',
+        name: 'Microwave',
+        titleName: 'Microwave',
+        serviceLabel: 'Microwave Not Heating Food or Sparking Inside?',
+        typesTitle: 'Types of Microwaves We Repair',
+        problemsTitle: 'Common Microwave Problems',
+        heroImg: '../img/microwave-repair.webp',
+        desc: '<ul class="space-y-1.5 pt-1"><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Microwave Types:</strong> Over-the-range (OTR), built-in drawers &amp; countertop units.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">All Major Brands:</strong> Panasonic, Samsung, LG, Whirlpool, GE &amp; more.</span></li><li class="flex items-start gap-2"><span class="text-brandBlue font-bold text-sm shrink-0 leading-tight">✓</span><span><strong class="text-slate-900 font-bold">Heat &amp; Electrical Repairs:</strong> Magnetrons, door switches, capacitors &amp; turntables fixed on-site.</span></li></ul>',
+        ctaText: 'Book Microwave Repair',
+        problems: [
+          'Microwave Not Heating Food / Cold Inside',
+          'Sparking or Electrical Arcing in Cavity',
+          'Glass Turntable Plate Not Turning',
+          'Touchpad Buttons Completely Unresponsive',
+          'Trips Breaker When Door Closes',
+          'Loud Humming or Buzzing Noise'
+        ],
+        types: [
+          'Over-The-Range (OTR) Microwaves',
+          'Built-In Pull-Out Drawer Microwaves',
+          'Countertop High-Wattage Units',
+          'Convection Microwave Combos',
+          'Commercial Breakroom Microwaves',
+          'Built-In Trim-Kit Microwaves'
+        ]
+      }
+    };
+
+    function applyDynamicPersonalization() {
+      const params = (typeof getPpcRouteParams === 'function') 
+        ? getPpcRouteParams() 
+        : {
+            service: (new URLSearchParams(window.location.search).get('service') || '').toLowerCase().trim(),
+            city: (new URLSearchParams(window.location.search).get('city') || '').toLowerCase().trim(),
+            brand: (new URLSearchParams(window.location.search).get('brand') || '').toLowerCase().trim()
+          };
+      const serviceParam = params.service;
+      const cityParam = params.city;
+      const brandParam = params.brand;
+
+      if (!serviceParam && !cityParam && !brandParam) return;
+
+      const BRAND_NAMES = {
+        'lg': 'LG',
+        'samsung': 'Samsung',
+        'whirlpool': 'Whirlpool',
+        'bosch': 'Bosch',
+        'ge': 'GE',
+        'maytag': 'Maytag',
+        'kitchenaid': 'KitchenAid',
+        'frigidaire': 'Frigidaire',
+        'miele': 'Miele',
+        'subzero': 'Sub-Zero',
+        'sub-zero': 'Sub-Zero',
+        'kenmore': 'Kenmore',
+        'panasonic': 'Panasonic'
+      };
+      const brandName = BRAND_NAMES[brandParam] || (brandParam ? (brandParam.charAt(0).toUpperCase() + brandParam.slice(1)) : '');
+
+      let matchedService = null;
+      if (['washer', 'washing', 'washing-machine'].includes(serviceParam)) matchedService = DYNAMIC_SERVICES.washer;
+      else if (['fridge', 'refrigerator', 'freezer'].includes(serviceParam)) matchedService = DYNAMIC_SERVICES.fridge;
+      else if (['dryer', 'clothes-dryer'].includes(serviceParam)) matchedService = DYNAMIC_SERVICES.dryer;
+      else if (['dishwasher', 'dish-washer'].includes(serviceParam)) matchedService = DYNAMIC_SERVICES.dishwasher;
+      else if (serviceParam === 'oven') matchedService = DYNAMIC_SERVICES.oven;
+      else if (['stove', 'range', 'cooktop'].includes(serviceParam)) matchedService = DYNAMIC_SERVICES.stove;
+      else if (['microwave'].includes(serviceParam)) matchedService = DYNAMIC_SERVICES.microwave;
+      else if (['appliance', 'all', 'repair'].includes(serviceParam)) matchedService = DYNAMIC_SERVICES.appliance;
+
+      const CITY_NAMES = {
+        'richmond-hill': 'Richmond Hill',
+        'north-york': 'North York'
+      };
+      const cityName = CITY_NAMES[cityParam] || (cityParam ? cityParam.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') : '');
+      const brandPrefix = brandName ? `${brandName} ` : '';
+
+      if (matchedService || brandName || params.isNearMe) {
+        const srvName = matchedService ? matchedService.name : 'Appliance';
+        const srvTitle = matchedService ? matchedService.titleName : 'APPLIANCE';
+        if (params.isNearMe && !cityName) {
+          document.title = `Same-Day ${brandPrefix}${srvName} Repair Near You | Local Certified Technicians`;
+        } else {
+          document.title = `Same-Day ${brandPrefix}${srvName} Repair in ${cityName || 'Toronto & GTA'} | Local Certified Technicians`;
+        }
+        
+        const h1 = document.querySelector('h1');
+        if (h1) {
+          if (params.isNearMe && !cityName) {
+            h1.textContent = brandName ? `Same-Day ${brandName} ${srvTitle} Repair Near You` : `Same-Day ${srvTitle} Repair Near You`;
+          } else if (cityName) {
+            h1.textContent = brandName ? `Same-Day ${brandName} ${srvTitle} Repair in ${cityName}` : `Same-Day ${srvTitle} Repair in ${cityName}`;
+          } else {
+            h1.textContent = brandName ? `Same-Day ${brandName} ${srvTitle} Repair` : `Same-Day ${srvTitle} Repair`;
+          }
+        }
+
+        const subTitle = document.querySelector('#hero-subtitle, p.text-brandOrange');
+        if (subTitle) {
+          if (params.isNearMe && !cityName) {
+            subTitle.textContent = 'Fast Local Dispatch • Licensed Technicians at Your Doorstep Today';
+          } else if (cityName) {
+            subTitle.textContent = `Certified Technicians in ${cityName} • Same-Day Dispatch • Fee Waived w/ Repair`;
+          } else {
+            subTitle.textContent = 'Certified Local Technicians • Prompt Dispatch • Fee Waived w/ Repair';
+          }
+        }
+
+        const heroImg = document.querySelector('#about-service img');
+        if (heroImg && matchedService && matchedService.heroImg) {
+          heroImg.src = matchedService.heroImg;
+          heroImg.alt = `Same-Day ${brandPrefix}${matchedService.name} Repair in ${cityName || 'Toronto & GTA'}`;
+        }
+
+        // Dynamic Hero Service Sub-Heading (H2) and Description Paragraph
+        const heroH2 = document.querySelector('#about-service h2');
+        if (heroH2 && matchedService && matchedService.serviceLabel) heroH2.textContent = matchedService.serviceLabel;
+
+        const heroDesc = document.querySelector('#hero-desc, #about-service p.text-slate-600');
+        if (heroDesc && matchedService && matchedService.desc) heroDesc.innerHTML = matchedService.desc;
+
+        const probHeader = document.querySelector('#services-problems h3:first-child');
+        if (probHeader && matchedService) probHeader.innerHTML = `<span>${matchedService.problemsTitle}</span><span class="text-xs text-brandOrange font-bold">Diagnosed Daily</span>`;
+
+        const probList = document.querySelector('#services-problems ul:first-of-type');
+        if (probList && matchedService && matchedService.problems) {
+          probList.innerHTML = matchedService.problems.map(p => `
+            <li class="flex items-center gap-3">
+              <span class="w-2.5 h-2.5 rounded-full bg-brandOrange shrink-0"></span>
+              <span>${p}</span>
+            </li>
+          `).join('');
+        }
+
+        const typesCards = document.querySelectorAll('#services-problems > div > div > div');
+        if (typesCards.length > 1 && matchedService) {
+          const typesH3 = typesCards[1].querySelector('h3');
+          if (typesH3) typesH3.innerHTML = `<span>${matchedService.typesTitle}</span><span class="text-xs text-brandBlue font-bold">All Makes</span>`;
+
+          const typesUl = typesCards[1].querySelector('ul');
+          if (typesUl && matchedService.types) {
+            typesUl.innerHTML = matchedService.types.map(t => `
+              <li class="flex items-center gap-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-brandBlue shrink-0"></span>
+                <span>${t}</span>
+              </li>
+            `).join('');
+          }
+        }
+
+        const brandsH2 = document.querySelector('#brands h2');
+        if (brandsH2) {
+          brandsH2.textContent = brandName 
+            ? `${brandName} ${matchedService ? matchedService.titleName : 'Appliance'} Repair Specialists`
+            : `${matchedService ? matchedService.titleName : 'Appliance'} Brands We Repair`;
+        }
+
+        const finalH2 = document.querySelector('#final-cta h2');
+        if (finalH2) {
+          const brandFinal = brandName ? `${brandName} ` : '';
+          if (params.isNearMe && !cityName) {
+            finalH2.textContent = `Book Your Same-Day ${brandFinal}${matchedService ? matchedService.titleName : 'Appliance'} Repair Near You Today`;
+          } else if (cityName) {
+            finalH2.textContent = `Book Your Same-Day ${brandFinal}${matchedService ? matchedService.titleName : 'Appliance'} Repair in ${cityName} Today`;
+          } else {
+            finalH2.textContent = `Book Your Same-Day ${brandFinal}${matchedService ? matchedService.titleName : 'Appliance'} Repair Today`;
+          }
+        }
+
+        // Unhide Hero Active Technicians Stripe for Service-Only pages
+        if (!cityName && !params.isNearMe && matchedService) {
+          const heroStripe = document.getElementById('near-me-hero-stripe');
+          if (heroStripe) {
+            heroStripe.classList.remove('hidden');
+            heroStripe.style.display = 'block';
+          }
+        }
+
+        const modalAppliance = document.getElementById('modal-appliance');
+        if (modalAppliance && matchedService) modalAppliance.value = matchedService.name;
+
+        const modalNotes = document.getElementById('modal-notes') || document.querySelector('textarea[name="issue_description"]');
+        if (modalNotes && brandName && !modalNotes.value) {
+          modalNotes.placeholder = `Describe your ${brandName} ${matchedService ? matchedService.name : 'appliance'} issue...`;
+        }
+
+        // Conditionally show/hide 6 services section:
+        // Only visible on general appliance page; hidden on all specific service pages (refrigerator, washer, dryer, etc.)
+        const allSixSection = document.getElementById('all-six-services');
+        if (allSixSection && matchedService) {
+          if (matchedService.key !== 'appliance') {
+            allSixSection.style.display = 'none';
+          } else {
+            allSixSection.style.display = '';
+            document.documentElement.classList.remove('hide-six-services');
+            // Visual active state on matching card in 6-card row
+            document.querySelectorAll('#all-six-services a').forEach(cardLink => {
+              const href = cardLink.getAttribute('href') || '';
+              const cardBox = cardLink.querySelector('div.aspect-square');
+              if (cardBox) {
+                if (href.includes(`service=${matchedService.key}`) || (matchedService.key === 'dryer' && href.includes('service=dryer'))) {
+                  cardBox.classList.add('ring-2', 'ring-brandOrange', 'border-brandOrange', 'shadow-md');
+                } else {
+                  cardBox.classList.remove('ring-2', 'ring-brandOrange', 'border-brandOrange', 'shadow-md');
+                }
+              }
+            });
+          }
+        }
+      }
+
+      const topAnnounce = document.querySelector('aside .font-medium');
+      if (topAnnounce) {
+        const brandTxt = brandName ? `${brandName} ` : '';
+        const srvTxt = matchedService ? matchedService.name : 'Appliance';
+        const locTxt = cityName 
+          ? `Across ${cityName} & GTA` 
+          : (params.isNearMe ? '– Fast Local Dispatch Near You' : 'Across Toronto & GTA');
+        topAnnounce.textContent = `Same-Day ${brandTxt}${srvTxt} Repair ${locTxt}`;
+      }
+
+      if (cityName) {
+
+        const modalCity = document.getElementById('modal-city');
+        if (modalCity) {
+          let found = false;
+          for (let opt of modalCity.options) {
+            if (opt.value.toLowerCase() === cityName.toLowerCase()) {
+              opt.selected = true;
+              found = true;
+              break;
+            }
+          }
+          if (!found) {
+            const opt = document.createElement('option');
+            opt.value = cityName;
+            opt.textContent = cityName;
+            opt.selected = true;
+            modalCity.appendChild(opt);
+          }
+        }
+
+        // Dynamic Hero Bottom Stripe for City URLs
+        const heroStripe = document.getElementById('near-me-hero-stripe');
+        if (heroStripe) {
+          heroStripe.innerHTML = `<span class="font-bold text-slate-900">📍 Active Mobile Technicians Today:</span><span> Dispatched Across ${cityName} &amp; Surrounding Neighborhoods</span>`;
+          heroStripe.classList.remove('hidden');
+          heroStripe.style.display = 'block';
+        }
+
+        // Hero Section sub-heading for general repair in city
+        if (!matchedService || matchedService.key === 'appliance') {
+          const heroH2 = document.querySelector('#about-service h2');
+          if (heroH2) heroH2.textContent = `Same-Day Repair for All Major Household Appliances in ${cityName}`;
+        }
+
+        // Mid-page direct dispatch call banner subtext
+        const ctaSubtext = document.querySelector('.ppc-cta-subtext');
+        if (ctaSubtext) {
+          ctaSubtext.textContent = `Priority local arrivals across ${cityName} • Diagnostic fee waived with repair`;
+        }
+
+        // Section 4: Why Choose Us
+        const whyChooseSub = document.querySelector('#why-choose-us p.text-slate-600');
+        if (whyChooseSub) {
+          whyChooseSub.textContent = `Why ${cityName} Homeowners Trust Appliance Repair Knights`;
+        }
+        const timeItemDesc = document.querySelector('#why-choose-us .space-y-6 > div:first-child p');
+        if (timeItemDesc) {
+          timeItemDesc.textContent = `Same-day rapid dispatch directly across ${cityName}. Our local technicians arrive with stocked service vehicles to resolve appliance issues on the first visit.`;
+        }
+
+        // Section 6: Customer Reviews (General local trust without faking individual review cards)
+        const reviewsH2 = document.querySelector('#reviews h2');
+        if (reviewsH2) {
+          reviewsH2.textContent = `What Local Homeowners Say in ${cityName} & GTA`;
+        }
+        const reviewsSub = document.querySelector('#reviews p.text-slate-600');
+        if (reviewsSub) {
+          reviewsSub.textContent = `Verified 5-Star Reviews from Local Residents`;
+        }
+
+        // Section 5: Service Area & Coverage
+        const areasH2 = document.querySelector('#service-areas h2');
+        if (areasH2) {
+          areasH2.textContent = `Our ${cityName} Coverage & Dispatch Zones`;
+        }
+        const areasSub = document.querySelector('#service-areas p.text-slate-600');
+        if (areasSub) {
+          areasSub.textContent = `Prompt on-site service across ${cityName} and surrounding communities.`;
+        }
+        const contactH3 = document.querySelector('#service-areas .lg\\:col-span-5 h3');
+        if (contactH3) {
+          contactH3.textContent = `Contact Your Local ${cityName} Dispatch Team Today`;
+        }
+        const contactSub = document.querySelector('#service-areas .lg\\:col-span-5 p.text-xs');
+        if (contactSub) {
+          contactSub.textContent = `Connect directly with our local appliance team stationed in ${cityName} to confirm same-day schedule availability.`;
+        }
+
+        // Section 10: Final Pre-Footer CTA description
+        const finalDesc = document.querySelector('#final-cta p.text-slate-600');
+        if (finalDesc) {
+          finalDesc.textContent = `Don't wait while broken appliances disrupt your home. Call our ${cityName} priority dispatch team now or request a callback to secure your same-day repair appointment.`;
+        }
+      }
+
+      // -----------------------------------------------------------------------
+      // PPC "Near Me" Headings & Dispatch Validation (Applied ONLY on Near-Me URLs)
+      // -----------------------------------------------------------------------
+      if (params.isNearMe && !cityName) {
+        // Dynamic Hero Bottom Stripe: Active Technicians Today In (Near Me Only)
+        const heroStripe = document.getElementById('near-me-hero-stripe');
+        if (heroStripe) {
+          heroStripe.classList.remove('hidden');
+          heroStripe.style.display = 'block';
+        }
+
+        // Hero Section: Sub-heading for general repair near me
+        if (!matchedService || matchedService.key === 'appliance') {
+          const heroH2 = document.querySelector('#about-service h2');
+          if (heroH2) heroH2.textContent = 'Same-Day Repair for All Major Household Appliances Near You';
+          const sixH2 = document.querySelector('#all-six-services h2');
+          if (sixH2) sixH2.textContent = 'Same-Day Appliance Services Available Near You';
+        }
+
+        // Mid-page direct dispatch call banner subtext
+        const ctaSubtext = document.querySelector('.ppc-cta-subtext');
+        if (ctaSubtext) {
+          ctaSubtext.textContent = 'Priority local arrivals near you • Diagnostic fee waived with repair';
+        }
+
+        // Section 4: Why Choose Us (Heading subtext & Time feature item)
+        const whyChooseSub = document.querySelector('#why-choose-us p.text-slate-600');
+        if (whyChooseSub) {
+          whyChooseSub.textContent = 'Certified Local Technicians Stationed Near You • Rapid Same-Day Dispatch';
+        }
+        const timeItemDesc = document.querySelector('#why-choose-us .space-y-6 > div:first-child p');
+        if (timeItemDesc) {
+          timeItemDesc.textContent = 'Same-day rapid dispatch directly to your area. Our certified local technicians arrive with fully stocked service vehicles to diagnose and resolve appliance issues on the first visit.';
+        }
+
+        // Section 6: Customer Reviews (Hyper-local trust & social proof)
+        const reviewsH2 = document.querySelector('#reviews h2');
+        if (reviewsH2) {
+          reviewsH2.textContent = 'What Your Neighbors Say About Us Near You';
+        }
+        const reviewsSub = document.querySelector('#reviews p.text-slate-600');
+        if (reviewsSub) {
+          reviewsSub.textContent = 'Verified 5-Star Local Reviews • Real Customers Near You';
+        }
+
+        // Section 5: Service Area & Coverage
+        const areasH2 = document.querySelector('#service-areas h2');
+        if (areasH2) {
+          areasH2.textContent = 'Serving Your Local Neighborhood & Surrounding Areas';
+        }
+        const areasSub = document.querySelector('#service-areas p.text-slate-600');
+        if (areasSub) {
+          areasSub.textContent = 'Certified local technicians stationed near you for fast, same-day emergency dispatch.';
+        }
+        const contactH3 = document.querySelector('#service-areas .lg\\:col-span-5 h3');
+        if (contactH3) {
+          contactH3.textContent = 'Contact Your Local Appliance Dispatch Today';
+        }
+        const contactSub = document.querySelector('#service-areas .lg\\:col-span-5 p.text-xs');
+        if (contactSub) {
+          contactSub.textContent = 'Connect directly with our local appliance team stationed near you to confirm immediate schedule availability.';
+        }
+
+        // Section 10: Final Pre-Footer CTA description
+        const finalDesc = document.querySelector('#final-cta p.text-slate-600');
+        if (finalDesc) {
+          finalDesc.textContent = "Don't wait while broken appliances disrupt your home. Call our priority local dispatch team now or request a callback to secure your same-day repair appointment near you.";
+        }
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', applyDynamicPersonalization);
+    } else {
+      applyDynamicPersonalization();
+    }
+  </script>
+</body>
+</html>

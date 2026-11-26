@@ -1943,8 +1943,18 @@ $all_service_cities = [
     }
     function trackGtmFormSuccess(appliance, city) {
       if (typeof loadGTM === 'function') loadGTM();
-      window.dataLayer.push({ 'event': 'ppc_form_success', 'appliance': appliance, 'city': city, 'value': 1 });
-      window.dataLayer.push({ 'event': 'generate_lead', 'service': appliance, 'city': city, 'value': 1 });
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        'event': 'ppc_lead_form_submitted',
+        'appliance': appliance,
+        'lead_appliance': appliance,
+        'service': appliance,
+        'city': city,
+        'lead_city': city,
+        'value': 1
+      });
+      window.dataLayer.push({ 'event': 'ppc_form_success', 'appliance': appliance, 'lead_appliance': appliance, 'service': appliance, 'city': city, 'lead_city': city, 'value': 1 });
+      window.dataLayer.push({ 'event': 'generate_lead', 'service': appliance, 'appliance': appliance, 'lead_appliance': appliance, 'city': city, 'lead_city': city, 'value': 1 });
     }
 
     // Modal Controller
@@ -1977,7 +1987,16 @@ $all_service_cities = [
         page: window.location.pathname + window.location.search
       };
 
-      fetch('send-lead.php', {
+      const leadEndpoint = (function() {
+        const p = window.location.pathname;
+        const idx = p.indexOf('/same-day-repair');
+        if (idx !== -1) {
+          return p.substring(0, idx) + '/same-day-repair/send-lead.php';
+        }
+        return 'send-lead.php';
+      })();
+
+      fetch(leadEndpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)

@@ -1853,11 +1853,20 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
         page: page
       };
 
-      // Get GCLID
+      // Get GCLID & UTMs
       const urlParams = new URLSearchParams(window.location.search);
       payload.gclid = urlParams.get('gclid') || '';
 
-      fetch('send-lead.php', {
+      const leadEndpoint = (function() {
+        const p = window.location.pathname;
+        const idx = p.indexOf('/same-day-repair');
+        if (idx !== -1) {
+          return p.substring(0, idx) + '/same-day-repair/send-lead.php';
+        }
+        return 'send-lead.php';
+      })();
+
+      fetch(leadEndpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
@@ -1865,21 +1874,41 @@ $canonical_url = "https://www.appliancerepairknights.com/same-day-repair/coffee-
       .then(res => res.json())
       .then(data => {
         if(data.status === 'success') {
-          // GTM Event Trigger (ONLY ON SUCCESS)
+          // GTM Event Trigger (ONLY ON SUCCESS - fires Google Ads & GA4 conversion tags)
           window.dataLayer = window.dataLayer || [];
           window.dataLayer.push({
             'event': 'ppc_lead_form_submitted',
+            'appliance': appliance,
             'lead_appliance': appliance,
-            'lead_city': city
+            'service': appliance,
+            'city': city,
+            'lead_city': city,
+            'value': 1
+          });
+          window.dataLayer.push({
+            'event': 'ppc_form_success',
+            'appliance': appliance,
+            'lead_appliance': appliance,
+            'service': appliance,
+            'city': city,
+            'lead_city': city,
+            'value': 1
+          });
+          window.dataLayer.push({
+            'event': 'generate_lead',
+            'service': appliance,
+            'appliance': appliance,
+            'lead_appliance': appliance,
+            'city': city,
+            'lead_city': city,
+            'value': 1
           });
           btn.innerHTML = '<span>✓ REQUEST RECEIVED!</span>';
           btn.style.backgroundColor = '#059669';
+          btn.style.color = '#ffffff';
           msg.classList.remove('hidden', 'bg-rose-50', 'text-rose-800', 'border-rose-200');
           msg.classList.add('bg-emerald-50', 'text-emerald-800', 'border', 'border-emerald-200');
-          msg.innerHTML = '<strong>Success!</strong> Redirecting...';
-          setTimeout(() => {
-            window.location.href = '../thank-you?city=' + encodeURIComponent(city);
-          }, 800);
+          msg.innerHTML = '<strong>Request Received!</strong> A technician will call you within 15 minutes, or call <a href="tel:9057178905" onclick="trackGtmCall(\'form_success_call\')" class="underline font-bold">905-717-8905</a> now.';
         } else {
           throw new Error(data.message || 'Server error');
         }
