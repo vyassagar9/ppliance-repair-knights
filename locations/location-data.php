@@ -526,13 +526,13 @@ return [
     ],
     'pickering-appliance-repair' => [
         'slug' => 'pickering-appliance-repair',
-        'date_modified' => '2026-11-24',
+        'date_modified' => '2026-11-26',
         'city_name' => 'Pickering',
         'region' => 'Durham Region',
-        'meta_title' => 'Appliance Repair Pickering | Durham Region Specialists',
-        'meta_description' => 'Prompt appliance repair in Pickering. Experienced repair technicians for all kitchen and laundry appliances. Call 905-717-8905.',
+        'meta_title' => 'Same-Day Appliance Repair Pickering | Durham Region Techs',
+        'meta_description' => 'Fast, same-day appliance repair in Pickering & Durham Region. Certified techs fix fridges, washers, dryers & stoves with written warranty. Call 905-717-8905.',
         'keywords' => 'appliance repair pickering, pickering appliance technician, Bay Ridges fridge repair',
-        'h1_title' => 'Prompt Appliance Repair Services in Pickering',
+        'h1_title' => 'Same-Day Appliance Repair in Pickering',
         'cta_text' => 'Call Pickering Tech',
         'badge_text' => 'SAME-DAY PICKERING SERVICE',
         'card_desc' => 'Helping Pickering homeowners with dependable repairs for refrigerators, laundry appliances and other major household equipment.',
@@ -748,7 +748,7 @@ return [
     ],
     'ajax-appliance-repair' => [
         'slug' => 'ajax-appliance-repair',
-        'date_modified' => '2026-11-24',
+        'date_modified' => '2026-11-26',
         'city_name' => 'Ajax',
         'region' => 'Durham Region',
         'meta_title' => 'Appliance Repair Ajax | Same-Day Service & Local Technicians',
@@ -758,13 +758,13 @@ return [
         'cta_text' => 'Book Ajax Service',
         'badge_text' => 'SAME-DAY AJAX SERVICE',
         'card_desc' => 'Local appliance service for Ajax homeowners when a refrigerator, washer, dryer or other major appliance needs attention.',
-        'intro_text' => 'Need quick appliance repair in Ajax? Appliance Repair Knights provides same-day residential repairs across Ajax and Durham Region. We service South Ajax, Central Ajax, Pickering Village, and surrounding neighborhoods with reliable workmanship, warranty coverage, and fair pricing.',
+        'intro_text' => 'Need quick appliance repair in Ajax? Appliance Repair Knights provides same-day residential repairs across Ajax and Durham Region. We service South Ajax, Central Ajax, Pickering Village, and surrounding neighbourhoods with reliable workmanship, warranty coverage, and fair pricing.',
         'postal_codes' => ['L1S', 'L1T', 'L1Z'],
         'neighborhoods' => ['South Ajax', 'Central Ajax', 'Pickering Village', 'Audley', 'Discovery Bay', 'Deer Park', 'Midtown Ajax'],
         'geo' => ['latitude' => 43.8509, 'longitude' => -79.0204],
         'faqs' => [
             [
-                'q' => 'Do you service all neighborhoods in Ajax?',
+                'q' => 'Do you service all neighbourhoods in Ajax?',
                 'a' => 'Yes, our technicians cover all areas of Ajax including South Ajax by the lake, Central Ajax, and north of the 401 up to Taunton.'
             ],
             [

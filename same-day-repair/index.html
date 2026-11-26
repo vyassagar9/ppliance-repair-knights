@@ -1809,20 +1809,16 @@
             <div
               class="w-9 h-9 rounded-full bg-brandBlue flex items-center justify-center text-white font-black text-sm shrink-0">
               SS</div>
-            <div class="text-left">
-              <div class="text-xs font-heading font-bold text-brandDarkBlue">— Shehraj Singh</div>
-              <div class="text-[11px] text-slate-400 font-medium">Brampton, ON</div>
-            </div>
+            <div class="text-xs font-heading font-bold text-brandDarkBlue">— Shehraj Singh</div>
           </div>
 
           <!-- Subtle Prev / Next Navigation -->
           <div class="flex items-center justify-center gap-4 mt-6">
-            <button onclick="prevReview()"
+            <button onclick="prevReview()" aria-label="Previous Review"
               class="w-8 h-8 rounded-full border border-slate-300 text-slate-600 hover:text-brandOrange hover:border-brandOrange flex items-center justify-center text-sm font-bold transition-colors cursor-pointer">
               ‹
             </button>
-            <span class="text-[11px] text-slate-400 font-semibold" id="review-counter">1 / 5</span>
-            <button onclick="nextReview()"
+            <button onclick="nextReview()" aria-label="Next Review"
               class="w-8 h-8 rounded-full border border-slate-300 text-slate-600 hover:text-brandOrange hover:border-brandOrange flex items-center justify-center text-sm font-bold transition-colors cursor-pointer">
               ›
             </button>
@@ -2744,14 +2740,13 @@
     function updateReviewUI(smooth = true) {
       const textEl = document.getElementById('review-text');
       const authorEl = document.getElementById('review-author');
-      const counterEl = document.getElementById('review-counter');
       if (!textEl || !authorEl) return;
 
       const rev = reviewsData[curRevIdx];
       const avatarColors = ['bg-brandBlue', 'bg-emerald-700', 'bg-brandNavy', 'bg-slate-700', 'bg-orange-700'];
       const colorClass = avatarColors[curRevIdx % avatarColors.length];
       const initials = rev.author.split(' ').map(w => w[0]).join('').substring(0, 2).toUpperCase();
-      const avatarHTML = `<div class="flex items-center gap-3 mt-4 justify-center"><div class="w-9 h-9 rounded-full ${colorClass} flex items-center justify-center text-white font-black text-sm shrink-0">${initials}</div><div class="text-left"><div class="text-xs font-heading font-bold text-brandDarkBlue">— ${rev.author}</div><div class="text-[11px] text-slate-400 font-medium">${rev.city || 'GTA, ON'}</div></div></div>`;
+      const avatarHTML = `<div class="w-9 h-9 rounded-full ${colorClass} flex items-center justify-center text-white font-black text-sm shrink-0">${initials}</div><div class="text-xs font-heading font-bold text-brandDarkBlue">— ${rev.author}</div>`;
 
       if (smooth) {
         textEl.style.opacity = '0';
@@ -2759,14 +2754,12 @@
         setTimeout(() => {
           textEl.textContent = `"${rev.quote}"`;
           authorEl.innerHTML = avatarHTML;
-          if (counterEl) counterEl.textContent = `${curRevIdx + 1} / ${reviewsData.length}`;
           textEl.style.opacity = '1';
           authorEl.style.opacity = '1';
         }, 150);
       } else {
         textEl.textContent = `"${rev.quote}"`;
         authorEl.innerHTML = avatarHTML;
-        if (counterEl) counterEl.textContent = `${curRevIdx + 1} / ${reviewsData.length}`;
       }
     }
 

@@ -2,9 +2,9 @@
 require_once __DIR__ . '/../config.php';
 $base_url = '../';
 $current_page = 'washer';
-$page_title = 'Washing Machine Repair | Appliance Repair Knights';
-$page_description = 'Fast washing machine repair & diagnostic services. Spin cycle issues, leaks, & error codes fixed fast. Certified techs with written parts & labour warranty.';
-$page_keywords = 'washing machine repair service, washer diagnostic, fix washer spin cycle';
+$page_title = 'Same-Day Washing Machine Repair Toronto & GTA | Knights';
+$page_description = 'Same-day washing machine repair in Toronto & GTA. Leaks, spin cycle issues & error codes fixed on-site. Fee waived with repair & written warranty.';
+$page_keywords = 'washing machine repair toronto, washer repair gta, washer diagnostic, fix washer spin cycle';
 $canonical_url = 'https://www.appliancerepairknights.com/services/washer-repair';
 
 $gmb_rating = GMB_RATING_VALUE;
@@ -187,7 +187,7 @@ include __DIR__ . '/../head.php';
         <div class="lg:col-span-7 space-y-6">
           <span class="text-accent text-sm md:text-base font-bold uppercase tracking-widest block">Washer Specialists</span>
           <h1 class="text-3xl md:text-5xl font-heading font-bold text-white tracking-tight leading-tight">
-            Washing Machine Repair <br><span class="text-accent">& Diagnostic Services</span>
+            Washing Machine Repair <br><span class="text-accent">in Toronto &amp; GTA</span>
           </h1>
           <p class="text-slate-300 text-base md:text-lg max-w-xl leading-relaxed">
             Is your washing machine leaking water, failing to spin, vibrating violently, or showing error codes? We repair front-loaders, top-loaders, and commercial coin washers on-site.
