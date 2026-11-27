@@ -272,14 +272,6 @@
       line-height: 1.6 !important;
     }
 
-    #hero-subtitle #bf-hero-deal {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 16px;
-    }
-
     /* Mobile Typography Specification */
     @media (max-width: 639px) {
       /* H1: Fixed 36px on mobile screens */
@@ -325,11 +317,6 @@
         font-size: 15px !important;
         font-weight: 500 !important;
         line-height: 1.6 !important;
-      }
-
-      #hero-subtitle #bf-hero-deal {
-        justify-content: center !important;
-        gap: 12px !important;
       }
 
       /* Body: 16px, weight 500 */
@@ -615,7 +602,7 @@
     #hero-service-img {
       width: 100%;
       height: auto;
-      max-height: 220px;
+      max-height: 170px;
       object-fit: cover;
       display: block;
       border-radius: 0px;
@@ -628,7 +615,7 @@
 
       #hero-service-img {
         width: 100%;
-        max-height: 220px;
+        max-height: 170px;
         object-fit: cover;
         border-radius: 0px;
         display: block;
@@ -1091,12 +1078,6 @@
     <div class="max-w-7xl mx-auto flex items-center justify-center h-5">
       <div id="topbar-slider" class="relative h-5 overflow-hidden w-full max-w-2xl">
         <div id="topbar-slides" class="transition-transform duration-500 ease-in-out flex flex-col">
-          <span id="bf-topbar-slide"
-            class="h-5 flex items-center justify-center gap-1.5 text-amber-300 font-bold tracking-normal whitespace-nowrap text-[11px] sm:text-[13px]">
-            <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse shrink-0"></span>
-            <span class="bg-amber-400/20 text-amber-300 border border-amber-400/40 px-1.5 py-0.5 rounded text-[9.5px] uppercase font-black tracking-wider">Black Friday</span>
-            <span>Diagnostic Fee Waived w/ Repair</span>
-          </span>
           <span
             class="h-5 flex items-center justify-center gap-1.5 text-slate-100 font-semibold tracking-normal whitespace-nowrap text-[11px] sm:text-[13px]">
             <span class="w-2 h-2 rounded-full bg-brandOrange animate-pulse shrink-0"></span>
@@ -1165,11 +1146,8 @@
               </h1>
               <p id="hero-subtitle"
                 class="text-slate-600 font-medium text-[14px] sm:text-[15px] lg:text-base leading-relaxed mt-1.5 sm:mt-2 mb-2.5 sm:mb-3 text-center sm:text-left">
-                <span>Certified Local Techs &bull; Prompt GTA Dispatch</span>
-                <span class="flex flex-wrap items-center justify-center sm:justify-start gap-3 sm:gap-4 mt-2 sm:mt-2.5 leading-normal sm:leading-relaxed" id="bf-hero-deal">
-                  <span class="bg-brandOrange text-white text-[10.5px] sm:text-[11px] font-black uppercase px-2.5 py-0.5 rounded-none tracking-wider whitespace-nowrap inline-flex items-center shrink-0">Black Friday Deal</span>
-                  <span class="text-brandOrange font-extrabold text-[13.5px] sm:text-base whitespace-nowrap inline-flex items-center">Diagnostic Fee Waived w/ Repair</span>
-                </span>
+                <span>Certified Local Techs &bull; Prompt GTA Dispatch</span><br>
+                <span class="text-brandOrange font-extrabold text-[14px] sm:text-base whitespace-nowrap inline-block mt-1.5 sm:mt-2">&#9733; Diagnostic Fee Waived w/ Repair</span>
               </p>
             </div>
 
@@ -1187,9 +1165,9 @@
                 <span class="whitespace-nowrap font-extrabold">CALL NOW: 905-717-8905</span>
               </a>
 
-              <!-- Secondary CTA: Outline / Lighter Book Button -->
+              <!-- Secondary CTA: Outline / Lighter Book Button (Hidden on Mobile where inline form is directly below) -->
               <a href="#ppc-quote-modal" onclick="openLeadModal(); return false;"
-                class="w-full sm:w-auto flex-1 bg-white hover:bg-blue-50/70 text-brandBlue border-2 border-brandBlue font-bold py-2.5 sm:py-3 px-4 sm:px-5 xl:px-6 rounded-none text-[15px] sm:text-sm xl:text-base capitalize tracking-normal transition-all shadow-2xs flex items-center justify-center gap-2 transform active:scale-95 cursor-pointer text-center whitespace-nowrap">
+                class="w-full sm:w-auto flex-1 bg-white hover:bg-blue-50/70 text-brandBlue border-2 border-brandBlue font-bold py-2.5 sm:py-3 px-4 sm:px-5 xl:px-6 rounded-none text-[15px] sm:text-sm xl:text-base capitalize tracking-normal transition-all shadow-2xs hidden sm:flex items-center justify-center gap-2 transform active:scale-95 cursor-pointer text-center whitespace-nowrap">
                 <svg class="w-4 h-4 flex-shrink-0 text-brandBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
@@ -1234,7 +1212,7 @@
                 <img id="hero-service-img" src="../img/washing-machine-repair-service.webp"
                   alt="Same-Day Appliance Repair in Toronto &amp; GTA - Certified Local Technicians" width="600"
                   height="400" loading="eager" fetchpriority="high"
-                  class="w-full h-auto max-h-[220px] sm:max-h-[270px] lg:max-h-[350px] object-cover rounded-none block">
+                  class="w-full h-auto max-h-[170px] sm:max-h-[270px] lg:max-h-[350px] object-cover rounded-none block">
               </div>
             </div>
             <!-- Active Technicians Stripe (Integrated directly under image) -->
@@ -2673,17 +2651,6 @@
       submitLeadForm('modal');
     }
 
-    // Promotional Window Auto-Expiry (Active through Cyber Monday / Dec 1, 2026 23:59:59 EST)
-    const isBlackFridayPromoActive = new Date() < new Date('2026-12-02T05:00:00Z');
-    if (!isBlackFridayPromoActive) {
-      const bfSlide = document.getElementById('bf-topbar-slide');
-      if (bfSlide) bfSlide.remove();
-      const bfHero = document.getElementById('bf-hero-deal');
-      if (bfHero) {
-        bfHero.outerHTML = '<br><span class="text-brandOrange font-extrabold text-[14px] sm:text-base whitespace-nowrap inline-block mt-1.5 sm:mt-2">★ Diagnostic Fee Waived w/ Repair</span>';
-      }
-    }
-
     // Topbar Micro-CTA Slider Logic (Auto-rotating every 3.5s)
     (function initTopbarSlider() {
       const slidesContainer = document.getElementById('topbar-slides');
@@ -3200,9 +3167,7 @@
 
         const subTitle = document.querySelector('#hero-subtitle');
         if (subTitle) {
-          const promoLine = isBlackFridayPromoActive
-            ? '<span class="flex flex-wrap items-center justify-center sm:justify-start gap-3 sm:gap-4 mt-2 sm:mt-2.5 leading-normal sm:leading-relaxed" id="bf-hero-deal"><span class="bg-brandOrange text-white text-[10.5px] sm:text-[11px] font-black uppercase px-2.5 py-0.5 rounded-none tracking-wider whitespace-nowrap inline-flex items-center shrink-0">Black Friday Deal</span><span class="text-brandOrange font-extrabold text-[13.5px] sm:text-base whitespace-nowrap inline-flex items-center">Diagnostic Fee Waived w/ Repair</span></span>'
-            : '<br><span class="text-brandOrange font-extrabold text-[14px] sm:text-base whitespace-nowrap inline-block mt-1.5 sm:mt-2">★ Diagnostic Fee Waived w/ Repair</span>';
+          const promoLine = '<br><span class="text-brandOrange font-extrabold text-[14px] sm:text-base whitespace-nowrap inline-block mt-1.5 sm:mt-2">★ Diagnostic Fee Waived w/ Repair</span>';
           if (params.isNearMe && !cityName) {
             subTitle.innerHTML = `<span>Fast Local Dispatch &bull; Licensed GTA Technicians</span>${promoLine}`;
           } else if (cityName) {
